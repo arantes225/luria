@@ -4,10 +4,12 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
   const root=document.getElementById("exam-tool");
   if(!root)return;
   const C=[...(window.LURIA_EXAM_CATALOG||[]),...(window.LURIA_EXAM_EXTRA_CATALOG||[])];
+  if(typeof window.LURIA_BUILD_EXAM_PENDING_CATALOG==="function")window.LURIA_BUILD_EXAM_PENDING_CATALOG();
+  const pendingCatalog=window.LURIA_EXAM_PENDING_CATALOG||[];
   if(typeof window.LURIA_APPLY_EXAM_DETAILS==="function")window.LURIA_APPLY_EXAM_DETAILS();
   const byId=new Map(C.flatMap(g=>g.tests.map(t=>[t.id,t])));
   const examDetails=window.LURIA_EXAM_DETAILS||{};
-  const state={group:"",kit:"",search:"",view:"catalog",mode:"reference",population:"adult-f",age:"",context:"",readings:{},history:[]};
+  const state={group:"",kit:"",search:"",onlyPending:false,view:"catalog",mode:"reference",population:"adult-f",age:"",context:"",readings:{},history:[]};
   const KITS={
     sepse:{label:"Kit Sepse & UTI",ids:["g1t1","g1t8","g1t14","g2t1","g2t2","g3t1","g3t2","g3t5","g4t1","g4t2","g4t3","g4t4","g4t8","g5t5","g5t6","g8t2","g8t3","g10t1","g10t4"]},
     iam:{label:"Kit Dor Torácica & IC",ids:["g9t3","g9t1","g9t4","g9t5","g9t6","g9t7","g8t6","g1t1","g2t1","g3t1","g3t2","g3t6","g6t1","g7t3"]},
@@ -88,6 +90,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     <div class="ex-controls">
       <label>Buscar exame ou painel<input id="ex-search" type="search" placeholder="Ex.: ferritina, gasometria, urina…" autocomplete="off"></label>
       <label>Área médica<select id="ex-area" aria-label="Filtrar exames por área"><option value="">Todas as áreas</option></select></label>
+      <label class="ex-completion-filter"><input type="checkbox" id="ex-only-pending"> Somente a completar</label>
       <label>Perfil de referência<select id="ex-pop"><option value="adult-f">Adulto • feminino</option><option value="adult-m">Adulto • masculino</option><option value="ped">Pediátrico • conferir laudo</option><option value="gest-1">Gestante • 1º trimestre</option><option value="gest-2">Gestante • 2º trimestre</option><option value="gest-3">Gestante • 3º trimestre</option></select></label>
       <label id="ex-age-wrap" hidden>Idade (opcional)<input id="ex-age" type="number" min="0" max="120" placeholder="Anos" inputmode="numeric"></label>
     </div>
@@ -134,6 +137,7 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
      state.search="";root.querySelector("#ex-search").value="";
      state.view="catalog";syncKits();renderPanel();
    }));
+   root.querySelector("#ex-only-pending").addEventListener("change",evt=>{state.onlyPending=evt.target.checked;state.view="catalog";renderPanel()});
    root.querySelector("#ex-pop").addEventListener("change",evt=>{state.population=evt.target.value;renderPanel()});
    root.querySelector("#ex-age").addEventListener("input",evt=>{state.age=evt.target.value;renderPanel()});
    syncKits();syncMode();
@@ -147,30 +151,42 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
     if(state.view==="history")return renderHistory(panel);
     return renderSources(panel);
   }
+  function isExamPending(t,lim){
+    const meta=examDetails[t.id]||{};
+    const requiresLaudo=/vem no laudo|conferir laudo|conforme laudo/i.test(String(t.unit||"")+" "+String(meta.unitPolicy||""));
+    return t.kind!=="numeric"||!lim.available||t.min===null||t.max===null||requiresLaudo;
+  }
+  function pendingMatching(){
+    if(state.kit)return [];
+    const q=normalize(state.search);
+    return pendingCatalog.filter(t=>(!state.group||String(t.group)===String(state.group))&&(!q||normalize(t.name).includes(q)||normalize(groupName(t.group)).includes(q))).sort((a,b)=>compareNames(a.name,b.name)||a.id.localeCompare(b.id));
+  }
   function matching(){
      const pool=state.kit&&KITS[state.kit]
        ? KITS[state.kit].ids.map(id=>byId.get(id)).filter(Boolean)
        : C.filter(g=>!state.group||String(g.id)===String(state.group)).flatMap(g=>g.tests);
      const q=normalize(state.search);
-     return pool.filter(t=>!q||normalize(t.name).includes(q)||normalize(groupName(t.group)).includes(q))
+     return pool.filter(t=>(!state.onlyPending||isExamPending(t,ranges(t,false)))&&(!q||normalize(t.name).includes(q)||normalize(groupName(t.group)).includes(q)))
        .sort((a,b)=>compareNames(a.name,b.name)||a.id.localeCompare(b.id));
    }
    function refLabel(lim){if(!lim.available)return "Conferir laudo";if(lim.min!==null&&lim.max!==null)return `${fmt(lim.min)} a ${fmt(lim.max)}`;if(lim.min!==null)return `≥ ${fmt(lim.min)}`;if(lim.max!==null)return `≤ ${fmt(lim.max)}`;return "Conferir laudo";}
   function renderCatalog(panel){
-     const items=matching(),selected=C.find(g=>String(g.id)===String(state.group));
+     const items=matching(),pendingNames=pendingMatching(),selected=C.find(g=>String(g.id)===String(state.group));
      const patient=state.mode==="patient",kitObj=state.kit?KITS[state.kit]:null;
      const title=state.search?"Resultados da busca":kitObj?kitObj.label:selected?selected.name:"Todos os exames";
      panel.innerHTML=`<div class="ex-catalog-heading"><div><h3 class="ex-section-title">${e(title)}</h3>
-       <p class="ex-subtitle">${items.length} ${items.length===1?"exame":"exames"} em ordem alfabética${selected&&state.search?" · "+e(selected.name):""} · ${patient?"Informe resultados e limites do laudo, quando disponíveis.":"Valores orientativos; confirme método, unidade e laudo."}</p></div>
+       <p class="ex-subtitle">${items.length+pendingNames.length} ${items.length+pendingNames.length===1?"exame":"exames"} em ordem alfabética${selected&&state.search?" · "+e(selected.name):""} · ${patient?"Informe resultados e limites do laudo, quando disponíveis.":"Valores orientativos; confirme método, unidade e laudo."}</p></div>
        <span class="ex-order-pill" aria-label="Ordenação alfabética">A–Z</span></div>
        <div id="ex-rows" class="ex-card-grid"></div>
+       <section id="ex-pending-section" class="ex-pending-section" ${pendingNames.length?"":"hidden"} aria-label="Nomes de exames pendentes"><div class="ex-pending-heading"><h4>Nomes cadastrados para completar</h4><p>${pendingNames.length} nomes adicionais. Sem valores de referência nem interpretação até o preenchimento individual.</p></div><div id="ex-pending-list" class="ex-pending-grid"></div></section>
        ${patient?'<div class="ex-actions"><button class="ex-btn primary" id="ex-analyze" type="button">Interpretar resultados</button><button class="ex-btn" id="ex-save" type="button">Registrar coleta nesta sessão</button><button class="ex-btn danger" id="ex-clear" type="button">Limpar sessão</button></div>':""}
        <p class="ex-source-note">Faixas orientativas não são critérios de conduta. Exames dependentes do método aparecem sem intervalo genérico; a ausência de destaque não demonstra normalidade.</p>`;
      const rows=panel.querySelector("#ex-rows");
      rows.innerHTML=items.map(t=>{
        const r=itemState(t.id),lim=ranges(t,patient),s=patient?status(t):"";
        const ref=refLabel(lim);
-       const head=`<div class="ex-card-head"><span class="ex-area-tag">${e(groupName(t.group))}</span><h4>${e(t.name)}</h4></div>`;
+       const incomplete=isExamPending(t,lim);
+       const head=`<div class="ex-card-head"><span class="ex-area-tag">${e(groupName(t.group))}</span><h4>${e(t.name)}</h4>${incomplete?'<span class="ex-completion-status">A completar</span>':""}</div>`;
         const info=examDetails[t.id];
         const detailBlock=info?`<details class="ex-test-details"><summary>Entenda o exame</summary><div class="ex-test-details-content"><p><strong>Material de coleta</strong> ${e(info.sample)} ${info.preanalyticalSpecificFields?.includes("sample")?"<small>(orientação específica deste exame)</small>":""}</p><p><strong>Preparo e coleta</strong> ${e(info.preparation)}</p><p><strong>Técnica laboratorial</strong> ${e(info.analyticalMethod)}</p><p><strong>Interferências pré-analíticas</strong> ${e(info.preanalyticalInterference)}</p><p><strong>Finalidade</strong> ${e(info.purpose)}</p><p><strong>Interpretação</strong> ${e(info.interpretation)}</p><p><strong>Cuidados</strong> ${e(info.caution)}</p><p><strong>Referências e unidade</strong> ${e(info.referencePolicy)} ${e(info.unitPolicy)}</p>${info.referenceNote?`<p class="ex-clinical-reference"><strong>Critério de referência</strong> ${e(info.referenceNote)}</p>`:""}<a target="_blank" rel="noopener noreferrer" href="${e(info.sourceUrl)}">Fonte de orientação: ${e(info.sourceLabel)}</a><a class="ex-clinical-source" target="_blank" rel="noopener noreferrer" href="${e(info.preanalyticalSourceUrl)}">Boas práticas de coleta: ${e(info.preanalyticalSourceLabel)}</a><small>${info.preanalyticalSpecificFields?.length?"Orientações individualizadas nos campos específicos; demais instruções são gerais para a área.":"Orientações gerais para esta área; confirme material, técnica e preparo do exame no laboratório."}</small><small>Fonte temática; não valida um intervalo universal nem substitui o laudo.</small></div></details>`:"";
        const flag=patient?`<span class="ex-status ${s}" data-status>${({low:"Abaixo",high:"Acima",normal:"Na faixa informada",invalid:"Valor inválido",recorded:"Registrado","unit-mismatch":"Unidade divergente"})[s]||""}</span>`:"";
@@ -185,7 +201,8 @@ window.LURIA_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id"
          <label>Mín. do laudo<input data-id="${e(t.id)}" data-field="min" ${t.kind!=="numeric"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.min)}" aria-label="Limite inferior para ${e(t.name)}"></label>
          <label>Máx. do laudo<input data-id="${e(t.id)}" data-field="max" ${t.kind!=="numeric"?"disabled":""} placeholder="—" inputmode="decimal" value="${e(r.max)}" aria-label="Limite superior para ${e(t.name)}"></label>
        </div></article>`;
-     }).join("")||"<p class='ex-muted ex-no-results'>Nenhum exame encontrado. Experimente outra área ou termo de busca.</p>";
+     }).join("")||(pendingNames.length?"":"<p class='ex-muted ex-no-results'>Nenhum exame encontrado. Experimente outra área ou termo de busca.</p>");
+     panel.querySelector("#ex-pending-list").innerHTML=pendingNames.map(t=>`<article class="ex-pending-card" data-pending-id="${e(t.id)}"><span class="ex-area-tag">${e(groupName(t.group))}</span><h4>${e(t.name)}</h4><span class="ex-completion-status">A completar</span></article>`).join("");
      if(!patient)return;
      rows.querySelectorAll("input,select").forEach(el=>el.addEventListener("change",onReading));
      rows.querySelectorAll("input").forEach(el=>el.addEventListener("input",onReading));
