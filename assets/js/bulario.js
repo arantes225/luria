@@ -5,6 +5,16 @@
   const count=document.getElementById('drug-count');
   let rows=[], protocols=[], selected=null, activeChip=""; const normStr=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
   const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  // ⚡ Bolt: Prevent main thread blocking on keystroke filtering
+  // Expected Impact: Reduces DOM re-renders and CPU usage by batching rapid sequential keystrokes
+  // into a single execution after the user pauses typing for 300ms.
+  const debounce = (func, wait) => {
+    let timeout;
+    return function(...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+  };
   const number=value=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(value);
   const status=row=>row.data?.status==='posology_verified'?2:row.data?.status==='verified'?1:0;
   const field=(label,value)=>`<div class="rx-field"><span>${esc(label)}</span><b>${esc(value||'A confirmar')}</b></div>`;
@@ -314,7 +324,7 @@
     });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
-  search.addEventListener('input',renderList);
+  search.addEventListener('input',debounce(renderList, 300));
   (async()=>{
     const localSeeds=Array.isArray(window.TRAUBE_BULARIO_SEEDS)?window.TRAUBE_BULARIO_SEEDS:[];
     const localProtoSeeds=Array.isArray(window.TRAUBE_PROTOCOL_SEEDS)?window.TRAUBE_PROTOCOL_SEEDS:[];
