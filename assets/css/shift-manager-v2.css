@@ -67,6 +67,12 @@
 .fin-tax-summary>div{display:grid;gap:5px;background:var(--surface-2);padding:12px;border-radius:10px}
 .fin-tax-summary small{color:var(--muted);font-size:11px}
 .fin-tax-summary strong{font-size:17px}
+.gm-dashboard-wrap{display:grid;gap:22px}
+.gm-section-header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.gm-section-header h2{font-size:18px;font-weight:900;margin:0;color:var(--text);display:flex;align-items:center;gap:8px}
+.gm-section-header p{margin:0;font-size:12.5px;color:var(--muted)}
+.gm-divider{border:0;border-top:1px solid var(--border);margin:10px 0}
+
 @media(max-width:950px){.shift-week-planner{grid-template-columns:repeat(4,minmax(0,1fr))}.fin-institution-grid{grid-template-columns:1fr}}
 @media(max-width:650px){.shift-agenda-controls{align-items:stretch}.shift-nav-controls{width:100%;justify-content:center}.shift-nav-controls strong{min-width:110px}.shift-month-grid{gap:2px}.shift-day{min-height:80px;padding:2px}.shift-day-number{font-size:11px;padding:3px}.shift-calendar-event{font-size:9px;padding:3px}.shift-calendar-event strong{font-size:9px}.shift-week-planner{grid-template-columns:repeat(2,minmax(0,1fr))}.fin-settings-grid{grid-template-columns:1fr}.fin-tax-summary{grid-template-columns:1fr}.fin-institution-numbers strong{font-size:12px}.shift-modal-header{padding:14px}.shift-modal form{padding:14px}.shift-field-row{grid-template-columns:1fr}}
 @media(max-width:375px){.shift-week-planner{grid-template-columns:1fr}.shift-toolbar-actions{width:100%}.shift-toolbar-actions>*{flex:1;text-align:center}}

@@ -1386,7 +1386,8 @@ const PAGE_INFO = {
   trabalho_financeiro: { title: "Financeiro", eyebrow: "Ganhos e controle", helper: "Acompanhe receitas e organização dos plantões." },
   trabalho_calculadora: { title: "Calculadoras", eyebrow: "Cálculos clínicos", helper: "Faça cálculos clínicos de forma rápida e prática." },
   trabalho_bulario: { title: "Bulário", eyebrow: "Medicamentos e doses", helper: "Consulte apresentações, doses e informações essenciais." },
-  trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Divisão de horários", helper: "Distribua horários de forma simples e equilibrada." },
+  trabalho_divisor_descanso: { title: "Divisor de Descanso", eyebrow: "Descanso da equipe", helper: "Distribua turnos de descanso de forma simples e equilibrada." },
+  trabalho_divisor_plantao: { title: "Divisor de Descanso", eyebrow: "Descanso da equipe", helper: "Distribua turnos de descanso de forma simples e equilibrada." },
   trabalho_diagnostico: { title: "Diagnóstico por Sintomas", eyebrow: "Sintomas e hipóteses", helper: "Organize hipóteses a partir dos principais sintomas." },
   trabalho_laboratorio: { title: "Laboratório", eyebrow: "Exames e interpretação", helper: "Consulte exames e pontos-chave de interpretação." },
   trabalho_prescricao: { title: "Prescrição", eyebrow: "Prescrições e doses", helper: "Acesse esquemas práticos para a rotina clínica." },
@@ -1672,7 +1673,8 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">≈</span><span>Fluidos e eletrólitos</span>
         </a>
 
-        <a class="nav-link ${["trabalho_gestor_plantoes","trabalho_plantoes","trabalho_divisor_plantao","trabalho_financeiro"].includes(page) ? "active" : ""}" href="/trabalho/gestor-plantoes/">
+        <a class="nav-link ${["trabalho_gestor_plantoes","trabalho_plantoes","trabalho_divisor_descanso",
+    "trabalho_divisor_plantao","trabalho_financeiro"].includes(page) ? "active" : ""}" href="/trabalho/gestor-plantoes/">
           <span class="nav-icon">▦</span><span>Gestor de Plantões</span>
         </a>
         <a class="nav-link" href="/trabalho/pcr/historico/"><span class="nav-icon">◷</span><span>Histórico de PCR</span></a>

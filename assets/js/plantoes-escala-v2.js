@@ -133,6 +133,7 @@
   }
   function init(){
     if(!$("shift-calendar"))return;
+    if(document.body.dataset.defaultShiftView==="week")view="week";
     $("shift-view-month").addEventListener("click",()=>{view="month";render();});
     $("shift-view-week").addEventListener("click",()=>{view="week";render();});
     $("shift-prev").addEventListener("click",()=>{cursor=view==="month"?new Date(cursor.getFullYear(),cursor.getMonth()-1,1):addDays(cursor,-7);render();});

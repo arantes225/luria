@@ -69,7 +69,7 @@
             <div class="gm-radar-progress-fill" style="width: ${pct}%"></div>
           </div>
           <div class="gm-radar-actions">
-            <a href="/trabalho/divisor-plantao/" class="gm-radar-btn primary">Dividir Descanso da Equipe →</a>
+            <a href="/trabalho/divisor-descanso/" class="gm-radar-btn primary">Dividir Descanso da Equipe →</a>
             <a href="/trabalho/passometro/" class="gm-radar-btn secondary">Passagem de Plantão / Leitos</a>
           </div>
         </div>
@@ -102,7 +102,7 @@
           </div>
           <div class="gm-radar-actions">
             <a href="/trabalho/plantoes/" class="gm-radar-btn secondary">Ver Escala Completa</a>
-            <a href="/trabalho/divisor-plantao/" class="gm-radar-btn secondary">Planejar Descanso</a>
+            <a href="/trabalho/divisor-descanso/" class="gm-radar-btn secondary">Planejar Descanso</a>
           </div>
         </div>
       `;

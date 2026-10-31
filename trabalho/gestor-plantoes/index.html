@@ -11,16 +11,19 @@
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-<script src="/assets/js/ui-routes.js?v=1"></script>
+  <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
+  <link rel="stylesheet" href="/assets/css/work-plantoes.css?v=20260930">
+  <link rel="stylesheet" href="/assets/css/shift-manager-v2.css?v=20261030-v2">
   <style>
     .gm-shell{display:grid;gap:18px}
-    .gm-hero{padding:22px 24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-    .gm-hero h2{margin:0 0 7px;font-size:24px;font-weight:900}
-    .gm-hero p{max-width:760px;margin:0;color:var(--muted);line-height:1.55;font-size:13.5px}
+    .gm-hero{padding:22px 24px;border:1px solid var(--border);border-radius:18px;background:var(--surface);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+    .gm-hero-info h2{margin:0 0 6px;font-size:22px;font-weight:900}
+    .gm-hero-info p{margin:0;color:var(--muted);font-size:13.5px;max-width:650px;line-height:1.5}
+    .gm-hero-actions{display:flex;gap:10px;flex-wrap:wrap}
 
     /* Radar ao Vivo */
     .gm-radar-wrap{display:grid;gap:12px}
@@ -62,27 +65,33 @@
     .text-success{color:#10b981!important}
     .text-warning{color:#f59e0b!important}
 
-    .gm-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-    .gm-card{min-height:205px;display:flex;flex-direction:column;padding:20px;border:1px solid var(--border);border-radius:17px;background:var(--surface);color:var(--text);text-decoration:none;box-shadow:0 6px 20px rgba(15,23,42,.035);transition:transform .15s,border-color .15s,box-shadow .15s}
-    .gm-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 10px 28px rgba(15,23,42,.07)}
-    .gm-icon{width:44px;height:44px;display:grid;place-items:center;margin-bottom:20px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:21px;font-weight:900}
-    .gm-card h3{margin:0 0 7px;font-size:18px}
-    .gm-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.5}
-    .gm-open{margin-top:auto;padding-top:18px;color:var(--accent);font-size:11px;font-weight:850}
+    /* Divisões de Seção no Dashboard Centralizado */
+    .gm-dashboard-section{display:grid;gap:14px}
+    .gm-section-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-bottom:4px}
+    .gm-section-header h2{margin:0;font-size:18px;font-weight:900;display:flex;align-items:center;gap:8px}
+    .gm-section-header p{margin:0;font-size:12.5px;color:var(--muted)}
+    .gm-tag-pill{display:inline-block;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:800;background:var(--accent-soft);color:var(--accent)}
+
+    .gm-tools-banner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-radius:14px;border:1px solid var(--border);background:var(--surface);flex-wrap:wrap;gap:12px}
+    .gm-tools-banner strong{font-size:14px;display:block}
+    .gm-tools-banner span{font-size:12px;color:var(--muted)}
+    .gm-tools-link{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;transition:opacity .15s}
+    .gm-tools-link:hover{opacity:.9}
+
     .gm-security-row{display:flex;justify-content:flex-end}
     .gm-security-card{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;padding:14px 16px;border:1px solid var(--border);border-radius:15px;background:var(--surface)}
     .gm-security-copy{min-width:0}.gm-security-copy strong{display:block;font-size:14px}.gm-security-copy span{display:block;margin-top:3px;color:var(--muted);font-size:11px;line-height:1.4}
     .gm-security-actions{display:flex;gap:8px;flex-wrap:wrap}.gm-security-action{min-height:38px;padding:0 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font-size:11px;font-weight:850;cursor:pointer}.gm-security-action:hover{border-color:var(--accent);color:var(--accent)}
+    
     @media(max-width:700px){.gm-security-card{align-items:flex-start;flex-direction:column}.gm-security-actions{width:100%}.gm-security-action{flex:1}}
-    @media(max-width:900px){.gm-grid{grid-template-columns:1fr}.gm-summary-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:900px){.gm-summary-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:540px){.gm-summary-grid{grid-template-columns:1fr}}
-    @media(max-width:700px){.gm-hero{padding:17px}.gm-card{min-height:150px;padding:16px}.gm-icon{margin-bottom:14px}}
   </style>
-<link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
-<link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
+  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+  <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
   <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
 </head>
-<body data-page="trabalho_gestor_plantoes" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
+<body data-page="trabalho_gestor_plantoes" data-default-shift-view="week" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
 <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
   <div class="app-shell">
@@ -100,14 +109,21 @@
         <section class="luria-page-spotlight" aria-label="Gestor de Plantões">
           <div class="luria-page-spotlight-copy">
             <strong data-page-title>Gestor de Plantões</strong>
-            <small class="luria-page-spotlight-helper">Organize sua rotina de plantões, escalas e repasses em um só lugar.</small>
+            <small class="luria-page-spotlight-helper">Dashboard iterativo com escala semanal e controle financeiro unificado.</small>
           </div>
         </section>
 
         <section class="gm-shell">
           <article class="gm-hero">
-            <h2>Gestor de Plantões</h2>
-            <p>Escala interativa, divisão inteligente de descanso da equipe e controle financeiro de repasses reunidos em um único lugar.</p>
+            <div class="gm-hero-info">
+              <h2>Dashboard de Plantões</h2>
+              <p>Escala semanal interativa, radar em tempo real e consolidação financeira completa em uma única página centralizada.</p>
+            </div>
+            <div class="gm-hero-actions">
+              <a href="/trabalho/divisor-descanso/" class="gm-tools-link">
+                <span>÷ Divisor de Descanso</span>
+              </a>
+            </div>
           </article>
 
           <!-- Radar Inteligente de Plantão Ao Vivo -->
@@ -116,33 +132,188 @@
           <!-- Métricas Resumidas do Mês -->
           <div id="gm-summary-metrics" class="gm-summary-grid"></div>
 
-          <div class="gm-grid">
-            <a class="gm-card" href="/trabalho/plantoes/">
-              <span class="gm-icon" aria-hidden="true">▦</span>
-              <h3>Escala</h3>
-              <p>Organize seus plantões, calendário mensal e semanal, datas, horários e locais de trabalho.</p>
-              <span class="gm-open">Abrir escala →</span>
-            </a>
-            <a class="gm-card" href="/trabalho/divisor-plantao/">
-              <span class="gm-icon" aria-hidden="true">÷</span>
-              <h3>Divisor de Plantão</h3>
-              <p>Divida horários e períodos do plantão entre os profissionais de forma exata e igualitária.</p>
-              <span class="gm-open">Abrir divisor →</span>
-            </a>
-            <a class="gm-card" href="/trabalho/financeiro/#instituicoes">
-              <span class="gm-icon" aria-hidden="true">▤</span>
-              <h3>Instituições e cobranças</h3>
-              <p>Consulte cada pagador, ajuste prazos e identifique cobranças pendentes.</p>
-              <span class="gm-open">Ver instituições →</span>
-            </a>
-            <a class="gm-card" href="/trabalho/financeiro/">
-              <span class="gm-icon" aria-hidden="true">$</span>
-              <h3>Financeiro</h3>
-              <p>Acompanhe recebimentos, descontos, impostos e valores líquidos estimados.</p>
-              <span class="gm-open">Abrir financeiro →</span>
-            </a>
+          <!-- SEÇÃO 1: ESCALA CENTRALIZADA (CALENDÁRIO SEMANAL / MENSAL) -->
+          <div class="gm-dashboard-section">
+            <article class="shift-agenda-card" id="shift-agenda-card">
+              <div class="shift-agenda-toolbar">
+                <div>
+                  <h2 style="margin:0 0 4px;font-size:18px;font-weight:900">Escala de Plantões</h2>
+                  <p style="margin:0;color:var(--muted);font-size:12.5px">Visão semanal interativa dos seus plantões e horários de trabalho.</p>
+                </div>
+                <div class="shift-agenda-actions">
+                  <button class="shift-form-submit" id="shift-add" type="button">＋ Adicionar plantão</button>
+                </div>
+              </div>
+              <div class="shift-agenda-controls">
+                <div class="shift-group-buttons" role="group" aria-label="Visualização da escala">
+                  <button id="shift-view-month" type="button" aria-pressed="false">Mensal</button>
+                  <button id="shift-view-week" type="button" aria-pressed="true">Semanal</button>
+                </div>
+                <div class="shift-nav-controls">
+                  <button id="shift-prev" type="button" aria-label="Período anterior">‹</button>
+                  <strong id="shift-calendar-title" aria-live="polite"></strong>
+                  <button id="shift-next" type="button" aria-label="Próximo período">›</button>
+                  <button id="shift-today" type="button">Hoje</button>
+                </div>
+              </div>
+              <div id="shift-calendar" aria-label="Calendário de plantões"></div>
+            </article>
+
+            <!-- Lista de Plantões Registrados -->
+            <article class="shift-list-card">
+              <div class="shift-agenda-toolbar">
+                <div>
+                  <h2>Plantões cadastrados</h2>
+                  <p>Edite horários, valores, confirme recebimentos ou exporte seus dados.</p>
+                </div>
+                <button id="export-shifts-btn" class="shift-action-btn" type="button">Exportar CSV</button>
+              </div>
+              <div id="shifts-list-container" class="shift-items-wrap"></div>
+            </article>
           </div>
 
+          <!-- SEÇÃO 2: PAINEL FINANCEIRO INTEGRADO -->
+          <div class="gm-dashboard-section" id="financeiro-integrado">
+            <div class="gm-section-header">
+              <div>
+                <h2><span>Gestão Financeira & Repasses</span> <span class="gm-tag-pill">Centralizado</span></h2>
+                <p>Acompanhamento de faturamento do mês, instituições pagadoras, pendências e estimativa líquida de impostos.</p>
+              </div>
+              <div class="shift-nav-controls" style="margin-left:auto">
+                <label for="fin-month-select" style="font-size:12px;font-weight:800;color:var(--muted)">Mês de referência:</label>
+                <input id="fin-month-select" type="month" style="padding:6px 10px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-weight:700">
+              </div>
+            </div>
+
+            <!-- Faturamento do Mês Vigente -->
+            <div>
+              <h3 style="margin:0 0 10px;font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Faturamento do Mês Selecionado</h3>
+              <div class="shift-stats-grid">
+                <div class="shift-stat-card">
+                  <span class="stat-label">Total Faturado</span>
+                  <strong class="stat-val" id="fin-month-total">R$ 0,00</strong>
+                  <span class="stat-sub">Mês selecionado</span>
+                </div>
+                <div class="shift-stat-card">
+                  <span class="stat-label">Valores Recebidos</span>
+                  <strong class="stat-val text-success" id="fin-month-paid">R$ 0,00</strong>
+                  <span class="stat-sub">Depósitos confirmados</span>
+                </div>
+                <div class="shift-stat-card">
+                  <span class="stat-label">A Receber / Pendentes</span>
+                  <strong class="stat-val text-warning" id="fin-month-pending">R$ 0,00</strong>
+                  <span class="stat-sub">Aguardando pagamento</span>
+                </div>
+                <div class="shift-stat-card">
+                  <span class="stat-label">Remuneração Média</span>
+                  <strong class="stat-val" id="fin-month-hourly">R$ 0,00/h</strong>
+                  <span class="stat-sub">Valor/hora médio</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Consolidado Acumulado -->
+            <div>
+              <h3 style="margin:0 0 10px;font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Consolidado Acumulado Geral</h3>
+              <div class="shift-stats-grid">
+                <div class="shift-stat-card">
+                  <span class="stat-label">Total Geral</span>
+                  <strong class="stat-val" id="fin-grand-total">R$ 0,00</strong>
+                  <span class="stat-sub">Todos os plantões</span>
+                </div>
+                <div class="shift-stat-card">
+                  <span class="stat-label">Total Já Pago</span>
+                  <strong class="stat-val text-success" id="fin-grand-paid">R$ 0,00</strong>
+                  <span class="stat-sub">Quitados</span>
+                </div>
+                <div class="shift-stat-card">
+                  <span class="stat-label">Total Pendente</span>
+                  <strong class="stat-val text-warning" id="fin-grand-pending">R$ 0,00</strong>
+                  <span class="stat-sub">Repasses em aberto</span>
+                </div>
+                <div class="shift-stat-card">
+                  <span class="stat-label">Horas Totais</span>
+                  <strong class="stat-val" id="fin-grand-hours">0h</strong>
+                  <span class="stat-sub">Carga horária total</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cobranças Atrasadas -->
+            <article class="fin-card">
+              <div>
+                <h2>Cobranças atrasadas</h2>
+                <p>Valores com data prevista anterior a hoje e ainda não quitados.</p>
+              </div>
+              <div>
+                <strong class="stat-val fin-late" id="fin-overdue-total">R$ 0,00</strong>
+                <p id="fin-overdue-count"></p>
+              </div>
+            </article>
+
+            <!-- Detalhamento por Hospital / Instituição -->
+            <article class="fin-card" id="instituicoes">
+              <div>
+                <h2>Instituições e cobranças</h2>
+                <p>Organizados por fonte pagadora com cálculo de prazos e repasses.</p>
+              </div>
+              <div id="fin-hospital-breakdown"></div>
+            </article>
+
+            <!-- Repasses Pendentes -->
+            <article class="fin-card">
+              <div>
+                <h2>Valores a receber por vencimento</h2>
+                <p>Plantões com saldo em aberto, ordenados pela data prevista de recebimento.</p>
+              </div>
+              <div id="fin-pending-table-container"></div>
+            </article>
+
+            <!-- Impostos e Líquido Estimado -->
+            <article class="fin-card">
+              <div>
+                <h2>Impostos, retenções e líquido estimado</h2>
+                <p>Configure a alíquota orientada por seu contador para cálculo de estimativa líquida.</p>
+              </div>
+              <form id="fin-tax-form" class="shift-field-group">
+                <div class="fin-settings-grid">
+                  <label>Tipo de contratação / regime
+                    <select id="fin-tax-regime">
+                      <option value="nao_informado">Não informado</option>
+                      <option value="simples">PJ · Simples Nacional</option>
+                      <option value="presumido">PJ · Lucro Presumido</option>
+                      <option value="real">PJ · Lucro Real</option>
+                      <option value="pf">Pessoa física / RPA</option>
+                      <option value="cooperativa">Cooperativa / intermediadora</option>
+                      <option value="custom">Personalizado</option>
+                    </select>
+                  </label>
+                  <label>Alíquota efetiva estimada (%)<input id="fin-tax-rate" type="number" min="0" max="100" step="any" placeholder="Informe com seu contador"></label>
+                  <label>Custos administrativos mensais (R$)<input id="fin-tax-cost" type="number" min="0" step="any" placeholder="Contabilidade, etc."></label>
+                </div>
+                <div><button class="shift-form-submit" type="submit">Salvar configuração</button></div>
+              </form>
+              <div class="fin-tax-summary">
+                <div><small>Tributos já retidos pelo pagador</small><strong id="fin-tax-withheld">—</strong></div>
+                <div><small>Tributos adicionais a reservar (estimativa)</small><strong id="fin-tax-reserve">—</strong></div>
+                <div><small>Líquido mensal estimado após tributos e custos</small><strong id="fin-tax-net">—</strong></div>
+              </div>
+              <p class="fin-notice" id="fin-tax-info"></p>
+              <p class="fin-notice fin-late" id="fin-tax-extra"></p>
+              <p class="fin-notice">A alíquota não é definida automaticamente pelo regime: depende da receita global do CNPJ, fator R, atividades e despesas. Retenção tributária já antecipada não é subtraída novamente do líquido.</p>
+            </article>
+          </div>
+
+          <!-- Banner de Acesso Rápido ao Divisor de Descanso -->
+          <div class="gm-tools-banner">
+            <div>
+              <strong>Precisa organizar os períodos de descanso do plantão?</strong>
+              <span>Use a ferramenta dedicada de divisão igualitária e equitativa de descanso da equipe médica.</span>
+            </div>
+            <a href="/trabalho/divisor-descanso/" class="gm-tools-link">Abrir Divisor de Descanso →</a>
+          </div>
+
+          <!-- Segurança -->
           <div class="gm-security-row">
             <div class="gm-security-card">
               <div class="gm-security-copy">
@@ -155,6 +326,109 @@
             </div>
           </div>
         </section>
+
+        <!-- Modais de Operação -->
+        <datalist id="shift-institutions-options"></datalist>
+
+        <dialog id="shift-modal" class="shift-modal" aria-labelledby="shift-modal-title">
+          <div class="shift-modal-header">
+            <div>
+              <h2 id="shift-modal-title">Adicionar plantão</h2>
+              <p>Todos os horários, valores e datas podem ser alterados.</p>
+            </div>
+            <button id="shift-modal-close" type="button" aria-label="Fechar formulário">✕</button>
+          </div>
+          <form id="add-shift-form" class="shift-field-group" novalidate>
+            <div class="shift-field-row">
+              <label class="shift-field-group">Data do plantão<input id="shift-date" type="date" required></label>
+              <label class="shift-field-group">Setor<input id="shift-sector" type="text" placeholder="PS, UTI, enfermaria"></label>
+            </div>
+            <label class="shift-field-group">Hospital / local de trabalho<input id="shift-place" type="text" required maxlength="120" placeholder="Onde será realizado"></label>
+            <label class="shift-field-group">Instituição que pagará<input id="shift-payer" type="text" maxlength="120" placeholder="Se vazio, usa o hospital"></label>
+            <div class="shift-field-row">
+              <label class="shift-field-group">Horário de início<input id="shift-start-time" type="time" value="07:00" required></label>
+              <label class="shift-field-group">Horário de término<input id="shift-end-time" type="time" value="19:00" required></label>
+            </div>
+            <label class="shift-field-group">Data do término (opcional)<input id="shift-end-date" type="date"><small>Sem data, horários iguais ou anteriores ao início indicam o dia seguinte.</small></label>
+            <div class="shift-field-row">
+              <label class="shift-field-group">Forma de pagamento
+                <select id="shift-price-mode">
+                  <option value="total">Valor total do plantão</option>
+                  <option value="hour">Valor por hora</option>
+                </select>
+              </label>
+              <label class="shift-field-group" id="shift-hour-wrap" hidden>Valor por hora (R$)<input id="shift-hour-rate" type="number" min="0" step="any" inputmode="decimal" placeholder="120,00"></label>
+            </div>
+            <label class="shift-field-group">Valor bruto combinado (R$)<input id="shift-val" type="number" min="0" step="any" inputmode="decimal" required placeholder="1500,00"></label>
+            <label class="shift-field-group">Previsão de recebimento<input id="shift-expected-date" type="date"><small id="shift-due-hint">Configurável por instituição no Financeiro.</small></label>
+            <div class="shift-field-row">
+              <label class="shift-field-group">Tributos retidos pelo pagador (R$)<input id="shift-withheld-tax" type="number" min="0" step="any" inputmode="decimal" placeholder="0,00"></label>
+              <label class="shift-field-group">Taxas retidas pelo pagador (R$)<input id="shift-payer-fee" type="number" min="0" step="any" inputmode="decimal" placeholder="0,00"></label>
+            </div>
+            <div class="shift-field-row">
+              <label class="shift-field-group">Valor já depositado (R$)<input id="shift-received-amount" type="number" min="0" step="any" inputmode="decimal" placeholder="0,00"></label>
+              <label class="shift-field-group">Situação
+                <select id="shift-status">
+                  <option value="pendente">Plantão a receber</option>
+                  <option value="trocado">Cedido / sem cobrança</option>
+                </select>
+              </label>
+            </div>
+            <label class="shift-field-group">Observações<textarea id="shift-notes" maxlength="1000" placeholder="Troca, conferência, observações..."></textarea></label>
+            <p id="shift-error" class="shift-error" role="alert"></p>
+            <div class="shift-modal-actions">
+              <button class="shift-action-btn" id="shift-cancel" type="button">Cancelar</button>
+              <button type="submit" class="shift-form-submit">Salvar plantão</button>
+            </div>
+          </form>
+        </dialog>
+
+        <dialog id="fin-institution-modal" class="shift-modal" aria-labelledby="fin-institution-name">
+          <div class="shift-modal-header">
+            <div>
+              <h2 id="fin-institution-name">Instituição</h2>
+              <p>Configure a regra padrão de recebimento desta instituição.</p>
+            </div>
+            <button id="fin-institution-close" type="button" aria-label="Fechar">✕</button>
+          </div>
+          <form id="fin-institution-form" class="shift-field-group">
+            <label class="shift-field-group">Regra de pagamento
+              <select id="fin-rule">
+                <option value="none">Sem regra (data manual)</option>
+                <option value="next-month">Dia do mês seguinte</option>
+                <option value="days">Dias após o plantão</option>
+              </select>
+            </label>
+            <label class="shift-field-group">Dia do mês (1–31)<input id="fin-rule-day" type="number" min="1" max="31" value="15"></label>
+            <label class="shift-field-group">Dias após o plantão<input id="fin-rule-days" type="number" min="0" max="365" value="30"></label>
+            <label class="shift-field-group"><span><input id="fin-apply-missing" type="checkbox" checked> Aplicar somente aos plantões sem previsão cadastrada</span></label>
+            <p class="fin-notice">Datas já preenchidas não serão alteradas.</p>
+            <div class="shift-modal-actions">
+              <button id="fin-institution-cancel" type="button" class="shift-action-btn">Cancelar</button>
+              <button type="submit" class="shift-form-submit">Salvar regra</button>
+            </div>
+          </form>
+        </dialog>
+
+        <dialog id="fin-payment-modal" class="shift-modal" aria-labelledby="fin-payment-title">
+          <div class="shift-modal-header">
+            <div>
+              <h2 id="fin-payment-title">Registrar recebimento</h2>
+              <p id="fin-pay-detail"></p>
+            </div>
+            <button id="fin-payment-close" type="button" aria-label="Fechar">✕</button>
+          </div>
+          <form id="fin-payment-form" class="shift-field-group">
+            <label class="shift-field-group">Valor depositado agora (R$)<input id="fin-pay-amount" type="number" min="0.01" step="any" required></label>
+            <label class="shift-field-group">Data do depósito<input id="fin-pay-date" type="date" required></label>
+            <p class="fin-notice">Pagamentos parciais reduzem o saldo sem marcar o plantão como quitado.</p>
+            <p id="fin-pay-error" class="shift-error" role="alert"></p>
+            <div class="shift-modal-actions">
+              <button id="fin-payment-cancel" type="button" class="shift-action-btn">Cancelar</button>
+              <button class="shift-form-submit" type="submit">Registrar pagamento</button>
+            </div>
+          </form>
+        </dialog>
       </div>
     </main>
   </div>
@@ -163,7 +437,9 @@
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
 <script src="/assets/js/shift-manager-security.js?v=4-fixed"></script>
 <script src="/assets/js/shift-manager-core.js?v=20261029-v1"></script>
-<script src="/assets/js/gestor-plantoes-hub.js?v=20261030-v1"></script>
+<script src="/assets/js/plantoes-escala-v2.js?v=20261030-v2"></script>
+<script src="/assets/js/plantoes-financeiro-v2.js?v=20261030-v2"></script>
+<script src="/assets/js/gestor-plantoes-hub.js?v=20261030-v2"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
 </html>
