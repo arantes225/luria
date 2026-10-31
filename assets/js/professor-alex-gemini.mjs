@@ -350,7 +350,7 @@ document.getElementById("alex-new-conversation")?.addEventListener("click", () =
 
 function isStudyPlanningRequest(value) {
   const clean = String(value || "").toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ");
-  return /\b(cronograma|aulas? (?:desta|da|por) semana|rodando em|lista de quest|lista de flashcard|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma)\b/.test(clean);
+  return /\b(cronograma|planejamento|planejar estudos?|organizar (?:meus? )?estudos?|reorganizar (?:minha )?semana|aulas? (?:desta|da|por) semana|rodando em|lista(?:s)? de quest|lista(?:s)? de flashcard|questoes? (?:sobre|de|para|do)|flashcards? (?:sobre|de|para|do)|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma|montar.*(?:quest|flashcard)|gerar.*(?:quest|flashcard))\b/.test(clean);
 }
 
 function renderStudyAction(plan) {
@@ -364,7 +364,7 @@ function renderStudyAction(plan) {
   const count = Number(plan.preview?.planned_count || 0);
   summary.textContent = plan.type === "schedule_focus"
     ? `${plan.topic}: ${count} aula${count === 1 ? "" : "s"} entre ${plan.start_date} e ${plan.end_date}, ${plan.lessons_per_day || 1} por dia de estudo. ${Number(plan.preview?.displaced_count || 0)} aula(s) atualmente agendada(s) poderão mudar de data.`
-    : `${plan.topic}: ${plan.question_count || 0} questões e ${plan.flashcard_count || 0} flashcards, além de uma apostila compatível quando disponível.`;
+    : `${plan.topic}: ${plan.question_count || 0} questões e ${plan.flashcard_count || 0} flashcards selecionados do acervo existente, além de uma apostila compatível quando disponível.`;
   const actions = document.createElement("div");
   actions.className = "alex-study-action-buttons";
   const apply = document.createElement("button");
