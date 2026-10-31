@@ -138,3 +138,15 @@ body[data-page="professor_alex"] .alex-chat-feed {
 .alex-study-action-buttons,.alex-study-action-links{display:flex;flex-wrap:wrap;gap:8px}
 .alex-study-action-buttons button,.alex-study-action-links a{padding:9px 13px;border:1px solid rgba(109,93,252,.4);border-radius:10px;background:var(--surface,#fff);color:var(--text,#1c2040);font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
 .alex-study-action-buttons button:first-child{background:var(--primary,#6d5dfc);color:#fff}
+
+/* Correção fonética no chat; herda os tokens do tema ativo (claro, escuro, rosa). */
+body[data-page="professor_alex"] .alex-stt-correction{max-width:min(100%,580px);width:100%;box-sizing:border-box;display:grid;gap:7px}
+body[data-page="professor_alex"] .alex-stt-correction .alex-msg-header{display:flex;align-items:center;gap:8px}
+body[data-page="professor_alex"] .alex-stt-correction-badge{display:inline-flex;align-items:center;gap:5px;font-size:.77rem;font-weight:750;color:var(--primary,var(--accent,#184888));letter-spacing:.01em}
+body[data-page="professor_alex"] .alex-stt-correction-bubble{box-sizing:border-box;border:1px solid var(--accent,var(--primary,#184888));border-radius:14px;background:var(--surface,rgba(24,72,136,.05));color:var(--text,inherit);padding:14px;box-shadow:0 4px 16px rgba(0,0,0,.05)}
+body[data-page="professor_alex"] .alex-stt-correction-bubble p{font-size:.96rem;line-height:1.5;margin:0 0 12px}
+body[data-page="professor_alex"] .alex-stt-correction-actions{display:flex;flex-wrap:wrap;gap:8px}
+body[data-page="professor_alex"] .alex-stt-correction-apply{appearance:none;max-width:100%;min-height:44px;border:0;border-radius:10px;padding:11px 15px;background:var(--primary,#184888);color:#fff;font:inherit;font-weight:750;cursor:pointer;white-space:normal;text-align:center}
+body[data-page="professor_alex"] .alex-stt-correction-apply:focus-visible{outline:3px solid var(--accent,#5b9bda);outline-offset:3px}
+body[data-page="professor_alex"] .alex-stt-correction-apply:disabled{opacity:.65;cursor:default}
+@media(max-width:600px){body[data-page="professor_alex"] .alex-stt-correction-apply{width:100%}}
