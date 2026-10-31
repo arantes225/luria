@@ -50,3 +50,21 @@ test('Styles remain scoped and include mobile layout', () => {
   assert.match(css, /@media\(max-width:750px\)/);
   assert.match(css, /prefers-reduced-motion/);
 });
+
+
+test('Paper diary uses browser PDF generator and a manual transcription-only workflow', () => {
+  const pdf = read('assets/js/work-diabetes-paper.js');
+  assert.match(html, /work-diabetes-paper\.js/);
+  assert.match(html, /luria-lazy-vendors\.js/);
+  assert.match(html, /jspdf@4\.2\.1/);
+  assert.match(script, /id="dm-download-paper"/);
+  assert.match(script, /id="dm-paper-grid"/);
+  assert.match(script, /id="dm-create-paper-grid"/);
+  assert.match(pdf, /Array\.from\(\{length:14\}/);
+  assert.match(pdf, /const timeSlots/);
+  assert.match(pdf, /new Doc\(\{orientation:'landscape',unit:'mm',format:'a4'/);
+  assert.match(pdf, /Nenhuma medição foi salva na LURIA/);
+  assert.doesNotMatch(pdf, /localStorage|sessionStorage|\.from\('.*'\)\.insert/);
+  assert.doesNotMatch(pdf, /recognize|OCR|Tesseract/i);
+  assert.match(pdf, /formula injection/);
+});
