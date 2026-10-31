@@ -86,12 +86,15 @@ test("Fast answer format is sent to server and controls output budget", () => {
   assert.match(edge, /model: "local-fast-path"/);
 });
 
-test("Gemini 3.8 TTS stays available for lessons while quick voice replies avoid the second AI call", () => {
+test("Every voice answer uses real server audio with fast Gemini TTS as default", () => {
   assert.match(edge, /voice:\s*"Puck"/);
   assert.doesNotMatch(edge, /prebuiltVoiceConfig:\s*\{/);
-  assert.match(edge, /channel === "voice" && depth === "aula"/);
-  assert.match(edge, /device_tts_fast_path/);
+  assert.match(edge, /const FAST_TTS_MODEL = "gemini-3\.8-flash-lite-tts"/);
+  assert.match(edge, /if \(experience === "alex" && channel === "voice"\)/);
+  assert.match(edge, /ALEX_FAST_TTS_MODEL/);
   assert.match(edge, /audioError = "tts_unavailable"/);
+  assert.doesNotMatch(edge, /audioError = "device_tts_fast_path"/);
+  assert.match(client, /isSocial && !hasMaterial && !isLiveActive/);
   assert.doesNotMatch(client, /rememberVoiceReply/);
 });
 
@@ -106,8 +109,9 @@ test("Natural voice is opt-in and fast voice is immediate", () => {
   assert.match(page, /id="alex-natural-voice"/);
   assert.doesNotMatch(page, /id="alex-natural-voice"[^>]*checked/);
   assert.match(edge, /voiceQuality = data\.voice_quality === "natural" \? "natural" : "fast"/);
-  assert.match(edge, /channel === "voice" && depth === "aula" && voiceQuality === "natural"/);
-  assert.match(edge, /audioError = "device_tts_fast_path"/);
+  assert.match(edge, /voiceQuality === "natural" && depth === "aula"/);
+  assert.match(edge, /FAST_TTS_MODEL/);
+  assert.match(edge, /audioBase64 = audioPart.data/);
 });
 
 test("Edge background accounting preserves atomic reservation", () => {
