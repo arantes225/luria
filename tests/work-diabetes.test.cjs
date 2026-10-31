@@ -89,7 +89,7 @@ test('Generated Traube PDF uses the existing official logo, including 10% waterm
  const paper=read('assets/js/work-diabetes-paper.js');
  assert.match(paper, /\/assets\/img\/logos\/logo-icone-original\.png/);
  assert.match(paper, /doc\.addImage\(brand\.icon/);
- assert.match(paper, /mark\.globalAlpha=0\.10/);
+ assert.match(paper, /mark\.globalAlpha=0\.05/);
  assert.match(paper, /doc\.addImage\(brand\.watermark/);
  assert.match(paper, /loadOfficialLogo\(\)/);
  assert.doesNotMatch(paper, /data:image\/svg\+xml|iconLeaf|drawLeaf/);
