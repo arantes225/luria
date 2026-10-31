@@ -186,7 +186,7 @@
     doc.setDrawColor(...BORDER);doc.setLineWidth(.5);
     doc.roundedRect(boxX,boxY,boxW,boxH,2.5,2.5);
     text('Carimbo do médico',boxX+3,boxY+5,8.4,SUB,'bold');
-    text('Levar esta folha à consulta.',M,194,9,SUB);
+    text('*Leve a folha preenchida na próxima consulta.*',M,194,9.8,BLUE,'bold');
   }
 
   btn.addEventListener('click',async () => {
