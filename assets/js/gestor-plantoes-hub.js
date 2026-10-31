@@ -69,7 +69,7 @@
             <div class="gm-radar-progress-fill" style="width: ${pct}%"></div>
           </div>
           <div class="gm-radar-actions">
-            <a href="/trabalho/divisor-descanso/" class="gm-radar-btn primary">Dividir Descanso da Equipe →</a>
+            <a href="/trabalho/divisor-descanso/" class="gm-radar-btn primary">Organizar Descanso da Equipe →</a>
             <a href="/trabalho/passometro/" class="gm-radar-btn secondary">Passagem de Plantão / Leitos</a>
           </div>
         </div>

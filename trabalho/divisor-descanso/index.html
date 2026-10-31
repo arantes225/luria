@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -6,7 +6,7 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Divisor de Descanso · LURIA</title>
+  <title>Organizador de Descanso � LURIA</title>
   <meta name="theme-color" content="#184888">
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
@@ -29,13 +29,13 @@
     .shift-btn.secondary{background:var(--surface-2);color:var(--text);border-color:var(--border)}
     .shift-output{margin:0;padding:16px;border-radius:14px;border:1px solid var(--border);background:var(--surface-2);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:13px;line-height:1.6;white-space:pre-wrap}
     
-    /* Presets rápidos */
+    /* Presets r�pidos */
     .div-presets-bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
     .div-presets-title{font-size:11.5px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em}
     .div-quick-preset-btn{min-height:32px;padding:0 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-size:11.5px;font-weight:750;cursor:pointer;transition:all .12s}
     .div-quick-preset-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
 
-    /* Régua Visual */
+    /* R�gua Visual */
     .div-timeline-section{display:grid;gap:8px}
     .div-timeline-title{font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em}
     .div-timeline-track{position:relative;height:52px;border-radius:12px;overflow:hidden;background:var(--surface-2);display:flex;border:1px solid var(--border)}
@@ -67,74 +67,74 @@
     <main class="main">
       <div class="page">
         <header class="topbar">
-          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">?</button>
           <div class="page-heading">
             <span class="eyebrow" data-page-eyebrow></span>
             <h1 data-page-title></h1>
           </div>
         </header>
-        <section class="luria-page-spotlight" aria-label="Divisor de Descanso">
+        <section class="luria-page-spotlight" aria-label="Organizador de Descanso">
           <div class="luria-page-spotlight-copy">
-            <strong data-page-title>Divisor de Descanso</strong>
-            <small class="luria-page-spotlight-helper">Distribua horários de descanso e cobertura da equipe de forma igualitária com régua visual interativa.</small>
+            <strong data-page-title>Organizador de Descanso</strong>
+            <small class="luria-page-spotlight-helper">Distribua hor�rios de descanso e cobertura da equipe de forma igualit�ria com r�gua visual interativa.</small>
           </div>
         </section>
 
         <section class="shift-shell">
           <article class="shift-card">
             <div>
-              <h2>Calculadora de Divisão de Horários e Descanso</h2>
-              <p>Informe o horário de início, a duração total do plantão e o número de plantonistas para calcular automaticamente os turnos de cobertura/descanso ao minuto.</p>
+              <h2>Calculadora de Divis�o de Hor�rios e Descanso</h2>
+              <p>Informe o hor�rio de in�cio, a dura��o total do plant�o e o n�mero de plantonistas para calcular automaticamente os turnos de cobertura/descanso ao minuto.</p>
             </div>
 
             <!-- Atalhos de 1 toque -->
             <div class="div-presets-bar">
               <span class="div-presets-title">Atalhos:</span>
-              <button type="button" class="div-quick-preset-btn" data-preset="noturno-12">🌙 Noturno 12h</button>
-              <button type="button" class="div-quick-preset-btn" data-preset="diurno-12">☀️ Diurno 12h</button>
-              <button type="button" class="div-quick-preset-btn" data-preset="noturno-rodadas">🔄 2 Rodadas</button>
-              <button type="button" class="div-quick-preset-btn" data-preset="24h">⏱️ 24 Horas</button>
+              <button type="button" class="div-quick-preset-btn" data-preset="noturno-12">?? Noturno 12h</button>
+              <button type="button" class="div-quick-preset-btn" data-preset="diurno-12">?? Diurno 12h</button>
+              <button type="button" class="div-quick-preset-btn" data-preset="noturno-rodadas">?? 2 Rodadas</button>
+              <button type="button" class="div-quick-preset-btn" data-preset="24h">?? 24 Horas</button>
             </div>
 
             <div class="shift-grid">
-              <label class="shift-field">Horário de início
+              <label class="shift-field">Hor�rio de in�cio
                 <input id="div-start" type="time" value="19:00">
               </label>
-              <label class="shift-field">Duração total (horas, livre)
+              <label class="shift-field">Dura��o total (horas, livre)
                 <input id="div-hours" type="number" min="0.0167" max="72" step="any" value="12" inputmode="decimal" aria-describedby="div-hours-help">
               </label>
-              <label class="shift-field">Nº de plantonistas
+              <label class="shift-field">N� de plantonistas
                 <input id="div-docs" type="number" min="1" max="12" value="2">
               </label>
-              <label class="shift-field">Formato da divisão
+              <label class="shift-field">Formato da divis�o
                 <select id="div-mode">
-                  <option value="blocos" selected>Bloco único corrido por pessoa</option>
+                  <option value="blocos" selected>Bloco �nico corrido por pessoa</option>
                   <option value="rodadas">Fracionado em 2 rodadas</option>
                   <option value="personalizado">Personalizado (horas e minutos por pessoa)</option>
                 </select>
               </label>
             </div>
-            <label class="shift-field">Nomes dos plantonistas (opcional — separados por vírgula)
+            <label class="shift-field">Nomes dos plantonistas (opcional � separados por v�rgula)
               <input id="div-names" type="text" placeholder="Ex.: Dra. Ana, Dr. Bruno, Dra. Carla">
             </label>
-            <p id="div-hours-help">Exemplo: 7,5 horas equivalem a 7h30. No modo personalizado, cada período pode ter qualquer duração em horas e minutos.</p>
+            <p id="div-hours-help">Exemplo: 7,5 horas equivalem a 7h30. No modo personalizado, cada per�odo pode ter qualquer dura��o em horas e minutos.</p>
             
             <!-- Banner Tempo Real -->
             <div id="div-now-status" class="div-now-status" hidden></div>
 
-            <!-- Régua Visual -->
+            <!-- R�gua Visual -->
             <div class="div-timeline-section">
-              <span class="div-timeline-title">Régua Visual de Descanso</span>
+              <span class="div-timeline-title">R�gua Visual de Descanso</span>
               <div class="div-timeline-track">
                 <div id="div-timeline-bar" style="display:flex;width:100%;height:100%"></div>
                 <div id="div-timeline-now" class="div-timeline-now" style="display:none" title="Momento Atual"></div>
               </div>
             </div>
 
-            <div id="div-custom-wrap" hidden><div class="shift-actions"><strong>Períodos livres por profissional</strong><button type="button" class="shift-btn secondary" id="div-equal-btn">Distribuir igualmente</button></div><div id="div-custom-list" class="div-custom-list"></div><p id="div-custom-feedback" aria-live="polite"></p></div>
+            <div id="div-custom-wrap" hidden><div class="shift-actions"><strong>Per�odos livres por profissional</strong><button type="button" class="shift-btn secondary" id="div-equal-btn">Distribuir igualmente</button></div><div id="div-custom-list" class="div-custom-list"></div><p id="div-custom-feedback" aria-live="polite"></p></div>
             <div class="shift-actions">
-              <button class="shift-btn" id="div-calc-btn" type="button">Calcular Divisão</button>
-              <button class="shift-btn secondary" id="div-copy-btn" type="button">📱 Copiar para WhatsApp</button>
+              <button class="shift-btn" id="div-calc-btn" type="button">Calcular Divis�o</button>
+              <button class="shift-btn secondary" id="div-copy-btn" type="button">?? Copiar para WhatsApp</button>
             </div>
             <p id="div-feedback" class="fin-late" role="alert"></p>
             <pre class="shift-output" id="div-output"></pre>
@@ -146,7 +146,6 @@
 <script src="/assets/vendor/supabase-2.110.6.js"></script>
 <script src="/assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
-<script src="/assets/js/shift-manager-security.js?v=4-fixed"></script>
 <script src="/assets/js/divisor-plantao-v2.js?v=20261030-v2"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 </body>
