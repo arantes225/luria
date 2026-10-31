@@ -44,6 +44,8 @@ jobs:
         run: node --test tests/pages-base-links.test.cjs
       - name: Guard public-site artifact against internal files
         run: node --test tests/public-artifact-security.test.cjs
+      - name: Verify Diabetes hub, printable diary and work navigation
+        run: node --test --test-isolation=none tests/work-diabetes.test.cjs tests/work-hub.test.cjs
       - name: Verify ECG normal photo and guided scanner remain independent
         run: node --test --test-isolation=none tests/ecg-normal-photo.test.cjs tests/ecg-photo-perspective.test.cjs tests/ecg-photo-canvas-regression.test.cjs tests/ecg-pwa-capture-isolation.test.cjs tests/ecg-live-paper-gate.test.cjs tests/ecg-lead-assignment-quarantine.test.cjs tests/ecg-provisional-restore.test.cjs tests/ecg-e2e-integration.test.cjs tests/ecg-physionet-benchmark.test.cjs tests/work-ecg-smart-camera.test.cjs
       - name: Check shared CSS and application routes

@@ -1375,6 +1375,7 @@ const PAGE_INFO = {
   admin: { title: "Admin", eyebrow: "Gestão TRAUBE", helper: "Gerencie conteúdo, acessos e operação da plataforma." },
   beta_testers: { title: "Beta Testers", eyebrow: "Feedback beta", helper: "Acompanhe sugestões e pontos de melhoria." },
   trabalho_dashboard: { title: "Dashboard", eyebrow: "Rotina clínica", helper: "Acesse rapidamente as ferramentas do seu dia." },
+  trabalho_diabetes: { title: "Diabetes", eyebrow: "Avaliação e monitorização", helper: "Diretrizes, medicamentos, simulador de HbA1c e diário glicêmico de 7 dias." },
   trabalho_anamnese: { title: "Organizador de Anamnese", eyebrow: "IA Clínica", helper: "Estruture dados soltos e transcrições em anamnese médica completa." },
   trabalho_paciente: { title: "Paciente — Central Clínica", eyebrow: "Contexto temporário", helper: "Organize uma avaliação sem substituir as ferramentas clínicas independentes." },
   trabalho_gestor_plantoes: { title: "Gestor de Plantões", eyebrow: "Escalas e plantões", helper: "Organize sua rotina de plantões em um só lugar." },

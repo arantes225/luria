@@ -53,18 +53,19 @@ test('Work shell settles without mutation loops and restores direct page visits 
  assert.equal(d.querySelectorAll('#traube-brand-logo').length,1);
  assert.equal(d.querySelectorAll('[data-work-account="beta-testers-nav-link"]').length,1);
 });
-test('Work Dashboard groups ten real routes, provides PCR, and ignores retired presentation preferences',async t=>{
+test('Work Dashboard groups thirteen real routes, provides PCR, and ignores retired presentation preferences',async t=>{
  const w=fixture(t,{page:'trabalho_dashboard'}),d=w.document;
  w.localStorage.setItem('traube:work-dashboard-layout:guest','simple');w.eval(hub);await settle(w);
  assert.equal(d.querySelectorAll('.work-hub-category').length,3);
- assert.equal(d.querySelectorAll('.work-hub-card').length,10);
+ assert.equal(d.querySelectorAll('.work-hub-card').length,13);
+ assert.equal(d.querySelector('.work-hub-card[href="/trabalho/diabetes/"]')?.textContent.includes('Diabetes'), true);
  const links=[...d.querySelectorAll('.work-hub-card,.work-hub-emergency')];
  for(const link of links) {
   const route=decodeURIComponent(link.getAttribute('href')).replace(/^\//,'');
   assert.ok(fs.existsSync(route+'index.html'),route);
   assert.ok(link.querySelector('svg[aria-hidden="true"]'));
  }
- assert.equal(new Set(links.map(l=>l.href)).size,11);
+ assert.equal(new Set(links.map(l=>l.href)).size,14);
  assert.equal(d.querySelector('.work-hub-patient').getAttribute('href'),'/trabalho/paciente/');
  assert.equal(d.querySelector('.work-hub-return').hidden,true);
  assert.equal(d.querySelector('.work-hub-emergency').getAttribute('href'),'/trabalho/pcr/');
@@ -72,7 +73,7 @@ test('Work Dashboard groups ten real routes, provides PCR, and ignores retired p
 test('all authenticated Work pages share the hub adapter and preserve the public access page',()=>{
  const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(dir+'/'+e.name):[dir+'/'+e.name]);
  const paths=walk('trabalho').filter(p=>p.endsWith('.html')&&fs.readFileSync(p,'utf8').includes('data-ui-work="v2"'));
- assert.equal(paths.length,23);
+ assert.equal(paths.length,25);
  for(const path of paths) {
   const html=fs.readFileSync(path,'utf8');
   assert.match(html,/data-ui-work-navigation="hub"/);
