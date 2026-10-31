@@ -490,23 +490,6 @@
       });
     });
 
-    // Listener do Wells TEP
-    const wellsBoxes = els.detail.querySelectorAll('.wells-item');
-    if (wellsBoxes.length) {
-      const updateWells = () => {
-        let pts = 0;
-        wellsBoxes.forEach(b => { if (b.checked) pts += Number(b.dataset.pts); });
-        const disp = els.detail.querySelector('#wells-score-display');
-        const rec = els.detail.querySelector('#wells-rec-display');
-        if (disp) disp.textContent = 'Pontuação: ' + pts.toFixed(1) + ' pontos';
-        if (rec) {
-          if (pts <= 4) rec.textContent = 'Wells ≤ 4 pontos: TEP improvável. Solicitar D-Dímero de alta sensibilidade; se negativo descarta TEP.';
-          else rec.textContent = 'Wells > 4 pontos: TEP provável (alta suspeita). Indicar Angio-TC de tórax imediata e considerar anticoagulação plena empírica se não houver sangramento.';
-        }
-      };
-      wellsBoxes.forEach(b => b.addEventListener('change', updateWells));
-    }
-
     els.detail.querySelectorAll('[data-recipe-med]').forEach(box => box.addEventListener('change', () => {
       const recIndex = Number(box.dataset.recipeMed);
       const routeIndex = Number(box.dataset.routeIndex);
