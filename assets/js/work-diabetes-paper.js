@@ -94,10 +94,10 @@
     const lines=[header.map(csvSafe).join(';')].concat(rows.map(r=>[r.date,...timeSlots.map(t=>r[t[0]].trim().toUpperCase()),r.notes].map(csvSafe).join(';')));
     const blob=new Blob(['\uFEFF'+lines.join('\r\n')],{type:'text/csv;charset=utf-8'});
     const url=URL.createObjectURL(blob);
-    const a=document.createElement('a');a.href=url;a.download='LURIA_Diario_Glicemico_'+currentStart+'.csv';
+    const a=document.createElement('a');a.href=url;a.download='Traube_Diario_Glicemico_'+currentStart+'.csv';
     document.body.appendChild(a);a.click();a.remove();
     setTimeout(()=>URL.revokeObjectURL(url),2000);
-    note('CSV exportado para o dispositivo. Nenhuma medição foi salva na LURIA.');
+    note('CSV exportado para o dispositivo. Nenhuma medição foi salva na Traube.');
   });
   const paperCols=[
     {label:['DIA'],w:28},{label:['JEJUM'],w:31},
