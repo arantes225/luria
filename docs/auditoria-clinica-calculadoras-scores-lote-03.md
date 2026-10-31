@@ -2,7 +2,7 @@
 
 **Data:** 24/10/2026  
 **Abrangência:** 11 calculadoras finais (61–71) + 19 escores iniciais (01–19).  
-**Repositório:** `arantes225/luria`, branch `main`  
+**Repositório:** `arantes225/traube`, branch `main`  
 **Validação realizada:** fórmulas e limites, unidades, entradas plausíveis, restrição de população, referências primárias/diretrizes, proteção contra interpretação inadequada e testes unitários reproduzíveis.
 
 ## Resultado geral

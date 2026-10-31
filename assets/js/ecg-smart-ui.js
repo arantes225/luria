@@ -957,8 +957,8 @@
   // Hidratação a partir de sessão de captura prévia (ex.: retorno de /trabalho/ecg/captura/)
   function checkSavedSession() {
     try {
-      const savedSession = sessionStorage.getItem("luria_ecg_session");
-      const savedLeads = sessionStorage.getItem("luria_ecg_leads");
+      const savedSession = sessionStorage.getItem("traube_ecg_session");
+      const savedLeads = sessionStorage.getItem("traube_ecg_leads");
       if (savedSession && savedLeads) {
         const pkg = JSON.parse(savedSession);
         const leads = JSON.parse(savedLeads);
@@ -973,8 +973,8 @@
         updateCalibrationUI(pkg?.calibration);
         renderStage2Waveforms(leads);
 
-        sessionStorage.removeItem("luria_ecg_session");
-        sessionStorage.removeItem("luria_ecg_leads");
+        sessionStorage.removeItem("traube_ecg_session");
+        sessionStorage.removeItem("traube_ecg_leads");
       }
     } catch (e) {
       console.warn("Erro ao carregar sessão salva de ECG:", e);

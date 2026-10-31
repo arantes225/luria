@@ -441,7 +441,7 @@ export const ReelSimuladorTech: React.FC = () => {
       }}
     >
       {/* Trilha Sonora High-Tech + Bipes Reais do Monitor */}
-      <Audio src={staticFile('audio/luria-tech-simulador-30s.mp3')} volume={0.95} />
+      <Audio src={staticFile('audio/traube-tech-simulador-30s.mp3')} volume={0.95} />
 
       {/* ====================================================================
           CAMADA 0: BACKGROUND CYBER-MEDICAL COM GRID 3D E LUZES VOLUMÉTRICAS

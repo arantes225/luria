@@ -6,11 +6,11 @@ const turn=()=>new Promise(resolve=>setImmediate(resolve));
 async function passometroFixture() {
   const f=ownerFixture(),c=f.context;await c.TraubeLocalOwnerStore.ready;
   const timers=new Map(),cloud=new Map(),writes=[];let sequence=0;
-  Object.assign(c,{STORAGE_KEY:'luria:passometro:v1',SYNC_TABLE:'fixture',RETENTION_MS:1e12,state:{decks:[],userId:'A',syncTimer:null},renderDecks(){},$:()=>({hidden:false,reset(){},replaceChildren(){}}),closeDialog(){},resetPatientForm(){},setTimeout:fn=>{timers.set(++sequence,fn);return sequence},clearTimeout:id=>timers.delete(id)});
+  Object.assign(c,{STORAGE_KEY:'traube:passometro:v1',SYNC_TABLE:'fixture',RETENTION_MS:1e12,state:{decks:[],userId:'A',syncTimer:null},renderDecks(){},$:()=>({hidden:false,reset(){},replaceChildren(){}}),closeDialog(){},resetPatientForm(){},setTimeout:fn=>{timers.set(++sequence,fn);return sequence},clearTimeout:id=>timers.delete(id)});
   c.supabaseClient.from=()=>({select:()=>({eq:async(_,id)=>({data:[...cloud.values()].filter(x=>x.user_id===id)})}),upsert:async row=>{writes.push(row);cloud.set(row.user_id+':'+row.deck_id,{...row});return {}},delete:()=>({eq:(_,owner)=>({eq:async(_,id)=>{cloud.delete(owner+':'+id);return {}}})})});
   const html=source('trabalho/passometro/index.html');
   vm.runInContext(html.slice(html.indexOf('    function localDecks(){'),html.indexOf('    function activeDeck(){')),c);
-  const hook=html.indexOf('    window.addEventListener("luria:owner-changed"');
+  const hook=html.indexOf('    window.addEventListener("traube:owner-changed"');
   vm.runInContext(html.slice(hook,html.indexOf('    window.addEventListener("focus"',hook)),c);
   return {...f,cloud,writes,timers,tick:async()=>{const pending=[...timers.values()];timers.clear();for(const fn of pending)await fn();await turn();}};
 }

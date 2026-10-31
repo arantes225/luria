@@ -21,8 +21,8 @@ test('APH swaps the four current patients without leaking layers into emergency-
       const file=`${character}-${state}.webp`;
       assert.ok(fs.existsSync(path.join(assetRoot,file)),`Imagem ausente: ${file}`);
       image.src=`/assets/img/plantao/aph/${file}?v=20261021`;
-      image.dataset.luriaEyes=state==='fechado'?'closed':'auto';
-      image.dataset.luriaRr='18';
+      image.dataset.traubeEyes=state==='fechado'?'closed':'auto';
+      image.dataset.traubeRr='18';
       await tick();
       assert.ok(scene.classList.contains('aph-active'));
       assert.equal(scene.querySelectorAll('.aph-thorax').length,1);
@@ -32,7 +32,7 @@ test('APH swaps the four current patients without leaking layers into emergency-
       assert.equal(scene.style.getPropertyValue('--aph-breath-duration'),'3.3333333333333335s');
     }
   }
-  image.dataset.luriaRr='0';
+  image.dataset.traubeRr='0';
   await tick();
   assert.ok(scene.classList.contains('aph-no-breath'));
   image.src='/assets/img/plantao/patient-frontal-girl-awake.webp';

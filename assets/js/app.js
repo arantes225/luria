@@ -1,10 +1,10 @@
 
 // Sidebar mobile/PWA unificado: uma única dimensão em todas as páginas.
 (function ensureUnifiedMobileSidebar() {
-  if (document.getElementById("luria-unified-mobile-sidebar")) return;
+  if (document.getElementById("traube-unified-mobile-sidebar")) return;
 
   const style = document.createElement("style");
-  style.id = "luria-unified-mobile-sidebar";
+  style.id = "traube-unified-mobile-sidebar";
   style.textContent = `
     @media (max-width: 980px) {
       html.pwa-standalone body #sidebar.sidebar {
@@ -51,7 +51,7 @@
       }
 
       html.pwa-standalone body #sidebar.sidebar .brand-logo-single,
-      html.pwa-standalone body #sidebar.sidebar .luria-theme-logo,
+      html.pwa-standalone body #sidebar.sidebar .traube-theme-logo,
       html.pwa-standalone body #sidebar.sidebar .brand-logo-stack {
         width: 54px !important;
         height: 54px !important;
@@ -329,7 +329,7 @@
   style.dataset.workSidebarFixedFooter = "1";
 
   style.textContent += `
-    #sidebar.sidebar .luria-mode-footer-switch {
+    #sidebar.sidebar .traube-mode-footer-switch {
       text-decoration:none !important;
       cursor:pointer !important;
       color:#fff !important;
@@ -338,34 +338,34 @@
       box-shadow:0 10px 30px rgba(17,65,130,.12) !important;
       transition:transform 140ms ease,border-color 140ms ease,filter 140ms ease,box-shadow 140ms ease !important;
     }
-    #sidebar.sidebar .luria-mode-footer-switch:hover {
+    #sidebar.sidebar .traube-mode-footer-switch:hover {
       transform:translateY(-1px);
       border-color:color-mix(in srgb,#184888 55%,#d7e0eb) !important;
       background:#184888 !important;
       box-shadow:0 12px 32px rgba(17,65,130,.18) !important;
       filter:brightness(1.04);
     }
-    #sidebar.sidebar .luria-mode-footer-switch .user-copy strong,
-    #sidebar.sidebar .luria-mode-footer-switch .user-copy small {
+    #sidebar.sidebar .traube-mode-footer-switch .user-copy strong,
+    #sidebar.sidebar .traube-mode-footer-switch .user-copy small {
       color:#fff !important;
     }
-    #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon {
+    #sidebar.sidebar .traube-mode-footer-switch .traube-mode-icon {
       color:#fff !important;
       background:rgba(255,255,255,.14) !important;
     }
-    :root[data-theme="leila-mood"] #sidebar.sidebar .luria-mode-footer-switch,
-    body.theme-leila-mood #sidebar.sidebar .luria-mode-footer-switch {
+    :root[data-theme="leila-mood"] #sidebar.sidebar .traube-mode-footer-switch,
+    body.theme-leila-mood #sidebar.sidebar .traube-mode-footer-switch {
       border-color:color-mix(in srgb,var(--accent) 35%,var(--border)) !important;
       background:var(--accent-strong) !important;
       box-shadow:0 10px 30px color-mix(in srgb,var(--accent) 18%,transparent) !important;
     }
-    :root[data-theme="leila-mood"] #sidebar.sidebar .luria-mode-footer-switch:hover,
-    body.theme-leila-mood #sidebar.sidebar .luria-mode-footer-switch:hover {
+    :root[data-theme="leila-mood"] #sidebar.sidebar .traube-mode-footer-switch:hover,
+    body.theme-leila-mood #sidebar.sidebar .traube-mode-footer-switch:hover {
       border-color:color-mix(in srgb,var(--accent) 55%,var(--border)) !important;
       background:var(--accent-strong) !important;
       box-shadow:0 12px 32px color-mix(in srgb,var(--accent) 24%,transparent) !important;
     }
-    #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon svg {
+    #sidebar.sidebar .traube-mode-footer-switch .traube-mode-icon svg {
       width:20px;
       height:20px;
       display:block;
@@ -375,55 +375,55 @@
       stroke-linecap:round;
       stroke-linejoin:round;
     }
-    .luria-profile-top { position:relative; display:flex; align-items:center; }
-    .luria-profile-toggle {
+    .traube-profile-top { position:relative; display:flex; align-items:center; }
+    .traube-profile-toggle {
       width:52px;height:52px;border:1px solid var(--border);border-radius:50%;
       display:grid;place-items:center;background:var(--surface);color:var(--accent);
       font:900 16px/1 inherit;cursor:pointer;
     }
-    .luria-profile-menu {
+    .traube-profile-menu {
       position:absolute;right:0;top:48px;z-index:400;min-width:190px;padding:7px;
       border:1px solid var(--border);border-radius:13px;background:var(--surface);
       box-shadow:0 16px 42px rgba(0,0,0,.16);
     }
-    .luria-profile-menu[hidden]{display:none!important}
-    .luria-profile-menu a,.luria-profile-menu button {
+    .traube-profile-menu[hidden]{display:none!important}
+    .traube-profile-menu a,.traube-profile-menu button {
       width:100%;min-height:40px;box-sizing:border-box;display:flex;align-items:center;
       padding:0 11px;border:0;border-radius:9px;background:transparent;color:var(--text);
       text-decoration:none;font:700 13px/1 inherit;text-align:left;cursor:pointer;
     }
-    .luria-profile-menu a:hover,.luria-profile-menu button:hover{background:var(--surface-2)}
-    .luria-profile-theme-row {
+    .traube-profile-menu a:hover,.traube-profile-menu button:hover{background:var(--surface-2)}
+    .traube-profile-theme-row {
       display:flex;align-items:center;justify-content:space-between;gap:10px;
       min-height:44px;padding:0 8px 7px 11px;margin-bottom:4px;
       border-bottom:1px solid var(--border);color:var(--text);
     }
-    .luria-profile-theme-row>span {
+    .traube-profile-theme-row>span {
       font:700 12px/1 inherit;color:var(--muted);
     }
-    .luria-theme-switch {
+    .traube-theme-switch {
       width:auto!important;min-width:92px!important;min-height:32px!important;height:32px!important;
       padding:0 9px!important;border:1px solid var(--border)!important;border-radius:999px!important;
       display:flex!important;align-items:center!important;justify-content:center!important;gap:6px!important;
       background:var(--surface-2)!important;color:var(--text)!important;
       font:800 11px/1 inherit!important;
     }
-    .luria-theme-switch::before {
+    .traube-theme-switch::before {
       content:"";width:10px;height:10px;border-radius:50%;background:var(--accent);
       box-shadow:0 0 0 3px var(--accent-soft);flex:0 0 10px;
     }
-    :root[data-theme="dark"] .luria-theme-switch::before{background:#7eb6e8}
-    :root[data-theme="leila-mood"] .luria-theme-switch::before{background:#e7357d}
+    :root[data-theme="dark"] .traube-theme-switch::before{background:#7eb6e8}
+    :root[data-theme="leila-mood"] .traube-theme-switch::before{background:#e7357d}
   `;
 
   style.textContent += `
-    .luria-notifications {
+    .traube-notifications {
       display:flex !important;
       align-items:center !important;
       gap:12px !important;
       margin-left:auto !important;
     }
-    .luria-top-controls-drag-handle {
+    .traube-top-controls-drag-handle {
       display:none;
       width:28px;
       height:48px;
@@ -441,24 +441,24 @@
       font:900 15px/1 inherit;
       letter-spacing:-3px;
     }
-    .luria-top-controls-drag-handle:active {
+    .traube-top-controls-drag-handle:active {
       cursor:grabbing;
     }
-    .luria-notifications.luria-top-controls-dragging {
+    .traube-notifications.traube-top-controls-dragging {
       user-select:none!important;
       -webkit-user-select:none!important;
     }
     @media (min-width:981px) {
-      .luria-top-controls-drag-handle {
+      .traube-top-controls-drag-handle {
         display:grid;
       }
     }
-    .luria-pomodoro-top,.luria-profile-top {
+    .traube-pomodoro-top,.traube-profile-top {
       position:relative;
       display:flex;
       align-items:center;
     }
-    .luria-pomodoro-toggle {
+    .traube-pomodoro-toggle {
       min-width:172px;
       height:52px;
       display:flex;
@@ -473,44 +473,44 @@
       cursor:pointer;
       text-align:left;
     }
-    .luria-pomodoro-toggle:hover,
-    .luria-pomodoro-toggle[aria-expanded="true"] {
+    .traube-pomodoro-toggle:hover,
+    .traube-pomodoro-toggle[aria-expanded="true"] {
       border-color:var(--accent);
       background:var(--accent-soft);
       color:var(--accent);
     }
-    .luria-pomodoro-icon {
+    .traube-pomodoro-icon {
       width:31px;height:31px;display:grid;place-items:center;flex:0 0 31px;
     }
-    .luria-pomodoro-icon svg {
+    .traube-pomodoro-icon svg {
       width:31px;height:31px;fill:none;stroke:currentColor;stroke-width:1.8;
       stroke-linecap:round;stroke-linejoin:round;
     }
-    .luria-pomodoro-copy { display:grid; line-height:1.05; }
-    .luria-pomodoro-copy strong { font-size:15px; font-weight:850; }
-    .luria-pomodoro-copy small { margin-top:2px; font-size:13.5px; color:var(--muted); font-weight:850; }
+    .traube-pomodoro-copy { display:grid; line-height:1.05; }
+    .traube-pomodoro-copy strong { font-size:15px; font-weight:850; }
+    .traube-pomodoro-copy small { margin-top:2px; font-size:13.5px; color:var(--muted); font-weight:850; }
 
-    .luria-notification-toggle,
-    .luria-profile-toggle {
+    .traube-notification-toggle,
+    .traube-profile-toggle {
       width:52px !important;
       height:52px !important;
       min-width:52px !important;
       border-radius:14px !important;
     }
 
-    .luria-notification-toggle svg {
+    .traube-notification-toggle svg {
       width:18px !important;
       height:18px !important;
     }
 
-    .luria-profile-toggle {
+    .traube-profile-toggle {
       border:1px solid var(--border) !important;
       background:var(--surface) !important;
       color:var(--accent) !important;
       font:900 28px/1 inherit !important;
     }
 
-    .luria-pomodoro-panel {
+    .traube-pomodoro-panel {
       position:absolute;
       right:0;
       top:60px;
@@ -522,23 +522,23 @@
       background:var(--surface);
       box-shadow:0 16px 42px rgba(0,0,0,.16);
     }
-    .luria-pomodoro-panel[hidden]{display:none!important}
-    .luria-pomodoro-panel header { display:flex; justify-content:space-between; }
-    .luria-pomodoro-panel header strong { display:block; font-size:13px; }
-    .luria-pomodoro-panel header small { color:var(--muted); font-size:9px; }
-    .luria-pomodoro-time { margin:14px 0; font-size:34px; font-weight:900; letter-spacing:-.04em; }
-    .luria-pomodoro-actions { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
-    .luria-pomodoro-actions button {
+    .traube-pomodoro-panel[hidden]{display:none!important}
+    .traube-pomodoro-panel header { display:flex; justify-content:space-between; }
+    .traube-pomodoro-panel header strong { display:block; font-size:13px; }
+    .traube-pomodoro-panel header small { color:var(--muted); font-size:9px; }
+    .traube-pomodoro-time { margin:14px 0; font-size:34px; font-weight:900; letter-spacing:-.04em; }
+    .traube-pomodoro-actions { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .traube-pomodoro-actions button {
       min-height:36px;border:1px solid var(--border);border-radius:9px;background:var(--surface-2);
       color:var(--text);font-weight:800;
     }
-    .luria-pomodoro-modes {
+    .traube-pomodoro-modes {
       display:grid;
       grid-template-columns:1fr 1fr;
       gap:7px;
       margin-top:12px;
     }
-    .luria-pomodoro-modes button {
+    .traube-pomodoro-modes button {
       min-height:34px;
       border:1px solid var(--border);
       border-radius:9px;
@@ -547,12 +547,12 @@
       font-weight:800;
       cursor:pointer;
     }
-    .luria-pomodoro-modes button[aria-pressed="true"] {
+    .traube-pomodoro-modes button[aria-pressed="true"] {
       border-color:var(--accent);
       background:var(--accent);
       color:#fff;
     }
-    .luria-timer-switch {
+    .traube-timer-switch {
       display:grid;
       grid-template-columns:1fr 1fr;
       gap:6px;
@@ -562,7 +562,7 @@
       border-radius:11px;
       background:var(--surface-2);
     }
-    .luria-timer-switch button {
+    .traube-timer-switch button {
       min-height:34px;
       border:0;
       border-radius:8px;
@@ -571,25 +571,25 @@
       font-weight:850;
       cursor:pointer;
     }
-    .luria-timer-switch button[aria-pressed="true"] {
+    .traube-timer-switch button[aria-pressed="true"] {
       background:var(--surface);
       color:var(--accent);
       box-shadow:0 1px 4px rgba(15,23,42,.08);
     }
-    .luria-timer-view[hidden]{display:none!important}
-    .luria-stopwatch-note {
+    .traube-timer-view[hidden]{display:none!important}
+    .traube-stopwatch-note {
       display:block;
       margin:-5px 0 12px;
       color:var(--muted);
       font-size:10px;
       line-height:1.35;
     }
-    .luria-pomodoro-fields {
+    .traube-pomodoro-fields {
       display:grid;
       gap:8px;
       margin:10px 0 12px;
     }
-    .luria-pomodoro-fields label {
+    .traube-pomodoro-fields label {
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -598,12 +598,12 @@
       font-size:11px;
       font-weight:700;
     }
-    .luria-pomodoro-fields label > span:last-child {
+    .traube-pomodoro-fields label > span:last-child {
       display:flex;
       align-items:center;
       gap:5px;
     }
-    .luria-pomodoro-fields input {
+    .traube-pomodoro-fields input {
       width:58px;
       min-height:32px;
       padding:4px 6px;
@@ -614,7 +614,7 @@
       text-align:center;
       font:inherit;
     }
-    .luria-pomodoro-save {
+    .traube-pomodoro-save {
       width:100%;
       min-height:36px;
       margin-top:8px;
@@ -625,7 +625,7 @@
       font-weight:800;
       cursor:pointer;
     }
-    .luria-pomodoro-status {
+    .traube-pomodoro-status {
       display:block;
       min-height:15px;
       margin-top:7px;
@@ -634,14 +634,14 @@
       line-height:1.35;
     }
 
-    #luria-notification-toggle svg {
+    #traube-notification-toggle svg {
       width:18px !important;
       height:18px !important;
     }
 
     /* Afastar Pomodoro e sino do perfil */
-    .luria-pomodoro-top { margin-right:2px; }
-    #luria-notification-toggle { margin-right:4px; }
+    .traube-pomodoro-top { margin-right:2px; }
+    #traube-notification-toggle { margin-right:4px; }
 
     /* Cabeçalho global unificado: Timer + notificações + perfil */
     .topbar {
@@ -653,7 +653,7 @@
     /* Posição dos controles superiores é definida no CSS global carregado no <head>. */
 
 /* Iniciais: peso forte padronizado em todo o TRAUBE. */
-    .luria-profile-toggle,
+    .traube-profile-toggle,
     .user-avatar {
       font-weight:950 !important;
       letter-spacing:-.045em !important;
@@ -663,21 +663,21 @@
     .topbar .page-heading {
       align-self:flex-start !important;
     }
-    .topbar .luria-notifications {
+    .topbar .traube-notifications {
       margin-left:auto !important;
       display:flex !important;
       align-items:center !important;
       gap:10px !important;
     }
-    .topbar .luria-pomodoro-top,
-    .topbar .luria-profile-top,
-    .topbar .luria-notification-toggle {
+    .topbar .traube-pomodoro-top,
+    .topbar .traube-profile-top,
+    .topbar .traube-notification-toggle {
       align-self:center !important;
       margin-top:0 !important;
       margin-bottom:0 !important;
     }
 
-    /* Desktop: geometria do grupo controlada exclusivamente por luria-brand-v5.css. */
+    /* Desktop: geometria do grupo controlada exclusivamente por traube-brand-v5.css. */
 
 /* v17.37 — dimensões dos controles; posição fica no CSS global.
        Dashboard mantém seu cabeçalho próprio. */
@@ -687,7 +687,7 @@
         height:26px !important;
         margin-bottom:14px !important;
       }
-      body:not([data-page="dashboard"]) .topbar .luria-notifications {
+      body:not([data-page="dashboard"]) .topbar .traube-notifications {
         position:static !important;
         inset:auto !important;
         top:auto !important;
@@ -697,54 +697,54 @@
         translate:none !important;
         gap:10px !important;
       }
-      body:not([data-page="dashboard"]) .luria-pomodoro-toggle {
+      body:not([data-page="dashboard"]) .traube-pomodoro-toggle {
         min-width:164px !important;
         height:48px !important;
         padding:0 14px !important;
         gap:10px !important;
         border-radius:12px !important;
       }
-      body:not([data-page="dashboard"]) .luria-pomodoro-icon,
-      body:not([data-page="dashboard"]) .luria-pomodoro-icon svg {
+      body:not([data-page="dashboard"]) .traube-pomodoro-icon,
+      body:not([data-page="dashboard"]) .traube-pomodoro-icon svg {
         width:22px !important;
         height:22px !important;
       }
-      body:not([data-page="dashboard"]) .luria-pomodoro-copy strong {
+      body:not([data-page="dashboard"]) .traube-pomodoro-copy strong {
         font-size:13px !important;
       }
-      body:not([data-page="dashboard"]) .luria-pomodoro-copy small {
+      body:not([data-page="dashboard"]) .traube-pomodoro-copy small {
         font-size:11px !important;
       }
-      body:not([data-page="dashboard"]) .luria-notification-toggle,
-      body:not([data-page="dashboard"]) .luria-profile-toggle {
+      body:not([data-page="dashboard"]) .traube-notification-toggle,
+      body:not([data-page="dashboard"]) .traube-profile-toggle {
         width:48px !important;
         height:48px !important;
         min-width:48px !important;
         border-radius:12px !important;
       }
-      body:not([data-page="dashboard"]) .luria-notification-toggle svg,
-      body:not([data-page="dashboard"]) #luria-notification-toggle svg {
+      body:not([data-page="dashboard"]) .traube-notification-toggle svg,
+      body:not([data-page="dashboard"]) #traube-notification-toggle svg {
         width:20px !important;
         height:20px !important;
       }
-      body:not([data-page="dashboard"]) .luria-profile-toggle {
+      body:not([data-page="dashboard"]) .traube-profile-toggle {
         font-size:17px !important;
       }
       /* A borda direita do perfil acompanha a borda direita do card de conteúdo. */
       body:not([data-page="dashboard"]) .page {
-        --luria-top-controls-right:34px;
+        --traube-top-controls-right:34px;
       }
-      body:not([data-page="dashboard"]) .page > .luria-page-spotlight,
+      body:not([data-page="dashboard"]) .page > .traube-page-spotlight,
       body:not([data-page="dashboard"]) .page > .schedule-top-spotlight {
         margin-top:0 !important;
       }
     }
 
     @media(max-width:760px){
-      .luria-notifications{gap:9px!important}
-      .luria-pomodoro-toggle{min-width:125px;height:52px;padding:0 10px}
-      .luria-pomodoro-copy strong{display:none}
-      .luria-pomodoro-copy small{margin:0;font-size:10px}
+      .traube-notifications{gap:9px!important}
+      .traube-pomodoro-toggle{min-width:125px;height:52px;padding:0 10px}
+      .traube-pomodoro-copy strong{display:none}
+      .traube-pomodoro-copy small{margin:0;font-size:10px}
     }
 
     /* PWA: viewport preso; topo sempre visível; conteúdo rola por baixo. */
@@ -805,7 +805,7 @@
         overflow:visible!important;
       }
 
-      html.pwa-standalone body .topbar .luria-notifications {
+      html.pwa-standalone body .topbar .traube-notifications {
         position:static!important;
         inset:auto!important;
         display:flex!important;
@@ -819,26 +819,26 @@
         z-index:auto!important;
       }
 
-      html.pwa-standalone body .topbar .luria-profile-top,
-      html.pwa-standalone body .topbar .luria-notification-toggle {
+      html.pwa-standalone body .topbar .traube-profile-top,
+      html.pwa-standalone body .topbar .traube-notification-toggle {
         display:flex!important;
         visibility:visible!important;
         opacity:1!important;
       }
 
-      html.pwa-standalone body:not([data-page^="trabalho_"]) .topbar .luria-pomodoro-top {
+      html.pwa-standalone body:not([data-page^="trabalho_"]) .topbar .traube-pomodoro-top {
         display:flex!important;
         visibility:visible!important;
         opacity:1!important;
       }
 
-      html.pwa-standalone body[data-page^="trabalho_"] .topbar .luria-pomodoro-top {
+      html.pwa-standalone body[data-page^="trabalho_"] .topbar .traube-pomodoro-top {
         display:none!important;
       }
 
-      html.pwa-standalone body .luria-notification-panel,
-      html.pwa-standalone body .luria-profile-menu,
-      html.pwa-standalone body .luria-pomodoro-panel {
+      html.pwa-standalone body .traube-notification-panel,
+      html.pwa-standalone body .traube-profile-menu,
+      html.pwa-standalone body .traube-pomodoro-panel {
         z-index:500!important;
       }
     }
@@ -849,15 +849,15 @@
     /* TRAUBE global trays — always above page content and simulator overlays. */
     .topbar,
     .topbar-actions,
-    .luria-notifications,
-    .luria-pomodoro-top,
-    .luria-profile-top {
+    .traube-notifications,
+    .traube-pomodoro-top,
+    .traube-profile-top {
       overflow:visible!important;
     }
 
-    .luria-notification-panel,
-    .luria-pomodoro-panel,
-    .luria-profile-menu {
+    .traube-notification-panel,
+    .traube-pomodoro-panel,
+    .traube-profile-menu {
       z-index:2147483000!important;
       isolation:isolate;
       border-color:var(--border)!important;
@@ -866,83 +866,83 @@
       box-shadow:0 22px 64px rgba(4,18,33,.24)!important;
     }
 
-    .luria-pomodoro-panel {
+    .traube-pomodoro-panel {
       color:var(--color-text-primary,var(--text))!important;
     }
-    .luria-pomodoro-panel header strong,
-    .luria-pomodoro-time {
+    .traube-pomodoro-panel header strong,
+    .traube-pomodoro-time {
       color:var(--color-text-primary,var(--text))!important;
     }
-    .luria-pomodoro-panel header small,
-    .luria-stopwatch-note,
-    .luria-pomodoro-fields label {
+    .traube-pomodoro-panel header small,
+    .traube-stopwatch-note,
+    .traube-pomodoro-fields label {
       color:var(--color-text-secondary,var(--muted))!important;
     }
-    .luria-pomodoro-panel input {
+    .traube-pomodoro-panel input {
       border-color:var(--border)!important;
       background:var(--surface-2)!important;
       color:var(--text)!important;
     }
-    .luria-pomodoro-actions button,
-    .luria-pomodoro-modes button {
+    .traube-pomodoro-actions button,
+    .traube-pomodoro-modes button {
       border-color:var(--border)!important;
       background:var(--surface-2)!important;
       color:var(--text)!important;
     }
-    .luria-pomodoro-actions button:hover,
-    .luria-pomodoro-modes button:hover {
+    .traube-pomodoro-actions button:hover,
+    .traube-pomodoro-modes button:hover {
       border-color:var(--accent)!important;
       background:var(--accent-soft)!important;
       color:var(--accent)!important;
     }
-    .luria-pomodoro-modes button[aria-pressed="true"] {
+    .traube-pomodoro-modes button[aria-pressed="true"] {
       border-color:var(--accent)!important;
       background:var(--accent)!important;
       color:#fff!important;
     }
-    .luria-timer-switch {
+    .traube-timer-switch {
       border-color:var(--border)!important;
       background:var(--surface-2)!important;
     }
-    .luria-timer-switch button {
+    .traube-timer-switch button {
       color:var(--muted)!important;
     }
-    .luria-timer-switch button[aria-pressed="true"] {
+    .traube-timer-switch button[aria-pressed="true"] {
       background:var(--surface)!important;
       color:var(--accent)!important;
       box-shadow:0 1px 5px rgba(15,23,42,.10)!important;
     }
 
     /* Keep the shared timer readable even when page-specific styles target descendants. */
-    body #luria-pomodoro-panel {
+    body #traube-pomodoro-panel {
       border-color:var(--color-border,var(--border))!important;
       background:var(--color-surface,var(--surface))!important;
       color:var(--color-text-primary,var(--text))!important;
     }
-    body #luria-pomodoro-panel :is(header strong,.luria-pomodoro-time) {
+    body #traube-pomodoro-panel :is(header strong,.traube-pomodoro-time) {
       color:var(--color-text-primary,var(--text))!important;
     }
-    body #luria-pomodoro-panel :is(header small,.luria-stopwatch-note,.luria-pomodoro-status,.luria-pomodoro-fields label,.luria-timer-switch button:not([aria-pressed="true"]),.luria-pomodoro-modes button:not([aria-pressed="true"])) {
+    body #traube-pomodoro-panel :is(header small,.traube-stopwatch-note,.traube-pomodoro-status,.traube-pomodoro-fields label,.traube-timer-switch button:not([aria-pressed="true"]),.traube-pomodoro-modes button:not([aria-pressed="true"])) {
       color:var(--color-text-secondary,var(--muted))!important;
     }
-    body #luria-pomodoro-panel .luria-pomodoro-fields label > span:first-child {
+    body #traube-pomodoro-panel .traube-pomodoro-fields label > span:first-child {
       color:var(--color-text-primary,var(--text))!important;
     }
-    body #luria-pomodoro-panel :is(input,.luria-pomodoro-actions button) {
+    body #traube-pomodoro-panel :is(input,.traube-pomodoro-actions button) {
       border-color:var(--color-border-interactive,var(--border))!important;
       background:var(--color-surface-elevated,var(--surface-2))!important;
       color:var(--color-text-primary,var(--text))!important;
     }
-    body #luria-pomodoro-panel .luria-pomodoro-modes button:not([aria-pressed="true"]) {
+    body #traube-pomodoro-panel .traube-pomodoro-modes button:not([aria-pressed="true"]) {
       border-color:var(--color-border-interactive,var(--border))!important;
       background:var(--color-surface-elevated,var(--surface-2))!important;
       color:var(--color-text-secondary,var(--muted))!important;
     }
-    body #luria-pomodoro-panel .luria-timer-switch button[aria-pressed="true"] {
+    body #traube-pomodoro-panel .traube-timer-switch button[aria-pressed="true"] {
       background:var(--color-surface,var(--surface))!important;
       color:var(--color-primary-text,var(--accent))!important;
     }
-    body #luria-pomodoro-panel :is(.luria-pomodoro-modes button[aria-pressed="true"],.luria-pomodoro-save,#luria-stopwatch-start,#luria-pomodoro-start) {
+    body #traube-pomodoro-panel :is(.traube-pomodoro-modes button[aria-pressed="true"],.traube-pomodoro-save,#traube-stopwatch-start,#traube-pomodoro-start) {
       border-color:var(--color-primary,var(--accent))!important;
       background:var(--color-primary,var(--accent))!important;
       color:var(--color-primary-foreground,var(--text))!important;
@@ -1051,23 +1051,23 @@
       font-size:8.5px !important;
     }
 
-    #sidebar.sidebar .luria-mode-footer-switch {
+    #sidebar.sidebar .traube-mode-footer-switch {
       min-height:48px !important;
       padding:7px 9px !important;
       gap:9px !important;
     }
 
-    #sidebar.sidebar .luria-mode-footer-switch .user-avatar {
+    #sidebar.sidebar .traube-mode-footer-switch .user-avatar {
       width:30px !important;
       height:30px !important;
       flex:0 0 30px !important;
     }
 
-    #sidebar.sidebar .luria-mode-footer-switch .user-copy strong {
+    #sidebar.sidebar .traube-mode-footer-switch .user-copy strong {
       font-size:12px !important;
     }
 
-    #sidebar.sidebar .luria-mode-footer-switch .user-copy small {
+    #sidebar.sidebar .traube-mode-footer-switch .user-copy small {
       font-size:9.5px !important;
     }
 
@@ -1151,10 +1151,10 @@
 (() => {
   const body = document.body;
   if (!body?.dataset.page?.startsWith("trabalho_") || body.dataset.page === "trabalho_paciente") return;
-  const key = "luria:temporary-patient:v1";
-  if (!document.getElementById("luria-patient-context-style")) {
+  const key = "traube:temporary-patient:v1";
+  if (!document.getElementById("traube-patient-context-style")) {
     const style = document.createElement("style");
-    style.id = "luria-patient-context-style";
+    style.id = "traube-patient-context-style";
     style.textContent = `.patient-context-bar{display:flex;align-items:center;gap:.65rem;margin:0 0 1rem;padding:.7rem .85rem;border:1px solid var(--color-border);border-radius:var(--ui-radius-card,16px);background:var(--color-surface);box-shadow:var(--ui-shadow,0 12px 30px rgba(20,44,78,.08));color:var(--color-text-primary)}.patient-context-bar>span:nth-child(2){display:grid;min-width:0}.patient-context-bar small{color:var(--color-text-secondary)}.patient-context-bar a{margin-left:auto;color:var(--color-primary-text,#184888);font-size:.82rem;font-weight:700}.patient-context-dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--color-success,#267247);flex:0 0 .5rem}`;
     document.head.appendChild(style);
   }
@@ -1173,14 +1173,14 @@
     host.insertAdjacentElement("afterend", bar);
   };
   mount();
-  window.addEventListener("luria:patient-context-changed", mount);
+  window.addEventListener("traube:patient-context-changed", mount);
 })();
 
 
 /* TRAUBE PWA BOTTOM MENU FINAL OVERRIDE v1 — 2026-10-21 */
 (function installTraubePwaBottomMenuFinalV1(){
   const style=document.createElement("style");
-  style.id="luria-pwa-bottom-menu-final-v1";
+  style.id="traube-pwa-bottom-menu-final-v1";
   style.textContent=`
     @media (max-width:980px){
       html.pwa-standalone body #sidebar.sidebar{
@@ -1237,9 +1237,9 @@
 
 /* TRAUBE PWA BOTTOM MENU v1 — 2026-10-21 */
 (function installTraubePwaBottomMenuV1(){
-  if(document.getElementById("luria-pwa-bottom-menu-v1"))return;
+  if(document.getElementById("traube-pwa-bottom-menu-v1"))return;
   const style=document.createElement("style");
-  style.id="luria-pwa-bottom-menu-v1";
+  style.id="traube-pwa-bottom-menu-v1";
   style.textContent=`
     @media (max-width:980px){
       html.pwa-standalone body #sidebar.sidebar{
@@ -1420,7 +1420,7 @@ const PLUS_NAV_FEATURES = {
   "/registrar-questoes/": "questions",
   "/plantao/": "plantao",
   "/plantao/sala-emergencia/": "plantao",
-  "/plantao/luriazap/": "plantao",
+  "/plantao/traubezap/": "plantao",
   "/estatisticas/": "statistics_general"
 };
 
@@ -1494,7 +1494,7 @@ function writeCachedTheme(userId, theme) {
 
 // Validate navigation/resource URLs before escaping them in HTML templates.
 // Shared through the existing shell dependency; no dynamic loader is needed.
-function luriaSafeContentUrl(value, {relative = false, mailto = false} = {}) {
+function traubeSafeContentUrl(value, {relative = false, mailto = false} = {}) {
   const raw = String(value ?? "").trim();
   if (!raw || /[\u0000-\u001f\u007f\\]/.test(raw)) return "";
   const local = relative && (/^\/(?!\/)/.test(raw) || /^[#?]/.test(raw) || /^[a-zA-Z0-9_.-]+\//.test(raw));
@@ -1542,14 +1542,14 @@ const TRAUBE_ICON_PATHS = {
   more: '<circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/>'
 };
 
-function luriaIcon(name, className = "") {
+function traubeIcon(name, className = "") {
   const path = TRAUBE_ICON_PATHS[name] || TRAUBE_ICON_PATHS.file;
-  return `<svg class="luria-ui-icon ${className}" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${path}</svg>`;
+  return `<svg class="traube-ui-icon ${className}" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${path}</svg>`;
 }
 
-window.TraubeIcon = luriaIcon;
+window.TraubeIcon = traubeIcon;
 
-function luriaUserInitials(user, profile = null) {
+function traubeUserInitials(user, profile = null) {
   const fallbackName = user?.email
     ? String(user.email).split("@")[0]
     : "Usuário";
@@ -1578,10 +1578,10 @@ function luriaUserInitials(user, profile = null) {
 }
 
 function updateTraubeProfileInitials(user = window.docmapUser, profile = window.docmapProfile) {
-  const toggle = document.getElementById("luria-profile-toggle");
+  const toggle = document.getElementById("traube-profile-toggle");
   if (!toggle) return;
 
-  const initials = luriaUserInitials(user, profile);
+  const initials = traubeUserInitials(user, profile);
   toggle.textContent = initials;
   toggle.setAttribute("aria-label", `Perfil de ${profile?.display_name || user?.email || "usuário"}`);
 }
@@ -1616,9 +1616,9 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
     <div class="sidebar-top">
       <a class="brand" href="/dashboard/">
         <img
-          id="luria-brand-logo"
-          class="brand-logo-single luria-theme-logo"
-          src="${luriaLogoSourceForTheme(document.documentElement.dataset.theme || "light")}"
+          id="traube-brand-logo"
+          class="brand-logo-single traube-theme-logo"
+          src="${traubeLogoSourceForTheme(document.documentElement.dataset.theme || "light")}"
           alt="Logo TRAUBE"
         >
 
@@ -1683,43 +1683,43 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
         <span id="admin-nav-slot"></span>
       ` : `
         <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
-          <span class="nav-icon">${luriaIcon("dashboard")}</span><span>Dashboard</span>
+          <span class="nav-icon">${traubeIcon("dashboard")}</span><span>Dashboard</span>
         </a>
 
         <a class="nav-link ${page === "cronograma" ? "active" : ""}" href="/cronograma/">
-          <span class="nav-icon">${luriaIcon("calendar")}</span><span>Cronograma</span>
+          <span class="nav-icon">${traubeIcon("calendar")}</span><span>Cronograma</span>
         </a>
 
         <a class="nav-link ${page === "aprender" ? "active" : ""}" href="/aprender/">
-          <span class="nav-icon">${luriaIcon("book")}</span><span>Aprender</span>
+          <span class="nav-icon">${traubeIcon("book")}</span><span>Aprender</span>
         </a>
 
         <a class="nav-link ${page === "consolidar" ? "active" : ""}" href="/consolidar/">
-          <span class="nav-icon">${luriaIcon("cards")}</span><span>Consolidar</span>
+          <span class="nav-icon">${traubeIcon("cards")}</span><span>Consolidar</span>
         </a>
 
         <a class="nav-link ${["jogos", "study-rats"].includes(page) ? "active" : ""}" href="/jogos/">
-          <span class="nav-icon">${luriaIcon("games")}</span><span>Jogos</span>
+          <span class="nav-icon">${traubeIcon("games")}</span><span>Jogos</span>
         </a>
 
         <a class="nav-link ${page === "desafio" ? "active" : ""}" href="/desafio-diario/">
-          <span class="nav-icon">${luriaIcon("target")}</span><span>Desafio Diário</span>
+          <span class="nav-icon">${traubeIcon("target")}</span><span>Desafio Diário</span>
         </a>
 
         <a class="nav-link ${page === "plantao" && !isTraubeZap ? "active" : ""}" href="/plantao/sala-emergencia/">
-          <span class="nav-icon">${luriaIcon("stethoscope")}</span><span>Simulador de Emergência</span>
+          <span class="nav-icon">${traubeIcon("stethoscope")}</span><span>Simulador de Emergência</span>
         </a>
 
         <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
-          <span class="nav-icon">${luriaIcon("chart")}</span><span>Estatísticas</span>
+          <span class="nav-icon">${traubeIcon("chart")}</span><span>Estatísticas</span>
         </a>
 
         <a class="nav-link ${["aplicar", "curriculo", "radar"].includes(page) ? "active" : ""}" href="/aplicar/">
-          <span class="nav-icon">${luriaIcon("compass")}</span><span>Aplicar</span>
+          <span class="nav-icon">${traubeIcon("compass")}</span><span>Aplicar</span>
         </a>
 
         <a class="nav-link ${page === "amigos" ? "active" : ""}" href="/amigos/">
-          <span class="nav-icon">${luriaIcon("users")}</span><span>Amigos</span>
+          <span class="nav-icon">${traubeIcon("users")}</span><span>Amigos</span>
         </a>
 
         <span id="admin-nav-slot"></span>
@@ -1736,10 +1736,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           </span>
         </a>
 
-        <a class="user-mini luria-mode-footer-switch"
+        <a class="user-mini traube-mode-footer-switch"
            href="/dashboard/"
            aria-label="Trocar do ambiente Trabalho para Estudos">
-          <div class="user-avatar luria-mode-icon" aria-hidden="true">
+          <div class="user-avatar traube-mode-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" role="presentation">
               <path d="M6 3v7a4 4 0 0 0 8 0V3"></path>
               <path d="M4 3h4M12 3h4"></path>
@@ -1767,10 +1767,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           </div>
         </div>
 
-        ${canAccessWork ? `        <a class="user-mini luria-mode-footer-switch"
+        ${canAccessWork ? `        <a class="user-mini traube-mode-footer-switch"
            href="/trabalho/"
            aria-label="Trocar do ambiente Estudos para Trabalho">
-          <div class="user-avatar luria-mode-icon" aria-hidden="true">
+          <div class="user-avatar traube-mode-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" role="presentation">
               <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z"></path>
               <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5A2.5 2.5 0 0 1 20 21.5v-16Z"></path>
@@ -1808,23 +1808,23 @@ async function carregarPerfil(userId) {
   return cached || null;
 }
 
-function luriaLogoSourceForTheme(theme) {
+function traubeLogoSourceForTheme(theme) {
   if (theme === "dark") {
-    return "/assets/img/logos/logo-icone-azul-claro.png?v=luria11";
+    return "/assets/img/logos/logo-icone-azul-claro.png?v=traube11";
   }
 
   if (theme === "leila-mood" || theme === "pink" || theme === "rosa") {
-    return "/assets/img/logos/logo-icone-rosa-escuro.png?v=luria11";
+    return "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube11";
   }
 
-  return "/assets/img/logos/logo-icone-original.png?v=luria11";
+  return "/assets/img/logos/logo-icone-original.png?v=traube11";
 }
 
 
 function updateTraubeLogo(theme) {
   const logo =
     document.getElementById(
-      "luria-brand-logo"
+      "traube-brand-logo"
     );
 
   if (!logo) {
@@ -1832,7 +1832,7 @@ function updateTraubeLogo(theme) {
   }
 
   const source =
-    luriaLogoSourceForTheme(theme);
+    traubeLogoSourceForTheme(theme);
 
   if (
     logo.getAttribute("src")
@@ -3267,7 +3267,7 @@ async function registrarAcessoDiario() {
     new Date().toISOString().slice(0, 10);
 
   const cacheKey =
-    `luria:daily-access:${userId}`;
+    `traube:daily-access:${userId}`;
 
   try {
     const cached =
@@ -3342,10 +3342,10 @@ function renderizarOfensivaGlobal() {
       ?? 0
     );
 
-  window.luriaCurrentStreak = currentDays;
+  window.traubeCurrentStreak = currentDays;
   if (ultimaOfensivaDashboardNotificada !== currentDays) {
     ultimaOfensivaDashboardNotificada = currentDays;
-    window.dispatchEvent(new Event("luria:dashboard-data"));
+    window.dispatchEvent(new Event("traube:dashboard-data"));
   }
 
   let status =
@@ -3605,14 +3605,14 @@ function notificationIcon(type) {
 }
 
 
-function luriaTopControlsPositionKey() {
+function traubeTopControlsPositionKey() {
   const userId = window.docmapUser?.id || "local";
-  return `luria:top-controls-position:v1:${userId}`;
+  return `traube:top-controls-position:v1:${userId}`;
 }
 
 function readTraubeTopControlsPosition() {
   try {
-    const raw = localStorage.getItem(luriaTopControlsPositionKey());
+    const raw = localStorage.getItem(traubeTopControlsPositionKey());
     if (!raw) return null;
     const value = JSON.parse(raw);
     if (!Number.isFinite(value?.top) || !Number.isFinite(value?.right)) return null;
@@ -3625,7 +3625,7 @@ function readTraubeTopControlsPosition() {
 function saveTraubeTopControlsPosition(position) {
   try {
     localStorage.setItem(
-      luriaTopControlsPositionKey(),
+      traubeTopControlsPositionKey(),
       JSON.stringify({
         top: Math.round(position.top),
         right: Math.round(position.right)
@@ -3648,12 +3648,12 @@ function applyTraubeTopControlsPosition(center, position) {
   center.style.setProperty("right", `${right}px`, "important");
   center.style.setProperty("left", "auto", "important");
   center.style.setProperty("z-index", "2147482001", "important");
-  center.dataset.luriaCustomPosition = "1";
+  center.dataset.traubeCustomPosition = "1";
 }
 
 function resetTraubeTopControlsPosition(center) {
   try {
-    localStorage.removeItem(luriaTopControlsPositionKey());
+    localStorage.removeItem(traubeTopControlsPositionKey());
   } catch {}
 
   center?.style.removeProperty("position");
@@ -3661,12 +3661,12 @@ function resetTraubeTopControlsPosition(center) {
   center?.style.removeProperty("right");
   center?.style.removeProperty("left");
   center?.style.removeProperty("z-index");
-  if (center) delete center.dataset.luriaCustomPosition;
+  if (center) delete center.dataset.traubeCustomPosition;
 }
 
 function wireTraubeTopControlsDrag(center) {
   if (!center) return;
-  try { localStorage.removeItem(luriaTopControlsPositionKey()); } catch {}
+  try { localStorage.removeItem(traubeTopControlsPositionKey()); } catch {}
   resetTraubeTopControlsPosition(center);
 }
 
@@ -3683,9 +3683,9 @@ function ensureNotificationCenter() {
 
     if (pageRoot) {
       topbar = document.createElement("header");
-      topbar.className = "topbar luria-global-topbar";
+      topbar.className = "topbar traube-global-topbar";
       const spacer = document.createElement("div");
-      spacer.className = "page-heading luria-global-topbar-spacer";
+      spacer.className = "page-heading traube-global-topbar-spacer";
       topbar.appendChild(spacer);
       pageRoot.prepend(topbar);
     }
@@ -3694,7 +3694,7 @@ function ensureNotificationCenter() {
   if (
     !topbar
     || document.getElementById(
-      "luria-notifications"
+      "traube-notifications"
     )
   ) {
     return;
@@ -3706,100 +3706,100 @@ function ensureNotificationCenter() {
     );
 
   center.id =
-    "luria-notifications";
+    "traube-notifications";
 
   center.className =
-    "luria-notifications";
+    "traube-notifications";
 
   center.innerHTML = `
-    <div class="luria-pomodoro-top">
+    <div class="traube-pomodoro-top">
       <button
-        id="luria-pomodoro-toggle"
-        class="luria-pomodoro-toggle"
+        id="traube-pomodoro-toggle"
+        class="traube-pomodoro-toggle"
         type="button"
         aria-label="Pomodoro"
         aria-expanded="false"
       >
-        <span class="luria-pomodoro-icon" aria-hidden="true">
+        <span class="traube-pomodoro-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24">
             <path d="M9 2h6"></path>
             <path d="M12 14l3-3"></path>
             <circle cx="12" cy="14" r="8"></circle>
           </svg>
         </span>
-        <span class="luria-pomodoro-copy luria-timer-compact" aria-label="Timer 00 minutos 00 segundos">
-          <span class="luria-timer-ms">
-            <strong id="luria-timer-minutes">00</strong>
-            <strong id="luria-timer-seconds">00</strong>
+        <span class="traube-pomodoro-copy traube-timer-compact" aria-label="Timer 00 minutos 00 segundos">
+          <span class="traube-timer-ms">
+            <strong id="traube-timer-minutes">00</strong>
+            <strong id="traube-timer-seconds">00</strong>
           </span>
-          <span id="luria-pomodoro-mini-time" class="luria-timer-sr-only">00:00</span>
+          <span id="traube-pomodoro-mini-time" class="traube-timer-sr-only">00:00</span>
         </span>
       </button>
 
-      <section id="luria-pomodoro-panel" class="luria-pomodoro-panel" hidden>
+      <section id="traube-pomodoro-panel" class="traube-pomodoro-panel" hidden>
         <header>
           <div>
             <strong>Timer</strong>
-            <small id="luria-pomodoro-state-label">Cronômetro</small>
+            <small id="traube-pomodoro-state-label">Cronômetro</small>
           </div>
         </header>
 
-        <div class="luria-timer-switch" role="group" aria-label="Tipo de timer">
-          <button type="button" data-luria-timer-view="timer" aria-pressed="true">Timer</button>
-          <button type="button" data-luria-timer-view="pomodoro" aria-pressed="false">Pomodoro</button>
+        <div class="traube-timer-switch" role="group" aria-label="Tipo de timer">
+          <button type="button" data-traube-timer-view="timer" aria-pressed="true">Timer</button>
+          <button type="button" data-traube-timer-view="pomodoro" aria-pressed="false">Pomodoro</button>
         </div>
 
-        <div id="luria-timer-view" class="luria-timer-view">
-          <div id="luria-stopwatch-time" class="luria-pomodoro-time">00:00</div>
-          <small class="luria-stopwatch-note">Defina um tempo abaixo para usar contagem regressiva. Deixe vazio para usar como cronômetro.</small>
-          <div class="luria-pomodoro-fields">
-            <label><span>Tempo</span><span><input id="luria-timer-duration-minutes" type="number" min="1" max="1440" step="1" placeholder="—"> min</span></label>
+        <div id="traube-timer-view" class="traube-timer-view">
+          <div id="traube-stopwatch-time" class="traube-pomodoro-time">00:00</div>
+          <small class="traube-stopwatch-note">Defina um tempo abaixo para usar contagem regressiva. Deixe vazio para usar como cronômetro.</small>
+          <div class="traube-pomodoro-fields">
+            <label><span>Tempo</span><span><input id="traube-timer-duration-minutes" type="number" min="1" max="1440" step="1" placeholder="—"> min</span></label>
           </div>
-          <div class="luria-pomodoro-actions luria-stopwatch-actions">
-            <button id="luria-stopwatch-start" type="button">Iniciar</button>
-            <button id="luria-stopwatch-pause" type="button">Pausar</button>
-            <button id="luria-stopwatch-reset" type="button">Zerar</button>
+          <div class="traube-pomodoro-actions traube-stopwatch-actions">
+            <button id="traube-stopwatch-start" type="button">Iniciar</button>
+            <button id="traube-stopwatch-pause" type="button">Pausar</button>
+            <button id="traube-stopwatch-reset" type="button">Zerar</button>
           </div>
         </div>
 
-        <div id="luria-pomodoro-view" class="luria-timer-view" hidden>
-          <div class="luria-pomodoro-modes" role="group" aria-label="Etapa do Pomodoro">
-            <button type="button" data-luria-pomodoro-mode="focus" aria-pressed="true">Foco</button>
-            <button type="button" data-luria-pomodoro-mode="break" aria-pressed="false">Pausa</button>
+        <div id="traube-pomodoro-view" class="traube-timer-view" hidden>
+          <div class="traube-pomodoro-modes" role="group" aria-label="Etapa do Pomodoro">
+            <button type="button" data-traube-pomodoro-mode="focus" aria-pressed="true">Foco</button>
+            <button type="button" data-traube-pomodoro-mode="break" aria-pressed="false">Pausa</button>
           </div>
 
-          <div id="luria-pomodoro-time" class="luria-pomodoro-time">25:00</div>
+          <div id="traube-pomodoro-time" class="traube-pomodoro-time">25:00</div>
 
-          <div class="luria-pomodoro-fields">
+          <div class="traube-pomodoro-fields">
             <label>
               <span>Foco</span>
-              <span><input id="luria-pomodoro-focus-minutes" type="number" min="1" max="240" step="1" value="25"> min</span>
+              <span><input id="traube-pomodoro-focus-minutes" type="number" min="1" max="240" step="1" value="25"> min</span>
             </label>
             <label>
               <span>Pausa</span>
-              <span><input id="luria-pomodoro-break-minutes" type="number" min="1" max="120" step="1" value="5"> min</span>
+              <span><input id="traube-pomodoro-break-minutes" type="number" min="1" max="120" step="1" value="5"> min</span>
             </label>
           </div>
 
-          <div class="luria-pomodoro-actions">
-            <button id="luria-pomodoro-start" type="button">Iniciar</button>
-            <button id="luria-pomodoro-reset" type="button">Reiniciar</button>
+          <div class="traube-pomodoro-actions">
+            <button id="traube-pomodoro-start" type="button">Iniciar</button>
+            <button id="traube-pomodoro-reset" type="button">Reiniciar</button>
           </div>
 
-          <button id="luria-pomodoro-save" class="luria-pomodoro-save" type="button">Salvar durações</button>
+          <button id="traube-pomodoro-save" class="traube-pomodoro-save" type="button">Salvar durações</button>
         </div>
 
-        <small id="luria-pomodoro-status" class="luria-pomodoro-status" role="status" aria-live="polite"></small>
+        <small id="traube-pomodoro-status" class="traube-pomodoro-status" role="status" aria-live="polite"></small>
       </section>
     </div>
 
     <button
-      id="luria-notification-toggle"
-      class="luria-notification-toggle"
+      id="traube-notification-toggle"
+      class="traube-notification-toggle"
       type="button"
       aria-label="Notificações"
       aria-expanded="false"
-      aria-controls="luria-notification-panel"
+      aria-controls="traube-notification-panel"
     >
       <svg
         viewBox="0 0 24 24"
@@ -3814,50 +3814,50 @@ function ensureNotificationCenter() {
       </svg>
 
       <span
-        id="luria-notification-badge"
-        class="luria-notification-badge"
+        id="traube-notification-badge"
+        class="traube-notification-badge"
         hidden
       ></span>
     </button>
 
-    <div class="luria-profile-top">
+    <div class="traube-profile-top">
       <button
-        id="luria-profile-toggle"
-        class="luria-profile-toggle"
+        id="traube-profile-toggle"
+        class="traube-profile-toggle"
         type="button"
         aria-label="Perfil"
         aria-expanded="false"
-      >${luriaUserInitials(window.docmapUser, window.docmapProfile)}</button>
-      <div id="luria-profile-menu" class="luria-profile-menu" hidden>
-        <div class="luria-profile-theme-row">
+      >${traubeUserInitials(window.docmapUser, window.docmapProfile)}</button>
+      <div id="traube-profile-menu" class="traube-profile-menu" hidden>
+        <div class="traube-profile-theme-row">
           <span>Tema</span>
-          <button id="luria-theme-switch" class="luria-theme-switch" type="button" aria-label="Trocar tema">
+          <button id="traube-theme-switch" class="traube-theme-switch" type="button" aria-label="Trocar tema">
             Claro
           </button>
         </div>
         <a href="/configuracoes/#perfil">Perfil</a>
         <button type="button" data-restart-onboarding>Refazer onboarding</button>
         <a href="/configuracoes/">Configurações</a>
-        <button id="luria-profile-logout" type="button">Sair</button>
+        <button id="traube-profile-logout" type="button">Sair</button>
       </div>
     </div>
 
     <section
-      id="luria-notification-panel"
-      class="luria-notification-panel"
+      id="traube-notification-panel"
+      class="traube-notification-panel"
       hidden
     >
-      <header class="luria-notification-head">
+      <header class="traube-notification-head">
         <div>
           <strong>Notificações</strong>
-          <small id="luria-notification-subtitle">
+          <small id="traube-notification-subtitle">
             Novidades do TRAUBE
           </small>
         </div>
 
         <button
-          id="luria-notification-read-all"
-          class="luria-notification-read-all"
+          id="traube-notification-read-all"
+          class="traube-notification-read-all"
           type="button"
           hidden
         >
@@ -3866,16 +3866,16 @@ function ensureNotificationCenter() {
       </header>
 
       <div
-        id="luria-notification-list"
-        class="luria-notification-list"
+        id="traube-notification-list"
+        class="traube-notification-list"
       >
-        <div class="luria-notification-loading">
+        <div class="traube-notification-loading">
           Carregando...
         </div>
       </div>
 
       <a
-        class="luria-notification-footer"
+        class="traube-notification-footer"
         href="/amigos/"
       >
         Abrir Amigos
@@ -3890,36 +3890,36 @@ function ensureNotificationCenter() {
 
   // Pomodoro é exclusivo do ambiente Estudos.
   if (String(page).startsWith("trabalho_")) {
-    center.querySelector(".luria-pomodoro-top")?.remove();
+    center.querySelector(".traube-pomodoro-top")?.remove();
   }
 
   // Controles do topo são fixos ao cabeçalho; remove qualquer posição antiga salva.
-  try { localStorage.removeItem(luriaTopControlsPositionKey()); } catch {}
+  try { localStorage.removeItem(traubeTopControlsPositionKey()); } catch {}
   resetTraubeTopControlsPosition(center);
 
-  const pomodoroToggle = document.getElementById("luria-pomodoro-toggle");
-  const pomodoroPanel = document.getElementById("luria-pomodoro-panel");
-  const pomodoroMiniTime = document.getElementById("luria-pomodoro-mini-time");
-  const timerMinutes = document.getElementById("luria-timer-minutes");
-  const timerSeconds = document.getElementById("luria-timer-seconds");
-  const pomodoroTime = document.getElementById("luria-pomodoro-time");
-  const pomodoroStateLabel = document.getElementById("luria-pomodoro-state-label");
-  const pomodoroStart = document.getElementById("luria-pomodoro-start");
-  const pomodoroReset = document.getElementById("luria-pomodoro-reset");
-  const pomodoroSave = document.getElementById("luria-pomodoro-save");
-  const pomodoroStatus = document.getElementById("luria-pomodoro-status");
-  const pomodoroFocusInput = document.getElementById("luria-pomodoro-focus-minutes");
-  const pomodoroBreakInput = document.getElementById("luria-pomodoro-break-minutes");
-  const pomodoroModes = [...document.querySelectorAll("[data-luria-pomodoro-mode]")];
-  const timerViewButtons = [...document.querySelectorAll("[data-luria-timer-view]")];
-  const timerView = document.getElementById("luria-timer-view");
-  const pomodoroView = document.getElementById("luria-pomodoro-view");
-  const stopwatchTime = document.getElementById("luria-stopwatch-time");
-  const stopwatchStart = document.getElementById("luria-stopwatch-start");
-  const stopwatchPause = document.getElementById("luria-stopwatch-pause");
-  const stopwatchReset = document.getElementById("luria-stopwatch-reset");
+  const pomodoroToggle = document.getElementById("traube-pomodoro-toggle");
+  const pomodoroPanel = document.getElementById("traube-pomodoro-panel");
+  const pomodoroMiniTime = document.getElementById("traube-pomodoro-mini-time");
+  const timerMinutes = document.getElementById("traube-timer-minutes");
+  const timerSeconds = document.getElementById("traube-timer-seconds");
+  const pomodoroTime = document.getElementById("traube-pomodoro-time");
+  const pomodoroStateLabel = document.getElementById("traube-pomodoro-state-label");
+  const pomodoroStart = document.getElementById("traube-pomodoro-start");
+  const pomodoroReset = document.getElementById("traube-pomodoro-reset");
+  const pomodoroSave = document.getElementById("traube-pomodoro-save");
+  const pomodoroStatus = document.getElementById("traube-pomodoro-status");
+  const pomodoroFocusInput = document.getElementById("traube-pomodoro-focus-minutes");
+  const pomodoroBreakInput = document.getElementById("traube-pomodoro-break-minutes");
+  const pomodoroModes = [...document.querySelectorAll("[data-traube-pomodoro-mode]")];
+  const timerViewButtons = [...document.querySelectorAll("[data-traube-timer-view]")];
+  const timerView = document.getElementById("traube-timer-view");
+  const pomodoroView = document.getElementById("traube-pomodoro-view");
+  const stopwatchTime = document.getElementById("traube-stopwatch-time");
+  const stopwatchStart = document.getElementById("traube-stopwatch-start");
+  const stopwatchPause = document.getElementById("traube-stopwatch-pause");
+  const stopwatchReset = document.getElementById("traube-stopwatch-reset");
 
-  const timerDurationInput = document.getElementById("luria-timer-duration-minutes");
+  const timerDurationInput = document.getElementById("traube-timer-duration-minutes");
   const pomodoroDurations = { focus: 25, break: 5 };
   let pomodoroMode = "focus";
   let pomodoroRemaining = pomodoroDurations.focus * 60;
@@ -3959,7 +3959,7 @@ function ensureNotificationCenter() {
     if (timerMinutes) timerMinutes.textContent = m;
     if (timerSeconds) timerSeconds.textContent = s;
     if (pomodoroMiniTime) pomodoroMiniTime.textContent = m + ":" + s;
-    const compact = pomodoroMiniTime?.closest(".luria-timer-compact");
+    const compact = pomodoroMiniTime?.closest(".traube-timer-compact");
     if (compact) compact.setAttribute("aria-label", `Timer ${m} minutos ${s} segundos`);
   };
 
@@ -3974,7 +3974,7 @@ function ensureNotificationCenter() {
     if (stopwatchPause) stopwatchPause.disabled = !stopwatchInterval;
     if (stopwatchInterval && stopwatchCountdownSeconds !== null && currentTimerSeconds() <= 0) {
       clearInterval(stopwatchInterval); stopwatchInterval = null; stopwatchStartedAt = 0;
-      try { localStorage.removeItem("luria:guided-timer"); } catch {}
+      try { localStorage.removeItem("traube:guided-timer"); } catch {}
       if (pomodoroStatus) pomodoroStatus.textContent = "Tempo concluído.";
     }
   };
@@ -3985,7 +3985,7 @@ function ensureNotificationCenter() {
     if (timerView) timerView.hidden = nextView !== "timer";
     if (pomodoroView) pomodoroView.hidden = nextView !== "pomodoro";
     timerViewButtons.forEach((button) => {
-      button.setAttribute("aria-pressed", String(button.dataset.luriaTimerView === nextView));
+      button.setAttribute("aria-pressed", String(button.dataset.traubeTimerView === nextView));
     });
     if (pomodoroStateLabel) {
       pomodoroStateLabel.textContent =
@@ -4010,7 +4010,7 @@ function ensureNotificationCenter() {
         : (pomodoroMode === "break" ? "Iniciar pausa" : "Iniciar foco");
     }
     timerViewButtons.forEach((button) => {
-    button.addEventListener("click", () => setTimerView(button.dataset.luriaTimerView));
+    button.addEventListener("click", () => setTimerView(button.dataset.traubeTimerView));
   });
 
   const resolveTimerModeFromInput = () => {
@@ -4055,7 +4055,7 @@ function ensureNotificationCenter() {
     stopwatchStartedAt = 0;
     stopwatchElapsedMs = 0;
     stopwatchCountdownSeconds = null;
-    try { localStorage.removeItem("luria:guided-timer"); } catch {}
+    try { localStorage.removeItem("traube:guided-timer"); } catch {}
     if (pomodoroStatus) pomodoroStatus.textContent = "";
     if (pomodoroStateLabel) {
       const raw = String(timerDurationInput?.value ?? "").trim();
@@ -4066,13 +4066,13 @@ function ensureNotificationCenter() {
 
   function restoreGuidedStudyTimer() {
     let guided = null;
-    try { guided = JSON.parse(localStorage.getItem("luria:guided-timer") || "null"); } catch {}
+    try { guided = JSON.parse(localStorage.getItem("traube:guided-timer") || "null"); } catch {}
     if (!guided?.active || !guided.startedAt || !guided.durationSeconds) return;
 
     const elapsedMs = Math.max(0, Date.now() - Number(guided.startedAt));
     const durationMs = Math.max(1000, Number(guided.durationSeconds) * 1000);
     if (elapsedMs >= durationMs) {
-      try { localStorage.removeItem("luria:guided-timer"); } catch {}
+      try { localStorage.removeItem("traube:guided-timer"); } catch {}
       return;
     }
 
@@ -4089,7 +4089,7 @@ function ensureNotificationCenter() {
   restoreGuidedStudyTimer();
 
   pomodoroModes.forEach((button) => {
-      button.setAttribute("aria-pressed", String(button.dataset.luriaPomodoroMode === pomodoroMode));
+      button.setAttribute("aria-pressed", String(button.dataset.traubePomodoroMode === pomodoroMode));
     });
   };
 
@@ -4104,10 +4104,10 @@ function ensureNotificationCenter() {
     if (pomodoroPanel) pomodoroPanel.hidden = false;
     if (pomodoroToggle) {
       pomodoroToggle.setAttribute("aria-expanded", "true");
-      pomodoroToggle.classList.remove("luria-pomodoro-attention");
+      pomodoroToggle.classList.remove("traube-pomodoro-attention");
       void pomodoroToggle.offsetWidth;
-      pomodoroToggle.classList.add("luria-pomodoro-attention");
-      window.setTimeout(() => pomodoroToggle.classList.remove("luria-pomodoro-attention"), 7000);
+      pomodoroToggle.classList.add("traube-pomodoro-attention");
+      window.setTimeout(() => pomodoroToggle.classList.remove("traube-pomodoro-attention"), 7000);
     }
     if (pomodoroStatus) pomodoroStatus.textContent = message;
   };
@@ -4127,7 +4127,7 @@ function ensureNotificationCenter() {
       pomodoroMode = "break";
       pomodoroRemaining = pomodoroDurations.break * 60;
       pomodoroModes.forEach((button) => {
-        button.setAttribute("aria-pressed", String(button.dataset.luriaPomodoroMode === "break"));
+        button.setAttribute("aria-pressed", String(button.dataset.traubePomodoroMode === "break"));
       });
       activeTimerView = "pomodoro";
       renderPomodoro();
@@ -4138,7 +4138,7 @@ function ensureNotificationCenter() {
     pomodoroMode = "focus";
     pomodoroRemaining = pomodoroDurations.focus * 60;
     pomodoroModes.forEach((button) => {
-      button.setAttribute("aria-pressed", String(button.dataset.luriaPomodoroMode === "focus"));
+      button.setAttribute("aria-pressed", String(button.dataset.traubePomodoroMode === "focus"));
     });
     activeTimerView = "pomodoro";
     renderPomodoro();
@@ -4162,7 +4162,7 @@ function ensureNotificationCenter() {
   });
 
   pomodoroModes.forEach((button) => {
-    button.addEventListener("click", () => selectPomodoroMode(button.dataset.luriaPomodoroMode));
+    button.addEventListener("click", () => selectPomodoroMode(button.dataset.traubePomodoroMode));
   });
 
   pomodoroStart?.addEventListener("click", () => {
@@ -4274,9 +4274,9 @@ function ensureNotificationCenter() {
   renderStopwatch();
   setTimerView("timer");
 
-  const profileToggle = document.getElementById("luria-profile-toggle");
-  const profileMenu = document.getElementById("luria-profile-menu");
-  const themeSwitch = document.getElementById("luria-theme-switch");
+  const profileToggle = document.getElementById("traube-profile-toggle");
+  const profileMenu = document.getElementById("traube-profile-menu");
+  const themeSwitch = document.getElementById("traube-theme-switch");
   const themeCycle = ["light","dark","leila-mood"];
   const themeLabel = { light:"Claro", dark:"Escuro", "leila-mood":"Rosa" };
   const renderThemeSwitch = () => {
@@ -4318,9 +4318,9 @@ function ensureNotificationCenter() {
       }
     }
   });
-  document.getElementById("luria-profile-logout")?.addEventListener("click", async () => {
+  document.getElementById("traube-profile-logout")?.addEventListener("click", async () => {
     try { await sb.auth.signOut(); } catch {}
-    window.location.href = (window.luriaSitePath?.("/login/") || "/login/");
+    window.location.href = (window.traubeSitePath?.("/login/") || "/login/");
   });
 
   if (page === "questoes") {
@@ -4386,17 +4386,17 @@ async function markNotificationRead(
 async function loadNotificationCount() {
   const badge =
     document.getElementById(
-      "luria-notification-badge"
+      "traube-notification-badge"
     );
 
   const subtitle =
     document.getElementById(
-      "luria-notification-subtitle"
+      "traube-notification-subtitle"
     );
 
   const readAll =
     document.getElementById(
-      "luria-notification-read-all"
+      "traube-notification-read-all"
     );
 
   if (!badge) return;
@@ -4455,22 +4455,22 @@ async function loadNotificationCount() {
 async function loadNotifications() {
   const list =
     document.getElementById(
-      "luria-notification-list"
+      "traube-notification-list"
     );
 
   const badge =
     document.getElementById(
-      "luria-notification-badge"
+      "traube-notification-badge"
     );
 
   const subtitle =
     document.getElementById(
-      "luria-notification-subtitle"
+      "traube-notification-subtitle"
     );
 
   const readAll =
     document.getElementById(
-      "luria-notification-read-all"
+      "traube-notification-read-all"
     );
 
   if (
@@ -4535,7 +4535,7 @@ async function loadNotifications() {
     );
 
     list.innerHTML =
-      '<div class="luria-notification-empty">Não foi possível carregar as notificações.</div>';
+      '<div class="traube-notification-empty">Não foi possível carregar as notificações.</div>';
 
     return;
   }
@@ -4577,7 +4577,7 @@ async function loadNotifications() {
   if (!rows.length) {
     list.innerHTML =
       `
-        <div class="luria-notification-empty">
+        <div class="traube-notification-empty">
           <strong>Nenhuma notificação</strong>
           <span>Novos amigos e conteúdos recebidos aparecerão aqui.</span>
         </div>
@@ -4591,15 +4591,15 @@ async function loadNotifications() {
       .map(
         item => `
           <a
-            class="luria-notification-item ${item.read_at ? "" : "unread"}"
-            href="${escapeHtml(luriaSafeContentUrl(item.href, {relative:true}) || "/amigos/")}"
+            class="traube-notification-item ${item.read_at ? "" : "unread"}"
+            href="${escapeHtml(traubeSafeContentUrl(item.href, {relative:true}) || "/amigos/")}"
             data-notification-id="${escapeHtml(item.id)}"
           >
-            <span class="luria-notification-icon">
+            <span class="traube-notification-icon">
               ${notificationIcon(item.type)}
             </span>
 
-            <span class="luria-notification-copy">
+            <span class="traube-notification-copy">
               <strong>
                 ${escapeHtml(item.title || "Notificação")}
               </strong>
@@ -4615,7 +4615,7 @@ async function loadNotifications() {
 
             ${item.read_at
               ? ""
-              : '<i class="luria-notification-unread-dot" aria-label="Não lida"></i>'
+              : '<i class="traube-notification-unread-dot" aria-label="Não lida"></i>'
             }
           </a>
         `
@@ -4664,32 +4664,32 @@ async function prepararNotificacoes(
 
   const center =
     document.getElementById(
-      "luria-notifications"
+      "traube-notifications"
     );
 
   const toggle =
     document.getElementById(
-      "luria-notification-toggle"
+      "traube-notification-toggle"
     );
 
   const panel =
     document.getElementById(
-      "luria-notification-panel"
+      "traube-notification-panel"
     );
 
   const readAll =
     document.getElementById(
-      "luria-notification-read-all"
+      "traube-notification-read-all"
     );
 
   const badge =
     document.getElementById(
-      "luria-notification-badge"
+      "traube-notification-badge"
     );
 
   const subtitle =
     document.getElementById(
-      "luria-notification-subtitle"
+      "traube-notification-subtitle"
     );
 
   if (
@@ -4797,7 +4797,7 @@ async function prepararNotificacoes(
   await loadNotificationCount();
 
   const realtimeKey =
-    "__luriaNotificationRealtime";
+    "__traubeNotificationRealtime";
 
   const realtimeState =
     window[realtimeKey]
@@ -4909,7 +4909,7 @@ async function prepararNotificacoes(
     realtimeState.channel =
       sb
         .channel(
-          `luria-notifications-${userId}`
+          `traube-notifications-${userId}`
         )
         .on(
           "postgres_changes",
@@ -5019,7 +5019,7 @@ function prepararMobileMenu() {
 function ensureTraubeCalendar(input = null) {
   let popover =
     document.getElementById(
-      "luria-calendar"
+      "traube-calendar"
     );
 
   if (popover) {
@@ -5034,25 +5034,25 @@ function ensureTraubeCalendar(input = null) {
     );
 
   popover.id =
-    "luria-calendar";
+    "traube-calendar";
 
   popover.className =
-    "luria-calendar";
+    "traube-calendar";
 
   popover.hidden =
     true;
 
   popover.innerHTML = `
-    <div class="luria-calendar-head">
+    <div class="traube-calendar-head">
       <button type="button" data-cal-prev aria-label="Mês anterior">‹</button>
       <strong data-cal-title></strong>
       <button type="button" data-cal-next aria-label="Próximo mês">›</button>
     </div>
-    <div class="luria-calendar-weekdays">
+    <div class="traube-calendar-weekdays">
       <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
     </div>
-    <div class="luria-calendar-days" data-cal-days></div>
-    <div class="luria-calendar-foot">
+    <div class="traube-calendar-days" data-cal-days></div>
+    <div class="traube-calendar-foot">
       <button type="button" data-cal-today>Hoje</button>
       <button type="button" data-cal-clear>Limpar</button>
     </div>
@@ -5087,7 +5087,7 @@ function parseTraubeDate(
 }
 
 
-function luriaDateIso(
+function traubeDateIso(
   date
 ) {
   const y =
@@ -5164,7 +5164,7 @@ function openTraubeCalendar(
     date
   ) {
     input.value =
-      luriaDateIso(
+      traubeDateIso(
         date
       );
 
@@ -5249,7 +5249,7 @@ function openTraubeCalendar(
         );
 
       spacer.className =
-        "luria-calendar-spacer";
+        "traube-calendar-spacer";
 
       days.appendChild(
         spacer
@@ -5282,8 +5282,8 @@ function openTraubeCalendar(
         );
 
       if (
-        luriaDateIso(date) ===
-        luriaDateIso(today)
+        traubeDateIso(date) ===
+        traubeDateIso(today)
       ) {
         button.classList.add(
           "is-today"
@@ -5293,8 +5293,8 @@ function openTraubeCalendar(
       if (
         currentSelected
         &&
-        luriaDateIso(date) ===
-          luriaDateIso(currentSelected)
+        traubeDateIso(date) ===
+          traubeDateIso(currentSelected)
       ) {
         button.classList.add(
           "is-selected"
@@ -5442,7 +5442,7 @@ function wireTraubeDateInputs() {
     event => {
       const input =
         event.target.closest?.(
-          'input[type="date"], input[data-luria-calendar="deck"]'
+          'input[type="date"], input[data-traube-calendar="deck"]'
         );
 
       if (!input) return;
@@ -5472,7 +5472,7 @@ wireTraubeDateInputs();
    ========================================================= */
 
 function ensureTraubeTimePicker(input = null) {
-  let popover = document.getElementById("luria-time-picker");
+  let popover = document.getElementById("traube-time-picker");
   const host = input?.closest?.("dialog[open]") || document.body;
 
   if (popover) {
@@ -5481,33 +5481,33 @@ function ensureTraubeTimePicker(input = null) {
   }
 
   popover = document.createElement("div");
-  popover.id = "luria-time-picker";
-  popover.className = "luria-time-picker";
+  popover.id = "traube-time-picker";
+  popover.className = "traube-time-picker";
   popover.hidden = true;
   popover.innerHTML = `
-    <div class="luria-time-picker-head">
+    <div class="traube-time-picker-head">
       <strong>Selecionar hora</strong>
       <button type="button" data-time-close aria-label="Fechar">×</button>
     </div>
-    <div class="luria-time-picker-body">
+    <div class="traube-time-picker-body">
       <label>
         <span>Hora</span>
         <select data-time-hour></select>
       </label>
-      <span class="luria-time-separator">:</span>
+      <span class="traube-time-separator">:</span>
       <label>
         <span>Minuto</span>
         <select data-time-minute></select>
       </label>
     </div>
-    <div class="luria-time-quick">
+    <div class="traube-time-quick">
       <button type="button" data-time-quick="08:00">08:00</button>
       <button type="button" data-time-quick="12:00">12:00</button>
       <button type="button" data-time-quick="14:00">14:00</button>
       <button type="button" data-time-quick="18:00">18:00</button>
       <button type="button" data-time-quick="20:00">20:00</button>
     </div>
-    <div class="luria-time-picker-foot">
+    <div class="traube-time-picker-foot">
       <button type="button" data-time-now>Agora</button>
       <button type="button" data-time-clear>Limpar</button>
       <button type="button" class="primary" data-time-apply>Aplicar</button>
@@ -5592,7 +5592,7 @@ function openTraubeTimePicker(input) {
 }
 
 document.addEventListener("click", event => {
-  const input = event.target.closest?.('input[type="time"][data-luria-time-picker], input#event-time');
+  const input = event.target.closest?.('input[type="time"][data-traube-time-picker], input#event-time');
   if (!input) return;
   event.preventDefault();
   event.stopPropagation();
@@ -5610,7 +5610,7 @@ document.addEventListener("click", event => {
 function ensureTraubeDialog() {
   let dialog =
     document.getElementById(
-      "luria-global-dialog"
+      "traube-global-dialog"
     );
 
   if (dialog) {
@@ -5623,28 +5623,28 @@ function ensureTraubeDialog() {
     );
 
   dialog.id =
-    "luria-global-dialog";
+    "traube-global-dialog";
 
   dialog.className =
-    "luria-global-dialog";
+    "traube-global-dialog";
 
   dialog.innerHTML = `
-    <form method="dialog" class="luria-global-dialog-card">
-      <div class="luria-global-dialog-icon" aria-hidden="true">
-        <img class="luria-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=luria10" alt="">
+    <form method="dialog" class="traube-global-dialog-card">
+      <div class="traube-global-dialog-icon" aria-hidden="true">
+        <img class="traube-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=traube10" alt="">
       </div>
-      <div class="luria-global-dialog-copy">
-        <span class="luria-global-dialog-eyebrow">TRAUBE</span>
-        <h2 class="luria-global-dialog-title">Confirmar ação</h2>
-        <p class="luria-global-dialog-message"></p>
+      <div class="traube-global-dialog-copy">
+        <span class="traube-global-dialog-eyebrow">TRAUBE</span>
+        <h2 class="traube-global-dialog-title">Confirmar ação</h2>
+        <p class="traube-global-dialog-message"></p>
       </div>
-      <label class="luria-global-dialog-prompt" hidden>
+      <label class="traube-global-dialog-prompt" hidden>
         <span>Resposta</span>
-        <input class="luria-global-dialog-input" type="text">
+        <input class="traube-global-dialog-input" type="text">
       </label>
-      <div class="luria-global-dialog-actions">
-        <button class="button secondary luria-global-dialog-cancel" type="button">Cancelar</button>
-        <button class="button primary luria-global-dialog-confirm" type="button">Confirmar</button>
+      <div class="traube-global-dialog-actions">
+        <button class="button secondary traube-global-dialog-cancel" type="button">Cancelar</button>
+        <button class="button primary traube-global-dialog-confirm" type="button">Confirmar</button>
       </div>
     </form>
   `;
@@ -5667,37 +5667,37 @@ function openTraubeDialog({
 
   const title =
     dialog.querySelector(
-      ".luria-global-dialog-title"
+      ".traube-global-dialog-title"
     );
 
   const copy =
     dialog.querySelector(
-      ".luria-global-dialog-message"
+      ".traube-global-dialog-message"
     );
 
   const icon =
     dialog.querySelector(
-      ".luria-global-dialog-icon"
+      ".traube-global-dialog-icon"
     );
 
   const cancel =
     dialog.querySelector(
-      ".luria-global-dialog-cancel"
+      ".traube-global-dialog-cancel"
     );
 
   const confirmButton =
     dialog.querySelector(
-      ".luria-global-dialog-confirm"
+      ".traube-global-dialog-confirm"
     );
 
   const promptWrap =
     dialog.querySelector(
-      ".luria-global-dialog-prompt"
+      ".traube-global-dialog-prompt"
     );
 
   const input =
     dialog.querySelector(
-      ".luria-global-dialog-input"
+      ".traube-global-dialog-input"
     );
 
   const isAlert =
@@ -5715,7 +5715,7 @@ function openTraubeDialog({
 
   const logo =
     icon.querySelector(
-      ".luria-global-dialog-logo"
+      ".traube-global-dialog-logo"
     );
 
   if (logo) {
@@ -5727,10 +5727,10 @@ function openTraubeDialog({
 
     logo.src =
       theme === "dark"
-        ? "/assets/img/logos/logo-icone-azul-claro.png?v=luria10"
+        ? "/assets/img/logos/logo-icone-azul-claro.png?v=traube10"
         : theme === "leila-mood"
-          ? "/assets/img/logos/logo-icone-rosa-escuro.png?v=luria10"
-          : "/assets/img/logos/logo-icone-original.png?v=luria10";
+          ? "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube10"
+          : "/assets/img/logos/logo-icone-original.png?v=traube10";
   }
 
   copy.textContent =
@@ -5885,13 +5885,13 @@ window.TraubeDialog = {
   mas passam a receber o visual TRAUBE. Confirm/prompt são
   assíncronos; novas telas devem preferir window.TraubeDialog.
 */
-window.luriaAlert =
+window.traubeAlert =
   window.TraubeDialog.alert;
 
-window.luriaConfirm =
+window.traubeConfirm =
   window.TraubeDialog.confirm;
 
-window.luriaPrompt =
+window.traubePrompt =
   window.TraubeDialog.prompt;
 
 /*
@@ -5899,7 +5899,7 @@ window.luriaPrompt =
   de cada fluxo antigo ser migrado. Os handlers novos devem usar
   TraubeDialog diretamente para aguardar a resposta.
 */
-window.alert = function luriaLegacyAlert(
+window.alert = function traubeLegacyAlert(
   message
 ) {
   window.TraubeDialog.alert(
@@ -6253,7 +6253,7 @@ async function carregarBootstrap(userId) {
   if (!userId) return null;
 
   try {
-    const { data, error } = await sb.rpc("luria_bootstrap");
+    const { data, error } = await sb.rpc("traube_bootstrap");
     if (error || !data) {
       if (error) console.warn("Não foi possível carregar o bootstrap da TRAUBE:", error.message);
       return null;
@@ -6372,7 +6372,7 @@ async function prepararAdminNavigation(acessoAdmin = null) {
   betaLink.id = "beta-testers-nav-link";
   betaLink.className = `nav-link ${page === "beta_testers" ? "active" : ""}`;
   betaLink.href = "/beta-testers/";
-  betaLink.innerHTML = `<span class="nav-icon">${luriaIcon("users")}</span><span>Beta Testers</span>`;
+  betaLink.innerHTML = `<span class="nav-icon">${traubeIcon("users")}</span><span>Beta Testers</span>`;
   // Beta feedback is available to every signed-in user, regardless of admin role.
   slot.replaceChildren(betaLink);
   const isAdmin = typeof acessoAdmin === "boolean" ? acessoAdmin : await verificarAcessoAdmin();
@@ -6381,7 +6381,7 @@ async function prepararAdminNavigation(acessoAdmin = null) {
   editorialLink.id = "editorial-nav-link";
   editorialLink.className = `nav-link ${page === "editorial" ? "active" : ""}`;
   editorialLink.href = "/editorial/";
-  editorialLink.innerHTML = `<span class="nav-icon">${luriaIcon("calendar")}</span><span>Editorial</span>`;
+  editorialLink.innerHTML = `<span class="nav-icon">${traubeIcon("calendar")}</span><span>Editorial</span>`;
   const link = document.createElement("a");
   link.id = "admin-nav-link";
   link.className = `nav-link ${page === "admin" ? "active" : ""}`;
@@ -6395,7 +6395,7 @@ async function prepararAdminNavigation(acessoAdmin = null) {
 function carregarOnboardingGlobal() {
   if (
     window.TraubeOnboarding
-    || document.getElementById("luria-onboarding-script")
+    || document.getElementById("traube-onboarding-script")
   ) {
     return Promise.resolve();
   }
@@ -6405,7 +6405,7 @@ function carregarOnboardingGlobal() {
       document.createElement("script");
 
     script.id =
-      "luria-onboarding-script";
+      "traube-onboarding-script";
 
     script.src =
       "/assets/js/onboarding.js?v=20261017-neutral1";
@@ -6438,15 +6438,15 @@ async function iniciarApp() {
   await authOwner?.ready;
   if (window.TraubeSessionInvalidated) return;
   if (user && authOwner && authOwner.ownerId !== user.id) {
-    window.location.replace(authOwner.ownerId ? window.location.href : (window.luriaSitePath?.("/login/") || "/login/"));
+    window.location.replace(authOwner.ownerId ? window.location.href : (window.traubeSitePath?.("/login/") || "/login/"));
     return;
   }
   if (error || !data?.session) {
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      user = { id: 'dev-user-id', email: 'dev@luria.med.br' };
+      user = { id: 'dev-user-id', email: 'dev@traube.med.br' };
       window.docmapUser = user;
     } else {
-      window.location.replace(window.luriaSitePath?.("/login/") || "/login/");
+      window.location.replace(window.traubeSitePath?.("/login/") || "/login/");
       return;
     }
   }
@@ -6461,7 +6461,7 @@ async function iniciarApp() {
 
   if (page === "professor_alex") {
     if (accessState?.acessoAdmin !== true) {
-      window.location.replace(window.luriaSitePath?.("/dashboard/") || "/dashboard/");
+      window.location.replace(window.traubeSitePath?.("/dashboard/") || "/dashboard/");
       return;
     }
   }
@@ -6478,7 +6478,7 @@ async function iniciarApp() {
       || ["plus", "pro", "betatester"].includes(workPlan);
 
     if (!workAllowed) {
-      window.location.replace(window.luriaSitePath?.("/dashboard/") || "/dashboard/");
+      window.location.replace(window.traubeSitePath?.("/dashboard/") || "/dashboard/");
       return;
     }
   }
@@ -6533,19 +6533,19 @@ async function iniciarApp() {
   // Dashboard mantém o box de título. No modo Trabalho, os títulos de página foram removidos.
   if (
     (page === "dashboard" || (page.startsWith("trabalho_") && !document.querySelector(".pcr-workspace")))
-    && !document.querySelector(".luria-page-spotlight")
+    && !document.querySelector(".traube-page-spotlight")
   ) {
     const pageRoot = document.querySelector(".main .page");
     const topbar = pageRoot?.querySelector(":scope > .topbar");
 
     if (pageRoot && topbar) {
       const spotlight = document.createElement("section");
-      spotlight.className = `luria-page-spotlight ${page === "dashboard" ? "luria-dashboard-spotlight" : "luria-work-page-spotlight"}`;
+      spotlight.className = `traube-page-spotlight ${page === "dashboard" ? "traube-dashboard-spotlight" : "traube-work-page-spotlight"}`;
       spotlight.setAttribute("aria-label", info.title || "Página");
       spotlight.innerHTML = `
-        <div class="luria-page-spotlight-copy">
+        <div class="traube-page-spotlight-copy">
           <strong data-page-title></strong>
-          <small class="luria-page-spotlight-helper"></small>
+          <small class="traube-page-spotlight-helper"></small>
         </div>
       `;
       topbar.insertAdjacentElement("afterend", spotlight);
@@ -6573,16 +6573,16 @@ async function iniciarApp() {
 
   // Subtítulo curto dentro do card de título, no padrão limpo sem eyebrow/callout.
   document
-    .querySelectorAll(".luria-page-spotlight-copy")
+    .querySelectorAll(".traube-page-spotlight-copy")
     .forEach((copy) => {
-      copy.querySelectorAll(".luria-page-spotlight-label, [class*='label'], [class*='eyebrow'], .badge").forEach((el) => el.remove());
+      copy.querySelectorAll(".traube-page-spotlight-label, [class*='label'], [class*='eyebrow'], .badge").forEach((el) => el.remove());
 
-      let helper = copy.querySelector(".luria-page-spotlight-helper") || copy.querySelector("small") || copy.querySelector("p");
+      let helper = copy.querySelector(".traube-page-spotlight-helper") || copy.querySelector("small") || copy.querySelector("p");
       if (!helper) {
         helper = document.createElement("small");
         copy.appendChild(helper);
       }
-      helper.className = "luria-page-spotlight-helper";
+      helper.className = "traube-page-spotlight-helper";
 
       if (info.helper) {
         helper.textContent = info.helper;
@@ -6590,7 +6590,7 @@ async function iniciarApp() {
       helper.hidden = !helper.textContent;
 
       copy.querySelectorAll("span").forEach((el) => el.remove());
-      copy.querySelectorAll("small:not(.luria-page-spotlight-helper), p:not(.luria-page-spotlight-helper)").forEach((el) => el.remove());
+      copy.querySelectorAll("small:not(.traube-page-spotlight-helper), p:not(.traube-page-spotlight-helper)").forEach((el) => el.remove());
     });
 
   // Logout resiliente a re-renderizações da sidebar.
@@ -6621,7 +6621,7 @@ async function iniciarApp() {
         } catch (_) {}
 
         // Landing pública é a saída mais previsível no navegador e no PWA.
-        window.location.replace(window.luriaSitePath?.("/") || "/");
+        window.location.replace(window.traubeSitePath?.("/") || "/");
       }
     });
   }
@@ -6662,7 +6662,7 @@ async function iniciarApp() {
   if (
     !window.TraubeWeeklyContent
     && !document.querySelector(
-      'script[data-luria-weekly-content]'
+      'script[data-traube-weekly-content]'
     )
   ) {
     const weeklyScript =
@@ -6677,7 +6677,7 @@ async function iniciarApp() {
       true;
 
     weeklyScript.dataset
-      .luriaWeeklyContent =
+      .traubeWeeklyContent =
       "1";
 
     document.head.appendChild(
@@ -6869,26 +6869,26 @@ iniciarApp();
 /* Sessão global de estudo: persiste entre páginas e pausa após 15 min sem interação. */
 // Optional social presence uses the shared study timer and authenticated private channels.
 (function loadStudyPresence(){
-  if(document.querySelector('script[data-luria-study-presence]'))return;
+  if(document.querySelector('script[data-traube-study-presence]'))return;
   const script=document.createElement('script');
-  script.src=window.luriaSitePath?.('/assets/js/social-presence.js?v=1') || '/assets/js/social-presence.js?v=1';
-  script.dataset.luriaStudyPresence='true';
+  script.src=window.traubeSitePath?.('/assets/js/social-presence.js?v=1') || '/assets/js/social-presence.js?v=1';
+  script.dataset.traubeStudyPresence='true';
   script.defer=true;
   document.head.appendChild(script);
 })();
 
 (function loadFeedbackChecklist(){
-  if(document.querySelector('script[data-luria-feedback-checklist]'))return;
+  if(document.querySelector('script[data-traube-feedback-checklist]'))return;
   const script=document.createElement('script');
-  script.src=window.luriaSitePath?.('/assets/js/feedback-checklist.js?v=8') || '/assets/js/feedback-checklist.js?v=8';
-  script.dataset.luriaFeedbackChecklist='true';
+  script.src=window.traubeSitePath?.('/assets/js/feedback-checklist.js?v=8') || '/assets/js/feedback-checklist.js?v=8';
+  script.dataset.traubeFeedbackChecklist='true';
   script.defer=true;
   document.head.appendChild(script);
 })();
 
 (function installTraubeStudyTimer(){
   if (window.TraubeStudyTimer) return;
-  const KEY="luria:active-study-session:v1", IDLE_MS=15*60*1000;
+  const KEY="traube:active-study-session:v1", IDLE_MS=15*60*1000;
   const owned=window.TraubeLocalOwnerStore, flights=new Map(), unpersisted=new Set(), completed=new Set();
   let state=null, idleHandle=null, starts=Promise.resolve();
   const now=()=>Date.now();
@@ -6897,7 +6897,7 @@ iniciarApp();
     try{if(state){const key=owned?.key(KEY,state.ownerId);if(key){localStorage.setItem(key,JSON.stringify(state));unpersisted.delete(state.sessionId);}}}catch(error){unpersisted.add(state.sessionId);console.warn("TRAUBE: falha ao guardar sessão local",error);}
   }
   const elapsed=()=>state ? Math.max(0,Math.floor(((state.accumulatedMs||0)+(state.running?now()-state.segmentStartedAt:0))/1000)) : 0;
-  function notify(reason,detail={}){window.dispatchEvent(new CustomEvent("luria:study-timer",{detail:{reason,...detail}}));}
+  function notify(reason,detail={}){window.dispatchEvent(new CustomEvent("traube:study-timer",{detail:{reason,...detail}}));}
   function pause(reason="manual"){
     if(!state?.running) return;
     state.accumulatedMs=(state.accumulatedMs||0)+Math.max(0,now()-state.segmentStartedAt);
@@ -6943,7 +6943,7 @@ iniciarApp();
       return true;
     };
     const promise=Promise.resolve().then(()=>window.navigator?.locks
-      ? window.navigator.locks.request("luria:study:"+snapshot.ownerId,run) : run())
+      ? window.navigator.locks.request("traube:study:"+snapshot.ownerId,run) : run())
       .catch(error=>{console.warn("TRAUBE: não foi possível registrar tempo de estudo",error);notify("persist_failed");return false;})
       .finally(()=>flights.delete(snapshot.sessionId));
     flights.set(snapshot.sessionId,promise);return promise;
@@ -6969,7 +6969,7 @@ iniciarApp();
     clearTimeout(idleHandle);state=read();
     if(state){if(!state.sessionId){state.sessionId=crypto.randomUUID();write();}if(state.running)scheduleIdle();}
   }
-  restore();owned?.ready.then(restore);window.addEventListener("luria:owner-changed",restore);
+  restore();owned?.ready.then(restore);window.addEventListener("traube:owner-changed",restore);
   window.addEventListener("storage",event=>{if(event.key===owned?.key(KEY))restore();});
   ["pointerdown","keydown","touchstart","input","change"].forEach(ev=>document.addEventListener(ev,touch,{passive:true,capture:true}));
   window.TraubeStudyTimer={start,pause,resume,finish:flush,touch,setExternalQuestions,getState:()=>state,getElapsedSeconds:elapsed};
@@ -6978,7 +6978,7 @@ iniciarApp();
 /* PWA global topbar v30 — compact, aligned and scrolls with the page */
 (function(){
   const style=document.createElement("style");
-  style.id="luria-pwa-topbar-v30";
+  style.id="traube-pwa-topbar-v30";
   style.textContent=`
   @media(max-width:980px){
     html.pwa-standalone,html.pwa-standalone body{height:auto!important;min-height:100%!important;overflow-x:hidden!important;overflow-y:auto!important}
@@ -6990,14 +6990,14 @@ iniciarApp();
     html.pwa-standalone body .topbar .page-heading{min-width:0!important;max-width:100%!important;align-self:center!important;overflow:hidden!important}
     html.pwa-standalone body .topbar .page-heading .eyebrow{margin:0 0 2px!important;font-size:7px!important;line-height:1.1!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
     html.pwa-standalone body .topbar .page-heading h1{margin:0!important;font-size:17px!important;line-height:1.12!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
-    html.pwa-standalone body .topbar .luria-notifications{position:relative!important;top:auto!important;right:auto!important;width:auto!important;min-width:0!important;margin:0!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:6px!important;z-index:45!important}
-    html.pwa-standalone body .luria-pomodoro-toggle{width:40px!important;min-width:40px!important;height:40px!important;padding:0!important;display:grid!important;place-items:center!important;border-radius:11px!important}
-    html.pwa-standalone body .luria-pomodoro-icon{width:20px!important;height:20px!important;flex:0 0 20px!important}
-    html.pwa-standalone body .luria-pomodoro-icon svg{width:20px!important;height:20px!important}
-    html.pwa-standalone body .luria-pomodoro-copy{display:none!important}
-    html.pwa-standalone body .luria-notification-toggle,html.pwa-standalone body .luria-profile-toggle{width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;border-radius:11px!important}
-    html.pwa-standalone body .luria-profile-toggle{font-size:21px!important}
-    html.pwa-standalone body .luria-notification-panel,html.pwa-standalone body .luria-pomodoro-panel,html.pwa-standalone body .luria-profile-menu{position:fixed!important;top:calc(env(safe-area-inset-top) + 56px)!important;right:8px!important;left:auto!important;max-width:calc(100vw - 16px)!important;z-index:2147483000!important}
+    html.pwa-standalone body .topbar .traube-notifications{position:relative!important;top:auto!important;right:auto!important;width:auto!important;min-width:0!important;margin:0!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:6px!important;z-index:45!important}
+    html.pwa-standalone body .traube-pomodoro-toggle{width:40px!important;min-width:40px!important;height:40px!important;padding:0!important;display:grid!important;place-items:center!important;border-radius:11px!important}
+    html.pwa-standalone body .traube-pomodoro-icon{width:20px!important;height:20px!important;flex:0 0 20px!important}
+    html.pwa-standalone body .traube-pomodoro-icon svg{width:20px!important;height:20px!important}
+    html.pwa-standalone body .traube-pomodoro-copy{display:none!important}
+    html.pwa-standalone body .traube-notification-toggle,html.pwa-standalone body .traube-profile-toggle{width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;border-radius:11px!important}
+    html.pwa-standalone body .traube-profile-toggle{font-size:21px!important}
+    html.pwa-standalone body .traube-notification-panel,html.pwa-standalone body .traube-pomodoro-panel,html.pwa-standalone body .traube-profile-menu{position:fixed!important;top:calc(env(safe-area-inset-top) + 56px)!important;right:8px!important;left:auto!important;max-width:calc(100vw - 16px)!important;z-index:2147483000!important}
   }
   `;
   if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
@@ -7005,7 +7005,7 @@ iniciarApp();
 
 /* PWA sidebar anchors v31 — streak/mode fixed; Trabalho PCR/mode fixed */
 (function(){
- const style=document.createElement("style");style.id="luria-pwa-sidebar-anchors-v31";style.textContent=`
+ const style=document.createElement("style");style.id="traube-pwa-sidebar-anchors-v31";style.textContent=`
  @media(max-width:980px){
   html.pwa-standalone body #sidebar.sidebar{overflow:hidden!important;display:flex!important;flex-direction:column!important;height:100dvh!important}
   html.pwa-standalone body #sidebar.sidebar .sidebar-top{position:relative!important;top:auto!important;margin-top:0!important;padding-top:0!important;flex:0 0 auto!important}
@@ -7016,39 +7016,39 @@ iniciarApp();
   html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
   html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work{position:relative!important;flex:0 0 auto!important;margin-top:8px!important;padding-top:8px!important;padding-bottom:max(8px,env(safe-area-inset-bottom))!important;background:var(--sidebar)!important;z-index:12!important}
   html.pwa-standalone body #sidebar.sidebar .streak-mini,
-  html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{flex-shrink:0!important}
+  html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch{flex-shrink:0!important}
   html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button,
-  html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .luria-mode-footer-switch{flex-shrink:0!important}
+  html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .traube-mode-footer-switch{flex-shrink:0!important}
  }`;if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 /* PWA topbar v32 — menu exatamente alinhado aos controles da direita */
 (function(){
- const style=document.createElement("style");style.id="luria-pwa-topbar-align-v32";style.textContent=`
+ const style=document.createElement("style");style.id="traube-pwa-topbar-align-v32";style.textContent=`
  @media(max-width:980px){
   html.pwa-standalone body .topbar{align-items:center!important}
   html.pwa-standalone body .topbar .menu-open,
-  html.pwa-standalone body .topbar .luria-pomodoro-toggle,
-  html.pwa-standalone body .topbar .luria-notification-toggle,
-  html.pwa-standalone body .topbar .luria-profile-toggle{
+  html.pwa-standalone body .topbar .traube-pomodoro-toggle,
+  html.pwa-standalone body .topbar .traube-notification-toggle,
+  html.pwa-standalone body .topbar .traube-profile-toggle{
    width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;
    margin-top:0!important;margin-bottom:0!important;align-self:center!important;transform:none!important;
    box-sizing:border-box!important
   }
   html.pwa-standalone body .topbar .menu-open{position:relative!important;top:auto!important;bottom:auto!important}
-  html.pwa-standalone body .topbar .luria-notifications{align-self:center!important;height:40px!important;align-items:center!important}
+  html.pwa-standalone body .topbar .traube-notifications{align-self:center!important;height:40px!important;align-items:center!important}
  }`;if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
 /* Global notification bell alignment v33 — desktop + mobile + PWA */
 (function ensureGlobalNotificationBellAlignment(){
-  if(document.getElementById("luria-notification-bell-align-v33")) return;
+  if(document.getElementById("traube-notification-bell-align-v33")) return;
   const style=document.createElement("style");
-  style.id="luria-notification-bell-align-v33";
+  style.id="traube-notification-bell-align-v33";
   style.textContent=`
-    body .topbar .luria-notification-toggle,
-    body #luria-notification-toggle {
+    body .topbar .traube-notification-toggle,
+    body #traube-notification-toggle {
       display:grid!important;
       place-items:center!important;
       align-items:center!important;
@@ -7058,8 +7058,8 @@ iniciarApp();
       text-align:center!important;
     }
 
-    body .topbar .luria-notification-toggle > svg,
-    body #luria-notification-toggle > svg {
+    body .topbar .traube-notification-toggle > svg,
+    body #traube-notification-toggle > svg {
       position:static!important;
       inset:auto!important;
       display:block!important;
@@ -7073,16 +7073,16 @@ iniciarApp();
       transform-origin:center!important;
     }
 
-    body .topbar .luria-notification-toggle .luria-notification-badge,
-    body #luria-notification-toggle .luria-notification-badge {
+    body .topbar .traube-notification-toggle .traube-notification-badge,
+    body #traube-notification-toggle .traube-notification-badge {
       grid-area:1 / 1!important;
       align-self:start!important;
       justify-self:end!important;
     }
 
     @media(max-width:980px){
-      html.pwa-standalone body .topbar .luria-notification-toggle,
-      html.pwa-standalone body #luria-notification-toggle {
+      html.pwa-standalone body .topbar .traube-notification-toggle,
+      html.pwa-standalone body #traube-notification-toggle {
         display:grid!important;
         place-items:center!important;
       }
@@ -7094,17 +7094,17 @@ iniciarApp();
 
 /* Profile menu v34 — ações uniformes + saída destacada */
 (function ensureProfileMenuUniformActions(){
-  if(document.getElementById("luria-profile-menu-uniform-v34")) return;
+  if(document.getElementById("traube-profile-menu-uniform-v34")) return;
   const style=document.createElement("style");
-  style.id="luria-profile-menu-uniform-v34";
+  style.id="traube-profile-menu-uniform-v34";
   style.textContent=`
-    .luria-profile-menu{
+    .traube-profile-menu{
       min-width:208px!important;
       padding:8px!important;
     }
 
-    .luria-profile-menu > a,
-    .luria-profile-menu > button:not(.luria-theme-switch){
+    .traube-profile-menu > a,
+    .traube-profile-menu > button:not(.traube-theme-switch){
       width:100%!important;
       height:42px!important;
       min-height:42px!important;
@@ -7121,12 +7121,12 @@ iniciarApp();
       text-align:left!important;
     }
 
-    .luria-profile-menu > [data-restart-onboarding]{
+    .traube-profile-menu > [data-restart-onboarding]{
       min-height:42px!important;
       height:42px!important;
     }
 
-    .luria-profile-menu > #luria-profile-logout{
+    .traube-profile-menu > #traube-profile-logout{
       min-height:42px!important;
       height:42px!important;
       margin-top:6px!important;
@@ -7136,13 +7136,13 @@ iniciarApp();
       font-weight:850!important;
     }
 
-    .luria-profile-menu > #luria-profile-logout:hover{
+    .traube-profile-menu > #traube-profile-logout:hover{
       border-color:var(--danger,#d84a4a)!important;
       background:color-mix(in srgb,var(--danger,#d84a4a) 14%,var(--surface))!important;
       color:var(--danger,#d84a4a)!important;
     }
 
-    :root[data-theme="dark"] .luria-profile-menu > #luria-profile-logout{
+    :root[data-theme="dark"] .traube-profile-menu > #traube-profile-logout{
       background:color-mix(in srgb,var(--danger,#e56464) 11%,var(--surface))!important;
       border-color:color-mix(in srgb,var(--danger,#e56464) 55%,var(--border))!important;
     }
@@ -7153,18 +7153,18 @@ iniciarApp();
 
 /* Global topbar controls uniformity v35 */
 (function ensureGlobalTopbarControlsUniformity(){
-  if(document.getElementById("luria-global-topbar-controls-v35")) return;
+  if(document.getElementById("traube-global-topbar-controls-v35")) return;
   const style=document.createElement("style");
-  style.id="luria-global-topbar-controls-v35";
+  style.id="traube-global-topbar-controls-v35";
   style.textContent=`
     /* Desktop/tablet: mesma caixa, raio, borda e alinhamento. */
-    body .topbar .luria-notifications{
+    body .topbar .traube-notifications{
       display:flex!important;
       align-items:center!important;
       gap:10px!important;
       min-height:48px!important;
     }
-    body .topbar .luria-pomodoro-toggle{
+    body .topbar .traube-pomodoro-toggle{
       height:48px!important;
       min-height:48px!important;
       min-width:164px!important;
@@ -7175,8 +7175,8 @@ iniciarApp();
       box-sizing:border-box!important;
       background:var(--surface)!important;
     }
-    body .topbar .luria-notification-toggle,
-    body .topbar .luria-profile-toggle{
+    body .topbar .traube-notification-toggle,
+    body .topbar .traube-profile-toggle{
       width:48px!important;
       height:48px!important;
       min-width:48px!important;
@@ -7187,17 +7187,17 @@ iniciarApp();
       box-sizing:border-box!important;
       background:var(--surface)!important;
     }
-    body .topbar .luria-pomodoro-icon,
-    body .topbar .luria-pomodoro-icon svg{
+    body .topbar .traube-pomodoro-icon,
+    body .topbar .traube-pomodoro-icon svg{
       width:22px!important;
       height:22px!important;
     }
-    body .topbar .luria-pomodoro-icon{flex:0 0 22px!important}
-    body .topbar .luria-notification-toggle > svg{
+    body .topbar .traube-pomodoro-icon{flex:0 0 22px!important}
+    body .topbar .traube-notification-toggle > svg{
       width:20px!important;
       height:20px!important;
     }
-    body .topbar .luria-profile-toggle{
+    body .topbar .traube-profile-toggle{
       display:grid!important;
       place-items:center!important;
       color:var(--accent)!important;
@@ -7208,12 +7208,12 @@ iniciarApp();
       letter-spacing:-.02em!important;
       text-align:center!important;
     }
-    body .topbar .luria-pomodoro-copy strong{
+    body .topbar .traube-pomodoro-copy strong{
       font-size:13px!important;
       line-height:1.05!important;
       font-weight:850!important;
     }
-    body .topbar .luria-pomodoro-copy small{
+    body .topbar .traube-pomodoro-copy small{
       margin-top:2px!important;
       font-size:11px!important;
       line-height:1!important;
@@ -7222,7 +7222,7 @@ iniciarApp();
 
     /* PWA/mobile: mesma escala compacta para os três controles. */
     @media(max-width:980px){
-      html.pwa-standalone body .topbar .luria-notifications{
+      html.pwa-standalone body .topbar .traube-notifications{
         height:40px!important;
         min-height:40px!important;
         gap:6px!important;
@@ -7230,9 +7230,9 @@ iniciarApp();
         align-self:flex-start!important;
         transform:translateY(-10px)!important;
       }
-      html.pwa-standalone body .topbar .luria-pomodoro-toggle,
-      html.pwa-standalone body .topbar .luria-notification-toggle,
-      html.pwa-standalone body .topbar .luria-profile-toggle{
+      html.pwa-standalone body .topbar .traube-pomodoro-toggle,
+      html.pwa-standalone body .topbar .traube-notification-toggle,
+      html.pwa-standalone body .topbar .traube-profile-toggle{
         width:40px!important;
         height:40px!important;
         min-width:40px!important;
@@ -7243,25 +7243,25 @@ iniciarApp();
         align-self:center!important;
         transform:none!important;
       }
-      html.pwa-standalone body .topbar .luria-pomodoro-toggle{
+      html.pwa-standalone body .topbar .traube-pomodoro-toggle{
         display:grid!important;
         place-items:center!important;
       }
-      html.pwa-standalone body .topbar .luria-pomodoro-icon,
-      html.pwa-standalone body .topbar .luria-pomodoro-icon svg{
+      html.pwa-standalone body .topbar .traube-pomodoro-icon,
+      html.pwa-standalone body .topbar .traube-pomodoro-icon svg{
         width:19px!important;
         height:19px!important;
       }
-      html.pwa-standalone body .topbar .luria-pomodoro-icon{flex:0 0 19px!important}
-      html.pwa-standalone body .topbar .luria-notification-toggle > svg{
+      html.pwa-standalone body .topbar .traube-pomodoro-icon{flex:0 0 19px!important}
+      html.pwa-standalone body .topbar .traube-notification-toggle > svg{
         width:18px!important;
         height:18px!important;
       }
-      html.pwa-standalone body .topbar .luria-profile-toggle{
+      html.pwa-standalone body .topbar .traube-profile-toggle{
         font-size:15px!important;
         letter-spacing:-.02em!important;
       }
-      html.pwa-standalone body .topbar .luria-pomodoro-copy{
+      html.pwa-standalone body .topbar .traube-pomodoro-copy{
         display:none!important;
       }
     }
@@ -7276,90 +7276,90 @@ iniciarApp();
   let submitted = false;
 
   function ensureStyles() {
-    if (document.getElementById("luria-beta-feedback-styles")) return;
+    if (document.getElementById("traube-beta-feedback-styles")) return;
     const style = document.createElement("style");
-    style.id = "luria-beta-feedback-styles";
+    style.id = "traube-beta-feedback-styles";
     style.textContent = `
-      body.luria-beta-feedback-locked { overflow: hidden !important; }
-      .luria-beta-feedback-overlay {
+      body.traube-beta-feedback-locked { overflow: hidden !important; }
+      .traube-beta-feedback-overlay {
         position: fixed; inset: 0; z-index: 10000; display: grid; place-items: center;
         padding: 22px; background: rgba(5, 20, 38, .72); backdrop-filter: blur(10px);
       }
-      .luria-beta-feedback-overlay[hidden] { display: none !important; }
-      .luria-beta-feedback-card {
+      .traube-beta-feedback-overlay[hidden] { display: none !important; }
+      .traube-beta-feedback-card {
         width: min(640px, 100%); max-height: min(760px, calc(100dvh - 32px)); overflow: auto;
         border: 1px solid var(--border); border-radius: 22px; padding: 26px;
         background: var(--surface, #fff); color: var(--text, #102033);
         box-shadow: 0 28px 80px rgba(0,0,0,.28);
       }
-      .luria-beta-feedback-kicker {
+      .traube-beta-feedback-kicker {
         display: inline-flex; padding: 6px 10px; border-radius: 999px;
         background: color-mix(in srgb, var(--accent, #184888) 12%, transparent);
         color: var(--accent, #184888); font-size: 12px; font-weight: 850; letter-spacing: .04em;
         text-transform: uppercase;
       }
-      .luria-beta-feedback-card h2 { margin: 12px 0 7px; font-size: clamp(24px, 4vw, 31px); }
-      .luria-beta-feedback-card > p { margin: 0 0 20px; color: var(--muted, #667085); line-height: 1.55; }
-      .luria-beta-feedback-fields { display: grid; gap: 15px; }
-      .luria-beta-feedback-field { display: grid; gap: 7px; }
-      .luria-beta-feedback-field span { font-size: 14px; font-weight: 800; }
-      .luria-beta-feedback-field textarea {
+      .traube-beta-feedback-card h2 { margin: 12px 0 7px; font-size: clamp(24px, 4vw, 31px); }
+      .traube-beta-feedback-card > p { margin: 0 0 20px; color: var(--muted, #667085); line-height: 1.55; }
+      .traube-beta-feedback-fields { display: grid; gap: 15px; }
+      .traube-beta-feedback-field { display: grid; gap: 7px; }
+      .traube-beta-feedback-field span { font-size: 14px; font-weight: 800; }
+      .traube-beta-feedback-field textarea {
         width: 100%; min-height: 118px; resize: vertical; box-sizing: border-box;
         border: 1px solid var(--border); border-radius: 13px; padding: 13px 14px;
         background: var(--surface-2, #f7f9fc); color: var(--text, #102033);
         font: inherit; line-height: 1.45; outline: none;
       }
-      .luria-beta-feedback-field textarea:focus {
+      .traube-beta-feedback-field textarea:focus {
         border-color: var(--accent, #184888);
         box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent, #184888) 14%, transparent);
       }
-      .luria-beta-feedback-actions { margin-top: 18px; display: grid; gap: 9px; }
-      .luria-beta-feedback-submit {
+      .traube-beta-feedback-actions { margin-top: 18px; display: grid; gap: 9px; }
+      .traube-beta-feedback-submit {
         min-height: 46px; border: 0; border-radius: 12px; padding: 0 18px;
         background: var(--accent, #184888); color: #fff; font: inherit; font-weight: 850; cursor: pointer;
       }
-      .luria-beta-feedback-submit:disabled { opacity: .62; cursor: progress; }
-      .luria-beta-feedback-message { min-height: 20px; color: var(--muted, #667085); font-size: 13px; text-align: center; }
-      .luria-beta-feedback-message.is-error { color: #b42318; }
+      .traube-beta-feedback-submit:disabled { opacity: .62; cursor: progress; }
+      .traube-beta-feedback-message { min-height: 20px; color: var(--muted, #667085); font-size: 13px; text-align: center; }
+      .traube-beta-feedback-message.is-error { color: #b42318; }
       @media (max-width: 640px) {
-        .luria-beta-feedback-overlay { padding: 12px; }
-        .luria-beta-feedback-card { padding: 20px 17px; border-radius: 18px; }
-        .luria-beta-feedback-field textarea { min-height: 105px; }
+        .traube-beta-feedback-overlay { padding: 12px; }
+        .traube-beta-feedback-card { padding: 20px 17px; border-radius: 18px; }
+        .traube-beta-feedback-field textarea { min-height: 105px; }
       }
     `;
     document.head.appendChild(style);
   }
 
   function createModal() {
-    let overlay = document.getElementById("luria-beta-feedback-overlay");
+    let overlay = document.getElementById("traube-beta-feedback-overlay");
     if (overlay) return overlay;
 
     ensureStyles();
     overlay = document.createElement("div");
-    overlay.id = "luria-beta-feedback-overlay";
-    overlay.className = "luria-beta-feedback-overlay";
+    overlay.id = "traube-beta-feedback-overlay";
+    overlay.className = "traube-beta-feedback-overlay";
     overlay.hidden = true;
     overlay.setAttribute("role", "dialog");
     overlay.setAttribute("aria-modal", "true");
-    overlay.setAttribute("aria-labelledby", "luria-beta-feedback-title");
+    overlay.setAttribute("aria-labelledby", "traube-beta-feedback-title");
     overlay.innerHTML = `
-      <form class="luria-beta-feedback-card" id="luria-beta-feedback-form">
-        <span class="luria-beta-feedback-kicker">Beta Tester</span>
-        <h2 id="luria-beta-feedback-title">Como está sua experiência com o TRAUBE?</h2>
+      <form class="traube-beta-feedback-card" id="traube-beta-feedback-form">
+        <span class="traube-beta-feedback-kicker">Beta Tester</span>
+        <h2 id="traube-beta-feedback-title">Como está sua experiência com o TRAUBE?</h2>
         <p>Seu feedback periódico ajuda a definir os próximos ajustes. Para continuar usando o TRAUBE, responda os dois campos abaixo.</p>
-        <div class="luria-beta-feedback-fields">
-          <label class="luria-beta-feedback-field">
+        <div class="traube-beta-feedback-fields">
+          <label class="traube-beta-feedback-field">
             <span>O que já está bom?</span>
-            <textarea id="luria-beta-feedback-positives" maxlength="2500" required placeholder="Conte o que funcionou bem, o que você gostou ou o que deveria ser mantido."></textarea>
+            <textarea id="traube-beta-feedback-positives" maxlength="2500" required placeholder="Conte o que funcionou bem, o que você gostou ou o que deveria ser mantido."></textarea>
           </label>
-          <label class="luria-beta-feedback-field">
+          <label class="traube-beta-feedback-field">
             <span>O que podemos melhorar?</span>
-            <textarea id="luria-beta-feedback-improvements" maxlength="2500" required placeholder="Conte o que incomodou, faltou, ficou confuso ou poderia funcionar melhor."></textarea>
+            <textarea id="traube-beta-feedback-improvements" maxlength="2500" required placeholder="Conte o que incomodou, faltou, ficou confuso ou poderia funcionar melhor."></textarea>
           </label>
         </div>
-        <div class="luria-beta-feedback-actions">
-          <button class="luria-beta-feedback-submit" id="luria-beta-feedback-submit" type="submit">Enviar feedback</button>
-          <div class="luria-beta-feedback-message" id="luria-beta-feedback-message" aria-live="polite"></div>
+        <div class="traube-beta-feedback-actions">
+          <button class="traube-beta-feedback-submit" id="traube-beta-feedback-submit" type="submit">Enviar feedback</button>
+          <div class="traube-beta-feedback-message" id="traube-beta-feedback-message" aria-live="polite"></div>
         </div>
       </form>
     `;
@@ -7376,23 +7376,23 @@ iniciarApp();
       }
     }, true);
 
-    const form = overlay.querySelector("#luria-beta-feedback-form");
+    const form = overlay.querySelector("#traube-beta-feedback-form");
     form.addEventListener("submit", async event => {
       event.preventDefault();
-      const positives = overlay.querySelector("#luria-beta-feedback-positives").value.trim();
-      const improvements = overlay.querySelector("#luria-beta-feedback-improvements").value.trim();
-      const button = overlay.querySelector("#luria-beta-feedback-submit");
-      const message = overlay.querySelector("#luria-beta-feedback-message");
+      const positives = overlay.querySelector("#traube-beta-feedback-positives").value.trim();
+      const improvements = overlay.querySelector("#traube-beta-feedback-improvements").value.trim();
+      const button = overlay.querySelector("#traube-beta-feedback-submit");
+      const message = overlay.querySelector("#traube-beta-feedback-message");
 
       if (!positives || !improvements) {
         message.textContent = "Preencha os dois campos para continuar.";
-        message.className = "luria-beta-feedback-message is-error";
+        message.className = "traube-beta-feedback-message is-error";
         return;
       }
 
       button.disabled = true;
       message.textContent = "Enviando...";
-      message.className = "luria-beta-feedback-message";
+      message.className = "traube-beta-feedback-message";
 
       try {
         const { error } = await window.supabaseClient.rpc("submit_beta_feedback", {
@@ -7402,12 +7402,12 @@ iniciarApp();
         if (error) throw error;
         submitted = true;
         overlay.hidden = true;
-        document.body.classList.remove("luria-beta-feedback-locked");
+        document.body.classList.remove("traube-beta-feedback-locked");
         message.textContent = "";
       } catch (error) {
         console.warn("Não foi possível enviar o feedback beta:", error);
         message.textContent = "Não foi possível enviar. Verifique sua conexão e tente novamente.";
-        message.className = "luria-beta-feedback-message is-error";
+        message.className = "traube-beta-feedback-message is-error";
         button.disabled = false;
       }
     });
@@ -7438,9 +7438,9 @@ iniciarApp();
 
       const overlay = createModal();
       overlay.hidden = false;
-      document.body.classList.add("luria-beta-feedback-locked");
+      document.body.classList.add("traube-beta-feedback-locked");
       requestAnimationFrame(() => {
-        overlay.querySelector("#luria-beta-feedback-positives")?.focus();
+        overlay.querySelector("#traube-beta-feedback-positives")?.focus();
       });
     } catch (error) {
       console.warn("Não foi possível verificar o feedback beta:", error);
@@ -7466,7 +7466,7 @@ iniciarApp();
       var txt=(el.textContent||'').trim().toLowerCase();
       var aria=(el.getAttribute('aria-label')||'').trim().toLowerCase();
       if(txt==='voltar'||txt.startsWith('voltar ')||txt.startsWith('← voltar')||aria==='voltar'||aria.startsWith('voltar ')){
-        el.classList.add('luria-back-switch-btn');
+        el.classList.add('traube-back-switch-btn');
       }
     });
   }
@@ -7479,12 +7479,12 @@ iniciarApp();
 /* TRAUBE_TOP_CONTROLS_LOCKED_V66 */
 (function(){
   const style=document.createElement("style");
-  style.id="luria-top-controls-locked-v66";
+  style.id="traube-top-controls-locked-v66";
   style.textContent=`
-    .topbar .luria-notifications,
-    body:not([data-page="dashboard"]) .topbar .luria-notifications,
-    body[data-page="dashboard"] .topbar .luria-notifications,
-    html.pwa-standalone body .topbar .luria-notifications{
+    .topbar .traube-notifications,
+    body:not([data-page="dashboard"]) .topbar .traube-notifications,
+    body[data-page="dashboard"] .topbar .traube-notifications,
+    html.pwa-standalone body .topbar .traube-notifications{
       position:static!important;
       inset:auto!important;
       top:auto!important;
@@ -7499,8 +7499,8 @@ iniciarApp();
       will-change:auto!important;
       align-self:center!important;
     }
-    .luria-notifications[data-luria-custom-position],
-    .luria-notifications.luria-top-controls-dragging{
+    .traube-notifications[data-traube-custom-position],
+    .traube-notifications.traube-top-controls-dragging{
       position:static!important;
       inset:auto!important;
       transform:none!important;
@@ -7508,7 +7508,7 @@ iniciarApp();
       user-select:auto!important;
       cursor:default!important;
     }
-    .luria-top-controls-drag-handle{
+    .traube-top-controls-drag-handle{
       display:none!important;
       pointer-events:none!important;
     }
@@ -7519,18 +7519,18 @@ iniciarApp();
 
 /* Dashboard-sized topbar controls v36 */
 (function ensureDashboardSizedTopbarControls(){
-  if(document.getElementById("luria-dashboard-sized-topbar-controls-v36")) return;
+  if(document.getElementById("traube-dashboard-sized-topbar-controls-v36")) return;
   const style=document.createElement("style");
-  style.id="luria-dashboard-sized-topbar-controls-v36";
+  style.id="traube-dashboard-sized-topbar-controls-v36";
   style.textContent=`
     @media(min-width:981px){
-      body:not([data-page="dashboard"]) .topbar .luria-notifications{
+      body:not([data-page="dashboard"]) .topbar .traube-notifications{
         min-height:43px!important;
         height:43px!important;
         gap:10px!important;
       }
 
-      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-toggle{
+      body:not([data-page="dashboard"]) .topbar .traube-pomodoro-toggle{
         height:43px!important;
         min-height:43px!important;
         min-width:156px!important;
@@ -7540,23 +7540,23 @@ iniciarApp();
         border-radius:12px!important;
       }
 
-      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-icon,
-      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-icon svg{
+      body:not([data-page="dashboard"]) .topbar .traube-pomodoro-icon,
+      body:not([data-page="dashboard"]) .topbar .traube-pomodoro-icon svg{
         width:20px!important;
         height:20px!important;
         flex:0 0 20px!important;
       }
 
-      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-copy strong{
+      body:not([data-page="dashboard"]) .topbar .traube-pomodoro-copy strong{
         font-size:12.5px!important;
       }
 
-      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-copy small{
+      body:not([data-page="dashboard"]) .topbar .traube-pomodoro-copy small{
         font-size:10.5px!important;
       }
 
-      body:not([data-page="dashboard"]) .topbar .luria-notification-toggle,
-      body:not([data-page="dashboard"]) .topbar .luria-profile-toggle{
+      body:not([data-page="dashboard"]) .topbar .traube-notification-toggle,
+      body:not([data-page="dashboard"]) .topbar .traube-profile-toggle{
         width:43px!important;
         height:43px!important;
         min-width:43px!important;
@@ -7564,12 +7564,12 @@ iniciarApp();
         border-radius:12px!important;
       }
 
-      body:not([data-page="dashboard"]) .topbar .luria-notification-toggle > svg{
+      body:not([data-page="dashboard"]) .topbar .traube-notification-toggle > svg{
         width:19px!important;
         height:19px!important;
       }
 
-      body:not([data-page="dashboard"]) .topbar .luria-profile-toggle{
+      body:not([data-page="dashboard"]) .topbar .traube-profile-toggle{
         font-size:16px!important;
       }
     }
@@ -7580,19 +7580,19 @@ iniciarApp();
 
 /* Dashboard-width timer v37 */
 (function ensureDashboardWidthTimer(){
-  if(document.getElementById("luria-dashboard-width-timer-v37")) return;
+  if(document.getElementById("traube-dashboard-width-timer-v37")) return;
   const style=document.createElement("style");
-  style.id="luria-dashboard-width-timer-v37";
+  style.id="traube-dashboard-width-timer-v37";
   style.textContent=`
     @media(min-width:981px){
-      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-toggle{
+      body:not([data-page="dashboard"]) .topbar .traube-pomodoro-toggle{
         width:auto!important;
         min-width:0!important;
         max-width:none!important;
         padding:0 10px!important;
         gap:8px!important;
       }
-      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-copy{
+      body:not([data-page="dashboard"]) .topbar .traube-pomodoro-copy{
         width:auto!important;
         min-width:0!important;
       }
@@ -7604,15 +7604,15 @@ iniciarApp();
 
 /* Compact vertical timer internals v38 — keeps outer callout size unchanged */
 (function ensureCompactVerticalTimerV38(){
-  if(document.getElementById("luria-compact-vertical-timer-v38")) return;
+  if(document.getElementById("traube-compact-vertical-timer-v38")) return;
   const style=document.createElement("style");
-  style.id="luria-compact-vertical-timer-v38";
+  style.id="traube-compact-vertical-timer-v38";
   style.textContent=`
-    .luria-pomodoro-toggle{
+    .traube-pomodoro-toggle{
       overflow:hidden!important;
     }
 
-    .luria-pomodoro-toggle .luria-timer-compact{
+    .traube-pomodoro-toggle .traube-timer-compact{
       position:relative!important;
       display:grid!important;
       grid-template-columns:auto 18px!important;
@@ -7626,7 +7626,7 @@ iniciarApp();
       margin:0!important;
     }
 
-    .luria-pomodoro-toggle .luria-timer-hm{
+    .traube-pomodoro-toggle .traube-timer-hm{
       display:flex!important;
       flex-direction:column!important;
       justify-content:center!important;
@@ -7636,7 +7636,7 @@ iniciarApp();
       line-height:.86!important;
     }
 
-    .luria-pomodoro-toggle .luria-timer-hm > strong{
+    .traube-pomodoro-toggle .traube-timer-hm > strong{
       display:block!important;
       margin:0!important;
       padding:0!important;
@@ -7648,7 +7648,7 @@ iniciarApp();
       font-variant-numeric:tabular-nums!important;
     }
 
-    .luria-pomodoro-toggle #luria-timer-seconds{
+    .traube-pomodoro-toggle #traube-timer-seconds{
       position:relative!important;
       display:block!important;
       align-self:center!important;
@@ -7663,7 +7663,7 @@ iniciarApp();
       transform:translateY(0)!important;
     }
 
-    .luria-pomodoro-toggle .luria-timer-sr-only{
+    .traube-pomodoro-toggle .traube-timer-sr-only{
       position:absolute!important;
       width:1px!important;
       height:1px!important;
@@ -7677,7 +7677,7 @@ iniciarApp();
 
     /* Não altera dimensões externas já aprovadas. */
     @media(min-width:981px){
-      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-toggle{
+      body:not([data-page="dashboard"]) .topbar .traube-pomodoro-toggle{
         height:43px!important;
         min-height:43px!important;
       }
@@ -7689,11 +7689,11 @@ iniciarApp();
 
 /* Compact timer v39 — minutos em cima, segundos embaixo */
 (function ensureCompactTimerMinutesSecondsV39(){
-  if(document.getElementById("luria-compact-timer-ms-v39")) return;
+  if(document.getElementById("traube-compact-timer-ms-v39")) return;
   const style=document.createElement("style");
-  style.id="luria-compact-timer-ms-v39";
+  style.id="traube-compact-timer-ms-v39";
   style.textContent=`
-    .luria-pomodoro-toggle .luria-timer-compact{
+    .traube-pomodoro-toggle .traube-timer-compact{
       display:flex!important;
       align-items:center!important;
       width:auto!important;
@@ -7702,7 +7702,7 @@ iniciarApp();
       margin:0!important;
     }
 
-    .luria-pomodoro-toggle .luria-timer-ms{
+    .traube-pomodoro-toggle .traube-timer-ms{
       display:flex!important;
       flex-direction:column!important;
       justify-content:center!important;
@@ -7713,7 +7713,7 @@ iniciarApp();
       padding:0!important;
     }
 
-    .luria-pomodoro-toggle .luria-timer-ms > strong{
+    .traube-pomodoro-toggle .traube-timer-ms > strong{
       display:block!important;
       margin:0!important;
       padding:0!important;
@@ -7725,7 +7725,7 @@ iniciarApp();
       font-variant-numeric:tabular-nums!important;
     }
 
-    .luria-pomodoro-toggle #luria-timer-seconds{
+    .traube-pomodoro-toggle #traube-timer-seconds{
       font-size:14px!important;
       color:currentColor!important;
       transform:none!important;
@@ -7737,17 +7737,17 @@ iniciarApp();
 
 /* Compact timer v40 — minutos maiores, segundos menores */
 (function ensureCompactTimerHierarchyV40(){
-  if(document.getElementById("luria-compact-timer-hierarchy-v40")) return;
+  if(document.getElementById("traube-compact-timer-hierarchy-v40")) return;
   const style=document.createElement("style");
-  style.id="luria-compact-timer-hierarchy-v40";
+  style.id="traube-compact-timer-hierarchy-v40";
   style.textContent=`
-    .luria-pomodoro-toggle .luria-timer-ms > #luria-timer-minutes{
+    .traube-pomodoro-toggle .traube-timer-ms > #traube-timer-minutes{
       font-size:16px!important;
       font-weight:900!important;
       line-height:.9!important;
     }
 
-    .luria-pomodoro-toggle .luria-timer-ms > #luria-timer-seconds{
+    .traube-pomodoro-toggle .traube-timer-ms > #traube-timer-seconds{
       font-size:10px!important;
       font-weight:850!important;
       line-height:.9!important;
@@ -7760,27 +7760,27 @@ iniciarApp();
 
 /* Timer/Pomodoro v42 — pausa separada + aviso de transição */
 (function ensureTimerControlsV42(){
-  if(document.getElementById("luria-timer-controls-v42")) return;
+  if(document.getElementById("traube-timer-controls-v42")) return;
   const style=document.createElement("style");
-  style.id="luria-timer-controls-v42";
+  style.id="traube-timer-controls-v42";
   style.textContent=`
-    .luria-stopwatch-actions{
+    .traube-stopwatch-actions{
       grid-template-columns:repeat(3,minmax(0,1fr))!important;
     }
 
-    .luria-stopwatch-actions button:disabled{
+    .traube-stopwatch-actions button:disabled{
       opacity:.45!important;
       cursor:default!important;
     }
 
-    .luria-pomodoro-toggle.luria-pomodoro-attention{
+    .traube-pomodoro-toggle.traube-pomodoro-attention{
       border-color:var(--accent)!important;
       background:var(--accent-soft)!important;
       color:var(--accent)!important;
-      animation:luriaPomodoroAttention 900ms ease-in-out 0s 5;
+      animation:traubePomodoroAttention 900ms ease-in-out 0s 5;
     }
 
-    @keyframes luriaPomodoroAttention{
+    @keyframes traubePomodoroAttention{
       0%,100%{
         box-shadow:0 1px 2px rgba(15,23,42,.03);
         transform:scale(1);
@@ -7792,7 +7792,7 @@ iniciarApp();
     }
 
     @media(prefers-reduced-motion:reduce){
-      .luria-pomodoro-toggle.luria-pomodoro-attention{
+      .traube-pomodoro-toggle.traube-pomodoro-attention{
         animation:none!important;
         box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 18%,transparent)!important;
       }
@@ -7804,9 +7804,9 @@ iniciarApp();
 
 /* PWA Trabalho — mantém PCR e troca de ambiente fixos no rodapé do menu. */
 (function ensurePwaWorkSidebarAnchorsV32() {
-  if (document.getElementById("luria-pwa-work-sidebar-anchors-v32")) return;
+  if (document.getElementById("traube-pwa-work-sidebar-anchors-v32")) return;
   const style = document.createElement("style");
-  style.id = "luria-pwa-work-sidebar-anchors-v32";
+  style.id = "traube-pwa-work-sidebar-anchors-v32";
   style.textContent = `
     @media (max-width: 980px) {
       html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar {
@@ -7838,7 +7838,7 @@ iniciarApp();
       }
 
       html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button,
-      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .luria-mode-footer-switch {
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .traube-mode-footer-switch {
         flex: 0 0 auto !important;
       }
     }
@@ -7862,7 +7862,7 @@ iniciarApp();
       font-size: 24px !important;
     }
 
-    #sidebar.sidebar .sidebar-footer-work .luria-mode-footer-switch {
+    #sidebar.sidebar .sidebar-footer-work .traube-mode-footer-switch {
       box-sizing: border-box !important;
       height: 48px !important;
       min-height: 48px !important;
@@ -7882,9 +7882,9 @@ iniciarApp();
 
 /* PWA Prática clínica — garante rolagem/touch da sidebar sem travar o drawer. */
 (function ensurePwaPraticaSidebarScrollV213() {
-  if (document.getElementById("luria-pwa-pratica-sidebar-scroll-v213")) return;
+  if (document.getElementById("traube-pwa-pratica-sidebar-scroll-v213")) return;
   const style = document.createElement("style");
-  style.id = "luria-pwa-pratica-sidebar-scroll-v213";
+  style.id = "traube-pwa-pratica-sidebar-scroll-v213";
   style.textContent = `
     @media (max-width: 980px) {
       html.pwa-standalone body[data-page="plantao"] #sidebar.sidebar {
@@ -7929,17 +7929,17 @@ iniciarApp();
 
 
 /* TRAUBE v2026.10.02 — padroniza listas clicáveis e menus de opção do site. */
-(function luriaNormalizeClickableListsV1(){
+(function traubeNormalizeClickableListsV1(){
   const tag=(root=document)=>{
-    root.querySelectorAll?.("select:not([multiple])").forEach(el=>el.classList.add("luria-site-select"));
+    root.querySelectorAll?.("select:not([multiple])").forEach(el=>el.classList.add("traube-site-select"));
     root.querySelectorAll?.('[role="listbox"],[role="menu"]').forEach(el=>{
       if(el.closest("#sidebar,.sidebar,.nav,.nav-study,.nav-submenu")) return;
-      el.classList.add("luria-site-list");
+      el.classList.add("traube-site-list");
     });
     root.querySelectorAll?.('div[id$="-menu"],section[id$="-menu"],ul[id$="-menu"]').forEach(el=>{
       if(el.closest("#sidebar,.sidebar,.nav,.nav-study,.nav-submenu")) return;
       if(el.classList.contains("notebook-emoji-menu")) return;
-      el.classList.add("luria-site-list");
+      el.classList.add("traube-site-list");
     });
   };
   const run=()=>tag(document);
@@ -7948,9 +7948,9 @@ iniciarApp();
     for(const rec of records){
       rec.addedNodes.forEach(node=>{
         if(node.nodeType!==1) return;
-        if(node.matches?.("select:not([multiple])")) node.classList.add("luria-site-select");
+        if(node.matches?.("select:not([multiple])")) node.classList.add("traube-site-select");
         if(node.matches?.('[role="listbox"],[role="menu"],div[id$="-menu"],section[id$="-menu"],ul[id$="-menu"]')){
-          if(!node.closest("#sidebar,.sidebar,.nav,.nav-study,.nav-submenu")&&!node.classList.contains("notebook-emoji-menu")) node.classList.add("luria-site-list");
+          if(!node.closest("#sidebar,.sidebar,.nav,.nav-study,.nav-submenu")&&!node.classList.contains("notebook-emoji-menu")) node.classList.add("traube-site-list");
         }
         tag(node);
       });
@@ -7961,11 +7961,11 @@ iniciarApp();
 
 /* TRAUBE intelligence / command center layer */
 (function loadTraubeCommandCenter(){
-  if (document.querySelector('script[data-luria-command-center]')) return;
+  if (document.querySelector('script[data-traube-command-center]')) return;
   const script = document.createElement('script');
-  script.src = '/assets/js/luria-command-center.js?v=20261026-topic-study';
+  script.src = '/assets/js/traube-command-center.js?v=20261026-topic-study';
   script.defer = true;
-  script.dataset.luriaCommandCenter = '1';
+  script.dataset.traubeCommandCenter = '1';
   document.head.appendChild(script);
 })();
 
@@ -7973,12 +7973,12 @@ iniciarApp();
 
 /* PWA mode switch v221 — fixed size/position + theme-safe colors */
 (function ensurePwaModeSwitchV221(){
-  if(document.getElementById("luria-pwa-mode-switch-v221")) return;
+  if(document.getElementById("traube-pwa-mode-switch-v221")) return;
   const style=document.createElement("style");
-  style.id="luria-pwa-mode-switch-v221";
+  style.id="traube-pwa-mode-switch-v221";
   style.textContent=`
     @media (max-width:980px){
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch{
         display:flex!important;
         align-items:center!important;
         justify-content:flex-start!important;
@@ -8003,9 +8003,9 @@ iniciarApp();
         filter:none!important;
       }
 
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch:hover,
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch:active,
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch:focus{
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch:hover,
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch:active,
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch:focus{
         background:#E7EEF7!important;
         color:#184888!important;
         border-color:#D9E2EC!important;
@@ -8014,8 +8014,8 @@ iniciarApp();
         filter:none!important;
       }
 
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-avatar,
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon{
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .user-avatar,
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .traube-mode-icon{
         display:grid!important;
         place-items:center!important;
         width:30px!important;
@@ -8031,7 +8031,7 @@ iniciarApp();
         visibility:visible!important;
       }
 
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy{
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .user-copy{
         display:grid!important;
         align-content:center!important;
         min-width:0!important;
@@ -8040,7 +8040,7 @@ iniciarApp();
         visibility:visible!important;
       }
 
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy strong{
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .user-copy strong{
         display:block!important;
         margin:0!important;
         color:#184888!important;
@@ -8051,7 +8051,7 @@ iniciarApp();
         visibility:visible!important;
       }
 
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy small{
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .user-copy small{
         display:block!important;
         margin-top:2px!important;
         color:#5F6F82!important;
@@ -8062,50 +8062,50 @@ iniciarApp();
         visibility:visible!important;
       }
 
-      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch,
-      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch:hover,
-      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch:active{
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .traube-mode-footer-switch,
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .traube-mode-footer-switch:hover,
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .traube-mode-footer-switch:active{
         background:#E7EEF7!important;
         border-color:#D9E2EC!important;
         color:#184888!important;
       }
 
-      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon{
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .traube-mode-footer-switch .traube-mode-icon{
         background:rgba(24,72,136,.10)!important;
         color:#184888!important;
       }
 
-      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch .user-copy strong{
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .traube-mode-footer-switch .user-copy strong{
         color:#184888!important;
       }
 
-      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch .user-copy small{
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .traube-mode-footer-switch .user-copy small{
         color:#5F6F82!important;
       }
 
-      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch,
-      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch:hover,
-      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch:active{
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .traube-mode-footer-switch,
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .traube-mode-footer-switch:hover,
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .traube-mode-footer-switch:active{
         background:var(--accent-soft)!important;
         border-color:var(--border)!important;
         color:var(--accent)!important;
       }
 
-      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon{
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .traube-mode-footer-switch .traube-mode-icon{
         background:color-mix(in srgb,var(--accent) 12%,transparent)!important;
         color:var(--accent)!important;
       }
 
-      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch .user-copy strong{
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .traube-mode-footer-switch .user-copy strong{
         color:var(--accent)!important;
       }
 
-      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch .user-copy small{
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .traube-mode-footer-switch .user-copy small{
         color:var(--muted)!important;
       }
 
-      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study .luria-mode-footer-switch,
-      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work .luria-mode-footer-switch{
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study .traube-mode-footer-switch,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work .traube-mode-footer-switch{
         position:relative!important;
         inset:auto!important;
       }
@@ -8120,9 +8120,9 @@ iniciarApp();
 /* PWA v36 — rodapé visual idêntico entre Estudos e Trabalho.
    PCR/Ofensiva e troca de ambiente deixam de depender da altura da navegação. */
 (function ensurePwaSidebarFooterLockV36(){
-  if(document.getElementById("luria-pwa-sidebar-footer-lock-v36")) return;
+  if(document.getElementById("traube-pwa-sidebar-footer-lock-v36")) return;
   const style=document.createElement("style");
-  style.id="luria-pwa-sidebar-footer-lock-v36";
+  style.id="traube-pwa-sidebar-footer-lock-v36";
   style.textContent=`
     @media(max-width:980px){
       html.pwa-standalone body #sidebar.sidebar{
@@ -8164,7 +8164,7 @@ iniciarApp();
       }
 
       /* Botão de troca: MESMO tamanho e MESMA posição nos dois ambientes. */
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch{
         position:absolute!important;
         left:0!important;
         right:0!important;
@@ -8207,8 +8207,8 @@ iniciarApp();
       }
 
       /* Geometria interna do seletor fica igual nos dois modos. */
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon,
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-avatar{
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .traube-mode-icon,
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .user-avatar{
         width:42px!important;
         height:42px!important;
         min-width:42px!important;
@@ -8220,7 +8220,7 @@ iniciarApp();
         place-items:center!important;
       }
 
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy{
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .user-copy{
         display:grid!important;
         align-content:center!important;
         justify-items:start!important;
@@ -8229,7 +8229,7 @@ iniciarApp();
         opacity:1!important;
       }
 
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy strong{
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .user-copy strong{
         display:block!important;
         margin:0!important;
         font-size:16px!important;
@@ -8238,7 +8238,7 @@ iniciarApp();
         opacity:1!important;
       }
 
-      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy small{
+      html.pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .user-copy small{
         display:block!important;
         margin:0!important;
         font-size:9px!important;
@@ -8248,33 +8248,33 @@ iniciarApp();
       }
 
       /* Claro + escuro: fundo azul oficial e absolutamente tudo branco. */
-      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
-      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch{
         background:#184888!important;
         background-color:#184888!important;
         border:1px solid #184888!important;
         box-shadow:0 8px 20px rgba(24,72,136,.20)!important;
       }
 
-      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
-      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch *,
-      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
-      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch *{
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch,
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch *,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch *{
         color:#fff!important;
         -webkit-text-fill-color:#fff!important;
         text-shadow:none!important;
       }
 
-      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon,
-      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon{
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .traube-mode-icon,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch .traube-mode-icon{
         background:rgba(255,255,255,.16)!important;
         border-color:transparent!important;
       }
 
-      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg,
-      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg,
-      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg *,
-      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg *{
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch svg,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch svg,
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch svg *,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch svg *{
         color:#fff!important;
         stroke:#fff!important;
         fill:none!important;
@@ -8282,9 +8282,9 @@ iniciarApp();
       }
 
       /* Rosa segue a mesma cor do callout superior. */
-      html[data-theme="leila-mood"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
-      html[data-theme="pink"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
-      html.pwa-standalone body.theme-leila-mood #sidebar.sidebar .luria-mode-footer-switch{
+      html[data-theme="leila-mood"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch,
+      html[data-theme="pink"].pwa-standalone body #sidebar.sidebar .traube-mode-footer-switch,
+      html.pwa-standalone body.theme-leila-mood #sidebar.sidebar .traube-mode-footer-switch{
         background:var(--accent)!important;
         background-color:var(--accent)!important;
         border-color:var(--accent)!important;
@@ -8334,9 +8334,9 @@ iniciarApp();
   const api=window.TraubeGuidedStudy||{};
   api.completeActiveStep=function(source){
     try{
-      const active=JSON.parse(sessionStorage.getItem("luria:guided-study-active")||"null");
+      const active=JSON.parse(sessionStorage.getItem("traube:guided-study-active")||"null");
       if(!active?.plan?.createdAt||!Number.isInteger(active.activeIndex))return false;
-      sessionStorage.setItem("luria:guided-study-step-complete",JSON.stringify({
+      sessionStorage.setItem("traube:guided-study-step-complete",JSON.stringify({
         createdAt:active.plan.createdAt,
         activeIndex:active.activeIndex,
         source:String(source||"completed"),
@@ -8351,8 +8351,8 @@ iniciarApp();
 
 /* TRAUBE GLOBAL DESKTOP SHELL CHROME v1 — 2026-10-04 */
 (() => {
-  if (window.__luriaGlobalDesktopShellChrome) return;
-  window.__luriaGlobalDesktopShellChrome = true;
+  if (window.__traubeGlobalDesktopShellChrome) return;
+  window.__traubeGlobalDesktopShellChrome = true;
 
   function mountGlobalChrome(){
     if (window.innerWidth < 981) return;
@@ -8364,9 +8364,9 @@ iniciarApp();
     if(topbar.parentElement!==shell){
       shell.appendChild(topbar);
     }
-    topbar.classList.add("dashboard-shell-topbar","luria-global-shell-topbar");
-    sidebar.classList.add("dashboard-shell-sidebar","luria-global-shell-sidebar");
-    document.body.classList.add("luria-global-shell-mounted");
+    topbar.classList.add("dashboard-shell-topbar","traube-global-shell-topbar");
+    sidebar.classList.add("dashboard-shell-sidebar","traube-global-shell-sidebar");
+    document.body.classList.add("traube-global-shell-mounted");
   }
 
   const boot=()=>{
@@ -8392,26 +8392,26 @@ iniciarApp();
    Reutiliza a folha global já presente no <head>. Nunca injeta uma segunda
    cópia depois do CSS específico da página, pois isso altera a cascata e causa layout shift. */
 (() => {
-  if (window.__luriaGlobalMasterCssEnsure) return;
-  window.__luriaGlobalMasterCssEnsure = true;
+  if (window.__traubeGlobalMasterCssEnsure) return;
+  window.__traubeGlobalMasterCssEnsure = true;
 
   const ensure = () => {
     if (!document.querySelector(".app-shell")) return;
 
     const matches = Array.from(
-      document.querySelectorAll('link[rel="stylesheet"][href*="/assets/css/luria-brand-v5.css"]')
+      document.querySelectorAll('link[rel="stylesheet"][href*="/assets/css/traube-brand-v5.css"]')
     );
 
-    let link = document.getElementById("luria-global-master-css") || matches[0] || null;
+    let link = document.getElementById("traube-global-master-css") || matches[0] || null;
 
     if (!link) {
       link = document.createElement("link");
-      link.id = "luria-global-master-css";
+      link.id = "traube-global-master-css";
       link.rel = "stylesheet";
-      link.href = "/assets/css/luria-brand-v5.css?v=20261005-global-v90";
+      link.href = "/assets/css/traube-brand-v5.css?v=20261005-global-v90";
       document.head.appendChild(link);
     } else if (!link.id) {
-      link.id = "luria-global-master-css";
+      link.id = "traube-global-master-css";
     }
 
     matches.forEach((item) => {
@@ -8441,9 +8441,9 @@ iniciarApp();
 
 /* PWA layout rescue v34 — normalização global após os refinamentos desktop */
 (function installTraubePwaLayoutRescue(){
-  if(document.getElementById("luria-pwa-layout-rescue-v34")) return;
+  if(document.getElementById("traube-pwa-layout-rescue-v34")) return;
   const style=document.createElement("style");
-  style.id="luria-pwa-layout-rescue-v34";
+  style.id="traube-pwa-layout-rescue-v34";
   style.textContent=`
   @media(max-width:980px){
     html.pwa-standalone,
@@ -8488,7 +8488,7 @@ iniciarApp();
       margin:0 0 8px!important;
       box-sizing:border-box!important;
     }
-    html.pwa-standalone body .luria-page-spotlight{
+    html.pwa-standalone body .traube-page-spotlight{
       width:100%!important;
       max-width:100%!important;
       min-height:72px!important;
@@ -8498,15 +8498,15 @@ iniciarApp();
       box-sizing:border-box!important;
       overflow:hidden!important;
     }
-    html.pwa-standalone body .luria-page-spotlight-copy{
+    html.pwa-standalone body .traube-page-spotlight-copy{
       min-width:0!important;
       max-width:100%!important;
     }
-    html.pwa-standalone body .luria-page-spotlight-copy strong{
+    html.pwa-standalone body .traube-page-spotlight-copy strong{
       font-size:18px!important;
       line-height:1.15!important;
     }
-    html.pwa-standalone body .luria-page-spotlight-copy small{
+    html.pwa-standalone body .traube-page-spotlight-copy small{
       font-size:10px!important;
       line-height:1.35!important;
       white-space:normal!important;
@@ -8731,9 +8731,9 @@ iniciarApp();
       gap:6px!important;
     }
     html.pwa-standalone body .topbar .menu-open,
-    html.pwa-standalone body .luria-pomodoro-toggle,
-    html.pwa-standalone body .luria-notification-toggle,
-    html.pwa-standalone body .luria-profile-toggle{
+    html.pwa-standalone body .traube-pomodoro-toggle,
+    html.pwa-standalone body .traube-notification-toggle,
+    html.pwa-standalone body .traube-profile-toggle{
       width:38px!important;height:38px!important;min-width:38px!important;min-height:38px!important;
     }
     html.pwa-standalone body[data-page="amigos"] .friends-ref-studyrats-actions{
@@ -8750,9 +8750,9 @@ iniciarApp();
 
 /* TRAUBE PWA SIDEBAR FOOTER FIX v37 — 2026-10-08 */
 (function installTraubePwaSidebarFooterFixV37(){
-  if(document.getElementById("luria-pwa-sidebar-footer-fix-v37"))return;
+  if(document.getElementById("traube-pwa-sidebar-footer-fix-v37"))return;
   const style=document.createElement("style");
-  style.id="luria-pwa-sidebar-footer-fix-v37";
+  style.id="traube-pwa-sidebar-footer-fix-v37";
   style.textContent=`
     @media (max-width:980px){
       html.pwa-standalone body #sidebar.sidebar{
@@ -8801,7 +8801,7 @@ iniciarApp();
       }
       html.pwa-standalone body #sidebar.sidebar .sidebar-footer .streak-mini,
       html.pwa-standalone body #sidebar.sidebar .sidebar-footer .work-pcr-button,
-      html.pwa-standalone body #sidebar.sidebar .sidebar-footer .luria-mode-footer-switch{
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer .traube-mode-footer-switch{
         position:relative!important;
         inset:auto!important;
         display:flex!important;
@@ -8820,7 +8820,7 @@ iniciarApp();
         max-height:58px!important;
         order:0!important;
       }
-      html.pwa-standalone body #sidebar.sidebar .sidebar-footer .luria-mode-footer-switch{
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer .traube-mode-footer-switch{
         height:58px!important;
         min-height:58px!important;
         max-height:58px!important;

@@ -142,7 +142,7 @@
   background:var(--accent-soft, color-mix(in srgb,var(--accent,#184888) 9%,transparent));
   color:var(--accent,var(--accent,#184888));
 }
-.daily-section-icon .luria-ui-icon{
+.daily-section-icon .traube-ui-icon{
   width:18px;
   height:18px;
   display:block;

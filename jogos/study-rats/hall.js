@@ -187,7 +187,7 @@
         button.type = 'button'; button.className = 'sr-friend-choice';
         const label = document.createElement('span');
         const name = document.createElement('strong'); name.textContent = friend.display_name || 'Amigo TRAUBE';
-        const id = document.createElement('small'); id.textContent = friend.luria_id ? `ID ${friend.luria_id}` : 'Convidar para jogar';
+        const id = document.createElement('small'); id.textContent = friend.traube_id ? `ID ${friend.traube_id}` : 'Convidar para jogar';
         label.append(name, id); button.append(label);
         button.addEventListener('click', () => startOnline('friends', friend.user_id));
         list.append(button);

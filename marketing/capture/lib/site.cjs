@@ -1,6 +1,6 @@
 'use strict';
 /*
- * Servidor isolado: o navegador de captura acessa https://luria.test, e cada
+ * Servidor isolado: o navegador de captura acessa https://traube.test, e cada
  * requisição é atendida a partir dos arquivos locais do repositório.
  * - Qualquer origem externa é BLOQUEADA (e registrada).
  * - /assets/js/supabase.js é trocado pelo backend fictício.
@@ -11,7 +11,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { REPO } = require('../../scripts/lib/common.cjs');
 
-const ORIGIN = 'https://luria.test';
+const ORIGIN = 'https://traube.test';
 const MIME = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'application/javascript', '.mjs': 'application/javascript',
   '.json': 'application/json', '.webmanifest': 'application/manifest+json', '.svg': 'image/svg+xml', '.png': 'image/png',

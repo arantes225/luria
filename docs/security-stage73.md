@@ -32,7 +32,7 @@ canonicalização, fallback do Dashboard e o catálogo de Calculadoras.
 
 Removidas as duas CDNs também de `style-src`, `font-src`, `connect-src` e
 `worker-src` nesse lote: recursos locais, loaders compartilhados locais
-(`onboarding.js` e `luria-command-center.js`) e backend Supabase identificado.
+(`onboarding.js` e `traube-command-center.js`) e backend Supabase identificado.
 Mantidos `default-src 'self'`, `object-src 'none'`, `base-uri 'self'`,
 `form-action 'self'`, HTTPS/WSS do projeto Supabase, origens de imagens já
 aprovadas no Admin e regras existentes de mídia/frames/PWA. Não houve
@@ -364,7 +364,7 @@ O lote incluiu os 24 restantes (8 antes sem CSP):
 - `desafio-diario.html`, `desafio-diario/index.html`;
 - `estatisticas.html`, `estatisticas/index.html`, `estudar/index.html`;
 - `mini-osce/index.html`, `plantao.html`, `plantao/index.html`,
-  `plantao/luriazap/index.html`, `plantao/sala-emergencia/index.html`;
+  `plantao/traubezap/index.html`, `plantao/sala-emergencia/index.html`;
 - `professor-alex/index.html`, `qf-r8K2mV7qL4x9P1cF/index.html`,
   `sessao-estudo/index.html`;
 - `trabalho/{antimicrobianos,plantoes,prescricao,prontuario,protocolos}/index.html`.

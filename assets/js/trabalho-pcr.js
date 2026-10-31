@@ -42,7 +42,7 @@
       if (initial) location.replace("/login/?next=" + encodeURIComponent("/trabalho/pcr/executar/"));
     }
   }
-  window.addEventListener("luria:owner-changed", () => { activate(); });
+  window.addEventListener("traube:owner-changed", () => { activate(); });
   window.addEventListener("pagehide", () => { generation += 1; stopSession(); resetView(true); });
   window.addEventListener("pageshow", event => { if (event.persisted) activate(); });
   function startSession(owner, version) {

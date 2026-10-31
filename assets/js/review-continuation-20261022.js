@@ -4,9 +4,9 @@
   const text = (node) => (node?.textContent || "").replace(/\s+/g, " ").trim();
 
   function moveBackButtons() {
-    document.querySelectorAll("main .luria-page-spotlight").forEach((spotlight) => {
+    document.querySelectorAll("main .traube-page-spotlight").forEach((spotlight) => {
       if (spotlight.closest(".games-page")) return;
-      const back = [...document.querySelectorAll("main .luria-back-button")]
+      const back = [...document.querySelectorAll("main .traube-back-button")]
         .find((candidate) => !spotlight.contains(candidate));
       if (!back) return;
       back.classList.add("review-back-in-spotlight");
@@ -23,10 +23,10 @@
     };
     const page = document.body?.dataset.page;
     const target = targets[page];
-    const spotlight = document.querySelector("main .luria-page-spotlight");
-    if (!target || !spotlight || spotlight.querySelector(".luria-back-button")) return;
+    const spotlight = document.querySelector("main .traube-page-spotlight");
+    if (!target || !spotlight || spotlight.querySelector(".traube-back-button")) return;
     const back = document.createElement("a");
-    back.className = "luria-back-button review-back-in-spotlight";
+    back.className = "traube-back-button review-back-in-spotlight";
     back.href = target[0];
     back.setAttribute("aria-label", target[1]);
     back.textContent = `← ${target[1]}`;

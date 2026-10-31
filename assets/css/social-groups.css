@@ -1,5 +1,5 @@
 /* Stage 2 — group presentation only, using existing group operations. */
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1 {
  #community-groups {padding:20px!important;}
  #community-groups>.social-card-head {align-items:center;margin-bottom:20px;gap:12px;}
@@ -65,7 +65,7 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
 }
 
 /* Reference composition: community surfaces, preserving existing controls. */
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1.social-composition {
 
  #community-groups {padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;}

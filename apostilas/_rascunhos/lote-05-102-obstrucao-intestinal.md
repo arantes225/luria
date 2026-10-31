@@ -8,7 +8,7 @@
 
 ### 0.1. Inventário antes da redação
 
-Na listagem prévia do repositório \`arantes225/luria\`, não foi encontrada pasta pública denominada obstrução intestinal. O tema 102 aparece no cronograma-base e no inventário do Lote 5 como ainda não redigido. Isso **não comprova inexistência de todo conteúdo relacionado**: as apostilas futuras de hérnias, pós-operatório e cirurgia digestiva poderão ter sobreposição. O recorte desta obra será a **síndrome de obstrução intestinal e seu manejo de emergência**, com capítulos de etiologias que ensinem reconhecimento e conduta, sem substituir monografias de hérnias e tumores.
+Na listagem prévia do repositório \`arantes225/traube\`, não foi encontrada pasta pública denominada obstrução intestinal. O tema 102 aparece no cronograma-base e no inventário do Lote 5 como ainda não redigido. Isso **não comprova inexistência de todo conteúdo relacionado**: as apostilas futuras de hérnias, pós-operatório e cirurgia digestiva poderão ter sobreposição. O recorte desta obra será a **síndrome de obstrução intestinal e seu manejo de emergência**, com capítulos de etiologias que ensinem reconhecimento e conduta, sem substituir monografias de hérnias e tumores.
 
 A referência visual \`apostilas/amniorrexe-prematura/index.html\` foi inspecionada no mesmo processo editorial do lote. A versão aqui redigida permanece em Markdown sob \`_rascunhos/\`, sem substituir HTML ou \`content.json\` publicados e sem inserir imagens clínicas ainda não aprovadas no Admin.
 

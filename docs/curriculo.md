@@ -1,6 +1,6 @@
 # Aplicar / Currículo
 
-Implementação local sobre `arantes225/luria`, base `d7dc563786147a089a71d264247ad899d6e57576`.
+Implementação local sobre `arantes225/traube`, base `d7dc563786147a089a71d264247ad899d6e57576`.
 
 ## Comportamento
 

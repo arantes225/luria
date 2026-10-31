@@ -6,9 +6,9 @@ Em 14/10/2026, o usuário autorizou publicar as funcionalidades no próprio site
 
 Site: https://www.resibulando.online/amigos/. Hospedagem GitHub Pages preservada, sem reativar builds do Netlify. O cliente continua usando o Supabase oficial sxdsfklllilhdyuamvvg; contas, amizades, ratinhos e suas personalizações não são copiados da homologação.
 
-A migração aditiva 20261014035037_luria_social_rooms_release foi aplicada em uma transação, com salas, grupos, chat, Realtime, Storage privado, agenda, materiais e cotas. Conferência após aplicação: oito perfis e uma amizade aceita preservados, zero salas de teste importadas, onze novas tabelas públicas protegidas por RLS e bucket privado. O bootstrap de homologação NÃO foi aplicado em produção. As duas migrações incrementais exclusivas da homologação ficam em supabase/staging-migrations; supabase/migrations registra a entrega completa aplicada em produção.
+A migração aditiva 20261014035037_traube_social_rooms_release foi aplicada em uma transação, com salas, grupos, chat, Realtime, Storage privado, agenda, materiais e cotas. Conferência após aplicação: oito perfis e uma amizade aceita preservados, zero salas de teste importadas, onze novas tabelas públicas protegidas por RLS e bucket privado. O bootstrap de homologação NÃO foi aplicado em produção. As duas migrações incrementais exclusivas da homologação ficam em supabase/staging-migrations; supabase/migrations registra a entrega completa aplicada em produção.
 
-Worker separado luria-study-voice, configurado por wrangler.production.toml, usa o banco oficial e um Durable Object próprio. As origens aceitas são exatamente https://www.resibulando.online e https://resibulando.online. Usa o app SFU e a chave TURN já existentes na mesma conta Cloudflare; sessões são autorizadas e isoladas pelo Worker de cada ambiente. Não houve aquisição de outro serviço ou cópia de JWTs.
+Worker separado traube-study-voice, configurado por wrangler.production.toml, usa o banco oficial e um Durable Object próprio. As origens aceitas são exatamente https://www.resibulando.online e https://resibulando.online. Usa o app SFU e a chave TURN já existentes na mesma conta Cloudflare; sessões são autorizadas e isoladas pelo Worker de cada ambiente. Não houve aquisição de outro serviço ou cópia de JWTs.
 
 Como GitHub Pages não executa rotas server-side, o cliente chama https://luria-study-voice.lfab225.workers.dev/api/study-voice. Somente a CSP de Amigos permite essa origem exata. A homologação mantém seu proxy no mesmo domínio. Essa diferença exige repetir testes reais de áudio no domínio oficial, especialmente Safari/dados móveis.
 
@@ -16,7 +16,7 @@ SFU_APP_SECRET, TURN_KEY_ID, TURN_KEY_API_TOKEN e uma capacidade de contabiliza�
 
 ## Publicação e verificação
 
-O histórico foi atualizado a partir de main d5a53d52, preservando as alterações recentes de apostilas e plantão. O conflito de versão de cache foi resolvido mantendo ambos os conjuntos de assets e adotando luria-pwa-social-rooms-20261014.
+O histórico foi atualizado a partir de main d5a53d52, preservando as alterações recentes de apostilas e plantão. O conflito de versão de cache foi resolvido mantendo ambos os conjuntos de assets e adotando traube-pwa-social-rooms-20261014.
 
 O workflow existente continua publicando no GitHub Pages após suas verificações. Agora prepara build/pages somente com assets públicos; fontes server-side, SQL, configurações, dependências, testes e secrets ficam fora do artefato. Não remove páginas ou conteúdo do site.
 

@@ -1,6 +1,6 @@
 # TRAUBE — Auditoria de segredos e plano de resposta
 
-**Escopo:** repositório `arantes225/luria`, incluindo histórico Git e prevenção de novos vazamentos.  
+**Escopo:** repositório `arantes225/traube`, incluindo histórico Git e prevenção de novos vazamentos.  
 **Estado:** investigação e mitigação parcial; **não** declarar incidente resolvido sem validação dos provedores.  
 **Confidencialidade:** nenhum segredo completo, JWT ou URL pré-assinada deve constar deste documento, de comentários de PR ou de logs.
 
@@ -34,7 +34,7 @@ O workflow preventivo `.github/workflows/security-secrets.yml` usa `gitleaks/git
 ### D. Supabase publishable keys e nomes de storage local (não secretos)
 
 - Valores `sb_publishable_...` são concebidos para exposição no cliente. A integridade de dados depende de RLS, autenticação e serviços server-side.
-- `luria_calc_favorites_v1` é um nome de chave do `localStorage`, não uma credencial.
+- `traube_calc_favorites_v1` é um nome de chave do `localStorage`, não uma credencial.
 - Um falso positivo só pode ser permitido por correspondência específica e documentada; **nunca** isentar arquivos inteiros como `relatorio_seguranca.md`, HTMLs ou JSONs de auditoria.
 
 ## 3. Prevenção implementada nesta PR

@@ -83,7 +83,7 @@
     curriculumToggle.classList.toggle('is-open', willOpen);
     if (willOpen) curriculumPanel.querySelector('button, input, select')?.focus();
   });
-  const key = () => `luria:curriculo:v1:${userId}`;
+  const key = () => `traube:curriculo:v1:${userId}`;
   const status = message => { $('cv-status').textContent = message; };
   function node(tag, text, className) {
     const el = document.createElement(tag);
@@ -508,7 +508,7 @@
       }
       if (y > bottom - 35) { doc.addPage(); y = 52; }
       line('Documento gerado a partir das atividades cadastradas pelo aluno. Não substitui comprovantes nem validação oficial da banca.', 9);
-      doc.save('meu-curriculo-luria.pdf');
+      doc.save('meu-curriculo-traube.pdf');
       status('Currículo em PDF gerado. Confira os dados antes de usá-lo em processos seletivos.');
     } catch (error) {
       status('Não foi possível gerar o PDF: ' + error.message);
@@ -516,7 +516,7 @@
   });
   $('cv-export').addEventListener('click', () => {
     const blob = new Blob([JSON.stringify({ version:1, exportedAt:new Date().toISOString(), ...state },null,2)], { type:'application/json' });
-    const url = URL.createObjectURL(blob); const link = node('a'); link.href = url; link.download = 'meu-curriculo-luria.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+    const url = URL.createObjectURL(blob); const link = node('a'); link.href = url; link.download = 'meu-curriculo-traube.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
   });
   ['cv-add','cv-import','cv-lattes','cv-import-pdf','cv-pdf','cv-export-pdf','cv-export','cv-exam'].forEach(id => { $(id).disabled = true; });
   renderItems(); renderRubric();

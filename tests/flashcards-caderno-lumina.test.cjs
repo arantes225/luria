@@ -33,7 +33,7 @@ test('Estrutura e integridade de flashcards/index.html e flashcards.html', () =>
   // Card diário (Hero)
   assert(indexHtml.includes('id="review-launcher"') || indexHtml.includes('id="flash-daily-card"'), 'Deve conter card diário de flashcards');
   assert(indexHtml.includes('qs-daily-review-like'), 'Deve ter classe qs-daily-review-like');
-  assert(indexHtml.includes('luria-daily-review-primary'), 'Botão principal deve possuir classe luria-daily-review-primary');
+  assert(indexHtml.includes('traube-daily-review-primary'), 'Botão principal deve possuir classe traube-daily-review-primary');
 
   // Feed de decks
   assert(indexHtml.includes('qs-home-my-lists'), 'Deve conter card de listas/decks qs-home-my-lists');
@@ -80,7 +80,7 @@ test('Estrutura e integridade de caderno-erros/index.html e caderno-erros.html',
   // Card diário (Hero)
   assert(indexHtml.includes('id="error-daily-card"') || indexHtml.includes('id="error-daily-review-card"'), 'Deve conter card diário de caderno de erros');
   assert(indexHtml.includes('qs-daily-review-like'), 'Deve ter classe qs-daily-review-like');
-  assert(indexHtml.includes('luria-daily-review-primary'), 'Botão principal deve possuir classe luria-daily-review-primary');
+  assert(indexHtml.includes('traube-daily-review-primary'), 'Botão principal deve possuir classe traube-daily-review-primary');
 
   // Feed de cadernos
   assert(indexHtml.includes('qs-home-my-lists'), 'Deve conter card de listas/cadernos qs-home-my-lists');

@@ -34,7 +34,7 @@ export function bindAlex(alex,{root=document,cooldown=1200}={}) {
     if(state&&event.detail?.animation===ALEX_ACTIONS[state]&&!motion.matches&&alex.intensity>0)play(state);
   },options);
   motion.addEventListener('change',()=>{if(state)play(state);},options);
-  root.addEventListener('luria:alex',event=>{
+  root.addEventListener('traube:alex',event=>{
     const detail=event.detail||{};
     if(detail.target&&detail.target!==alex.id)return;
     react(detail.action,detail);

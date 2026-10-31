@@ -1,7 +1,7 @@
 /* A community workspace inside the existing TRAUBE shell. */
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-composition {
- &.group-community-open .luria-page-spotlight {display:none!important;}
+ &.group-community-open .traube-page-spotlight {display:none!important;}
  #group-community {--gc-accent:var(--sf-teal);padding:8px 0 24px;}
  #group-community[hidden],#group-community [hidden] {display:none!important;}
  #community-groups[hidden] {display:none!important;}

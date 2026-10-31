@@ -8,7 +8,7 @@ const { MARKETING, ffmpegPath, run } = require('../scripts/lib/common.cjs');
 test('Arquivos de saída da entrega obrigatória existem e estão íntegros', () => {
   const reelPath = path.join(MARKETING, 'dist', 'reels', 'reelstudyrats.mp4');
   const coverPath = path.join(MARKETING, 'dist', 'covers', 'reelstudyrats-cover.png');
-  const audioPath = path.join(MARKETING, 'public', 'audio', 'luria-ambient-focus-30s.mp3');
+  const audioPath = path.join(MARKETING, 'public', 'audio', 'traube-ambient-focus-30s.mp3');
   const rawRecording = path.join(MARKETING, 'public', 'captures', 'study-rats', 'mobile.mp4');
 
   assert.ok(fs.existsSync(reelPath), 'Reel final MP4 deve existir em dist/reels/');

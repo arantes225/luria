@@ -186,7 +186,7 @@
   send.addEventListener("click", () => addToNote(true));
   discard.addEventListener("click", reset);
   abort.addEventListener("click", reset);
-  window.addEventListener("luria:owner-changed", reset);
+  window.addEventListener("traube:owner-changed", reset);
   window.addEventListener("pagehide", () => {
     ++sequence;
     const old = activeWorker;

@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261031-ecg-v6";
+const CACHE_VERSION = "traube-pwa-20261031-ecg-v6";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -12,7 +12,7 @@ const WEEKLY_MAX_ITEMS = 24;
 const APP_SHELL = [
   "/assets/js/plantao-overlays.js?v=20261016-overlays1",
   "/assets/css/plantao-overlays.css?v=20261016-overlays1",
-  "/assets/js/luria-personagens-original.js?v=20261016-original1",
+  "/assets/js/traube-personagens-original.js?v=20261016-original1",
   "/assets/js/plantao-frontal-v1.js?v=20261021-aph1",
   "/assets/js/plantao-aph-characters.js?v=20261021-aph1",
   "/assets/css/plantao-aph-characters.css?v=20261021-aph1",
@@ -57,15 +57,15 @@ const APP_SHELL = [
   "/jogos/sequencia-salvadora/",
   "/jogos/escapando-do-plantao/",
   "/assets/img/logos/pwa-icon-180.png?v=pwa5",
-  "/assets/img/logos/logo-principal.png?v=luria7",
+  "/assets/img/logos/logo-principal.png?v=traube7",
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/js/pwa.js?v=20261031-leco-actions-center1",
   "/assets/css/style.css?v=16.14-font-unified",
-  "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
+  "/assets/css/traube-brand-v5.css?v=20261005-global-v90",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
   "/assets/css/review-continuation-20261022.css?v=20261031-leco-actions-center1",
   "/assets/js/review-continuation-20261022.js?v=1",
-  "/assets/js/luria-command-center.js?v=20261026-topic-study",
+  "/assets/js/traube-command-center.js?v=20261026-topic-study",
   "/assets/js/professor-alex-companion.mjs?v=20261026-visible5",
   "/assets/js/professor-alex-mascot.mjs?v=20261014-ready2",
   "/assets/js/professor-alex-integration.mjs?v=20261014-ready2",
@@ -124,7 +124,7 @@ const APP_SHELL = [
   "/assets/fonts/inter/InterVariable.woff2",
   "/assets/js/dashboard.js?v=20261006-css-owned-height",
   "/assets/js/study-mode.js?v=12.1",
-  "/assets/js/luria-brand-v5.js?v=20261031-leco-actions-center1",
+  "/assets/js/traube-brand-v5.js?v=20261031-leco-actions-center1",
   "/assets/img/logos/pwa-icon-192.png?v=pwa5",
   "/assets/img/logos/pwa-icon-512.png?v=pwa5"
 ];
@@ -143,11 +143,11 @@ const INSTALL_PRECACHE = new Set([
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/js/pwa.js?v=20261031-leco-actions-center1",
   "/assets/css/style.css?v=16.14-font-unified",
-  "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
+  "/assets/css/traube-brand-v5.css?v=20261005-global-v90",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
   "/assets/css/review-continuation-20261022.css?v=20261031-leco-actions-center1",
   "/assets/js/review-continuation-20261022.js?v=1",
-  "/assets/js/luria-command-center.js?v=20261026-topic-study",
+  "/assets/js/traube-command-center.js?v=20261026-topic-study",
   "/assets/js/professor-alex-companion.mjs?v=20261026-visible5",
   "/assets/js/professor-alex-mascot.mjs?v=20261014-ready2",
   "/assets/js/professor-alex-integration.mjs?v=20261014-ready2",
@@ -164,7 +164,7 @@ const INSTALL_PRECACHE = new Set([
   "/assets/js/vocacao-engine.js?v=20261029-residencias-v1",
   "/assets/js/vocacao.js?v=20261029-residencias-v1",
   "/assets/fonts/inter/InterVariable.woff2",
-  "/assets/js/luria-brand-v5.js?v=20261031-leco-actions-center1"
+  "/assets/js/traube-brand-v5.js?v=20261031-leco-actions-center1"
 ]);
 
 
@@ -287,7 +287,7 @@ self.addEventListener("activate", event => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
     await Promise.all(keys.filter(key =>
-      /^(?:luria-pwa-|luria-weekly-content-|luria-plantao-images-)/.test(key)
+      /^(?:traube-pwa-|traube-weekly-content-|traube-plantao-images-)/.test(key)
       && !ACTIVE_CACHES.includes(key)
     ).map(key => caches.delete(key)));
     await self.clients.claim();

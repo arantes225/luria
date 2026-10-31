@@ -9,7 +9,7 @@ const read = file => fs.readFileSync(path.join(root, file), "utf8");
 const reader = read("assets/js/apostila-paged-reader.js");
 const css = read("assets/css/apostila-paged-reader.css");
 
-function makeReader(url = "https://luria.test/apostilas/asma/") {
+function makeReader(url = "https://traube.test/apostilas/asma/") {
   const dom = new JSDOM(
     '<!doctype html><html lang="pt-BR"><head></head><body data-page="aprender">' +
     '<section class="book-page"><aside class="book-outline"></aside><article class="book-main">' +
@@ -38,8 +38,8 @@ test("O leitor mantém o conteúdo e IDs originais e oferece dois modos", () => 
   const dom = makeReader();
   try {
     const {document:d} = dom.window;
-    assert.ok(d.body.classList.contains("luria-reader-paged"));
-    assert.ok(d.querySelector(".luria-reader-shell > .book-main"));
+    assert.ok(d.body.classList.contains("traube-reader-paged"));
+    assert.ok(d.querySelector(".traube-reader-shell > .book-main"));
     assert.equal(d.querySelectorAll("#cap1").length, 1);
     assert.equal(d.querySelectorAll("#cap2").length, 1);
     assert.equal(d.querySelectorAll(".book-main .book-section").length, 2);
@@ -58,7 +58,7 @@ test("Anterior, Próxima e seletor de páginas funcionam sem mudar a apostila", 
     d.querySelector("[data-reader-next]").click();
     assert.equal(d.querySelector("[data-reader-label]").textContent, "Página 2 de 4");
     assert.equal(main.scrollLeft, 836);
-    const slider=d.querySelector(".luria-reader-jump");
+    const slider=d.querySelector(".traube-reader-jump");
     slider.value="4";
     slider.dispatchEvent(new Event("input",{bubbles:true}));
     assert.equal(main.scrollLeft, 2508);
@@ -88,33 +88,33 @@ test("Modo contínuo restaura rolamento vertical e preferência sem duplicar con
     const {document:d, localStorage} = dom.window;
     const toggle=d.querySelector("[data-reader-toggle]");
     toggle.click();
-    assert.equal(d.body.classList.contains("luria-reader-paged"), false);
-    assert.equal(d.querySelector(".luria-reader-footer").hidden, true);
-    assert.equal(localStorage.getItem("luria-apostila-reading-mode"), "continuous");
+    assert.equal(d.body.classList.contains("traube-reader-paged"), false);
+    assert.equal(d.querySelector(".traube-reader-footer").hidden, true);
+    assert.equal(localStorage.getItem("traube-apostila-reading-mode"), "continuous");
     assert.equal(d.querySelectorAll(".book-main .book-section").length, 2);
     toggle.click();
-    assert.equal(d.body.classList.contains("luria-reader-paged"), true);
-    assert.equal(localStorage.getItem("luria-apostila-reading-mode"), "paged");
+    assert.equal(d.body.classList.contains("traube-reader-paged"), true);
+    assert.equal(localStorage.getItem("traube-apostila-reading-mode"), "paged");
   } finally {dom.window.close();}
 });
 
 test("Modo incorporado à tela de anotações abre em leitura contínua", () => {
-  const dom = makeReader("https://luria.test/apostilas/asma/?embedded=1");
+  const dom = makeReader("https://traube.test/apostilas/asma/?embedded=1");
   try {
-    assert.equal(dom.window.document.body.classList.contains("luria-reader-paged"), false);
-    assert.equal(dom.window.document.querySelector(".luria-reader-footer").hidden, true);
+    assert.equal(dom.window.document.body.classList.contains("traube-reader-paged"), false);
+    assert.equal(dom.window.document.querySelector(".traube-reader-footer").hidden, true);
   } finally {dom.window.close();}
 });
 
 test("CSS cria páginas, distribui seções longas e protege quadros, figuras e mobile", () => {
   assert.match(css, /column-fill: auto !important/);
-  assert.match(css, /column-width: var\(--luria-column-width, 650px\)/);
-  assert.match(css, /height: var\(--luria-reader-height, 720px\)/);
+  assert.match(css, /column-width: var\(--traube-column-width, 650px\)/);
+  assert.match(css, /height: var\(--traube-reader-height, 720px\)/);
   assert.match(css, /display: contents !important/);
   assert.match(css, /break-after: column !important/);
   assert.match(css, /break-inside: avoid-column/);
   assert.match(css, /@media\(max-width:640px\)/);
-  assert.match(css, /luria-dual-active/);
+  assert.match(css, /traube-dual-active/);
   assert.match(css, /text-align: justify !important/);
   assert.ok(!css.includes(".books-hall-section"));
 });

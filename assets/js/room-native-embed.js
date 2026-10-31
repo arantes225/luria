@@ -12,11 +12,11 @@
  // The room retains its global companion; the nested module needs no second one.
  function removeNestedCompanion(){const existing=document.querySelector('professor-alex-mascot');if(existing){existing.remove();return;}const observer=new MutationObserver(()=>{const companion=document.querySelector('professor-alex-mascot');if(companion){companion.remove();observer.disconnect();}});observer.observe(document.body,{childList:true});window.addEventListener('pagehide',()=>observer.disconnect(),{once:true});}
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',removeNestedCompanion,{once:true});else removeNestedCompanion();
- window.addEventListener('luria:clinical-session',event=>{
+ window.addEventListener('traube:clinical-session',event=>{
   const data=event.detail;if(kind!=='simulator'||!uuid.test(data?.id||'')||data?.case_id!==caseId)return;
-  window.parent.postMessage({type:'luria:room-clinical-session',room_id:room,case_id:caseId,session_id:data.id,status:data.status},location.origin);
+  window.parent.postMessage({type:'traube:room-clinical-session',room_id:room,case_id:caseId,session_id:data.id,status:data.status},location.origin);
  });
- window.addEventListener('luria:clinical-exit',()=>{
-  if(kind==='simulator')window.parent.postMessage({type:'luria:room-simulator-close',room_id:room,case_id:caseId},location.origin);
+ window.addEventListener('traube:clinical-exit',()=>{
+  if(kind==='simulator')window.parent.postMessage({type:'traube:room-simulator-close',room_id:room,case_id:caseId},location.origin);
  });
 })();

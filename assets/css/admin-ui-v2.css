@@ -1,5 +1,5 @@
 /* Opt-in visual layer outranks legacy locks; business and clinical states retain their existing owners. */
-@layer luria-admin-ui {
+@layer traube-admin-ui {
  body[data-ui-admin="v2"]{font-family:var(--ui-font-family)!important;color:var(--color-text-primary)!important}
  body[data-ui-admin="v2"] :is(.admin-page,.admin-page section,.admin-page form,.admin-page [class*="grid"]>*,.admin-section-head>*){min-width:0!important;box-sizing:border-box!important}
  body[data-ui-admin="v2"] .admin-page{gap:24px!important}

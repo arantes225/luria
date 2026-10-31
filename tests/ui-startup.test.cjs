@@ -5,12 +5,12 @@ const {JSDOM,VirtualConsole}=require('jsdom');
 const theme=fs.readFileSync('assets/js/ui-theme-v2.js','utf8');
 const settle=()=>new Promise(resolve=>setTimeout(resolve,60));
 function fixture(t,page='flashcards'){
- const dom=new JSDOM(`<body data-ui-nav="v2" data-ui-context="study" ${page==='dashboard'?'id="luria-dashboard" data-dashboard-view="pending"':''}><div class="app-shell"><main class="main">Modelo inicial</main></div></body>`,{url:'https://luria.test/'+page+'/?source=test#section',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:new VirtualConsole()});
+ const dom=new JSDOM(`<body data-ui-nav="v2" data-ui-context="study" ${page==='dashboard'?'id="traube-dashboard" data-dashboard-view="pending"':''}><div class="app-shell"><main class="main">Modelo inicial</main></div></body>`,{url:'https://traube.test/'+page+'/?source=test#section',runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:new VirtualConsole()});
  const w=dom.window,b=w.document.body;let owner=null;
  w.matchMedia=()=>({matches:false,addEventListener(){}});
  w.TraubeLocalOwnerStore={read:()=>owner?JSON.stringify({appearance:'dark',identity:'pink'}):null};
  w.eval(theme);t.after(()=>w.close());
- return {w,b,account:()=>{owner='A';b.classList.add('app-ready');w.dispatchEvent(new w.Event('docmap:ready'));},navigation:()=>{b.dataset.uiNavigationReady='true';w.dispatchEvent(new w.Event('luria:ui-navigation-ready'));}};
+ return {w,b,account:()=>{owner='A';b.classList.add('app-ready');w.dispatchEvent(new w.Event('docmap:ready'));},navigation:()=>{b.dataset.uiNavigationReady='true';w.dispatchEvent(new w.Event('traube:ui-navigation-ready'));}};
 }
 test('startup waits for account theme and final navigation in either arrival order',async t=>{
  for(const first of ['account','navigation']){
@@ -30,5 +30,5 @@ test('Dashboard is exposed only after its selected model or recovery state is pr
  }
 });
 test('a failed or delayed startup retains a native reload link with the original route',async t=>{
- const f=fixture(t);await settle();assert.equal(f.b.dataset.uiStartup,'pending');assert.equal(f.w.document.querySelector('.ui-startup a').href,'https://luria.test/flashcards/?source=test#section');
+ const f=fixture(t);await settle();assert.equal(f.b.dataset.uiStartup,'pending');assert.equal(f.w.document.querySelector('.ui-startup a').href,'https://traube.test/flashcards/?source=test#section');
 });

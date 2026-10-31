@@ -475,7 +475,7 @@ Verificar:
 
 ### 18.2. Efeito de pequenos números
 
-Se um município teve **um** óbito materno entre 2.000 NV, a RMM observada será **50 por 100 mil NV**. Se no ano seguinte houve dois, salta para **100 por 100 mil**, mas um único evento pode representar grande oscilação aleatória. Interpretar séries plurianuais, contexto e cobertura antes de concluir que a mortalidade duplicou por piora assistencial.
+Se um município teve **um** óbito materno entre 2.000 NV, a RMM observada será **50 por 100 mil NV**. Se no ano seguinte houve dois, salta para **100 por 100 mil**, mas um único evento pode representar grande oscilação aleatória. Interpretar séries ptraubenuais, contexto e cobertura antes de concluir que a mortalidade duplicou por piora assistencial.
 
 ### 18.3. Efeito de pandemia e choques externos
 
@@ -814,7 +814,7 @@ Os casos abaixo são fictícios. Eles demonstram raciocínio de preenchimento e 
 
 **Raciocínio passo a passo:** Cálculo: 1/2.000×100.000=50; 2/2.000×100.000=100. Duplicação numérica do indicador por um único óbito adicional não prova piora assistencial sistêmica.
 
-**Informações e exames necessários:** Conferir registro, residência, data, investigação de evitabilidade e estabilidade dos NV. Comparar períodos plurianuais.
+**Informações e exames necessários:** Conferir registro, residência, data, investigação de evitabilidade e estabilidade dos NV. Comparar períodos ptraubenuais.
 
 **Conduta e destino do dado:** Usar taxa com cautela, registrar intervalo/incerteza e organizar ações preventivas baseadas em revisão de cada caso, não em inferência causal precipitada.
 

@@ -25,7 +25,7 @@ integration.destroy();
 Uma página já conectada pode usar eventos sem importar o adaptador novamente:
 
 ```js
-document.dispatchEvent(new CustomEvent('luria:alex', {
+document.dispatchEvent(new CustomEvent('traube:alex', {
   detail: {action:'material', target:'alex-mascot'}
 }));
 ```

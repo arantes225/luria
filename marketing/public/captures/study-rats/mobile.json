@@ -47,8 +47,8 @@
     "pageErrors": [],
     "consoleErrors": [],
     "failedRequests": [
-      "https://luria.test/assets/img/logos/logo-icone-original.png?v=luria9 net::ERR_ABORTED",
-      "https://luria.test/assets/img/logos/logo-icone-original.png?v=luria9 net::ERR_ABORTED"
+      "https://traube.test/assets/img/logos/logo-icone-original.png?v=traube9 net::ERR_ABORTED",
+      "https://traube.test/assets/img/logos/logo-icone-original.png?v=traube9 net::ERR_ABORTED"
     ],
     "blocked": [],
     "missing": [],

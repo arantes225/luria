@@ -8,9 +8,9 @@
   let user = null;
   let username = "";
 
-  const keyMode = id => `luria:shift-manager:security-mode:${id}`;
-  const keyHash = id => `luria:shift-manager:pin-hash:${id}`;
-  const keyUnlock = id => `luria:shift-manager:unlocked:${id}`;
+  const keyMode = id => `traube:shift-manager:security-mode:${id}`;
+  const keyHash = id => `traube:shift-manager:pin-hash:${id}`;
+  const keyUnlock = id => `traube:shift-manager:unlocked:${id}`;
 
   function injectStyle() {
     if (document.getElementById("shift-manager-security-style")) return;
@@ -132,7 +132,7 @@
       if (m === "pin") {
         const pin = String(document.getElementById("gsm-gate-pin")?.value || "").replace(/\D/g,"");
         if (!/^\d{4}$/.test(pin)) throw new Error("Digite os 4 dígitos.");
-        const current = await sha256(`luria-shift-manager:${user.id}:${pin}`);
+        const current = await sha256(`traube-shift-manager:${user.id}:${pin}`);
         if (current !== localStorage.getItem(keyHash(user.id))) throw new Error("PIN incorreto.");
       } else if (m === "cola") {
         const pin = String(document.getElementById("gsm-gate-pin")?.value || "").replace(/\D/g,"");
@@ -218,7 +218,7 @@
         const confirmPin = String(document.getElementById("gsm-confirm-pin")?.value || "").replace(/\D/g,"");
         if (!/^\d{4}$/.test(pin)) throw new Error("O PIN precisa ter exatamente 4 dígitos.");
         if (pin !== confirmPin) throw new Error("Os PINs não coincidem.");
-        const hash = await sha256(`luria-shift-manager:${user.id}:${pin}`);
+        const hash = await sha256(`traube-shift-manager:${user.id}:${pin}`);
         localStorage.setItem(keyHash(user.id), hash);
       } else if (selected === "cola") {
         const pin = String(document.getElementById("gsm-cola-pin")?.value || "").replace(/\D/g,"");

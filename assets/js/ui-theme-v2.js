@@ -26,7 +26,7 @@
   retry.textContent = "Recarregar página";
   startup.append(startupTitle, startupCopy, retry);
   body.append(startup);
-  const preferenceKey = "luria:dashboard-ui:v2";
+  const preferenceKey = "traube:dashboard-ui:v2";
   let preference = null;
   const media = window.matchMedia("(prefers-color-scheme: dark)");
   const legacy = () => document.documentElement.dataset.theme || (media.matches ? "dark" : "light");
@@ -35,10 +35,10 @@
     const theme = legacy();
     body.dataset.uiAppearance = preference?.appearance || (theme === "dark" ? "dark" : "light");
     body.dataset.uiIdentity = preference?.identity || (["leila-mood", "pink", "rosa"].includes(theme) ? "pink" : "blue");
-    const logo = document.getElementById("luria-brand-logo");
+    const logo = document.getElementById("traube-brand-logo");
     const logoName = body.dataset.uiAppearance === "dark" ? "logo-icone-azul-claro.png"
       : body.dataset.uiIdentity === "pink" ? "logo-icone-rosa-escuro.png" : "logo-icone-original.png";
-    const source = `/assets/img/logos/${logoName}?v=luria11`;
+    const source = `/assets/img/logos/${logoName}?v=traube11`;
     if (logo && logo.getAttribute("src") !== source) logo.setAttribute("src", source);
     document.querySelectorAll("[data-ui-theme-control]").forEach(button => {
       const dimension = button.dataset.uiThemeControl;
@@ -56,7 +56,7 @@
   restoreTheme();
   new MutationObserver(syncTheme).observe(document.documentElement, {attributes: true, attributeFilter: ["data-theme"]});
   media.addEventListener("change", syncTheme);
-  window.addEventListener("luria:owner-changed", restoreTheme);
+  window.addEventListener("traube:owner-changed", restoreTheme);
   window.addEventListener("docmap:ready", restoreTheme);
   window.addEventListener("storage", event => {
     if (event.key === window.TraubeLocalOwnerStore?.key(preferenceKey)) restoreTheme();
@@ -81,7 +81,7 @@
   let showing = false;
   function canShowPage() {
     if (!body.isConnected || document.readyState === "loading" || !body.classList.contains("app-ready") || body.dataset.uiNavigationReady !== "true") return false;
-    if (body.id === "luria-dashboard" && body.dataset.dashboardView === "pending") {
+    if (body.id === "traube-dashboard" && body.dataset.dashboardView === "pending") {
       const fallback = document.getElementById("dashboard-fallback-shell");
       if (!fallback || fallback.hidden) return false;
     }
@@ -102,7 +102,7 @@
   }
   const startupObserver = new MutationObserver(completeStartup);
   startupObserver.observe(body, {subtree:true,childList:true,attributes:true,attributeFilter:["class","hidden","data-dashboard-view"]});
-  window.addEventListener("luria:ui-navigation-ready", completeStartup);
+  window.addEventListener("traube:ui-navigation-ready", completeStartup);
   window.addEventListener("docmap:ready", completeStartup);
   document.addEventListener("DOMContentLoaded", completeStartup, {once:true});
   if (document.readyState !== "loading") completeStartup();

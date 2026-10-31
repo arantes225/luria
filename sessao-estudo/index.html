@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-bCXOKoQ/NsLLmvM0Yh5pgUAGtkhXG9D1WUIFNDNDmqQ='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-2jvmlefdajITxmUB00KychJG44NzA+HeAj8poiSJZ0s='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sessão de estudo · TRAUBE</title>
 <script src="/assets/js/ui-routes.js?v=1"></script>
@@ -118,11 +118,11 @@
           </div>
         </header>
 
-        <section class="luria-page-spotlight study-session-title-card" aria-label="Sessão de estudo">
-          <div class="luria-page-spotlight-copy">
-            <span class="luria-page-spotlight-label">Estudar agora</span>
+        <section class="traube-page-spotlight study-session-title-card" aria-label="Sessão de estudo">
+          <div class="traube-page-spotlight-copy">
+            <span class="traube-page-spotlight-label">Estudar agora</span>
             <strong>Sessão de estudo do dia</strong>
-            <small class="luria-page-spotlight-helper">Complete as etapas planejadas para hoje no seu ritmo.</small>
+            <small class="traube-page-spotlight-helper">Complete as etapas planejadas para hoje no seu ritmo.</small>
           </div>
         </section>
 
@@ -144,7 +144,7 @@
             <div class="mission-route">
               <div class="mission-route-line"><div id="study-session-track-fill" class="mission-route-fill"></div></div>
               <div id="study-session-mascot" class="mission-mascot" aria-hidden="true">
-                <img id="study-session-mascot-img" src="/assets/img/pulo do gato/luria_gato_tema_claro.webp" alt="">
+                <img id="study-session-mascot-img" src="/assets/img/pulo do gato/traube_gato_tema_claro.webp" alt="">
               </div>
               <div id="study-session-progress" class="mission-route-points" aria-label="Progresso da sessão"></div>
             </div>
@@ -176,7 +176,7 @@
     const esc=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[char]));
     function render(){
       let plan=null;
-      try{plan=JSON.parse(sessionStorage.getItem("luria:guided-study-plan")||"null")}catch{}
+      try{plan=JSON.parse(sessionStorage.getItem("traube:guided-study-plan")||"null")}catch{}
       const steps=(Array.isArray(plan?.steps)?plan.steps:[]).slice(0,3);
       const list=document.getElementById("study-session-list");
       const progress=document.getElementById("study-session-progress");
@@ -194,10 +194,10 @@
       const theme=document.documentElement.dataset.theme||"light";
       if(mascotImg){
         mascotImg.src=theme==="dark"
-          ? "/assets/img/pulo do gato/luria_gato_tema_escuro.webp"
+          ? "/assets/img/pulo do gato/traube_gato_tema_escuro.webp"
           : (["leila-mood","pink","rosa"].includes(theme)
-            ? "/assets/img/pulo do gato/luria_gato_tema_rosa.webp"
-            : "/assets/img/pulo do gato/luria_gato_tema_claro.webp");
+            ? "/assets/img/pulo do gato/traube_gato_tema_rosa.webp"
+            : "/assets/img/pulo do gato/traube_gato_tema_claro.webp");
       }
 
       if(!steps.length){
@@ -208,10 +208,10 @@
 
       let completedThrough=-1;
       try{
-        const saved=JSON.parse(sessionStorage.getItem("luria:guided-study-progress")||"null");
+        const saved=JSON.parse(sessionStorage.getItem("traube:guided-study-progress")||"null");
         if(saved?.createdAt===plan?.createdAt)completedThrough=Number(saved.completedThrough??-1);
-        const active=JSON.parse(sessionStorage.getItem("luria:guided-study-active")||"null");
-        const completion=JSON.parse(sessionStorage.getItem("luria:guided-study-step-complete")||"null");
+        const active=JSON.parse(sessionStorage.getItem("traube:guided-study-active")||"null");
+        const completion=JSON.parse(sessionStorage.getItem("traube:guided-study-step-complete")||"null");
         if(
           active?.plan?.createdAt===plan?.createdAt
           && Number.isInteger(active.activeIndex)
@@ -219,9 +219,9 @@
           && Number(completion.activeIndex)===active.activeIndex
         ){
           completedThrough=Math.max(completedThrough,active.activeIndex);
-          sessionStorage.setItem("luria:guided-study-progress",JSON.stringify({createdAt:plan.createdAt,completedThrough}));
-          sessionStorage.removeItem("luria:guided-study-active");
-          sessionStorage.removeItem("luria:guided-study-step-complete");
+          sessionStorage.setItem("traube:guided-study-progress",JSON.stringify({createdAt:plan.createdAt,completedThrough}));
+          sessionStorage.removeItem("traube:guided-study-active");
+          sessionStorage.removeItem("traube:guided-study-step-complete");
           if(banner){
             const reward=active.activeIndex===2?30:20;
             banner.innerHTML='<div><strong>Etapa '+(active.activeIndex+1)+' vencida · +'+reward+' XP</strong><small>Atividade concluída por inteiro. Seu progresso avançou na trilha.</small></div><span>✓</span>';
@@ -265,7 +265,7 @@
         const cls=done?" is-done":current?" is-current":locked?" is-locked":"";
         const reward=index===2?30:20;
         let activeStep=null;
-        try{activeStep=JSON.parse(sessionStorage.getItem("luria:guided-study-active")||"null")}catch{}
+        try{activeStep=JSON.parse(sessionStorage.getItem("traube:guided-study-active")||"null")}catch{}
         const inProgress=current&&activeStep?.plan?.createdAt===plan?.createdAt&&Number(activeStep.activeIndex)===index;
         const footer=done
           ? '<span class="study-session-status">Concluída</span>'
@@ -278,7 +278,7 @@
       if(completedThrough>=steps.length-1){
         list.hidden=true;
         finale.classList.add("is-visible");
-        try{localStorage.removeItem("luria:guided-timer")}catch{}
+        try{localStorage.removeItem("traube:guided-timer")}catch{}
       }
 
       list.querySelectorAll("[data-session-index]").forEach(button=>button.addEventListener("click",()=>{
@@ -287,12 +287,12 @@
         const step=steps[index];
         if(!step?.href)return;
         try{
-          const existing=JSON.parse(localStorage.getItem("luria:guided-timer")||"null");
+          const existing=JSON.parse(localStorage.getItem("traube:guided-timer")||"null");
           if(!existing?.active){
             const totalMinutes=Math.max(1,Number(plan?.minutes)||Number(step.min)||1);
-            localStorage.setItem("luria:guided-timer",JSON.stringify({startedAt:Date.now(),durationSeconds:Math.round(totalMinutes*60),title:step.title||"Sessão de estudo",active:true}));
+            localStorage.setItem("traube:guided-timer",JSON.stringify({startedAt:Date.now(),durationSeconds:Math.round(totalMinutes*60),title:step.title||"Sessão de estudo",active:true}));
           }
-          sessionStorage.setItem("luria:guided-study-active",JSON.stringify({plan,activeIndex:index}));
+          sessionStorage.setItem("traube:guided-study-active",JSON.stringify({plan,activeIndex:index}));
         }catch{}
         location.href=step.href;
       }));

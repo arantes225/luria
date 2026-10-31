@@ -24,11 +24,11 @@ const mime={'.html':'text/html','.css':'text/css','.js':'application/javascript'
  window.supabaseClient.realtime={setAuth:async()=>{}};
  window.supabaseClient.channel=(name,config)=>({name,config,on(){return this;},subscribe(fn){if(fn)setTimeout(()=>fn('SUBSCRIBED'),10);return this;},track:async()=>{},presenceState:()=>({'${A}':[{user_id:'${A}'}],'${B}':[{user_id:'${B}'}]}),send:async()=>{}});
  `;
- await context.route('**/*',async route=>{const u=new URL(route.request().url());if(u.origin!=='https://luria.test')return route.abort();if(u.pathname==='/assets/js/supabase.js')return route.fulfill({contentType:'application/javascript',body:fixture});
+ await context.route('**/*',async route=>{const u=new URL(route.request().url());if(u.origin!=='https://traube.test')return route.abort();if(u.pathname==='/assets/js/supabase.js')return route.fulfill({contentType:'application/javascript',body:fixture});
   let file=path.join(root,decodeURIComponent(u.pathname));if(fs.existsSync(file)&&fs.statSync(file).isDirectory())file=path.join(file,'index.html');if(!file.startsWith(root)||!fs.existsSync(file))return route.fulfill({status:404,body:''});return route.fulfill({contentType:mime[path.extname(file)]||'application/octet-stream',body:fs.readFileSync(file)});
  });
  fs.mkdirSync(out,{recursive:true});const page=await context.newPage();page.on('pageerror',error=>errors.push(error.message));
- await page.goto('https://luria.test/amigos/',{waitUntil:'domcontentloaded'});await page.waitForTimeout(1000);
+ await page.goto('https://traube.test/amigos/',{waitUntil:'domcontentloaded'});await page.waitForTimeout(1000);
  await page.locator('.sr-lane').first().waitFor({timeout:8000});await page.waitForTimeout(500);
  const results=[];
  for(const width of [1440,1024,768,390,320]){
@@ -50,7 +50,7 @@ const mime={'.html':'text/html','.css':'text/css','.js':'application/javascript'
  assert.equal(await page.locator('#social-message-text').isVisible(),true);
  await page.locator('#social-message-text').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,'room-chat-mobile.png')});
  await context.addInitScript(()=>Object.defineProperty(navigator,'standalone',{get:()=>true}));
- const installed=await context.newPage();installed.on('pageerror',e=>errors.push(e.message));await installed.setViewportSize({width:390,height:844});await installed.goto('https://luria.test/amigos/');await installed.locator('.sr-lane').first().waitFor();
+ const installed=await context.newPage();installed.on('pageerror',e=>errors.push(e.message));await installed.setViewportSize({width:390,height:844});await installed.goto('https://traube.test/amigos/');await installed.locator('.sr-lane').first().waitFor();
  await installed.evaluate(()=>{window.TraubeEntitlements.enabled=()=>true;});await installed.locator('#studyrats-toggle-customize').click();
  await installed.locator('#studyrats-preview-large-stage').waitFor();assert.equal(await installed.locator('[data-studyrat-variant]').count(),10);assert.equal(await installed.locator('[data-studyrat-accessory]').count(),18);
  await installed.waitForFunction(()=>[...document.querySelectorAll('#studyrats-rat-picker-options img,#studyrats-accessory-picker-options img')].every(i=>i.complete&&i.naturalWidth>0));

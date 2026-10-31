@@ -1,6 +1,6 @@
 /* Home presentation only. Review sessions and all review data remain owned by the existing controllers.
    This layer precedes education in the two entry points to replace legacy important home sizing. */
-@layer luria-ui-flashcards {
+@layer traube-ui-flashcards {
   /* The workspace owns the columns; the panel and section are wrappers. */
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-section[data-flash-section="review"].active {display:block!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .qs-home-workspace {display:grid!important;grid-template-columns:minmax(0,1.48fr) minmax(0,.88fr)!important;gap:1.5rem!important;width:100%!important;height:auto!important;max-height:none!important;align-items:start!important;overflow:visible!important;}

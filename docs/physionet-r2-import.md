@@ -4,13 +4,13 @@ Este fluxo foi preparado para a TRAUBE sem alterar a aplicacao em producao.
 
 ## Preparacao (uma unica vez)
 
-1. No Cloudflare, abra **Storage & databases > R2 > Overview** e crie um bucket **privado** da classe **Standard** chamado `luria-ecg-library` (ou use um bucket existente).
+1. No Cloudflare, abra **Storage & databases > R2 > Overview** e crie um bucket **privado** da classe **Standard** chamado `traube-ecg-library` (ou use um bucket existente).
 2. Em **R2 > Manage API Tokens**, crie um token S3 **Object Read & Write**, com acesso **somente ao bucket escolhido**. Copie o **Access Key ID** e **Secret Access Key** da pagina de confirmacao.
-3. No GitHub, abra o repositorio **arantes225/luria** > **Settings > Secrets and variables > Actions**. Em **Repository secrets**, crie:
+3. No GitHub, abra o repositorio **arantes225/traube** > **Settings > Secrets and variables > Actions**. Em **Repository secrets**, crie:
    - `R2_ACCOUNT_ID`: identificador da conta Cloudflare (32 caracteres);
    - `R2_ACCESS_KEY_ID`: Access Key ID do token R2;
    - `R2_SECRET_ACCESS_KEY`: Secret Access Key do token R2.
-4. Se o nome do bucket nao for `luria-ecg-library`, crie uma **Repository variable** `R2_BUCKET` com o nome do bucket existente.
+4. Se o nome do bucket nao for `traube-ecg-library`, crie uma **Repository variable** `R2_BUCKET` com o nome do bucket existente.
 5. Apos o merge, abra **Actions > Importar PhysioNet para Cloudflare R2 > Run workflow**. Selecione:
    - `ptbxl-100hz` (recomendado para testar): PTB-XL de 100 Hz + tabelas de rotulos;
    - `ptbxl-completo`: PTB-XL com 100 e 500 Hz;

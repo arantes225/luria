@@ -10,12 +10,12 @@ Três experiências individuais implementadas em HTML, CSS, SVG e JavaScript nat
 | Sequência Salvadora | Desafios com 4 a 7 etapas, arraste por ponteiro e toque, botões e setas do teclado, validação de ordens equivalentes, posições corretas, primeira divergência, tentativas, tempo, pontos, estrelas, revisão guiada e conclusão do conjunto. |
 | Escapando do Plantão | Hospital vetorial e mapa de salas, nove cenas em três capítulos, escolhas de conduta, seleção de achados, minissequências, desbloqueio progressivo, feedback com nova tentativa, diário, pendências, avaliação final e reinício. |
 
-Os três jogos incluem retorno à central, estados vazios, adaptação às quatro combinações de identidade/aparência, áreas seguras e redução de movimento. A troca de conta descarta a partida ativa. Eventos locais `luria:game-completed` preparam futura integração sem gravar resultados no backend.
+Os três jogos incluem retorno à central, estados vazios, adaptação às quatro combinações de identidade/aparência, áreas seguras e redução de movimento. A troca de conta descarta a partida ativa. Eventos locais `traube:game-completed` preparam futura integração sem gravar resultados no backend.
 
 ## Reconhecimento e integração
 
 - Foram inspecionadas as páginas Aprender, Consolidar, Estatísticas, Jogos e Study Rats, os estilos globais e o shell v2. A plataforma usa páginas estáticas e scripts compartilhados; o build de GitHub Pages copia os arquivos públicos rastreados pelo Git.
-- `ui-app.css` fornece tokens de quatro temas, navegação e camadas CSS. As novas folhas têm seletores restritos a `.luria-game`. As correções de tipografia utilizam a camada existente apenas dentro dessas raízes.
+- `ui-app.css` fornece tokens de quatro temas, navegação e camadas CSS. As novas folhas têm seletores restritos a `.traube-game`. As correções de tipografia utilizam a camada existente apenas dentro dessas raízes.
 - As páginas novas mantêm o mesmo `data-page="jogos"`, carregam `app.js`, `supabase.js`, `ui-theme-v2.js`, `ui-navigation-v2.js` e `pwa.js`. O jogo inicializa após a autenticação existente (`docmap:ready`). Nenhuma nova regra de acesso foi criada.
 - `TraubeLocalOwnerStore` já fornece armazenamento vinculado à conta. Foram adicionados apenas recordes locais, sem fallback para um armazenamento compartilhado entre usuários. Falha de armazenamento não impede jogar e é informada no resultado.
 - Flashcards possuem `front_text`/`back_text`, metadados de especialidade e bibliotecas pessoais/sistema/compartilhadas. Existem pacotes públicos em `content/weekly/`. As questões têm fluxos próprios de importação/geração/revisão; `clinical_protocols` armazena protocolos com seções e decisões. Não existe nesses formatos uma garantia automática de quatro distratores adequados ou de ordem clínica exclusiva.

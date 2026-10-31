@@ -292,7 +292,7 @@ body.theme-leila-mood .error-review-cat-logo-pinktheme{
   min-height:40px;
 }
 
-@layer luria-ui-education {
+@layer traube-ui-education {
   body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-grid{
     grid-template-areas:"center center" "next metrics"!important;
     grid-template-columns:repeat(2,minmax(0,1fr))!important;

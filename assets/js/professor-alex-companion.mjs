@@ -13,23 +13,23 @@ const contexts = {
 };
 
 export function mountAlexCompanion({userId, isAdmin=false}={}) {
-  if (!userId || document.querySelector('luria-alex-companion')) return null;
+  if (!userId || document.querySelector('traube-alex-companion')) return null;
   const page = document.body?.dataset.page || '';
   const bodyData = document.body?.dataset || {};
   if (bodyData.uiContext === 'work' || bodyData.uiWork === 'v2' || page.startsWith('trabalho_')) return null;
   if (page === 'aprender' || page === 'professor_alex') {
     return null;
   }
-  if (sessionStorage.getItem('luria:alex:recharging') === 'true') {
+  if (sessionStorage.getItem('traube:alex:recharging') === 'true') {
     return null;
   }
 
-  const host = document.createElement('luria-alex-companion');
+  const host = document.createElement('traube-alex-companion');
   const shadow = host.attachShadow({mode:'open'});
   const abort = new AbortController();
   const opts = {signal: abort.signal};
   const passiveOpts = {signal: abort.signal, passive: true};
-  const key = 'luria:alex:companion:' + userId;
+  const key = 'traube:alex:companion:' + userId;
   const isStudyActionPage = ['questoes', 'erros'].includes(page);
 
   // Keep the robot present after this rollout. Older preferences used to
@@ -326,7 +326,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
   }, opts);
 
   restore.addEventListener('click', () => {
-    sessionStorage.removeItem('luria:alex:recharging');
+    sessionStorage.removeItem('traube:alex:recharging');
     minimize(false);
     alex.button?.focus();
   }, opts);
@@ -413,7 +413,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     }
     integration.react('sleep');
     try {
-      sessionStorage.setItem('luria:alex:recharging', 'true');
+      sessionStorage.setItem('traube:alex:recharging', 'true');
     } catch (_) {}
     setTimeout(() => {
       host.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
@@ -529,7 +529,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
   }, opts);
 
   window.addEventListener('resize', position, passiveOpts);
-  window.addEventListener('luria:mobile-navigation-change', position, opts);
+  window.addEventListener('traube:mobile-navigation-change', position, opts);
   window.visualViewport?.addEventListener('resize', position, passiveOpts);
   window.visualViewport?.addEventListener('scroll', position, passiveOpts);
 

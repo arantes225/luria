@@ -45,7 +45,7 @@ function renderFriendPreview(friend=null,message=""){
       <span class="friend-avatar">${fEsc((friend.display_name||"U").charAt(0).toUpperCase())}</span>
       <span class="friend-copy">
         <strong>${fEsc(friend.display_name||"Usuário TRAUBE")}</strong>
-        <small>ID ${fEsc(friend.luria_id||"")}</small>
+        <small>ID ${fEsc(friend.traube_id||"")}</small>
       </span>
     </div>`;
 }
@@ -54,7 +54,7 @@ async function lookupFriendById(value){
   const normalized=String(value||"").trim().toUpperCase();
   pendingFriendLookup=null;
   if(normalized.length<4){renderFriendPreview();return null;}
-  const {data,error}=await friendsSb.rpc("lookup_luria_user",{p_luria_id:normalized});
+  const {data,error}=await friendsSb.rpc("lookup_traube_user",{p_traube_id:normalized});
   if(error){console.warn(error);renderFriendPreview();return null;}
   const friend=Array.isArray(data)?data[0]:data;
   if(!friend){renderFriendPreview();return null;}
@@ -63,9 +63,9 @@ async function lookupFriendById(value){
 function scheduleFriendLookup(value){clearTimeout(friendLookupTimer);friendLookupTimer=setTimeout(()=>lookupFriendById(value),280);}
 
 async function loadOwnId(){
-  const {data,error}=await friendsSb.from("profiles").select("luria_id").eq("user_id",friendsUser.id).maybeSingle();
+  const {data,error}=await friendsSb.from("profiles").select("traube_id").eq("user_id",friendsUser.id).maybeSingle();
   if(error)throw error;
-  document.getElementById("my-luria-id").textContent=data?.luria_id||"—";
+  document.getElementById("my-traube-id").textContent=data?.traube_id||"—";
 }
 
 async function loadFriends(){
@@ -76,14 +76,14 @@ async function loadFriends(){
   friendsRowsCache=rows;
   renderFriendsList();
   renderStudyratsFriendOptions();refreshFriendsCommunityMetrics();
-  window.dispatchEvent(new CustomEvent('luria:friends-loaded',{detail:{rows}}));
+  window.dispatchEvent(new CustomEvent('traube:friends-loaded',{detail:{rows}}));
 }
 
 function renderFriendsList(){
   const host=document.getElementById('friends-list');
   if(!host)return;
   const query=(document.getElementById('friends-search')?.value||'').trim().toLocaleLowerCase('pt-BR');
-  const rows=friendsRowsCache.filter(friend=>`${friend.display_name||''} ${friend.luria_id||''}`.toLocaleLowerCase('pt-BR').includes(query));
+  const rows=friendsRowsCache.filter(friend=>`${friend.display_name||''} ${friend.traube_id||''}`.toLocaleLowerCase('pt-BR').includes(query));
   const count=document.getElementById('social-friend-count');if(count)count.textContent=String(friendsRowsCache.length);
   host.innerHTML=rows.length?rows.map(friend=>`
     <div class="friend-row sf-person-card" data-friend-user="${fEsc(friend.user_id)}">
@@ -91,7 +91,7 @@ function renderFriendsList(){
         ${friendAvatar(friend)}
         <span class="friend-copy">
           <strong>${fEsc(friend.display_name||"Usuário TRAUBE")}</strong>
-          <small>ID ${fEsc(friend.luria_id||"")}</small>
+          <small>ID ${fEsc(friend.traube_id||"")}</small>
           <small data-friend-presence="${fEsc(friend.user_id)}">Status privado</small>
         </span>
       </div>
@@ -126,7 +126,7 @@ async function loadInbox(){
         <span class="friend-avatar">${fEsc((item.sender_name||"U").charAt(0).toUpperCase())}</span>
         <span class="friend-copy">
           <strong>${fEsc(item.title|| (item.resource_type==="flashcard_deck"?"Deck de Flashcards":"Caderno compartilhado"))}</strong>
-          <small>De ${fEsc(item.sender_name||"Usuário TRAUBE")} · ID ${fEsc(item.sender_luria_id||"")}</small>
+          <small>De ${fEsc(item.sender_name||"Usuário TRAUBE")} · ID ${fEsc(item.sender_traube_id||"")}</small>
         </span>
       </div>
       <div class="friends-actions">
@@ -158,9 +158,9 @@ async function addFriend(){
   const button=document.getElementById("add-friend");button.disabled=true;
   try{
     let friend=pendingFriendLookup;
-    if(!friend||String(friend.luria_id||"").toUpperCase()!==value)friend=await lookupFriendById(value);
+    if(!friend||String(friend.traube_id||"").toUpperCase()!==value)friend=await lookupFriendById(value);
     if(!friend)throw new Error("ID TRAUBE não encontrado.");
-    const {error}=await friendsSb.rpc("add_friend_by_luria_id",{p_luria_id:value});if(error)throw error;
+    const {error}=await friendsSb.rpc("add_friend_by_traube_id",{p_traube_id:value});if(error)throw error;
     input.value="";pendingFriendLookup=null;renderFriendPreview();await loadFriends();
     setFriendsStatus(`Solicitação enviada para ${friend.display_name||"Usuário TRAUBE"}.`,"success");
     window.TraubeSocial?.refreshSocial();
@@ -175,7 +175,7 @@ const studyratsTypeLabels={
   classes:{title:"Mais aulas vistas",unit:"aulas"},
   ccqs:{title:"Mais CCQs respondidos",unit:"CCQs"}
 };
-function studyratsStorageKey(){return `luria:studyrats:${friendsUser?.id||"guest"}`;}
+function studyratsStorageKey(){return `traube:studyrats:${friendsUser?.id||"guest"}`;}
 function getStudyrats(){try{return JSON.parse(localStorage.getItem(studyratsStorageKey())||"[]");}catch{return [];}}
 function saveStudyrats(items){localStorage.setItem(studyratsStorageKey(),JSON.stringify(items));}
 function mouseSvg(){
@@ -276,7 +276,7 @@ async function initFriends(){
   friendInput?.addEventListener("input",e=>{e.target.value=e.target.value.toUpperCase();scheduleFriendLookup(e.target.value);});
   friendInput?.addEventListener("keydown",e=>{if(e.key==="Enter")addFriend();});
   document.getElementById("copy-my-id")?.addEventListener("click",async()=>{
-    const id=document.getElementById("my-luria-id").textContent.trim();
+    const id=document.getElementById("my-traube-id").textContent.trim();
     try{await navigator.clipboard.writeText(id);setFriendsStatus("Seu ID TRAUBE foi copiado.","success");}
     catch{await window.TraubeDialog.prompt("Copie seu ID TRAUBE:",id);}
   });

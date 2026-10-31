@@ -6,7 +6,7 @@
 - Configurações: a página compacta não contém o formulário de perfil/dias completo; inicialização respeita os controles disponíveis. Configurações de Flashcards não inicializam a sessão de revisão inexistente; criação/importação continuam disponíveis.
 - Recursos: `ambientacao.css` era uma referência única sem arquivo equivalente; removida. O `awake.webp` inicial não existe e era usado em cenas inicialmente ocultas; removido o `src` inicial. O monitor já atribui as imagens reais do caso, sem substituir conteúdo clínico.
 - Admin: parser estrito de centavos para texto brasileiro e inputs numéricos; valores vazios, inválidos, negativos, não finitos ou fora da precisão não viram zero. Validação nativa e mensagem antes das RPCs; zero explícito aceito. Contratos e parcelas preservados.
-- Arquivos: `caderno/index.html`, `assets/css/caderno.css`, `assets/js/caderno.js`, `assets/js/configuracoes.js`, `assets/js/flashcards.js`, `assets/js/admin.js`, `ambientacao.html`, `plantao.html`, `plantao/sala-emergencia/index.html`, `plantao/luriazap/index.html`; testes `tests/stage77-functional.test.cjs` e `tests/fixtures/frontend.cjs`.
+- Arquivos: `caderno/index.html`, `assets/css/caderno.css`, `assets/js/caderno.js`, `assets/js/configuracoes.js`, `assets/js/flashcards.js`, `assets/js/admin.js`, `ambientacao.html`, `plantao.html`, `plantao/sala-emergencia/index.html`, `plantao/traubezap/index.html`; testes `tests/stage77-functional.test.cjs` e `tests/fixtures/frontend.cjs`.
 - Verificação: 9 testes em jsdom aprovados (DOM real, navegação, inicializações, revelação da resposta, preços/custos e escolha de imagem). Defeitos de ID/inicialização/parser reproduzidos antes da correção. RPCs simuladas; não validam backend real.
 
 ## Bloco B
@@ -36,7 +36,7 @@
 
 ## Arquivos desta etapa
 
-- Aplicação: `ambientacao.html`, `caderno/index.html`, `plantao.html`, `plantao/sala-emergencia/index.html`, `plantao/luriazap/index.html`, `resolver-questoes/index.html`; `assets/css/caderno.css`; `assets/js/admin.js`, `assets/js/caderno.js`, `assets/js/configuracoes.js`, `assets/js/flashcards.js`, `assets/js/questoes-simulados.js`, `assets/js/registrar-questoes.js`.
+- Aplicação: `ambientacao.html`, `caderno/index.html`, `plantao.html`, `plantao/sala-emergencia/index.html`, `plantao/traubezap/index.html`, `resolver-questoes/index.html`; `assets/css/caderno.css`; `assets/js/admin.js`, `assets/js/caderno.js`, `assets/js/configuracoes.js`, `assets/js/flashcards.js`, `assets/js/questoes-simulados.js`, `assets/js/registrar-questoes.js`.
 - Publicação: `.github/workflows/deploy-pages.yml`.
 - Testes: `tests/stage77-functional.test.cjs`, `tests/stage77-questions.test.cjs`, `tests/stage77-integrity.test.cjs`, `tests/fixtures/frontend.cjs`, `tests/fixtures/questions.cjs`.
 - Relatório: `docs/security-stage77.md` (20 arquivos ao todo, sem incluir alterações preexistentes de 7.6).

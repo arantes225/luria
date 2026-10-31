@@ -21,7 +21,7 @@ let liveTranscriptFromSpeech = false;
 
 // The small mic button uses the page's dictation recognizer, separate from
 // live conversation. Both must mark actual STT turns for phonetic correction.
-window.addEventListener("luria:leco:dictation", event => {
+window.addEventListener("traube:leco:dictation", event => {
   const transcript = String(event?.detail?.transcript || "").trim();
   if (!transcript) return;
   liveTranscriptFromSpeech = true;
@@ -170,7 +170,7 @@ function ensureUsageStyles() {
 }
 
 function ensureUsageUI() {
-  const controls = document.getElementById("alex-mode-card") || document.getElementById("luria-notifications");
+  const controls = document.getElementById("alex-mode-card") || document.getElementById("traube-notifications");
   if (!controls) return null;
   ensureUsageStyles();
   let widget = document.getElementById("alex-token-usage");
@@ -231,7 +231,7 @@ function startUsageIndicator() {
 }
 
 startUsageIndicator();
-if (!document.getElementById("luria-notifications")) {
+if (!document.getElementById("traube-notifications")) {
   const usageObserver = new MutationObserver(() => {
     if (ensureUsageUI()) {
       refreshUsage().catch(() => {});

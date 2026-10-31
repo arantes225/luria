@@ -22,8 +22,8 @@ test("nested login base resolves assets and routes under either origin", () => {
   assert.match(result, /<base href="\.\.\/">/);
   assert.doesNotMatch(result, /<base href="\/">/);
   assert.match(result, /src="assets\/vendor\/supabase-2\.110\.6\.js"/);
-  const asset = new URL("assets/js/auth.js", new URL("../", "https://arantes225.github.io/luria/login/"));
-  assert.equal(asset.pathname, "/luria/assets/js/auth.js");
+  const asset = new URL("assets/js/auth.js", new URL("../", "https://arantes225.github.io/traube/login/"));
+  assert.equal(asset.pathname, "/traube/assets/js/auth.js");
   const custom = new URL("assets/js/auth.js", new URL("../", "https://www.resibulando.online/login/"));
   assert.equal(custom.pathname, "/assets/js/auth.js");
   assert.equal(result.match(/<base /g)?.length, 1);
@@ -40,18 +40,18 @@ test("multilevel HTML gets correct base without touching inline CSP-sensitive sc
 });
 
 test("route helper keeps custom domains and prefixes GitHub project site exactly once", () => {
-  const source = fs.readFileSync(path.join(__dirname, "../assets/js/luria-site-path.js"), "utf8");
+  const source = fs.readFileSync(path.join(__dirname, "../assets/js/traube-site-path.js"), "utf8");
   const capture = projectBase => {
     const sandbox = {
       URL, window: {}, document: { baseURI: projectBase, addEventListener() {} }
     };
     vm.runInNewContext(source, sandbox);
-    return sandbox.window.luriaSitePath;
+    return sandbox.window.traubeSitePath;
   };
-  const subpath = capture("https://arantes225.github.io/luria/");
-  assert.equal(subpath("/login/"), "/luria/login/");
-  assert.equal(subpath("/luria/login/"), "/luria/login/");
-  assert.equal(subpath("/dashboard/?next=1"), "/luria/dashboard/?next=1");
+  const subpath = capture("https://arantes225.github.io/traube/");
+  assert.equal(subpath("/login/"), "/traube/login/");
+  assert.equal(subpath("/traube/login/"), "/traube/login/");
+  assert.equal(subpath("/dashboard/?next=1"), "/traube/dashboard/?next=1");
   assert.equal(subpath("//external.example/path"), "//external.example/path");
   assert.equal(subpath("assets/js/app.js"), "assets/js/app.js");
   const canonical = capture("https://www.resibulando.online/");

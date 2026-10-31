@@ -6,7 +6,7 @@ const navigation=fs.readFileSync('assets/js/ui-navigation-v2.js','utf8');
 const hub=fs.readFileSync('assets/js/work-dashboard.js','utf8');
 const settle=async w=>{const frame=w.__fixtureFrame||w.requestAnimationFrame.bind(w);for(let i=0;i<3;i++)await new Promise(resolve=>frame(resolve));};
 function fixture(t,{mobile=false,admin=true,page='trabalho_bulario',installed=false}={}) {
- const dom=new JSDOM('<html '+(installed?'data-pwa="standalone"':'')+'><body class="app-ready" data-ui-nav="v2" data-ui-context="work" data-ui-work="v2" data-ui-work-navigation="hub" data-page="'+page+'"><div class="app-shell"><aside id="sidebar"><div class="sidebar-top"><a class="brand" href="/dashboard/"><img id="luria-brand-logo"></a></div><nav><a href="/trabalho/">Dashboard</a><a href="/trabalho/paciente/">Paciente</a><a href="/trabalho/passometro/">Passômetro</a><a href="/trabalho/gestor-plantoes/">Plantões</a>'+(admin?'<a id="admin-nav-link" href="/admin/">◆ Admin</a>':'')+'<a id="beta-testers-nav-link" href="/beta-testers/">Beta Testers</a></nav><a class="work-pcr-button" href="/trabalho/pcr/">PCR</a><a class="luria-mode-footer-switch" href="/dashboard/">Estudos</a></aside><div id="sidebar-backdrop"></div><main class="main"><div class="page"><header class="topbar"><button id="menu-open">Menu</button><div class="luria-notifications"><button id="luria-profile-toggle">Perfil</button><div id="luria-profile-menu" hidden><a href="/configuracoes/#perfil">Perfil</a><button id="luria-profile-logout">Sair</button></div></div></header><div id="work-dashboard-content"></div><input id="clinical-control" value="preservado"></div></main></div></body></html>',{url:'https://fixture.invalid/trabalho/bulario/',runScripts:'outside-only',pretendToBeVisual:true});
+ const dom=new JSDOM('<html '+(installed?'data-pwa="standalone"':'')+'><body class="app-ready" data-ui-nav="v2" data-ui-context="work" data-ui-work="v2" data-ui-work-navigation="hub" data-page="'+page+'"><div class="app-shell"><aside id="sidebar"><div class="sidebar-top"><a class="brand" href="/dashboard/"><img id="traube-brand-logo"></a></div><nav><a href="/trabalho/">Dashboard</a><a href="/trabalho/paciente/">Paciente</a><a href="/trabalho/passometro/">Passômetro</a><a href="/trabalho/gestor-plantoes/">Plantões</a>'+(admin?'<a id="admin-nav-link" href="/admin/">◆ Admin</a>':'')+'<a id="beta-testers-nav-link" href="/beta-testers/">Beta Testers</a></nav><a class="work-pcr-button" href="/trabalho/pcr/">PCR</a><a class="traube-mode-footer-switch" href="/dashboard/">Estudos</a></aside><div id="sidebar-backdrop"></div><main class="main"><div class="page"><header class="topbar"><button id="menu-open">Menu</button><div class="traube-notifications"><button id="traube-profile-toggle">Perfil</button><div id="traube-profile-menu" hidden><a href="/configuracoes/#perfil">Perfil</a><button id="traube-profile-logout">Sair</button></div></div></header><div id="work-dashboard-content"></div><input id="clinical-control" value="preservado"></div></main></div></body></html>',{url:'https://fixture.invalid/trabalho/bulario/',runScripts:'outside-only',pretendToBeVisual:true});
  const observers=[],NativeObserver=dom.window.MutationObserver;
  dom.window.MutationObserver=class extends NativeObserver {constructor(fn){super(fn);observers.push(this);}};
  t.after(()=>{observers.forEach(o=>o.disconnect());dom.window.close();});
@@ -50,12 +50,12 @@ test('Work shell settles without mutation loops and restores direct page visits 
  assert.equal(d.body.classList.contains('sidebar-open'),false);
  assert.equal(d.querySelector('main').inert,false);
  assert.equal(d.querySelectorAll('.work-hub-navigation').length,1);
- assert.equal(d.querySelectorAll('#luria-brand-logo').length,1);
+ assert.equal(d.querySelectorAll('#traube-brand-logo').length,1);
  assert.equal(d.querySelectorAll('[data-work-account="beta-testers-nav-link"]').length,1);
 });
 test('Work Dashboard groups ten real routes, provides PCR, and ignores retired presentation preferences',async t=>{
  const w=fixture(t,{page:'trabalho_dashboard'}),d=w.document;
- w.localStorage.setItem('luria:work-dashboard-layout:guest','simple');w.eval(hub);await settle(w);
+ w.localStorage.setItem('traube:work-dashboard-layout:guest','simple');w.eval(hub);await settle(w);
  assert.equal(d.querySelectorAll('.work-hub-category').length,3);
  assert.equal(d.querySelectorAll('.work-hub-card').length,10);
  const links=[...d.querySelectorAll('.work-hub-card,.work-hub-emergency')];

@@ -671,7 +671,7 @@
     const topMatch = analysis.topMatches[0];
 
     // Salvar localmente
-    localStorage.setItem("luria_vocational_profile", JSON.stringify({
+    localStorage.setItem("traube_vocational_profile", JSON.stringify({
       answers: userAnswers,
       topMatches: analysis.topMatches,
       date: new Date().toISOString()
@@ -735,7 +735,7 @@
 
     try {
       await window.supabaseClient
-        .from("luria_vocational_profiles")
+        .from("traube_vocational_profiles")
         .upsert({
           user_id: window.docmapUser.id,
           answers: userAnswers,

@@ -7,7 +7,7 @@
   }
   const $=id=>document.getElementById(id);
   const intro=$("voc-intro"),quiz=$("voc-quiz"),results=$("voc-results"),choices=$("voc-options");
-  const storageKey="luria.vocacao.v3.session";
+  const storageKey="traube.vocacao.v3.session";
   let sequence=engine.core.map(q=>q.id);
   let answers={}, current=0, finish=false;
   const html=value=>String(value??"").replace(/[&<>"']/g,char=>({

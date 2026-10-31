@@ -19,12 +19,12 @@ test('common foundation loads once and work/PCR priorities are explicit',()=>{
   const entry=postcss.parse(fs.readFileSync('assets/css/ui-app.css','utf8'));
   assert.equal(entry.nodes.filter(n=>n.type==='atrule'&&n.name==='import').length,0,'shared base must not request separate stylesheets');
   const layers=entry.nodes.find(n=>n.type==='atrule'&&n.name==='layer'&&!n.nodes).params.split(',').map(x=>x.trim());
-  assert(layers.indexOf('luria-work-navigation')<layers.indexOf('luria-ui-navigation'));
-  assert(layers.indexOf('luria-pcr-ui')<layers.indexOf('luria-work-resets'));
+  assert(layers.indexOf('traube-work-navigation')<layers.indexOf('traube-ui-navigation'));
+  assert(layers.indexOf('traube-pcr-ui')<layers.indexOf('traube-work-resets'));
 });
 
 test('page UI styles do not own generic application shell geometry',()=>{
-  for(const file of ['dashboard-ui-v2.css','work-ui-v2.css','admin-ui-v2.css','luriazap-ui-v2.css','education-ui-v2.css']){
+  for(const file of ['dashboard-ui-v2.css','work-ui-v2.css','admin-ui-v2.css','traubezap-ui-v2.css','education-ui-v2.css']){
     postcss.parse(fs.readFileSync('assets/css/'+file,'utf8')).walkRules(rule=>{
       if(/(?:\.app-shell|\.main|\.topbar|#sidebar(?:\.sidebar)?)$/.test(rule.selector)){
         for(const d of rule.nodes.filter(n=>n.type==='decl'))assert(!/^(?:position|inset|height|width|margin|padding|overflow|border-radius)$/.test(d.prop),file+': '+rule.selector+' '+d.prop);
@@ -54,9 +54,9 @@ test('Leco mascot card keeps every voice action centered on desktop and mobile',
     found=true;
   });
   assert.ok(found,'Leco action bar has a page-scoped centering rule');
-  const brand=fs.readFileSync('assets/js/luria-brand-v5.js','utf8');
+  const brand=fs.readFileSync('assets/js/traube-brand-v5.js','utf8');
   const page=fs.readFileSync('professor-alex/index.html','utf8');
   assert.match(brand,/20261031-leco-actions-center1/);
-  assert.match(page,/luria-brand-v5\.js\?v=20261031-leco-actions-center1/);
+  assert.match(page,/traube-brand-v5\.js\?v=20261031-leco-actions-center1/);
   assert.match(page,/pwa\.js\?v=20261031-leco-actions-center1/);
 });

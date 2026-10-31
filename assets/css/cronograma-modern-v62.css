@@ -31,7 +31,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-stack{
     margin-bottom:8px!important;
   }
   body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight,
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .luria-page-spotlight{
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .traube-page-spotlight{
     margin-bottom:8px!important;
   }
 }

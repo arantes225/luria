@@ -12,8 +12,8 @@ test('floating Alex stays above mobile navigation and recovers space when it dis
  w.eval('const bindAlex=()=>({react(){},destroy(){}});\n'+source);
  const mounted=w.mountAlexCompanion({userId:'test-position-user'});
  assert.equal(mounted.host.style.top,'648px');
- height=0;w.dispatchEvent(new w.Event('luria:mobile-navigation-change'));assert.equal(mounted.host.style.top,'724px');
- height=76;w.dispatchEvent(new w.Event('luria:mobile-navigation-change'));assert.equal(mounted.host.style.top,'648px');
+ height=0;w.dispatchEvent(new w.Event('traube:mobile-navigation-change'));assert.equal(mounted.host.style.top,'724px');
+ height=76;w.dispatchEvent(new w.Event('traube:mobile-navigation-change'));assert.equal(mounted.host.style.top,'648px');
  mounted.destroy();assert.deepEqual(errors,[]);
 });
 
@@ -34,5 +34,5 @@ test('companion theme changes survive minimize and restore without a stale legac
  d.body.dataset.uiIdentity='pink';await settle();assert.equal(mounted.host.dataset.uiIdentity,'pink');
  delete d.body.dataset.uiAppearance;d.documentElement.dataset.theme='light';d.documentElement.dataset.uiAppearance='dark';await settle();
  assert.equal(mounted.host.dataset.uiAppearance,'dark','root appearance remains a legacy fallback');
- mounted.destroy();assert.equal(d.querySelector('luria-alex-companion'),null);assert.deepEqual(errors,[]);
+ mounted.destroy();assert.equal(d.querySelector('traube-alex-companion'),null);assert.deepEqual(errors,[]);
 });

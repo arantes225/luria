@@ -6,13 +6,13 @@ function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if([
 walk(root);
 const mime={'.html':'text/html','.css':'text/css','.js':'application/javascript','.woff2':'font/woff2','.svg':'image/svg+xml','.png':'image/png','.json':'application/json'};
 const fixture=fs.readFileSync(path.join(root,'tests/fixtures/supabase-browser.js'),'utf8')
- .replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{if(name==="luria_bootstrap")return{data:null,error:null};if(name==="admin_pin_status")return{data:{has_pin:true},error:null};')
+ .replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{if(name==="traube_bootstrap")return{data:null,error:null};if(name==="admin_pin_status")return{data:{has_pin:true},error:null};')
  .replace('if(name==="is_admin")return{data:false,error:null};','if(name==="is_admin")return{data:true,error:null};');
 const failures=[],results=[];
 const targetDir=process.env.CSS_BROWSER_RESULTS||path.join(root,'browser-results/css-system');
 fs.mkdirSync(targetDir,{recursive:true});
 (async()=>{
-const base='https://luria.test';
+const base='https://traube.test';
 const browser=await chromium.launch(process.env.PLAYWRIGHT_EXECUTABLE_PATH?{executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH}:{});
 try{
  const context=await browser.newContext({viewport:{width:1440,height:900},serviceWorkers:'block'});
@@ -26,7 +26,7 @@ try{
   if(!fs.existsSync(file))return route.fulfill({status:404,body:''});
   return route.fulfill({contentType:mime[path.extname(file)]||'application/octet-stream',body:fs.readFileSync(file)});
  });
- await context.addInitScript(()=>localStorage.setItem('luria-admin-pin-unlocked-until:11111111-1111-4111-8111-111111111111',String(Date.now()+300000)));
+ await context.addInitScript(()=>localStorage.setItem('traube-admin-pin-unlocked-until:11111111-1111-4111-8111-111111111111',String(Date.now()+300000)));
  await context.route('**/assets/js/supabase.js*',r=>r.fulfill({contentType:'application/javascript',body:fixture}));
  await context.route('**/assets/js/onboarding.js*',r=>r.fulfill({contentType:'application/javascript',body:''}));
  const page=await context.newPage();let missing=[];
@@ -42,7 +42,7 @@ try{
  // handlers run against an isolated synthetic account, with no production writes.
  for(const viewport of [{width:1920,height:900},{width:390,height:844},{width:320,height:700}]){
   await page.setViewportSize(viewport);
-  for(const url of ['/dashboard/','/cronograma/','/flashcards/','/caderno/','/plantao/luriazap/','/plantao/sala-emergencia/','/trabalho/','/trabalho/pcr/']){
+  for(const url of ['/dashboard/','/cronograma/','/flashcards/','/caderno/','/plantao/traubezap/','/plantao/sala-emergencia/','/trabalho/','/trabalho/pcr/']){
    try{await visit(url);await bounds(url+' '+viewport.width);
     for(const [appearance,identity]of [['light','blue'],['dark','blue'],['light','pink'],['dark','pink']]){
      await page.evaluate(({appearance,identity})=>{document.body.dataset.uiAppearance=appearance;document.body.dataset.uiIdentity=identity},{appearance,identity});await bounds(url+' '+appearance+' '+identity);
@@ -54,7 +54,7 @@ try{
      if(viewport.width<981){assert(await page.locator('body').evaluate(e=>e.classList.contains('sidebar-open')));await page.keyboard.press('Escape');assert(!(await page.locator('body').evaluate(e=>e.classList.contains('sidebar-open'))));}
      else{assert.equal(await page.locator('body').getAttribute('data-ui-sidebar'),'collapsed');await trigger.click();await page.waitForTimeout(270);}
     }
-    await page.locator('#luria-profile-toggle').click();await page.locator('#luria-profile-menu').waitFor({state:'visible'});await bounds(url+' profile');await page.keyboard.press('Escape');
+    await page.locator('#traube-profile-toggle').click();await page.locator('#traube-profile-menu').waitFor({state:'visible'});await bounds(url+' profile');await page.keyboard.press('Escape');
     if(viewport.width===1920&&url==='/dashboard/')await page.screenshot({path:path.join(targetDir,'dashboard-desktop.png')});
     if(viewport.width===390&&url==='/dashboard/')await page.screenshot({path:path.join(targetDir,'dashboard-mobile.png')});
    }catch(error){failures.push({file:url,viewport,error:error.message})}
@@ -66,14 +66,14 @@ try{
  await page.evaluate(()=>{const marker=document.createElement('button');marker.id='frame-scroll-target';marker.textContent='Destino de teste';marker.style.marginTop='1200px';document.querySelector('.main > .page').append(marker);marker.scrollIntoView({block:'end'});marker.focus();});
  assert(await page.locator('main.main').evaluate(e=>e.scrollTop)>0,'anchors scroll the content');assert.equal(await page.evaluate(()=>scrollY),0,'document never scrolls');
  assert.deepEqual(await page.locator('.topbar').boundingBox(),before,'header stays in place');assert.deepEqual(await page.locator('#sidebar').boundingBox(),sideBefore,'sidebar stays inside frame');
- await page.locator('#luria-profile-toggle').click();await page.locator('#luria-profile-menu').waitFor({state:'visible'});assert(await page.locator('#luria-profile-menu').evaluate(e=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight;}),'popup remains visible while content is scrolled');await page.keyboard.press('Escape');
+ await page.locator('#traube-profile-toggle').click();await page.locator('#traube-profile-menu').waitFor({state:'visible'});assert(await page.locator('#traube-profile-menu').evaluate(e=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight;}),'popup remains visible while content is scrolled');await page.keyboard.press('Escape');
  // Installed navigation reserves space inside the frame and restores drawer interaction.
  await page.setViewportSize({width:390,height:844});await visit('/dashboard/');
  await page.evaluate(()=>{document.documentElement.classList.add('pwa-v2-standalone');document.documentElement.dataset.pwa='standalone';window.dispatchEvent(new Event('pageshow'));});await page.waitForTimeout(200);await bounds('installed frame');
  const bottom=page.locator('#ui-mobile-navigation');await bottom.waitFor({state:'visible'});
  await page.locator('#ui-mobile-more').click();assert(await page.locator('#sidebar').isVisible());await page.keyboard.press('Escape');assert.equal(await page.locator('main.main').evaluate(e=>e.inert),false,'installed content remains interactive');
  await page.evaluate(()=>{document.documentElement.classList.remove('pwa-v2-standalone');delete document.documentElement.dataset.pwa;});
- await page.setViewportSize({width:844,height:390});await visit('/plantao/sala-emergencia/');await page.evaluate(()=>document.body.classList.add('luria-case-landscape'));assert.equal(await page.locator('.topbar').evaluate(e=>getComputedStyle(e).display),'none','landscape case keeps immersive navigation');
+ await page.setViewportSize({width:844,height:390});await visit('/plantao/sala-emergencia/');await page.evaluate(()=>document.body.classList.add('traube-case-landscape'));assert.equal(await page.locator('.topbar').evaluate(e=>getComputedStyle(e).display),'none','landscape case keeps immersive navigation');
  fs.writeFileSync(path.join(targetDir,'results.json'),JSON.stringify({pages:paths.length,results,failures},null,2));
  assert.deepEqual(failures,[]);console.log('PASS',paths.length,'pages, 3 responsive sizes, four palettes, drawer/profile controls and emergency landscape');
  await context.close();

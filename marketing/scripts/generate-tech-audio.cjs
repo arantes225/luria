@@ -196,7 +196,7 @@ function synthesize() {
 async function main() {
   const outDir = path.join(MARKETING, 'public', 'audio');
   fs.mkdirSync(outDir, { recursive: true });
-  const outFile = path.join(outDir, 'luria-tech-simulador-30s.mp3');
+  const outFile = path.join(outDir, 'traube-tech-simulador-30s.mp3');
 
   console.log('Sintetizando trilha sonora High-Tech + Áudio do Monitor Multiparamétrico (30s)...');
   const pcmBuffer = synthesize();

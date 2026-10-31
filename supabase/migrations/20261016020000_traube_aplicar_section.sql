@@ -1,13 +1,13 @@
 -- ==============================================================================
 -- Migração TRAUBE: Seção Aplicar (Vocação & Radar de Provas)
--- Arquivo: supabase/migrations/20261016020000_luria_aplicar_section.sql
+-- Arquivo: supabase/migrations/20261016020000_traube_aplicar_section.sql
 -- ==============================================================================
 
 BEGIN;
 
 -- 1. TABELA DE PERFIS VOCACIONAIS (VOCAÇÃO)
 -- Armazena as respostas, especialidades compatíveis e traços de perfil do estudante.
-CREATE TABLE IF NOT EXISTS public.luria_vocational_profiles (
+CREATE TABLE IF NOT EXISTS public.traube_vocational_profiles (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   user_id uuid NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
   answers jsonb NOT NULL DEFAULT '{}'::jsonb,
@@ -15,40 +15,40 @@ CREATE TABLE IF NOT EXISTS public.luria_vocational_profiles (
   profile_traits jsonb NOT NULL DEFAULT '[]'::jsonb,
   created_at timestamptz NOT NULL DEFAULT clock_timestamp(),
   updated_at timestamptz NOT NULL DEFAULT clock_timestamp(),
-  CONSTRAINT uq_luria_vocational_user UNIQUE (user_id)
+  CONSTRAINT uq_traube_vocational_user UNIQUE (user_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_luria_vocational_user_id 
-  ON public.luria_vocational_profiles(user_id);
+CREATE INDEX IF NOT EXISTS idx_traube_vocational_user_id 
+  ON public.traube_vocational_profiles(user_id);
 
 -- RLS para Perfis Vocacionais (privacidade estrita: somente o próprio usuário acessa seus dados)
-ALTER TABLE public.luria_vocational_profiles ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.traube_vocational_profiles ENABLE ROW LEVEL SECURITY;
 
-DROP POLICY IF EXISTS "vocational_profiles_owner_select" ON public.luria_vocational_profiles;
+DROP POLICY IF EXISTS "vocational_profiles_owner_select" ON public.traube_vocational_profiles;
 CREATE POLICY "vocational_profiles_owner_select"
-  ON public.luria_vocational_profiles
+  ON public.traube_vocational_profiles
   FOR SELECT
   TO authenticated
   USING (auth.uid() = user_id);
 
-DROP POLICY IF EXISTS "vocational_profiles_owner_insert" ON public.luria_vocational_profiles;
+DROP POLICY IF EXISTS "vocational_profiles_owner_insert" ON public.traube_vocational_profiles;
 CREATE POLICY "vocational_profiles_owner_insert"
-  ON public.luria_vocational_profiles
+  ON public.traube_vocational_profiles
   FOR INSERT
   TO authenticated
   WITH CHECK (auth.uid() = user_id);
 
-DROP POLICY IF EXISTS "vocational_profiles_owner_update" ON public.luria_vocational_profiles;
+DROP POLICY IF EXISTS "vocational_profiles_owner_update" ON public.traube_vocational_profiles;
 CREATE POLICY "vocational_profiles_owner_update"
-  ON public.luria_vocational_profiles
+  ON public.traube_vocational_profiles
   FOR UPDATE
   TO authenticated
   USING (auth.uid() = user_id)
   WITH CHECK (auth.uid() = user_id);
 
-DROP POLICY IF EXISTS "vocational_profiles_owner_delete" ON public.luria_vocational_profiles;
+DROP POLICY IF EXISTS "vocational_profiles_owner_delete" ON public.traube_vocational_profiles;
 CREATE POLICY "vocational_profiles_owner_delete"
-  ON public.luria_vocational_profiles
+  ON public.traube_vocational_profiles
   FOR DELETE
   TO authenticated
   USING (auth.uid() = user_id);
@@ -56,7 +56,7 @@ CREATE POLICY "vocational_profiles_owner_delete"
 
 -- 2. TABELA DE INCIDÊNCIA DE TEMAS EM PROVAS (RADAR DE PROVAS)
 -- Armazena dados estatísticos agregados e auditáveis da incidência de temas por banca/instituição e ano.
-CREATE TABLE IF NOT EXISTS public.luria_exam_topic_incidence (
+CREATE TABLE IF NOT EXISTS public.traube_exam_topic_incidence (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   institution text NOT NULL,
   exam_name text NOT NULL,
@@ -73,26 +73,26 @@ CREATE TABLE IF NOT EXISTS public.luria_exam_topic_incidence (
 );
 
 CREATE INDEX IF NOT EXISTS idx_exam_incidence_inst_year 
-  ON public.luria_exam_topic_incidence(institution, year);
+  ON public.traube_exam_topic_incidence(institution, year);
 
 CREATE INDEX IF NOT EXISTS idx_exam_incidence_area 
-  ON public.luria_exam_topic_incidence(area);
+  ON public.traube_exam_topic_incidence(area);
 
 CREATE INDEX IF NOT EXISTS idx_exam_incidence_tema 
-  ON public.luria_exam_topic_incidence(tema);
+  ON public.traube_exam_topic_incidence(tema);
 
 -- RLS para Incidência de Provas: Leitura pública e transparente, escrita restrita
-ALTER TABLE public.luria_exam_topic_incidence ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.traube_exam_topic_incidence ENABLE ROW LEVEL SECURITY;
 
-DROP POLICY IF EXISTS "exam_incidence_public_select" ON public.luria_exam_topic_incidence;
+DROP POLICY IF EXISTS "exam_incidence_public_select" ON public.traube_exam_topic_incidence;
 CREATE POLICY "exam_incidence_public_select"
-  ON public.luria_exam_topic_incidence
+  ON public.traube_exam_topic_incidence
   FOR SELECT
   TO public
   USING (true);
 
--- Gatilho de atualização automática de timestamp para luria_vocational_profiles
-CREATE OR REPLACE FUNCTION public.handle_luria_vocational_updated_at()
+-- Gatilho de atualização automática de timestamp para traube_vocational_profiles
+CREATE OR REPLACE FUNCTION public.handle_traube_vocational_updated_at()
 RETURNS TRIGGER AS $$
 BEGIN
   NEW.updated_at = clock_timestamp();
@@ -100,10 +100,10 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-DROP TRIGGER IF EXISTS trg_luria_vocational_updated_at ON public.luria_vocational_profiles;
-CREATE TRIGGER trg_luria_vocational_updated_at
-  BEFORE UPDATE ON public.luria_vocational_profiles
+DROP TRIGGER IF EXISTS trg_traube_vocational_updated_at ON public.traube_vocational_profiles;
+CREATE TRIGGER trg_traube_vocational_updated_at
+  BEFORE UPDATE ON public.traube_vocational_profiles
   FOR EACH ROW
-  EXECUTE FUNCTION public.handle_luria_vocational_updated_at();
+  EXECUTE FUNCTION public.handle_traube_vocational_updated_at();
 
 COMMIT;

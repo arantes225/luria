@@ -22,7 +22,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="TRAUBE">
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" type="image/png" href="assets/img/logos/favicon.png?v=luria2">
+  <link rel="icon" type="image/png" href="assets/img/logos/favicon.png?v=traube2">
 
 <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
@@ -35,8 +35,8 @@
     rel="stylesheet"
     href="assets/css/caderno-erros.css?v=18.18-equal-switches"
   >
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
-<script defer src="assets/js/luria-brand-v5.js?v=20261025-review-fixes3"></script>
+  <link rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261005-global-v90">
+<script defer src="assets/js/traube-brand-v5.js?v=20261025-review-fixes3"></script>
   <link rel="canonical" href="/caderno-erros/">
 <script>(function(){try{if(location.pathname.endsWith("/caderno-erros.html"))history.replaceState(null,"","/caderno-erros/"+location.search+location.hash);}catch(e){}})();</script>
 
@@ -128,15 +128,15 @@
               <label class="error-field full"><span>O que eu pensei <small>(opcional)</small></span><textarea id="new-error-thought" rows="4"></textarea></label>
               <label class="error-field full error-image-field"><span>Imagem da questão <small>(opcional)</small></span><div class="error-image-input-row"><input id="new-error-image" type="file" accept="image/*"><button id="remove-new-error-image" class="button secondary error-image-remove" type="button" disabled>Apagar imagem</button></div><label class="error-image-keep-option"><input id="keep-new-error-image" type="checkbox"><span>Manter imagem no Caderno de Erros</span></label><button id="extract-error-image-text" class="button secondary error-image-extract" type="button" disabled>Extrair texto</button><span id="new-error-image-info" class="error-image-info" aria-live="polite"></span></label>
             </div>
-            <datalist id="error-medical-areas" data-luria-general-area-list><option value="Clínica Médica"></option><option value="Pediatria"></option><option value="Ginecologia e Obstetrícia"></option><option value="Cirurgia Geral"></option><option value="Preventiva"></option></datalist>
+            <datalist id="error-medical-areas" data-traube-general-area-list><option value="Clínica Médica"></option><option value="Pediatria"></option><option value="Ginecologia e Obstetrícia"></option><option value="Cirurgia Geral"></option><option value="Preventiva"></option></datalist>
             <div class="error-create-actions"><button id="save-new-error" class="button primary" type="button">Salvar no Caderno de Erros</button><button id="cancel-new-error" class="button secondary" type="button">Cancelar</button><span id="new-error-status" class="error-status" aria-live="polite"></span></div>
           </div>
         </section>
 
-        <section class="luria-page-spotlight qs-page-spotlight error-page-spotlight" aria-label="Caderno de Erros">
-          <div class="luria-page-spotlight-copy">
+        <section class="traube-page-spotlight qs-page-spotlight error-page-spotlight" aria-label="Caderno de Erros">
+          <div class="traube-page-spotlight-copy">
             <strong>Caderno de Erros</strong>
-            <p class="luria-page-spotlight-helper">Transforme erros em pontos fortes com o Pulo do Gato e revisões inteligentes.</p>
+            <p class="traube-page-spotlight-helper">Transforme erros em pontos fortes com o Pulo do Gato e revisões inteligentes.</p>
           </div>
         </section>
 
@@ -159,7 +159,7 @@
                   <strong class="qs-home-daily-count" id="error-home-due-count">— erros</strong>
                   <button
                     id="error-daily-review-open"
-                    class="button primary qs-home-primary luria-daily-review-primary"
+                    class="button primary qs-home-primary traube-daily-review-primary"
                     type="button"
                   >
                     <span>Revisar agora →</span>
@@ -248,7 +248,7 @@
                 </div>
               </div>
             </div>
-            <select id="error-library-area" class="error-library-area-native" data-luria-general-area-select data-blank-label="Todas as áreas">
+            <select id="error-library-area" class="error-library-area-native" data-traube-general-area-select data-blank-label="Todas as áreas">
               <option value="">Todas as áreas</option>
             </select>
             <input id="error-library-search" type="search" placeholder="Buscar no caderno...">
@@ -330,7 +330,7 @@
           <input
             id="error-edit-area"
             type="text"
-            data-luria-general-area-input
+            data-traube-general-area-input
             list="error-medical-areas"
           >
         </label>

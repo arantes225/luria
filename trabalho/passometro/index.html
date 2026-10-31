@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-eLIEx6tIuRkwRjryaXtAbfL+AYuoCAIJbeYrrBlPPP0=' https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-nhRrCZNS94Y8zTZ7CUkyZUjM/+9aGtYC+eBhf2zkqcs=' https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -14,7 +14,7 @@
 <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
   <style>
     .pm-page{display:grid;gap:18px;max-width:1180px;margin:0 auto}
@@ -1010,10 +1010,10 @@
             <h1 data-page-title></h1>
           </div>
         </header>
-        <section class="luria-page-spotlight" aria-label="Passômetro">
-          <div class="luria-page-spotlight-copy">
+        <section class="traube-page-spotlight" aria-label="Passômetro">
+          <div class="traube-page-spotlight-copy">
             <strong data-page-title>Passômetro</strong>
-            <small class="luria-page-spotlight-helper">Estruture a passagem de plantão com clareza.</small>
+            <small class="traube-page-spotlight-helper">Estruture a passagem de plantão com clareza.</small>
           </div>
         </section>
 
@@ -1417,7 +1417,7 @@
 <script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 <script>
   (() => {
-    const STORAGE_KEY = "luria:passometro:v1";
+    const STORAGE_KEY = "traube:passometro:v1";
     const RETENTION_MS = 30 * 24 * 60 * 60 * 1000;
     const SYNC_TABLE = "passometro_decks";
     const state = { decks: [], activeDeckId: null, editingDeckId: null, editingPatientId: null, switches: {}, priority: "none", userId: null, syncTimer: null };
@@ -2224,7 +2224,7 @@
 
     loadDrugCatalog();
     load();
-    window.addEventListener("luria:owner-changed",()=>{
+    window.addEventListener("traube:owner-changed",()=>{
       clearTimeout(state.syncTimer);
       for(const timer of state.syncTimers?.values()||[])clearTimeout(timer);
       state.syncTimers?.clear();

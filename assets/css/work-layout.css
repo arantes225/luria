@@ -5,8 +5,8 @@ html body[data-page^="trabalho_"] .main .page:where(:not(body[data-ui-nav="v2"],
 html body[data-page^="trabalho_"] .page:not(.pcr-page){display:grid;gap:16px}
 html body[data-page^="trabalho_"] .page:not(.pcr-page)>.topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){margin-bottom:0!important;max-height:none!important;height:auto!important;min-height:60px!important}
 html body[data-page^="trabalho_"] .page:not(.pcr-page) .page-heading{display:block!important;min-width:0}
-html body[data-page^="trabalho_"] .page .luria-work-page-spotlight{box-sizing:border-box!important;width:100%!important;height:auto!important;min-height:118px!important;margin:0!important;padding:22px 24px!important;border-radius:15px!important}
-html body[data-page^="trabalho_"] .page .luria-work-page-spotlight .luria-page-spotlight-copy>strong{font-size:28px!important;font-weight:600!important;line-height:1.2!important;letter-spacing:-.025em!important}
+html body[data-page^="trabalho_"] .page .traube-work-page-spotlight{box-sizing:border-box!important;width:100%!important;height:auto!important;min-height:118px!important;margin:0!important;padding:22px 24px!important;border-radius:15px!important}
+html body[data-page^="trabalho_"] .page .traube-work-page-spotlight .traube-page-spotlight-copy>strong{font-size:28px!important;font-weight:600!important;line-height:1.2!important;letter-spacing:-.025em!important}
 html body[data-page^="trabalho_"] .page :is(.work-tool-shell,.tool-shell,.finance-shell,.gm-shell,.lab-shell,.dx-shell,.shift-shell,.work-shell,.protocol-shell,.recipe-shell,.abx-page,.pm-page,.temp-note-shell,.score-page,.bulario-layout,.work-dashboard){min-width:0!important;max-width:100%!important;box-sizing:border-box!important}
 html body[data-page^="trabalho_"] .page :is(.work-tool-hero,.tool-hero,.finance-hero,.gm-hero,.lab-hero,.dx-hero,.shift-hero,.work-hero,.protocol-hero,.recipe-hero,.prescription-hero,.work-card,.germ-card,.calc-card,.gm-security-card){border-radius:16px!important;border:1px solid var(--border)!important;background:var(--surface)!important;color:var(--text)!important;box-shadow:0 4px 14px color-mix(in srgb,var(--accent) 5%,transparent)!important;padding:20px!important;box-sizing:border-box!important;min-width:0!important}
 html body[data-page^="trabalho_"] .page :is(.work-tool-hero,.tool-hero,.finance-hero,.gm-hero,.lab-hero,.dx-hero,.shift-hero,.work-hero,.protocol-hero,.recipe-hero,.prescription-hero) h2{font-size:20px!important;font-weight:600!important;line-height:1.3!important}
@@ -15,8 +15,8 @@ html body[data-page^="trabalho_"] .page :is(input,select,textarea){box-sizing:bo
 html body[data-page^="trabalho_"] .page :is(.protocol-list-panel,.recipe-list-panel){min-width:0;max-width:100%}
 @media(max-width:980px){
  html body[data-page^="trabalho_"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){height:auto!important;max-height:none!important;overflow:visible!important;padding:16px 12px calc(24px + env(safe-area-inset-bottom))!important}
- html body[data-page^="trabalho_"] .page .luria-work-page-spotlight{padding:18px!important;min-height:108px!important}
- html body[data-page^="trabalho_"] .page .luria-work-page-spotlight .luria-page-spotlight-copy>strong{font-size:24px!important}
+ html body[data-page^="trabalho_"] .page .traube-work-page-spotlight{padding:18px!important;min-height:108px!important}
+ html body[data-page^="trabalho_"] .page .traube-work-page-spotlight .traube-page-spotlight-copy>strong{font-size:24px!important}
  html body[data-page^="trabalho_"] .page :is(.bulario-layout,.gm-grid,.dx-grid,.work-grid,.pm-patient-grid,.pm-grid-2,.pm-grid-3,.temp-note-access-grid){grid-template-columns:minmax(0,1fr)!important}
  html body[data-page^="trabalho_"] .page :is(.focus-grid,.germ-grid){grid-template-columns:repeat(2,minmax(0,1fr))!important}
  html body[data-page^="trabalho_"] .page :is(.work-tool-hero,.tool-hero,.finance-hero,.gm-hero,.lab-hero,.dx-hero,.shift-hero,.work-hero,.protocol-hero,.recipe-hero,.prescription-hero){padding:16px!important;flex-wrap:wrap!important}
@@ -213,39 +213,39 @@ body[data-ui="v2"],
 body[data-ui-shell="v2"],
 body[data-ui-work="v2"],
 body[data-page^="trabalho_"] {
-  --luria-work-btn-bg: linear-gradient(135deg, #184888, #2563EB);
-  --luria-work-btn-border: rgba(37, 99, 235, 0.45);
-  --luria-work-btn-shadow: 0 4px 14px rgba(24, 72, 136, 0.25);
+  --traube-work-btn-bg: linear-gradient(135deg, #184888, #2563EB);
+  --traube-work-btn-border: rgba(37, 99, 235, 0.45);
+  --traube-work-btn-shadow: 0 4px 14px rgba(24, 72, 136, 0.25);
 }
 html:is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]):not([data-ui-appearance="dark"]):not([data-theme="dark"]) body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]),
 body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]):not([data-ui-appearance="dark"]):not([data-theme="dark"]) {
-  --luria-work-btn-bg: linear-gradient(135deg, #B2577D, #DB2777, #EC4899);
-  --luria-work-btn-border: rgba(219, 39, 119, 0.45);
-  --luria-work-btn-shadow: 0 4px 14px rgba(219, 39, 119, 0.28);
+  --traube-work-btn-bg: linear-gradient(135deg, #B2577D, #DB2777, #EC4899);
+  --traube-work-btn-border: rgba(219, 39, 119, 0.45);
+  --traube-work-btn-shadow: 0 4px 14px rgba(219, 39, 119, 0.28);
 }
 html:is([data-ui-appearance="dark"], [data-theme="dark"]):not([data-ui-identity="pink"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]),
 body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]):is([data-ui-appearance="dark"], [data-theme="dark"]):not([data-ui-identity="pink"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) {
-  --luria-work-btn-bg: linear-gradient(135deg, #102C57, #184888, #2563EB);
-  --luria-work-btn-border: rgba(37, 99, 235, 0.55);
-  --luria-work-btn-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  --traube-work-btn-bg: linear-gradient(135deg, #102C57, #184888, #2563EB);
+  --traube-work-btn-border: rgba(37, 99, 235, 0.55);
+  --traube-work-btn-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
 }
 html:is([data-ui-appearance="dark"], [data-theme="dark"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]) body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]),
 body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]):is([data-ui-appearance="dark"], [data-theme="dark"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]) {
-  --luria-work-btn-bg: linear-gradient(135deg, #831843, #BE185D, #EC4899);
-  --luria-work-btn-border: rgba(190, 24, 93, 0.55);
-  --luria-work-btn-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  --traube-work-btn-bg: linear-gradient(135deg, #831843, #BE185D, #EC4899);
+  --traube-work-btn-border: rgba(190, 24, 93, 0.55);
+  --traube-work-btn-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
 }
-html body:is([data-ui-work="v2"],[data-page^="trabalho_"]) :is(.main,dialog,[role="dialog"],.external-chart,#sidebar) :is(button:not(.calc-card-main):not(.score-card-main):not(.fav-btn):not(.score-fav):not(.calc-search-clear):not(.score-search-clear):not(.drug-row):not(.rx-presentation-tab):not(.protocol-row):not(.protocol-item):not(.recipe-row):not(.recipe-item):not(.ex-side button):not(.pm-drug-option):not(.pm-deck-more):not(.pm-priority button):not(.protocol-image-open):not(.shift-calendar-event):not(.shift-day-number):not(.ecg-photo-corner):not(.pcr-rhythm):not(.team-position):not(.patient-problem-chip:not(.is-active)):not(#menu-open):not(#sidebar-desktop-toggle):not(#sidebar-close),.button,.btn,.btn-primary,.btn-secondary,a.button,.luria-back-button,.work-hub-patient-action,.work-hub-emergency-action,#sidebar .work-pcr-button,.work-empty a,.work-action-row a,.work-simple-actions-grid a,.work-card-heading a,.drug-popover-actions a,.ex-back-link,.gm-radar-btn,.gm-tools-link,.patient-primary,.patient-secondary,.patient-tool-actions a,.patient-link-button,.temp-note-top-actions a,.recipe-drug-link,.btn-goto-bulario) {
-  background: var(--luria-work-btn-bg, linear-gradient(135deg, #184888, #2563EB)) !important;
-  background-image: var(--luria-work-btn-bg, linear-gradient(135deg, #184888, #2563EB)) !important;
+html body:is([data-ui-work="v2"],[data-page^="trabalho_"]) :is(.main,dialog,[role="dialog"],.external-chart,#sidebar) :is(button:not(.calc-card-main):not(.score-card-main):not(.fav-btn):not(.score-fav):not(.calc-search-clear):not(.score-search-clear):not(.drug-row):not(.rx-presentation-tab):not(.protocol-row):not(.protocol-item):not(.recipe-row):not(.recipe-item):not(.ex-side button):not(.pm-drug-option):not(.pm-deck-more):not(.pm-priority button):not(.protocol-image-open):not(.shift-calendar-event):not(.shift-day-number):not(.ecg-photo-corner):not(.pcr-rhythm):not(.team-position):not(.patient-problem-chip:not(.is-active)):not(#menu-open):not(#sidebar-desktop-toggle):not(#sidebar-close),.button,.btn,.btn-primary,.btn-secondary,a.button,.traube-back-button,.work-hub-patient-action,.work-hub-emergency-action,#sidebar .work-pcr-button,.work-empty a,.work-action-row a,.work-simple-actions-grid a,.work-card-heading a,.drug-popover-actions a,.ex-back-link,.gm-radar-btn,.gm-tools-link,.patient-primary,.patient-secondary,.patient-tool-actions a,.patient-link-button,.temp-note-top-actions a,.recipe-drug-link,.btn-goto-bulario) {
+  background: var(--traube-work-btn-bg, linear-gradient(135deg, #184888, #2563EB)) !important;
+  background-image: var(--traube-work-btn-bg, linear-gradient(135deg, #184888, #2563EB)) !important;
   color: #ffffff !important;
-  border-color: var(--luria-work-btn-border, rgba(37, 99, 235, 0.45)) !important;
-  box-shadow: var(--luria-work-btn-shadow, 0 4px 14px rgba(24, 72, 136, 0.25)) !important;
+  border-color: var(--traube-work-btn-border, rgba(37, 99, 235, 0.45)) !important;
+  box-shadow: var(--traube-work-btn-shadow, 0 4px 14px rgba(24, 72, 136, 0.25)) !important;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16) !important;
 }
-html body:is([data-ui-work="v2"],[data-page^="trabalho_"]) :is(.main,dialog,[role="dialog"],.external-chart,#sidebar) :is(button:not(.calc-card-main):not(.score-card-main):not(.fav-btn):not(.score-fav):not(.calc-search-clear):not(.score-search-clear):not(.drug-row):not(.rx-presentation-tab):not(.protocol-row):not(.protocol-item):not(.recipe-row):not(.recipe-item):not(.ex-side button):not(.pm-drug-option):not(.pm-deck-more):not(.pm-priority button):not(.protocol-image-open):not(.shift-calendar-event):not(.shift-day-number):not(.ecg-photo-corner):not(.pcr-rhythm):not(.team-position):not(.patient-problem-chip:not(.is-active)):not(#menu-open):not(#sidebar-desktop-toggle):not(#sidebar-close),.button,.btn,.btn-primary,.btn-secondary,a.button,.luria-back-button,.work-hub-patient-action,.work-hub-emergency-action,#sidebar .work-pcr-button,.work-empty a,.work-action-row a,.work-simple-actions-grid a,.work-card-heading a,.drug-popover-actions a,.ex-back-link,.gm-radar-btn,.gm-tools-link,.patient-primary,.patient-secondary,.patient-tool-actions a,.patient-link-button,.temp-note-top-actions a,.recipe-drug-link,.btn-goto-bulario) :is(span, strong, b, small, i, em, p, code, svg, svg *) {
+html body:is([data-ui-work="v2"],[data-page^="trabalho_"]) :is(.main,dialog,[role="dialog"],.external-chart,#sidebar) :is(button:not(.calc-card-main):not(.score-card-main):not(.fav-btn):not(.score-fav):not(.calc-search-clear):not(.score-search-clear):not(.drug-row):not(.rx-presentation-tab):not(.protocol-row):not(.protocol-item):not(.recipe-row):not(.recipe-item):not(.ex-side button):not(.pm-drug-option):not(.pm-deck-more):not(.pm-priority button):not(.protocol-image-open):not(.shift-calendar-event):not(.shift-day-number):not(.ecg-photo-corner):not(.pcr-rhythm):not(.team-position):not(.patient-problem-chip:not(.is-active)):not(#menu-open):not(#sidebar-desktop-toggle):not(#sidebar-close),.button,.btn,.btn-primary,.btn-secondary,a.button,.traube-back-button,.work-hub-patient-action,.work-hub-emergency-action,#sidebar .work-pcr-button,.work-empty a,.work-action-row a,.work-simple-actions-grid a,.work-card-heading a,.drug-popover-actions a,.ex-back-link,.gm-radar-btn,.gm-tools-link,.patient-primary,.patient-secondary,.patient-tool-actions a,.patient-link-button,.temp-note-top-actions a,.recipe-drug-link,.btn-goto-bulario) :is(span, strong, b, small, i, em, p, code, svg, svg *) {
   color: #ffffff !important;
 }
-html body:is([data-ui-work="v2"],[data-page^="trabalho_"]) :is(.main,dialog,[role="dialog"],.external-chart,#sidebar) :is(button:not(.calc-card-main):not(.score-card-main):not(.fav-btn):not(.score-fav):not(.calc-search-clear):not(.score-search-clear):not(.drug-row):not(.rx-presentation-tab):not(.protocol-row):not(.protocol-item):not(.recipe-row):not(.recipe-item):not(.ex-side button):not(.pm-drug-option):not(.pm-deck-more):not(.pm-priority button):not(.protocol-image-open):not(.shift-calendar-event):not(.shift-day-number):not(.ecg-photo-corner):not(.pcr-rhythm):not(.team-position):not(.patient-problem-chip:not(.is-active)):not(#menu-open):not(#sidebar-desktop-toggle):not(#sidebar-close),.button,.btn,.btn-primary,.btn-secondary,a.button,.luria-back-button,.work-hub-patient-action,.work-hub-emergency-action,#sidebar .work-pcr-button,.work-empty a,.work-action-row a,.work-simple-actions-grid a,.work-card-heading a,.drug-popover-actions a,.ex-back-link,.gm-radar-btn,.gm-tools-link,.patient-primary,.patient-secondary,.patient-tool-actions a,.patient-link-button,.temp-note-top-actions a,.recipe-drug-link,.btn-goto-bulario) :is(svg[stroke], svg [stroke]) {
+html body:is([data-ui-work="v2"],[data-page^="trabalho_"]) :is(.main,dialog,[role="dialog"],.external-chart,#sidebar) :is(button:not(.calc-card-main):not(.score-card-main):not(.fav-btn):not(.score-fav):not(.calc-search-clear):not(.score-search-clear):not(.drug-row):not(.rx-presentation-tab):not(.protocol-row):not(.protocol-item):not(.recipe-row):not(.recipe-item):not(.ex-side button):not(.pm-drug-option):not(.pm-deck-more):not(.pm-priority button):not(.protocol-image-open):not(.shift-calendar-event):not(.shift-day-number):not(.ecg-photo-corner):not(.pcr-rhythm):not(.team-position):not(.patient-problem-chip:not(.is-active)):not(#menu-open):not(#sidebar-desktop-toggle):not(#sidebar-close),.button,.btn,.btn-primary,.btn-secondary,a.button,.traube-back-button,.work-hub-patient-action,.work-hub-emergency-action,#sidebar .work-pcr-button,.work-empty a,.work-action-row a,.work-simple-actions-grid a,.work-card-heading a,.drug-popover-actions a,.ex-back-link,.gm-radar-btn,.gm-tools-link,.patient-primary,.patient-secondary,.patient-tool-actions a,.patient-link-button,.temp-note-top-actions a,.recipe-drug-link,.btn-goto-bulario) :is(svg[stroke], svg [stroke]) {
   stroke: #ffffff !important;
 }

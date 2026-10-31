@@ -41,7 +41,7 @@
   }
 
   .pwa-standalone body[data-page="estatisticas"] .brand-logo-single,
-  .pwa-standalone body[data-page="estatisticas"] .luria-theme-logo,
+  .pwa-standalone body[data-page="estatisticas"] .traube-theme-logo,
   .pwa-standalone body[data-page="estatisticas"] .brand-logo-stack {
     width: 54px !important;
     height: 54px !important;

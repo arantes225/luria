@@ -9,7 +9,7 @@ for(const file of ['source-verifier','image-download']) {
   vm.runInContext(code,context);
 }
 const downloadImage=vm.runInContext('downloadImage',context);
-const base='https://www.luriamedicina.com.br';
+const base='https://www.traubemedicina.com.br';
 const png=()=>new Response(new Uint8Array([137,80,78,71,13,10,26,10]),{headers:{'content-type':'image/png'}});
 test('image URL guard rejects protocols, credentials, local/reserved IPs before fetch',async()=>{
   for(const src of ['http://public.org/x','file:///etc/passwd','https://127.1/x','https://0x7f000001/x','https://[::1]/','https://[::ffff:127.0.0.1]/','https://169.254.169.254/','https://private.internal/','https://@public.org/x']) {

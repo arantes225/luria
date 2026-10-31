@@ -18,6 +18,6 @@ function ownerFixture(initial='A') {
     write(base,value){if(!user)return false;context.localStorage.setItem(key(base),value);return true},
     remove(base){if(user)context.localStorage.removeItem(key(base))}};
   vm.createContext(context);
-  return {context, change:id=>{const previousId=user;user=id;epoch++;context.dispatchEvent(new context.CustomEvent('luria:owner-changed',{detail:{ownerId:id,previousId,epoch}}));}};
+  return {context, change:id=>{const previousId=user;user=id;epoch++;context.dispatchEvent(new context.CustomEvent('traube:owner-changed',{detail:{ownerId:id,previousId,epoch}}));}};
 }
 module.exports={ownerFixture,source,storage};

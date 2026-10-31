@@ -25,7 +25,7 @@ test('installed v2 uses web responsive CSS instead of obsolete standalone overri
   assert.equal(document.documentElement.classList.contains('pwa-v2-standalone'), true);
   assert.equal(document.documentElement.classList.contains('pwa-standalone'), false);
   assert.equal(document.documentElement.dataset.pwa, 'standalone');
-  assert.equal(document.getElementById('luria-pwa-v2-safe-area'),null);
+  assert.equal(document.getElementById('traube-pwa-v2-safe-area'),null);
   assert.match(fs.readFileSync('assets/css/ui-app.css','utf8'), /safe-area-inset-top/);
   assert.doesNotMatch(document.querySelector('meta[name="viewport"]').content, /user-scalable=no|maximum-scale=1/);
   const click = new dom.window.MouseEvent('dblclick', { bubbles: true, cancelable: true });
@@ -37,7 +37,7 @@ test('installed v2 uses web responsive CSS instead of obsolete standalone overri
 test('old screens keep their standalone class, browser mode keeps web layout', () => {
   const old = pwaFixture({ modern: false });
   assert.equal(old.window.document.documentElement.classList.contains('pwa-standalone'), true);
-  assert.equal(old.window.document.getElementById('luria-pwa-v2-safe-area'), null);
+  assert.equal(old.window.document.getElementById('traube-pwa-v2-safe-area'), null);
   old.window.close();
   const browser = pwaFixture({ modern: true, installed: false });
   assert.equal(browser.window.document.documentElement.classList.contains('pwa-standalone'), false);
@@ -52,7 +52,7 @@ test('mobile drawer restores button interaction even with a hidden persistent ov
       <div id="sidebar-backdrop"></div>
       <main class="main"><header class="topbar"><button id="menu-open" type="button">Menu</button></header>
         <button id="important-action" type="button">Começar</button>
-        <div id="luria-search-overlay" hidden></div>
+        <div id="traube-search-overlay" hidden></div>
       </main>
     </div></body>`, { url: 'https://example.test/dashboard/', runScripts: 'outside-only', pretendToBeVisual: true });
   const w = dom.window;
@@ -109,10 +109,10 @@ test('every redesigned core page loads the current PWA updater', () => {
 
 test('installed PWA actively checks and offers current service worker on resume', () => {
   assert.match(pwaSource, /controllerchange/);
-  assert.match(pwaSource, /luria-pwa-update-action/);
+  assert.match(pwaSource, /traube-pwa-update-action/);
   assert.match(pwaSource, /updateViaCache:\s*"none"/);
   const worker = fs.readFileSync('service-worker.js', 'utf8');
-  assert.match(worker, /const CACHE_VERSION = "luria-pwa-[a-z0-9-]+";/);
+  assert.match(worker, /const CACHE_VERSION = "traube-pwa-[a-z0-9-]+";/);
 });
 
 test('hidden search overlays cannot hold the dashboard inert', () => {

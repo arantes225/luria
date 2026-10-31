@@ -119,20 +119,20 @@
   }
 
   function apply() {
-    window.luriaStudyMode = "medicine";
+    window.traubeStudyMode = "medicine";
     document.documentElement.dataset.studyMode = "medicine";
 
-    fill("[data-luria-area-list], [data-luria-general-area-list]");
-    fill("[data-luria-area-select], [data-luria-general-area-select]");
+    fill("[data-traube-area-list], [data-traube-general-area-list]");
+    fill("[data-traube-area-select], [data-traube-general-area-select]");
 
     document.querySelectorAll(
-      'input[list][data-luria-area-input],input[list][data-luria-general-area-input],input[list="medical-areas"],input[list="error-medical-areas"],input[list="manual-area-options"]'
+      'input[list][data-traube-area-input],input[list][data-traube-general-area-input],input[list="medical-areas"],input[list="error-medical-areas"],input[list="manual-area-options"]'
     ).forEach(input => { input.placeholder = "Ex.: Clínica Médica"; });
 
     document.querySelectorAll("[data-study-mode-label]")
       .forEach(element => { element.textContent = "Medicina"; });
 
-    window.dispatchEvent(new CustomEvent("luria:study-mode", {
+    window.dispatchEvent(new CustomEvent("traube:study-mode", {
       detail: { mode: "medicine", areas: [...AREAS], generalAreas: [...AREAS] }
     }));
 

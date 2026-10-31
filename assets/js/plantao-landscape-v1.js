@@ -6,20 +6,20 @@
   const disaster=document.getElementById("plantao-disaster-stage");
   if(!simulator||!standard)return;
   const guide=document.createElement("div");
-  guide.id="luria-landscape-hint";
+  guide.id="traube-landscape-hint";
   guide.setAttribute("role","dialog");
   guide.setAttribute("aria-modal","true");
-  guide.setAttribute("aria-labelledby","luria-rotate-heading");
+  guide.setAttribute("aria-labelledby","traube-rotate-heading");
   guide.hidden=true;
-  guide.innerHTML='<div class="luria-rotate-panel">'+
-    '<div class="luria-rotate-brand">TRAUBE · SALA DE EMERGÊNCIA</div>'+
-    '<div class="luria-rotate-graphic" aria-hidden="true"><span class="luria-rotate-phone"></span></div>'+
-    '<h2 id="luria-rotate-heading">Gire o celular</h2>'+
+  guide.innerHTML='<div class="traube-rotate-panel">'+
+    '<div class="traube-rotate-brand">TRAUBE · SALA DE EMERGÊNCIA</div>'+
+    '<div class="traube-rotate-graphic" aria-hidden="true"><span class="traube-rotate-phone"></span></div>'+
+    '<h2 id="traube-rotate-heading">Gire o celular</h2>'+
     '<p>Para iniciar o atendimento, coloque o aparelho na horizontal.</p>'+
-    '<p class="luria-rotate-tip">Se não girar, desative o bloqueio de orientação do iPhone.</p>'+
-    '<button id="luria-rotate-back" type="button">Voltar aos casos</button></div>';
+    '<p class="traube-rotate-tip">Se não girar, desative o bloqueio de orientação do iPhone.</p>'+
+    '<button id="traube-rotate-back" type="button">Voltar aos casos</button></div>';
   document.body.appendChild(guide);
-  guide.querySelector("#luria-rotate-back")?.addEventListener("click",()=>{
+  guide.querySelector("#traube-rotate-back")?.addEventListener("click",()=>{
     document.getElementById("plantao-back")?.click();
   });
   const portrait=window.matchMedia("(orientation: portrait)");
@@ -36,8 +36,8 @@
     const mobile=coarse.matches && Math.min(screen.width,screen.height)<=650;
     const active=!simulator.hidden&&!standard.hidden&&(disaster?.hidden!==false)&&mobile&&isInstalledPwa();
     const rotate=active&&portrait.matches;
-    document.body.classList.toggle("luria-case-landscape",active&&!rotate);
-    document.body.classList.toggle("luria-case-portrait",rotate);
+    document.body.classList.toggle("traube-case-landscape",active&&!rotate);
+    document.body.classList.toggle("traube-case-portrait",rotate);
     guide.hidden=!rotate;
   }
   function schedule(){if(!pending){pending=true;requestAnimationFrame(update)}}

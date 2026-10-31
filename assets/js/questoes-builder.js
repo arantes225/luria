@@ -6,8 +6,8 @@
   const sb = window.supabaseClient;
   const byId = id => document.getElementById(id);
   const areaEl = byId("qs-builder-area");
-  if (!sb || !areaEl || window.__luriaQuestionBuilderReady) return;
-  window.__luriaQuestionBuilderReady = true;
+  if (!sb || !areaEl || window.__traubeQuestionBuilderReady) return;
+  window.__traubeQuestionBuilderReady = true;
 
   const subjectEl = byId("qs-builder-materia");
   const themeEl = byId("qs-builder-tema");
@@ -286,7 +286,7 @@
     button.addEventListener("click", () => { countEl.value = String(Math.min(state.maximum, Number(button.dataset.count) || 20)); refresh(); })
   );
   createBtn.addEventListener("click", generate);
-  window.addEventListener("luria:owner-changed", () => {
+  window.addEventListener("traube:owner-changed", () => {
     state.items = []; state.userId = null; createBtn.disabled = true;
     inform("Conta alterada. Atualize a página para carregar suas questões.", "error");
   });

@@ -24,14 +24,14 @@ LEAD_TO_IDX = {name: idx for idx, name in enumerate(CANONICAL_LEADS)}
 # 1. ARQUITETURA COMPACTA (ResNet-Lite com Cabeças de Rótulo e Bounding Box)
 # -------------------------------------------------------------------------
 
-class LuriaCompactEcgNet(nn.Module):
+class TraubeCompactEcgNet(nn.Module):
     """
     Rede Convolucional Compacta multitarefa projetada para inferência rápida no cliente (ONNX / WebAssembly):
     1. Cabeça de Classificação de Rótulo (12 classes de derivação).
     2. Cabeça de Regressão de Bounding Box (x_min, y_min, x_max, y_max normalizados entre 0 e 1).
     """
     def __init__(self, num_classes=12):
-        super(LuriaCompactEcgNet, self).__init__()
+        super(TraubeCompactEcgNet, self).__init__()
         
         self.features = nn.Sequential(
             nn.Conv2d(1, 32, kernel_size=3, stride=2, padding=1),  # /2
@@ -157,9 +157,9 @@ def split_by_patient(records):
 def run_training_pipeline(data_dir=None, epochs=3, batch_size=16, lr=1e-3, onnx_export_path=None):
     records = load_annotated_manifest(data_dir)
     train_records, val_records, test_records = split_by_patient(records)
-    print(f"[LURIA-ECG] Recortes anotados: treino={len(train_records)}, validação={len(val_records)}, teste retido={len(test_records)}")
+    print(f"[TRAUBE-ECG] Recortes anotados: treino={len(train_records)}, validação={len(val_records)}, teste retido={len(test_records)}")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"[LURIA-ECG] Dispositivo de execução: {device}")
+    print(f"[TRAUBE-ECG] Dispositivo de execução: {device}")
 
     train_ds = PtBxlAnnotatedEcgDataset(train_records, augment=True)
     val_ds = PtBxlAnnotatedEcgDataset(val_records, augment=False)
@@ -167,7 +167,7 @@ def run_training_pipeline(data_dir=None, epochs=3, batch_size=16, lr=1e-3, onnx_
     train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_ds, batch_size=batch_size, shuffle=False)
 
-    model = LuriaCompactEcgNet(num_classes=12).to(device)
+    model = TraubeCompactEcgNet(num_classes=12).to(device)
     criterion_cls = nn.CrossEntropyLoss()
     criterion_box = nn.SmoothL1Loss()
     optimizer = optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-4)
@@ -246,7 +246,7 @@ def run_training_pipeline(data_dir=None, epochs=3, batch_size=16, lr=1e-3, onnx_
             dynamic_axes={"input_image": {0: "batch_size"}, "logits": {0: "batch_size"}, "bbox": {0: "batch_size"}},
             opset_version=14
         )
-        print(f"[LURIA-ECG] Modelo exportado com sucesso para ONNX: {onnx_export_path}")
+        print(f"[TRAUBE-ECG] Modelo exportado com sucesso para ONNX: {onnx_export_path}")
 
     return {
         "model": model,
@@ -254,7 +254,7 @@ def run_training_pipeline(data_dir=None, epochs=3, batch_size=16, lr=1e-3, onnx_
     }
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Pipeline de Treino LURIA ECG")
+    parser = argparse.ArgumentParser(description="Pipeline de Treino TRAUBE ECG")
     parser.add_argument("--data_dir", type=str, default=None, help="Diretório dos arquivos WFDB/anotações")
     parser.add_argument("--epochs", type=int, default=1, help="Número de épocas")
     parser.add_argument("--batch_size", type=int, default=16, help="Tamanho do batch")

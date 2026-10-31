@@ -70,7 +70,7 @@ body[data-page="professor_alex"] .alex-send-button:hover { color: #fff !importan
 
 /* TraubeZap: the phone remains contained by the viewport and conversation rows
    reserve vertical space for every text line. */
-body[data-page="plantao"] .luria-page-spotlight { display: none !important; }
+body[data-page="plantao"] .traube-page-spotlight { display: none !important; }
 body[data-page="plantao"] .plantao-phone-layout { width: min(100%, 980px) !important; margin-inline: auto !important; }
 body[data-page="plantao"] .plantao-phone-station { width: min(100%, 430px) !important; justify-self: center !important; }
 body[data-page="plantao"] .plantao-phone-device { width: 100% !important; height: auto !important; max-height: calc(100dvh - 40px) !important; }
@@ -120,7 +120,7 @@ body[data-page="aplicar"] .cv-hub-btn,
 body[data-page="aplicar"] .cv-hub-btn:hover { color: #fff !important; }
 body[data-page="jogos"] .games-link svg,
 body[data-page="aplicar"] .cv-hub-btn svg { stroke: currentColor !important; }
-body[data-page="jogos"] .luria-game .g-back { color: var(--text) !important; background: var(--surface) !important; border-color: var(--border) !important; }
+body[data-page="jogos"] .traube-game .g-back { color: var(--text) !important; background: var(--surface) !important; border-color: var(--border) !important; }
 body[data-page="jogos"] .page-heading { display: flex !important; align-items: center !important; min-height: 56px !important; padding: 10px 14px !important; border-radius: 14px !important; background: var(--surface) !important; border: 1px solid var(--border) !important; }
 
 /* Study Rats: no decorative empty header space and a visible action surface. */
@@ -341,11 +341,11 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
    ========================================================================== */
 
 :root {
-  --luria-btn-grad-blue-light: linear-gradient(135deg, #184888, #2563EB);
-  --luria-btn-grad-blue-dark: linear-gradient(135deg, #102C57, #184888, #2563EB);
-  --luria-btn-grad-pink-light: linear-gradient(135deg, #B2577D, #DB2777, #EC4899);
-  --luria-btn-grad-pink-dark: linear-gradient(135deg, #831843, #BE185D, #EC4899);
-  --luria-btn-text-universal: #ffffff;
+  --traube-btn-grad-blue-light: linear-gradient(135deg, #184888, #2563EB);
+  --traube-btn-grad-blue-dark: linear-gradient(135deg, #102C57, #184888, #2563EB);
+  --traube-btn-grad-pink-light: linear-gradient(135deg, #B2577D, #DB2777, #EC4899);
+  --traube-btn-grad-pink-dark: linear-gradient(135deg, #831843, #BE185D, #EC4899);
+  --traube-btn-text-universal: #ffffff;
 }
 
 /* 1. TEMA CLARO - AZUL PADRAO */
@@ -369,7 +369,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -390,7 +390,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -404,7 +404,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .community-nav a[aria-selected="true"],
   .community-nav a.active
 ) {
-  background: var(--luria-btn-grad-blue-light) !important;
+  background: var(--traube-btn-grad-blue-light) !important;
   color: #ffffff !important;
   border-color: rgba(37, 99, 235, 0.45) !important;
   box-shadow: 0 4px 14px rgba(24, 72, 136, 0.25) !important;
@@ -431,7 +431,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -452,7 +452,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -490,7 +490,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -511,7 +511,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -552,7 +552,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -573,7 +573,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -587,7 +587,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .community-nav a[aria-selected="true"],
   .community-nav a.active
 ) {
-  background: var(--luria-btn-grad-pink-light) !important;
+  background: var(--traube-btn-grad-pink-light) !important;
   color: #ffffff !important;
   border-color: rgba(219, 39, 119, 0.45) !important;
   box-shadow: 0 4px 14px rgba(219, 39, 119, 0.28) !important;
@@ -614,7 +614,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -635,7 +635,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -673,7 +673,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -694,7 +694,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -735,7 +735,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -756,7 +756,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -770,7 +770,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .community-nav a[aria-selected="true"],
   .community-nav a.active
 ) {
-  background: var(--luria-btn-grad-blue-dark) !important;
+  background: var(--traube-btn-grad-blue-dark) !important;
   color: #ffffff !important;
   border-color: rgba(37, 99, 235, 0.55) !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45) !important;
@@ -797,7 +797,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -818,7 +818,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -856,7 +856,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -877,7 +877,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -918,7 +918,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -939,7 +939,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -953,7 +953,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .community-nav a[aria-selected="true"],
   .community-nav a.active
 ) {
-  background: var(--luria-btn-grad-pink-dark) !important;
+  background: var(--traube-btn-grad-pink-dark) !important;
   color: #ffffff !important;
   border-color: rgba(190, 24, 93, 0.55) !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45) !important;
@@ -980,7 +980,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -1001,7 +1001,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -1039,7 +1039,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .dl-start,
   .alex-open-tutoring,
   .alex-send-button,
-  .luria-daily-review-primary,
+  .traube-daily-review-primary,
   .qs-daily-review-primary,
   .qs-start-button,
   #daily-submit,
@@ -1060,7 +1060,7 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   .alex-action.primary,
   .ed-new-exam,
   .ed-primary-action,
-  .luria-back-button,
+  .traube-back-button,
   #friends-create-room-toggle,
   #friends-room-create,
   #add-friend,
@@ -1081,10 +1081,10 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
 }
 
 /* ==========================================================================
-   PADRONIZACAO GLOBAL DE BOTOES DE VOLTAR (.luria-back-button)
+   PADRONIZACAO GLOBAL DE BOTOES DE VOLTAR (.traube-back-button)
    Posicionamento abaixo do spotlight com espacamento e estilo oficial
    ========================================================================== */
-.luria-back-button {
+.traube-back-button {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
@@ -1105,17 +1105,17 @@ body[data-page="plantao"] .plantao-phone-conversation-preview {
   transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease !important;
 }
 
-.luria-back-button:hover {
+.traube-back-button:hover {
   transform: translateX(-2px) !important;
 }
 
-.luria-back-button svg {
+.traube-back-button svg {
   flex-shrink: 0 !important;
   width: 18px !important;
   height: 18px !important;
   transition: transform 0.15s ease !important;
 }
 
-.luria-back-button:hover svg {
+.traube-back-button:hover svg {
   transform: translateX(-2px) !important;
 }

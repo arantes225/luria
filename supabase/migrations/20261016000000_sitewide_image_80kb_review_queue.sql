@@ -77,8 +77,8 @@ grant execute on function public.queue_low_resolution_image(text,text,integer,in
 
 -- Storage must also protect against clients that bypass the browser compressor.
 -- Mixed-content buckets keep their existing PDF/non-image allowance.
-drop policy if exists luria_image_size_cap_insert on storage.objects;
-create policy luria_image_size_cap_insert on storage.objects as restrictive
+drop policy if exists traube_image_size_cap_insert on storage.objects;
+create policy traube_image_size_cap_insert on storage.objects as restrictive
   for insert to authenticated with check (
     bucket_id not in ('apostila-media','docmap','docmap-assets','flashcard-media','study-room-attachments')
     or (
@@ -90,8 +90,8 @@ create policy luria_image_size_cap_insert on storage.objects as restrictive
       and (metadata->>'size')::bigint <= 81920
     )
   );
-drop policy if exists luria_image_size_cap_update on storage.objects;
-create policy luria_image_size_cap_update on storage.objects as restrictive
+drop policy if exists traube_image_size_cap_update on storage.objects;
+create policy traube_image_size_cap_update on storage.objects as restrictive
   for update to authenticated using (
     bucket_id not in ('apostila-media','docmap','docmap-assets','flashcard-media','study-room-attachments')
     or (
@@ -114,8 +114,8 @@ create policy luria_image_size_cap_update on storage.objects as restrictive
     )
   );
 
-drop policy if exists luria_admin_read_queued_low_resolution_images on storage.objects;
-create policy luria_admin_read_queued_low_resolution_images on storage.objects
+drop policy if exists traube_admin_read_queued_low_resolution_images on storage.objects;
+create policy traube_admin_read_queued_low_resolution_images on storage.objects
   for select to authenticated using (
     public.is_admin() and exists (
       select 1 from public.low_resolution_image_review_queue q

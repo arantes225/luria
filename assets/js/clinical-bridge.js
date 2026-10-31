@@ -1,7 +1,7 @@
 (() => {
   "use strict";
-  const KEY = "luria-clinical-transfer-v1";
-  const PRESCRIPTION_KEY = "luria-prescription-draft-v1";
+  const KEY = "traube-clinical-transfer-v1";
+  const PRESCRIPTION_KEY = "traube-prescription-draft-v1";
   const owned = window.TraubeLocalOwnerStore;
   const safe = (v) => String(v ?? "").trim();
   const write = (payload) => {
@@ -29,7 +29,7 @@
         : text;
       const next = current.trim() ? current.trimEnd() + "\n\n" + block.trim() : block.trim();
       owned.write(PRESCRIPTION_KEY, next);
-      window.dispatchEvent(new CustomEvent("luria:prescription-draft-updated", { detail: { text: next } }));
+      window.dispatchEvent(new CustomEvent("traube:prescription-draft-updated", { detail: { text: next } }));
       return true;
     } catch (_) { return false; }
   };

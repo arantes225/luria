@@ -8,7 +8,7 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
-echo Esta configuracao publica somente luria-homologacao-voz.
+echo Esta configuracao publica somente traube-homologacao-voz.
 echo Entre na Cloudflare quando o navegador abrir e revise a autorizacao do Wrangler.
 call npx --yes wrangler@4.150.0 login
 if errorlevel 1 (

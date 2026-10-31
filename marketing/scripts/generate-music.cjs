@@ -82,7 +82,7 @@ function synthesize() {
 async function main() {
   const outDir = path.join(MARKETING, 'public', 'audio');
   fs.mkdirSync(outDir, { recursive: true });
-  const outFile = path.join(outDir, 'luria-ambient-focus-30s.mp3');
+  const outFile = path.join(outDir, 'traube-ambient-focus-30s.mp3');
 
   console.log('Sintetizando trilha sonora ambiente para TRAUBE (30s, 48kHz stereo)...');
   const pcm = synthesize();

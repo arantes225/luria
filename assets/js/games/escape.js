@@ -232,11 +232,11 @@
     root.querySelector("button").onclick = setup;
     G.focusTitle();
     window.dispatchEvent(
-      new CustomEvent("luria:game-completed", {
+      new CustomEvent("traube:game-completed", {
         detail: { game: "escape", contentVersion: C.version, score: points },
       }),
     );
   }
-  window.addEventListener("luria:owner-changed", setup);
+  window.addEventListener("traube:owner-changed", setup);
   G.boot(setup);
 })();

@@ -27,6 +27,6 @@ jobs:
       - name: Commit and push changes if updated
         run: |
           git config --global user.name "Traube Automated Marketing"
-          git config --global user.email "bot@luria.med.br"
+          git config --global user.email "bot@traube.med.br"
           git add assets/data/organic-growth-tips.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(marketing): atualizar dicas semanais de crescimento organico [skip ci]" && git push)

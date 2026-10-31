@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-CPILx1tdQ/DAbSkqLjKb1yiK42PC1aIVk1Qh/XMscHs='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-0xj9YAQmW1apk98l1Aj0sbYnBPfk//xvmdwCsHSQY4Q='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -14,7 +14,7 @@
 <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
   <style>
     .prescription-hub{display:grid;gap:18px}
@@ -163,10 +163,10 @@
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
           <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
         </header>
-        <section class="luria-page-spotlight" aria-label="Prescrição">
-          <div class="luria-page-spotlight-copy">
+        <section class="traube-page-spotlight" aria-label="Prescrição">
+          <div class="traube-page-spotlight-copy">
             <strong data-page-title>Prescrição</strong>
-            <small class="luria-page-spotlight-helper">Acesse esquemas práticos para a rotina clínica.</small>
+            <small class="traube-page-spotlight-helper">Acesse esquemas práticos para a rotina clínica.</small>
           </div>
         </section>
 
@@ -260,7 +260,7 @@
 <script src="/assets/js/clinical-bridge.js?v=2-prescription-draft"></script>
 <script>
     (() => {
-      const KEY = "luria-prescription-draft-v1";
+      const KEY = "traube-prescription-draft-v1";
       const owned = window.TraubeLocalOwnerStore;
       const note = document.getElementById("prescription-mini-note");
       const copy = document.getElementById("prescription-mini-copy");
@@ -279,7 +279,7 @@
 
       note.value = read();
       owned?.ready.then(() => { note.value = read(); });
-      window.addEventListener("luria:owner-changed", () => { note.value = read(); });
+      window.addEventListener("traube:owner-changed", () => { note.value = read(); });
       note.addEventListener("input", () => { setStatus(write(note.value) ? "Salvo" : "Entre na sua conta para salvar"); });
 
       copy?.addEventListener("click", async () => {

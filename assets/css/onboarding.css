@@ -1,11 +1,11 @@
-#luria-onboarding-overlay{position:fixed;inset:0;z-index:99990;pointer-events:none}.luria-onboarding-dim{position:absolute;inset:0;background:rgba(8,15,28,.58);backdrop-filter:blur(2px)}.luria-onboarding-target{position:relative!important;z-index:99992!important;box-shadow:0 0 0 4px rgba(96,165,250,.95),0 0 0 9999px rgba(8,15,28,.12)!important;border-radius:14px!important}.luria-onboarding-card{position:fixed;z-index:99995;left:50%;bottom:max(22px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(620px,calc(100vw - 28px));background:var(--surface,#fff);color:var(--text,#172033);border:1px solid var(--border,#dbe3ee);border-radius:18px;padding:18px;box-shadow:0 22px 65px rgba(0,0,0,.28);pointer-events:auto}.luria-onboarding-progress,.luria-discover-head{display:flex;align-items:center;justify-content:space-between;gap:12px}.luria-onboarding-progress span{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;opacity:.7}.luria-onboarding-progress strong{font-size:12px}.luria-onboarding-bar,.luria-discover-progress{height:5px;background:rgba(127,127,127,.18);border-radius:99px;overflow:hidden;margin:10px 0 16px}.luria-onboarding-bar i,.luria-discover-progress i{display:block;height:100%;background:var(--accent,#184888);border-radius:inherit}.luria-onboarding-card h2{margin:0 0 8px;font-size:22px}.luria-onboarding-card p{margin:0;color:var(--muted,#667085);line-height:1.55}.luria-onboarding-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px}.luria-onboarding-actions div{display:flex;gap:8px}.luria-onboarding-actions button,.luria-restart-onboarding{border:1px solid var(--border,#dbe3ee);background:var(--surface,#fff);color:inherit;border-radius:10px;padding:9px 12px;font:inherit;font-weight:700;cursor:pointer}.luria-onboarding-actions button.primary{background:var(--accent,#184888);border-color:var(--accent,#184888);color:#fff}.luria-onboarding-actions button:disabled{opacity:.4}.onboarding-demo-lessons{display:grid;gap:6px;padding:10px;margin-bottom:10px;border:1px dashed var(--accent,#184888);border-radius:12px}.onboarding-demo-lessons button{border:0;text-align:left;padding:9px 10px;border-radius:9px;background:rgba(96,165,250,.09);color:inherit}.onboarding-demo-label,.onboarding-demo-card small{font-size:9px;font-weight:900;letter-spacing:.12em;color:var(--accent,#184888)}.onboarding-demo-card{margin:14px 0;padding:16px;border:1px dashed var(--accent,#184888);border-radius:14px;display:grid;gap:8px;background:var(--surface,#fff)}.luria-restart-onboarding{margin:18px 0}.luria-discover-card{margin-bottom:18px}.luria-discover-head h2{margin:3px 0}.luria-discover-head p{margin:0;color:var(--muted,#667085)}.luria-discover-head>strong{font-size:18px;white-space:nowrap}.luria-discover-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.luria-discover-list>div{display:flex;gap:8px;padding:9px 10px;border-radius:10px;background:rgba(127,127,127,.07);font-size:13px}.luria-discover-list>div.done{opacity:.65;text-decoration:line-through}@media(max-width:700px){.luria-onboarding-card{bottom:max(10px,env(safe-area-inset-bottom));padding:15px}.luria-onboarding-card h2{font-size:19px}.luria-onboarding-actions{align-items:flex-end}.luria-onboarding-actions>button{font-size:11px;padding:8px}.luria-onboarding-actions div{gap:5px}.luria-onboarding-actions div button{padding:8px 10px}.luria-discover-list{grid-template-columns:1fr}}
+#traube-onboarding-overlay{position:fixed;inset:0;z-index:99990;pointer-events:none}.traube-onboarding-dim{position:absolute;inset:0;background:rgba(8,15,28,.58);backdrop-filter:blur(2px)}.traube-onboarding-target{position:relative!important;z-index:99992!important;box-shadow:0 0 0 4px rgba(96,165,250,.95),0 0 0 9999px rgba(8,15,28,.12)!important;border-radius:14px!important}.traube-onboarding-card{position:fixed;z-index:99995;left:50%;bottom:max(22px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(620px,calc(100vw - 28px));background:var(--surface,#fff);color:var(--text,#172033);border:1px solid var(--border,#dbe3ee);border-radius:18px;padding:18px;box-shadow:0 22px 65px rgba(0,0,0,.28);pointer-events:auto}.traube-onboarding-progress,.traube-discover-head{display:flex;align-items:center;justify-content:space-between;gap:12px}.traube-onboarding-progress span{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;opacity:.7}.traube-onboarding-progress strong{font-size:12px}.traube-onboarding-bar,.traube-discover-progress{height:5px;background:rgba(127,127,127,.18);border-radius:99px;overflow:hidden;margin:10px 0 16px}.traube-onboarding-bar i,.traube-discover-progress i{display:block;height:100%;background:var(--accent,#184888);border-radius:inherit}.traube-onboarding-card h2{margin:0 0 8px;font-size:22px}.traube-onboarding-card p{margin:0;color:var(--muted,#667085);line-height:1.55}.traube-onboarding-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:18px}.traube-onboarding-actions div{display:flex;gap:8px}.traube-onboarding-actions button,.traube-restart-onboarding{border:1px solid var(--border,#dbe3ee);background:var(--surface,#fff);color:inherit;border-radius:10px;padding:9px 12px;font:inherit;font-weight:700;cursor:pointer}.traube-onboarding-actions button.primary{background:var(--accent,#184888);border-color:var(--accent,#184888);color:#fff}.traube-onboarding-actions button:disabled{opacity:.4}.onboarding-demo-lessons{display:grid;gap:6px;padding:10px;margin-bottom:10px;border:1px dashed var(--accent,#184888);border-radius:12px}.onboarding-demo-lessons button{border:0;text-align:left;padding:9px 10px;border-radius:9px;background:rgba(96,165,250,.09);color:inherit}.onboarding-demo-label,.onboarding-demo-card small{font-size:9px;font-weight:900;letter-spacing:.12em;color:var(--accent,#184888)}.onboarding-demo-card{margin:14px 0;padding:16px;border:1px dashed var(--accent,#184888);border-radius:14px;display:grid;gap:8px;background:var(--surface,#fff)}.traube-restart-onboarding{margin:18px 0}.traube-discover-card{margin-bottom:18px}.traube-discover-head h2{margin:3px 0}.traube-discover-head p{margin:0;color:var(--muted,#667085)}.traube-discover-head>strong{font-size:18px;white-space:nowrap}.traube-discover-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.traube-discover-list>div{display:flex;gap:8px;padding:9px 10px;border-radius:10px;background:rgba(127,127,127,.07);font-size:13px}.traube-discover-list>div.done{opacity:.65;text-decoration:line-through}@media(max-width:700px){.traube-onboarding-card{bottom:max(10px,env(safe-area-inset-bottom));padding:15px}.traube-onboarding-card h2{font-size:19px}.traube-onboarding-actions{align-items:flex-end}.traube-onboarding-actions>button{font-size:11px;padding:8px}.traube-onboarding-actions div{gap:5px}.traube-onboarding-actions div button{padding:8px 10px}.traube-discover-list{grid-template-columns:1fr}}
 /* Onboarding v1.2 — leitura primeiro, exploração depois */
-#luria-onboarding-overlay.is-exploring{pointer-events:none}
-#luria-onboarding-overlay.is-exploring .luria-onboarding-dim{opacity:0;backdrop-filter:none;pointer-events:none}
-#luria-onboarding-overlay.is-exploring .luria-onboarding-card{pointer-events:auto;box-shadow:0 14px 42px rgba(0,0,0,.18)}
-#luria-onboarding-overlay.is-exploring~*{pointer-events:auto}
-#luria-onboarding-overlay.card-top .luria-onboarding-card{top:max(14px,env(safe-area-inset-top));bottom:auto}
-.luria-onboarding-explore-note{display:block;margin-top:10px;color:var(--accent,#184888);font-weight:750;font-size:11px}
+#traube-onboarding-overlay.is-exploring{pointer-events:none}
+#traube-onboarding-overlay.is-exploring .traube-onboarding-dim{opacity:0;backdrop-filter:none;pointer-events:none}
+#traube-onboarding-overlay.is-exploring .traube-onboarding-card{pointer-events:auto;box-shadow:0 14px 42px rgba(0,0,0,.18)}
+#traube-onboarding-overlay.is-exploring~*{pointer-events:auto}
+#traube-onboarding-overlay.card-top .traube-onboarding-card{top:max(14px,env(safe-area-inset-top));bottom:auto}
+.traube-onboarding-explore-note{display:block;margin-top:10px;color:var(--accent,#184888);font-weight:750;font-size:11px}
 .onboarding-mini-activity,.onboarding-week-activity,.onboarding-list-row{border:1px solid var(--border,#dbe3ee);background:var(--surface,#fff);border-radius:10px;padding:10px;display:grid;gap:4px}
 .onboarding-mini-activity small,.onboarding-week-activity small,.onboarding-list-row small{color:var(--muted,#667085);font-size:9px}
 #deck-list>[data-onboarding-demo],#week-planner>[data-onboarding-demo]{display:grid;gap:8px;margin-bottom:8px}
@@ -17,25 +17,25 @@
 #qs-question-list>[data-onboarding-demo]{display:grid;gap:9px}
 @media(max-width:760px){
   #week-planner>[data-onboarding-demo]{grid-template-columns:1fr}
-  #luria-onboarding-overlay.card-top .luria-onboarding-card{top:max(8px,env(safe-area-inset-top))}
-  .luria-onboarding-card{max-height:44vh;overflow:auto}
-  #luria-onboarding-overlay.is-exploring .luria-onboarding-card{max-height:36vh}
+  #traube-onboarding-overlay.card-top .traube-onboarding-card{top:max(8px,env(safe-area-inset-top))}
+  .traube-onboarding-card{max-height:44vh;overflow:auto}
+  #traube-onboarding-overlay.is-exploring .traube-onboarding-card{max-height:36vh}
 }
 
 
 /* Onboarding v1.3 — card permanece embaixo durante a exploração */
-#luria-onboarding-overlay.card-top .luria-onboarding-card{
+#traube-onboarding-overlay.card-top .traube-onboarding-card{
   top:auto !important;
   bottom:max(22px,env(safe-area-inset-bottom)) !important;
 }
-#luria-onboarding-overlay.is-exploring .luria-onboarding-target{
+#traube-onboarding-overlay.is-exploring .traube-onboarding-target{
   box-shadow:0 0 0 3px rgba(96,165,250,.78) !important;
 }
-#luria-onboarding-overlay.is-exploring .luria-onboarding-dim{
+#traube-onboarding-overlay.is-exploring .traube-onboarding-dim{
   background:transparent !important;
 }
 @media(max-width:700px){
-  #luria-onboarding-overlay.card-top .luria-onboarding-card{
+  #traube-onboarding-overlay.card-top .traube-onboarding-card{
     top:auto !important;
     bottom:max(10px,env(safe-area-inset-bottom)) !important;
   }
@@ -43,7 +43,7 @@
 
 
 /* Onboarding v1.4 — exploração realmente transparente + cards top */
-#luria-onboarding-overlay.is-exploring .luria-onboarding-dim{
+#traube-onboarding-overlay.is-exploring .traube-onboarding-dim{
   display:none !important;
   opacity:0 !important;
   background:none !important;
@@ -51,17 +51,17 @@
   -webkit-backdrop-filter:none !important;
 }
 
-#luria-onboarding-overlay.is-exploring .luria-onboarding-target{
+#traube-onboarding-overlay.is-exploring .traube-onboarding-target{
   box-shadow:0 0 0 3px rgba(96,165,250,.78) !important;
 }
 
-#luria-onboarding-overlay.card-top .luria-onboarding-card{
+#traube-onboarding-overlay.card-top .traube-onboarding-card{
   top:max(14px,env(safe-area-inset-top)) !important;
   bottom:auto !important;
 }
 
 @media(max-width:700px){
-  #luria-onboarding-overlay.card-top .luria-onboarding-card{
+  #traube-onboarding-overlay.card-top .traube-onboarding-card{
     top:max(8px,env(safe-area-inset-top)) !important;
     bottom:auto !important;
   }
@@ -69,12 +69,12 @@
 
 
 /* Onboarding v1.5 — modo explorar sem qualquer película sobre a página */
-body.luria-onboarding-exploring #luria-onboarding-overlay {
+body.traube-onboarding-exploring #traube-onboarding-overlay {
   background: transparent !important;
   pointer-events: none !important;
 }
 
-body.luria-onboarding-exploring #luria-onboarding-overlay .luria-onboarding-dim {
+body.traube-onboarding-exploring #traube-onboarding-overlay .traube-onboarding-dim {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
@@ -83,40 +83,40 @@ body.luria-onboarding-exploring #luria-onboarding-overlay .luria-onboarding-dim 
   -webkit-backdrop-filter: none !important;
 }
 
-body.luria-onboarding-exploring .luria-onboarding-target {
+body.traube-onboarding-exploring .traube-onboarding-target {
   z-index: auto !important;
   box-shadow: 0 0 0 3px rgba(96,165,250,.82) !important;
 }
 
-body.luria-onboarding-exploring #luria-onboarding-overlay .luria-onboarding-card {
+body.traube-onboarding-exploring #traube-onboarding-overlay .traube-onboarding-card {
   z-index: 99995 !important;
   pointer-events: auto !important;
 }
 
 
 /* Onboarding v1.6 — modos + transparência contextual */
-.luria-onboarding-mode .luria-onboarding-card{max-width:700px}
-.luria-onboarding-mode-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
-.luria-onboarding-mode-grid button{min-height:124px;padding:16px;border:1px solid var(--border,#dbe3ee);border-radius:14px;background:var(--surface-2,#f6f8fb);color:var(--text,#172033);text-align:left;cursor:pointer;transition:border-color .16s ease,box-shadow .16s ease,transform .16s ease}
-.luria-onboarding-mode-grid button:hover{border-color:var(--accent,#184888);box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-1px)}
-.luria-onboarding-mode-grid strong,.luria-onboarding-mode-grid small{display:block}.luria-onboarding-mode-grid strong{font-size:15px}.luria-onboarding-mode-grid small{margin-top:7px;color:var(--muted,#667085);font-size:11px;line-height:1.45}
-.luria-onboarding-cancel{margin-top:12px;width:100%;min-height:38px;border:1px solid var(--border,#dbe3ee);border-radius:10px;background:transparent;color:var(--muted,#667085);font-weight:700}
-body.luria-onboarding-exploring #luria-onboarding-overlay .luria-onboarding-card{background:color-mix(in srgb,var(--surface,#fff) 94%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
-body.luria-onboarding-exploring #luria-onboarding-overlay .luria-onboarding-dim{display:none!important}
-body.luria-onboarding-exploring .luria-onboarding-target{box-shadow:0 0 0 3px color-mix(in srgb,var(--accent,#184888) 72%,transparent)!important}
+.traube-onboarding-mode .traube-onboarding-card{max-width:700px}
+.traube-onboarding-mode-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.traube-onboarding-mode-grid button{min-height:124px;padding:16px;border:1px solid var(--border,#dbe3ee);border-radius:14px;background:var(--surface-2,#f6f8fb);color:var(--text,#172033);text-align:left;cursor:pointer;transition:border-color .16s ease,box-shadow .16s ease,transform .16s ease}
+.traube-onboarding-mode-grid button:hover{border-color:var(--accent,#184888);box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-1px)}
+.traube-onboarding-mode-grid strong,.traube-onboarding-mode-grid small{display:block}.traube-onboarding-mode-grid strong{font-size:15px}.traube-onboarding-mode-grid small{margin-top:7px;color:var(--muted,#667085);font-size:11px;line-height:1.45}
+.traube-onboarding-cancel{margin-top:12px;width:100%;min-height:38px;border:1px solid var(--border,#dbe3ee);border-radius:10px;background:transparent;color:var(--muted,#667085);font-weight:700}
+body.traube-onboarding-exploring #traube-onboarding-overlay .traube-onboarding-card{background:color-mix(in srgb,var(--surface,#fff) 94%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+body.traube-onboarding-exploring #traube-onboarding-overlay .traube-onboarding-dim{display:none!important}
+body.traube-onboarding-exploring .traube-onboarding-target{box-shadow:0 0 0 3px color-mix(in srgb,var(--accent,#184888) 72%,transparent)!important}
 .qs-onboarding-help{min-height:34px;margin-left:auto;padding:0 12px;border:1px solid var(--accent,#184888);border-radius:10px;background:var(--accent-soft,rgba(24,72,136,.08));color:var(--accent,#184888);font:inherit;font-size:10px;font-weight:800;cursor:pointer;white-space:nowrap}
 .qs-onboarding-help:hover{background:color-mix(in srgb,var(--accent,#184888) 12%,var(--surface,#fff))}
-@media(max-width:700px){.luria-onboarding-mode-grid{grid-template-columns:1fr}.luria-onboarding-mode-grid button{min-height:96px}.qs-onboarding-help{width:100%;margin:8px 0 0}}
+@media(max-width:700px){.traube-onboarding-mode-grid{grid-template-columns:1fr}.traube-onboarding-mode-grid button{min-height:96px}.qs-onboarding-help{width:100%;margin:8px 0 0}}
 
 
 /* Onboarding v1.7 — transparência real quando a tela precisa permanecer visível */
-#luria-onboarding-overlay.is-exploring,
-body.luria-onboarding-exploring #luria-onboarding-overlay{
+#traube-onboarding-overlay.is-exploring,
+body.traube-onboarding-exploring #traube-onboarding-overlay{
   background:transparent!important;
   pointer-events:none!important;
 }
-#luria-onboarding-overlay.is-exploring .luria-onboarding-dim,
-body.luria-onboarding-exploring #luria-onboarding-overlay .luria-onboarding-dim{
+#traube-onboarding-overlay.is-exploring .traube-onboarding-dim,
+body.traube-onboarding-exploring #traube-onboarding-overlay .traube-onboarding-dim{
   display:none!important;
   visibility:hidden!important;
   opacity:0!important;
@@ -124,8 +124,8 @@ body.luria-onboarding-exploring #luria-onboarding-overlay .luria-onboarding-dim{
   backdrop-filter:none!important;
   -webkit-backdrop-filter:none!important;
 }
-#luria-onboarding-overlay.is-exploring .luria-onboarding-card,
-body.luria-onboarding-exploring #luria-onboarding-overlay .luria-onboarding-card{
+#traube-onboarding-overlay.is-exploring .traube-onboarding-card,
+body.traube-onboarding-exploring #traube-onboarding-overlay .traube-onboarding-card{
   background:color-mix(in srgb,var(--surface,#fff) 68%,transparent)!important;
   border-color:color-mix(in srgb,var(--accent,#184888) 28%,var(--border,#dbe3ee))!important;
   backdrop-filter:none!important;
@@ -133,40 +133,40 @@ body.luria-onboarding-exploring #luria-onboarding-overlay .luria-onboarding-card
   box-shadow:0 10px 30px rgba(0,0,0,.12)!important;
   pointer-events:auto!important;
 }
-#luria-onboarding-overlay.is-exploring .luria-onboarding-card:hover,
-#luria-onboarding-overlay.is-exploring .luria-onboarding-card:focus-within{
+#traube-onboarding-overlay.is-exploring .traube-onboarding-card:hover,
+#traube-onboarding-overlay.is-exploring .traube-onboarding-card:focus-within{
   background:color-mix(in srgb,var(--surface,#fff) 86%,transparent)!important;
 }
-body.luria-onboarding-exploring .luria-onboarding-target{
+body.traube-onboarding-exploring .traube-onboarding-target{
   z-index:auto!important;
   box-shadow:0 0 0 2px color-mix(in srgb,var(--accent,#184888) 58%,transparent)!important;
 }
 @media(max-width:700px){
-  #luria-onboarding-overlay.is-exploring .luria-onboarding-card,
-  body.luria-onboarding-exploring #luria-onboarding-overlay .luria-onboarding-card{
+  #traube-onboarding-overlay.is-exploring .traube-onboarding-card,
+  body.traube-onboarding-exploring #traube-onboarding-overlay .traube-onboarding-card{
     background:color-mix(in srgb,var(--surface,#fff) 62%,transparent)!important;
   }
 }
 
 
 /* Onboarding v1.8 — tela liberada sem qualquer película */
-#luria-onboarding-overlay.is-exploring{
+#traube-onboarding-overlay.is-exploring{
   background:transparent!important;
   pointer-events:none!important;
 }
-#luria-onboarding-overlay.is-exploring .luria-onboarding-dim{
+#traube-onboarding-overlay.is-exploring .traube-onboarding-dim{
   display:none!important;
 }
-.luria-onboarding-target-clear{
+.traube-onboarding-target-clear{
   z-index:auto!important;
   box-shadow:0 0 0 2px color-mix(in srgb,var(--accent,#184888) 58%,transparent)!important;
   filter:none!important;
   opacity:1!important;
 }
-body.luria-onboarding-exploring .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-body.luria-onboarding-exploring .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-body.luria-onboarding-exploring .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-body.luria-onboarding-exploring .settings-page{
+body.traube-onboarding-exploring .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body.traube-onboarding-exploring .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body.traube-onboarding-exploring .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body.traube-onboarding-exploring .settings-page{
   opacity:1!important;
   filter:none!important;
   backdrop-filter:none!important;
@@ -175,18 +175,18 @@ body.luria-onboarding-exploring .settings-page{
 
 
 /* Onboarding v1.9 — destaque claro sem sombra gigante na tela liberada */
-.luria-onboarding-target-clear{
+.traube-onboarding-target-clear{
   position:relative!important;
   z-index:auto!important;
   box-shadow:0 0 0 2px color-mix(in srgb,var(--accent,#184888) 58%,transparent)!important;
   filter:none!important;
   opacity:1!important;
 }
-body.luria-onboarding-exploring #luria-onboarding-overlay{
+body.traube-onboarding-exploring #traube-onboarding-overlay{
   background:transparent!important;
 }
-body.luria-onboarding-exploring #luria-onboarding-overlay::before,
-body.luria-onboarding-exploring #luria-onboarding-overlay::after{
+body.traube-onboarding-exploring #traube-onboarding-overlay::before,
+body.traube-onboarding-exploring #traube-onboarding-overlay::after{
   content:none!important;
   display:none!important;
 }
@@ -331,35 +331,35 @@ body.luria-onboarding-exploring #luria-onboarding-overlay::after{
 
 
 /* Onboarding v2.1 — Editais: formulário de Nova prova nunca cobre o tour */
-body:has(#luria-onboarding-overlay) #exam-dialog.onboarding-exam-preview{
+body:has(#traube-onboarding-overlay) #exam-dialog.onboarding-exam-preview{
   z-index:99980 !important;
   position:fixed !important;
 }
-body:has(#luria-onboarding-overlay) #exam-dialog.onboarding-exam-preview::backdrop{
+body:has(#traube-onboarding-overlay) #exam-dialog.onboarding-exam-preview::backdrop{
   display:none !important;
   background:transparent !important;
 }
-body:has(#luria-onboarding-overlay) #luria-onboarding-overlay{
+body:has(#traube-onboarding-overlay) #traube-onboarding-overlay{
   z-index:99990 !important;
 }
-body:has(#luria-onboarding-overlay) #luria-onboarding-overlay .luria-onboarding-card{
+body:has(#traube-onboarding-overlay) #traube-onboarding-overlay .traube-onboarding-card{
   z-index:99999 !important;
 }
 
 
 /* Onboarding v2.2 — leitor de gabarito sempre abaixo do card do tour */
-body:has(#luria-onboarding-overlay) #qs-answer-import-dialog.onboarding-answer-reader-open{
+body:has(#traube-onboarding-overlay) #qs-answer-import-dialog.onboarding-answer-reader-open{
   z-index:99970 !important;
 }
-body:has(#luria-onboarding-overlay) #qs-answer-import-dialog.onboarding-answer-reader-open::backdrop{
+body:has(#traube-onboarding-overlay) #qs-answer-import-dialog.onboarding-answer-reader-open::backdrop{
   background:transparent !important;
   backdrop-filter:none !important;
   -webkit-backdrop-filter:none !important;
 }
-body:has(#luria-onboarding-overlay) #luria-onboarding-overlay{
+body:has(#traube-onboarding-overlay) #traube-onboarding-overlay{
   z-index:99990 !important;
 }
-body:has(#luria-onboarding-overlay) #luria-onboarding-overlay .luria-onboarding-card{
+body:has(#traube-onboarding-overlay) #traube-onboarding-overlay .traube-onboarding-card{
   z-index:100000 !important;
 }
 
@@ -394,13 +394,13 @@ body:has(#luria-onboarding-overlay) #luria-onboarding-overlay .luria-onboarding-
 
 
 /* Questões e Simulados — ajuda posicionada sob o sino */
-.luria-notifications.has-questions-help{
+.traube-notifications.has-questions-help{
   display:flex;
   flex-direction:column;
   align-items:flex-end;
   gap:6px;
 }
-.luria-notifications.has-questions-help .qs-onboarding-help{
+.traube-notifications.has-questions-help .qs-onboarding-help{
   min-height:30px;
   margin:0;
   padding:0 10px;
@@ -408,7 +408,7 @@ body:has(#luria-onboarding-overlay) #luria-onboarding-overlay .luria-onboarding-
   border-radius:9px;
 }
 @media(max-width:700px){
-  .luria-notifications.has-questions-help .qs-onboarding-help{
+  .traube-notifications.has-questions-help .qs-onboarding-help{
     width:auto;
     margin:0;
     white-space:nowrap;

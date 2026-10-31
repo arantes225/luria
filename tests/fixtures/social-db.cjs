@@ -13,7 +13,7 @@ async function database(){
  create table auth.users(id uuid primary key);
  create table auth.sessions(id uuid primary key,user_id uuid references auth.users(id),not_after timestamptz);
  create function auth.jwt() returns jsonb language sql stable as $$select jsonb_build_object('session_id',auth.uid()::text)$$;
- create table public.profiles(user_id uuid primary key references auth.users(id),luria_id text,display_name text,specialty text,studyrat_variant text,studyrat_accessory text,studyrat_accessory_offsets jsonb);
+ create table public.profiles(user_id uuid primary key references auth.users(id),traube_id text,display_name text,specialty text,studyrat_variant text,studyrat_accessory text,studyrat_accessory_offsets jsonb);
  create table public.friendships(id uuid primary key default gen_random_uuid(),user_id uuid references auth.users(id),friend_user_id uuid references auth.users(id),created_at timestamptz default now(),unique(user_id,friend_user_id));
  alter table public.profiles enable row level security;create policy own_profile on public.profiles for all to authenticated using(user_id=auth.uid()) with check(user_id=auth.uid());
  alter table public.friendships enable row level security;create policy own_friendship on public.friendships for select to authenticated using(user_id=auth.uid() or friend_user_id=auth.uid());
@@ -36,7 +36,7 @@ async function database(){
  grant usage on schema storage,realtime to authenticated;grant select,insert,delete on storage.objects to authenticated;grant select,insert on realtime.messages to authenticated;
  insert into auth.users values('${A}'),('${B}'),('${C}');
  insert into auth.sessions(id,user_id) values('${A}','${A}'),('${B}','${B}'),('${C}','${C}');
- insert into public.profiles(user_id,luria_id,display_name,specialty,studyrat_variant,studyrat_accessory,studyrat_accessory_offsets) values('${A}','OWNER001','Ana','Clínica','blue','crown','{"crown":{"x":0.2,"y":0.1,"v":2}}'),('${B}','FRIEND02','Bruno','Clínica','brown','none','{}'),('${C}','FRIEND03','Caio','Clínica','pink','none','{}');
+ insert into public.profiles(user_id,traube_id,display_name,specialty,studyrat_variant,studyrat_accessory,studyrat_accessory_offsets) values('${A}','OWNER001','Ana','Clínica','blue','crown','{"crown":{"x":0.2,"y":0.1,"v":2}}'),('${B}','FRIEND02','Bruno','Clínica','brown','none','{}'),('${C}','FRIEND03','Caio','Clínica','pink','none','{}');
  insert into public.friendships(user_id,friend_user_id) values('${A}','${C}');
  insert into public.question_sets values('${SET}','${A}','Lista existente');
  insert into public.question_items values('${Q}','${SET}','${A}',0,'Enunciado real','{"A":"Alternativa A","B":"Alternativa B"}','B','Comentário TRAUBE','{"A":"Explicação A","B":"Explicação B"}','Referência original','Clínica','Cardiologia',null);

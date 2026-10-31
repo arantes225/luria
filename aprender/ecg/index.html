@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-T0BXhWGcu2GRrgsPLhzXkSqQR65cdjDAksU3YrvRIIg='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-smeRtdlBcGbMcndLO+bObSw2435yRF6xJPpWW1VnXu4='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -14,7 +14,7 @@
   <script src="/assets/js/ui-routes.js?v=1"></script>
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
@@ -58,10 +58,10 @@
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
           <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
         </header>
-        <section class="luria-page-spotlight" aria-label="ECG">
-          <div class="luria-page-spotlight-copy">
+        <section class="traube-page-spotlight" aria-label="ECG">
+          <div class="traube-page-spotlight-copy">
             <strong data-page-title>ECG</strong>
-            <small class="luria-page-spotlight-helper">Aprenda a interpretar ECG passo a passo com exercícios estruturados.</small>
+            <small class="traube-page-spotlight-helper">Aprenda a interpretar ECG passo a passo com exercícios estruturados.</small>
           </div>
         </section>
 
@@ -215,7 +215,7 @@
           hypothesis: document.getElementById("ecg-hypothesis").value.trim(),
           savedAt: new Date().toISOString()
         };
-        localStorage.setItem("luria-ecg-draft", JSON.stringify(result));
+        localStorage.setItem("traube-ecg-draft", JSON.stringify(result));
         summary.textContent = JSON.stringify(result, null, 2);
         summary.style.display = "block";
         formStatus.textContent = "Rascunho salvo neste dispositivo.";

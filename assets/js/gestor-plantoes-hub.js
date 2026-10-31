@@ -190,7 +190,7 @@
     renderRadar();
     renderMonthSummary();
   });
-  window.addEventListener("luria:plantoes:changed", () => {
+  window.addEventListener("traube:plantoes:changed", () => {
     renderRadar();
     renderMonthSummary();
   });

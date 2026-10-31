@@ -1,5 +1,5 @@
 /* Friends stage 1. Shared shell, identity and appearance remain owned by TRAUBE. */
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1 {
  --sf-teal:light-dark(#167d79,#64c8ba);--sf-violet:light-dark(#7560ad,#baa1e1);--sf-warm:light-dark(#a96836,#d4ac78);
  &[data-ui-appearance="dark"] :is(#friends-ref-add-toggle,#sf-add-dialog #add-friend) {color:var(--color-surface-elevated)!important;}
@@ -68,7 +68,7 @@ body[data-ui="v2"][data-ui-context="study"].social-v3[data-page="amigos"][data-u
 }
 
 /* Reference composition: community surfaces, preserving existing controls. */
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1.social-composition {
 
  .sc-social-empty {display:grid;justify-items:start;align-content:start;gap:8px;min-width:0;}

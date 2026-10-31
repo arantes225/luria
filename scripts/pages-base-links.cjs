@@ -14,7 +14,7 @@ function rewritePageHtml(html, filename) {
   const withoutOldBase = html.replace(/<base\s+href\s*=\s*["']\/["']\s*\/?>/gi, "");
   const withBase = withoutOldBase.replace(
     /(<head(?:\s[^>]*)?>)/i,
-    '$1\n  <base href="' + rootRelative + '">\n  <script src="assets/js/luria-site-path.js"></script>'
+    '$1\n  <base href="' + rootRelative + '">\n  <script src="assets/js/traube-site-path.js"></script>'
   );
 
   return withBase.replace(
@@ -40,7 +40,7 @@ function relativeRoot(filename) {
 }
 
 // CSS url(/assets/...) bypasses HTML <base>; make only local absolute URLs
-// relative to the stylesheet file so both root and /luria/ work.
+// relative to the stylesheet file so both root and /traube/ work.
 function rewritePageCss(css, filename) {
   const root = relativeRoot(filename);
   return css.replace(/url\(\s*(["']?)\/(?!\/)([^)"']+)\1\s*\)/gi,

@@ -16,7 +16,7 @@ Autorização preservada: a definição local de `admin_question_factory_next_pe
 
 ## CORS
 
-- Origem oficial: `https://www.luriamedicina.com.br`, fornecida na solicitação.
+- Origem oficial: `https://www.traubemedicina.com.br`, fornecida na solicitação.
 - Origem adicional: **somente** `https://www.resibulando.online`, ainda configurada no `CNAME` e referenciada como workspace administrativo em `assets/js/question-factory-prompts.js`. Sua retirada exige confirmar a aposentadoria desse domínio.
 - Não foram acrescentados domínio sem www, subdomínios, GitHub Pages alternativo, homologação ou localhost por conveniência: não foi encontrado um invocador dessas funções que os exija.
 - Comparação exata de origem normalizada. Origem desconhecida, malformada ou `null`: 403 sem permissão CORS, antes de executar o handler. Sem Origin: handler original e autenticação original continuam obrigatórios.

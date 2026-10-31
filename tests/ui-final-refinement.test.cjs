@@ -5,7 +5,7 @@ const {JSDOM} = require('jsdom');
 const settle = w => new Promise(resolve => w.setTimeout(resolve, 50));
 
 test('study shell moves the original logo and trigger across drawer states without duplicates', async t => {
-  const dom = new JSDOM('<body data-ui-nav="v2" data-ui-context="study"><div class="app-shell"><aside id="sidebar"><div class="sidebar-top"><a class="brand" href="/dashboard/"><img id="luria-brand-logo"></a><button id="sidebar-close">Close</button></div></aside><header class="topbar"><button id="menu-open">Menu</button></header><main class="main"></main></div></body>', {runScripts:'outside-only',pretendToBeVisual:true,url:'http://fixture.invalid/'});
+  const dom = new JSDOM('<body data-ui-nav="v2" data-ui-context="study"><div class="app-shell"><aside id="sidebar"><div class="sidebar-top"><a class="brand" href="/dashboard/"><img id="traube-brand-logo"></a><button id="sidebar-close">Close</button></div></aside><header class="topbar"><button id="menu-open">Menu</button></header><main class="main"></main></div></body>', {runScripts:'outside-only',pretendToBeVisual:true,url:'http://fixture.invalid/'});
   const w=dom.window,d=w.document; t.after(()=>w.close());
   let mobile=false, change;
   w.matchMedia=()=>({get matches(){return mobile;},addEventListener(_, fn){change=fn;}});
@@ -27,7 +27,7 @@ test('study shell moves the original logo and trigger across drawer states witho
   assert.equal(trigger.parentElement,d.querySelector('.topbar'));
   assert.equal(trigger.getAttribute('aria-label'),'Abrir navegação');
   assert.equal(d.querySelectorAll('#menu-open').length,1);
-  assert.equal(d.querySelectorAll('#luria-brand-logo').length,1);
+  assert.equal(d.querySelectorAll('#traube-brand-logo').length,1);
   assert.equal(d.querySelector('.ui-topbar-brand'),brand);
 });
 

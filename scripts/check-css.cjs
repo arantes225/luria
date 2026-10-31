@@ -15,11 +15,11 @@ function files(directory, extension) {
 // Resolve the imported common base as well as each page's own styles. Tests
 // inspect the actual cascade instead of assuming every CSS file is a link tag.
 function stylesForPage(file) {
-  const dom = new JSDOM(fs.readFileSync(path.resolve(root,file),'utf8'), {url:'https://luria.test/'+file, virtualConsole:new VirtualConsole()});
+  const dom = new JSDOM(fs.readFileSync(path.resolve(root,file),'utf8'), {url:'https://traube.test/'+file, virtualConsole:new VirtualConsole()});
   const result = [];
   const visit = href => {
-    const url = new URL(href, 'https://luria.test/');
-    if (url.origin !== 'https://luria.test') return;
+    const url = new URL(href, 'https://traube.test/');
+    if (url.origin !== 'https://traube.test') return;
     const target = path.join(root,decodeURIComponent(url.pathname));
     result.push(url.pathname + url.search);
     if (!fs.existsSync(target)) throw Error('CSS inexistente: '+url.pathname);

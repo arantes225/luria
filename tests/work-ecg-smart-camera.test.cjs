@@ -129,7 +129,7 @@ function loadTraubeScripts(context) {
   const extractorSrc = source("assets/js/ecg-signal-extractor.js");
   const engineSrc = source("assets/js/ecg-cv-engine.js");
   const cameraSrc = source("assets/js/ecg-smart-camera.js");
-  const rotateSrc = source("assets/js/luria-rotate-controller.js");
+  const rotateSrc = source("assets/js/traube-rotate-controller.js");
 
   vm.runInNewContext(rotateSrc, context);
   vm.runInNewContext(source("assets/js/ecg-contracts.js"), context);

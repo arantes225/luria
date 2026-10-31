@@ -9,7 +9,7 @@
 
 ### 0.1. O que havia antes de escrever
 
-Na listagem da pasta \`apostilas/\` do repositório \`arantes225/luria\`, foram identificadas apostilas já publicadas predominantemente de GO, algumas de clínica e temas transversais, **mas não uma pasta específica de pancreatite aguda**. A ausência de pasta com título igual não prova ausência absoluta de conteúdo pancreático em toda a plataforma: esta é a avaliação inicial da biblioteca e exige busca de sobreposições na integração.
+Na listagem da pasta \`apostilas/\` do repositório \`arantes225/traube\`, foram identificadas apostilas já publicadas predominantemente de GO, algumas de clínica e temas transversais, **mas não uma pasta específica de pancreatite aguda**. A ausência de pasta com título igual não prova ausência absoluta de conteúdo pancreático em toda a plataforma: esta é a avaliação inicial da biblioteca e exige busca de sobreposições na integração.
 
 O arquivo de planejamento \`apostilas/_rascunhos/lote-05-inventario.md\` classificava o tema **097 — Pancreatite aguda cirúrgica** como pendente de inspeção. O escopo editorial correto é **pancreatite aguda: diagnóstico, estratificação, tratamento clínico e intervenções endoscópicas/cirúrgicas**, não apenas uma lista de indicações operatórias: a maioria dos pacientes não precisa de cirurgia durante a inflamação aguda.
 

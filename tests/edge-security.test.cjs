@@ -2,7 +2,7 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { fixture } = require('./fixtures/edge-functions.cjs');
 
-const official = 'https://www.luriamedicina.com.br';
+const official = 'https://www.traubemedicina.com.br';
 const cname = 'https://www.resibulando.online';
 const endpoint = 'https://edge.invalid/function';
 const env = {
@@ -41,12 +41,12 @@ for (const [i, name] of names.entries()) {
   });
 
   for (const origin of [
-    'https://attacker.org', official + '.attacker.org', 'https://evil.luriamedicina.com.br',
-    'https://luriamedicina.com.br', 'https://www.luriamedicina.com.br@attacker.org',
-    'https://www.luriamedicina.com.br:444', 'http://www.luriamedicina.com.br',
-    'https://www.luriamedicina.com.br/path', official + '?a=1', official + '#x',
-    official + ', https://attacker.org', 'https://@www.luriamedicina.com.br',
-    'https://www.luriamedicina.com.br\\', 'null', '',
+    'https://attacker.org', official + '.attacker.org', 'https://evil.traubemedicina.com.br',
+    'https://traubemedicina.com.br', 'https://www.traubemedicina.com.br@attacker.org',
+    'https://www.traubemedicina.com.br:444', 'http://www.traubemedicina.com.br',
+    'https://www.traubemedicina.com.br/path', official + '?a=1', official + '#x',
+    official + ', https://attacker.org', 'https://@www.traubemedicina.com.br',
+    'https://www.traubemedicina.com.br\\', 'null', '',
   ]) {
     test(`${name}: reject Origin ${JSON.stringify(origin)} before handler/SDK`, async () => {
       const { handler } = fixture().function(name);

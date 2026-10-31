@@ -16,7 +16,7 @@ test('group workspace has real content tabs, escaped messages and drafts that su
  d.querySelector('[data-gc-view="post"]').click();assert.equal(form.elements.body.value,'Meu rascunho');d.querySelector('[data-gc-view="chat"]').click();
  fail=true;form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await wait();assert.equal(form.elements.body.value,'Meu rascunho');assert.match(d.getElementById('gc-status').textContent,/preservado/);
  fail=false;form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await wait();assert.equal(form.elements.body.value,'');const sends=calls.filter(x=>x.p_action==='create');assert.equal(sends[0].p_payload.id,sends[1].p_payload.id);
- form.elements.body.value='Continuar depois';form.elements.body.dispatchEvent(new w.Event('input',{bubbles:true}));w.dispatchEvent(new w.CustomEvent('luria:community-tab',{detail:{area:'friends'}}));assert.equal(d.getElementById('group-community').hidden,true);
+ form.elements.body.value='Continuar depois';form.elements.body.dispatchEvent(new w.Event('input',{bubbles:true}));w.dispatchEvent(new w.CustomEvent('traube:community-tab',{detail:{area:'friends'}}));assert.equal(d.getElementById('group-community').hidden,true);
  d.querySelector('[data-group-open]').click();await wait();assert.equal(d.querySelector('[data-gc-compose="chat"]').elements.body.value,'Continuar depois');
  denied=true;w.dispatchEvent(new w.Event('focus'));await wait();assert.match(d.getElementById('group-community').textContent,/Acesso ao grupo indisponível/);assert.equal(d.querySelectorAll('#group-community form').length,0);assert.equal(d.querySelectorAll('#group-community .gc-entry').length,0);
  assert.deepEqual(errors,[]);

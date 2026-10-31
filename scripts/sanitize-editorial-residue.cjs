@@ -61,7 +61,7 @@ for (const slug of fs.readdirSync(booksDir)) {
   let html = originalHtml;
   html = html.replace(/<div\s+class="editorial-warning">[\s\S]*?<\/div>/gi, '');
   html = html.replace(/<section[^>]*class="[^"]*editorial-appendix[^"]*"[^>]*>[\s\S]*?<\/section>/gi, '');
-  html = html.replace(/<div[^>]*hidden[^>]*data-luria-image-curation[^>]*>[\s\S]*?<\/div>/gi, '');
+  html = html.replace(/<div[^>]*hidden[^>]*data-traube-image-curation[^>]*>[\s\S]*?<\/div>/gi, '');
   html = html.replace(/<div\s+class="book-feedback">[\s\S]*?<\/div>/gi, '');
   html = html.replace(/<h3>\s*13\.\s*Curadoria visual[^<]*<\/h3>\s*<p>[\s\S]*?<\/p>/gi, '');
   html = html.replace(/<p>\s*<strong>Auditoria editorial:<\/strong>[\s\S]*?<\/p>/gi, '');

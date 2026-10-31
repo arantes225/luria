@@ -2,9 +2,9 @@
 (() => {
   'use strict';
   const init = () => {
-    if (!document.querySelector('link[data-luria-feedback-style]')) {
+    if (!document.querySelector('link[data-traube-feedback-style]')) {
       const style = document.createElement('link');
-      style.rel = 'stylesheet'; style.href = '/assets/css/feedback-checklist.css?v=7'; style.dataset.luriaFeedbackStyle = 'true';
+      style.rel = 'stylesheet'; style.href = '/assets/css/feedback-checklist.css?v=7'; style.dataset.traubeFeedbackStyle = 'true';
       document.head.append(style);
     }
     const topbar = document.querySelector('header.topbar');

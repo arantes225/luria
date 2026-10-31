@@ -47,8 +47,8 @@
     "errors": [],
     "missingNewGameRequests": [],
     "knownExistingStudyRatsRequests": [
-      "http://127.0.0.1:50559/jogos/study-rats/assets/img/logos/logo-icone-original.png?v=luria9",
-      "http://127.0.0.1:50559/jogos/study-rats/assets/img/logos/logo-icone-original.png?v=luria9"
+      "http://127.0.0.1:50559/jogos/study-rats/assets/img/logos/logo-icone-original.png?v=traube9",
+      "http://127.0.0.1:50559/jogos/study-rats/assets/img/logos/logo-icone-original.png?v=traube9"
     ]
   },
   "protectedFilesChanged": [],

@@ -667,5 +667,5 @@ window.initSharedStudyrats=function(){
   function refreshVisibleRace(){if(!document.hidden&&!document.getElementById('community-friends-panel')?.hidden)sharedStudyratsLoad();}
   sharedStudyratsTimer=setInterval(refreshVisibleRace,30000);
   document.addEventListener('visibilitychange',refreshVisibleRace);
-  window.addEventListener('luria:community-tab',function(event){if(event.detail.area==='friends')refreshVisibleRace();});
+  window.addEventListener('traube:community-tab',function(event){if(event.detail.area==='friends')refreshVisibleRace();});
 };

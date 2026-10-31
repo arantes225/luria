@@ -115,7 +115,7 @@ body[data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data
 }
 body[data-dashboard-layout] .topbar .page-heading,
 body[data-dashboard-layout] .topbar .dl-topbar-controls,
-body[data-dashboard-layout] .topbar .luria-notifications,
+body[data-dashboard-layout] .topbar .traube-notifications,
 body[data-dashboard-layout] .topbar .dl-avatar{
   display:none!important;
 }
@@ -343,7 +343,7 @@ body[data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data
 
 body[data-dashboard-layout] .topbar .page-heading,
 body[data-dashboard-layout] .topbar .dl-topbar-controls,
-body[data-dashboard-layout] .topbar .luria-notifications,
+body[data-dashboard-layout] .topbar .traube-notifications,
 body[data-dashboard-layout] .topbar .dl-avatar{
   display:none!important;
 }
@@ -442,7 +442,7 @@ body[data-dashboard-layout] .topbar .dl-topbar-controls{
 body[data-dashboard-layout] .topbar .dl-stopwatch{
   display:none!important;
 }
-body[data-dashboard-layout] .topbar .luria-notifications{
+body[data-dashboard-layout] .topbar .traube-notifications{
   display:flex!important;
   order:2!important;
   margin-left:0!important;
@@ -631,11 +631,11 @@ body[data-dashboard-layout="4"] .page:where(:not(body[data-ui-nav="v2"], body[da
 
 
 /* Dashboard Estudos — espaçamento sino/avatar e avatar maior. */
-body[data-dashboard-layout="1"] .topbar .luria-notifications,
-body[data-dashboard-layout="2"] .topbar .luria-notifications,
-body[data-dashboard-layout="3"] .topbar .luria-notifications,
+body[data-dashboard-layout="1"] .topbar .traube-notifications,
+body[data-dashboard-layout="2"] .topbar .traube-notifications,
+body[data-dashboard-layout="3"] .topbar .traube-notifications,
 body[data-dashboard-layout="4"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
-body[data-dashboard-layout="5"] .topbar .luria-notifications{
+body[data-dashboard-layout="5"] .topbar .traube-notifications{
   margin-right:8px!important;
 }
 
@@ -1582,7 +1582,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-
   margin:0!important;
   overflow:visible!important;
 }
-body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notifications{
   display:flex!important;
   visibility:visible!important;
   opacity:1!important;
@@ -1590,9 +1590,9 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
   margin-left:auto!important;
   margin-right:0!important;
 }
-body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-top,
-body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notification-toggle,
-body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-top{
+body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-pomodoro-top,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notification-toggle,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-profile-top{
   display:flex!important;
   visibility:visible!important;
   opacity:1!important;
@@ -1970,7 +1970,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .menu-open{
 }
 
 /* Dashboard 4 — alinhar Timer, notificações e perfil no mesmo eixo. */
-body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-notifications{
+body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .traube-notifications{
   top:0!important;
   align-self:center!important;
   height:52px!important;
@@ -1979,8 +1979,8 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-notificati
   align-items:center!important;
   gap:12px!important;
 }
-body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-pomodoro-top,
-body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-profile-top{
+body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .traube-pomodoro-top,
+body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .traube-profile-top{
   height:52px!important;
   min-height:52px!important;
   display:flex!important;
@@ -1989,9 +1989,9 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-profile-to
   margin-top:0!important;
   margin-bottom:0!important;
 }
-body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-pomodoro-toggle,
-body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-notification-toggle,
-body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-profile-toggle{
+body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .traube-pomodoro-toggle,
+body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .traube-notification-toggle,
+body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .traube-profile-toggle{
   height:52px!important;
   min-height:52px!important;
   box-sizing:border-box!important;
@@ -1999,7 +1999,7 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-profile-to
   margin-top:0!important;
   margin-bottom:0!important;
 }
-body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-notification-toggle{
+body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .traube-notification-toggle{
   width:52px!important;
   min-width:52px!important;
   display:grid!important;
@@ -2007,13 +2007,13 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-notificati
   padding:0!important;
   line-height:1!important;
 }
-body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-notification-toggle svg{
+body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .traube-notification-toggle svg{
   width:20px!important;
   height:20px!important;
   display:block!important;
   margin:0!important;
 }
-body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-profile-toggle{
+body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .traube-profile-toggle{
   width:52px!important;
   min-width:52px!important;
   display:grid!important;
@@ -2479,7 +2479,7 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak-value-hero>str
     padding-top:2px!important;
   }
   body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .dl-topbar-controls,
-  body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-notifications,
+  body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .traube-notifications,
   body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .dl-account{
     margin-top:4px!important;
   }
@@ -3511,10 +3511,10 @@ body[data-page="dashboard"] .dl-cat .dl-card-heading h3{
 
 /* Dashboard v54 — posição do Timer/Sino/Perfil igual ao restante do site */
 @media(min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notifications{
     position:fixed!important;
-    top:var(--luria-top-controls-top,10px)!important;
-    right:var(--luria-top-controls-right,max(34px,calc((100vw - 1320px) / 2)))!important;
+    top:var(--traube-top-controls-top,10px)!important;
+    right:var(--traube-top-controls-right,max(34px,calc((100vw - 1320px) / 2)))!important;
     bottom:auto!important;
     left:auto!important;
     margin:0!important;
@@ -3542,7 +3542,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-
   padding:6px 0!important;
   overflow:visible!important;
 }
-body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notifications{
   display:flex!important;
   position:static!important;
   inset:auto!important;
@@ -3571,7 +3571,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
     height:58px!important;
     padding:5px 0!important;
   }
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notifications{
     position:static!important;
     margin-left:auto!important;
     transform:none!important;
@@ -3615,19 +3615,19 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
    Dashboard v41 — Timer na mesma escala compacta do restante do site
    ========================================================= */
 @media(min-width:981px){
-  body[data-page="dashboard"] .topbar .luria-notifications{
+  body[data-page="dashboard"] .topbar .traube-notifications{
     min-height:43px!important;
     height:43px!important;
     gap:10px!important;
   }
 
-  body[data-page="dashboard"] .topbar .luria-pomodoro-top,
-  body[data-page="dashboard"] .topbar .luria-profile-top{
+  body[data-page="dashboard"] .topbar .traube-pomodoro-top,
+  body[data-page="dashboard"] .topbar .traube-profile-top{
     min-height:43px!important;
     height:43px!important;
   }
 
-  body[data-page="dashboard"] .topbar .luria-pomodoro-toggle{
+  body[data-page="dashboard"] .topbar .traube-pomodoro-toggle{
     height:43px!important;
     min-height:43px!important;
     width:auto!important;
@@ -3637,15 +3637,15 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
     border-radius:12px!important;
   }
 
-  body[data-page="dashboard"] .topbar .luria-pomodoro-icon,
-  body[data-page="dashboard"] .topbar .luria-pomodoro-icon svg{
+  body[data-page="dashboard"] .topbar .traube-pomodoro-icon,
+  body[data-page="dashboard"] .topbar .traube-pomodoro-icon svg{
     width:20px!important;
     height:20px!important;
     flex:0 0 20px!important;
   }
 
-  body[data-page="dashboard"] .topbar .luria-notification-toggle,
-  body[data-page="dashboard"] .topbar .luria-profile-toggle{
+  body[data-page="dashboard"] .topbar .traube-notification-toggle,
+  body[data-page="dashboard"] .topbar .traube-profile-toggle{
     width:43px!important;
     height:43px!important;
     min-width:43px!important;
@@ -3653,12 +3653,12 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
     border-radius:12px!important;
   }
 
-  body[data-page="dashboard"] .topbar .luria-notification-toggle svg{
+  body[data-page="dashboard"] .topbar .traube-notification-toggle svg{
     width:19px!important;
     height:19px!important;
   }
 
-  body[data-page="dashboard"] .topbar .luria-profile-toggle{
+  body[data-page="dashboard"] .topbar .traube-profile-toggle{
     font-size:16px!important;
   }
 
@@ -4040,7 +4040,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-
   transform:none!important;
   translate:none!important;
 }
-body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notifications{
   position:absolute!important;
   top:6px!important;
   right:0!important;
@@ -4053,11 +4053,11 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
   animation:none!important;
   transition:none!important;
 }
-body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-top,
-body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-top,
-body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-toggle,
-body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notification-toggle,
-body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle{
+body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-pomodoro-top,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-profile-top,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-pomodoro-toggle,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notification-toggle,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-profile-toggle{
   position:relative!important;
   top:auto!important;
   right:auto!important;
@@ -4388,7 +4388,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
 
 
 /* Dashboard v64 — geometria estável do card de título em navegação normal e hard refresh */
-body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+body[data-page="dashboard"] #dashboard-alternative > .traube-dashboard-spotlight.dl-dashboard-title-card{
   box-sizing:border-box!important;
   width:100%!important;
   min-width:0!important;
@@ -4403,7 +4403,7 @@ body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.
 }
 
 @media(max-width:980px){
-  body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+  body[data-page="dashboard"] #dashboard-alternative > .traube-dashboard-spotlight.dl-dashboard-title-card{
     height:118px!important;
     min-height:118px!important;
     max-height:118px!important;
@@ -5172,7 +5172,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   }
 
   body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-topbar-controls,
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications,
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notifications,
   body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-account{
     display:flex!important;
     align-items:center!important;
@@ -5183,7 +5183,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     margin-left:auto!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notifications{
     position:static!important;
     inset:auto!important;
     transform:none!important;
@@ -5192,9 +5192,9 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 
   body[data-page="dashboard"][data-dashboard-layout] .topbar :is(
     .dl-pomodoro,
-    .luria-pomodoro-toggle,
-    .luria-notification-toggle,
-    .luria-profile-toggle,
+    .traube-pomodoro-toggle,
+    .traube-notification-toggle,
+    .traube-profile-toggle,
     .dl-avatar,
     .dl-timer-settings-toggle
   ){
@@ -5230,7 +5230,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     color:#fff!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .brand .luria-theme-logo{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .brand .traube-theme-logo{
     width:44px!important;
     height:44px!important;
     flex:0 0 44px!important;
@@ -5360,27 +5360,27 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 /* DASHBOARD — THEME-AWARE SHELL COLORS v6 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
-  --luria-shell-theme:#184888;
-  --luria-shell-theme-2:#123A70;
+  --traube-shell-theme:#184888;
+  --traube-shell-theme-2:#123A70;
 }
 :root[data-theme="dark"]{
-  --luria-shell-theme:#142A44;
-  --luria-shell-theme-2:#0D1B30;
+  --traube-shell-theme:#142A44;
+  --traube-shell-theme-2:#0D1B30;
 }
 :root[data-theme="leila-mood"]{
-  --luria-shell-theme:#CB3F83;
-  --luria-shell-theme-2:#A92F6E;
+  --traube-shell-theme:#CB3F83;
+  --traube-shell-theme-2:#A92F6E;
 }
 
 @media (min-width:981px){
   html:has(body[data-page="dashboard"][data-dashboard-layout]),
   body[data-page="dashboard"][data-dashboard-layout]{
-    background:var(--luria-shell-theme)!important;
+    background:var(--traube-shell-theme)!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
-    background:linear-gradient(90deg,var(--luria-shell-theme),var(--luria-shell-theme-2))!important;
+    background:linear-gradient(90deg,var(--traube-shell-theme),var(--traube-shell-theme-2))!important;
   }
 }
 
@@ -5388,13 +5388,13 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 /* DASHBOARD — EXACT SHELL COLOR MATCH v7 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
-  --luria-shell-theme:#184888;
+  --traube-shell-theme:#184888;
 }
 :root[data-theme="dark"]{
-  --luria-shell-theme:#142A44;
+  --traube-shell-theme:#142A44;
 }
 :root[data-theme="leila-mood"]{
-  --luria-shell-theme:#CB3F83;
+  --traube-shell-theme:#CB3F83;
 }
 
 @media (min-width:981px){
@@ -5402,8 +5402,8 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   body[data-page="dashboard"][data-dashboard-layout],
   body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
-    background:var(--luria-shell-theme)!important;
-    background-color:var(--luria-shell-theme)!important;
+    background:var(--traube-shell-theme)!important;
+    background-color:var(--traube-shell-theme)!important;
     background-image:none!important;
   }
 }
@@ -5412,21 +5412,21 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 /* DASHBOARD — SOLID SHELL NO GRADIENT v8 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
-  --luria-shell-theme:#184888;
+  --traube-shell-theme:#184888;
 }
 :root[data-theme="dark"]{
-  --luria-shell-theme:#142A44;
+  --traube-shell-theme:#142A44;
 }
 :root[data-theme="leila-mood"]{
-  --luria-shell-theme:#CB3F83;
+  --traube-shell-theme:#CB3F83;
 }
 @media (min-width:981px){
   html:has(body[data-page="dashboard"][data-dashboard-layout]),
   body[data-page="dashboard"][data-dashboard-layout],
   body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
-    background:var(--luria-shell-theme)!important;
-    background-color:var(--luria-shell-theme)!important;
+    background:var(--traube-shell-theme)!important;
+    background-color:var(--traube-shell-theme)!important;
     background-image:none!important;
   }
 }
@@ -5464,7 +5464,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   }
 
   body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-topbar-controls,
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications,
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notifications,
   body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-account{
     position:relative!important;
     z-index:11!important;
@@ -5473,16 +5473,16 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   /* Busca, timer, sino e login/perfil: fundo translúcido sobre o azul */
   body[data-page="dashboard"][data-dashboard-layout] .topbar :is(
     .dl-pomodoro,
-    .luria-pomodoro-toggle,
-    .luria-notification-toggle,
-    .luria-profile-toggle,
+    .traube-pomodoro-toggle,
+    .traube-notification-toggle,
+    .traube-profile-toggle,
     .dl-avatar,
     .dl-account,
     .dl-timer-settings-toggle,
     [data-global-search-trigger],
     .global-search-trigger,
-    .luria-global-search-trigger,
-    .luria-global-search,
+    .traube-global-search-trigger,
+    .traube-global-search,
     .global-search,
     input[type="search"]
   ){
@@ -5496,16 +5496,16 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 
   body[data-page="dashboard"][data-dashboard-layout] .topbar :is(
     .dl-pomodoro,
-    .luria-pomodoro-toggle,
-    .luria-notification-toggle,
-    .luria-profile-toggle,
+    .traube-pomodoro-toggle,
+    .traube-notification-toggle,
+    .traube-profile-toggle,
     .dl-avatar,
     .dl-account,
     .dl-timer-settings-toggle,
     [data-global-search-trigger],
     .global-search-trigger,
-    .luria-global-search-trigger,
-    .luria-global-search,
+    .traube-global-search-trigger,
+    .traube-global-search,
     .global-search
   ):hover{
     background:rgba(255,255,255,.17)!important;
@@ -5531,13 +5531,13 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 /* TRAUBE SHELL — AUTHORITATIVE SAME-COLOR OVERRIDE v10 — 2026-10-04 */
 :root,
 :root[data-theme="light"]{
-  --luria-shell-theme:#184888;
+  --traube-shell-theme:#184888;
 }
 :root[data-theme="dark"]{
-  --luria-shell-theme:#142A44;
+  --traube-shell-theme:#142A44;
 }
 :root[data-theme="leila-mood"]{
-  --luria-shell-theme:#CB3F83;
+  --traube-shell-theme:#CB3F83;
 }
 @media (min-width:981px){
   html,
@@ -5548,8 +5548,8 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   body[data-page="dashboard"][data-dashboard-layout],
   body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
-    background:var(--luria-shell-theme)!important;
-    background-color:var(--luria-shell-theme)!important;
+    background:var(--traube-shell-theme)!important;
+    background-color:var(--traube-shell-theme)!important;
     background-image:none!important;
   }
 }
@@ -5595,7 +5595,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     z-index:2147482000!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notifications{
     display:flex!important;
     visibility:visible!important;
     opacity:1!important;
@@ -5610,13 +5610,13 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   }
 
   body[data-page="dashboard"][data-dashboard-layout] .topbar :is(
-    #luria-global-search,
-    .luria-command-trigger-topbar,
-    .luria-pomodoro-top,
-    .luria-pomodoro-toggle,
-    .luria-notification-toggle,
-    .luria-profile-top,
-    .luria-profile-toggle
+    #traube-global-search,
+    .traube-command-trigger-topbar,
+    .traube-pomodoro-top,
+    .traube-pomodoro-toggle,
+    .traube-notification-toggle,
+    .traube-profile-top,
+    .traube-profile-toggle
   ){
     display:flex!important;
     visibility:visible!important;
@@ -5624,8 +5624,8 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     pointer-events:auto!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .topbar #luria-global-search,
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-command-trigger-topbar{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar #traube-global-search,
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-command-trigger-topbar{
     min-width:132px!important;
     height:43px!important;
     padding:0 14px!important;
@@ -5638,22 +5638,22 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     color:#fff!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-toggle,
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notification-toggle,
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-pomodoro-toggle,
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notification-toggle,
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-profile-toggle{
     border:1px solid rgba(255,255,255,.28)!important;
     background:rgba(255,255,255,.10)!important;
     color:#fff!important;
     box-shadow:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-toggle{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-pomodoro-toggle{
     min-width:78px!important;
     height:43px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notification-toggle,
-  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-notification-toggle,
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .traube-profile-toggle{
     width:43px!important;
     height:43px!important;
     min-width:43px!important;
@@ -5678,8 +5678,8 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     color:#fff!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .brand .luria-theme-logo,
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar #luria-brand-logo{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .brand .traube-theme-logo,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar #traube-brand-logo{
     display:block!important;
     visibility:visible!important;
     opacity:1!important;
@@ -5812,8 +5812,8 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     z-index:2147482600!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .brand .luria-theme-logo,
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar #luria-brand-logo{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .brand .traube-theme-logo,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar #traube-brand-logo{
     filter:brightness(0) invert(1)!important;
     opacity:1!important;
     visibility:visible!important;
@@ -5854,7 +5854,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     display:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .luria-notifications{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .traube-notifications{
     position:static!important;
     inset:auto!important;
     display:flex!important;
@@ -5868,21 +5868,21 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   }
 
   body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar :is(
-    #luria-global-search,
-    .luria-command-trigger-topbar,
-    .luria-pomodoro-top,
-    .luria-pomodoro-toggle,
-    .luria-notification-toggle,
-    .luria-profile-top,
-    .luria-profile-toggle
+    #traube-global-search,
+    .traube-command-trigger-topbar,
+    .traube-pomodoro-top,
+    .traube-pomodoro-toggle,
+    .traube-notification-toggle,
+    .traube-profile-top,
+    .traube-profile-toggle
   ){
     visibility:visible!important;
     opacity:1!important;
     pointer-events:auto!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar #luria-global-search,
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .luria-command-trigger-topbar{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar #traube-global-search,
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .traube-command-trigger-topbar{
     display:flex!important;
     min-width:132px!important;
     height:43px!important;
@@ -5895,7 +5895,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     color:#fff!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .luria-pomodoro-toggle{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .traube-pomodoro-toggle{
     display:flex!important;
     min-width:78px!important;
     height:43px!important;
@@ -5904,8 +5904,8 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     color:#fff!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .luria-notification-toggle,
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .luria-profile-toggle{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .traube-notification-toggle,
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .traube-profile-toggle{
     display:grid!important;
     place-items:center!important;
     width:43px!important;
@@ -6213,8 +6213,8 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 /* DASHBOARD MASTER — BRAND SCALE UP v22 — 2026-10-04 */
 @media (min-width:981px){
   /* Logo +30% em relação ao tamanho aprovado anteriormente (44px -> ~57px). */
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .brand .luria-theme-logo,
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar #luria-brand-logo{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .brand .traube-theme-logo,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar #traube-brand-logo{
     width:57px!important;
     height:57px!important;
     flex:0 0 57px!important;
@@ -6250,30 +6250,30 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
      desfazer a regra de texto branco aplicada aos controles do topo. */
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-panel{
+  .traube-pomodoro-panel{
     color:var(--text)!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-panel :is(
+  .traube-pomodoro-panel :is(
     header strong,
-    .luria-pomodoro-time,
-    .luria-timer-switch button,
-    .luria-pomodoro-modes button,
-    .luria-pomodoro-actions button
+    .traube-pomodoro-time,
+    .traube-timer-switch button,
+    .traube-pomodoro-modes button,
+    .traube-pomodoro-actions button
   ){
     color:var(--text)!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-panel :is(
+  .traube-pomodoro-panel :is(
     header small,
-    .luria-stopwatch-note,
-    .luria-pomodoro-fields label,
-    .luria-pomodoro-fields label > span,
-    .luria-pomodoro-fields label > span:last-child
+    .traube-stopwatch-note,
+    .traube-pomodoro-fields label,
+    .traube-pomodoro-fields label > span,
+    .traube-pomodoro-fields label > span:last-child
   ){
     color:var(--muted)!important;
     visibility:visible!important;
@@ -6283,7 +6283,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   /* Deixa os nomes Tempo, Foco e Pausa claramente legíveis. */
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-fields label > span:first-child{
+  .traube-pomodoro-fields label > span:first-child{
     display:inline-block!important;
     color:var(--text)!important;
     font-size:11px!important;
@@ -6294,27 +6294,27 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-fields input{
+  .traube-pomodoro-fields input{
     color:var(--text)!important;
     background:var(--surface-2)!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-timer-switch button[aria-pressed="true"],
+  .traube-timer-switch button[aria-pressed="true"],
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-modes button[aria-pressed="true"]{
+  .traube-pomodoro-modes button[aria-pressed="true"]{
     color:#fff!important;
   }
 
   /* No callout compacto do timer, minutos E segundos ficam brancos. */
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-toggle .luria-timer-ms > #luria-timer-minutes,
+  .traube-pomodoro-toggle .traube-timer-ms > #traube-timer-minutes,
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-toggle .luria-timer-ms > #luria-timer-seconds{
+  .traube-pomodoro-toggle .traube-timer-ms > #traube-timer-seconds{
     color:#fff!important;
   }
 }
@@ -6480,10 +6480,10 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   /* Padroniza o alinhamento vertical dos callouts de notificações e perfil. */
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-notification-toggle,
+  .traube-notification-toggle,
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-profile-toggle{
+  .traube-profile-toggle{
     display:grid!important;
     place-items:center!important;
     align-items:center!important;
@@ -6495,7 +6495,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-notification-toggle > svg{
+  .traube-notification-toggle > svg{
     display:block!important;
     width:19px!important;
     height:19px!important;
@@ -6508,7 +6508,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-profile-toggle{
+  .traube-profile-toggle{
     font-size:16px!important;
     font-weight:850!important;
     letter-spacing:-.02em!important;
@@ -6517,10 +6517,10 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-profile-top,
+  .traube-profile-top,
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-notifications{
+  .traube-notifications{
     align-items:center!important;
   }
 }
@@ -6907,7 +6907,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-notifications{
+  .traube-notifications{
     display:flex!important;
     align-items:center!important;
     justify-content:flex-end!important;
@@ -6917,13 +6917,13 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search,
+  #traube-global-search,
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-command-trigger-topbar,
+  .traube-command-trigger-topbar,
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-toggle{
+  .traube-pomodoro-toggle{
     display:flex!important;
     align-items:center!important;
     justify-content:center!important;
@@ -6938,17 +6938,17 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   /* Buscar: ícone e texto ficam no mesmo eixo visual. */
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search,
+  #traube-global-search,
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-command-trigger-topbar{
+  .traube-command-trigger-topbar{
     justify-content:flex-start!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  :is(#luria-global-search,.luria-command-trigger-topbar)
-  .luria-command-search-icon{
+  :is(#traube-global-search,.traube-command-trigger-topbar)
+  .traube-command-search-icon{
     display:block!important;
     width:18px!important;
     height:18px!important;
@@ -6960,7 +6960,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  :is(#luria-global-search,.luria-command-trigger-topbar) > span{
+  :is(#traube-global-search,.traube-command-trigger-topbar) > span{
     display:flex!important;
     align-items:center!important;
     height:100%!important;
@@ -6971,13 +6971,13 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   /* Timer: cronômetro e números centralizados no mesmo eixo. */
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-toggle{
+  .traube-pomodoro-toggle{
     gap:8px!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-icon{
+  .traube-pomodoro-icon{
     display:grid!important;
     place-items:center!important;
     width:20px!important;
@@ -6988,7 +6988,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-icon svg{
+  .traube-pomodoro-icon svg{
     display:block!important;
     width:20px!important;
     height:20px!important;
@@ -6998,7 +6998,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-timer-compact{
+  .traube-timer-compact{
     display:flex!important;
     align-items:center!important;
     justify-content:center!important;
@@ -7008,7 +7008,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-timer-ms{
+  .traube-timer-ms{
     display:flex!important;
     flex-direction:column!important;
     align-items:center!important;
@@ -7020,7 +7020,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-timer-ms > strong{
+  .traube-timer-ms > strong{
     display:block!important;
     margin:0!important;
     padding:0!important;
@@ -7030,10 +7030,10 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   /* Sino e perfil exatamente centralizados dentro dos quadrados. */
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-notification-toggle,
+  .traube-notification-toggle,
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-profile-toggle{
+  .traube-profile-toggle{
     display:grid!important;
     place-items:center!important;
     width:43px!important;
@@ -7048,7 +7048,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-notification-toggle svg{
+  .traube-notification-toggle svg{
     display:block!important;
     width:19px!important;
     height:19px!important;
@@ -7058,7 +7058,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-profile-toggle{
+  .traube-profile-toggle{
     text-align:center!important;
     font-size:16px!important;
     line-height:43px!important;
@@ -7228,7 +7228,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
      Remove line-height antigo que puxava as iniciais para fora do centro. */
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-notifications{
+  .traube-notifications{
     display:flex!important;
     align-items:center!important;
     justify-content:flex-end!important;
@@ -7239,7 +7239,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-profile-top{
+  .traube-profile-top{
     position:relative!important;
     display:flex!important;
     align-items:center!important;
@@ -7254,10 +7254,10 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-notification-toggle,
+  .traube-notification-toggle,
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-profile-toggle{
+  .traube-profile-toggle{
     position:relative!important;
     display:flex!important;
     align-items:center!important;
@@ -7276,7 +7276,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-notification-toggle svg{
+  .traube-notification-toggle svg{
     position:static!important;
     display:block!important;
     width:20px!important;
@@ -7289,7 +7289,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-profile-toggle{
+  .traube-profile-toggle{
     font-size:16px!important;
     font-weight:850!important;
     letter-spacing:0!important;
@@ -7297,7 +7297,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-notification-badge{
+  .traube-notification-badge{
     position:absolute!important;
     top:5px!important;
     right:5px!important;
@@ -7394,7 +7394,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   /* Sino e perfil usam exatamente a mesma caixa e o mesmo centro geométrico. */
   body[data-page="dashboard"][data-dashboard-layout]
-  .app-shell > .topbar.dashboard-shell-topbar .luria-notifications{
+  .app-shell > .topbar.dashboard-shell-topbar .traube-notifications{
     display:flex!important;
     align-items:center!important;
     justify-content:flex-end!important;
@@ -7405,7 +7405,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
-  .app-shell > .topbar.dashboard-shell-topbar .luria-profile-top{
+  .app-shell > .topbar.dashboard-shell-topbar .traube-profile-top{
     display:grid!important;
     place-items:center!important;
     width:43px!important;
@@ -7418,9 +7418,9 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
-  .app-shell > .topbar.dashboard-shell-topbar .luria-notification-toggle,
+  .app-shell > .topbar.dashboard-shell-topbar .traube-notification-toggle,
   body[data-page="dashboard"][data-dashboard-layout]
-  .app-shell > .topbar.dashboard-shell-topbar .luria-profile-toggle{
+  .app-shell > .topbar.dashboard-shell-topbar .traube-profile-toggle{
     position:relative!important;
     display:grid!important;
     place-items:center!important;
@@ -7439,12 +7439,12 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
-  .app-shell > .topbar.dashboard-shell-topbar .luria-notification-toggle{
+  .app-shell > .topbar.dashboard-shell-topbar .traube-notification-toggle{
     line-height:0!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
-  .app-shell > .topbar.dashboard-shell-topbar .luria-notification-toggle > svg{
+  .app-shell > .topbar.dashboard-shell-topbar .traube-notification-toggle > svg{
     position:static!important;
     display:block!important;
     width:20px!important;
@@ -7457,7 +7457,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
-  .app-shell > .topbar.dashboard-shell-topbar .luria-profile-toggle{
+  .app-shell > .topbar.dashboard-shell-topbar .traube-profile-toggle{
     line-height:1!important;
     text-align:center!important;
     font-size:16px!important;
@@ -7465,7 +7465,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
-  .app-shell > .topbar.dashboard-shell-topbar .luria-profile-toggle > *{
+  .app-shell > .topbar.dashboard-shell-topbar .traube-profile-toggle > *{
     margin:0!important;
     padding:0!important;
     line-height:1!important;
@@ -7583,7 +7583,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search.luria-search-icon-only{
+  #traube-global-search.traube-search-icon-only{
     position:absolute!important;
     left:var(--dashboard-content-left)!important;
     right:auto!important;
@@ -7604,7 +7604,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search.luria-search-icon-only .luria-command-search-icon{
+  #traube-global-search.traube-search-icon-only .traube-command-search-icon{
     width:19px!important;
     height:19px!important;
     margin:0!important;
@@ -7612,7 +7612,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-alex-topbar.luria-alex-topbar{
+  #traube-alex-topbar.traube-alex-topbar{
     position:absolute!important;
     left:calc(var(--dashboard-content-left) + 68px)!important;
     right:auto!important;
@@ -7639,7 +7639,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search.luria-search-icon-only{
+  #traube-global-search.traube-search-icon-only{
     position:absolute!important;
     left:var(--dashboard-title-left)!important;
     right:auto!important;
@@ -7657,7 +7657,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   /* Alex volta para o grupo da direita, imediatamente antes do Timer. */
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-alex-topbar.luria-alex-topbar{
+  #traube-alex-topbar.traube-alex-topbar{
     position:static!important;
     inset:auto!important;
     transform:none!important;
@@ -7667,32 +7667,32 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-notifications{
+  .traube-notifications{
     margin-left:auto!important;
     justify-content:flex-end!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-alex-topbar{
+  #traube-alex-topbar{
     order:1!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-pomodoro-top{
+  .traube-pomodoro-top{
     order:2!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-notification-toggle{
+  #traube-notification-toggle{
     order:3!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  .luria-profile-top{
+  .traube-profile-top{
     order:4!important;
   }
 }
@@ -7702,7 +7702,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 @media (min-width:981px){
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search.luria-search-field-topbar{
+  #traube-global-search.traube-search-field-topbar{
     position:absolute!important;
     left:var(--dashboard-title-left)!important;
     right:auto!important;
@@ -7734,14 +7734,14 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search.luria-search-field-topbar:focus-within{
+  #traube-global-search.traube-search-field-topbar:focus-within{
     background:rgba(255,255,255,.16)!important;
     border-color:rgba(255,255,255,.46)!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search .luria-command-search-icon{
+  #traube-global-search .traube-command-search-icon{
     display:block!important;
     width:18px!important;
     height:18px!important;
@@ -7759,7 +7759,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search-field{
+  #traube-global-search-field{
     display:block!important;
     flex:1 1 auto!important;
     width:100%!important;
@@ -7781,7 +7781,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search-field::placeholder{
+  #traube-global-search-field::placeholder{
     color:rgba(255,255,255,.78)!important;
     -webkit-text-fill-color:rgba(255,255,255,.78)!important;
     opacity:1!important;
@@ -7789,7 +7789,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search-field::-webkit-search-cancel-button{
+  #traube-global-search-field::-webkit-search-cancel-button{
     filter:brightness(0) invert(1)!important;
     opacity:.75!important;
     cursor:pointer!important;
@@ -7801,7 +7801,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 @media (min-width:981px){
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search.luria-search-field-topbar{
+  #traube-global-search.traube-search-field-topbar{
     background:rgba(255,255,255,.10)!important;
     background-color:rgba(255,255,255,.10)!important;
     background-image:none!important;
@@ -7809,8 +7809,8 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search.luria-search-field-topbar
-  #luria-global-search-field{
+  #traube-global-search.traube-search-field-topbar
+  #traube-global-search-field{
     background:transparent!important;
     background-color:transparent!important;
     background-image:none!important;
@@ -7825,16 +7825,16 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search.luria-search-field-topbar
-  #luria-global-search-field:-webkit-autofill,
+  #traube-global-search.traube-search-field-topbar
+  #traube-global-search-field:-webkit-autofill,
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search.luria-search-field-topbar
-  #luria-global-search-field:-webkit-autofill:hover,
+  #traube-global-search.traube-search-field-topbar
+  #traube-global-search-field:-webkit-autofill:hover,
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search.luria-search-field-topbar
-  #luria-global-search-field:-webkit-autofill:focus{
+  #traube-global-search.traube-search-field-topbar
+  #traube-global-search-field:-webkit-autofill:focus{
     -webkit-box-shadow:0 0 0 1000px transparent inset!important;
     box-shadow:0 0 0 1000px transparent inset!important;
     -webkit-text-fill-color:#fff!important;
@@ -7848,7 +7848,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 @media (min-width:981px){
   body[data-page="dashboard"][data-dashboard-layout]
   .app-shell > .topbar.dashboard-shell-topbar
-  #luria-global-search{
+  #traube-global-search{
     display:none!important;
   }
 }
@@ -7882,9 +7882,9 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 /* DASHBOARD BRAND — LOGO +10% v46 — 2026-10-04 */
 @media (min-width:981px){
   body[data-page="dashboard"][data-dashboard-layout]
-  #sidebar.sidebar .brand .luria-theme-logo,
+  #sidebar.sidebar .brand .traube-theme-logo,
   body[data-page="dashboard"][data-dashboard-layout]
-  #sidebar.sidebar #luria-brand-logo{
+  #sidebar.sidebar #traube-brand-logo{
     width:48.4px!important;
     height:48.4px!important;
     flex:0 0 48.4px!important;
@@ -8010,8 +8010,8 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     overflow:visible!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .brand .luria-theme-logo,
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar #luria-brand-logo{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .brand .traube-theme-logo,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar #traube-brand-logo{
     width:48.4px!important;
     height:48.4px!important;
     min-width:48.4px!important;
@@ -8625,7 +8625,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     overflow:hidden!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .traube-dashboard-spotlight.dl-dashboard-title-card{
     height:138px!important;
     min-height:138px!important;
     max-height:138px!important;
@@ -8710,7 +8710,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     row-gap:12px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .traube-dashboard-spotlight.dl-dashboard-title-card{
     height:118px!important;
     min-height:118px!important;
     max-height:118px!important;
@@ -8800,7 +8800,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     row-gap:12px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .traube-dashboard-spotlight.dl-dashboard-title-card{
     height:auto!important;
     min-height:92px!important;
     max-height:118px!important;
@@ -8874,7 +8874,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     row-gap:10px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .traube-dashboard-spotlight.dl-dashboard-title-card{
     min-height:84px!important;
     max-height:84px!important;
     padding:12px 20px!important;
@@ -9015,7 +9015,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     row-gap:14px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .traube-dashboard-spotlight.dl-dashboard-title-card{
     height:138px!important;
     min-height:138px!important;
     max-height:138px!important;
@@ -9032,7 +9032,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     row-gap:12px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .traube-dashboard-spotlight.dl-dashboard-title-card{
     height:138px!important;
     min-height:138px!important;
     max-height:138px!important;
@@ -9858,7 +9858,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   }
 
   body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative,
-  body[data-page="dashboard"][data-dashboard-layout] .luria-dashboard-spotlight,
+  body[data-page="dashboard"][data-dashboard-layout] .traube-dashboard-spotlight,
   body[data-page="dashboard"][data-dashboard-layout] .dl-grid{
     width:100%!important;
     max-width:100%!important;
@@ -9946,7 +9946,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     box-sizing:border-box!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .luria-dashboard-spotlight,
+  body[data-page="dashboard"][data-dashboard-layout] .traube-dashboard-spotlight,
   body[data-page="dashboard"][data-dashboard-layout] .dl-grid{
     width:100%!important;
     max-width:100%!important;
@@ -10408,9 +10408,9 @@ html body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternati
   box-sizing: border-box !important;
 }
 
-html body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight {
+html body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .traube-dashboard-spotlight {
   height: auto !important;
-  min-height: var(--luria-page-card-height, 74px) !important;
+  min-height: var(--traube-page-card-height, 74px) !important;
   max-height: none !important;
   margin: 0 !important;
   box-sizing: border-box !important;
@@ -10475,7 +10475,7 @@ html body[data-page="dashboard"] #dashboard-alternative {
   box-sizing: border-box !important;
 }
 
-html body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight {
+html body[data-page="dashboard"] #dashboard-alternative > .traube-dashboard-spotlight {
   display: flex !important;
   height: 138px !important;
   min-height: 138px !important;
@@ -10487,7 +10487,7 @@ html body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotl
 }
 
 @media(max-width: 700px) {
-  html body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight {
+  html body[data-page="dashboard"] #dashboard-alternative > .traube-dashboard-spotlight {
     height: 118px !important;
     min-height: 118px !important;
     max-height: 118px !important;

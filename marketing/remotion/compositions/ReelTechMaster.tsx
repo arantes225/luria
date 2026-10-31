@@ -134,7 +134,7 @@ export const ReelTechMaster: React.FC = () => {
       }}
     >
       {/* 30s High-Energy Medical/Tech Soundtrack */}
-      <Audio src={staticFile('audio/luria-soundtrack-full-30s.mp3')} volume={0.88} />
+      <Audio src={staticFile('audio/traube-soundtrack-full-30s.mp3')} volume={0.88} />
 
       {/* Persistent Dynamic Cyber Medical Background */}
       <TechBackground />

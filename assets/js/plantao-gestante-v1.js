@@ -6,7 +6,7 @@
   "use strict";
   const base=document.getElementById("plantao-patient-image");
   const scene=base?.closest(".plantao-scene");
-  if(!scene || scene.querySelector(".luria-pregnant-v1-rig"))return;
+  if(!scene || scene.querySelector(".traube-pregnant-v1-rig"))return;
 
   const variants={
     landscape:{
@@ -19,17 +19,17 @@
     }
   };
   const rig=document.createElement("div");
-  rig.className="luria-pregnant-v1-rig";
+  rig.className="traube-pregnant-v1-rig";
   rig.hidden=true;
   rig.setAttribute("aria-hidden","true");
   const breath=document.createElement("div");
-  breath.className="luria-pregnant-v1-breath";
+  breath.className="traube-pregnant-v1-breath";
   const breathingImage=document.createElement("img");
   breathingImage.alt="";
   breathingImage.draggable=false;
   breath.appendChild(breathingImage);
   const eyes=document.createElement("div");
-  eyes.className="luria-pregnant-v1-eyes";
+  eyes.className="traube-pregnant-v1-eyes";
   const closedImage=document.createElement("img");
   closedImage.alt="";
   closedImage.draggable=false;
@@ -53,7 +53,7 @@
     const src=base.getAttribute("src")||"";
     const key=Object.keys(variants).find(k=>variants[k].match.test(src));
     const active=Boolean(key);
-    scene.classList.toggle("luria-pregnant-v1",active);
+    scene.classList.toggle("traube-pregnant-v1",active);
     rig.hidden=!active;
     if(!active)return;
 
@@ -85,9 +85,9 @@
     rig.style.width=width+"px";
     rig.style.height=height+"px";
 
-    scene.dataset.luriaEyes=base.dataset.luriaEyes||"auto";
-    const rr=Number.parseFloat(base.dataset.luriaRr);
-    scene.dataset.luriaBreath=Number.isFinite(rr)&&rr<=0?"stopped":"active";
+    scene.dataset.traubeEyes=base.dataset.traubeEyes||"auto";
+    const rr=Number.parseFloat(base.dataset.traubeRr);
+    scene.dataset.traubeBreath=Number.isFinite(rr)&&rr<=0?"stopped":"active";
     breath.style.animationDuration=(rr>0?Math.min(9,Math.max(.75,60/rr)):3.75)+"s";
   }
   function schedule(){
@@ -95,7 +95,7 @@
   }
   new MutationObserver(schedule).observe(base,{
     attributes:true,
-    attributeFilter:["src","data-luria-eyes","data-luria-rr","style","class"]
+    attributeFilter:["src","data-traube-eyes","data-traube-rr","style","class"]
   });
   if(window.ResizeObserver){
     const resize=new ResizeObserver(schedule);

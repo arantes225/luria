@@ -1,11 +1,11 @@
 // Focused layout regression. All app/Auth traffic uses synthetic local fixtures.
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const {chromium}=require('playwright');
-const root=path.resolve(__dirname,'..'),base='https://luria.test';
+const root=path.resolve(__dirname,'..'),base='https://traube.test';
 const inspect=process.argv.includes('--inspect');
 const output=path.join(root,'browser-results/review-spacing');fs.mkdirSync(output,{recursive:true});
 const fixture=fs.readFileSync(path.join(root,'tests/fixtures/supabase-browser.js'),'utf8')
- .replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{if(name==="luria_bootstrap")return{data:null,error:null};')
+ .replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{if(name==="traube_bootstrap")return{data:null,error:null};')
  .replace('if(name==="is_admin")return{data:false,error:null};','if(name==="is_admin")return{data:true,error:null};');
 const types={'.html':'text/html','.css':'text/css','.js':'application/javascript','.mjs':'application/javascript','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.woff2':'font/woff2','.json':'application/json'};
 (async()=>{
@@ -35,7 +35,7 @@ const types={'.html':'text/html','.css':'text/css','.js':'application/javascript
    await page.locator('body.app-ready[data-ui-startup="ready"]').waitFor({timeout:10000});await page.waitForTimeout(500);await page.mouse.move(0,0);
    async function measure(){return page.evaluate(()=>{
     const box=e=>{if(!e)return null;const r=e.getBoundingClientRect(),s=getComputedStyle(e);return {x:r.x,y:r.y,width:r.width,height:r.height,bottom:r.bottom,right:r.right,scrollHeight:e.scrollHeight,clientHeight:e.clientHeight,display:s.display,overflow:s.overflow,padding:s.padding,gap:s.gap,color:s.color,background:s.backgroundImage,grid:s.gridTemplateColumns};};
-    return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,back:box(document.querySelector('.luria-back-button')),hero:box(document.querySelector('.luria-page-spotlight')),activity:box(document.querySelector('.dl-activity')),activityCopy:box(document.querySelector('.dl-activity-copy')),habit:box(document.querySelector('.stats-general-habit')),metrics:box(document.querySelector('#general-habit-metrics')),heat:box(document.querySelector('#general-week-heatmap')),heatGrid:box(document.querySelector('.activity-grid')),heatDays:document.querySelectorAll('#general-week-heatmap .activity-day').length,area:box(document.querySelector('#general-area-table')),areaTable:box(document.querySelector('#general-area-table table')),statsStatus:document.querySelector('#stats-status')?.textContent};
+    return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,back:box(document.querySelector('.traube-back-button')),hero:box(document.querySelector('.traube-page-spotlight')),activity:box(document.querySelector('.dl-activity')),activityCopy:box(document.querySelector('.dl-activity-copy')),habit:box(document.querySelector('.stats-general-habit')),metrics:box(document.querySelector('#general-habit-metrics')),heat:box(document.querySelector('#general-week-heatmap')),heatGrid:box(document.querySelector('.activity-grid')),heatDays:document.querySelectorAll('#general-week-heatmap .activity-day').length,area:box(document.querySelector('#general-area-table')),areaTable:box(document.querySelector('#general-area-table table')),statsStatus:document.querySelector('#stats-status')?.textContent};
    });}
    const metrics=await measure();results.push({route,...metrics});console.log(route,width);
    if(inspect){await page.screenshot({path:path.join(output,`before-${route.split('/')[1]}-${width}.png`)});continue;}
@@ -49,11 +49,11 @@ const types={'.html':'text/html','.css':'text/css','.js':'application/javascript
     await page.waitForTimeout(220);
     assert.deepEqual(await page.evaluate(()=>[document.body.dataset.uiAppearance,document.body.dataset.uiIdentity]),[appearance,identity],'theme applied');
     const m=await measure();assert(m.scrollWidth<=width+1,route+' horizontal page overflow');
-    const buttonColors=await page.locator(':is(.luria-back-button,.dl-primary,.dl-start,.dl-study-now-start,.alex-send-button,.alex-open-tutoring,.alex-live-call-btn,.btn.primary,.button.primary,.stats-range button.active):not(.danger):not(.destructive)').evaluateAll(nodes=>nodes.map(e=>({text:e.textContent.trim(),rgb:getComputedStyle(e).color.match(/[\d.]+/g).slice(0,3).map(Number)})));
+    const buttonColors=await page.locator(':is(.traube-back-button,.dl-primary,.dl-start,.dl-study-now-start,.alex-send-button,.alex-open-tutoring,.alex-live-call-btn,.btn.primary,.button.primary,.stats-range button.active):not(.danger):not(.destructive)').evaluateAll(nodes=>nodes.map(e=>({text:e.textContent.trim(),rgb:getComputedStyle(e).color.match(/[\d.]+/g).slice(0,3).map(Number)})));
     for(const button of buttonColors)assert(appearance==='light'?Math.max(...button.rgb)<90:Math.min(...button.rgb)>210,route+' '+button.text+' needs dark text in light themes and light text in dark themes');
-    const textColors=await page.locator(':is(.luria-back-button,.dl-primary,.dl-start,.dl-study-now-start,.alex-send-button,.alex-open-tutoring,.alex-live-call-btn) :is(span,svg,svg *,strong)').evaluateAll(nodes=>nodes.map(e=>({text:e.textContent,color:getComputedStyle(e).color,parent:getComputedStyle(e.parentElement).color})));
+    const textColors=await page.locator(':is(.traube-back-button,.dl-primary,.dl-start,.dl-study-now-start,.alex-send-button,.alex-open-tutoring,.alex-live-call-btn) :is(span,svg,svg *,strong)').evaluateAll(nodes=>nodes.map(e=>({text:e.textContent,color:getComputedStyle(e).color,parent:getComputedStyle(e.parentElement).color})));
     for(const text of textColors)assert.equal(text.color,text.parent,route+' button label/icon must inherit theme color');
-    const iconColors=await page.locator(':is(.luria-back-button,.dl-primary,.dl-start,.dl-study-now-start,.alex-send-button,.alex-open-tutoring,.alex-live-call-btn) :is(svg[stroke],svg[stroke] *)').evaluateAll(nodes=>nodes.map(e=>({color:getComputedStyle(e).color,stroke:getComputedStyle(e).stroke})));
+    const iconColors=await page.locator(':is(.traube-back-button,.dl-primary,.dl-start,.dl-study-now-start,.alex-send-button,.alex-open-tutoring,.alex-live-call-btn) :is(svg[stroke],svg[stroke] *)').evaluateAll(nodes=>nodes.map(e=>({color:getComputedStyle(e).color,stroke:getComputedStyle(e).stroke})));
     for(const icon of iconColors)assert.equal(icon.stroke,icon.color,route+' outline icon must follow label color');
     if(m.back){assert(m.back.height>=44,route+' touch target');assert(m.back.x>=m.hero.x&&m.back.right<=m.hero.right,route+' back width');assert(m.back.y>=m.hero.y&&m.back.bottom<=m.hero.bottom-14,route+' back button is clipped by title card');}
     if(m.activity){assert(m.activityCopy.x-m.activity.x>=12,'activity text needs inner padding');assert(m.activity.bottom>=m.activityCopy.bottom+12,'activity bottom padding');}
@@ -64,7 +64,7 @@ const types={'.html':'text/html','.css':'text/css','.js':'application/javascript
    if(route==='/estatisticas/')await page.locator('.stats-general-layout').screenshot({path:path.join(output,`after-general-layout-${width}.png`)});
    if(route==='/estatisticas/') {await page.locator('[data-range="15"]').click();assert(await page.locator('[data-range="15"]').evaluate(e=>e.classList.contains('active')));}
    if(route==='/editais/') {assert(await page.getByRole('heading',{name:'Central de editais',exact:true}).isVisible());const m=await measure();assert(m.hero.background!=='none');}
-   if(metrics.back){const href=await page.locator('.luria-back-button').getAttribute('href');await page.locator('.luria-back-button').click();await page.waitForURL(base+href);}
+   if(metrics.back){const href=await page.locator('.traube-back-button').getAttribute('href');await page.locator('.traube-back-button').click();await page.waitForURL(base+href);}
   }
   fs.writeFileSync(path.join(output,inspect?'before.json':'results.json'),JSON.stringify({results,errors},null,2));
   console.log('Browser errors:',JSON.stringify(errors));

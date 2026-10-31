@@ -125,7 +125,7 @@
               ${item.source_edital_url ? `
                 <a
                   class="button secondary"
-                  href="${esc(luriaSafeContentUrl(item.source_edital_url) || '#')}"
+                  href="${esc(traubeSafeContentUrl(item.source_edital_url) || '#')}"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

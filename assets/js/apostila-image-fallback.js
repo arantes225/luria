@@ -30,7 +30,7 @@
     // the page is hydrating. Retry the reviewed asset once before hiding it.
     if (image.dataset.apostilaImageFallback === 'approved-source' &&
       /\.supabase\.co$/i.test(url.hostname) && /\/storage\/v1\/object\/public\//i.test(url.pathname)) {
-      url.searchParams.set('_luria_retry', String(Date.now()));
+      url.searchParams.set('_traube_retry', String(Date.now()));
       return url.href;
     }
     const explicitAlternative = image.dataset.apostilaFallbackUrl;

@@ -1,5 +1,5 @@
 {
-  "name": "luria-study-voice-worker",
+  "name": "traube-study-voice-worker",
   "private": true,
   "scripts": {
     "deploy:staging": "wrangler deploy --config wrangler.staging.toml",

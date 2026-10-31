@@ -14,7 +14,7 @@ const block=b=>{
   if(k==="p")return"<p>"+b[1]+"</p>";
   if(k==="2"||k==="3"||k==="4")return"<h"+k+">"+b[1]+"</h"+k+">";
   if(k==="u"||k==="o"){const tag=k==="u"?"ul":"ol",cl=b[2]?' class="'+b[2]+'"':"";return"<"+tag+cl+">"+b[1].map(x=>"<li>"+x+"</li>").join("")+"</"+tag+">"}
-  if(k==="t"){const cl=b[3]||"book-table";return'<div class="luria-table-scroll" role="region" tabindex="0" aria-label="Tabela de apoio"><table class="'+cl+'">'+(b[1]?.length?"<thead><tr>"+b[1].map(x=>"<th>"+x+"</th>").join("")+"</tr></thead>":"")+(b[2]?.length?"<tbody>"+b[2].map(r=>"<tr>"+r.map(x=>"<td>"+x+"</td>").join("")+"</tr>").join("")+"</tbody>":"")+"</table></div>"}
+  if(k==="t"){const cl=b[3]||"book-table";return'<div class="traube-table-scroll" role="region" tabindex="0" aria-label="Tabela de apoio"><table class="'+cl+'">'+(b[1]?.length?"<thead><tr>"+b[1].map(x=>"<th>"+x+"</th>").join("")+"</tr></thead>":"")+(b[2]?.length?"<tbody>"+b[2].map(r=>"<tr>"+r.map(x=>"<td>"+x+"</td>").join("")+"</tr>").join("")+"</tbody>":"")+"</table></div>"}
   return b[1]||"";
 };
 const article=data=>{
@@ -36,6 +36,6 @@ fetch(source,{credentials:"same-origin"}).then(r=>{if(!r.ok)throw Error("HTTP "+
  const p=d.p||d.pageTitle||d.t||d.title;
  document.getElementById("apostila-root").innerHTML='<div class="app-shell"><aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div><main class="main"><div class="page"><header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Apostila TRAUBE</span><h1>'+esc(p)+'</h1></div></header><section class="book-page"><aside class="book-outline" aria-label="Estrutura da apostila"><a class="book-outline-back" href="/apostilas/"><span aria-hidden="true">←</span> Voltar</a><div class="book-outline-head"><small>Apostila atual</small><strong>Estrutura do conteúdo</strong></div><nav class="book-outline-nav">'+outline(d)+'</nav></aside><article class="book-main">'+article(d)+"</article></section></div></main></div>";
  bind();
- for(const src of ["/assets/js/luria-brand-v5.js?v=12","/assets/vendor/supabase-2.110.6.js","/assets/js/supabase.js?v=auth4","/assets/js/app.js?v=20261004-global-shell-v74","/assets/js/pwa.js?v=6-apostilas-library-fix","/assets/js/apostila-tools.js?v=10-semantic-json"])await loadScript(src);
+ for(const src of ["/assets/js/traube-brand-v5.js?v=12","/assets/vendor/supabase-2.110.6.js","/assets/js/supabase.js?v=auth4","/assets/js/app.js?v=20261004-global-shell-v74","/assets/js/pwa.js?v=6-apostilas-library-fix","/assets/js/apostila-tools.js?v=10-semantic-json"])await loadScript(src);
 }).catch(err=>{document.getElementById("apostila-root").innerHTML='<main class="main"><div class="page"><section class="book-section"><h2>Apostila indisponível no momento</h2><p>Não foi possível carregar o conteúdo. Atualize a página para tentar novamente.</p></section></div></main>';console.error("[TRAUBE apostila renderer]",err)});
 })();

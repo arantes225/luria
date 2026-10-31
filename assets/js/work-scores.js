@@ -1074,8 +1074,8 @@
   for (const item of expansionScores) if (!scores.some(s=>s.id===item.id)) scores.push(item);
 
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
-  const favKey = "luria:scores:favorites";
-  const recentKey = "luria:scores:recent";
+  const favKey = "traube:scores:favorites";
+  const recentKey = "traube:scores:recent";
   let favorites = new Set(JSON.parse(localStorage.getItem(favKey)||"[]"));
   let recents = JSON.parse(localStorage.getItem(recentKey)||"[]");
   let activeCat = "Todos";

@@ -125,7 +125,7 @@
       if (cfg) url.searchParams.set(AREA_QUERY_KEY, cfg.id);
       else url.searchParams.delete(AREA_QUERY_KEY);
       const previousState = history.state && typeof history.state === "object" ? history.state : {};
-      const nextState = { ...previousState, luriaApostilasFromHall: Boolean(cfg) && !replace };
+      const nextState = { ...previousState, traubeApostilasFromHall: Boolean(cfg) && !replace };
       history[replace ? "replaceState" : "pushState"](nextState, "", url.pathname + url.search + url.hash);
     }
     syncScreens();
@@ -137,7 +137,7 @@
   function returnToHall() {
     // Uma navegação iniciada no próprio hall volta pelo histórico normal.
     // Links diretos de uma área, sem entrada anterior no hall, usam a URL canônica.
-    if (currentActiveArea && history.state?.luriaApostilasFromHall) {
+    if (currentActiveArea && history.state?.traubeApostilasFromHall) {
       history.back();
     } else {
       navigateToArea(null, { replace: true });

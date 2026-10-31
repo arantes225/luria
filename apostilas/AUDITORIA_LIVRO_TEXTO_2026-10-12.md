@@ -1,7 +1,7 @@
 # Auditoria inicial — conversão integral das Apostilas TRAUBE para livro-texto (12/10/2026)
 
 ## Escopo e situação verificada
-- Repositório canônico identificado: \`arantes225/luria\` (antigo \`arantes225/studyos\`).
+- Repositório canônico identificado: \`arantes225/traube\` (antigo \`arantes225/studyos\`).
 - **25 cadernos com conteúdo** localizados em \`apostilas/<slug>/index.html\` e/ou \`content.json\`.
 - **18 entradas com \`is_published=true\` na tabela \`public.apostilas\` do Supabase**; outras 7 pastas estão no GitHub, mas não constam no catálogo consultado. Isso não prova que estejam indisponíveis por rotas alternativas.
 - Banco de curadoria: **91 imagens em \`approved\` e 65 em \`pending\`**, em 12/10/2026. A aprovação não comprova, isoladamente, que a figura esteja sendo renderizada e acessível.

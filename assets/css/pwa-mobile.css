@@ -1582,7 +1582,7 @@
   }
 
   .pwa-standalone .brand-logo-single,
-  .pwa-standalone .luria-theme-logo,
+  .pwa-standalone .traube-theme-logo,
   .pwa-standalone .brand-logo-stack {
     width: 44px !important;
     height: 44px !important;
@@ -1717,7 +1717,7 @@
   }
 
   .pwa-standalone .brand-logo-single,
-  .pwa-standalone .luria-theme-logo,
+  .pwa-standalone .traube-theme-logo,
   .pwa-standalone .brand-logo-stack {
     width: 34px !important;
     height: 34px !important;
@@ -2431,10 +2431,10 @@
   }
 
   .pwa-standalone body[data-page="cronograma"] .brand-logo-single,
-  .pwa-standalone body[data-page="cronograma"] .luria-theme-logo,
+  .pwa-standalone body[data-page="cronograma"] .traube-theme-logo,
   .pwa-standalone body[data-page="cronograma"] .brand-logo-stack,
   .pwa-standalone body[data-page="estatisticas"] .brand-logo-single,
-  .pwa-standalone body[data-page="estatisticas"] .luria-theme-logo,
+  .pwa-standalone body[data-page="estatisticas"] .traube-theme-logo,
   .pwa-standalone body[data-page="estatisticas"] .brand-logo-stack {
     width: 54px !important;
     height: 54px !important;
@@ -3883,7 +3883,7 @@
   html.pwa-standalone body dialog,
   html.pwa-standalone body [class*="dialog"],
   html.pwa-standalone body [class*="modal"]{max-width:calc(100vw - 16px)!important;box-sizing:border-box!important}
-  html.pwa-standalone body .luria-notifications,
+  html.pwa-standalone body .traube-notifications,
   html.pwa-standalone body [class*="timer"],
   html.pwa-standalone body [class*="account-menu"]{z-index:500!important}
   html.pwa-standalone body[data-page="cronograma"] .planner-panel{overflow:visible!important}
@@ -4406,7 +4406,7 @@ body[data-page="cronograma"] .page #week-planner .week-dot{width:8px!important;h
  html body[data-page] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){min-width:0!important;max-width:100%!important;box-sizing:border-box!important}
  html body[data-page] .page>.topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){position:relative!important;inset:auto!important;transform:none!important;flex-wrap:wrap!important;height:auto!important;min-height:52px!important;max-width:100%!important}
  html body[data-page] .page>.topbar .page-heading{min-width:0!important}
- html body[data-page] .page>.topbar .luria-notifications{max-width:100%!important;flex-wrap:wrap!important}
+ html body[data-page] .page>.topbar .traube-notifications{max-width:100%!important;flex-wrap:wrap!important}
  html body[data-page="cronograma"] .page :is(.agenda-reference-layout,.agenda-bottom-grid){grid-template-columns:minmax(0,1fr)!important;min-width:0!important;height:auto!important;max-height:none!important;overflow:visible!important}
  html body[data-page="cronograma"] .page :is(.planner-panel,.agenda-side-card,.agenda-today-card){min-width:0!important;max-width:100%!important;height:auto!important;max-height:none!important;overflow:visible!important}
  html body[data-page="cronograma"] .page .planner-header{min-width:0!important;flex-wrap:wrap!important;gap:10px!important}
@@ -4461,8 +4461,8 @@ body[data-page="flashcards"].flash-review-session-active .page #review-launcher{
     margin:0!important;
   }
 
-  .pwa-standalone body .luria-page-spotlight,
-  html.pwa-standalone body .luria-page-spotlight {
+  .pwa-standalone body .traube-page-spotlight,
+  html.pwa-standalone body .traube-page-spotlight {
     width:100%!important;
     max-width:100%!important;
     height:auto!important;

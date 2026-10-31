@@ -68,7 +68,7 @@ module.exports.resources['configuracoes/flashcards/index.html'] = {
 for (const page of ['estatisticas.html', 'estatisticas/index.html']) {
   module.exports.resources[page] = {scriptSrc: ['https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js']};
 }
-for (const page of ['404.html', 'estudar/index.html', 'plantao/index.html', 'aplicar/editais/index.html', 'aplicar/vocacao/index.html', 'demo-avc.html', 'gestante-animada-v1.html', 'plantao/personagens-luria.html']) {
+for (const page of ['404.html', 'estudar/index.html', 'plantao/index.html', 'aplicar/editais/index.html', 'aplicar/vocacao/index.html', 'demo-avc.html', 'gestante-animada-v1.html', 'plantao/personagens-traube.html']) {
   module.exports.resources[page] = {noBackend: true};
 }
 // Retain the external portal's original prohibition on forms and WebSocket.

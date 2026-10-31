@@ -49,7 +49,7 @@ Se a referência do tema não existir, ler a mais próxima, indicar a limitaçã
 5. Abrir **Admin → Imagens para aprovação → Apostilas**; selecionar o arquivo JSON, importar, filtrar por apostila e aprovar ou rejeitar candidatas em grupos de até 25. Conferir autoria, licença, fidelidade clínica, legibilidade e tamanho antes de aprovar.
 6. A imagem inédita só aparece na apostila **após a aprovação** pelo fluxo existente. Na aprovação, o backend otimiza para no máximo **110 KiB** e coloca o item na seção selecionada. Imagem que já recebeu aprovação anterior pode reutilizar o arquivo previamente validado (regra existente da fila).
 7. Rodar `node scripts/audit-apostilas-60k.mjs --json`, `node scripts/audit-apostilas-batch.cjs --json` e `node scripts/check-syntax.cjs` para auditar o lote completo. Depois aplicar a **matriz de cobertura e o teste de resolução por conteúdo interno** definidos acima; a auditoria de comprimento e marcadores **não substitui revisão médica** nem comprova autossuficiência.
-8. Evitar alterações globais sem revisar CSS/PWA: `assets/css/apostila-luria-book.css` é compartilhado, e os conteúdos aprovados devem continuar acessíveis e legíveis no celular.
+8. Evitar alterações globais sem revisar CSS/PWA: `assets/css/apostila-traube-book.css` é compartilhado, e os conteúdos aprovados devem continuar acessíveis e legíveis no celular.
 
 ## Entrada JSON do gerador
 

@@ -18,7 +18,7 @@
  function remove(){
   cancelAnimationFrame(readyFrame);readyFrame=0;
   rig?.destroy();rig=null;canvas?.remove();canvas=null;current=-1;
-  scene.classList.remove('luria-original-patient');
+  scene.classList.remove('traube-original-patient');
  }
  function sync(){
   pending=0;
@@ -26,13 +26,13 @@
   const entry=groups.find(([pattern])=>pattern.test(src));
   if(!entry||/ambulancia|ambulance|\/plantao\/aph\//.test(src)){remove();return}
   const index=entry[1],config=window.TRAUBE_CHARACTERS[index];
-  const value=base.dataset.luriaRr;
+  const value=base.dataset.traubeRr;
   const rr=value!==undefined&&value!==''&&Number.isFinite(Number(value))?Number(value):17;
-  const eyes=base.dataset.luriaEyes||(/closed|fechad|dormindo|sleep/i.test(src)?'closed':'auto');
+  const eyes=base.dataset.traubeEyes||(/closed|fechad|dormindo|sleep/i.test(src)?'closed':'auto');
   const options={rr,eyes};
   if(current===index&&rig){rig.set(options);return}
   remove();current=index;
-  canvas=document.createElement('canvas');canvas.className='luria-original-canvas';canvas.hidden=true;
+  canvas=document.createElement('canvas');canvas.className='traube-original-canvas';canvas.hidden=true;
   canvas.setAttribute('role','img');canvas.setAttribute('aria-label',config.name+' com movimentos de olhos e respiração');
   canvas.dataset.characterId=config.id;
   canvas.addEventListener('patienterror',()=>{remove();console.error('Não foi possível carregar o personagem original.')},{once:true});
@@ -42,12 +42,12 @@
   function ready(){
    if(rig!==instance)return;
    if(!instance.ready){readyFrame=requestAnimationFrame(ready);return}
-   readyFrame=0;canvas.hidden=false;scene.classList.add('luria-original-patient');
+   readyFrame=0;canvas.hidden=false;scene.classList.add('traube-original-patient');
   }
   ready();
  }
  function queue(){if(!pending)pending=requestAnimationFrame(sync)}
- new MutationObserver(queue).observe(base,{attributes:true,attributeFilter:['src','data-luria-eyes','data-luria-rr']});
+ new MutationObserver(queue).observe(base,{attributes:true,attributeFilter:['src','data-traube-eyes','data-traube-rr']});
  base.addEventListener('load',queue);
  window.addEventListener('pagehide',remove);
  window.addEventListener('pageshow',queue);

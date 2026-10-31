@@ -115,10 +115,10 @@
  $('na-end').onclick=async()=>{if(await window.TraubeDialog.confirm('Encerrar esta atividade coletiva? Os registros existentes serão preservados.'))await act('end');};
  $('na-refresh').onclick=()=>refresh(true).then(()=>status('Biblioteca atualizada.')).catch(report);
  launcher.querySelectorAll('[data-native-open]').forEach(b=>b.onclick=()=>open(b.dataset.nativeOpen).catch(report));
- window.addEventListener('luria:room-rendered',()=>{if(currentRoom()!==room)bindRoom().catch(report);else refresh().catch(report);});
+ window.addEventListener('traube:room-rendered',()=>{if(currentRoom()!==room)bindRoom().catch(report);else refresh().catch(report);});
  for(const name of ['online','focus'])window.addEventListener(name,()=>{if(currentRoom())bindRoom().then(()=>refresh()).catch(report);});
  document.addEventListener('visibilitychange',()=>{if(!document.hidden&&currentRoom())bindRoom().then(()=>refresh()).catch(report);});
- window.addEventListener('luria:room-exit',clear);window.addEventListener('luria:owner-changed',clear);
- window.addEventListener('message',event=>{const frame=$('room-native-simulator'),data=event.data;if(event.origin!==location.origin||!frame||event.source!==frame.contentWindow||!['luria:room-clinical-session','luria:room-simulator-close'].includes(data?.type)||data.room_id!==room||activity?.kind!=='simulator'||data.case_id!==activity.case_id)return;if(data.type==='luria:room-simulator-close'){closeSimulator();return;}rpc(data.status==='discarded'?'simulation_leave':'simulation_join',{activity_id:activity.id,clinical_session_id:data.session_id}).then(()=>refresh()).catch(report);});
+ window.addEventListener('traube:room-exit',clear);window.addEventListener('traube:owner-changed',clear);
+ window.addEventListener('message',event=>{const frame=$('room-native-simulator'),data=event.data;if(event.origin!==location.origin||!frame||event.source!==frame.contentWindow||!['traube:room-clinical-session','traube:room-simulator-close'].includes(data?.type)||data.room_id!==room||activity?.kind!=='simulator'||data.case_id!==activity.case_id)return;if(data.type==='traube:room-simulator-close'){closeSimulator();return;}rpc(data.status==='discarded'?'simulation_leave':'simulation_join',{activity_id:activity.id,clinical_session_id:data.session_id}).then(()=>refresh()).catch(report);});
  window.TraubeNativeActivities={open};if(currentRoom())bindRoom().catch(report);
 })();

@@ -6,17 +6,17 @@ const path = require('node:path');
 const {ownerFixture,source,storage}=require('./fixtures/app-client.cjs');
 test('local clinical drafts isolate accounts and never adopt unknown legacy data',async()=>{
   const f=ownerFixture(),c=f.context;
-  c.localStorage.setItem('luria-prescription-draft-v1','UNKNOWN LEGACY');
+  c.localStorage.setItem('traube-prescription-draft-v1','UNKNOWN LEGACY');
   await c.TraubeLocalOwnerStore.ready;
   vm.runInContext(source('assets/js/clinical-bridge.js'),c);
   assert.equal(c.TraubeClinicalBridge.appendPrescription({text:'A PRIVATE'}),true);
-  assert.equal(c.TraubeLocalOwnerStore.read('luria-prescription-draft-v1'),'A PRIVATE');
+  assert.equal(c.TraubeLocalOwnerStore.read('traube-prescription-draft-v1'),'A PRIVATE');
   c.TraubeClinicalBridge.save({text:'A TRANSFER'});
   f.change('B');assert.equal(c.TraubeClinicalBridge.peek(),null);
-  assert.equal(c.TraubeLocalOwnerStore.read('luria-prescription-draft-v1'),null);
+  assert.equal(c.TraubeLocalOwnerStore.read('traube-prescription-draft-v1'),null);
   c.TraubeClinicalBridge.appendPrescription({text:'B PRIVATE'});
-  f.change('A');assert.equal(c.TraubeLocalOwnerStore.read('luria-prescription-draft-v1'),'A PRIVATE');
-  assert.equal(c.localStorage.getItem('luria-prescription-draft-v1'),'UNKNOWN LEGACY');
+  f.change('A');assert.equal(c.TraubeLocalOwnerStore.read('traube-prescription-draft-v1'),'A PRIVATE');
+  assert.equal(c.localStorage.getItem('traube-prescription-draft-v1'),'UNKNOWN LEGACY');
   f.change(null);assert.equal(c.TraubeClinicalBridge.appendPrescription({text:'SIGNED OUT'}),false);
 });
 test('each PDF loader explicitly disables PDF.js evaluation',()=>{

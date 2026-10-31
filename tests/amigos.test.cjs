@@ -33,7 +33,7 @@ test('Integridade e estrutura da aba e página Amigos', () => {
 
   // 4. Ausência de artifícios que quebram o layout
   assert(!contentIndex.includes('amigos-lumina-redesign'), 'Não deve conter estilo inline conflitante amigos-lumina-redesign');
-  assert(!contentIndex.includes('luria-back-button'), 'Não deve conter botões artificiais de voltar');
+  assert(!contentIndex.includes('traube-back-button'), 'Não deve conter botões artificiais de voltar');
 
   // 5. Verificação nos arquivos CSS para garantir que a navegação de abas não está oculta
   const socialFriendsCss = fs.readFileSync(path.join(__dirname, '..', 'assets', 'css', 'social-friends.css'), 'utf8');

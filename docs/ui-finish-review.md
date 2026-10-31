@@ -8,7 +8,7 @@ Base: `12323159`. Revisão local iniciada em 20/10/2026, sem alterações preexi
 
 | Ambiente | Rotas inspecionadas |
 | --- | --- |
-| Estudos | `/dashboard/`, `/cronograma/`, `/aprender/`, `/consolidar/`, `/flashcards/`, `/caderno-erros/`, `/caderno/`, `/questoes-simulados/`, `/estatisticas/`, `/configuracoes/`, `/configuracoes/flashcards/`, `/desafio-diario/`, `/apostilas/`, `/professor-alex/`, `/editais/`, `/aplicar/`, `/amigos/`, `/jogos/`, `/plantao/luriazap/`, `/plantao/sala-emergencia/` |
+| Estudos | `/dashboard/`, `/cronograma/`, `/aprender/`, `/consolidar/`, `/flashcards/`, `/caderno-erros/`, `/caderno/`, `/questoes-simulados/`, `/estatisticas/`, `/configuracoes/`, `/configuracoes/flashcards/`, `/desafio-diario/`, `/apostilas/`, `/professor-alex/`, `/editais/`, `/aplicar/`, `/amigos/`, `/jogos/`, `/plantao/traubezap/`, `/plantao/sala-emergencia/` |
 | Trabalho | `/trabalho/`, `/trabalho/calculadora/`, `/trabalho/scores/`, `/trabalho/passometro/`, `/trabalho/prontuario-rapido/`, `/trabalho/bulario/`, `/trabalho/prescricao/`, `/trabalho/diagnostico/`, `/trabalho/gestor-plantoes/`, `/trabalho/financeiro/`, `/trabalho/divisor-plantao/`, `/trabalho/plantoes/`, `/trabalho/fluidos-eletrólitos/`, `/trabalho/pcr/`, `/trabalho/pcr/executar/`, `/trabalho/pcr/historico/` |
 | Administração/público | `/admin/` (Métricas e Planos), `/`, `/login/` (incluindo validação de cadastro sem preencher/enviar credenciais) |
 

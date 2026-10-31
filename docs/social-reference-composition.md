@@ -2,7 +2,7 @@
 
 Branch: codex/social-reference-composition.
 Checkpoint reversível: 88bbee63. Árvore de trabalho versionada estava limpa antes desta rodada; arquivos não versionados de outros trabalhos foram preservados e não fazem parte da entrega.
-Homologação: https://luria-homologacao.lfab225.workers.dev/amigos/
+Homologação: https://traube-homologacao.lfab225.workers.dev/amigos/
 Versão publicada: 55d28d14-c3ab-458d-a35d-e1875407ee7a.
 Produção não foi alterada nesta rodada. A aprovação anterior de produção não foi reaproveitada para este novo desenho.
 

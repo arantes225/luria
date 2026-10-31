@@ -1,4 +1,4 @@
-@layer luria-ui-education {
+@layer traube-ui-education {
 body[data-ui="v2"][data-page="amigos"].social-composition {
  .na-icon {width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
  .na-launchers {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;}

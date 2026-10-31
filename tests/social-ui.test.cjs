@@ -10,8 +10,8 @@ async function fixture(t){
    if(name==='social_room_features')return f.features(args.p_action,args.p_payload);
    if(name==='social_command'){if(fails&&args.p_action==='send_message')throw new Error('Envio interrompido');return f.command(args.p_action,args.p_payload);}
    if(name==='my_friends')return (await f.db.query('select * from private.my_friends()')).rows;
-   if(name==='lookup_luria_user')return (await f.db.query('select * from private.lookup_luria_user($1)',[args.p_luria_id])).rows;
-   if(name==='add_friend_by_luria_id')return (await f.db.query('select private.add_friend_by_luria_id($1) id',[args.p_luria_id])).rows[0].id;
+   if(name==='lookup_traube_user')return (await f.db.query('select * from private.lookup_traube_user($1)',[args.p_traube_id])).rows;
+   if(name==='add_friend_by_traube_id')return (await f.db.query('select private.add_friend_by_traube_id($1) id',[args.p_traube_id])).rows[0].id;
    if(name==='remove_friend'){await f.db.query('delete from public.friendships where user_id=$1 and friend_user_id=$2',[A,args.p_friend_user_id]);return null;}
    return [];
   });queue=work.catch(()=>{});return work.then(data=>({data,error:null}),error=>({data:null,error:{message:error.message}}));
@@ -21,7 +21,7 @@ async function fixture(t){
  w.TraubeVoice={leave:async()=>{},mute(){},join:async()=>{},sync:async()=>{}};
  w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};w.HTMLDialogElement.prototype.close=function(){this.open=false;};
  w.supabaseClient={rpc:dispatch,realtime:{setAuth:async()=>{}},auth:{getSession:async()=>({data:{session:{access_token:'test'}}})},
-  from:()=>({select(){return this;},eq(){return this;},maybeSingle:async()=>({data:{luria_id:'OWNER001',studyrat_variant:'blue'},error:null})}),
+  from:()=>({select(){return this;},eq(){return this;},maybeSingle:async()=>({data:{traube_id:'OWNER001',studyrat_variant:'blue'},error:null})}),
   channel:(name,config)=>{const c={name,config,handlers:[],on(type,filter,handler){this.handlers.push({type,filter,handler});return this;},subscribe(handler){this.subscriber=handler;return this;},track:async()=>{},presenceState:()=>({}),send:async()=>{}};channels.push(c);return c;},removeChannel:async()=>{}
  };
  w.eval(read('assets/js/studyrats.js'));w.eval(read('assets/js/amigos.js'));w.eval(read('assets/js/community-navigation.js'));w.eval(read('assets/js/social-rooms.js'));w.eval(read('assets/js/social-view.js'));
@@ -36,7 +36,7 @@ test('social UI persists actual rooms and messages through RPCs, never local dem
  const form=d.getElementById('social-dialog-form');form.elements.name.value='Turma <script>alert(1)</script>';form.elements.visibility.value='public';form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await x.settle();
  const state=w.TraubeSocial.getState();assert(state.room.id);assert.equal(d.getElementById('social-dialog').open,false);assert.equal(d.getElementById('community-rooms-panel').hidden,false);assert.equal(d.getElementById('social-room').hidden,false);
  assert.equal(d.getElementById('social-room-title').querySelector('script'),null);assert.match(d.getElementById('social-room-title').textContent,/<script>/);
- assert.equal(w.localStorage.getItem('luria:study-rooms'),null);assert.equal(x.channels.find(c=>c.name.startsWith('study-room:')).config.config.private,true);
+ assert.equal(w.localStorage.getItem('traube:study-rooms'),null);assert.equal(x.channels.find(c=>c.name.startsWith('study-room:')).config.config.private,true);
  const input=d.getElementById('social-message-text');input.value='<img src=x onerror=alert(1)> https://example.com @Bruno';d.getElementById('social-message-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();
  assert.equal(d.querySelector('#social-messages img'),null);assert.match(d.getElementById('social-messages').textContent,/<img/);assert.equal(d.querySelector('#social-messages a').rel,'noopener noreferrer');
  await f.as(A);assert.equal((await f.command('messages',{room_id:state.room.id})).length,1);
@@ -58,7 +58,7 @@ test('social UI preserves failed drafts and isolates them by account and room',a
  d.getElementById('social-message-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();assert.equal(input.value,'Mensagem importante');assert.match(d.getElementById('social-send-status').textContent,/rascunho/);
  x.fail(false);d.getElementById('social-message-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();
  const sends=x.calls.filter(c=>c.name==='social_command'&&c.args.p_action==='send_message');assert.equal(sends.length,2);assert.equal(sends[0].args.p_payload.client_id,sends[1].args.p_payload.client_id);assert.equal(input.value,'');
- w.TraubeLocalOwnerStore={ownerId:B};w.dispatchEvent(new w.Event('luria:owner-changed'));await x.settle();assert.equal(w.TraubeSocial.getState(),null);assert.equal(d.getElementById('social-messages').textContent,'');
+ w.TraubeLocalOwnerStore={ownerId:B};w.dispatchEvent(new w.Event('traube:owner-changed'));await x.settle();assert.equal(w.TraubeSocial.getState(),null);assert.equal(d.getElementById('social-messages').textContent,'');
 });
 
 test('visual mode controls and modal agenda preserve the room channel and confirmed persisted state',async t=>{

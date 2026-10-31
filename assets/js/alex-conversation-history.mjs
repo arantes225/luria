@@ -1,5 +1,5 @@
 // Session-only continuity: scoped by Supabase user and browser tab.
-const PREFIX = 'luria:alex:conversation:v1:';
+const PREFIX = 'traube:alex:conversation:v1:';
 const MAX_MESSAGES = 12;
 const MAX_CHARS = 1800;
 const TTL = 12 * 60 * 60 * 1000;

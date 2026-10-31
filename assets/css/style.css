@@ -1343,7 +1343,7 @@ body.sidebar-collapsed .nav-group-label .nav-group-chevron,
 body.sidebar-collapsed .nav-submenu,
 body.sidebar-collapsed .sidebar-footer { display:none !important; }
 body.sidebar-collapsed .brand-logo-single,
-body.sidebar-collapsed .luria-theme-logo { width:52px !important; height:52px !important; flex-basis:52px !important; }
+body.sidebar-collapsed .traube-theme-logo { width:52px !important; height:52px !important; flex-basis:52px !important; }
 body.sidebar-collapsed .nav-link,
 body.sidebar-collapsed .nav-group-label { justify-content:center; padding-inline:0; }
 body.sidebar-collapsed .nav-icon { font-size:18px; }
@@ -2410,33 +2410,33 @@ input[type="file"]:focus-visible::file-selector-button {
    ========================================================= */
 
 :root {
-  --luria-pattern-image: url("../img/logos/logo-icone-original.png?v=pattern4");
-  --luria-pattern-size: 138px;
-  --luria-pattern-opacity: 0.020;
+  --traube-pattern-image: url("../img/logos/logo-icone-original.png?v=pattern4");
+  --traube-pattern-size: 138px;
+  --traube-pattern-opacity: 0.020;
 }
 
 :root[data-theme="dark"] {
-  --luria-pattern-image: url("../img/logos/logo-icone-azul-claro.png?v=pattern4");
-  --luria-pattern-opacity: 0.028;
+  --traube-pattern-image: url("../img/logos/logo-icone-azul-claro.png?v=pattern4");
+  --traube-pattern-opacity: 0.028;
 }
 
 :root[data-theme="leila-mood"] {
-  --luria-pattern-image: url("../img/logos/logo-icone-rosa-escuro.png?v=pattern4");
-  --luria-pattern-opacity: 0.024;
+  --traube-pattern-image: url("../img/logos/logo-icone-rosa-escuro.png?v=pattern4");
+  --traube-pattern-opacity: 0.024;
 }
 
 /* Login mantém o padrão um pouco mais presente, como na versão aprovada. */
 body.auth-page {
-  --luria-pattern-size: 112px;
-  --luria-pattern-opacity: 0.032;
+  --traube-pattern-size: 112px;
+  --traube-pattern-opacity: 0.032;
 }
 
 :root[data-theme="dark"] body.auth-page {
-  --luria-pattern-opacity: 0.040;
+  --traube-pattern-opacity: 0.040;
 }
 
 :root[data-theme="leila-mood"] body.auth-page {
-  --luria-pattern-opacity: 0.034;
+  --traube-pattern-opacity: 0.034;
 }
 
 body {
@@ -2452,25 +2452,25 @@ body::after {
   inset: -14%;
   z-index: 0;
   pointer-events: none;
-  background-image: var(--luria-pattern-image);
+  background-image: var(--traube-pattern-image);
   background-repeat: repeat;
   background-size:
-    var(--luria-pattern-size)
-    var(--luria-pattern-size);
+    var(--traube-pattern-size)
+    var(--traube-pattern-size);
   transform: rotate(-8deg) scale(1.08);
   transform-origin: center;
 }
 
 body::before {
   background-position: 0 0;
-  opacity: var(--luria-pattern-opacity);
+  opacity: var(--traube-pattern-opacity);
 }
 
 body::after {
   background-position:
-    calc(var(--luria-pattern-size) / 2)
-    calc(var(--luria-pattern-size) / 2);
-  opacity: var(--luria-pattern-opacity);
+    calc(var(--traube-pattern-size) / 2)
+    calc(var(--traube-pattern-size) / 2);
+  opacity: var(--traube-pattern-opacity);
 }
 
 /* Mantém o conteúdo acima do pattern sem alterar o layout.
@@ -2503,21 +2503,21 @@ body > footer {
 
 @media (max-width: 760px) {
   :root {
-    --luria-pattern-size: 118px;
-    --luria-pattern-opacity: 0.017;
+    --traube-pattern-size: 118px;
+    --traube-pattern-opacity: 0.017;
   }
 
   body.auth-page {
-    --luria-pattern-size: 96px;
-    --luria-pattern-opacity: 0.028;
+    --traube-pattern-size: 96px;
+    --traube-pattern-opacity: 0.028;
   }
 
   :root[data-theme="dark"] body.auth-page {
-    --luria-pattern-opacity: 0.036;
+    --traube-pattern-opacity: 0.036;
   }
 
   :root[data-theme="leila-mood"] body.auth-page {
-    --luria-pattern-opacity: 0.030;
+    --traube-pattern-opacity: 0.030;
   }
 }
 
@@ -2531,14 +2531,14 @@ body > footer {
   position: relative;
 }
 
-.luria-notifications {
+.traube-notifications {
   position: relative;
   margin-left: auto;
   flex: 0 0 auto;
   z-index: 140;
 }
 
-.luria-notification-toggle {
+.traube-notification-toggle {
   position: relative;
   width: 40px;
   height: 40px;
@@ -2557,14 +2557,14 @@ body > footer {
     transform 150ms ease;
 }
 
-.luria-notification-toggle:hover,
-.luria-notification-toggle[aria-expanded="true"] {
+.traube-notification-toggle:hover,
+.traube-notification-toggle[aria-expanded="true"] {
   border-color: var(--accent);
   background: var(--accent-soft);
   color: var(--accent);
 }
 
-.luria-notification-toggle:active {
+.traube-notification-toggle:active {
   transform: scale(.96);
 }
 
@@ -2590,7 +2590,7 @@ body > footer {
   color: var(--accent);
 }
 
-.luria-notification-toggle svg {
+.traube-notification-toggle svg {
   width: 24.7px;
   height: 24.7px;
   fill: none;
@@ -2600,7 +2600,7 @@ body > footer {
   stroke-linejoin: round;
 }
 
-.luria-notification-badge {
+.traube-notification-badge {
   position: absolute;
   top: -5px;
   right: -5px;
@@ -2619,11 +2619,11 @@ body > footer {
   line-height: 1;
 }
 
-.luria-notification-badge[hidden] {
+.traube-notification-badge[hidden] {
   display: none !important;
 }
 
-.luria-notification-panel {
+.traube-notification-panel {
   position: absolute;
   top: calc(100% + 9px);
   right: 0;
@@ -2638,11 +2638,11 @@ body > footer {
     0 2px 8px rgba(15, 23, 42, .06);
 }
 
-.luria-notification-panel[hidden] {
+.traube-notification-panel[hidden] {
   display: none !important;
 }
 
-.luria-notification-head {
+.traube-notification-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2658,23 +2658,23 @@ body > footer {
     );
 }
 
-.luria-notification-head strong,
-.luria-notification-head small {
+.traube-notification-head strong,
+.traube-notification-head small {
   display: block;
 }
 
-.luria-notification-head strong {
+.traube-notification-head strong {
   font-size: 13px;
   font-weight: 880;
 }
 
-.luria-notification-head small {
+.traube-notification-head small {
   margin-top: 3px;
   color: var(--muted);
   font-size: 9px;
 }
 
-.luria-notification-read-all {
+.traube-notification-read-all {
   padding: 0;
   border: 0;
   background: transparent;
@@ -2685,17 +2685,17 @@ body > footer {
   white-space: nowrap;
 }
 
-.luria-notification-read-all[hidden] {
+.traube-notification-read-all[hidden] {
   display: none !important;
 }
 
-.luria-notification-list {
+.traube-notification-list {
   max-height: min(470px, calc(100vh - 195px));
   overflow-y: auto;
   overscroll-behavior: contain;
 }
 
-.luria-notification-item {
+.traube-notification-item {
   position: relative;
   display: grid;
   grid-template-columns: 36px minmax(0, 1fr) auto;
@@ -2708,11 +2708,11 @@ body > footer {
   transition: background 130ms ease;
 }
 
-.luria-notification-item:hover {
+.traube-notification-item:hover {
   background: var(--surface-2);
 }
 
-.luria-notification-item.unread {
+.traube-notification-item.unread {
   background:
     color-mix(
       in srgb,
@@ -2721,7 +2721,7 @@ body > footer {
     );
 }
 
-.luria-notification-item.unread:hover {
+.traube-notification-item.unread:hover {
   background:
     color-mix(
       in srgb,
@@ -2730,7 +2730,7 @@ body > footer {
     );
 }
 
-.luria-notification-icon {
+.traube-notification-icon {
   width: 34px;
   height: 34px;
   display: grid;
@@ -2748,17 +2748,17 @@ body > footer {
   font-weight: 900;
 }
 
-.luria-notification-copy {
+.traube-notification-copy {
   min-width: 0;
 }
 
-.luria-notification-copy strong,
-.luria-notification-copy span,
-.luria-notification-copy small {
+.traube-notification-copy strong,
+.traube-notification-copy span,
+.traube-notification-copy small {
   display: block;
 }
 
-.luria-notification-copy strong {
+.traube-notification-copy strong {
   overflow: hidden;
   font-size: 11px;
   font-weight: 850;
@@ -2767,14 +2767,14 @@ body > footer {
   white-space: nowrap;
 }
 
-.luria-notification-copy span {
+.traube-notification-copy span {
   margin-top: 3px;
   color: var(--muted);
   font-size: 9px;
   line-height: 1.45;
 }
 
-.luria-notification-copy small {
+.traube-notification-copy small {
   margin-top: 5px;
   color:
     color-mix(
@@ -2786,7 +2786,7 @@ body > footer {
   font-weight: 720;
 }
 
-.luria-notification-unread-dot {
+.traube-notification-unread-dot {
   width: 7px;
   height: 7px;
   margin-top: 6px;
@@ -2794,8 +2794,8 @@ body > footer {
   background: var(--accent);
 }
 
-.luria-notification-empty,
-.luria-notification-loading {
+.traube-notification-empty,
+.traube-notification-loading {
   min-height: 128px;
   display: grid;
   place-items: center;
@@ -2807,17 +2807,17 @@ body > footer {
   text-align: center;
 }
 
-.luria-notification-empty strong {
+.traube-notification-empty strong {
   color: var(--text);
   font-size: 11px;
 }
 
-.luria-notification-empty span {
+.traube-notification-empty span {
   max-width: 240px;
   line-height: 1.45;
 }
 
-.luria-notification-footer {
+.traube-notification-footer {
   min-height: 39px;
   display: flex;
   align-items: center;
@@ -2830,22 +2830,22 @@ body > footer {
   text-decoration: none;
 }
 
-.luria-notification-footer:hover {
+.traube-notification-footer:hover {
   background: var(--accent-soft);
 }
 
 @media (max-width: 760px) {
-  .luria-notifications {
+  .traube-notifications {
     margin-left: auto;
   }
 
-  .luria-notification-toggle {
+  .traube-notification-toggle {
     width: 38px;
     height: 38px;
     border-radius: 10px;
   }
 
-  .luria-notification-panel {
+  .traube-notification-panel {
     position: fixed;
     top:
       calc(
@@ -2864,7 +2864,7 @@ body > footer {
     border-radius: 14px;
   }
 
-  .luria-notification-list {
+  .traube-notification-list {
     max-height:
       calc(
         100dvh
@@ -2921,7 +2921,7 @@ body > footer {
 /* =========================================================
    TRAUBE — DIÁLOGOS GLOBAIS
    ========================================================= */
-.luria-global-dialog{
+.traube-global-dialog{
   width:min(430px,calc(100vw - 28px));
   padding:0;
   border:0;
@@ -2930,12 +2930,12 @@ body > footer {
   color:var(--text);
   overflow:visible;
 }
-.luria-global-dialog::backdrop{
+.traube-global-dialog::backdrop{
   background:rgba(10,18,32,.48);
   backdrop-filter:blur(5px);
   -webkit-backdrop-filter:blur(5px);
 }
-.luria-global-dialog-card{
+.traube-global-dialog-card{
   display:grid;
   grid-template-columns:42px minmax(0,1fr);
   gap:14px;
@@ -2945,47 +2945,47 @@ body > footer {
   background:var(--surface);
   box-shadow:0 24px 70px rgba(15,23,42,.22),0 4px 16px rgba(15,23,42,.08);
 }
-.luria-global-dialog-icon{
+.traube-global-dialog-icon{
   width:42px;height:42px;display:grid;place-items:center;
   border-radius:13px;
   background:var(--accent-soft);
   color:var(--accent);
   font-size:17px;font-weight:900;
 }
-.luria-global-dialog-copy{min-width:0;padding-top:1px}
-.luria-global-dialog-eyebrow{
+.traube-global-dialog-copy{min-width:0;padding-top:1px}
+.traube-global-dialog-eyebrow{
   display:block;margin-bottom:3px;color:var(--accent);
   font-size:8px;font-weight:900;letter-spacing:.14em;
 }
-.luria-global-dialog-title{
+.traube-global-dialog-title{
   margin:0;color:var(--text);font-size:16px;font-weight:900;line-height:1.25;
 }
-.luria-global-dialog-message{
+.traube-global-dialog-message{
   margin:7px 0 0;color:var(--muted);font-size:11px;line-height:1.55;
   white-space:pre-line;
 }
-.luria-global-dialog-prompt{
+.traube-global-dialog-prompt{
   grid-column:1/-1;display:grid;gap:6px;color:var(--muted);
   font-size:9px;font-weight:800;
 }
-.luria-global-dialog-prompt[hidden]{display:none!important}
-.luria-global-dialog-input{
+.traube-global-dialog-prompt[hidden]{display:none!important}
+.traube-global-dialog-input{
   width:100%;min-height:42px;padding:0 12px;
   border:1px solid var(--border);border-radius:11px;
   background:var(--surface);color:var(--text);font:inherit;font-size:12px;outline:none;
 }
-.luria-global-dialog-input:focus{
+.traube-global-dialog-input:focus{
   border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft);
 }
-.luria-global-dialog-actions{
+.traube-global-dialog-actions{
   grid-column:1/-1;display:flex;justify-content:flex-end;gap:8px;margin-top:4px;
 }
-.luria-global-dialog-actions .button{min-width:92px}
+.traube-global-dialog-actions .button{min-width:92px}
 @media(max-width:520px){
-  .luria-global-dialog-card{grid-template-columns:36px minmax(0,1fr);padding:17px;gap:11px}
-  .luria-global-dialog-icon{width:36px;height:36px;border-radius:11px}
-  .luria-global-dialog-actions{display:grid;grid-template-columns:1fr 1fr}
-  .luria-global-dialog-actions .button{width:100%}
+  .traube-global-dialog-card{grid-template-columns:36px minmax(0,1fr);padding:17px;gap:11px}
+  .traube-global-dialog-icon{width:36px;height:36px;border-radius:11px}
+  .traube-global-dialog-actions{display:grid;grid-template-columns:1fr 1fr}
+  .traube-global-dialog-actions .button{width:100%}
 }
 
 
@@ -3051,7 +3051,7 @@ body[data-page="dashboard"] .calendar-add-event {
 /* =========================================================
    TRAUBE — CALENDÁRIO
    ========================================================= */
-.luria-calendar{
+.traube-calendar{
   position:fixed;
   z-index:100000;
   padding:13px;
@@ -3062,44 +3062,44 @@ body[data-page="dashboard"] .calendar-add-event {
   box-shadow:0 22px 60px rgba(15,23,42,.20),0 4px 14px rgba(15,23,42,.08);
   user-select:none;
 }
-.luria-calendar[hidden]{display:none!important}
-.luria-calendar-head{
+.traube-calendar[hidden]{display:none!important}
+.traube-calendar-head{
   display:grid;grid-template-columns:34px 1fr 34px;align-items:center;gap:7px;margin-bottom:11px;
 }
-.luria-calendar-head strong{
+.traube-calendar-head strong{
   text-align:center;text-transform:capitalize;font-size:12px;font-weight:900;
 }
-.luria-calendar-head button{
+.traube-calendar-head button{
   width:34px;height:34px;border:1px solid var(--border);border-radius:10px;
   background:var(--surface);color:var(--text);font:inherit;font-size:19px;cursor:pointer;
 }
-.luria-calendar-head button:hover{
+.traube-calendar-head button:hover{
   border-color:var(--accent);background:var(--accent-soft);color:var(--accent);
 }
-.luria-calendar-weekdays,.luria-calendar-days{
+.traube-calendar-weekdays,.traube-calendar-days{
   display:grid;grid-template-columns:repeat(7,1fr);gap:4px;
 }
-.luria-calendar-weekdays{margin-bottom:5px}
-.luria-calendar-weekdays span{
+.traube-calendar-weekdays{margin-bottom:5px}
+.traube-calendar-weekdays span{
   text-align:center;color:var(--muted);font-size:7.5px;font-weight:900;text-transform:uppercase;
 }
-.luria-calendar-days button{
+.traube-calendar-days button{
   aspect-ratio:1;border:0;border-radius:9px;background:transparent;color:var(--text);
   font:inherit;font-size:10px;font-weight:750;cursor:pointer;
 }
-.luria-calendar-days button:hover{
+.traube-calendar-days button:hover{
   background:var(--accent-soft);color:var(--accent);
 }
-.luria-calendar-days button.is-today{
+.traube-calendar-days button.is-today{
   box-shadow:inset 0 0 0 1.5px var(--accent);color:var(--accent);
 }
-.luria-calendar-days button.is-selected{
+.traube-calendar-days button.is-selected{
   background:var(--accent);color:var(--surface);box-shadow:0 5px 12px color-mix(in srgb,var(--accent) 25%,transparent);
 }
-.luria-calendar-foot{
+.traube-calendar-foot{
   display:flex;justify-content:space-between;gap:8px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);
 }
-.luria-calendar-foot button{
+.traube-calendar-foot button{
   border:0;background:transparent;color:var(--accent);font:inherit;font-size:9px;font-weight:900;cursor:pointer;
 }
 input[type="date"]{
@@ -3110,13 +3110,13 @@ input[type="date"]::-webkit-calendar-picker-indicator{
   cursor:pointer;
 }
 @media(max-width:520px){
-  .luria-calendar{padding:12px;border-radius:15px}
-  .luria-calendar-days button{font-size:11px}
+  .traube-calendar{padding:12px;border-radius:15px}
+  .traube-calendar-days button{font-size:11px}
 }
 
 
 /* Calendário TRAUBE — acabamento visual do tema */
-.luria-calendar{
+.traube-calendar{
   border-radius:18px!important;
   background:var(--surface)!important;
   color:var(--text)!important;
@@ -3125,77 +3125,77 @@ input[type="date"]::-webkit-calendar-picker-indicator{
   box-shadow:0 20px 55px color-mix(in srgb,var(--text) 16%,transparent)!important;
   overflow:hidden;
 }
-.luria-calendar,
-.luria-calendar button,
-.luria-calendar span,
-.luria-calendar strong{
+.traube-calendar,
+.traube-calendar button,
+.traube-calendar span,
+.traube-calendar strong{
   font-family:inherit!important;
 }
-.luria-calendar-head{
+.traube-calendar-head{
   margin:-13px -13px 11px;
   padding:13px 13px 10px;
   background:color-mix(in srgb,var(--accent) 7%,var(--surface));
   border-bottom:1px solid var(--border);
 }
-.luria-calendar-head strong{
+.traube-calendar-head strong{
   color:var(--text);
   font-size:12px;
   font-weight:900;
 }
-.luria-calendar-head button{
+.traube-calendar-head button{
   border-radius:10px!important;
   background:var(--surface)!important;
   border:1px solid var(--border)!important;
   color:var(--accent)!important;
 }
-.luria-calendar-head button:hover{
+.traube-calendar-head button:hover{
   background:var(--accent-soft)!important;
   border-color:var(--accent)!important;
 }
-.luria-calendar-weekdays span{
+.traube-calendar-weekdays span{
   color:var(--muted)!important;
   font-size:8px!important;
   letter-spacing:.03em;
 }
-.luria-calendar-days button{
+.traube-calendar-days button{
   border-radius:10px!important;
   color:var(--text)!important;
   background:transparent!important;
 }
-.luria-calendar-days button:hover{
+.traube-calendar-days button:hover{
   background:var(--accent-soft)!important;
   color:var(--accent)!important;
 }
-.luria-calendar-days button.is-today{
+.traube-calendar-days button.is-today{
   color:var(--accent)!important;
   box-shadow:inset 0 0 0 1.5px var(--accent)!important;
 }
-.luria-calendar-days button.is-selected{
+.traube-calendar-days button.is-selected{
   background:var(--accent)!important;
   color:var(--surface)!important;
   box-shadow:0 5px 13px color-mix(in srgb,var(--accent) 28%,transparent)!important;
 }
-.luria-calendar-foot{
+.traube-calendar-foot{
   margin:11px -13px -13px;
   padding:10px 13px 12px;
   background:color-mix(in srgb,var(--accent) 4%,var(--surface));
   border-top:1px solid var(--border);
 }
-.luria-calendar-foot button{
+.traube-calendar-foot button{
   padding:6px 8px;
   border-radius:8px;
   color:var(--accent)!important;
   font-weight:900;
 }
-.luria-calendar-foot button:hover{
+.traube-calendar-foot button:hover{
   background:var(--accent-soft);
 }
 
-.luria-global-dialog-icon{
+.traube-global-dialog-icon{
   overflow:hidden;
   padding:7px;
 }
-.luria-global-dialog-logo{
+.traube-global-dialog-logo{
   display:block;
   width:100%;
   height:100%;
@@ -3203,7 +3203,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 
 /* Calendário dentro de modal: mantém o picker acima do conteúdo do dialog */
-dialog[open] > .luria-calendar{
+dialog[open] > .traube-calendar{
   z-index:2147483647!important;
 }
 dialog[open]{
@@ -3211,24 +3211,24 @@ dialog[open]{
 }
 
 /* Calendário responsivo: não permitir min-content dos botões expandir a grade. */
-.luria-calendar{
+.traube-calendar{
   box-sizing:border-box!important;
   min-width:0!important;
   max-width:calc(100vw - 24px)!important;
 }
-.luria-calendar .luria-calendar-weekdays,
-.luria-calendar .luria-calendar-days{
+.traube-calendar .traube-calendar-weekdays,
+.traube-calendar .traube-calendar-days{
   display:grid!important;
   width:100%;
   min-width:0!important;
   grid-template-columns:repeat(7,minmax(0,1fr))!important;
 }
-.luria-calendar .luria-calendar-weekdays span{
+.traube-calendar .traube-calendar-weekdays span{
   min-width:0!important;
   overflow:hidden;
 }
-.luria-calendar .luria-calendar-days button,
-body[data-page="cronograma"] .luria-calendar .luria-calendar-days button{
+.traube-calendar .traube-calendar-days button,
+body[data-page="cronograma"] .traube-calendar .traube-calendar-days button{
   box-sizing:border-box!important;
   min-width:0!important;
   min-height:0!important;
@@ -3239,16 +3239,16 @@ body[data-page="cronograma"] .luria-calendar .luria-calendar-days button{
   border:0!important;
 }
 @media(max-width:520px){
-  .luria-calendar{padding:10px!important;}
-  .luria-calendar .luria-calendar-head{margin:-10px -10px 8px!important;padding:10px!important;}
-  .luria-calendar .luria-calendar-foot{margin:8px -10px -10px!important;padding:8px 10px!important;}
-  .luria-calendar .luria-calendar-days,
-  .luria-calendar .luria-calendar-weekdays{gap:3px!important;}
+  .traube-calendar{padding:10px!important;}
+  .traube-calendar .traube-calendar-head{margin:-10px -10px 8px!important;padding:10px!important;}
+  .traube-calendar .traube-calendar-foot{margin:8px -10px -10px!important;padding:8px 10px!important;}
+  .traube-calendar .traube-calendar-days,
+  .traube-calendar .traube-calendar-weekdays{gap:3px!important;}
 }
 
 
 /* TRAUBE — seletor de hora do Adicionar evento */
-.luria-time-picker{
+.traube-time-picker{
   position:fixed;
   z-index:100001;
   padding:13px;
@@ -3260,67 +3260,67 @@ body[data-page="cronograma"] .luria-calendar .luria-calendar-days button{
   font-family:inherit;
   user-select:none;
 }
-.luria-time-picker[hidden]{display:none!important}
-.luria-time-picker-head{
+.traube-time-picker[hidden]{display:none!important}
+.traube-time-picker-head{
   display:flex;align-items:center;justify-content:space-between;gap:10px;
   margin:-13px -13px 12px;padding:13px;
   background:color-mix(in srgb,var(--accent) 7%,var(--surface));
   border-bottom:1px solid var(--border);
 }
-.luria-time-picker-head strong{font-size:12px;font-weight:900}
-.luria-time-picker-head button{
+.traube-time-picker-head strong{font-size:12px;font-weight:900}
+.traube-time-picker-head button{
   width:30px;height:30px;border:1px solid var(--border);border-radius:9px;
   background:var(--surface);color:var(--muted);font:inherit;font-size:17px;cursor:pointer
 }
-.luria-time-picker-body{
+.traube-time-picker-body{
   display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:9px
 }
-.luria-time-picker-body label{display:grid;gap:5px}
-.luria-time-picker-body label span{
+.traube-time-picker-body label{display:grid;gap:5px}
+.traube-time-picker-body label span{
   color:var(--muted);font-size:8px;font-weight:850;text-transform:uppercase;letter-spacing:.04em
 }
-.luria-time-picker-body select{
+.traube-time-picker-body select{
   width:100%;min-height:48px;padding:0 12px;
   border:1px solid var(--border);border-radius:12px;
   background:var(--surface-2);color:var(--text);
   font:inherit;font-size:16px;font-weight:850;text-align:center;outline:none;cursor:pointer
 }
-.luria-time-picker-body select:focus{
+.traube-time-picker-body select:focus{
   border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)
 }
-.luria-time-separator{
+.traube-time-separator{
   padding-bottom:12px;color:var(--accent);font-size:21px;font-weight:900
 }
-.luria-time-quick{
+.traube-time-quick{
   display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:11px
 }
-.luria-time-quick button{
+.traube-time-quick button{
   min-height:34px;border:1px solid var(--border);border-radius:9px;
   background:var(--surface-2);color:var(--text);font:inherit;font-size:9px;font-weight:800;cursor:pointer
 }
-.luria-time-quick button:hover{
+.traube-time-quick button:hover{
   border-color:var(--accent);background:var(--accent-soft);color:var(--accent)
 }
-.luria-time-picker-foot{
+.traube-time-picker-foot{
   display:grid;grid-template-columns:auto auto 1fr;gap:7px;margin:12px -13px -13px;padding:10px 13px 12px;
   border-top:1px solid var(--border);background:color-mix(in srgb,var(--accent) 4%,var(--surface))
 }
-.luria-time-picker-foot button{
+.traube-time-picker-foot button{
   min-height:34px;padding:0 10px;border:0;border-radius:9px;background:transparent;
   color:var(--accent);font:inherit;font-size:9px;font-weight:900;cursor:pointer
 }
-.luria-time-picker-foot button.primary{
+.traube-time-picker-foot button.primary{
   justify-self:end;background:linear-gradient(135deg, #184888, #2563EB);color:#fff;border-radius:12px;border:none;min-width:86px
 }
 #event-time{cursor:pointer}
 #event-time::-webkit-calendar-picker-indicator{opacity:.75;cursor:pointer}
 @media(max-width:520px){
-  .luria-time-picker{padding:12px;border-radius:15px}
-  .luria-time-picker-quick{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .traube-time-picker{padding:12px;border-radius:15px}
+  .traube-time-picker-quick{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 
 /* Logo exclusiva dos popups: nunca herdar dimensões das logos de fundo/tema */
-#luria-global-dialog .luria-global-dialog-icon{
+#traube-global-dialog .traube-global-dialog-icon{
   width:42px!important;
   height:42px!important;
   min-width:42px!important;
@@ -3328,7 +3328,7 @@ body[data-page="cronograma"] .luria-calendar .luria-calendar-days button{
   overflow:hidden!important;
   padding:7px!important;
 }
-#luria-global-dialog .luria-global-dialog-logo{
+#traube-global-dialog .traube-global-dialog-logo{
   position:static!important;
   inset:auto!important;
   display:block!important;
@@ -3353,8 +3353,8 @@ body.auth-page{
   isolation:isolate;
   overflow:hidden;
   background:var(--bg);
-  --luria-pattern-size:112px;
-  --luria-pattern-opacity:.045;
+  --traube-pattern-size:112px;
+  --traube-pattern-opacity:.045;
 }
 body.auth-page::before,
 body.auth-page::after{
@@ -3363,29 +3363,29 @@ body.auth-page::after{
   inset:-14%;
   z-index:0;
   pointer-events:none;
-  background-image:var(--luria-pattern-image);
+  background-image:var(--traube-pattern-image);
   background-repeat:repeat;
-  background-size:var(--luria-pattern-size) var(--luria-pattern-size);
+  background-size:var(--traube-pattern-size) var(--traube-pattern-size);
   transform:rotate(-8deg) scale(1.08);
   transform-origin:center;
 }
 body.auth-page::before{
   background-position:0 0;
-  opacity:var(--luria-pattern-opacity);
+  opacity:var(--traube-pattern-opacity);
 }
 body.auth-page::after{
-  background-position:calc(var(--luria-pattern-size)/2) calc(var(--luria-pattern-size)/2);
-  opacity:var(--luria-pattern-opacity);
+  background-position:calc(var(--traube-pattern-size)/2) calc(var(--traube-pattern-size)/2);
+  opacity:var(--traube-pattern-opacity);
 }
 body.auth-page>.auth-card{
   position:relative;
   z-index:1;
 }
 :root[data-theme="dark"] body.auth-page{
-  --luria-pattern-opacity:.055;
+  --traube-pattern-opacity:.055;
 }
 :root[data-theme="leila-mood"] body.auth-page{
-  --luria-pattern-opacity:.048;
+  --traube-pattern-opacity:.048;
 }
 
 
@@ -3394,22 +3394,22 @@ body.auth-page>.auth-card{
    Referência geométrica: card "Anotações"
    ========================================================= */
 :root{
-  --luria-page-title-card-min-height: auto;
-  --luria-page-title-card-pad-y: 12px;
-  --luria-page-title-card-pad-x: 18px;
-  --luria-page-title-card-radius: 14px;
+  --traube-page-title-card-min-height: auto;
+  --traube-page-title-card-pad-y: 12px;
+  --traube-page-title-card-pad-x: 18px;
+  --traube-page-title-card-radius: 14px;
 }
 
 /* Mantém a geometria dos cards superiores igual entre as páginas. */
-.luria-page-spotlight,
+.traube-page-spotlight,
 .daily-hero,
 .stats-hero,
 .flash-top-spotlight,
 .qs-v17-top{
   box-sizing:border-box!important;
-  min-height:var(--luria-page-title-card-min-height)!important;
-  padding:var(--luria-page-title-card-pad-y) var(--luria-page-title-card-pad-x)!important;
-  border-radius:var(--luria-page-title-card-radius)!important;
+  min-height:var(--traube-page-title-card-min-height)!important;
+  padding:var(--traube-page-title-card-pad-y) var(--traube-page-title-card-pad-x)!important;
+  border-radius:var(--traube-page-title-card-radius)!important;
   margin-bottom: 12px !important;
 }
 
@@ -3419,10 +3419,10 @@ body.auth-page>.auth-card{
   box-sizing:border-box!important;
 }
 
-/* Timer + sino + perfil: posição controlada exclusivamente por luria-brand-v5.css. */
+/* Timer + sino + perfil: posição controlada exclusivamente por traube-brand-v5.css. */
 
 /* Iniciais com o mesmo peso visual aprovado. */
-.luria-profile-toggle,
+.traube-profile-toggle,
 .user-avatar{
   font-weight:950!important;
   letter-spacing:-.045em!important;
@@ -3430,18 +3430,18 @@ body.auth-page>.auth-card{
 
 @media(max-width:700px){
   :root{
-    --luria-page-title-card-min-height: auto;
-    --luria-page-title-card-pad-y: 10px;
-    --luria-page-title-card-pad-x: 14px;
+    --traube-page-title-card-min-height: auto;
+    --traube-page-title-card-pad-y: 10px;
+    --traube-page-title-card-pad-x: 14px;
   }
 }
 
 
 /* TRAUBE v54 — cards/callouts superiores: azul oficial da marca apenas no tema claro */
 :root[data-theme="light"]{
-  --luria-top-callout-blue:#184888;
+  --traube-top-callout-blue:#184888;
 }
-:root[data-theme="light"] .luria-page-spotlight,
+:root[data-theme="light"] .traube-page-spotlight,
 :root[data-theme="light"] .daily-hero,
 :root[data-theme="light"] .stats-hero,
 :root[data-theme="light"] .flash-top-spotlight,
@@ -3451,8 +3451,8 @@ body.auth-page>.auth-card{
   border-color:rgba(255,255,255,.14)!important;
   color:#fff!important;
 }
-:root[data-theme="light"] .luria-page-spotlight::before,
-:root[data-theme="light"] .luria-page-spotlight::after,
+:root[data-theme="light"] .traube-page-spotlight::before,
+:root[data-theme="light"] .traube-page-spotlight::after,
 :root[data-theme="light"] .daily-hero::before,
 :root[data-theme="light"] .daily-hero::after,
 :root[data-theme="light"] .stats-hero::before,
@@ -3466,11 +3466,11 @@ body.auth-page>.auth-card{
   display:none!important;
   content:none!important;
 }
-:root[data-theme="light"] .luria-page-spotlight h1,
-:root[data-theme="light"] .luria-page-spotlight h2,
-:root[data-theme="light"] .luria-page-spotlight h3,
-:root[data-theme="light"] .luria-page-spotlight p,
-:root[data-theme="light"] .luria-page-spotlight small,
+:root[data-theme="light"] .traube-page-spotlight h1,
+:root[data-theme="light"] .traube-page-spotlight h2,
+:root[data-theme="light"] .traube-page-spotlight h3,
+:root[data-theme="light"] .traube-page-spotlight p,
+:root[data-theme="light"] .traube-page-spotlight small,
 :root[data-theme="light"] .daily-hero h1,
 :root[data-theme="light"] .daily-hero h2,
 :root[data-theme="light"] .daily-hero h3,
@@ -3501,7 +3501,7 @@ body.auth-page>.auth-card{
 
 
 /* Fallback de primeiro paint: ausência de data-theme é o tema claro. */
-:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .luria-page-spotlight,
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .traube-page-spotlight,
 :root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .daily-hero,
 :root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .stats-hero,
 :root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .flash-top-spotlight,
@@ -3514,13 +3514,13 @@ body.auth-page>.auth-card{
 
 
 /* TRAUBE v55 — cards/callouts superiores também unificados no tema escuro */
-:root[data-theme="dark"] .luria-page-spotlight,
+:root[data-theme="dark"] .traube-page-spotlight,
 :root[data-theme="dark"] .daily-hero,
 :root[data-theme="dark"] .stats-hero,
 :root[data-theme="dark"] .flash-top-spotlight,
 :root[data-theme="dark"] .qs-v17-top,
 :root[data-theme="dark"] .error-cat-spotlight,
-body.theme-dark .luria-page-spotlight,
+body.theme-dark .traube-page-spotlight,
 body.theme-dark .daily-hero,
 body.theme-dark .stats-hero,
 body.theme-dark .flash-top-spotlight,
@@ -3532,11 +3532,11 @@ body.theme-dark .error-cat-spotlight{
   box-shadow:0 10px 30px rgba(0,0,0,.22)!important;
 }
 
-:root[data-theme="dark"] .luria-page-spotlight h1,
-:root[data-theme="dark"] .luria-page-spotlight h2,
-:root[data-theme="dark"] .luria-page-spotlight h3,
-:root[data-theme="dark"] .luria-page-spotlight p,
-:root[data-theme="dark"] .luria-page-spotlight small,
+:root[data-theme="dark"] .traube-page-spotlight h1,
+:root[data-theme="dark"] .traube-page-spotlight h2,
+:root[data-theme="dark"] .traube-page-spotlight h3,
+:root[data-theme="dark"] .traube-page-spotlight p,
+:root[data-theme="dark"] .traube-page-spotlight small,
 :root[data-theme="dark"] .daily-hero h1,
 :root[data-theme="dark"] .daily-hero h2,
 :root[data-theme="dark"] .daily-hero h3,
@@ -3578,10 +3578,10 @@ body.theme-dark .error-cat-spotlight{
 
 /* v2026.09.29 — switches/segmented controls maiores em todo o TRAUBE */
 :root{
-  --luria-switch-font-size: 16px;
-  --luria-switch-height: 46px;
-  --luria-switch-pad-x: 21px;
-  --luria-switch-radius: 10px;
+  --traube-switch-font-size: 16px;
+  --traube-switch-height: 46px;
+  --traube-switch-pad-x: 21px;
+  --traube-switch-radius: 10px;
 }
 
 /* Caderno de Erros */
@@ -3596,11 +3596,11 @@ body.theme-dark .error-cat-spotlight{
 .error-main-tab,
 .error-tab,
 .error-state-switch > button{
-  min-height: var(--luria-switch-height) !important;
-  height: var(--luria-switch-height) !important;
-  padding: 0 var(--luria-switch-pad-x) !important;
-  border-radius: var(--luria-switch-radius) !important;
-  font-size: var(--luria-switch-font-size) !important;
+  min-height: var(--traube-switch-height) !important;
+  height: var(--traube-switch-height) !important;
+  padding: 0 var(--traube-switch-pad-x) !important;
+  border-radius: var(--traube-switch-radius) !important;
+  font-size: var(--traube-switch-font-size) !important;
   line-height: 1.15 !important;
 }
 
@@ -3753,7 +3753,7 @@ input[type="reset"]{
 }
 
 /* Botões base: centraliza texto/ícone sem alterar largura definida pelo componente */
-button:not(.icon-only):not([aria-label]):not(.sidebar-desktop-toggle):not(.luria-notification-toggle):not(.luria-profile-toggle):not(.error-home-action):not(.flash-home-action),
+button:not(.icon-only):not([aria-label]):not(.sidebar-desktop-toggle):not(.traube-notification-toggle):not(.traube-profile-toggle):not(.error-home-action):not(.flash-home-action),
 .button:not(.icon-only),
 [role="button"]:not(.icon-only){
   display:inline-flex !important;
@@ -3878,7 +3878,7 @@ button,
 
 
 /* v2026.09.29c — subtítulo curto acima dos títulos dos cards, padrão Cronograma */
-.luria-page-spotlight-label{
+.traube-page-spotlight-label{
   position:relative;
   z-index:2;
   display:block;
@@ -3890,12 +3890,12 @@ button,
   letter-spacing:.08em!important;
   text-transform:uppercase!important;
 }
-:root[data-theme="dark"] .luria-page-spotlight-label,
-body.theme-dark .luria-page-spotlight-label{
+:root[data-theme="dark"] .traube-page-spotlight-label,
+body.theme-dark .traube-page-spotlight-label{
   color:rgba(255,255,255,.68)!important;
 }
 @media(max-width:700px){
-  .luria-page-spotlight-label{
+  .traube-page-spotlight-label{
     margin-bottom:5px!important;
     font-size:9px!important;
   }
@@ -3903,7 +3903,7 @@ body.theme-dark .luria-page-spotlight-label{
 
 
 /* v2026.09.29d — frase curta abaixo dos títulos dos cards */
-.luria-page-spotlight-helper{
+.traube-page-spotlight-helper{
   position:relative;
   z-index:2;
   display:block;
@@ -3917,7 +3917,7 @@ body.theme-dark .luria-page-spotlight-label{
   text-transform:none!important;
 }
 @media(max-width:700px){
-  .luria-page-spotlight-helper{
+  .traube-page-spotlight-helper{
     margin-top:6px!important;
     font-size:10px!important;
   }
@@ -3925,7 +3925,7 @@ body.theme-dark .luria-page-spotlight-label{
 
 
 /* v2026.09.29e — box de título automático em todas as abas do modo Trabalho */
-body[data-page^="trabalho_"] .luria-work-page-spotlight{
+body[data-page^="trabalho_"] .traube-work-page-spotlight{
   position:relative;
   display:flex;
   align-items:center;
@@ -3943,17 +3943,17 @@ body[data-page^="trabalho_"] .luria-work-page-spotlight{
   color:#fff;
   box-shadow:0 10px 30px rgba(17,65,130,.12);
 }
-body[data-page^="trabalho_"] .luria-work-page-spotlight::after,
-body[data-page^="trabalho_"] .luria-work-page-spotlight::before{
+body[data-page^="trabalho_"] .traube-work-page-spotlight::after,
+body[data-page^="trabalho_"] .traube-work-page-spotlight::before{
   display:none!important;
   content:none!important;
 }
-body[data-page^="trabalho_"] .luria-work-page-spotlight .luria-page-spotlight-copy{
+body[data-page^="trabalho_"] .traube-work-page-spotlight .traube-page-spotlight-copy{
   position:relative;
   z-index:2;
   min-width:0;
 }
-body[data-page^="trabalho_"] .luria-work-page-spotlight .luria-page-spotlight-copy > strong{
+body[data-page^="trabalho_"] .traube-work-page-spotlight .traube-page-spotlight-copy > strong{
   display:block;
   margin:0;
   color:inherit;
@@ -3963,19 +3963,19 @@ body[data-page^="trabalho_"] .luria-work-page-spotlight .luria-page-spotlight-co
   letter-spacing:-.8px;
 }
 @media(max-width:700px){
-  body[data-page^="trabalho_"] .luria-work-page-spotlight{
+  body[data-page^="trabalho_"] .traube-work-page-spotlight{
     height:118px;
     min-height:118px!important;
     padding:20px!important;
   }
-  body[data-page^="trabalho_"] .luria-work-page-spotlight .luria-page-spotlight-copy > strong{
+  body[data-page^="trabalho_"] .traube-work-page-spotlight .traube-page-spotlight-copy > strong{
     font-size:27px;
   }
 }
 
 
 /* v2026.09.29f — teste do box de título no Dashboard Estudo */
-body[data-page="dashboard"] .luria-dashboard-spotlight{
+body[data-page="dashboard"] .traube-dashboard-spotlight{
   position:relative;
   display:flex;
   align-items:center;
@@ -3993,17 +3993,17 @@ body[data-page="dashboard"] .luria-dashboard-spotlight{
   color:#fff;
   box-shadow:0 10px 30px rgba(17,65,130,.12);
 }
-body[data-page="dashboard"] .luria-dashboard-spotlight::after,
-body[data-page="dashboard"] .luria-dashboard-spotlight::before{
+body[data-page="dashboard"] .traube-dashboard-spotlight::after,
+body[data-page="dashboard"] .traube-dashboard-spotlight::before{
   display:none!important;
   content:none!important;
 }
-body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-copy{
+body[data-page="dashboard"] .traube-dashboard-spotlight .traube-page-spotlight-copy{
   position:relative;
   z-index:2;
   min-width:0;
 }
-body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-copy > strong{
+body[data-page="dashboard"] .traube-dashboard-spotlight .traube-page-spotlight-copy > strong{
   display:block;
   margin:0;
   color:inherit;
@@ -4013,12 +4013,12 @@ body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-cop
   letter-spacing:-.8px;
 }
 @media(max-width:700px){
-  body[data-page="dashboard"] .luria-dashboard-spotlight{
+  body[data-page="dashboard"] .traube-dashboard-spotlight{
     height:118px;
     min-height:118px!important;
     padding:20px!important;
   }
-  body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-copy > strong{
+  body[data-page="dashboard"] .traube-dashboard-spotlight .traube-page-spotlight-copy > strong{
     font-size:27px;
   }
 }
@@ -4033,14 +4033,14 @@ body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-cop
    ========================================================= */
 
 :root{
-  --luria-switch-font-size:15px;
-  --luria-switch-height:46px;
-  --luria-switch-pad-x:21px;
-  --luria-switch-radius:10px;
-  --luria-switch-shell-height:56px;
-  --luria-switch-shell-padding:6px;
-  --luria-switch-shell-gap:6px;
-  --luria-switch-shell-radius:14px;
+  --traube-switch-font-size:15px;
+  --traube-switch-height:46px;
+  --traube-switch-pad-x:21px;
+  --traube-switch-radius:10px;
+  --traube-switch-shell-height:56px;
+  --traube-switch-shell-padding:6px;
+  --traube-switch-shell-gap:6px;
+  --traube-switch-shell-radius:14px;
 }
 
 /* Todos os callouts/containers de switches */
@@ -4063,10 +4063,10 @@ body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-cop
 .switch-group,
 .view-switch,
 .mode-switch{
-  min-height:var(--luria-switch-shell-height)!important;
-  padding:var(--luria-switch-shell-padding)!important;
-  gap:var(--luria-switch-shell-gap)!important;
-  border-radius:var(--luria-switch-shell-radius)!important;
+  min-height:var(--traube-switch-shell-height)!important;
+  padding:var(--traube-switch-shell-padding)!important;
+  gap:var(--traube-switch-shell-gap)!important;
+  border-radius:var(--traube-switch-shell-radius)!important;
 }
 
 /* Todos os botões internos dos switches */
@@ -4089,11 +4089,11 @@ body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-cop
 .switch-group > button,
 .view-switch > button,
 .mode-switch > button{
-  min-height:var(--luria-switch-height)!important;
-  height:var(--luria-switch-height)!important;
-  padding:0 var(--luria-switch-pad-x)!important;
-  border-radius:var(--luria-switch-radius)!important;
-  font-size:var(--luria-switch-font-size)!important;
+  min-height:var(--traube-switch-height)!important;
+  height:var(--traube-switch-height)!important;
+  padding:0 var(--traube-switch-pad-x)!important;
+  border-radius:var(--traube-switch-radius)!important;
+  font-size:var(--traube-switch-font-size)!important;
   line-height:1.15!important;
   font-weight:400!important;
   display:inline-flex!important;
@@ -4123,10 +4123,10 @@ body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-cop
   .switch-group,
   .view-switch,
   .mode-switch{
-    min-height:var(--luria-switch-shell-height)!important;
-    padding:var(--luria-switch-shell-padding)!important;
-    gap:var(--luria-switch-shell-gap)!important;
-    border-radius:var(--luria-switch-shell-radius)!important;
+    min-height:var(--traube-switch-shell-height)!important;
+    padding:var(--traube-switch-shell-padding)!important;
+    gap:var(--traube-switch-shell-gap)!important;
+    border-radius:var(--traube-switch-shell-radius)!important;
   }
 
   .error-main-tab,
@@ -4148,11 +4148,11 @@ body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-cop
   .switch-group > button,
   .view-switch > button,
   .mode-switch > button{
-    min-height:var(--luria-switch-height)!important;
-    height:var(--luria-switch-height)!important;
-    padding:0 var(--luria-switch-pad-x)!important;
-    border-radius:var(--luria-switch-radius)!important;
-    font-size:var(--luria-switch-font-size)!important;
+    min-height:var(--traube-switch-height)!important;
+    height:var(--traube-switch-height)!important;
+    padding:0 var(--traube-switch-pad-x)!important;
+    border-radius:var(--traube-switch-radius)!important;
+    font-size:var(--traube-switch-font-size)!important;
     line-height:1.15!important;
     font-weight:400!important;
   }
@@ -4166,7 +4166,7 @@ body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-cop
    ========================================================= */
 
 :root{
-  --luria-body-font-size:16px;
+  --traube-body-font-size:16px;
 }
 
 /* Texto principal e navegação */
@@ -4191,7 +4191,7 @@ button,
 .auth-form label,
 .auth-message,
 .inline-status{
-  font-size:var(--luria-body-font-size)!important;
+  font-size:var(--traube-body-font-size)!important;
 }
 
 /* Conteúdo textual recorrente em cards e formulários */
@@ -4204,7 +4204,7 @@ button,
 .error-thought,
 .error-library-card-ccq,
 .error-library-detail-block div{
-  font-size:var(--luria-body-font-size)!important;
+  font-size:var(--traube-body-font-size)!important;
 }
 
 /* Mantém títulos e indicadores com hierarquia visual própria */
@@ -4218,7 +4218,7 @@ h6,
 .metric-value,
 .error-metric-card strong,
 .error-ccq,
-.luria-page-spotlight-copy > strong,
+.traube-page-spotlight-copy > strong,
 .brand-copy strong{
   font-size:revert;
 }
@@ -4236,8 +4236,8 @@ small,
 .error-library-card-meta,
 .error-library-card-stats,
 .error-library-detail-block span,
-.luria-page-spotlight-label,
-.luria-page-spotlight-helper,
+.traube-page-spotlight-label,
+.traube-page-spotlight-helper,
 .lofi-time,
 .sidebar-lofi-copy small,
 .lofi-loop-note{
@@ -4260,7 +4260,7 @@ small,
   [role="button"],
   .nav-link,
   .nav-sublink{
-    font-size:var(--luria-body-font-size)!important;
+    font-size:var(--traube-body-font-size)!important;
   }
 }
 
@@ -4329,12 +4329,12 @@ small,
    botão 42px + container com 4px de padding
    ========================================================= */
 :root{
-  --luria-switch-height:42px;
-  --luria-switch-shell-height:50px;
-  --luria-switch-shell-padding:4px;
-  --luria-switch-shell-gap:4px;
-  --luria-switch-shell-radius:10px;
-  --luria-switch-radius:7px;
+  --traube-switch-height:42px;
+  --traube-switch-shell-height:50px;
+  --traube-switch-shell-padding:4px;
+  --traube-switch-shell-gap:4px;
+  --traube-switch-shell-radius:10px;
+  --traube-switch-radius:7px;
 }
 
 /* Containers */
@@ -4359,11 +4359,11 @@ small,
 .view-switch,
 .mode-switch,
 [role="tablist"]{
-  min-height:var(--luria-switch-shell-height)!important;
+  min-height:var(--traube-switch-shell-height)!important;
   height:auto!important;
-  padding:var(--luria-switch-shell-padding)!important;
-  gap:var(--luria-switch-shell-gap)!important;
-  border-radius:var(--luria-switch-shell-radius)!important;
+  padding:var(--traube-switch-shell-padding)!important;
+  gap:var(--traube-switch-shell-gap)!important;
+  border-radius:var(--traube-switch-shell-radius)!important;
 }
 
 /* Botões */
@@ -4389,9 +4389,9 @@ small,
 .mode-switch > button,
 [role="tablist"] > button,
 [role="tablist"] [role="tab"]{
-  min-height:var(--luria-switch-height)!important;
-  height:var(--luria-switch-height)!important;
-  border-radius:var(--luria-switch-radius)!important;
+  min-height:var(--traube-switch-height)!important;
+  height:var(--traube-switch-height)!important;
+  border-radius:var(--traube-switch-radius)!important;
   font-size:15px!important;
   line-height:1!important;
 }
@@ -4419,8 +4419,8 @@ small,
   .view-switch,
   .mode-switch,
   [role="tablist"]{
-    min-height:var(--luria-switch-shell-height)!important;
-    padding:var(--luria-switch-shell-padding)!important;
+    min-height:var(--traube-switch-shell-height)!important;
+    padding:var(--traube-switch-shell-padding)!important;
   }
 
   .error-main-tab,
@@ -4445,19 +4445,19 @@ small,
   .mode-switch > button,
   [role="tablist"] > button,
   [role="tablist"] [role="tab"]{
-    min-height:var(--luria-switch-height)!important;
-    height:var(--luria-switch-height)!important;
+    min-height:var(--traube-switch-height)!important;
+    height:var(--traube-switch-height)!important;
     font-size:15px!important;
   }
 }
 
 
 /* v2026.09.29 — BOTÕES VOLTAR = SWITCHES */
-.luria-back-switch-btn{
-  min-height:var(--luria-switch-height,42px)!important;
-  height:var(--luria-switch-height,42px)!important;
-  padding:0 var(--luria-switch-pad-x,21px)!important;
-  border-radius:var(--luria-switch-radius,7px)!important;
+.traube-back-switch-btn{
+  min-height:var(--traube-switch-height,42px)!important;
+  height:var(--traube-switch-height,42px)!important;
+  padding:0 var(--traube-switch-pad-x,21px)!important;
+  border-radius:var(--traube-switch-radius,7px)!important;
   font-size:15px!important;
   line-height:1!important;
   display:inline-flex!important;
@@ -4466,9 +4466,9 @@ small,
   box-sizing:border-box!important;
 }
 @media(max-width:700px){
-  .luria-back-switch-btn{
-    min-height:var(--luria-switch-height,42px)!important;
-    height:var(--luria-switch-height,42px)!important;
+  .traube-back-switch-btn{
+    min-height:var(--traube-switch-height,42px)!important;
+    height:var(--traube-switch-height,42px)!important;
     font-size:15px!important;
   }
 }
@@ -4480,18 +4480,18 @@ small,
    margem lateral 28px / card 138px / padding 24x28 / raio 15px
    ========================================================= */
 :root{
-  --luria-dashboard-gutter:28px;
-  --luria-dashboard-title-height:138px;
-  --luria-dashboard-title-pad-y:24px;
-  --luria-dashboard-title-pad-x:28px;
-  --luria-dashboard-title-radius:15px;
-  --luria-dashboard-title-gap:14px;
+  --traube-dashboard-gutter:28px;
+  --traube-dashboard-title-height:138px;
+  --traube-dashboard-title-pad-y:24px;
+  --traube-dashboard-title-pad-x:28px;
+  --traube-dashboard-title-radius:15px;
+  --traube-dashboard-title-gap:14px;
 }
 
 /* Cards de título das páginas usam exatamente a geometria do Dashboard. */
 body:not([data-page="dashboard"]) :is(
-  .luria-page-spotlight,
-  .luria-work-page-spotlight,
+  .traube-page-spotlight,
+  .traube-work-page-spotlight,
   .daily-hero,
   .stats-hero,
   .flash-top-spotlight,
@@ -4502,15 +4502,15 @@ body:not([data-page="dashboard"]) :is(
   box-sizing:border-box!important;
   width:100%!important;
   min-width:0!important;
-  height:var(--luria-dashboard-title-height)!important;
-  min-height:var(--luria-dashboard-title-height)!important;
-  max-height:var(--luria-dashboard-title-height)!important;
+  height:var(--traube-dashboard-title-height)!important;
+  min-height:var(--traube-dashboard-title-height)!important;
+  max-height:var(--traube-dashboard-title-height)!important;
   margin-top:0!important;
   margin-right:0!important;
-  margin-bottom:var(--luria-dashboard-title-gap)!important;
+  margin-bottom:var(--traube-dashboard-title-gap)!important;
   margin-left:0!important;
-  padding:var(--luria-dashboard-title-pad-y) var(--luria-dashboard-title-pad-x)!important;
-  border-radius:var(--luria-dashboard-title-radius)!important;
+  padding:var(--traube-dashboard-title-pad-y) var(--traube-dashboard-title-pad-x)!important;
+  border-radius:var(--traube-dashboard-title-radius)!important;
 }
 
 /* O primeiro card começa na mesma linha útil do Dashboard. */
@@ -4519,8 +4519,8 @@ body:not([data-page="dashboard"]) :is(
     box-sizing:border-box!important;
   }
   body:not([data-page="dashboard"]) .page > :is(
-    .luria-page-spotlight,
-    .luria-work-page-spotlight,
+    .traube-page-spotlight,
+    .traube-work-page-spotlight,
     .daily-hero,
     .stats-hero,
     .flash-top-spotlight,
@@ -4535,14 +4535,14 @@ body:not([data-page="dashboard"]) :is(
 /* Mobile mantém a proporção já aprovada do próprio Dashboard. */
 @media(max-width:700px){
   :root{
-    --luria-dashboard-gutter:20px;
-    --luria-dashboard-title-height:118px;
-    --luria-dashboard-title-pad-y:20px;
-    --luria-dashboard-title-pad-x:20px;
+    --traube-dashboard-gutter:20px;
+    --traube-dashboard-title-height:118px;
+    --traube-dashboard-title-pad-y:20px;
+    --traube-dashboard-title-pad-x:20px;
   }
   body:not([data-page="dashboard"]) :is(
-    .luria-page-spotlight,
-    .luria-work-page-spotlight,
+    .traube-page-spotlight,
+    .traube-work-page-spotlight,
     .daily-hero,
     .stats-hero,
     .flash-top-spotlight,
@@ -4550,10 +4550,10 @@ body:not([data-page="dashboard"]) :is(
     .error-cat-spotlight,
     .schedule-top-spotlight
   ){
-    height:var(--luria-dashboard-title-height)!important;
-    min-height:var(--luria-dashboard-title-height)!important;
-    max-height:var(--luria-dashboard-title-height)!important;
-    padding:var(--luria-dashboard-title-pad-y) var(--luria-dashboard-title-pad-x)!important;
+    height:var(--traube-dashboard-title-height)!important;
+    min-height:var(--traube-dashboard-title-height)!important;
+    max-height:var(--traube-dashboard-title-height)!important;
+    padding:var(--traube-dashboard-title-pad-y) var(--traube-dashboard-title-pad-x)!important;
   }
 }
 
@@ -4563,21 +4563,21 @@ body:not([data-page="dashboard"]) :is(
    Um único padrão para eyebrow + título + helper.
    ========================================================= */
 :root{
-  --luria-title-eyebrow-size:10px;
-  --luria-title-main-size:32px;
-  --luria-title-helper-size:11px;
-  --luria-title-eyebrow-gap:6px;
-  --luria-title-helper-gap:7px;
-  --luria-title-eyebrow-weight:850;
-  --luria-title-main-weight:900;
-  --luria-title-helper-weight:650;
+  --traube-title-eyebrow-size:10px;
+  --traube-title-main-size:32px;
+  --traube-title-helper-size:11px;
+  --traube-title-eyebrow-gap:6px;
+  --traube-title-helper-gap:7px;
+  --traube-title-eyebrow-weight:850;
+  --traube-title-main-weight:900;
+  --traube-title-helper-weight:650;
 }
 
 /* Bloco textual interno */
 :is(
-  .luria-page-spotlight,
-  .luria-work-page-spotlight,
-  .luria-dashboard-spotlight,
+  .traube-page-spotlight,
+  .traube-work-page-spotlight,
+  .traube-dashboard-spotlight,
   .daily-hero,
   .stats-hero,
   .flash-top-spotlight,
@@ -4585,7 +4585,7 @@ body:not([data-page="dashboard"]) :is(
   .error-cat-spotlight,
   .schedule-top-spotlight
 ) :is(
-  .luria-page-spotlight-copy,
+  .traube-page-spotlight-copy,
   .daily-hero-copy,
   .stats-hero-copy,
   .flash-top-spotlight-copy,
@@ -4598,21 +4598,21 @@ body:not([data-page="dashboard"]) :is(
 
 /* Texto acima do título */
 :is(
-  .luria-page-spotlight-label,
+  .traube-page-spotlight-label,
   .schedule-top-spotlight-label,
   .daily-hero .eyebrow,
   .stats-hero .eyebrow,
   .flash-top-spotlight .eyebrow,
   .qs-v17-top .eyebrow,
   .error-cat-spotlight .eyebrow,
-  .luria-page-spotlight .eyebrow
+  .traube-page-spotlight .eyebrow
 ){
   display:block!important;
-  margin:0 0 var(--luria-title-eyebrow-gap)!important;
+  margin:0 0 var(--traube-title-eyebrow-gap)!important;
   color:#fff!important;
   opacity:1!important;
-  font-size:var(--luria-title-eyebrow-size)!important;
-  font-weight:var(--luria-title-eyebrow-weight)!important;
+  font-size:var(--traube-title-eyebrow-size)!important;
+  font-weight:var(--traube-title-eyebrow-weight)!important;
   line-height:1.1!important;
   letter-spacing:.08em!important;
   text-transform:uppercase!important;
@@ -4620,10 +4620,10 @@ body:not([data-page="dashboard"]) :is(
 
 /* Título principal */
 :is(
-  .luria-page-spotlight-copy > strong,
-  .luria-page-spotlight [data-page-title],
-  .luria-work-page-spotlight [data-page-title],
-  .luria-dashboard-spotlight [data-page-title],
+  .traube-page-spotlight-copy > strong,
+  .traube-page-spotlight [data-page-title],
+  .traube-work-page-spotlight [data-page-title],
+  .traube-dashboard-spotlight [data-page-title],
   .daily-hero h1,
   .daily-hero h2,
   .stats-hero h1,
@@ -4641,30 +4641,30 @@ body:not([data-page="dashboard"]) :is(
   margin:0!important;
   color:#fff!important;
   opacity:1!important;
-  font-size:var(--luria-title-main-size)!important;
-  font-weight:var(--luria-title-main-weight)!important;
+  font-size:var(--traube-title-main-size)!important;
+  font-weight:var(--traube-title-main-weight)!important;
   line-height:1.08!important;
   letter-spacing:-.8px!important;
 }
 
 /* Texto abaixo do título */
 :is(
-  .luria-page-spotlight-helper,
+  .traube-page-spotlight-helper,
   .schedule-top-spotlight-helper,
   .daily-hero .hero-helper,
   .stats-hero .hero-helper,
   .flash-top-spotlight .hero-helper,
   .qs-v17-top .hero-helper,
   .error-cat-spotlight .hero-helper,
-  .luria-page-spotlight .hero-helper
+  .traube-page-spotlight .hero-helper
 ){
   display:block!important;
-  margin:var(--luria-title-helper-gap) 0 0!important;
+  margin:var(--traube-title-helper-gap) 0 0!important;
   max-width:720px!important;
   color:#fff!important;
   opacity:1!important;
-  font-size:var(--luria-title-helper-size)!important;
-  font-weight:var(--luria-title-helper-weight)!important;
+  font-size:var(--traube-title-helper-size)!important;
+  font-weight:var(--traube-title-helper-weight)!important;
   line-height:1.3!important;
   letter-spacing:0!important;
   text-transform:none!important;
@@ -4672,9 +4672,9 @@ body:not([data-page="dashboard"]) :is(
 
 /* Garante branco também para elementos simples dentro do card de título */
 :is(
-  .luria-page-spotlight,
-  .luria-work-page-spotlight,
-  .luria-dashboard-spotlight,
+  .traube-page-spotlight,
+  .traube-work-page-spotlight,
+  .traube-dashboard-spotlight,
   .daily-hero,
   .stats-hero,
   .flash-top-spotlight,
@@ -4688,11 +4688,11 @@ body:not([data-page="dashboard"]) :is(
 /* Mobile/PWA: mesma hierarquia em todas as páginas */
 @media(max-width:700px){
   :root{
-    --luria-title-eyebrow-size:9px;
-    --luria-title-main-size:27px;
-    --luria-title-helper-size:10px;
-    --luria-title-eyebrow-gap:5px;
-    --luria-title-helper-gap:6px;
+    --traube-title-eyebrow-size:9px;
+    --traube-title-main-size:27px;
+    --traube-title-helper-size:10px;
+    --traube-title-eyebrow-gap:5px;
+    --traube-title-helper-gap:6px;
   }
 }
 
@@ -4703,27 +4703,27 @@ body:not([data-page="dashboard"]) :is(
    ========================================================= */
 body.auth-page{
   background:#fff !important;
-  --luria-pattern-image:url("../img/logos/logo-icone-original.png?v=login-pattern-20260929");
-  --luria-pattern-size:96px;
-  --luria-pattern-opacity:.038;
+  --traube-pattern-image:url("../img/logos/logo-icone-original.png?v=login-pattern-20260929");
+  --traube-pattern-size:96px;
+  --traube-pattern-opacity:.038;
 }
 body.auth-page::before,
 body.auth-page::after{
   display:block !important;
   content:"" !important;
   background-color:transparent !important;
-  background-image:var(--luria-pattern-image) !important;
+  background-image:var(--traube-pattern-image) !important;
   background-repeat:repeat !important;
-  background-size:var(--luria-pattern-size) var(--luria-pattern-size) !important;
+  background-size:var(--traube-pattern-size) var(--traube-pattern-size) !important;
   pointer-events:none !important;
 }
 body.auth-page::before{
   background-position:0 0 !important;
-  opacity:var(--luria-pattern-opacity) !important;
+  opacity:var(--traube-pattern-opacity) !important;
 }
 body.auth-page::after{
   background-position:48px 48px !important;
-  opacity:var(--luria-pattern-opacity) !important;
+  opacity:var(--traube-pattern-opacity) !important;
 }
 body.auth-page>.auth-card{
   position:relative;
@@ -4735,15 +4735,15 @@ body.auth-page>.auth-card{
    Espelha exatamente o Caderno de Erros v18.18
    ========================================================= */
 :root{
-  --luria-switch-height:40px;
-  --luria-switch-shell-height:50px;
-  --luria-switch-shell-padding:4px;
-  --luria-switch-shell-gap:4px;
-  --luria-switch-shell-radius:10px;
-  --luria-switch-radius:7px;
-  --luria-switch-font-size:16px;
-  --luria-switch-font-weight:400;
-  --luria-switch-pad-x:17px;
+  --traube-switch-height:40px;
+  --traube-switch-shell-height:50px;
+  --traube-switch-shell-padding:4px;
+  --traube-switch-shell-gap:4px;
+  --traube-switch-shell-radius:10px;
+  --traube-switch-radius:7px;
+  --traube-switch-font-size:16px;
+  --traube-switch-font-weight:400;
+  --traube-switch-pad-x:17px;
 }
 .error-main-tabs,.error-tabs,.error-state-switch,.error-review-action-switch,.flash-tabs,.flash-review-action-switch,.library-scope-tabs,.qs-mode-tabs,.notebook-tabs,.stats-tabs-shell,.stats-range,.schedule-add-tabs,.segmented-control,.mode-tabs,.view-tabs,.section-tabs,.page-tabs,.scope-tabs,.switch-group,.view-switch,.mode-switch,[role="tablist"]{
   box-sizing:border-box!important;
@@ -4767,15 +4767,15 @@ body.auth-page>.auth-card{
    v2026.09.29 — TIPOGRAFIA GLOBAL OFICIAL
    Referência: Resumo / Esta semana — Questões e Simulados
    ========================================================= */
-:root{--luria-font:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+:root{--traube-font:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 html,body,button,input,select,textarea,option,h1,h2,h3,h4,h5,h6,p,span,small,strong,b,label,a,div,section,article,aside,nav,header,footer,table,thead,tbody,tr,th,td,ul,ol,li{
-  font-family:var(--luria-font)!important;
+  font-family:var(--traube-font)!important;
 }
-button,input,select,textarea{font-family:var(--luria-font)!important}
+button,input,select,textarea{font-family:var(--traube-font)!important}
 
 /* v2026.09.29 — eyebrows/kickers leves no padrão TRAUBE */
 .qs-home-kicker,.qs-home-eyebrow,.error-home-eyebrow,.flash-top-spotlight-label,.eyebrow,[class*="eyebrow"],[class*="kicker"]{
-  font-family:var(--luria-font)!important;
+  font-family:var(--traube-font)!important;
   font-weight:400!important;
   letter-spacing:.07em!important;
 }
@@ -4823,7 +4823,7 @@ body *::-webkit-scrollbar-thumb{
 /* =========================================================
    v2026.10.02 — LISTAS CLICÁVEIS / DROPDOWNS NO PADRÃO TRAUBE
    ========================================================= */
-.luria-site-select{
+.traube-site-select{
   appearance:none!important;
   -webkit-appearance:none!important;
   min-height:42px!important;
@@ -4840,22 +4840,22 @@ body *::-webkit-scrollbar-thumb{
   outline:none!important;
   transition:border-color .16s ease,box-shadow .16s ease,background-color .16s ease!important;
 }
-.luria-site-select:hover{
+.traube-site-select:hover{
   border-color:color-mix(in srgb,var(--accent) 48%,var(--border))!important;
   background-color:color-mix(in srgb,var(--surface) 96%,var(--accent) 4%)!important;
 }
-.luria-site-select:focus,
-.luria-site-select:focus-visible{
+.traube-site-select:focus,
+.traube-site-select:focus-visible{
   border-color:var(--accent)!important;
   box-shadow:0 0 0 3px var(--accent-soft),0 8px 20px color-mix(in srgb,var(--text) 6%,transparent)!important;
 }
-.luria-site-select option,
-.luria-site-select optgroup{
+.traube-site-select option,
+.traube-site-select optgroup{
   background:var(--surface)!important;
   color:var(--text)!important;
   font-weight:600!important;
 }
-.luria-site-list{
+.traube-site-list{
   box-sizing:border-box!important;
   padding:6px!important;
   border:1px solid color-mix(in srgb,var(--accent) 15%,var(--border))!important;
@@ -4866,11 +4866,11 @@ body *::-webkit-scrollbar-thumb{
   overflow:auto!important;
   z-index:1000!important;
 }
-.luria-site-list>[role="option"],
-.luria-site-list>[role="menuitem"],
-.luria-site-list>button,
-.luria-site-list>a,
-.luria-site-list>label{
+.traube-site-list>[role="option"],
+.traube-site-list>[role="menuitem"],
+.traube-site-list>button,
+.traube-site-list>a,
+.traube-site-list>label{
   box-sizing:border-box!important;
   width:100%!important;
   min-height:34px!important;
@@ -4885,31 +4885,31 @@ body *::-webkit-scrollbar-thumb{
   line-height:1.25!important;
   cursor:pointer!important;
 }
-.luria-site-list>[role="option"]:hover,
-.luria-site-list>[role="menuitem"]:hover,
-.luria-site-list>button:hover,
-.luria-site-list>a:hover,
-.luria-site-list>label:hover{
+.traube-site-list>[role="option"]:hover,
+.traube-site-list>[role="menuitem"]:hover,
+.traube-site-list>button:hover,
+.traube-site-list>a:hover,
+.traube-site-list>label:hover{
   background:var(--accent-soft)!important;
   color:var(--accent)!important;
 }
-.luria-site-list>[aria-selected="true"],
-.luria-site-list>[aria-checked="true"],
-.luria-site-list>.active,
-.luria-site-list>.selected{
+.traube-site-list>[aria-selected="true"],
+.traube-site-list>[aria-checked="true"],
+.traube-site-list>.active,
+.traube-site-list>.selected{
   background:color-mix(in srgb,var(--accent) 12%,var(--surface))!important;
   color:var(--accent)!important;
   font-weight:800!important;
 }
-.luria-site-list[hidden]{display:none!important}
+.traube-site-list[hidden]{display:none!important}
 @media(max-width:700px){
-  .luria-site-select{min-height:44px!important;border-radius:10px!important}
-  .luria-site-list{border-radius:12px!important;padding:7px!important}
-  .luria-site-list>[role="option"],
-  .luria-site-list>[role="menuitem"],
-  .luria-site-list>button,
-  .luria-site-list>a,
-  .luria-site-list>label{min-height:40px!important;padding:9px 10px!important}
+  .traube-site-select{min-height:44px!important;border-radius:10px!important}
+  .traube-site-list{border-radius:12px!important;padding:7px!important}
+  .traube-site-list>[role="option"],
+  .traube-site-list>[role="menuitem"],
+  .traube-site-list>button,
+  .traube-site-list>a,
+  .traube-site-list>label{min-height:40px!important;padding:9px 10px!important}
 }
 
 

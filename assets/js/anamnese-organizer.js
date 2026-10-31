@@ -5,7 +5,7 @@
  */
 
 (() => {
-  const ENDPOINT_KEY = 'luria_anamnese_ai_endpoint';
+  const ENDPOINT_KEY = 'traube_anamnese_ai_endpoint';
 
   // Configuração padrão ou salva
   const getCustomEndpoint = () => localStorage.getItem(ENDPOINT_KEY) || '';

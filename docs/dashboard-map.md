@@ -98,7 +98,7 @@ Afeta o Dashboard em:
 
 ---
 
-### 6. `assets/js/luria-command-center.js`
+### 6. `assets/js/traube-command-center.js`
 **Função:** recursos inteligentes/globais adicionados por cima das páginas.
 
 No Dashboard atualmente afeta:
@@ -126,7 +126,7 @@ Afeta:
 
 ---
 
-### 8. `assets/css/luria-brand-v5.css`
+### 8. `assets/css/traube-brand-v5.css`
 **Função:** identidade visual e controles superiores globais.
 
 Afeta:
@@ -197,16 +197,16 @@ Toda alteração feita apenas nele pode divergir de `dashboard/index.html` e cau
 
 ### Mudança de dados
 1. `assets/js/dashboard.js`.
-2. Verificar evento `luria:dashboard-data`.
+2. Verificar evento `traube:dashboard-data`.
 3. Confirmar renderização em `dashboard-layouts.js`.
 
 ### Mudança no “Estudar agora” / Buscar
-1. `assets/js/luria-command-center.js`.
+1. `assets/js/traube-command-center.js`.
 2. Garantir que observers sejam idempotentes.
 3. Testar `/dashboard/`.
 
 ### Mudança global
-1. `assets/js/app.js`, `style.css` ou `luria-brand-v5.css`.
+1. `assets/js/app.js`, `style.css` ou `traube-brand-v5.css`.
 2. Confirmar que outras páginas continuam funcionando.
 
 ---
@@ -216,7 +216,7 @@ Toda alteração feita apenas nele pode divergir de `dashboard/index.html` e cau
 - `body[data-page="dashboard"]`
 - `#dashboard-alternative`
 - `body[data-dashboard-layout="1"..."5"]`
-- evento `luria:dashboard-data`
+- evento `traube:dashboard-data`
 
 ---
 

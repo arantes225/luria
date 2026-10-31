@@ -57,7 +57,7 @@ Deno.serve(async (req: Request) => {
     const src = String(asset.src || "");
     if (!src) throw new Error("Imagem sem URL");
 
-    const siteBase = Deno.env.get("PUBLIC_SITE_URL") || "https://www.luriamedicina.com.br";
+    const siteBase = Deno.env.get("PUBLIC_SITE_URL") || "https://www.traubemedicina.com.br";
     // Optional exact-origin policy is configured by operators, not candidates.
     const configuredOrigins = Deno.env.get("APOSTILA_IMAGE_ORIGINS");
     const allowedOrigins = configuredOrigins ? JSON.parse(configuredOrigins) : undefined;

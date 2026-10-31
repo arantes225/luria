@@ -7,7 +7,7 @@ const root = path.resolve(__dirname, "..");
 const read = file => fs.readFileSync(path.join(root, file), "utf8");
 
 test("Estudar agora oferece cronograma e assunto livre", () => {
-  const source = read("assets/js/luria-command-center.js");
+  const source = read("assets/js/traube-command-center.js");
   assert.match(source, /Seguir o cronograma/);
   assert.match(source, /Estudar outro assunto/);
   assert.match(source, /build_topic_study_session_v1/);

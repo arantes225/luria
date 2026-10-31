@@ -1,7 +1,7 @@
 /* Scoped presentation bridge: important declarations beat the legacy locks.
    No classic card styles or shared Design System tokens are changed. */
-@layer luria-dashboard-cards {
-  body#luria-dashboard {
+@layer traube-dashboard-cards {
+  body#traube-dashboard {
     &[data-dashboard-view="pending"] :is(.ui-page-header,#dashboard-alternative,#ui-review-summary,#dashboard-apps) {display:none!important;}
     & .dashboard-loading {display:grid!important;gap:10px!important;min-height:180px!important;align-content:center!important;color:var(--color-text-secondary)!important;}
     & .dashboard-loading strong {font-size:var(--ui-card-title)!important;color:var(--color-text-primary)!important;}
@@ -67,7 +67,7 @@
 }
 
 /* Study selector only: the Work Dashboard choices keep their existing styles. */
-@layer luria-dashboard-cards {
+@layer traube-dashboard-cards {
   body[data-page="configuracoes"] #dashboard-layout-options {
     display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;
     & .dashboard-layout-choice-body {

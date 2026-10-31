@@ -27,7 +27,7 @@ Arquivos do storage principal continuam usando o formato legado:
 Quando um provider externo for ativado, a camada aceita referências auto-descritivas:
 
 ```text
-luria-storage://<provider>/<bucket>/<path>
+traube-storage://<provider>/<bucket>/<path>
 ```
 
 Assim o TRAUBE sabe exatamente onde procurar o arquivo. Não é necessário tentar vários bancos sequencialmente.
@@ -35,7 +35,7 @@ Assim o TRAUBE sabe exatamente onde procurar o arquivo. Não é necessário tent
 ## Regra de compatibilidade
 
 - referência sem prefixo = storage principal;
-- referência com `luria-storage://` = provider e bucket informados na própria referência;
+- referência com `traube-storage://` = provider e bucket informados na própria referência;
 - registros antigos continuam funcionando;
 - novos registros podem ser distribuídos entre storages sem migrar tudo de uma vez.
 

@@ -11,7 +11,7 @@ const files={
   financeJS:"assets/js/plantoes-financeiro-v2.js",divisorJS:"assets/js/divisor-plantao-v2.js"
 };
 function mount(path,scripts){
-  const dom=new JSDOM(read(path),{url:"https://luria.example/trabalho/",runScripts:"outside-only",pretendToBeVisual:true});
+  const dom=new JSDOM(read(path),{url:"https://traube.example/trabalho/",runScripts:"outside-only",pretendToBeVisual:true});
   const {window}=dom;
   window.alert=()=>{};
   window.confirm=()=>true;

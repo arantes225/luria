@@ -34,7 +34,7 @@
   };
   window.addEventListener('docmap:ready',start);
   window.addEventListener('docmap:access-updated',start);
-  window.addEventListener('luria:session-invalidated',()=>{revision++;pendingStart=null;currentUser=null;companion?.destroy();companion=null;});
+  window.addEventListener('traube:session-invalidated',()=>{revision++;pendingStart=null;currentUser=null;companion?.destroy();companion=null;});
   // Deferred navigation can execute after a fast cached login already emitted ready.
   const resume=()=>start({detail:{user:window.docmapUser||window.docmapSession?.user,isAdmin:window.docmapIsAdmin}});
   window.addEventListener('pageshow',resume);
@@ -44,7 +44,7 @@
   let retries=0;
   const retry=async ()=>{if(companion||retries++>=24)return;await resume();if(!companion)setTimeout(retry,250);};
   retry();
-  document.addEventListener('click',event=>{if(event.target.closest?.('#logout,#luria-profile-logout')){revision++;pendingStart=null;currentUser=null;companion?.destroy();companion=null;}});
+  document.addEventListener('click',event=>{if(event.target.closest?.('#logout,#traube-profile-logout')){revision++;pendingStart=null;currentUser=null;companion?.destroy();companion=null;}});
 })();
 (() => {
   const body = document.body;
@@ -81,7 +81,7 @@
   }
   function mobileImmersive() {
     const simulator = document.getElementById("plantao-simulator");
-    const studyOverlay = [...document.querySelectorAll("#luria-session-overlay,#luria-search-overlay")].some(panel=>!panel.hidden && getComputedStyle(panel).display!=="none");
+    const studyOverlay = [...document.querySelectorAll("#traube-session-overlay,#traube-search-overlay")].some(panel=>!panel.hidden && getComputedStyle(panel).display!=="none");
     const keyboard = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || "")
       && window.visualViewport && window.visualViewport.height < innerHeight * .75;
     return !!document.fullscreenElement || studyOverlay || body.classList.contains("flash-review-session-active")
@@ -98,7 +98,7 @@
     const sheet = document.getElementById("ui-mobile-tools");
     if (!sheet || sheet.open || body.dataset.uiMobileNavigation !== "true") return;
     if ([...document.querySelectorAll('dialog[open], [role="dialog"][aria-modal="true"]:not([hidden])')].some(panel=>panel.id!=="sidebar"&&!panel.closest("[inert]")&&panel.getClientRects().length)) return;
-    for (const [panel, toggle] of [["luria-profile-menu","luria-profile-toggle"],["luria-notification-panel","luria-notification-toggle"],["luria-pomodoro-panel","luria-pomodoro-toggle"]]) {
+    for (const [panel, toggle] of [["traube-profile-menu","traube-profile-toggle"],["traube-notification-panel","traube-notification-toggle"],["traube-pomodoro-panel","traube-pomodoro-toggle"]]) {
       const popup = document.getElementById(panel);
       if (popup && !popup.hidden) document.getElementById(toggle)?.click();
     }
@@ -158,12 +158,12 @@
         ["/plantao/sala-emergencia/","Simulador de Emergência","stethoscope","/plantao/sala-emergencia/","plantao",categories[1]],
         ["/questoes-simulados/","Questões e Simulados","file","/consolidar/","questions",categories[1]],
         ["/caderno-erros/","Caderno de Erros","clipboard","/consolidar/","error_notebook",categories[1]],
-        ["/plantao/luriazap/","TraubeZap","users","/aprender/","plantao",categories[1]]
+        ["/plantao/traubezap/","TraubeZap","users","/aprender/","plantao",categories[1]]
       ]) if (get(parent)) extra.push(entry(href,label,visual,group,get(parent),feature));
     }
-    const settings = document.querySelector('#luria-profile-menu a[href="/configuracoes/"]');
+    const settings = document.querySelector('#traube-profile-menu a[href="/configuracoes/"]');
     if (settings && !settings.hidden && settings.getAttribute("aria-hidden") !== "true") extra.push(entry(settings.getAttribute("href"),"Configurações","settings",categories.at(-1),settings));
-    const environment = sidebar.querySelector(".luria-mode-footer-switch[href]");
+    const environment = sidebar.querySelector(".traube-mode-footer-switch[href]");
     if (visibleSource(environment)) extra.push(entry(environment.getAttribute("href"),work?"Trocar para Estudos":"Trocar para Trabalho","compass",categories.at(-1),environment));
     const unique = [...new Map(extra.filter(item => item.href?.startsWith("/") && !item.href.startsWith("//")).map(item => [item.href,item])).values()];
     unique.forEach(item => { item.disabled = disabled(item); });
@@ -229,8 +229,8 @@
     return node;
   }
   function enhanceProfile(sidebar) {
-    const menu = document.getElementById("luria-profile-menu");
-    const toggle = document.getElementById("luria-profile-toggle");
+    const menu = document.getElementById("traube-profile-menu");
+    const toggle = document.getElementById("traube-profile-toggle");
     if (!menu) return;
     set(toggle, "aria-controls", menu.id);
     if (!menu.querySelector(".ui-profile-name")) {
@@ -249,7 +249,7 @@
       ['a[href="/configuracoes/#perfil"]', '<circle cx="12" cy="8" r="3"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/>'],
       ['[data-restart-onboarding]', '<path d="M4 10a8 8 0 1 1 1 9M4 4v6h6"/>'],
       ['a[href="/configuracoes/"]', '<path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="10" cy="18" r="2"/>'],
-      ['#luria-profile-logout', '<path d="M9 4H4v16h5M13 8l4 4-4 4M8 12h13"/>']
+      ['#traube-profile-logout', '<path d="M9 4H4v16h5M13 8l4 4-4 4M8 12h13"/>']
     ];
     for (const [selector, paths] of accountItems) {
       const item = menu.querySelector(selector);
@@ -267,7 +267,7 @@
     const displayName = window.docmapProfile?.display_name || "Sua conta";
     if (name.textContent !== displayName) name.textContent = displayName;
     // The existing conditional link is the authority for access to the other environment.
-    const source = sidebar?.querySelector(".luria-mode-footer-switch");
+    const source = sidebar?.querySelector(".traube-mode-footer-switch");
     const destination = source?.getAttribute("href") || "";
     const options = menu.querySelector(".ui-environment-options");
     const signature = `${work}:${destination}`;
@@ -300,7 +300,7 @@
       indicator.title = "Sua sequência de dias no Traube"; center.prepend(indicator);
     }
     const source = sidebar?.querySelector("[data-sidebar-streak-card] [data-streak-value]");
-    const count = window.luriaCurrentStreak;
+    const count = window.traubeCurrentStreak;
     const current = indicator.querySelector(".ui-topbar-streak-value");
     const realValue = typeof count === "number" && Number.isFinite(count) ? String(count) : source?.textContent.trim();
     if (realValue && current.textContent !== realValue) current.textContent = realValue;
@@ -411,7 +411,7 @@
       links.append(back);
       bar.append(links);
     }
-    const notifications = bar.querySelector(".luria-notifications");
+    const notifications = bar.querySelector(".traube-notifications");
     if (notifications && links.nextElementSibling !== notifications) bar.insertBefore(links, notifications);
     // Reuse the real, permission-owned PCR destination, rather than inventing a route.
     const pcrSource = sidebar?.querySelector(".work-pcr-button[href]");
@@ -422,7 +422,7 @@
       pcr.innerHTML = icon('<path d="M12 5v14M5 12h14"/>') + '<span>Abrir PCR</span>';
       links.append(pcr);
     }
-    const menu = document.getElementById("luria-profile-menu");
+    const menu = document.getElementById("traube-profile-menu");
     if (!menu) return;
     for (const id of ["admin-nav-link", "editorial-nav-link", "beta-testers-nav-link"]) {
       const source = sidebar?.querySelector(`#${id}`);
@@ -436,7 +436,7 @@
         visual.className = "ui-profile-item-icon";
         visual.innerHTML = icon(id === "admin-nav-link" ? '<path d="m12 3 9 9-9 9-9-9Z"/>' : id === "editorial-nav-link" ? '<rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/>' : '<circle cx="9" cy="8" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M21 21v-2a6 6 0 0 0-4-5"/>');
         item.append(visual, document.createTextNode(source.textContent.replace(/◆/g, "").trim()));
-        const logout = menu.querySelector("#luria-profile-logout");
+        const logout = menu.querySelector("#traube-profile-logout");
         if (logout) logout.before(item);
         else menu.append(item);
       }
@@ -450,7 +450,7 @@
     if (bar) {
       const shell = document.querySelector(".app-shell");
       const heading = bar.querySelector(".page-heading");
-      if ((!work || body.dataset.uiWork === "v2") && !["dashboard", "trabalho_dashboard"].includes(body.dataset.page) && body.dataset.uiHeading !== "provided" && heading && heading.textContent.trim() && !document.querySelector("main .luria-page-spotlight, main .book-hero, main .settings-page-head")) {
+      if ((!work || body.dataset.uiWork === "v2") && !["dashboard", "trabalho_dashboard"].includes(body.dataset.page) && body.dataset.uiHeading !== "provided" && heading && heading.textContent.trim() && !document.querySelector("main .traube-page-spotlight, main .book-hero, main .settings-page-head")) {
         heading.classList.add("ui-page-heading"); document.querySelector("main.main > .page")?.prepend(heading);
       }
       if (body.dataset.uiAdmin === "v2") {
@@ -466,7 +466,7 @@
         const context = document.createElement("span"); context.className = "ui-context-label";
         context.textContent = body.dataset.uiAdmin === "v2" ? "Admin" : work ? "Trabalho" : "Estudos";
         if (work) trigger.after(context);
-        else bar.insertBefore(context, bar.querySelector('.luria-notifications'));
+        else bar.insertBefore(context, bar.querySelector('.traube-notifications'));
       }
     }
     sidebar?.querySelectorAll("nav a[href]").forEach(link => {
@@ -476,29 +476,29 @@
       if (!link.hasAttribute("aria-label")) set(link, "aria-label", label);
       if (link.classList.contains("active")) set(link, "aria-current", "page");
     });
-    const alex = document.getElementById("luria-alex-topbar");
+    const alex = document.getElementById("traube-alex-topbar");
     if (alex && !alex.dataset.uiIcon) {
       const visual = document.createElement("span"); visual.className = "ui-alex-icon"; visual.innerHTML = sparkles;
       alex.prepend(visual); alex.dataset.uiIcon = "true";
     }
     if (body.dataset.uiWork === "v2") {
-      const title = document.querySelector("main .luria-page-spotlight-copy strong[data-page-title]");
+      const title = document.querySelector("main .traube-page-spotlight-copy strong[data-page-title]");
       set(title, "role", "heading"); set(title, "aria-level", "1");
     }
     enhanceProfile(sidebar);
-    enhanceStreak(sidebar, document.getElementById("luria-notifications"));
+    enhanceStreak(sidebar, document.getElementById("traube-notifications"));
     enhanceWorkHub(sidebar, bar);
     enhanceMobileNavigation(sidebar);
     syncDrawer();
     const mobileState=body.dataset.uiMobileNavigation === "true";
-    if(mobileState!==lastMobileState){lastMobileState=mobileState;window.dispatchEvent(new Event("luria:mobile-navigation-change"));}
-    const menu = document.getElementById("luria-profile-menu");
+    if(mobileState!==lastMobileState){lastMobileState=mobileState;window.dispatchEvent(new Event("traube:mobile-navigation-change"));}
+    const menu = document.getElementById("traube-profile-menu");
     const open = !!menu && !menu.hidden;
     if (open && !profileOpen) focusable(menu)[0]?.focus();
     profileOpen = open;
     if (body.classList.contains("app-ready") && bar && (workHub || sidebar?.querySelector("nav a")) && body.dataset.uiNavigationReady !== "true") {
       body.dataset.uiNavigationReady = "true";
-      window.dispatchEvent(new Event("luria:ui-navigation-ready"));
+      window.dispatchEvent(new Event("traube:ui-navigation-ready"));
     }
   }
   function schedule() {
@@ -527,10 +527,10 @@
     syncDrawer();
   }, true);
   document.addEventListener("keydown", event => {
-    if ([...document.querySelectorAll("#luria-session-overlay, #luria-search-overlay")].some(panel => !panel.hidden && panel.getClientRects().length)) return;
+    if ([...document.querySelectorAll("#traube-session-overlay, #traube-search-overlay")].some(panel => !panel.hidden && panel.getClientRects().length)) return;
     if (event.key === "Escape") {
       if (drawerOpen) { event.preventDefault(); body.classList.remove("sidebar-open"); syncDrawer(); return; }
-      for (const [panel, trigger] of [["luria-profile-menu", "luria-profile-toggle"], ["luria-pomodoro-panel", "luria-pomodoro-toggle"], ["luria-notification-panel", "luria-notification-toggle"]]) {
+      for (const [panel, trigger] of [["traube-profile-menu", "traube-profile-toggle"], ["traube-pomodoro-panel", "traube-pomodoro-toggle"], ["traube-notification-panel", "traube-notification-toggle"]]) {
         const popup = document.getElementById(panel);
         if (popup && !popup.hidden) { event.preventDefault(); document.getElementById(trigger)?.click(); document.getElementById(trigger)?.focus(); break; }
       }
@@ -556,12 +556,12 @@
   window.visualViewport?.addEventListener("resize",schedule);
   window.addEventListener("popstate",schedule);window.addEventListener("hashchange",schedule);
   window.addEventListener("docmap:access-updated",schedule);
-  window.addEventListener("luria:owner-changed",schedule);
+  window.addEventListener("traube:owner-changed",schedule);
   window.addEventListener("docmap:ready", enhance);
-  window.addEventListener("luria:dashboard-data", schedule);
+  window.addEventListener("traube:dashboard-data", schedule);
   document.addEventListener("DOMContentLoaded", enhance, {once:true});
   // Updating question or notebook content should not rebuild the navigation.
-  const shellRegion = "#sidebar,.topbar,#luria-profile-menu,#luria-notifications,#plantao-simulator,#luria-session-overlay,#luria-search-overlay";
+  const shellRegion = "#sidebar,.topbar,#traube-profile-menu,#traube-notifications,#plantao-simulator,#traube-session-overlay,#traube-search-overlay";
   new MutationObserver(records => {
     if (records.some(record => record.target === body || record.target.closest?.(shellRegion)
       || [...record.addedNodes].some(node => node.nodeType === 1 && (node.matches(shellRegion) || node.querySelector(shellRegion))))) schedule();

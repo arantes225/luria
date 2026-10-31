@@ -65,11 +65,11 @@ body[data-page="erros"] {
    1. Page Spotlight Hero (.qs-page-spotlight)
    -------------------------------------------------------------------------- */
 body[data-page="questoes"] .qs-page-spotlight,
-body[data-page="questoes"] .luria-page-spotlight.qs-page-spotlight,
+body[data-page="questoes"] .traube-page-spotlight.qs-page-spotlight,
 body[data-page="flashcards"] .qs-page-spotlight,
-body[data-page="flashcards"] .luria-page-spotlight,
+body[data-page="flashcards"] .traube-page-spotlight,
 body[data-page="erros"] .qs-page-spotlight,
-body[data-page="erros"] .luria-page-spotlight {
+body[data-page="erros"] .traube-page-spotlight {
   box-sizing: border-box !important;
   width: 100% !important;
   height: auto !important;
@@ -91,17 +91,17 @@ body[data-page="erros"] .luria-page-spotlight {
 
 body[data-page="questoes"] .qs-page-spotlight::after,
 body[data-page="questoes"] .qs-page-spotlight::before,
-body[data-page="flashcards"] .luria-page-spotlight::after,
-body[data-page="flashcards"] .luria-page-spotlight::before,
-body[data-page="erros"] .luria-page-spotlight::after,
-body[data-page="erros"] .luria-page-spotlight::before {
+body[data-page="flashcards"] .traube-page-spotlight::after,
+body[data-page="flashcards"] .traube-page-spotlight::before,
+body[data-page="erros"] .traube-page-spotlight::after,
+body[data-page="erros"] .traube-page-spotlight::before {
   display: none !important;
   content: none !important;
 }
 
-body[data-page="questoes"] .qs-page-spotlight .luria-page-spotlight-copy,
-body[data-page="flashcards"] .luria-page-spotlight-copy,
-body[data-page="erros"] .luria-page-spotlight-copy {
+body[data-page="questoes"] .qs-page-spotlight .traube-page-spotlight-copy,
+body[data-page="flashcards"] .traube-page-spotlight-copy,
+body[data-page="erros"] .traube-page-spotlight-copy {
   position: relative !important;
   z-index: 2 !important;
   display: flex !important;
@@ -126,10 +126,10 @@ body[data-page="questoes"] .qs-page-spotlight .qs-spotlight-actions {
 
 body[data-page="questoes"] .qs-page-spotlight strong,
 body[data-page="questoes"] .qs-page-spotlight h1,
-body[data-page="flashcards"] .luria-page-spotlight strong,
-body[data-page="flashcards"] .luria-page-spotlight h1,
-body[data-page="erros"] .luria-page-spotlight strong,
-body[data-page="erros"] .luria-page-spotlight h1 {
+body[data-page="flashcards"] .traube-page-spotlight strong,
+body[data-page="flashcards"] .traube-page-spotlight h1,
+body[data-page="erros"] .traube-page-spotlight strong,
+body[data-page="erros"] .traube-page-spotlight h1 {
   display: block !important;
   margin: 0 !important;
   font-size: 32px !important;
@@ -140,9 +140,9 @@ body[data-page="erros"] .luria-page-spotlight h1 {
 }
 
 body[data-page="questoes"] .qs-spotlight-desc,
-body[data-page="questoes"] .qs-page-spotlight .luria-page-spotlight-helper,
-body[data-page="flashcards"] .luria-page-spotlight-helper,
-body[data-page="erros"] .luria-page-spotlight-helper {
+body[data-page="questoes"] .qs-page-spotlight .traube-page-spotlight-helper,
+body[data-page="flashcards"] .traube-page-spotlight-helper,
+body[data-page="erros"] .traube-page-spotlight-helper {
   display: block !important;
   margin: 7px 0 0 0 !important;
   font-size: 11px !important;
@@ -156,11 +156,11 @@ body[data-page="erros"] .luria-page-spotlight-helper {
 
 @media (max-width: 700px) {
   body[data-page="questoes"] .qs-page-spotlight,
-  body[data-page="questoes"] .luria-page-spotlight.qs-page-spotlight,
+  body[data-page="questoes"] .traube-page-spotlight.qs-page-spotlight,
   body[data-page="flashcards"] .qs-page-spotlight,
-  body[data-page="flashcards"] .luria-page-spotlight,
+  body[data-page="flashcards"] .traube-page-spotlight,
   body[data-page="erros"] .qs-page-spotlight,
-  body[data-page="erros"] .luria-page-spotlight {
+  body[data-page="erros"] .traube-page-spotlight {
     height: auto !important;
     min-height: 100px !important;
     max-height: none !important;
@@ -168,10 +168,10 @@ body[data-page="erros"] .luria-page-spotlight-helper {
   }
   body[data-page="questoes"] .qs-page-spotlight strong,
   body[data-page="questoes"] .qs-page-spotlight h1,
-  body[data-page="flashcards"] .luria-page-spotlight strong,
-  body[data-page="flashcards"] .luria-page-spotlight h1,
-  body[data-page="erros"] .luria-page-spotlight strong,
-  body[data-page="erros"] .luria-page-spotlight h1 {
+  body[data-page="flashcards"] .traube-page-spotlight strong,
+  body[data-page="flashcards"] .traube-page-spotlight h1,
+  body[data-page="erros"] .traube-page-spotlight strong,
+  body[data-page="erros"] .traube-page-spotlight h1 {
     font-size: 27px !important;
   }
 }
@@ -462,7 +462,7 @@ body[data-page="erros"] #error-daily-card::before {
 #start-review-session,
 #error-daily-review-open,
 .qs-home-primary,
-.luria-daily-review-primary {
+.traube-daily-review-primary {
   min-height: 44px !important;
   padding: 0 1.5rem !important;
   border-radius: var(--qs-radius-pill) !important;

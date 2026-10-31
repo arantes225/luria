@@ -3361,16 +3361,16 @@ body[data-page="erros"] .error-metric-card{
 
 /* v18.18 — Criar como item normal do switch */
 .error-tabs [data-error-tab="create"]{
-  min-height:var(--luria-switch-height,46px)!important;
-  height:var(--luria-switch-height,46px)!important;
-  padding:0 var(--luria-switch-pad-x,21px)!important;
+  min-height:var(--traube-switch-height,46px)!important;
+  height:var(--traube-switch-height,46px)!important;
+  padding:0 var(--traube-switch-pad-x,21px)!important;
   border:0!important;
-  border-radius:var(--luria-switch-radius,10px)!important;
+  border-radius:var(--traube-switch-radius,10px)!important;
   background:transparent!important;
   color:var(--muted)!important;
   box-shadow:none!important;
   transform:none!important;
-  font-size:var(--luria-switch-font-size,16px)!important;
+  font-size:var(--traube-switch-font-size,16px)!important;
   font-weight:400!important;
 }
 .error-tabs [data-error-tab="create"]:hover{
@@ -3428,7 +3428,7 @@ body[data-page="erros"] .error-metric-card{
 
   body[data-page="erros"] .topbar + .error-metrics,
   body[data-page="erros"] .topbar + .error-cat-spotlight,
-  body[data-page="erros"] .topbar + .luria-page-spotlight{
+  body[data-page="erros"] .topbar + .traube-page-spotlight{
     margin-top:0!important;
   }
 }
@@ -3729,7 +3729,7 @@ body[data-page="erros"] .error-review-queue-list button>b{
 
 
 /* v18.24 — alinhamento dos três botões reais de "Cadernos a revisar hoje" */
-body[data-page="erros"] .luria-error-review-align{
+body[data-page="erros"] .traube-error-review-align{
   display:grid!important;
   grid-template-columns:auto minmax(0,1fr) auto!important;
   align-items:center!important;
@@ -3738,25 +3738,25 @@ body[data-page="erros"] .luria-error-review-align{
   text-align:left!important;
   justify-content:stretch!important;
 }
-body[data-page="erros"] .luria-error-review-align > *{
+body[data-page="erros"] .traube-error-review-align > *{
   min-width:0!important;
 }
-body[data-page="erros"] .luria-error-review-align > :first-child{
+body[data-page="erros"] .traube-error-review-align > :first-child{
   grid-column:1!important;
   justify-self:start!important;
   margin-left:0!important;
 }
-body[data-page="erros"] .luria-error-review-align > :nth-child(2){
+body[data-page="erros"] .traube-error-review-align > :nth-child(2){
   grid-column:2!important;
   justify-self:start!important;
   width:100%!important;
   text-align:left!important;
   margin-left:0!important;
 }
-body[data-page="erros"] .luria-error-review-align > :nth-child(2) *{
+body[data-page="erros"] .traube-error-review-align > :nth-child(2) *{
   text-align:left!important;
 }
-body[data-page="erros"] .luria-error-review-align > :last-child{
+body[data-page="erros"] .traube-error-review-align > :last-child{
   grid-column:3!important;
   justify-self:end!important;
   margin-left:auto!important;

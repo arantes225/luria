@@ -4,13 +4,13 @@ const {resolver}=require('./fixtures/questions.cjs');
 const flush=async()=>{for(let i=0;i<5;i++)await settle()};
 
 test('Alex remains the on-screen companion instead of a top-bar shortcut',t=>{
- const {w,d}=page(t,'dashboard/index.html'),source=read('assets/js/luria-command-center.js');
+ const {w,d}=page(t,'dashboard/index.html'),source=read('assets/js/traube-command-center.js');
  const topbar=d.querySelector('.topbar');
- topbar.innerHTML='<div class="luria-notifications"><button class="luria-pomodoro-top" type="button">00:00</button></div>';
+ topbar.innerHTML='<div class="traube-notifications"><button class="traube-pomodoro-top" type="button">00:00</button></div>';
  w.d=d;w.$=(selector,root=d)=>root.querySelector(selector);
  w.eval(declaration(source,'topbar')+'\n'+declaration(source,'installSearch'));
  w.installSearch();
- const alex=d.getElementById('luria-alex-topbar');
+ const alex=d.getElementById('traube-alex-topbar');
  assert.equal(alex,null);
  const companion=read('assets/js/professor-alex-companion.mjs');
  assert.match(companion,/let prefs = \{x: 1, y: 1, minimized: false, visibilityVersion: 2\}/);
@@ -20,7 +20,7 @@ test('Alex remains the on-screen companion instead of a top-bar shortcut',t=>{
 });
 
 test('Every reviewed study route loads the on-screen Alex companion layer',()=>{
- for(const file of ['consolidar/index.html','questoes-simulados/index.html','flashcards/index.html','caderno-erros/index.html','plantao/luriazap/index.html','jogos/index.html','jogos/study-rats/index.html','professor-alex/index.html']){
+ for(const file of ['consolidar/index.html','questoes-simulados/index.html','flashcards/index.html','caderno-erros/index.html','plantao/traubezap/index.html','jogos/index.html','jogos/study-rats/index.html','professor-alex/index.html']){
   assert.match(read(file),/assets\/js\/ui-navigation-v2\.js\?/,file);
  }
  assert.match(read('assets/js/ui-navigation-v2.js'),/mountAlexCompanion/);
@@ -43,7 +43,7 @@ test('Study Rats presents each hall entry route as a primary action',()=>{
  const css=read('assets/css/review-continuation-20261022.css');
  assert.match(css,/body\[data-page="study-rats"\] \.sr-hall-button--secondary/);
  assert.match(css,/background: var\(--ui-pill-gradient, linear-gradient\(135deg, #4fc3f7, #7687ff\)\) !important;/);
- assert.match(css,/color: var\(--luria-btn-text-blue, #08101f\) !important;/);
+ assert.match(css,/color: var\(--traube-btn-text-blue, #08101f\) !important;/);
 });
 
 test('Escape keeps its game edition beside the link back to the games hub',()=>{
@@ -97,9 +97,9 @@ test('Answered questions expose a working comment toggle and ordered accessible 
 test('Question enhancements respect reader opt-out and attach only one observer',t=>{
  const {w,d}=page(t,'resolver-questoes/index.html');let observers=0;
  w.MutationObserver=class{constructor(){observers++}observe(){}};w.d=d;w.$=(s,r=d)=>r.querySelector(s);w.all=(s,r=d)=>[...r.querySelectorAll(s)];w.esc=String;
- const source=read('assets/js/luria-command-center.js');w.eval(declaration(source,'enhanceQuestion')+'\n'+declaration(source,'relatedQuestionLinks'));
+ const source=read('assets/js/traube-command-center.js');w.eval(declaration(source,'enhanceQuestion')+'\n'+declaration(source,'relatedQuestionLinks'));
  const fb=d.getElementById('qr-feedback');fb.hidden=false;fb.innerHTML='<div class="qr-result wrong"></div>';w.enhanceQuestion();w.relatedQuestionLinks();assert.equal(observers,0);assert.equal(fb.children.length,1);
- delete fb.dataset.questionExtras;w.enhanceQuestion();w.enhanceQuestion();assert.equal(observers,1);assert.equal(fb.querySelectorAll('.luria-learning-actions').length,1);
+ delete fb.dataset.questionExtras;w.enhanceQuestion();w.enhanceQuestion();assert.equal(observers,1);assert.equal(fb.querySelectorAll('.traube-learning-actions').length,1);
 });
 
 function errorModal(t){
@@ -156,7 +156,7 @@ test('Note panel relocates the same nodes and keeps live handlers and responsive
 
 test('Flashcard return switches view without clearing fields or interrupting a live review',async t=>{
  const {w,d}=page(t,'flashcards/index.html');d.body.dataset.ui='v2';d.body.dataset.uiContext='study';d.body.dataset.page='flashcards';w.ResizeObserver=class{observe(){}disconnect(){}};
- const calls=[];w.luriaFlashShow=view=>calls.push(view);w.eval(read('assets/js/flashcards-ui-v2.js'));
+ const calls=[];w.traubeFlashShow=view=>calls.push(view);w.eval(read('assets/js/flashcards-ui-v2.js'));
  const create=d.querySelector('[data-flash-section="create"]'),back=d.querySelector('.ui-flash-back');create.classList.add('active');d.getElementById('create-front').value='Rascunho';await flush();assert.equal(back.hidden,false);assert.equal(back.parentElement,d.querySelector('[data-flash-section]').parentElement);
  back.click();assert.deepEqual(calls,['review']);assert.equal(d.getElementById('create-front').value,'Rascunho');d.body.classList.add('flash-review-session-active');await flush();assert(back.hidden);
 });

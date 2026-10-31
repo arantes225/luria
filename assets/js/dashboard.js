@@ -1,7 +1,7 @@
 const dashboardSb = window.supabaseClient;
 
-window.luriaDashboardMetrics = window.luriaDashboardMetrics || {};
-window.luriaDashboardCcq = window.luriaDashboardCcq || { text: "", area: "" };
+window.traubeDashboardMetrics = window.traubeDashboardMetrics || {};
+window.traubeDashboardCcq = window.traubeDashboardCcq || { text: "", area: "" };
 
 const agendaState = {
   view: "week",
@@ -755,7 +755,7 @@ async function loadDashboardUpcomingAgenda() {
     }
   }
 
-  window.luriaDashboardUpcomingAgenda = Array.from(merged.values())
+  window.traubeDashboardUpcomingAgenda = Array.from(merged.values())
     .filter((item) => item?.activity_date === today)
     .sort((a, b) =>
       String(a.activity_time || "").localeCompare(String(b.activity_time || ""))
@@ -796,7 +796,7 @@ async function loadAgenda() {
   );
 
   renderCalendar();
-  window.dispatchEvent(new Event("luria:dashboard-data"));
+  window.dispatchEvent(new Event("traube:dashboard-data"));
 
   const count = agendaState.items.length;
   setCalendarStatus(
@@ -1219,7 +1219,7 @@ function setDashboardText(
       ? "—"
       : String(value);
 
-  window.luriaDashboardMetrics[id] = normalized;
+  window.traubeDashboardMetrics[id] = normalized;
 
   const element = document.getElementById(id);
   if (element) element.textContent = normalized;
@@ -1324,7 +1324,7 @@ async function loadDashboardWeekActivity() {
 
   if (error) {
     console.warn("TRAUBE: não foi possível carregar o histórico semanal de estudo", error);
-    window.luriaDashboardWeekActivity = { status: "unavailable", dates: [] };
+    window.traubeDashboardWeekActivity = { status: "unavailable", dates: [] };
     return;
   }
 
@@ -1335,7 +1335,7 @@ async function loadDashboardWeekActivity() {
     if (!Number.isFinite(startedAt.getTime()) || !Number.isFinite(duration) || duration <= 0) return;
     dates.add(toISODate(startedAt));
   });
-  window.luriaDashboardWeekActivity = { status: "available", dates: [...dates] };
+  window.traubeDashboardWeekActivity = { status: "available", dates: [...dates] };
 }
 
 
@@ -1403,21 +1403,21 @@ async function loadLessonMetrics() {
     if (row.status === "completed" || row.completed_at) current.completed += 1;
     byArea.set(area, current);
   });
-  window.luriaDashboardAreaSummary = [...byArea.values()]
+  window.traubeDashboardAreaSummary = [...byArea.values()]
     .sort((a, b) => b.total - a.total || a.area.localeCompare(b.area, "pt-BR"));
   const todayRows = rows.filter((row) => row.scheduled_date === todayIso);
-  window.luriaDashboardTodayLessons = {
+  window.traubeDashboardTodayLessons = {
     total: todayRows.length,
     completed: todayRows.filter((row) => row.status === "completed" || row.completed_at).length
   };
-  window.luriaDashboardDayLessons = {};
+  window.traubeDashboardDayLessons = {};
   rows.forEach((row) => {
     if (!row.scheduled_date) return;
     const date = row.scheduled_date;
-    const day = window.luriaDashboardDayLessons[date] || { total: 0, completed: 0 };
+    const day = window.traubeDashboardDayLessons[date] || { total: 0, completed: 0 };
     day.total += 1;
     if (row.status === "completed" || row.completed_at) day.completed += 1;
-    window.luriaDashboardDayLessons[date] = day;
+    window.traubeDashboardDayLessons[date] = day;
   });
   const total = rows.length;
 
@@ -1733,8 +1733,8 @@ function showDashboardCcq() {
   if (index < 0) return;
   dashboardCcqState.currentIndex = index;
   const item = dashboardCcqState.items[index];
-  window.luriaDashboardCcq = { text: item.ccq || "", area: item.area || "" };
-  window.dispatchEvent(new Event("luria:dashboard-data"));
+  window.traubeDashboardCcq = { text: item.ccq || "", area: item.area || "" };
+  window.dispatchEvent(new Event("traube:dashboard-data"));
 }
 function startDashboardCcqRotation() {
   if (dashboardCcqState.timerId) clearInterval(dashboardCcqState.timerId);
@@ -1753,15 +1753,15 @@ async function loadDashboardPassiveCcq() {
 
   if (error) {
     console.warn(error);
-    window.luriaDashboardCcq = { text: "Sem Pulos do Gato disponíveis.", area: "" };
-    window.dispatchEvent(new Event("luria:dashboard-data"));
+    window.traubeDashboardCcq = { text: "Sem Pulos do Gato disponíveis.", area: "" };
+    window.dispatchEvent(new Event("traube:dashboard-data"));
     return;
   }
 
   dashboardCcqState.items = (data || []).filter((item) => String(item.ccq || "").trim());
   if (!dashboardCcqState.items.length) {
-    window.luriaDashboardCcq = { text: "Nenhum Pulo do Gato ativo no Caderno de Erros.", area: "" };
-    window.dispatchEvent(new Event("luria:dashboard-data"));
+    window.traubeDashboardCcq = { text: "Nenhum Pulo do Gato ativo no Caderno de Erros.", area: "" };
+    window.dispatchEvent(new Event("traube:dashboard-data"));
     return;
   }
 
@@ -1781,7 +1781,7 @@ async function loadDashboardMetrics() {
     loadErrorMetrics(),
     loadSimulationMetrics()
   ]);
-  window.dispatchEvent(new Event("luria:dashboard-data"));
+  window.dispatchEvent(new Event("traube:dashboard-data"));
 }
 
 function openEventDialog(
@@ -3141,7 +3141,7 @@ async function initDashboard() {
     loadDashboardUpcomingAgenda(),
     loadDashboardPassiveCcq()
   ]);
-  window.dispatchEvent(new Event("luria:dashboard-data"));
+  window.dispatchEvent(new Event("traube:dashboard-data"));
 }
 
 if (window.docmapUser) {

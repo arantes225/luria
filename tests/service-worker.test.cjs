@@ -137,7 +137,7 @@ test('F01: old static plain URL/new runtime v2 cannot satisfy a different offlin
 test('active runtime exact match precedes static exact match, never searches legacy/foreign caches', async () => {
   const f = workerFixture();
   const url = '/assets/js/app.js?v=2';
-  await f.seed('luria-pwa-v281-mobile-flow-static', url, resource(url, 'legacy'));
+  await f.seed('traube-pwa-v281-mobile-flow-static', url, resource(url, 'legacy'));
   await f.seed('another-application', url, resource(url, 'foreign'));
   let result = await f.run(url); await result.done();
   assert.equal(result.response.status, 503);
@@ -226,7 +226,7 @@ test('public images keep their TTL/offline fallback and never accept signed URLs
 
 test('install/activate purge owned legacy caches without touching unrelated caches', async () => {
   const f = workerFixture({ fetch: async req => resource(req) });
-  for (const name of ['luria-pwa-v281-mobile-flow-static', 'luria-weekly-content-v1', 'luria-plantao-images-v3', 'unrelated-app']) {
+  for (const name of ['traube-pwa-v281-mobile-flow-static', 'traube-weekly-content-v1', 'traube-plantao-images-v3', 'unrelated-app']) {
     await f.caches.open(name);
   }
   await f.caches.open(f.RUNTIME_CACHE);
@@ -237,20 +237,20 @@ test('install/activate purge owned legacy caches without touching unrelated cach
   assert.equal(f.claimed(), 1);
   assert.ok(f.entries.has('unrelated-app'));
   assert.ok(f.entries.has(f.RUNTIME_CACHE));
-  assert.deepEqual(f.deleted.sort(), ['luria-plantao-images-v3', 'luria-pwa-v281-mobile-flow-static', 'luria-weekly-content-v1'].sort());
+  assert.deepEqual(f.deleted.sort(), ['traube-plantao-images-v3', 'traube-pwa-v281-mobile-flow-static', 'traube-weekly-content-v1'].sort());
   assert.equal(f.writes.filter(entry => entry.name === f.STATIC_CACHE).length, f.INSTALL_PRECACHE.length);
 });
 
 test('a failed install-precache resource cannot prevent activation or the remaining core cache entries', async () => {
   const f = workerFixture({ fetch: async req => {
-    if (req.url.includes('luria-brand-v5.css')) throw Error('core resource unavailable');
+    if (req.url.includes('traube-brand-v5.css')) throw Error('core resource unavailable');
     return resource(req);
   } });
   await f.dispatch('install').done(); await f.dispatch('activate').done();
   assert.equal(f.claimed(), 1);
   assert.ok(f.writes.some(entry => entry.url.endsWith('/dashboard/')));
-  assert.ok(f.calls.some(entry => entry.request.url.includes('luria-brand-v5.css')));
-  assert.ok(!f.writes.some(entry => entry.url.includes('luria-brand-v5.css')));
+  assert.ok(f.calls.some(entry => entry.request.url.includes('traube-brand-v5.css')));
+  assert.ok(!f.writes.some(entry => entry.url.includes('traube-brand-v5.css')));
 });
 
 test('cache storage/quota unavailability never breaks successful online fetch', async () => {

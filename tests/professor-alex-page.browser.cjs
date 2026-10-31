@@ -38,11 +38,11 @@ const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript
   await page.locator('#alex-form button[type="submit"]').click();
   assert.equal(await page.evaluate(()=>document.getElementById('alex-mascot')._gesture.name),'explaining');
   assert.match(await page.locator('#alex-output-copy').textContent(),/Cardiologia/);
-  await page.evaluate(()=>document.dispatchEvent(new CustomEvent('luria:alex',{detail:{action:'loading',phase:'start'}})));
+  await page.evaluate(()=>document.dispatchEvent(new CustomEvent('traube:alex',{detail:{action:'loading',phase:'start'}})));
   assert.equal(await page.evaluate(()=>document.getElementById('alex-mascot')._gesture.name),'loading');
-  await page.evaluate(()=>document.dispatchEvent(new CustomEvent('luria:alex',{detail:{action:'success'}})));
+  await page.evaluate(()=>document.dispatchEvent(new CustomEvent('traube:alex',{detail:{action:'success'}})));
   assert.equal(await page.evaluate(()=>document.getElementById('alex-mascot')._gesture.name),'nod');
-  await page.evaluate(()=>document.dispatchEvent(new CustomEvent('luria:alex',{detail:{action:'error'}})));
+  await page.evaluate(()=>document.dispatchEvent(new CustomEvent('traube:alex',{detail:{action:'error'}})));
   assert.equal(await page.evaluate(()=>document.getElementById('alex-mascot')._gesture.name),'shakeHead');
   await page.evaluate(()=>{const a=document.getElementById('alex-mascot');a.animation='idle';a.expression='happy';window.scrollTo(0,0);});
   await page.waitForTimeout(400);

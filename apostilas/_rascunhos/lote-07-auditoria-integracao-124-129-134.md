@@ -20,7 +20,7 @@
 
 - A âncora **`<section id="casos"`** existe e contém exatamente seis **`<h3>Caso 1` ... `Caso 6`**, em resumos clínicos atualmente curtos. São casos originais úteis a preservar; o complemento contém extensões direcionadas, não substitutos.
 - Segue-se **`<section id="revisao"`**, com tabela "16. Revisão de alto rendimento" e diferenças clínicas importantes.
-- Existem seções posteriores: `editorial-depth-sangramento-uterino-anormal`, `capitulo-integrado-sua-40k`, `luria-livro-etiologias-sangramento-uterino-anormal` e `capitulos-livro-sangramento-uterino-anormal`. Elas aprofundam etiologias e terapias; **não duplicá-las num novo apêndice genérico**.
+- Existem seções posteriores: `editorial-depth-sangramento-uterino-anormal`, `capitulo-integrado-sua-40k`, `traube-livro-etiologias-sangramento-uterino-anormal` e `capitulos-livro-sangramento-uterino-anormal`. Elas aprofundam etiologias e terapias; **não duplicá-las num novo apêndice genérico**.
 - A varredura da versão inspecionada **não encontrou rótulos padronizados "Questão 1", "Questão 2" etc.**; há revisões em tabela, que não são questões de múltipla escolha comentadas.
 - O complemento contém **oito questões autorais de quatro alternativas comentadas** e propostas de aprofundamento dos casos.
 
@@ -36,7 +36,7 @@
 
 ### 3.1. Estrutura existente verificada no HTML de 111.452 caracteres brutos
 
-- Há **`<section id="casos"`** contendo, além de dois minicasos rotulados, um caso resolvido em `<details class="clinical-case">` e diversos **`<details class="luria-checkpoint">`** orientados ao raciocínio. **Não resumir a página como "só dois casos"**: a contagem superficial "Caso 1/Caso 2" não inclui o acervo de checkpoints.
+- Há **`<section id="casos"`** contendo, além de dois minicasos rotulados, um caso resolvido em `<details class="clinical-case">` e diversos **`<details class="traube-checkpoint">`** orientados ao raciocínio. **Não resumir a página como "só dois casos"**: a contagem superficial "Caso 1/Caso 2" não inclui o acervo de checkpoints.
 - A âncora **`<section id="questoes"`** já existe e seu conteúdo é **"14. Fixação"**, composto por **cinco perguntas rápidas de resposta direta** em lista ordenada, sem quatro alternativas por pergunta.
 - A página contém mapa mental na âncora `#mapa` e bibliografia na `#referencias`.
 - O complemento Markdown contém oito novas **questões de residência de alternativas A–D, cada uma com comentário** e ajustes clínicos à luz da ASRM 2024.

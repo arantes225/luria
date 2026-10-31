@@ -10,9 +10,9 @@
  let uplink=null,listeningMuted=false,pushToTalk=false,statsTimer=null,quotaTimer=null,voiceQuota=null,quotaExpires=0,quotaRecorded=0,quotaRemaining=0;
  const remoteUsers=new Map(),remoteTracks=new Map();let speaking=[],voiceUsers=[],lastVoiceState='';
  const state=()=>({active:!!pc,muted,listeningMuted,pushToTalk,speaking:speaking.slice(),users:voiceUsers.slice(),remainingSeconds:voiceQuota?Math.max(0,Math.floor(quotaRemaining-(Date.now()-quotaRecorded)/1000)):null});
- function notify(){const value=state(),key=JSON.stringify({...value,remainingSeconds:null});if(key!==lastVoiceState){lastVoiceState=key;window.dispatchEvent(new CustomEvent('luria:voice-state',{detail:value}));}}
+ function notify(){const value=state(),key=JSON.stringify({...value,remainingSeconds:null});if(key!==lastVoiceState){lastVoiceState=key;window.dispatchEvent(new CustomEvent('traube:voice-state',{detail:value}));}}
  function updateQuota(value){if(!value)return;voiceQuota=value;quotaRecorded=Date.now();quotaRemaining=Number(value.remaining_seconds)||0;if(value.expires_at)quotaExpires=Date.now()+Math.max(0,Date.parse(value.expires_at)-Date.parse(value.server_now));}
- const pendingKey='luria:voice:pending-leaves';
+ const pendingKey='traube:voice:pending-leaves';
  const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
  const pendingLeaves=()=>{try{return JSON.parse(sessionStorage.getItem(pendingKey)||'[]').filter(p=>p&&uuid.test(p.userId||'')&&uuid.test(p.room||'')&&uuid.test(p.clientId||'')&&Number.isFinite(p.createdAt)&&Date.now()-p.createdAt>=0&&Date.now()-p.createdAt<600000).slice(-8);}catch{return [];}};
  const savePending=records=>{try{if(records.length)sessionStorage.setItem(pendingKey,JSON.stringify(records));else sessionStorage.removeItem(pendingKey);}catch{}};

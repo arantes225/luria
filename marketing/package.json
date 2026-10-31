@@ -1,5 +1,5 @@
 {
-  "name": "luria-marketing-studio",
+  "name": "traube-marketing-studio",
   "private": true,
   "description": "Pipeline local de producao de conteudo (Reels/carrosseis) da TRAUBE. Isolado do site publicado.",
   "type": "commonjs",

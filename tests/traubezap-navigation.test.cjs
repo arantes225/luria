@@ -13,8 +13,8 @@ function fixture(page, entry) {
   w.page = page;
   if (entry) w.document.body.dataset.plantaoEntry = entry;
   w.getProfileTitle = () => '';
-  w.luriaLogoSourceForTheme = () => '/logo.png';
-  w.luriaIcon = () => '';
+  w.traubeLogoSourceForTheme = () => '/logo.png';
+  w.traubeIcon = () => '';
   w.eval(markup);
   w.document.getElementById('sidebar').innerHTML = w.sidebarMarkup({email:'fixture@example.invalid'});
   return dom;
@@ -22,7 +22,7 @@ function fixture(page, entry) {
 
 test('TraubeZap has its own active study link without activating the simulator', () => {
   for (const [page, entry, active] of [
-    ['plantao', 'phone', '/plantao/luriazap/'],
+    ['plantao', 'phone', '/plantao/traubezap/'],
     ['plantao', 'emergency', '/plantao/sala-emergencia/'],
     ['dashboard', null, '/dashboard/']
   ]) {
@@ -31,12 +31,12 @@ test('TraubeZap has its own active study link without activating the simulator',
       const links = d.querySelectorAll('nav a.active');
       assert.equal(links.length, 1);
       assert.equal(links[0].getAttribute('href'), active);
-      assert.equal(d.querySelectorAll('nav a[href="/plantao/luriazap/"]').length, 1);
-      assert.equal(d.querySelector('nav a[href="/plantao/luriazap/"]').textContent.trim(), 'TraubeZap');
+      assert.equal(d.querySelectorAll('nav a[href="/plantao/traubezap/"]').length, 1);
+      assert.equal(d.querySelector('nav a[href="/plantao/traubezap/"]').textContent.trim(), 'TraubeZap');
     } finally { dom.window.close(); }
   }
   const work = fixture('trabalho_dashboard');
-  try { assert.equal(work.window.document.querySelector('nav a[href="/plantao/luriazap/"]'), null); }
+  try { assert.equal(work.window.document.querySelector('nav a[href="/plantao/traubezap/"]'), null); }
   finally { work.window.close(); }
 });
 
@@ -48,7 +48,7 @@ test('the independent link retains the existing Plantão entitlement gate', () =
       w.TraubeDialog = {alert(){}};
       const mapping = source.match(/const PLUS_NAV_FEATURES = \{[\s\S]*?\n\};/)[0];
       w.eval(mapping + '\n' + gate + '\naplicarEntitlementsNaNavegacao({});');
-      for (const href of ['/plantao/luriazap/', '/plantao/sala-emergencia/']) {
+      for (const href of ['/plantao/traubezap/', '/plantao/sala-emergencia/']) {
         const link = w.document.querySelector(`nav a[href="${href}"]`);
         assert.equal(link.getAttribute('aria-disabled'), enabled ? null : 'true');
         if (!enabled) {

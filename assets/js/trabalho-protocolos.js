@@ -251,7 +251,7 @@ function getProtocolCalculators(r) {
       sections.push(`
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;display:grid;gap:8px">
           <strong style="font-size:13.5px;color:var(--theme,#184888)">CHA₂DS₂-VASc (Risco Tromboembólico na FA)</strong>
-          <div style="display:grid;gap:6px;font-size:13px" class="luria-calc-inputs">
+          <div style="display:grid;gap:6px;font-size:13px" class="traube-calc-inputs">
             <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="chads-item"> IC / Disfunção VE (+1)</label>
             <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="chads-item"> Hipertensão arterial (+1)</label>
             <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="2" class="chads-item"> Idade ≥ 75 anos (+2)</label>
@@ -273,7 +273,7 @@ function getProtocolCalculators(r) {
       sections.push(`
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;display:grid;gap:8px">
           <strong style="font-size:13.5px;color:var(--theme,#184888)">CURB-65 (Estratificação de Gravidade na PAC)</strong>
-          <div style="display:grid;gap:6px;font-size:13px" class="luria-curb-inputs">
+          <div style="display:grid;gap:6px;font-size:13px" class="traube-curb-inputs">
             <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="curb-item"> <strong>C</strong> - Confusão mental aguda (+1)</label>
             <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="curb-item"> <strong>U</strong> - Ureia sérica > 50 mg/dL (+1)</label>
             <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1" class="curb-item"> <strong>R</strong> - Frequência respiratória ≥ 30 irpm (+1)</label>
@@ -292,7 +292,7 @@ function getProtocolCalculators(r) {
       sections.push(`
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;display:grid;gap:8px">
           <strong style="font-size:13.5px;color:var(--theme,#184888)">Escore de Wells para TEP</strong>
-          <div style="display:grid;gap:6px;font-size:13px" class="luria-wells-inputs">
+          <div style="display:grid;gap:6px;font-size:13px" class="traube-wells-inputs">
             <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="3" class="wells-item"> Sinais/sintomas clínicos de TVP (+3,0)</label>
             <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="3" class="wells-item"> TEP é a principal suspeita (+3,0)</label>
             <label style="display:flex;align-items:center;gap:8px"><input type="checkbox" data-pts="1.5" class="wells-item"> FC > 100 bpm (+1,5)</label>
@@ -392,8 +392,8 @@ function getProtocolCalculators(r) {
       <h3>Imagens-chave</h3>
       <div class="protocol-image-grid">${items.map((img) => `
         <figure class="protocol-image-card">
-          <button type="button" class="protocol-image-open" data-image-src="${esc(luriaSafeContentUrl(img.src, {relative:true}))}" aria-label="Ampliar imagem">
-            <img loading="lazy" decoding="async" src="${esc(luriaSafeContentUrl(img.src, {relative:true}))}" alt="${esc(img.alt || img.caption || "Imagem didática do protocolo")}">
+          <button type="button" class="protocol-image-open" data-image-src="${esc(traubeSafeContentUrl(img.src, {relative:true}))}" aria-label="Ampliar imagem">
+            <img loading="lazy" decoding="async" src="${esc(traubeSafeContentUrl(img.src, {relative:true}))}" alt="${esc(img.alt || img.caption || "Imagem didática do protocolo")}">
           </button>
           ${img.caption ? `<figcaption><strong>${esc(img.caption)}</strong>${img.credit ? `<small>${esc(img.credit)}</small>` : ""}</figcaption>` : ""}
         </figure>`).join("")}
@@ -403,7 +403,7 @@ function getProtocolCalculators(r) {
 
   const renderRefs = (items) => {
     if (!Array.isArray(items) || !items.length) return "";
-    return `<section class="protocol-section protocol-refs"><h3>Fontes e referências</h3><div>${items.map((r) => `<a href="${esc(luriaSafeContentUrl(r.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(r.label || "Fonte oficial")}</a>`).join("")}</div></section>`;
+    return `<section class="protocol-section protocol-refs"><h3>Fontes e referências</h3><div>${items.map((r) => `<a href="${esc(traubeSafeContentUrl(r.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(r.label || "Fonte oficial")}</a>`).join("")}</div></section>`;
   };
 
 

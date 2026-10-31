@@ -17,13 +17,13 @@ test('Arquitetura de arquivos da nova seção Aplicar', () => {
   assert(fs.existsSync('assets/js/aplicar-nav.js'), 'assets/js/aplicar-nav.js deve existir');
   assert(fs.existsSync('assets/js/aplicar-vocacao.js'), 'assets/js/aplicar-vocacao.js deve existir');
   assert(fs.existsSync('assets/js/aplicar-radar.js'), 'assets/js/aplicar-radar.js deve existir');
-  assert(fs.existsSync('supabase/migrations/20261016020000_luria_aplicar_section.sql'), 'Migração SQL deve existir');
+  assert(fs.existsSync('supabase/migrations/20261016020000_traube_aplicar_section.sql'), 'Migração SQL deve existir');
 });
 
 test('Estrutura HTML e acessibilidade de aplicar/index.html', () => {
   const html = fs.readFileSync('aplicar/index.html', 'utf8');
   assert(html.includes('data-page="aplicar"'), 'Body deve ter data-page="aplicar"');
-  assert(html.includes('class="luria-page-spotlight"'), 'Deve conter spotlight banner');
+  assert(html.includes('class="traube-page-spotlight"'), 'Deve conter spotlight banner');
   assert(!html.includes('class="cv-nav"'), 'Início do Aplicar não deve conter navegação por abas/pills no topo');
   assert(html.includes('cv-grid-2x2'), 'Deve conter grid 2x2 de cartões');
   assert(html.includes('cv-hub'), 'Deve conter grid de cartões da central');
@@ -127,10 +127,10 @@ test('Motor do módulo Radar de Provas e dados estatísticos auditáveis', () =>
 });
 
 test('Migração SQL Supabase possui RLS e estruturas corretas', () => {
-  const sql = fs.readFileSync('supabase/migrations/20261016020000_luria_aplicar_section.sql', 'utf8');
-  assert(sql.includes('CREATE TABLE IF NOT EXISTS public.luria_vocational_profiles'), 'Deve criar tabela de perfis vocacionais');
-  assert(sql.includes('CREATE TABLE IF NOT EXISTS public.luria_exam_topic_incidence'), 'Deve criar tabela de incidência');
-  assert(sql.includes('ALTER TABLE public.luria_vocational_profiles ENABLE ROW LEVEL SECURITY'), 'RLS ativo em vocational profiles');
-  assert(sql.includes('ALTER TABLE public.luria_exam_topic_incidence ENABLE ROW LEVEL SECURITY'), 'RLS ativo em exam incidence');
+  const sql = fs.readFileSync('supabase/migrations/20261016020000_traube_aplicar_section.sql', 'utf8');
+  assert(sql.includes('CREATE TABLE IF NOT EXISTS public.traube_vocational_profiles'), 'Deve criar tabela de perfis vocacionais');
+  assert(sql.includes('CREATE TABLE IF NOT EXISTS public.traube_exam_topic_incidence'), 'Deve criar tabela de incidência');
+  assert(sql.includes('ALTER TABLE public.traube_vocational_profiles ENABLE ROW LEVEL SECURITY'), 'RLS ativo em vocational profiles');
+  assert(sql.includes('ALTER TABLE public.traube_exam_topic_incidence ENABLE ROW LEVEL SECURITY'), 'RLS ativo em exam incidence');
   assert(sql.includes('auth.uid() = user_id'), 'Regra estrita de RLS do proprietário');
 });

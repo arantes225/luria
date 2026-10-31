@@ -79,7 +79,7 @@ Deno.serve(async (req: Request) => {
   const user = await requireUser(req);
   if (!user) return reply({ ok: false, error: "AUTH_REQUIRED" }, 401);
 
-  const bucket = Deno.env.get("R2_BUCKET") || "luria-ecg-library";
+  const bucket = Deno.env.get("R2_BUCKET") || "traube-ecg-library";
   let body: any;
   try {
     body = await req.json();

@@ -121,7 +121,7 @@ function main(){
   if(!Array.isArray(books)||!books.length||books.length>50)
     throw Error("Lote deve conter de 1 a 50 apostilas");
   const template=fs.readFileSync(templatePath,"utf8");
-  if(!template.includes("apostila-luria-book.css"))throw Error("Template sem CSS editorial compartilhado");
+  if(!template.includes("apostila-traube-book.css"))throw Error("Template sem CSS editorial compartilhado");
   const built=[],images=[],used=new Set();
   for(const book of books){
     const result=buildBook(template,book);

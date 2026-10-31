@@ -17,7 +17,7 @@ function fixture(t,html=''){
   const dom=new JSDOM(html,{url:'http://fixture.invalid/caderno/',runScripts:'dangerously',virtualConsole:console,
     resources:{interceptors:[requestInterceptor(req=>{requests.push(req.url);return new Response('');})]}});
   t.after(()=>dom.window.close());const w=dom.window;
-  w.eval(declaration(app,'luriaSafeContentUrl'));
+  w.eval(declaration(app,'traubeSafeContentUrl'));
   return{w,requests,errors};
 }
 function notebookFixture(t,html=''){
@@ -54,11 +54,11 @@ const attack='<img src="https://audit.invalid/hostile" onerror="window.auditExec
 test('URL validation rejects executable, obfuscated, credential and protocol-relative destinations',t=>{
   const {w}=fixture(t);
   for(const url of ['javascript:window.auditExecuted=1','JaVaScRiPt:alert(1)','java\nscript:alert(1)','&#106;avascript:alert(1)','data:text/html,<script>1</script>','vbscript:msgbox(1)','//audit.invalid/x','/\\audit.invalid/x','https://user:secret@audit.invalid','file:///tmp/a']){
-    assert.equal(w.luriaSafeContentUrl(url,{relative:true}),'',url);
+    assert.equal(w.traubeSafeContentUrl(url,{relative:true}),'',url);
   }
-  for(const url of ['https://example.org/a?x=1&y=2','http://example.org/doc','/amigos/?id=123','#section','?q=texto'])assert.equal(w.luriaSafeContentUrl(url,{relative:true}),url);
-  assert.equal(w.luriaSafeContentUrl('mailto:study@example.invalid',{mailto:true}),'mailto:study@example.invalid');
-  assert.equal(w.luriaSafeContentUrl('mailto:study@example.invalid'),'');
+  for(const url of ['https://example.org/a?x=1&y=2','http://example.org/doc','/amigos/?id=123','#section','?q=texto'])assert.equal(w.traubeSafeContentUrl(url,{relative:true}),url);
+  assert.equal(w.traubeSafeContentUrl('mailto:study@example.invalid',{mailto:true}),'mailto:study@example.invalid');
+  assert.equal(w.traubeSafeContentUrl('mailto:study@example.invalid'),'');
 });
 
 test('Caderno native formatting, Unicode, tables, alignment and study blocks survive sanitization',t=>{
@@ -151,7 +151,7 @@ test('Admin queue renderers reject dangerous URLs and escape persisted titles an
   const {w}=fixture(t,'<div id="admin-images-list"></div><div id="admin-apostila-images-list"></div>');
   w.$=id=>w.document.getElementById(id);w.clinicalImageLabel=()=>'';w.eval(declaration(admin,'esc','  '));
   w.apostilaImageReviewRows=[];w.apostilaImageSelection=new w.Set();
-  for(const name of ['apostilaVisibleImageRows','updateApostilaSelectionControls','luriaSafeImageSrc','renderClinicalImageReviewQueue','renderApostilaImageReviewQueue'])w.eval(declaration(admin,name,'  '));
+  for(const name of ['apostilaVisibleImageRows','updateApostilaSelectionControls','traubeSafeImageSrc','renderClinicalImageReviewQueue','renderApostilaImageReviewQueue'])w.eval(declaration(admin,name,'  '));
   const row={id:1,source_url:'javascript:window.auditExecuted=1',source_name:'<img onerror="window.auditExecuted=1">',proposed_asset:{src:'data:text/html,<script>1</script>',alt:'" onerror="window.auditExecuted=1',caption:'Texto & çã'}};
   w.apostilaImageReviewRows=[row];w.renderClinicalImageReviewQueue([row]);w.renderApostilaImageReviewQueue();
   for(const id of ['admin-images-list','admin-apostila-images-list']){const root=w.$(id);assertSafe(root);assert.equal(root.querySelectorAll('img,a').length,0);assert.ok(root.textContent.includes(row.source_name));}
@@ -174,13 +174,13 @@ test('Admin customer and feedback renderers keep user-controlled text literal',t
 });
 
 test('Notifications loaded through the actual mocked Supabase query cannot navigate to executable URLs',async t=>{
-  const {w}=fixture(t,'<div id="luria-notification-list"></div><span id="luria-notification-badge"></span>');
+  const {w}=fixture(t,'<div id="traube-notification-list"></div><span id="traube-notification-badge"></span>');
   const rows=[{id:'1',title:'<img onerror=1>',body:'Texto & revisão',href:'javascript:window.auditExecuted=1'},{id:'2',href:'/amigos/?id=2'}];
   w.supabaseClient={from:()=>({select(_fields,opts){this.count=opts?.head;return this;},order(){return this;},limit(){return Promise.resolve({data:rows});},is(){return Promise.resolve({count:2});}})};
   w.sb=w.supabaseClient;
   w.ensureNotificationCenter=()=>{};w.notificationIcon=()=>'';w.notificationTimeLabel=()=>'';
   w.eval(declaration(app,'escapeHtml'));w.eval(declaration(app,'loadNotifications'));
-  await w.loadNotifications();const links=w.document.querySelectorAll('.luria-notification-item');
+  await w.loadNotifications();const links=w.document.querySelectorAll('.traube-notification-item');
   assert.equal(links[0].getAttribute('href'),'/amigos/');assert.equal(links[1].getAttribute('href'),rows[1].href);
   assert.equal(links[0].querySelector('strong').textContent.trim(),rows[0].title);assertSafe(w.document.body);
 });

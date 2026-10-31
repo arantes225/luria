@@ -25,7 +25,7 @@ function fixture(t,{history=false,drafts=['A'],initialAuth=null,globalOwnership=
   let audioGate=null;
   w.Audio=class{constructor(){this.pauses=0;audio.push(this);}setAttribute(){}play(){return audioGate?audioGate.promise:Promise.resolve();}pause(){this.pauses++;}};
   w.TraubeLocalOwnerStore={ownerId:owner,ready:Promise.resolve(owner)};
-  for(const id of drafts)w.localStorage.setItem('luria_pcr_draft_v1_'+id,JSON.stringify(draft(id)));
+  for(const id of drafts)w.localStorage.setItem('traube_pcr_draft_v1_'+id,JSON.stringify(draft(id)));
   w.supabaseClient={auth:{onAuthStateChange(listener){authListener=listener;return{data:{subscription:{unsubscribe(){}}}};},getSession(){const id=owner;const gate=authQueue.shift();return gate?gate.promise:Promise.resolve({data:{session:id?{user:{id}}:null}});}},
     rpc(name,args){rpcCalls.push({name,args,authOwner:owner});const gate=rpcQueue.shift();return gate?gate.promise:Promise.resolve({data:args.payload.id,error:null});},
     from(table){const query={table,action:'select',filters:{},values:null};
@@ -38,7 +38,7 @@ function fixture(t,{history=false,drafts=['A'],initialAuth=null,globalOwnership=
   w.eval(read('assets/js/pcr-store.js'));
   w.eval(read(history?'assets/js/pcr-history.js':'assets/js/trabalho-pcr.js'));
   return {w,errors,intervals,timeouts,rpcCalls,queries,loads,authQueue,rpcQueue,audio,pdfCalls,
-    change(id){owner=id;if(globalOwnership)authListener(id?'SIGNED_IN':'SIGNED_OUT',id?{user:{id}}:null);else{w.TraubeLocalOwnerStore.ownerId=id;w.dispatchEvent(new w.CustomEvent('luria:owner-changed',{detail:{ownerId:id}}));}},
+    change(id){owner=id;if(globalOwnership)authListener(id?'SIGNED_IN':'SIGNED_OUT',id?{user:{id}}:null);else{w.TraubeLocalOwnerStore.ownerId=id;w.dispatchEvent(new w.CustomEvent('traube:owner-changed',{detail:{ownerId:id}}));}},
     input(id,value){const el=w.document.getElementById(id);el.value=value;el.dispatchEvent(new w.Event('input',{bubbles:true}));},
     click(id){w.document.getElementById(id).click();},
     advance(ms){now+=ms;for(const timer of [...intervals.values()])if(timer.ms===1000)timer.fn();},
@@ -48,7 +48,7 @@ test('PCR account A initializes its draft and keeps normal logging, timer and PD
   const f=fixture(t);await settle();
   assert.equal(f.w.document.getElementById('pcr-patient-initials').value,'DEMO-A');
   f.click('pcr-log-cpr');
-  assert.equal(JSON.parse(f.w.localStorage.getItem('luria_pcr_draft_v1_A')).events[0].action,'Troca de compressor');
+  assert.equal(JSON.parse(f.w.localStorage.getItem('traube_pcr_draft_v1_A')).events[0].action,'Troca de compressor');
   f.advance(121000);assert.match(f.w.document.getElementById('pcr-cycle').textContent,/Ciclo 2/);
   f.click('pcr-export-log');assert.ok(f.pdfCalls.includes('Paciente: DEMO-A'));
   assert.deepEqual(f.errors,[]);
@@ -62,7 +62,7 @@ test('PCR logout clears patient data, notes, dialogs, timeline and timers immedi
   assert.equal(f.w.document.getElementById('pcr-log').textContent,'');
   assert.equal(f.intervals.size,0);assert.equal(f.timeouts.size,0);
   await settle();f.input('pcr-care-info','SIGNED OUT');
-  assert.equal(JSON.parse(f.w.localStorage.getItem('luria_pcr_draft_v1_A')).care_info,'PRIVATE-A');
+  assert.equal(JSON.parse(f.w.localStorage.getItem('traube_pcr_draft_v1_A')).care_info,'PRIVATE-A');
   assert.equal(f.rpcCalls.length,0);assert.equal(f.w.document.getElementById('pcr-rosc').disabled,true);
 });
 test('PCR A to B to A restores only owner-specific drafts without duplicate listeners',async t=>{
@@ -73,9 +73,9 @@ test('PCR A to B to A restores only owner-specific drafts without duplicate list
     assert.ok(!f.w.document.getElementById('pcr-log').textContent.includes('EVENT-'+(id==='A'?'B':'A')));
     assert.equal(f.intervals.size,2);assert.equal(f.w.document.querySelectorAll('.pcr-pwa-causes-host .pcr-causes-grid').length,1);
   }
-  const before=JSON.parse(f.w.localStorage.getItem('luria_pcr_draft_v1_A')).events.length;
-  f.click('pcr-log-cpr');assert.equal(JSON.parse(f.w.localStorage.getItem('luria_pcr_draft_v1_A')).events.length,before+1);
-  f.input('pcr-care-info','NEW A');assert.equal(JSON.parse(f.w.localStorage.getItem('luria_pcr_draft_v1_B')).care_info,'PRIVATE-B');
+  const before=JSON.parse(f.w.localStorage.getItem('traube_pcr_draft_v1_A')).events.length;
+  f.click('pcr-log-cpr');assert.equal(JSON.parse(f.w.localStorage.getItem('traube_pcr_draft_v1_A')).events.length,before+1);
+  f.input('pcr-care-info','NEW A');assert.equal(JSON.parse(f.w.localStorage.getItem('traube_pcr_draft_v1_B')).care_info,'PRIVATE-B');
 });
 test('PCR late initial A lookup cannot restore A after switching to B',async t=>{
   const gate=deferred(),f=fixture(t,{drafts:['A','B'],initialAuth:gate});await settle();
@@ -94,7 +94,7 @@ test('PCR late save acknowledgement cannot remove A draft or modify B UI',async 
   f.click('pcr-rosc');await settle();assert.equal(f.rpcCalls.length,1);
   assert.equal(f.rpcCalls[0].authOwner,'A');f.change('B');await settle();
   gate.resolve({data:'record-A',error:null});await settle();
-  assert.ok(f.w.localStorage.getItem('luria_pcr_draft_v1_A'));
+  assert.ok(f.w.localStorage.getItem('traube_pcr_draft_v1_A'));
   assert.equal(f.w.document.getElementById('pcr-patient-initials').value,'DEMO-B');
   assert.equal(f.w.document.getElementById('pcr-rosc').disabled,false);
   assert.equal(f.w.document.getElementById('pcr-save-status').textContent,'');
@@ -103,11 +103,11 @@ test('PCR ended draft remains recoverable on save failure and retry preserves it
   const f=fixture(t);await settle();const gate=deferred();f.rpcQueue.push(gate);f.click('pcr-rosc');await settle();
   gate.resolve({error:{message:'SYNTHETIC NETWORK FAILURE'}});await settle();
   assert.match(f.w.document.getElementById('pcr-rosc').textContent,/Tentar salvar/);
-  const saved=JSON.parse(f.w.localStorage.getItem('luria_pcr_draft_v1_A'));assert.ok(saved.ended_at);
+  const saved=JSON.parse(f.w.localStorage.getItem('traube_pcr_draft_v1_A'));assert.ok(saved.ended_at);
   f.change('B');await settle();f.change('A');await settle();
   assert.equal(f.w.document.getElementById('pcr-rosc').disabled,false);
   f.click('pcr-rosc');await settle();assert.equal(f.rpcCalls[1].args.payload.id,'record-A');
-  assert.equal(f.w.localStorage.getItem('luria_pcr_draft_v1_A'),null);
+  assert.equal(f.w.localStorage.getItem('traube_pcr_draft_v1_A'),null);
 });
 test('PCR pending audio unlock and delayed beats cannot repopulate another account',async t=>{
   const f=fixture(t,{drafts:['A','B']});await settle();const gate=deferred();f.holdAudio(gate);f.click('pcr-metronome');await settle();
@@ -155,7 +155,7 @@ test('PCR store rejects mismatched draft writes and invalidates saves even after
   const gate=deferred();f.rpcQueue.push(gate);
   const result=f.w.TraubePCRStore.save(draft('A')).then(()=>null,error=>error);await settle();
   f.change('B');await settle();f.change('A');await settle();gate.resolve({data:'record-A'});
-  assert.match((await result).message,/sessão mudou/);assert.ok(f.w.localStorage.getItem('luria_pcr_draft_v1_A'));
+  assert.match((await result).message,/sessão mudou/);assert.ok(f.w.localStorage.getItem('traube_pcr_draft_v1_A'));
 });
 test('PCR initializes and recovers with the actual global Auth ownership lifecycle',async t=>{
   const f=fixture(t,{globalOwnership:true,drafts:['A','B']});await settle();
@@ -176,8 +176,8 @@ test('PCR rhythm, shock, mode and drug controls remain operational in the new se
   f.w.document.querySelector('[data-rhythm="FV"]').click();assert.equal(f.w.document.getElementById('pcr-shock').disabled,false);
   f.click('pcr-shock');f.w.document.querySelector('[data-pcr-mode="pediatric"]').click();
   f.w.document.querySelector('#pcr-drugs button').click();
-  const saved=JSON.parse(f.w.localStorage.getItem('luria_pcr_draft_v1_B'));
+  const saved=JSON.parse(f.w.localStorage.getItem('traube_pcr_draft_v1_B'));
   assert.equal(saved.rhythm,'FV');assert.equal(saved.shock_count,1);assert.equal(saved.mode,'pediatric');
   assert.equal(saved.events.filter(e=>e.action==='Adrenalina').length,1);
-  assert.equal(JSON.parse(f.w.localStorage.getItem('luria_pcr_draft_v1_A')).shock_count,0);
+  assert.equal(JSON.parse(f.w.localStorage.getItem('traube_pcr_draft_v1_A')).shock_count,0);
 });

@@ -16,7 +16,7 @@ function fixture(t){
 }
 test('reviewed jsPDF bytes match the loader and every direct SRI pin',options,t=>{
   const integrity='sha384-'+crypto.createHash('sha384').update(fs.readFileSync(bundle)).digest('base64');
-  assert(read('assets/js/luria-lazy-vendors.js').includes(integrity));
+  assert(read('assets/js/traube-lazy-vendors.js').includes(integrity));
   for(const file of ['caderno.html','caderno/index.html','caderno-erros.html','caderno-erros/index.html','trabalho/pcr/executar/index.html','trabalho/pcr/historico/index.html']) {
     const dom=new JSDOM(read(file));try{const script=dom.window.document.querySelector('script[src*="jspdf@"]');assert(script);assert.equal(script.integrity||script.getAttribute('integrity'),integrity);assert.match(script.src,/jspdf@4\.2\.1\//);assert.equal(script.crossOrigin,'anonymous');}finally{dom.window.close();}
   }
@@ -40,5 +40,5 @@ test('real jsPDF preserves Caderno multi-page canvas slicing and PCR export API'
   w.jspdf.jsPDF=function(...args){const result=new Real(...args);result.save=name=>saved.push({name,pdf:result.output()});return result;};
   w.TraubeLocalOwnerStore={ownerId:'synthetic'};w.eval(read('assets/js/pcr-store.js'));
   w.TraubePCRStore.pdf({id:'synthetic',mode:'adult',events:[],shock_count:0,care_info:'Dados sintéticos'}, {initials:'QA'});
-  assert.equal(saved[0].name,'luria-pcr-synthetic.pdf');assert.match(saved[0].pdf,/^%PDF-/);
+  assert.equal(saved[0].name,'traube-pcr-synthetic.pdf');assert.match(saved[0].pdf,/^%PDF-/);
 });

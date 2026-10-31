@@ -10,14 +10,14 @@
     user-id/errors/file.webp
 
   Referência multi-provider:
-    luria-storage://provider/bucket/user-id/path/file.webp
+    traube-storage://provider/bucket/user-id/path/file.webp
 
   Nunca exponha service_role/secret key no frontend.
 */
 (function () {
   "use strict";
 
-  const PREFIX = "luria-storage://";
+  const PREFIX = "traube-storage://";
   const providers = new Map();
   const routes = {
     error_images: { provider: "main", bucket: "docmap" },

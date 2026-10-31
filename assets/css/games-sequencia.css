@@ -1,8 +1,8 @@
-.luria-game[data-game="sequencia"] {
+.traube-game[data-game="sequencia"] {
   --g-accent: var(--color-success);
   --g-soft: var(--color-success-surface);
 }
-.luria-game .s-art {
+.traube-game .s-art {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   min-height: 250px;
   justify-content: center;
 }
-.luria-game .s-connection {
+.traube-game .s-connection {
   position: absolute;
   left: 52px;
   top: 35px;
@@ -19,7 +19,7 @@
   border-left: 2px dashed var(--color-success);
   opacity: 0.4;
 }
-.luria-game .s-art-card {
+.traube-game .s-art-card {
   position: relative;
   display: flex;
   align-items: center;
@@ -33,10 +33,10 @@
   transform: rotate(-3deg);
   max-width: 360px;
 }
-.luria-game .s-art-card:nth-of-type(3) {
+.traube-game .s-art-card:nth-of-type(3) {
   transform: translateX(16px) rotate(2deg);
 }
-.luria-game .s-art-card b {
+.traube-game .s-art-card b {
   display: grid;
   place-items: center;
   width: 28px;
@@ -46,24 +46,24 @@
   color: var(--color-success);
   font-size: 11px;
 }
-.luria-game .s-art-card i {
+.traube-game .s-art-card i {
   margin-left: auto;
   color: var(--color-success);
   font-style: normal;
 }
-.luria-game .s-art-note {
+.traube-game .s-art-note {
   font-size: 8px;
   letter-spacing: 0.16em;
   margin: 12px 0 0 15px;
   color: var(--color-text-secondary);
 }
-.luria-game .s-layout {
+.traube-game .s-layout {
   display: grid;
   grid-template-columns: minmax(250px, 0.8fr) minmax(0, 1.3fr);
   gap: 18px;
   align-items: start;
 }
-.luria-game .s-brief {
+.traube-game .s-brief {
   position: sticky;
   top: 20px;
   background: linear-gradient(
@@ -72,17 +72,17 @@
     var(--color-surface) 65%
   );
 }
-.luria-game .s-brief .g-case {
+.traube-game .s-brief .g-case {
   font-size: 15px;
   font-weight: 400;
 }
-.luria-game .s-brief-footer {
+.traube-game .s-brief-footer {
   display: flex;
   align-items: center;
   gap: 12px;
   margin: 24px 0 12px;
 }
-.luria-game .s-node {
+.traube-game .s-node {
   width: 44px;
   height: 44px;
   display: grid;
@@ -94,37 +94,37 @@
   font-weight: 750;
 }
 @media (max-width: 800px) {
-  .luria-game .s-layout {
+  .traube-game .s-layout {
     grid-template-columns: 1fr;
   }
-  .luria-game .s-brief {
+  .traube-game .s-brief {
     position: static;
   }
-  .luria-game .s-brief .g-case {
+  .traube-game .s-brief .g-case {
     margin: 14px 0;
   }
-  .luria-game .s-brief-footer {
+  .traube-game .s-brief-footer {
     margin: 12px 0;
   }
-  .luria-game .s-brief .g-note {
+  .traube-game .s-brief .g-note {
     margin-bottom: 0;
   }
 }
 @media (max-width: 600px) {
-  .luria-game .s-art {
+  .traube-game .s-art {
     padding: 0 20px 10px 0;
     min-height: 180px;
     gap: 10px;
   }
-  .luria-game .s-art-card {
+  .traube-game .s-art-card {
     padding: 10px;
     font-size: 11px;
   }
-  .luria-game .s-art-note {
+  .traube-game .s-art-note {
     font-size: 7px;
     margin-top: 3px;
   }
-  .luria-game .s-art-card b {
+  .traube-game .s-art-card b {
     width: 22px;
     height: 22px;
   }
