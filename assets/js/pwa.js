@@ -31,7 +31,7 @@
   if (new URL(document.baseURI).pathname !== "/") return;
 
 
-  const release = "20261030-leco-stt-v1";
+  const release = "20261031-leco-actions-center1";
 
   
 
