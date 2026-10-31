@@ -93,6 +93,9 @@ test("Voice_input is true only for recognized microphone messages, never correct
   assert.match(client,/liveTranscriptFromSpeech = true;\s*if \(input\) input.value = finalText/);
   assert.match(client,/liveTranscriptFromSpeech = false;\s*input.value = correctedPrompt/);
   assert.match(edge,/const isVoiceInput = data.voice_input === true/);
+  assert.match(page,/new CustomEvent\("luria:leco:dictation"/);
+  assert.match(client,/window\.addEventListener\("luria:leco:dictation"/);
+  assert.match(client,/document\.getElementById\("alex-prompt"\)\?\.addEventListener\("input"/);
 });
 
 test("Server proposes CEP -> sepse only for an actual STT result and validates model proposals",()=>{
