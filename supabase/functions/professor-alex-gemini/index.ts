@@ -80,6 +80,7 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 const DEFAULT_MODEL = "gemini-3.5-flash-lite";
 const TTS_MODEL = "gemini-3.8-flash-tts";
+const FAST_TTS_MODEL = "gemini-3.8-flash-lite-tts";
 const MAX_PDF_BASE64 = 6_000_000; // ~4.5MB of raw PDF
 const MAX_BODY_BYTES = 6_500_000;
 const MAX_SITE_CONTEXT_CHARS = 6_000;
@@ -245,8 +246,8 @@ Deno.serve(async (req: Request) => {
   const intent = ["learn", "question", "material"].includes(String(data.intent)) ? String(data.intent) : "learn";
   const mode = (data.mode === "estourado") ? "estourado" : "normal";
   const channel = (data.channel === "voice") ? "voice" : "chat";
-  // Browser TTS is the fast default. Premium voice adds a serial Gemini request
-  // only when explicitly requested for a full lesson.
+  // The PWA must receive real, server-generated audio for every voice answer.
+  // Browser speech is only a fallback: mobile Safari may silently block it.
   const voiceQuality = data.voice_quality === "natural" ? "natural" : "fast";
   const isVoiceInput = channel === "voice" || data.voice_input === true;
   const depth = data.depth === "aula" ? "aula" : "rapida";
@@ -270,7 +271,7 @@ Deno.serve(async (req: Request) => {
     return json({ clarification: "Não entendi bem esse termo. Pode repetir devagar ou digitar a palavra? Não vou elaborar uma resposta antes de confirmar.", clarification_code: "low_transcription_confidence" }, 200, headers);
   }
   const socialReply = experience === "alex" ? fastSocialReply(prompt || topic, mode) : null;
-  if (socialReply && (data.file === undefined || data.file === null)) {
+  if (socialReply && channel !== "voice" && (data.file === undefined || data.file === null)) {
     return json({ answer: socialReply, audio: null, audioError: channel === "voice" ? "device_tts_fast_path" : null, model: "local-fast-path", usage: null, fast_path: true }, 200, headers);
   }
   if (!Deno.env.get("CLIENT_GEMINI")) return json({ error: "gemini_secret_missing" }, 503, headers);
@@ -470,7 +471,7 @@ Deno.serve(async (req: Request) => {
   let audioMimeType: string = "audio/wav";
   let audioError: string | null = null;
 
-  if (experience === "alex" && channel === "voice" && depth === "aula" && voiceQuality === "natural") {
+  if (experience === "alex" && channel === "voice") {
     try {
       const voiceText = answer
         .replace(/\*\*(.*?)\*\*/g, "$1")
@@ -478,10 +479,12 @@ Deno.serve(async (req: Request) => {
         .replace(/#{1,6}\s+/g, "")
         .replace(/\[(.*?)\]\(.*?\)/g, "$1")
         .replace(/<[^>]*>/g, "")
-        .slice(0, 1500)
+        .slice(0, voiceQuality === "natural" && depth === "aula" ? 1500 : 900)
         .trim();
 
-      const ttsModel = Deno.env.get("ALEX_TTS_MODEL") || TTS_MODEL;
+      const ttsModel = voiceQuality === "natural" && depth === "aula"
+        ? (Deno.env.get("ALEX_TTS_MODEL") || TTS_MODEL)
+        : (Deno.env.get("ALEX_FAST_TTS_MODEL") || FAST_TTS_MODEL);
       // Gemini 3.8 TTS usa Interactions API. O endpoint generateContent com
       // campos legados pode retornar 400 sem áudio mesmo com texto válido.
       const ttsResponse = await fetch("https://generativelanguage.googleapis.com/v1beta/interactions", {
@@ -503,7 +506,7 @@ Deno.serve(async (req: Request) => {
           response_format: { type: "audio" },
           generation_config: { speech_config: [{ voice: "Puck" }] }
         }),
-        signal: AbortSignal.timeout(10_000),
+        signal: AbortSignal.timeout(voiceQuality === "natural" && depth === "aula" ? 10_000 : 8_000),
       });
 
       if (ttsResponse.ok) {
@@ -530,10 +533,6 @@ Deno.serve(async (req: Request) => {
       audioError = "tts_unavailable";
       console.warn("[alex-gemini] TTS failure:", ttsErr instanceof Error ? ttsErr.name : "unknown");
     }
-  } else if (channel === "voice") {
-    // Respostas rápidas chegam imediatamente ao cliente e usam a síntese do
-    // dispositivo. Evita bloquear o texto aguardando uma segunda chamada de IA.
-    audioError = "device_tts_fast_path";
   }
 
   let report: Record<string, unknown> | null = null;
