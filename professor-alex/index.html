@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-FtRh8PKKcnn9tWl6gkmDCqa0b4TftuSYsphSvo+/rMQ='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-X9yZoToEw1rmJpRYvqfmVhTnlLaRPXTFCbtJtaLQhrI='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -321,6 +321,9 @@
         recognition.addEventListener("result", event => {
           const text = event.results?.[0]?.[0]?.transcript || "";
           prompt.value = [prompt.value.trim(), text].filter(Boolean).join(" ");
+          window.dispatchEvent(new CustomEvent("luria:leco:dictation", {
+            detail: { transcript: text, confidence: event.results?.[0]?.[0]?.confidence }
+          }));
           prompt.style.height = "auto";
           prompt.style.height = Math.min(prompt.scrollHeight, 130) + "px";
         });
