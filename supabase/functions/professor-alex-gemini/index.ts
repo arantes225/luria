@@ -180,6 +180,55 @@ Produza a avaliação final em JSON válido, sem markdown, com exatamente estas 
 Responda como aluno, não como tutor. Faça somente UMA pergunta curta e pertinente por turno, com no máximo 45 palavras. Use questionamento socrático para o usuário perceber a lacuna. Não dê a resposta nem faça uma correção completa, salvo risco médico grave que exija sinalização imediata. Não elogie genericamente; quando reconhecer algo correto, diga concretamente o quê. ${channel === "voice" ? "Use frase natural, fácil de ouvir, sem markdown." : "Evite listas e monólogos."}`;
 }
 
+type PhoneticCorrection = {
+  recognized: string;
+  corrected_term: string;
+  corrected_prompt: string;
+  action_label: string;
+};
+
+function makePhoneticCorrection(recognized: string, correctedTerm: string, correctedPrompt: string): PhoneticCorrection {
+  const title = correctedTerm.charAt(0).toLocaleUpperCase("pt-BR") + correctedTerm.slice(1);
+  return {
+    recognized, corrected_term: correctedTerm, corrected_prompt: correctedPrompt,
+    action_label: "✓ Sim! Me explica sobre " + title,
+  };
+}
+
+// Fast correction for known, clearly identifiable speech-to-text confusions.
+// Never replace an ambiguous medical term without an explicit tap.
+function knownPhoneticCorrection(transcript: string): PhoneticCorrection | null {
+  const clean = normalizeSocialText(transcript);
+  const medicalQuestion = /^(?:(?:me )?(?:explica|explique|fala|fale)(?: sobre)?|o que e|quero saber sobre|me ensina sobre|qual o tratamento de|como tratar|sinais de)\s+(?:a\s+)?/;
+  const term = clean.replace(medicalQuestion, "").trim();
+  if (/^(?:cep|c e p|cepe)$/.test(term)) {
+    return makePhoneticCorrection("CEP", "sepse", "Me explica sobre sepse");
+  }
+  return null;
+}
+
+// Model suggestions only render a confirmation. No medical action is taken.
+function parseModelPhoneticCorrection(answer: string, transcript: string): PhoneticCorrection | null {
+  if (!answer.trim().startsWith("{")) return null;
+  let parsed: Record<string, unknown>;
+  try { parsed = JSON.parse(answer); } catch { return null; }
+  const item = parsed?.phonetic_correction;
+  if (!item || typeof item !== "object" || Array.isArray(item)) return null;
+  const suggestion = item as Record<string, unknown>;
+  const recognized = String(suggestion.recognized || "").trim().slice(0, 90);
+  const correctedTerm = String(suggestion.corrected_term || "").trim().slice(0, 90);
+  const correctedPrompt = String(suggestion.corrected_prompt || "").trim().slice(0, 240);
+  const normal = (v: string) => normalizeSocialText(v).replace(/\s+/g, " ");
+  if (recognized.length < 2 || correctedTerm.length < 3 || correctedPrompt.length < 8) return null;
+  if (!normal(transcript).includes(normal(recognized))) return null;
+  if (!normal(correctedPrompt).includes(normal(correctedTerm))) return null;
+  if (normal(recognized) === normal(correctedTerm)) return null;
+  // The model may suggest a clinical term, but it cannot choose an arbitrary
+  // command to be executed by the one-tap confirmation button.
+  if (!/^[\p{L}\p{M}\p{N}\s-]{3,70}$/u.test(correctedTerm) || !/\p{L}/u.test(correctedTerm)) return null;
+  return makePhoneticCorrection(recognized, correctedTerm, "Me explica sobre " + correctedTerm);
+}
+
 Deno.serve(async (req: Request) => {
   const origin = req.headers.get("origin");
   const headers = corsHeaders(origin);
@@ -249,11 +298,11 @@ Deno.serve(async (req: Request) => {
   // The PWA must receive real, server-generated audio for every voice answer.
   // Browser speech is only a fallback: mobile Safari may silently block it.
   const voiceQuality = data.voice_quality === "natural" ? "natural" : "fast";
-  const isVoiceInput = channel === "voice" || data.voice_input === true;
+  const isVoiceInput = data.voice_input === true;
   const depth = data.depth === "aula" ? "aula" : "rapida";
   const sourceMode = data.source_mode === "luria_site" ? "luria_site" : "general";
   const siteContext = String(data.site_context || "").trim().slice(0, MAX_SITE_CONTEXT_CHARS);
-  const voiceConfidence = Number(data.voice_confidence);
+  const voiceConfidence = data.voice_confidence == null ? NaN : Number(data.voice_confidence);
   const area = String(data.area || "").trim().slice(0, 120);
   const topic = String(data.topic || "").trim().slice(0, 180);
   const prompt = String(data.prompt || "").trim().slice(0, 4000);
@@ -263,9 +312,12 @@ Deno.serve(async (req: Request) => {
   const rawHistory = Array.isArray(data.history) ? data.history.slice(-12) : [];
   if (!topic && !prompt) return json({ error: "empty_prompt" }, 400, headers);
 
-  const voiceTranscript = prompt.toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[.\-]/g, " ").replace(/\s+/g, " ").trim();
-  if (isVoiceInput && /^(cep|c e p|cepe)$/.test(voiceTranscript)) {
-    return json({ clarification: "A transcrição veio como “CEP”. Você quis dizer “sepse”? Responda “sim, sepse” ou repita a pergunta.", clarification_code: "ambiguous_transcription" }, 200, headers);
+  const knownCorrection = isVoiceInput ? knownPhoneticCorrection(prompt) : null;
+  if (knownCorrection) {
+    return json({
+      clarification: "A transcrição parece ter confundido um termo médico. Você quis dizer sepse?",
+      clarification_code: "ambiguous_transcription", phonetic_correction: knownCorrection,
+    }, 200, headers);
   }
   if (isVoiceInput && Number.isFinite(voiceConfidence) && voiceConfidence < 0.65) {
     return json({ clarification: "Não entendi bem esse termo. Pode repetir devagar ou digitar a palavra? Não vou elaborar uma resposta antes de confirmar.", clarification_code: "low_transcription_confidence" }, 200, headers);
@@ -334,6 +386,13 @@ Deno.serve(async (req: Request) => {
       ? "\n\nFORMATO AULA COMPLETA: quando o aluno pedir ensino médico, explique com raciocínio clínico, fisiopatologia, diagnóstico, conduta e exemplos pertinentes. Não force uma aula em cumprimentos ou conversas sociais."
       : "\n\nFORMATO DÚVIDA RÁPIDA: priorize uma resposta imediata, direta e natural. Cumprimentos: uma frase curta. Dúvida factual simples: até três frases. Só aprofunde se a pergunta realmente exigir, sem comprometer segurança clínica.") + (sourceMode === "luria_site" ? "\n\nFONTE RESTRITA: responda somente com base nos trechos do acervo LURIA enviados nesta requisição. Não use busca externa nem preencha lacunas com uma aula genérica." : "");
 
+  // Detect other likely phonetic ambiguities in the existing Gemini response,
+  // without an additional provider call or guessing a diagnosis automatically.
+  const medicalVoiceInstruction = isVoiceInput && experience === "alex"
+    ? "\n\nVERIFICAÇÃO DE TRANSCRIÇÃO FONÉTICA (STT): a pergunta veio de reconhecimento de fala. Se e SOMENTE se existir erro fonético muito provável em um termo médico, retorne EXCLUSIVAMENTE JSON válido, sem markdown, no formato: {\"phonetic_correction\":{\"recognized\":\"fragmento literal da transcrição\",\"corrected_term\":\"termo médico sugerido\",\"corrected_prompt\":\"pergunta completa corrigida para reenviar\"}}. recognized precisa ser texto presente na pergunta original. Não inclua comandos, dados pessoais, mudanças do site ou efeitos colaterais em corrected_prompt. Se não houver ambiguidade fonética clara, responda normalmente em português, sem JSON. Jamais corrija automaticamente; espere confirmação do aluno."
+    : "";
+  const effectiveSystem = system + medicalVoiceInstruction;
+
   // Gemini 3.5 Flash-Lite exige níveis de pensamento, não thinkingBudget: 0.
   // Não enviar os antigos parâmetros de sampling no Gemini 3.x (deprecated).
   const alexMaxOutputTokens = depth === "aula" ? (channel === "voice" ? 650 : 1400) : (channel === "voice" ? 220 : 320);
@@ -370,7 +429,7 @@ Deno.serve(async (req: Request) => {
     }
     return null;
   }
-  const providerRequest = { systemInstruction: { parts: [{ text: system }] }, contents, generationConfig };
+  const providerRequest = { systemInstruction: { parts: [{ text: effectiveSystem }] }, contents, generationConfig };
   // Para agilidade em perguntas de texto sem anexos pesados, fazemos a estimativa heuristica (chars / 3.5).
   // Chamamos a API remota de countTokens somente se houver arquivo anexado (ex: PDF).
   try {
@@ -447,6 +506,17 @@ Deno.serve(async (req: Request) => {
   if (!answer) {
     await settle(null, null, null);
     return json({ error: "empty_response" }, 502, headers);
+  }
+  if (isVoiceInput && experience === "alex" && !studyPlanning) {
+    const phoneticCorrection = parseModelPhoneticCorrection(answer, prompt);
+    if (phoneticCorrection) {
+      await settle(null, null, null);
+      return json({
+        clarification: "Você quis dizer “" + phoneticCorrection.corrected_term + "”?",
+        clarification_code: "ambiguous_transcription",
+        phonetic_correction: phoneticCorrection,
+      }, 200, headers);
+    }
   }
   let actionPlan: StudyAction | null = null;
   if (studyPlanning) {

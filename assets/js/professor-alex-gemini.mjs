@@ -4,7 +4,7 @@ import {getAlexConversation, rememberAlexTurn, clearAlexConversation} from './al
 // The Gemini API key is read exclusively inside the Edge Function.
 const finalLayoutStyle = document.createElement("link");
 finalLayoutStyle.rel = "stylesheet";
-finalLayoutStyle.href = "/assets/css/professor-alex-layout-20261021.css?v=2";
+finalLayoutStyle.href = "/assets/css/professor-alex-layout-20261021.css?v=stt1";
 document.head.appendChild(finalLayoutStyle);
 const form = document.getElementById("alex-form");
 const output = document.getElementById("alex-output");
@@ -17,6 +17,24 @@ const sessionHistory = [];
 let renderedHistoryUser = null;
 let alexSiteIndexPromise = null;
 let liveTranscriptConfidence = null;
+let liveTranscriptFromSpeech = false;
+
+// The small mic button uses the page's dictation recognizer, separate from
+// live conversation. Both must mark actual STT turns for phonetic correction.
+window.addEventListener("luria:leco:dictation", event => {
+  const transcript = String(event?.detail?.transcript || "").trim();
+  if (!transcript) return;
+  liveTranscriptFromSpeech = true;
+  const confidence = Number(event?.detail?.confidence);
+  liveTranscriptConfidence = Number.isFinite(confidence) && confidence > 0 && confidence <= 1 ? confidence : null;
+});
+document.getElementById("alex-prompt")?.addEventListener("input", () => {
+  // If someone edits the dictation before sending, treat their new text as
+  // intentional typing, not an uncertain transcription.
+  if (!liveTranscriptFromSpeech) return;
+  liveTranscriptFromSpeech = false;
+  liveTranscriptConfidence = null;
+});
 let speechGeneration = 0;
 let conversationTurn = 0;
 let activeResponseController = null;
@@ -353,6 +371,60 @@ function isStudyPlanningRequest(value) {
   return /\b(cronograma|planejamento|planejar estudos?|organizar (?:meus? )?estudos?|reorganizar (?:minha )?semana|aulas? (?:desta|da|por) semana|rodando em|lista(?:s)? de quest|lista(?:s)? de flashcard|questoes? (?:sobre|de|para|do)|flashcards? (?:sobre|de|para|do)|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma|montar.*(?:quest|flashcard)|gerar.*(?:quest|flashcard))\b/.test(clean);
 }
 
+// Render the doctor's phonetic confirmation as a first-class chat bubble.
+// All provider strings use textContent; none are trusted as HTML.
+function renderPhoneticCorrection(correction) {
+  const feed = document.getElementById("alex-chat-feed");
+  const recognized = String(correction?.recognized || "").trim().slice(0, 90);
+  const correctedTerm = String(correction?.corrected_term || "").trim().slice(0, 90);
+  const correctedPrompt = String(correction?.corrected_prompt || "").trim().slice(0, 240);
+  if (!feed || !form || !recognized || !correctedTerm || !correctedPrompt) return;
+
+  document.getElementById("alex-thinking-msg")?.remove();
+  const card = document.createElement("section");
+  card.className = "alex-msg alex-msg-alex alex-stt-correction";
+  card.setAttribute("role", "group");
+  card.setAttribute("aria-label", "Confirmação de transcrição fonética");
+  const heading = document.createElement("div");
+  heading.className = "alex-msg-header";
+  const badge = document.createElement("span");
+  badge.className = "alex-stt-correction-badge";
+  badge.textContent = "🎙️ Correção Fonética de Áudio (STT)";
+  heading.appendChild(badge);
+  const bubble = document.createElement("div");
+  bubble.className = "alex-msg-bubble alex-stt-correction-bubble";
+  const description = document.createElement("p");
+  description.textContent = "Ouvi \"" + recognized + "\". Você quis dizer \"" + correctedTerm + "\"?";
+  const button = document.createElement("button");
+  button.className = "alex-stt-correction-apply";
+  button.type = "button";
+  const name = correctedTerm.charAt(0).toLocaleUpperCase("pt-BR") + correctedTerm.slice(1);
+  button.textContent = "✓ Sim! Me explica sobre " + name;
+  button.setAttribute("aria-label", "Confirmar correção e enviar pergunta sobre " + correctedTerm);
+  const actions = document.createElement("div");
+  actions.className = "alex-stt-correction-actions";
+  actions.appendChild(button);
+  bubble.append(description, actions);
+  card.append(heading, bubble);
+  feed.appendChild(card);
+  feed.scrollTop = feed.scrollHeight;
+
+  button.addEventListener("click", () => {
+    if (!card.isConnected || button.disabled) return;
+    const input = document.getElementById("alex-prompt");
+    if (!input) return;
+    // A user gesture confirms the topic; the next turn is not another STT guess.
+    stopLiveListening?.();
+    stopCurrentVoicePlayback();
+    liveTranscriptConfidence = null;
+    liveTranscriptFromSpeech = false;
+    input.value = correctedPrompt;
+    button.disabled = true;
+    button.textContent = "✓ Confirmado — enviando pergunta...";
+    form.dispatchEvent(new Event("submit", { cancelable: true, bubbles: true }));
+  });
+}
+
 function renderStudyAction(plan) {
   const feed = document.getElementById("alex-chat-feed");
   if (!feed || !plan || !["schedule_focus", "topic_bundle"].includes(plan.type)) return;
@@ -451,6 +523,8 @@ if (form) {
     event.preventDefault();
     event.stopImmediatePropagation();
     if (submit?.disabled && !isLiveActive) return;
+    const submittedFromSpeech = liveTranscriptFromSpeech;
+    liveTranscriptFromSpeech = false;
     const topicInput = document.getElementById("alex-topic")?.value.trim() || "";
     const messageInput = document.getElementById("alex-prompt")?.value.trim() || "";
     if (!topicInput && !messageInput) return;
@@ -505,6 +579,7 @@ if (form) {
       channel: isLiveActive ? "voice" : "chat",
       depth: document.querySelector('[data-alex-depth].is-active')?.dataset.alexDepth === "aula" ? "aula" : "rapida",
       voice_quality: document.getElementById("alex-natural-voice")?.checked ? "natural" : "fast",
+      voice_input: submittedFromSpeech,
       history: sessionHistory.slice(-12),
     };
     if (isLiveActive && Number.isFinite(liveTranscriptConfidence) && liveTranscriptConfidence > 0 && liveTranscriptConfidence <= 1) payload.voice_confidence = liveTranscriptConfidence;
@@ -596,13 +671,14 @@ if (form) {
         window.setTimeout(() => refreshUsage().catch(() => {}), 1_300);
       }
       if (typeof data?.clarification === "string" && data.clarification.trim()) {
-        if (!isLiveActive) display(data.clarification, "Confirme a transcrição");
-        else {
-          liveStatus("🎙️ Pode esclarecer ou repetir sua pergunta.");
-          speakText(data.clarification, () => {
-            if (isCurrentTurn()) startLiveListening?.();
-          });
+        if (data?.phonetic_correction) {
+          renderPhoneticCorrection(data.phonetic_correction);
+          if (isLiveActive) liveStatus("🎙️ Confirme a correção fonética no balão ou faça outra pergunta.");
+        } else {
+          display(data.clarification, "Confirme a transcrição");
+          if (isLiveActive) liveStatus("🎙️ Pode esclarecer ou repetir sua pergunta.");
         }
+        // Confirmation is by button only; never submit an inferred diagnosis.
         return;
       }
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
@@ -1178,6 +1254,7 @@ function initLiveVoiceMode() {
           liveRecognition = null;
           try { recognition.abort(); } catch {}
           const input = document.getElementById("alex-prompt");
+          liveTranscriptFromSpeech = true;
           if (input) input.value = finalText;
           if (form) form.dispatchEvent(new Event("submit", { cancelable: true, bubbles: true }));
         }

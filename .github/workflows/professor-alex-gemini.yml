@@ -11,6 +11,8 @@ on:
       - "supabase/functions/professor-alex-gemini/**"
       - "db/professor_alex_daily_quota.sql"
       - "tests/professor-alex-gemini.test.cjs"
+      - "tests/leco-phonetic-stt.test.cjs"
+      - "tests/leco-pwa-voice.test.cjs"
       - "tests/professor-alex-prompt-fidelity.test.cjs"
       - "tests/alex-conversation-history.test.cjs"
       - ".github/workflows/professor-alex-gemini.yml"
@@ -31,6 +33,6 @@ jobs:
       - run: node --check assets/js/professor-alex-gemini.mjs
       - run: node --check assets/js/professor-alex-companion.mjs
       - run: node --check assets/js/alex-conversation-history.mjs
-      - run: node --test tests/professor-alex-gemini.test.cjs tests/professor-alex-prompt-fidelity.test.cjs tests/alex-conversation-history.test.cjs
+      - run: node --test tests/professor-alex-gemini.test.cjs tests/professor-alex-prompt-fidelity.test.cjs tests/alex-conversation-history.test.cjs tests/leco-phonetic-stt.test.cjs tests/leco-pwa-voice.test.cjs
       - run: node scripts/check-syntax.cjs
       - run: node scripts/sync-csp.cjs
