@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-20261030-leco-stt-v1";
+const CACHE_VERSION = "luria-pwa-20261031-leco-actions-center1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -59,11 +59,11 @@ const APP_SHELL = [
   "/assets/img/logos/pwa-icon-180.png?v=pwa5",
   "/assets/img/logos/logo-principal.png?v=luria7",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/js/pwa.js?v=20261030-leco-stt-v1",
+  "/assets/js/pwa.js?v=20261031-leco-actions-center1",
   "/assets/css/style.css?v=16.14-font-unified",
   "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
-  "/assets/css/review-continuation-20261022.css?v=20261023-visible2",
+  "/assets/css/review-continuation-20261022.css?v=20261031-leco-actions-center1",
   "/assets/js/review-continuation-20261022.js?v=1",
   "/assets/js/luria-command-center.js?v=20261026-topic-study",
   "/assets/js/professor-alex-companion.mjs?v=20261026-visible5",
@@ -124,7 +124,7 @@ const APP_SHELL = [
   "/assets/fonts/inter/InterVariable.woff2",
   "/assets/js/dashboard.js?v=20261006-css-owned-height",
   "/assets/js/study-mode.js?v=12.1",
-  "/assets/js/luria-brand-v5.js?v=20261023-visible2",
+  "/assets/js/luria-brand-v5.js?v=20261031-leco-actions-center1",
   "/assets/img/logos/pwa-icon-192.png?v=pwa5",
   "/assets/img/logos/pwa-icon-512.png?v=pwa5"
 ];
@@ -141,11 +141,11 @@ const INSTALL_PRECACHE = new Set([
   "/apostilas/",
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/js/pwa.js?v=20261030-leco-stt-v1",
+  "/assets/js/pwa.js?v=20261031-leco-actions-center1",
   "/assets/css/style.css?v=16.14-font-unified",
   "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
-  "/assets/css/review-continuation-20261022.css?v=20261023-visible2",
+  "/assets/css/review-continuation-20261022.css?v=20261031-leco-actions-center1",
   "/assets/js/review-continuation-20261022.js?v=1",
   "/assets/js/luria-command-center.js?v=20261026-topic-study",
   "/assets/js/professor-alex-companion.mjs?v=20261026-visible5",
@@ -164,7 +164,7 @@ const INSTALL_PRECACHE = new Set([
   "/assets/js/vocacao-engine.js?v=20261029-residencias-v1",
   "/assets/js/vocacao.js?v=20261029-residencias-v1",
   "/assets/fonts/inter/InterVariable.woff2",
-  "/assets/js/luria-brand-v5.js?v=20261023-visible2"
+  "/assets/js/luria-brand-v5.js?v=20261031-leco-actions-center1"
 ]);
 
 
