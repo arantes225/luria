@@ -686,6 +686,8 @@ let audioPlaybackPending = false;
 let playbackGeneration = 0;
 let activeSpeechUtterance = null;
 let speechStartWatchdog = null;
+let speechFinishWatchdog = null;
+let puckPlaybackWatchdog = null;
 
 // On iOS/PWA the Web Speech API can refuse an asynchronous utterance after
 // network activity. Offer a user-gesture retry instead of silently hanging.
@@ -749,7 +751,11 @@ function stopCurrentVoicePlayback() {
   playbackGeneration += 1;
   speechGeneration += 1;
   clearTimeout(speechStartWatchdog);
+  clearTimeout(speechFinishWatchdog);
+  clearTimeout(puckPlaybackWatchdog);
   speechStartWatchdog = null;
+  speechFinishWatchdog = null;
+  puckPlaybackWatchdog = null;
   activeSpeechUtterance = null;
   hideSpeechRetry();
   audioPlaybackPending = false;
@@ -797,6 +803,8 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
     if (generation !== playbackGeneration) return;
     currentPuckSource = null;
     currentPuckAudio = null;
+    clearTimeout(puckPlaybackWatchdog);
+    puckPlaybackWatchdog = null;
     audioPlaybackPending = false;
     setStopResponseVisible(false);
     const mascot = document.getElementById("alex-mascot");
@@ -807,6 +815,8 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
     if (!isLiveActive || generation !== playbackGeneration) return;
     currentPuckSource = null;
     currentPuckAudio = null;
+    clearTimeout(puckPlaybackWatchdog);
+    puckPlaybackWatchdog = null;
     const status = document.getElementById("alex-status-text");
     if (status) status.textContent = "Voz do Gemini indisponível. Respondendo com a voz do dispositivo...";
     speakText(fallbackText, finish);
@@ -842,6 +852,12 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
       currentPuckSource = source;
       setMascotSpeaking();
       source.start(0);
+      puckPlaybackWatchdog = setTimeout(() => {
+        if (generation !== playbackGeneration) return;
+        console.warn("[Leco Voice] Reprodução do Gemini excedeu a duração esperada.");
+        try { source.onended = null; source.stop(); } catch {}
+        finish();
+      }, Math.max(6000, Math.ceil(decoded.duration * 1000) + 3000));
       return;
     } catch (error) {
       console.warn("[Live Alex] Falha ao decodificar/reproduzir áudio:", error?.name || "audio_error");
@@ -853,7 +869,20 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
     if (!isLiveActive || generation !== playbackGeneration) return;
     const audio = new Audio("data:" + (mimeType || "audio/wav") + ";base64," + base64Audio);
     currentPuckAudio = audio;
-    audio.onplay = setMascotSpeaking;
+    let nativeStarted = false;
+    puckPlaybackWatchdog = setTimeout(() => {
+      if (generation !== playbackGeneration) return;
+      if (!nativeStarted) fallbackToSpeech();
+      else finish();
+    }, 6000);
+    audio.onplay = () => {
+      nativeStarted = true;
+      clearTimeout(puckPlaybackWatchdog);
+      puckPlaybackWatchdog = setTimeout(() => {
+        if (generation === playbackGeneration) finish();
+      }, Math.max(7000, (Number(audio.duration) || 60) * 1000 + 3000));
+      setMascotSpeaking();
+    };
     audio.onended = finish;
     audio.onerror = fallbackToSpeech;
     const started = audio.play();
@@ -863,30 +892,52 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
   }
 }
 
+// Short utterances avoid the iOS Web Speech long-text stall. Each chunk
+// has start + completion timeouts so the mic never waits forever for onend.
+function splitSpeechIntoChunks(text, maxLength = 180) {
+  const words = String(text || "").split(/\\s+/).filter(Boolean);
+  const chunks = [];
+  let chunk = "";
+  for (const word of words) {
+    if (chunk && chunk.length + word.length + 1 > maxLength) {
+      chunks.push(chunk);
+      chunk = "";
+    }
+    if (word.length > maxLength) {
+      if (chunk) { chunks.push(chunk); chunk = ""; }
+      for (let i = 0; i < word.length; i += maxLength) chunks.push(word.slice(i, i + maxLength));
+      continue;
+    }
+    chunk += (chunk ? " " : "") + word;
+  }
+  if (chunk) chunks.push(chunk);
+  return chunks;
+}
+
 function speakText(text, onComplete) {
   const status = document.getElementById("alex-status-text");
-  if (!("speechSynthesis" in window) || typeof window.SpeechSynthesisUtterance !== "function") {
-    if (status) status.textContent = "Este navegador não suporta voz do dispositivo. Ative voz natural em uma aula ao vivo.";
-    audioPlaybackPending = false;
-    if (onComplete) onComplete();
-    return;
-  }
-
   const plainText = String(text || "")
-    .replace(/\*\*(.*?)\*\*/g, "$1")
-    .replace(/\*(.*?)\*/g, "$1")
-    .replace(/#{1,6}\s+/g, "")
-    .replace(/\[(.*?)\]\(.*?\)/g, "$1")
+    .replace(/\\*\\*(.*?)\\*\\*/g, "$1")
+    .replace(/\\*(.*?)\\*/g, "$1")
+    .replace(/#{1,6}\\s+/g, "")
+    .replace(/\\[(.*?)\\]\\(.*?\\)/g, "$1")
     .replace(/<[^>]*>/g, "")
     .trim();
   if (!plainText) {
     if (onComplete) onComplete();
     return;
   }
-
+  if (!("speechSynthesis" in window) || typeof window.SpeechSynthesisUtterance !== "function") {
+    audioPlaybackPending = false;
+    if (onComplete) onComplete();
+    if (status) status.textContent = "⚠️ Voz do dispositivo indisponível. Ative voz natural nas opções do Leco.";
+    return;
+  }
   const generation = ++speechGeneration;
   clearTimeout(speechStartWatchdog);
+  clearTimeout(speechFinishWatchdog);
   speechStartWatchdog = null;
+  speechFinishWatchdog = null;
   activeSpeechUtterance = null;
   hideSpeechRetry();
   try { window.speechSynthesis.cancel(); } catch {}
@@ -895,76 +946,99 @@ function speakText(text, onComplete) {
   const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
     (modeToggle?.getAttribute("aria-pressed") === "true") ||
     (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
-
-  audioPlaybackPending = true;
-  const utterance = new SpeechSynthesisUtterance(plainText);
-  activeSpeechUtterance = utterance; // keep a strong reference; iOS may GC queued utterances
-  utterance.lang = "pt-BR";
-  utterance.rate = isEstourado ? 1.25 : 1.04;
-  utterance.pitch = isEstourado ? 0.82 : 1.0;
-
-  try {
-    const voices = window.speechSynthesis.getVoices?.() || [];
-    const ptVoice = voices.find(v => v.lang === "pt-BR" || v.lang?.startsWith("pt"));
-    if (ptVoice) utterance.voice = ptVoice;
-  } catch {}
-
+  const chunks = splitSpeechIntoChunks(plainText);
   const mascot = document.getElementById("alex-mascot");
-  let speechDone = false;
-  let speechStarted = false;
-  const releaseSpeech = () => {
+  let chunkIndex = 0;
+  let done = false;
+  audioPlaybackPending = true;
+
+  function release() {
     clearTimeout(speechStartWatchdog);
+    clearTimeout(speechFinishWatchdog);
     speechStartWatchdog = null;
+    speechFinishWatchdog = null;
     activeSpeechUtterance = null;
     audioPlaybackPending = false;
     setStopResponseVisible(false);
     if (mascot) mascot.speaking = false;
-  };
-  const failSpeech = error => {
-    if (speechDone || generation !== speechGeneration) return;
-    speechDone = true;
-    releaseSpeech();
-    if (status) status.textContent = "⚠️ A resposta chegou, mas o áudio foi bloqueado. Toque para ativar a voz.";
-    console.warn("[Leco Voice] Não foi possível iniciar a fala:", error || "audio_blocked");
-    showSpeechRetry(plainText, onComplete);
-  };
-  utterance.onstart = () => {
-    if (generation !== speechGeneration) return;
-    speechStarted = true;
-    clearTimeout(speechStartWatchdog);
-    speechStartWatchdog = null;
-    setStopResponseVisible(true);
-    if (status) status.textContent = "🔊 Leco está falando...";
-    if (mascot) {
-      mascot.speaking = true;
-      if (typeof mascot.playAnimation === "function") {
-        mascot.expression = isEstourado ? "angry" : "happy";
-        mascot.playAnimation(isEstourado ? "angry" : "explaining");
-      }
-    }
-  };
-  utterance.onend = () => {
-    if (speechDone || generation !== speechGeneration) return;
-    speechDone = true;
-    releaseSpeech();
-    if (onComplete) onComplete();
-  };
-  utterance.onerror = event => failSpeech(event?.error || "tts_error");
-  try {
-    window.speechSynthesis.speak(utterance);
-    if (window.speechSynthesis.paused) window.speechSynthesis.resume();
-    // Some installed Safari PWAs neither start nor fire onerror after an async
-    // call. Never leave the live session in an indefinite "speaking" state.
-    speechStartWatchdog = setTimeout(() => {
-      if (generation !== speechGeneration || speechDone || speechStarted) return;
-      try { window.speechSynthesis.resume(); } catch {}
-      speechStartWatchdog = setTimeout(() => {
-        if (!speechStarted) failSpeech("speech_start_timeout");
-      }, 3500);
-    }, 4500);
-  } catch (error) {
-    failSpeech(error?.name || "speak_failed");
   }
+
+  function finishSpeech() {
+    if (done || generation !== speechGeneration) return;
+    done = true;
+    release();
+    if (onComplete) onComplete();
+  }
+
+  function failSpeech(error) {
+    if (done || generation !== speechGeneration) return;
+    done = true;
+    try { window.speechSynthesis.cancel(); } catch {}
+    release();
+    console.warn("[Leco Voice] Falha na síntese:", error || "tts_unavailable");
+    // Always release listening, even if Safari never emits onstart/onend.
+    if (onComplete) onComplete();
+    if (status) status.textContent = "⚠️ O áudio não iniciou. Pode fazer outra pergunta ou tocar para ouvir.";
+    showSpeechRetry(plainText, onComplete);
+  }
+
+  function speakChunk() {
+    if (done || generation !== speechGeneration) return;
+    const content = chunks[chunkIndex];
+    const utterance = new SpeechSynthesisUtterance(content);
+    activeSpeechUtterance = utterance; // Safari GC protection
+    utterance.lang = "pt-BR";
+    utterance.rate = isEstourado ? 1.25 : 1.06;
+    utterance.pitch = isEstourado ? 0.82 : 1.0;
+    try {
+      const voices = window.speechSynthesis.getVoices?.() || [];
+      const ptVoice = voices.find(v => v.lang === "pt-BR" || v.lang?.startsWith("pt"));
+      if (ptVoice) utterance.voice = ptVoice;
+    } catch {}
+
+    let started = false;
+    utterance.onstart = () => {
+      if (done || generation !== speechGeneration) return;
+      started = true;
+      clearTimeout(speechStartWatchdog);
+      speechStartWatchdog = null;
+      setStopResponseVisible(true);
+      if (status) status.textContent = "🔊 Leco está falando... Pode interromper.";
+      if (mascot) {
+        mascot.speaking = true;
+        if (typeof mascot.playAnimation === "function") {
+          mascot.expression = isEstourado ? "angry" : "happy";
+          mascot.playAnimation(isEstourado ? "angry" : "explaining");
+        }
+      }
+      speechFinishWatchdog = setTimeout(() => failSpeech("speech_end_timeout"),
+        Math.max(6500, content.length * 160 + 4000));
+    };
+    utterance.onend = () => {
+      if (done || generation !== speechGeneration) return;
+      clearTimeout(speechFinishWatchdog);
+      speechFinishWatchdog = null;
+      chunkIndex++;
+      if (chunkIndex < chunks.length) speakChunk();
+      else finishSpeech();
+    };
+    utterance.onerror = event => failSpeech(event?.error || "tts_error");
+
+    try {
+      window.speechSynthesis.speak(utterance);
+      if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+      speechStartWatchdog = setTimeout(() => {
+        if (done || generation !== speechGeneration || started) return;
+        try { window.speechSynthesis.resume(); } catch {}
+        speechStartWatchdog = setTimeout(() => {
+          if (!started) failSpeech("speech_start_timeout");
+        }, 1400);
+      }, 2100);
+    } catch (error) {
+      failSpeech(error?.name || "speak_failed");
+    }
+  }
+  speakChunk();
 }
 
 function initLiveVoiceMode() {
