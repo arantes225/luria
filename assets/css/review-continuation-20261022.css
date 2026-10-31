@@ -499,8 +499,19 @@ html body[data-page="professor_alex"] .alex-mascot-card {
 }
 html body[data-page="professor_alex"] .alex-top-action-bar {
   align-self: stretch !important;
-  justify-content: flex-start !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
   margin-bottom: 8px !important;
+}
+html body[data-page="professor_alex"] .alex-top-action-bar > button {
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 html body[data-page="professor_alex"] .alex-mascot-stage-wrap {
   flex: 1 1 auto !important;
