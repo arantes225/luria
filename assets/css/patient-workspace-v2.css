@@ -127,3 +127,337 @@
   @media(max-width:920px) { body[data-page="trabalho_paciente"] .patient-workspace { grid-template-columns:1fr; } body[data-page="trabalho_paciente"] .patient-rail { position:static; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); } body[data-page="trabalho_paciente"] .patient-profile-card { grid-column:1/-1; } }
   @media(max-width:680px) { body[data-page="trabalho_paciente"] .patient-hero { display:grid; } body[data-page="trabalho_paciente"] .patient-hero-active .patient-actions { justify-content:flex-start; } body[data-page="trabalho_paciente"] .patient-start { grid-template-columns:1fr; } body[data-page="trabalho_paciente"] .patient-rail,.patient-reasoning-grid,.patient-evidence-grid,.patient-plan-grid,.patient-task-list { grid-template-columns:1fr; } body[data-page="trabalho_paciente"] .patient-plan-grid .full { grid-column:auto; } body[data-page="trabalho_paciente"] .patient-reasoning-flow { align-items:flex-start; overflow-x:auto; } body[data-page="trabalho_paciente"] .patient-flow-step { flex:0 0 auto; } body[data-page="trabalho_paciente"] .patient-flow-line { min-width:18px; } body[data-page="trabalho_paciente"] .patient-capture-form,.patient-note-form { grid-template-columns:1fr; } body[data-page="trabalho_paciente"] .patient-capture-form .patient-primary { width:100%; } body[data-page="trabalho_paciente"] .patient-compact-search input { width:100%; } body[data-page="trabalho_paciente"] .patient-section-head { display:grid; } body[data-page="trabalho_paciente"] .patient-tool-dialog { width:calc(100vw - 1rem); height:calc(100vh - 1rem); } }
 }
+
+/* =========================================================
+   EXTENSÃO LURIA MODO PACIENTE: IA, FERRAMENTAS & RECEITUÁRIO
+   ========================================================= */
+
+/* Bloco IA de Escrita Livre */
+.patient-ai-card {
+  border: 1px solid #c7ddf5 !important;
+  background: linear-gradient(175deg, #ffffff 0%, #f4f8fd 100%) !important;
+  box-shadow: 0 10px 28px rgba(24,72,136,.06) !important;
+  padding: 1.25rem !important;
+}
+.patient-ai-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+.patient-ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: #e6f0fa;
+  color: #184888;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.patient-ai-badge::before {
+  content: "✨";
+}
+.patient-ai-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 95px;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #bfd5ec;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--patient-ink, #16324f);
+  font: inherit;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+.patient-ai-textarea:focus {
+  outline: none;
+  border-color: #184888;
+  box-shadow: 0 0 0 3px rgba(24,72,136,.12);
+}
+.patient-ai-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+.patient-btn-ai {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: linear-gradient(135deg, #184888 0%, #2063b5 100%) !important;
+  color: #fff !important;
+  font-weight: 850 !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  padding: 0.6rem 1.15rem !important;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(24,72,136,.25);
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+.patient-btn-ai:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(24,72,136,.32);
+}
+.patient-btn-ai:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+.patient-ai-result-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #d0e1f3;
+  background: #fff;
+  display: grid;
+  gap: 0.75rem;
+}
+.patient-ai-result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+.patient-ai-sec {
+  padding: 0.65rem 0.8rem;
+  border-radius: 9px;
+  background: #f8fbfe;
+  border: 1px solid #e2edf7;
+}
+.patient-ai-sec strong {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #184888;
+  font-size: 0.75rem;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.patient-ai-sec p {
+  margin: 0;
+  color: #16324f;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+/* Abas de Ferramentas Integradas (Protocolos, Bulário, Exames) */
+.patient-tools-integrated-card {
+  padding: 1.25rem !important;
+}
+.patient-integrated-tabs {
+  display: flex;
+  gap: 0.4rem;
+  border-bottom: 2px solid #e5edf5;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+.patient-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.95rem;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: transparent;
+  color: #475569;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 750;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all .15s ease;
+}
+.patient-tab-btn:hover {
+  background: #f0f6fc;
+  color: #184888;
+}
+.patient-tab-btn.is-active {
+  background: #e7f0fb;
+  color: #184888;
+  border-color: #bcd5f0;
+  font-weight: 850;
+}
+.patient-tab-content {
+  display: none;
+}
+.patient-tab-content.is-active {
+  display: block;
+}
+.patient-catalog-search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid #cfe0f1;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 0.82rem;
+  margin-bottom: 0.85rem;
+}
+.patient-catalog-list {
+  display: grid;
+  gap: 0.55rem;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+.patient-catalog-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #e1ecf7;
+  border-radius: 10px;
+  background: #fafcfe;
+  transition: border-color .15s, background .15s;
+}
+.patient-catalog-item:hover {
+  border-color: #b5d4f4;
+  background: #f3f8fd;
+}
+.patient-catalog-info {
+  min-width: 0;
+}
+.patient-catalog-info strong {
+  display: block;
+  font-size: 0.84rem;
+  color: #16324f;
+}
+.patient-catalog-info small {
+  display: block;
+  margin-top: 0.2rem;
+  color: #64748b;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+.patient-btn-add-rx {
+  border: 1px solid #184888;
+  border-radius: 8px;
+  background: #fff;
+  color: #184888;
+  padding: 0.35rem 0.65rem;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.patient-btn-add-rx:hover {
+  background: #184888;
+  color: #fff;
+}
+
+/* Card do Receituário & Prescrição */
+.patient-prescription-card {
+  border: 1px solid #d4e3f4 !important;
+  background: #ffffff !important;
+  padding: 1.25rem !important;
+}
+.patient-rx-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 0.85rem;
+}
+.patient-rx-table th {
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  background: #f4f8fc;
+  color: #475569;
+  font-size: 0.72rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e2edf7;
+}
+.patient-rx-table td {
+  padding: 0.7rem;
+  border-bottom: 1px solid #edf3f8;
+  vertical-align: middle;
+  font-size: 0.8rem;
+}
+.patient-rx-table tr:hover td {
+  background: #fbfdff;
+}
+.patient-rx-empty {
+  padding: 1.5rem;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.82rem;
+  border: 1px dashed #d5e4f3;
+  border-radius: 11px;
+  margin-top: 0.75rem;
+}
+
+/* Travas & Banners Críticos de Alergia e Interações */
+.patient-alerts-area {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.patient-alert-card {
+  padding: 0.85rem 1.05rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  animation: patientAlertPop .25s ease-out;
+}
+@keyframes patientAlertPop {
+  0% { transform: translateY(-8px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.patient-alert-danger {
+  border: 1.5px solid #dc2626;
+  background: #fef2f2;
+  color: #991b1b;
+  box-shadow: 0 4px 16px rgba(220,38,38,.12);
+}
+.patient-alert-warning {
+  border: 1.5px solid #d97706;
+  background: #fffbeb;
+  color: #92400e;
+  box-shadow: 0 4px 14px rgba(217,119,6,.09);
+}
+.patient-alert-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  flex: 0 0 24px;
+}
+.patient-alert-body {
+  flex: 1;
+}
+.patient-alert-body strong {
+  display: block;
+  font-size: 0.86rem;
+  margin-bottom: 0.25rem;
+}
+.patient-alert-body p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+/* Banner de Alerta Flutuante / Topo */
+.patient-floating-guard {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  max-width: 440px;
+  z-index: 9999;
+  display: grid;
+  gap: 0.5rem;
+}
