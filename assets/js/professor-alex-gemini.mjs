@@ -18,6 +18,27 @@ let renderedHistoryUser = null;
 let alexSiteIndexPromise = null;
 let liveTranscriptConfidence = null;
 let speechGeneration = 0;
+let conversationTurn = 0;
+let activeResponseController = null;
+let lastSpokenAnswer = "";
+let microphonePermissionDenied = false;
+
+// All asynchronous responses belong to a turn; an interrupted turn must never
+// overwrite the newer message, disable its composer, or start speaking later.
+function newConversationTurn() {
+  conversationTurn += 1;
+  if (activeResponseController) {
+    try { activeResponseController.abort(); } catch {}
+  }
+  activeResponseController = null;
+  stopCurrentVoicePlayback();
+  return conversationTurn;
+}
+
+function liveStatus(text) {
+  const status = document.getElementById("alex-status-text");
+  if (status) status.textContent = text;
+}
 
 function normalizeAlexSearch(value) {
   return String(value || "").toLocaleLowerCase("pt-BR")
@@ -82,6 +103,7 @@ async function findAlexSiteContext(query) {
 let isLiveActive = false;
 let liveRecognition = null;
 let startLiveListening = null;
+let stopLiveListening = null;
 
 const ERROR_MESSAGES = {
   invalid_request_id: "Atualize a página para continuar a conversa.",
@@ -328,10 +350,11 @@ document.getElementById("alex-new-conversation")?.addEventListener("click", () =
 
 function isStudyPlanningRequest(value) {
   const clean = String(value || "").toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ");
-  return /\b(cronograma|aulas? (?:desta|da|por) semana|rodando em|lista de quest|lista de flashcard|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma)\b/.test(clean);
+  return /\b(cronograma|planejamento|planejar estudos?|organizar (?:meus? )?estudos?|reorganizar (?:minha )?semana|aulas? (?:desta|da|por) semana|rodando em|lista(?:s)? de quest|lista(?:s)? de flashcard|questoes? (?:sobre|de|para|do)|flashcards? (?:sobre|de|para|do)|criar quest|criar flashcard|selecionar apostila|estudar agora|mudar as aulas|ajustar.*cronograma|montar.*(?:quest|flashcard)|gerar.*(?:quest|flashcard))\b/.test(clean);
 }
 
 function renderStudyAction(plan) {
+  const feed = document.getElementById("alex-chat-feed");
   if (!feed || !plan || !["schedule_focus", "topic_bundle"].includes(plan.type)) return;
   const card = document.createElement("section");
   card.className = "alex-message alex-message--assistant alex-study-action";
@@ -340,8 +363,8 @@ function renderStudyAction(plan) {
   const summary = document.createElement("p");
   const count = Number(plan.preview?.planned_count || 0);
   summary.textContent = plan.type === "schedule_focus"
-    ? `${plan.topic}: ${count} aula${count === 1 ? "" : "s"} entre ${plan.start_date} e ${plan.end_date}, ${plan.lessons_per_day || 1} por dia de estudo.`
-    : `${plan.topic}: ${plan.question_count || 0} questões e ${plan.flashcard_count || 0} flashcards, além de uma apostila compatível quando disponível.`;
+    ? `${plan.topic}: ${count} aula${count === 1 ? "" : "s"} entre ${plan.start_date} e ${plan.end_date}, ${plan.lessons_per_day || 1} por dia de estudo. ${Number(plan.preview?.displaced_count || 0)} aula(s) atualmente agendada(s) poderão mudar de data.`
+    : `${plan.topic}: ${plan.question_count || 0} questões e ${plan.flashcard_count || 0} flashcards selecionados do acervo existente, além de uma apostila compatível quando disponível.`;
   const actions = document.createElement("div");
   actions.className = "alex-study-action-buttons";
   const apply = document.createElement("button");
@@ -427,8 +450,15 @@ if (form) {
   form.addEventListener("submit", async event => {
     event.preventDefault();
     event.stopImmediatePropagation();
-    if (submit?.disabled) return;
-
+    if (submit?.disabled && !isLiveActive) return;
+    const topicInput = document.getElementById("alex-topic")?.value.trim() || "";
+    const messageInput = document.getElementById("alex-prompt")?.value.trim() || "";
+    if (!topicInput && !messageInput) return;
+    const turn = newConversationTurn();
+    if (isLiveActive) stopLiveListening?.();
+    const isCurrentTurn = () => turn === conversationTurn;
+    // Keep typed/recognized questions usable while the previous reply is in flight.
+    if (submit) submit.disabled = false;
     const client = window.supabaseClient;
     if (!client?.functions) {
       display("Não foi possível iniciar a conexão com o Supabase.", "Conexão indisponível", true);
@@ -448,6 +478,7 @@ if (form) {
       display(ERROR_MESSAGES.unauthorized, "Faça login", true);
       return;
     }
+    if (!isCurrentTurn()) return;
     restoreConversationView(session.user.id);
     sessionHistory.splice(0, sessionHistory.length, ...getAlexConversation(session.user.id));
 
@@ -480,7 +511,9 @@ if (form) {
     const hasMaterial = Boolean(fileInput?.files?.[0]);
     const isSocial = isSocialOrGreeting(prompt || topic);
     const isPlanning = isStudyPlanningRequest(prompt || topic);
-    if (isSocial && !hasMaterial) {
+    // Voice always goes through the authenticated backend TTS path; a local
+    // social shortcut returns text only and is silent in installed iOS PWAs.
+    if (isSocial && !hasMaterial && !isLiveActive) {
       const answer = fastSocialReply(prompt || topic, isEstourado);
       if (prompt) appendUserMessage(prompt);
       display(answer, "Leco");
@@ -492,8 +525,9 @@ if (form) {
       if (isLiveActive) {
         const statusText = document.getElementById("alex-status-text");
         if (statusText) statusText.textContent = "🔊 Leco respondendo...";
+        lastSpokenAnswer = answer;
         speakText(answer, () => {
-          if (!isLiveActive) return;
+          if (!isLiveActive || !isCurrentTurn()) return;
           const currentStatus = document.getElementById("alex-status-text");
           if (currentStatus) currentStatus.textContent = "🎙️ Ouvindo... Pode perguntar mais!";
           setTimeout(() => startLiveListening?.(), 250);
@@ -509,10 +543,10 @@ if (form) {
       ? findAlexSiteContext([topic, prompt].filter(Boolean).join(" "))
       : Promise.resolve(null);
 
-    const oldText = submit?.textContent || "Perguntar";
     if (submit) {
-      submit.disabled = true;
-      submit.textContent = isLiveActive ? "Respondendo…" : (payload.depth === "aula" ? "Preparando aula…" : "Respondendo…");
+      // In voice mode the composer is always interruptible.
+      submit.disabled = !isLiveActive;
+      submit.textContent = payload.depth === "aula" ? "Preparando aula…" : "Respondendo…";
     }
 
     if (isLiveActive) {
@@ -522,7 +556,7 @@ if (form) {
       display(payload.depth === "aula" ? "Preparando explicação detalhada…" : "Respondendo à sua pergunta…", "Leco está pensando");
     }
     if (prompt) appendUserMessage(prompt);
-    if (isLiveActive) speakText(isEstourado ? "Aham. Espera aí." : "Aham… deixa eu pensar.");
+    // Avoid cancel/speak races on mobile Safari while the real answer is in flight.
 
     const mascot = document.getElementById("alex-mascot");
     if (mascot?.playAnimation) {
@@ -538,12 +572,20 @@ if (form) {
       const [material, siteContext] = await Promise.all([
         prepareFile(fileInput?.files?.[0]), siteContextPromise
       ]);
+      if (!isCurrentTurn()) return;
       if (material) payload.file = material;
       if (siteContext && material) {
         payload.site_context = siteContext.context;
         payload.site_sources = siteContext.sources;
       }
-      const { data, error } = await client.functions.invoke("professor-alex-gemini", { body: payload });
+      const controller = new AbortController();
+      activeResponseController = controller;
+      const { data, error } = await client.functions.invoke("professor-alex-gemini", {
+        body: payload,
+        signal: controller.signal,
+      });
+      if (!isCurrentTurn()) return;
+      activeResponseController = null;
       if (error) throw error;
       if (data?.usage) renderUsage(data.usage);
       if (data?.accounting_pending) {
@@ -553,7 +595,12 @@ if (form) {
       }
       if (typeof data?.clarification === "string" && data.clarification.trim()) {
         if (!isLiveActive) display(data.clarification, "Confirme a transcrição");
-        else speakText(data.clarification);
+        else {
+          liveStatus("🎙️ Pode esclarecer ou repetir sua pergunta.");
+          speakText(data.clarification, () => {
+            if (isCurrentTurn()) startLiveListening?.();
+          });
+        }
         return;
       }
       if (typeof data?.answer !== "string" || !data.answer.trim()) throw Error("empty_response");
@@ -575,12 +622,13 @@ if (form) {
       } else {
         const statusText = document.getElementById("alex-status-text");
         if (statusText) statusText.textContent = "🔊 Leco respondendo por voz (Puck)...";
+        lastSpokenAnswer = data.answer;
         const onFinishedSpeaking = () => {
-          if (isLiveActive) {
+          if (isLiveActive && isCurrentTurn()) {
             const currentStatus = document.getElementById("alex-status-text");
             if (currentStatus) currentStatus.textContent = "🎙️ Ouvindo... Pode perguntar mais!";
             setTimeout(() => {
-              if (isLiveActive && !window.speechSynthesis?.speaking && !currentPuckAudio && !currentPuckSource && !audioPlaybackPending) {
+              if (isLiveActive && isCurrentTurn()) {
                 if (typeof startLiveListening === "function") startLiveListening();
               }
             }, 400);
@@ -597,6 +645,8 @@ if (form) {
         }
       }
     } catch (error) {
+      if (!isCurrentTurn()) return;
+      activeResponseController = null;
       const message = error?.message === "empty_response"
         ? ERROR_MESSAGES.empty_response
         : (error instanceof Error && /PDF acima|arquivo de texto|anexe um PDF/.test(error.message)
@@ -612,9 +662,16 @@ if (form) {
       }
       if (mascot?.playAnimation) mascot.playAnimation("confused");
     } finally {
-      if (submit) {
-        submit.disabled = false;
-        submit.textContent = oldText;
+      if (isCurrentTurn()) {
+        activeResponseController = null;
+        if (submit) {
+          submit.disabled = false;
+          submit.textContent = "Perguntar";
+        }
+        if (isLiveActive && !microphonePermissionDenied) {
+          // Listening is independent of voice playback completion or TTS errors.
+          setTimeout(() => { if (isCurrentTurn()) startLiveListening?.(); }, 220);
+        }
       }
     }
   }, true);
@@ -632,6 +689,41 @@ let currentPuckSource = null;
 let liveAudioContext = null;
 let audioPlaybackPending = false;
 let playbackGeneration = 0;
+let activeSpeechUtterance = null;
+let speechStartWatchdog = null;
+let speechFinishWatchdog = null;
+let puckPlaybackWatchdog = null;
+
+// On iOS/PWA the Web Speech API can refuse an asynchronous utterance after
+// network activity. Offer a user-gesture retry instead of silently hanging.
+function showSpeechRetry(text, onComplete) {
+  let button = document.getElementById("alex-voice-retry");
+  if (!button) {
+    button = document.createElement("button");
+    button.id = "alex-voice-retry";
+    button.type = "button";
+    button.className = "alex-action";
+    button.style.cssText = "min-height:40px;padding:0 12px;border:1px solid var(--accent);color:var(--text);background:var(--surface);border-radius:10px";
+    (liveCallBtn?.parentElement || document.getElementById("alex-mascot-card"))?.appendChild(button);
+  }
+  button.textContent = "🔊 Toque para ativar a voz";
+  button.hidden = false;
+  button.onclick = () => {
+    button.hidden = true;
+    // A microphone session must not record the assistant replaying its answer.
+    if (liveRecognition) {
+      try { liveRecognition.abort(); } catch {}
+      liveRecognition = null;
+    }
+    unlockLiveAudio();
+    speakText(text, onComplete);
+  };
+}
+
+function hideSpeechRetry() {
+  const button = document.getElementById("alex-voice-retry");
+  if (button) button.hidden = true;
+}
 
 function setStopResponseVisible(visible) {
   if (!stopResponseBtn) return;
@@ -648,7 +740,7 @@ function unlockLiveAudio() {
     if (!liveAudioContext || liveAudioContext.state === "closed") {
       liveAudioContext = new Context();
     }
-    if (liveAudioContext.state === "suspended") {
+    if (liveAudioContext.state !== "running") {
       liveAudioContext.resume().catch(() => {});
     }
     const silent = liveAudioContext.createBufferSource();
@@ -663,6 +755,14 @@ function unlockLiveAudio() {
 function stopCurrentVoicePlayback() {
   playbackGeneration += 1;
   speechGeneration += 1;
+  clearTimeout(speechStartWatchdog);
+  clearTimeout(speechFinishWatchdog);
+  clearTimeout(puckPlaybackWatchdog);
+  speechStartWatchdog = null;
+  speechFinishWatchdog = null;
+  puckPlaybackWatchdog = null;
+  activeSpeechUtterance = null;
+  hideSpeechRetry();
   audioPlaybackPending = false;
   if (currentPuckSource) {
     try { currentPuckSource.onended = null; currentPuckSource.stop(); } catch {}
@@ -708,6 +808,8 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
     if (generation !== playbackGeneration) return;
     currentPuckSource = null;
     currentPuckAudio = null;
+    clearTimeout(puckPlaybackWatchdog);
+    puckPlaybackWatchdog = null;
     audioPlaybackPending = false;
     setStopResponseVisible(false);
     const mascot = document.getElementById("alex-mascot");
@@ -718,6 +820,8 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
     if (!isLiveActive || generation !== playbackGeneration) return;
     currentPuckSource = null;
     currentPuckAudio = null;
+    clearTimeout(puckPlaybackWatchdog);
+    puckPlaybackWatchdog = null;
     const status = document.getElementById("alex-status-text");
     if (status) status.textContent = "Voz do Gemini indisponível. Respondendo com a voz do dispositivo...";
     speakText(fallbackText, finish);
@@ -726,11 +830,25 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
   // Compatível com WAV unário do Gemini 3.8. A sessão de áudio já começou no clique.
   if (liveAudioContext) {
     try {
-      if (liveAudioContext.state === "suspended") await liveAudioContext.resume();
+      if (liveAudioContext.state !== "running") await liveAudioContext.resume();
+      if (liveAudioContext.state !== "running") throw new Error("audio_context_not_running");
       const raw = atob(base64Audio);
       const bytes = new Uint8Array(raw.length);
       for (let i = 0; i < raw.length; i++) bytes[i] = raw.charCodeAt(i);
-      const decoded = await liveAudioContext.decodeAudioData(bytes.buffer);
+      // Gemini can return signed 16-bit PCM instead of a WAV container.
+      // decodeAudioData does not accept raw PCM on Safari or Chrome.
+      let decoded;
+      if (/^audio\/pcm(?:;|$)/i.test(mimeType || "")) {
+        const rate = Number(/rate=(\d+)/i.exec(mimeType)?.[1] || 24000);
+        if (rate < 8000 || rate > 96000 || bytes.length < 2) throw new Error("invalid_pcm_audio");
+        const count = Math.floor(bytes.length / 2);
+        decoded = liveAudioContext.createBuffer(1, count, rate);
+        const samples = decoded.getChannelData(0);
+        const pcm = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+        for (let i = 0; i < count; i++) samples[i] = pcm.getInt16(i * 2, true) / 32768;
+      } else {
+        decoded = await liveAudioContext.decodeAudioData(bytes.buffer);
+      }
       if (!isLiveActive || generation !== playbackGeneration) return;
       const source = liveAudioContext.createBufferSource();
       source.buffer = decoded;
@@ -739,6 +857,12 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
       currentPuckSource = source;
       setMascotSpeaking();
       source.start(0);
+      puckPlaybackWatchdog = setTimeout(() => {
+        if (generation !== playbackGeneration) return;
+        console.warn("[Leco Voice] Reprodução do Gemini excedeu a duração esperada.");
+        try { source.onended = null; source.stop(); } catch {}
+        finish();
+      }, Math.max(6000, Math.ceil(decoded.duration * 1000) + 3000));
       return;
     } catch (error) {
       console.warn("[Live Alex] Falha ao decodificar/reproduzir áudio:", error?.name || "audio_error");
@@ -750,7 +874,20 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
     if (!isLiveActive || generation !== playbackGeneration) return;
     const audio = new Audio("data:" + (mimeType || "audio/wav") + ";base64," + base64Audio);
     currentPuckAudio = audio;
-    audio.onplay = setMascotSpeaking;
+    let nativeStarted = false;
+    puckPlaybackWatchdog = setTimeout(() => {
+      if (generation !== playbackGeneration) return;
+      if (!nativeStarted) fallbackToSpeech();
+      else finish();
+    }, 6000);
+    audio.onplay = () => {
+      nativeStarted = true;
+      clearTimeout(puckPlaybackWatchdog);
+      puckPlaybackWatchdog = setTimeout(() => {
+        if (generation === playbackGeneration) finish();
+      }, Math.max(7000, (Number(audio.duration) || 60) * 1000 + 3000));
+      setMascotSpeaking();
+    };
     audio.onended = finish;
     audio.onerror = fallbackToSpeech;
     const started = audio.play();
@@ -760,17 +897,30 @@ async function playGeminiPuckAudio(base64Audio, mimeType, onComplete, fallbackTe
   }
 }
 
-function speakText(text, onComplete) {
-  if (!("speechSynthesis" in window) || typeof window.SpeechSynthesisUtterance !== "function") {
-    const status = document.getElementById("alex-status-text");
-    if (status) status.textContent = "Este navegador não oferece síntese de voz. A resposta está no chat.";
-    audioPlaybackPending = false;
-    if (onComplete) onComplete();
-    return;
+// Short utterances avoid the iOS Web Speech long-text stall. Each chunk
+// has start + completion timeouts so the mic never waits forever for onend.
+function splitSpeechIntoChunks(text, maxLength = 180) {
+  const words = String(text || "").split(/\s+/).filter(Boolean);
+  const chunks = [];
+  let chunk = "";
+  for (const word of words) {
+    if (chunk && chunk.length + word.length + 1 > maxLength) {
+      chunks.push(chunk);
+      chunk = "";
+    }
+    if (word.length > maxLength) {
+      if (chunk) { chunks.push(chunk); chunk = ""; }
+      for (let i = 0; i < word.length; i += maxLength) chunks.push(word.slice(i, i + maxLength));
+      continue;
+    }
+    chunk += (chunk ? " " : "") + word;
   }
-  const generation = ++speechGeneration;
-  window.speechSynthesis.cancel();
+  if (chunk) chunks.push(chunk);
+  return chunks;
+}
 
+function speakText(text, onComplete) {
+  const status = document.getElementById("alex-status-text");
   const plainText = String(text || "")
     .replace(/\*\*(.*?)\*\*/g, "$1")
     .replace(/\*(.*?)\*/g, "$1")
@@ -778,146 +928,280 @@ function speakText(text, onComplete) {
     .replace(/\[(.*?)\]\(.*?\)/g, "$1")
     .replace(/<[^>]*>/g, "")
     .trim();
-
   if (!plainText) {
     if (onComplete) onComplete();
     return;
   }
+  if (!("speechSynthesis" in window) || typeof window.SpeechSynthesisUtterance !== "function") {
+    audioPlaybackPending = false;
+    if (onComplete) onComplete();
+    if (status) status.textContent = "⚠️ Voz do dispositivo indisponível. Ative voz natural nas opções do Leco.";
+    return;
+  }
+  const generation = ++speechGeneration;
+  clearTimeout(speechStartWatchdog);
+  clearTimeout(speechFinishWatchdog);
+  speechStartWatchdog = null;
+  speechFinishWatchdog = null;
+  activeSpeechUtterance = null;
+  hideSpeechRetry();
+  try { window.speechSynthesis.cancel(); } catch {}
 
   const modeToggle = document.getElementById("alex-mode-toggle");
   const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
     (modeToggle?.getAttribute("aria-pressed") === "true") ||
     (document.querySelector('[data-alex-mode="estourado"]')?.getAttribute("aria-pressed") === "true");
-
-  audioPlaybackPending = true;
-  const utterance = new SpeechSynthesisUtterance(plainText);
-  utterance.lang = "pt-BR";
-  // Cadência e tom calibrados conforme especificação do AI Studio:
-  utterance.rate = isEstourado ? 1.25 : 1.04;
-  utterance.pitch = isEstourado ? 0.82 : 1.0;
-
-  try {
-    const voices = window.speechSynthesis.getVoices?.() || [];
-    const ptVoice = voices.find(v => v.lang === "pt-BR" || v.lang?.startsWith("pt"));
-    if (ptVoice) utterance.voice = ptVoice;
-  } catch {}
-
+  const chunks = splitSpeechIntoChunks(plainText);
   const mascot = document.getElementById("alex-mascot");
-  utterance.onstart = () => {
-    if (generation !== speechGeneration) return;
-    setStopResponseVisible(true);
-    if (mascot) {
-      mascot.speaking = true;
-      if (typeof mascot.playAnimation === "function") {
-        mascot.expression = isEstourado ? "angry" : "happy";
-        mascot.playAnimation(isEstourado ? "angry" : "explaining");
-      }
-    }
-  };
+  let chunkIndex = 0;
+  let done = false;
+  audioPlaybackPending = true;
 
-  let speechDone = false;
-  const endSpeech = () => {
-    if (speechDone || generation !== speechGeneration) return;
-    speechDone = true;
+  function release() {
+    clearTimeout(speechStartWatchdog);
+    clearTimeout(speechFinishWatchdog);
+    speechStartWatchdog = null;
+    speechFinishWatchdog = null;
+    activeSpeechUtterance = null;
     audioPlaybackPending = false;
     setStopResponseVisible(false);
     if (mascot) mascot.speaking = false;
-    if (onComplete) onComplete();
-  };
+  }
 
-  utterance.onend = endSpeech;
-  utterance.onerror = () => {
-    const status = document.getElementById("alex-status-text");
-    if (status) status.textContent = "Não foi possível reproduzir áudio. Verifique o volume e as permissões do navegador.";
-    endSpeech();
-  };
-  window.speechSynthesis.speak(utterance);
+  function finishSpeech() {
+    if (done || generation !== speechGeneration) return;
+    done = true;
+    release();
+    if (onComplete) onComplete();
+  }
+
+  function failSpeech(error) {
+    if (done || generation !== speechGeneration) return;
+    done = true;
+    try { window.speechSynthesis.cancel(); } catch {}
+    release();
+    console.warn("[Leco Voice] Falha na síntese:", error || "tts_unavailable");
+    // Always release listening, even if Safari never emits onstart/onend.
+    if (onComplete) onComplete();
+    if (status) status.textContent = "⚠️ O áudio não iniciou. Pode fazer outra pergunta ou tocar para ouvir.";
+    showSpeechRetry(plainText, onComplete);
+  }
+
+  function speakChunk() {
+    if (done || generation !== speechGeneration) return;
+    const content = chunks[chunkIndex];
+    const utterance = new SpeechSynthesisUtterance(content);
+    activeSpeechUtterance = utterance; // Safari GC protection
+    utterance.lang = "pt-BR";
+    utterance.rate = isEstourado ? 1.25 : 1.06;
+    utterance.pitch = isEstourado ? 0.82 : 1.0;
+    try {
+      const voices = window.speechSynthesis.getVoices?.() || [];
+      const ptVoice = voices.find(v => v.lang === "pt-BR" || v.lang?.startsWith("pt"));
+      if (ptVoice) utterance.voice = ptVoice;
+    } catch {}
+
+    let started = false;
+    utterance.onstart = () => {
+      if (done || generation !== speechGeneration) return;
+      started = true;
+      clearTimeout(speechStartWatchdog);
+      speechStartWatchdog = null;
+      setStopResponseVisible(true);
+      if (status) status.textContent = "🔊 Leco está falando... Pode interromper.";
+      if (mascot) {
+        mascot.speaking = true;
+        if (typeof mascot.playAnimation === "function") {
+          mascot.expression = isEstourado ? "angry" : "happy";
+          mascot.playAnimation(isEstourado ? "angry" : "explaining");
+        }
+      }
+      speechFinishWatchdog = setTimeout(() => failSpeech("speech_end_timeout"),
+        Math.max(6500, content.length * 160 + 4000));
+    };
+    utterance.onend = () => {
+      if (done || generation !== speechGeneration) return;
+      clearTimeout(speechFinishWatchdog);
+      speechFinishWatchdog = null;
+      chunkIndex++;
+      if (chunkIndex < chunks.length) speakChunk();
+      else finishSpeech();
+    };
+    utterance.onerror = event => failSpeech(event?.error || "tts_error");
+
+    try {
+      window.speechSynthesis.speak(utterance);
+      if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+      speechStartWatchdog = setTimeout(() => {
+        if (done || generation !== speechGeneration || started) return;
+        try { window.speechSynthesis.resume(); } catch {}
+        speechStartWatchdog = setTimeout(() => {
+          if (!started) failSpeech("speech_start_timeout");
+        }, 1400);
+      }, 2100);
+    } catch (error) {
+      failSpeech(error?.name || "speak_failed");
+    }
+  }
+  speakChunk();
 }
 
 function initLiveVoiceMode() {
   if (!liveCallBtn) return;
   const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
-  if (!SpeechRec) {
-    liveCallBtn.title = "Navegador não suporta reconhecimento de voz contínuo.";
-    liveCallBtn.style.opacity = "0.7";
-    return;
+  const interruptBtn = document.getElementById("alex-interrupt-and-talk");
+  const isIOSPwa = /iPad|iPhone|iPod/.test(window.navigator?.userAgent || "") &&
+    (window.navigator?.standalone === true || window.matchMedia?.("(display-mode: standalone)")?.matches);
+  let retryTimer = null;
+  let retryDelay = 500;
+  const setInterruptVisible = active => {
+    if (!interruptBtn) return;
+    interruptBtn.hidden = !active;
+    interruptBtn.style.display = active ? "inline-flex" : "none";
+  };
+  function stopListening() {
+    clearTimeout(retryTimer);
+    retryTimer = null;
+    if (liveRecognition) {
+      const recognition = liveRecognition;
+      liveRecognition = null;
+      try { recognition.abort(); } catch {}
+    }
   }
+  stopLiveListening = stopListening;
+
+  function interruptAndListen() {
+    if (!isLiveActive) return;
+    newConversationTurn();
+    stopListening();
+    if (submit) { submit.disabled = false; submit.textContent = "Perguntar"; }
+    microphonePermissionDenied = false;
+    liveStatus("🎙️ Interrompido. Pode falar sua nova pergunta.");
+    startListening();
+  }
+  interruptBtn?.addEventListener("click", interruptAndListen);
+  stopResponseBtn?.addEventListener("click", () => {
+    if (!isLiveActive) return;
+    newConversationTurn();
+    if (submit) { submit.disabled = false; submit.textContent = "Perguntar"; }
+    liveStatus("🎙️ Interrompido. Pode falar novamente.");
+    startListening();
+  });
+
+  // A new page opened from "Falar ao vivo" requires a user gesture for audio on iOS.
+  if (new URLSearchParams(window.location.search).get("voice") === "1") {
+    liveStatus("🔊 Toque em Conversar ao Vivo por Voz para liberar o áudio.");
+    liveCallBtn.setAttribute("aria-describedby", "alex-status-text");
+    liveCallBtn.style.boxShadow = "0 0 0 3px var(--accent-soft)";
+    liveCallBtn.addEventListener("click", () => { liveCallBtn.style.boxShadow = ""; }, { once: true });
+  }
+  if (!SpeechRec) liveCallBtn.title = "O microfone contínuo não está disponível. Você pode digitar e ouvir as respostas.";
 
   liveCallBtn.addEventListener("click", () => {
     if (isLiveActive) stopLiveMode();
     else startLiveMode();
   });
-
   function startLiveMode() {
-    // Acionado diretamente pelo clique, antes do primeiro reconhecimento.
-    unlockLiveAudio();
+    unlockLiveAudio(); // synchronous user gesture for Safari and standalone PWAs
     isLiveActive = true;
+    microphonePermissionDenied = false;
     liveCallBtn.classList.add("is-active");
     if (liveCallText) liveCallText.textContent = "Encerrar Conversa ao Vivo";
-    const statusText = document.getElementById("alex-status-text");
-    if (statusText) statusText.textContent = "🎙️ Conversa ao vivo ativa! Fale sua dúvida clínica...";
-    const mascot = document.getElementById("alex-mascot");
-    if (mascot && typeof mascot.playAnimation === "function") {
-      mascot.expression = "attentive";
-      mascot.playAnimation("listening");
-    }
+    setInterruptVisible(true);
+    liveStatus(SpeechRec
+      ? "🎙️ Ouvindo. Fale a qualquer momento; use Interromper e falar se necessário."
+      : "🔊 Voz ativada. Digite para receber respostas faladas.");
+    // No spoken greeting: it used to block first microphone activation on iOS.
     startListening();
   }
-
   function stopLiveMode() {
     isLiveActive = false;
-    if (liveRecognition) {
-      try { liveRecognition.abort(); } catch {}
-      liveRecognition = null;
-    }
-    stopCurrentVoicePlayback();
-    const mascot = document.getElementById("alex-mascot");
-    if (mascot) {
-      mascot.speaking = false;
-      if (typeof mascot.playAnimation === "function") {
-        mascot.expression = "happy";
-        mascot.playAnimation("wave");
-      }
-    }
+    newConversationTurn();
+    stopListening();
+    setInterruptVisible(false);
+    microphonePermissionDenied = false;
+    if (submit) { submit.disabled = false; submit.textContent = "Perguntar"; }
     liveCallBtn.classList.remove("is-active");
     if (liveCallText) liveCallText.textContent = "Conversar ao Vivo por Voz";
-    const statusText = document.getElementById("alex-status-text");
-    if (statusText) statusText.textContent = "Leco online e pronto para ensinar";
+    liveStatus("Leco online e pronto para ensinar");
   }
-
   startLiveListening = startListening;
+
   function startListening() {
-    if (!isLiveActive || liveRecognition || audioPlaybackPending || currentPuckSource || currentPuckAudio || submit?.disabled) return;
+    if (!SpeechRec || !isLiveActive || liveRecognition || microphonePermissionDenied) return;
+    // iOS standalone Safari cannot reliably do speech recognition while TTS plays.
+    // The explicit interrupt button always stops playback and reopens the mic.
+    if (isIOSPwa && (audioPlaybackPending || currentPuckSource || currentPuckAudio)) return;
     try {
-      liveRecognition = new SpeechRec();
-      const recognition = liveRecognition;
-      liveRecognition.lang = "pt-BR";
-      liveRecognition.continuous = false;
-      liveRecognition.interimResults = false;
-      liveRecognition.onresult = event => {
+      const recognition = new SpeechRec();
+      liveRecognition = recognition;
+      recognition.lang = "pt-BR";
+      recognition.continuous = false;
+      recognition.interimResults = true;
+      let submitted = false;
+      let interrupted = false;
+      recognition.onstart = () => { retryDelay = 500; };
+      recognition.onresult = event => {
+        if (!isLiveActive || recognition !== liveRecognition || submitted) return;
+        let finalText = "";
+        let partialText = "";
+        let confidence = null;
+        for (let i = event.resultIndex || 0; i < (event.results?.length || 0); i++) {
+          const result = event.results[i];
+          const phrase = result?.[0]?.transcript?.trim() || "";
+          if (result.isFinal) {
+            finalText += (finalText ? " " : "") + phrase;
+            confidence = Number(result?.[0]?.confidence);
+          } else partialText += (partialText ? " " : "") + phrase;
+        }
+        const candidate = (finalText || partialText).trim();
+        if (!candidate) return;
+        const normalize = value => String(value || "").toLocaleLowerCase("pt-BR")
+          .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+        const heard = normalize(candidate);
+        const leco = normalize(lastSpokenAnswer);
+        // Avoid a feedback loop where recognition hears the assistant's own speech.
+        if (leco && (heard.length >= 4) &&
+            (leco.includes(heard) || (heard.length > 15 && heard.includes(leco.slice(0, 15))))) return;
+        if (!interrupted && (audioPlaybackPending || currentPuckAudio || currentPuckSource)) {
+          interrupted = true;
+          newConversationTurn(); // barge-in: cancel playback and pending requests
+          liveStatus("🎙️ Estou ouvindo sua nova pergunta...");
+          if (submit) { submit.disabled = false; submit.textContent = "Perguntar"; }
+        }
+        if (finalText) {
+          submitted = true;
+          liveTranscriptConfidence = Number.isFinite(confidence) ? confidence : null;
+          liveRecognition = null;
+          try { recognition.abort(); } catch {}
+          const input = document.getElementById("alex-prompt");
+          if (input) input.value = finalText;
+          if (form) form.dispatchEvent(new Event("submit", { cancelable: true, bubbles: true }));
+        }
+      };
+      recognition.onerror = error => {
         if (!isLiveActive || recognition !== liveRecognition) return;
-        const query = event.results?.[0]?.[0]?.transcript?.trim();
-        if (query) {
-          liveTranscriptConfidence = Number(event.results?.[0]?.[0]?.confidence);
-          const promptInput = document.getElementById("alex-prompt");
-          if (promptInput) promptInput.value = query;
-          if (form) form.dispatchEvent(new Event("submit", { cancelable: true }));
+        if (error?.error === "not-allowed" || error?.error === "service-not-allowed") {
+          microphonePermissionDenied = true;
+          liveStatus("⚠️ Microfone bloqueado pelo sistema. Permita o acesso ou digite sua pergunta.");
+        } else if (error?.error && error.error !== "no-speech" && error.error !== "aborted") {
+          console.warn("[Leco Voice] Falha no reconhecimento:", error.error);
+          liveStatus("⚠️ Não consegui ouvir. Tentando reabrir o microfone...");
+          retryDelay = Math.min(4000, retryDelay * 2);
         }
       };
-      liveRecognition.onerror = err => {
-        if (isLiveActive && err.error !== "no-speech") console.warn("[Live Alex]", err);
-      };
-      liveRecognition.onend = () => {
+      recognition.onend = () => {
         if (recognition === liveRecognition) liveRecognition = null;
-        if (isLiveActive && !window.speechSynthesis?.speaking && !currentPuckAudio && !currentPuckSource && !audioPlaybackPending && !submit?.disabled) {
-          setTimeout(startListening, 600);
-        }
+        if (!isLiveActive || submitted || microphonePermissionDenied || liveRecognition) return;
+        clearTimeout(retryTimer);
+        retryTimer = setTimeout(() => { if (isLiveActive) startListening(); }, retryDelay);
       };
-      liveRecognition.start();
-    } catch (e) {
-      console.warn("[Live Speech Error]", e);
+      recognition.start();
+    } catch (error) {
+      if (liveRecognition) liveRecognition = null;
+      console.warn("[Leco Voice] Não foi possível abrir o microfone:", error?.name || "recognition_error");
+      liveStatus("⚠️ Não foi possível abrir o microfone. Toque em Interromper e falar para tentar novamente.");
     }
   }
 }
-
 initLiveVoiceMode();
