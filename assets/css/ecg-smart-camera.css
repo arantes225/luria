@@ -891,3 +891,44 @@ body[data-page="trabalho_ecg"] #ecg-guided-camera-page #ecg-btn-cancel-camera {
 .ecg-lead-card:has(.ecg-provisional-warning) .ecg-lead-title {
   font-size: 13px;
 }
+
+/* Official site gradient button styling for ECG Scanner & Camera surfaces */
+/* Work Mode official gradient button tokens across all 4 theme palettes */
+:root,
+body[data-ui="v2"],
+body[data-ui-shell="v2"],
+body[data-ui-work="v2"],
+body[data-page^="trabalho_"] {
+  --luria-work-btn-bg: linear-gradient(135deg, #184888, #2563EB);
+  --luria-work-btn-border: rgba(37, 99, 235, 0.45);
+  --luria-work-btn-shadow: 0 4px 14px rgba(24, 72, 136, 0.25);
+}
+html:is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]):not([data-ui-appearance="dark"]):not([data-theme="dark"]) body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]),
+body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]):not([data-ui-appearance="dark"]):not([data-theme="dark"]) {
+  --luria-work-btn-bg: linear-gradient(135deg, #B2577D, #DB2777, #EC4899);
+  --luria-work-btn-border: rgba(219, 39, 119, 0.45);
+  --luria-work-btn-shadow: 0 4px 14px rgba(219, 39, 119, 0.28);
+}
+html:is([data-ui-appearance="dark"], [data-theme="dark"]):not([data-ui-identity="pink"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]),
+body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]):is([data-ui-appearance="dark"], [data-theme="dark"]):not([data-ui-identity="pink"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) {
+  --luria-work-btn-bg: linear-gradient(135deg, #102C57, #184888, #2563EB);
+  --luria-work-btn-border: rgba(37, 99, 235, 0.55);
+  --luria-work-btn-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+html:is([data-ui-appearance="dark"], [data-theme="dark"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]) body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]),
+body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]):is([data-ui-appearance="dark"], [data-theme="dark"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]) {
+  --luria-work-btn-bg: linear-gradient(135deg, #831843, #BE185D, #EC4899);
+  --luria-work-btn-border: rgba(190, 24, 93, 0.55);
+  --luria-work-btn-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+:is(.ecg-btn, .ecg-btn.secondary, .ecg-zoom-btn, .ecg-hud-btn-back, .ecg-hud-mode-btn, .ecg-uncertain-popup button, .btn-confirm, .btn-cancel, #ecg-guided-camera-page button, #ecg-normal-photo-page button:not(.ecg-photo-corner)) {
+  background: var(--luria-work-btn-bg, linear-gradient(135deg, #184888, #2563EB)) !important;
+  background-image: var(--luria-work-btn-bg, linear-gradient(135deg, #184888, #2563EB)) !important;
+  color: #ffffff !important;
+  border-color: var(--luria-work-btn-border, rgba(37, 99, 235, 0.45)) !important;
+  box-shadow: var(--luria-work-btn-shadow, 0 4px 14px rgba(24, 72, 136, 0.25)) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16) !important;
+}
+:is(.ecg-btn, .ecg-btn.secondary, .ecg-zoom-btn, .ecg-hud-btn-back, .ecg-hud-mode-btn, .ecg-uncertain-popup button, .btn-confirm, .btn-cancel, #ecg-guided-camera-page button, #ecg-normal-photo-page button:not(.ecg-photo-corner)) :is(span, strong, b, small, i, svg, svg *) {
+  color: #ffffff !important;
+}

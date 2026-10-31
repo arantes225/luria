@@ -88,6 +88,34 @@ body[data-ui="v2"][data-ui-appearance="dark"][data-ui-identity="pink"], body[dat
   --ui-hero-shadow: 0 18px 36px rgba(9, 4, 14, 0.58);
   --ui-pill-gradient: linear-gradient(135deg, #F472B6, #E879F9, #C084FC);
 }
+/* Work Mode official gradient button tokens across all 4 theme palettes */
+:root,
+body[data-ui="v2"],
+body[data-ui-shell="v2"],
+body[data-ui-work="v2"],
+body[data-page^="trabalho_"] {
+  --luria-work-btn-bg: linear-gradient(135deg, #184888, #2563EB);
+  --luria-work-btn-border: rgba(37, 99, 235, 0.45);
+  --luria-work-btn-shadow: 0 4px 14px rgba(24, 72, 136, 0.25);
+}
+html:is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]):not([data-ui-appearance="dark"]):not([data-theme="dark"]) body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]),
+body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]):not([data-ui-appearance="dark"]):not([data-theme="dark"]) {
+  --luria-work-btn-bg: linear-gradient(135deg, #B2577D, #DB2777, #EC4899);
+  --luria-work-btn-border: rgba(219, 39, 119, 0.45);
+  --luria-work-btn-shadow: 0 4px 14px rgba(219, 39, 119, 0.28);
+}
+html:is([data-ui-appearance="dark"], [data-theme="dark"]):not([data-ui-identity="pink"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]),
+body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]):is([data-ui-appearance="dark"], [data-theme="dark"]):not([data-ui-identity="pink"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) {
+  --luria-work-btn-bg: linear-gradient(135deg, #102C57, #184888, #2563EB);
+  --luria-work-btn-border: rgba(37, 99, 235, 0.55);
+  --luria-work-btn-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+html:is([data-ui-appearance="dark"], [data-theme="dark"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]) body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]),
+body:is([data-ui="v2"], [data-ui-shell="v2"], [data-ui-work="v2"], [data-page^="trabalho_"]):is([data-ui-appearance="dark"], [data-theme="dark"]):is([data-ui-identity="pink"], [data-theme="leila-mood"], [data-theme="pink"], [data-theme="rosa"]) {
+  --luria-work-btn-bg: linear-gradient(135deg, #831843, #BE185D, #EC4899);
+  --luria-work-btn-border: rgba(190, 24, 93, 0.55);
+  --luria-work-btn-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
 /* Shared action styles precede page overrides, including their !important rules.
    Icon controls, ratings, clinical choices and destructive actions keep their roles. */
 @layer luria-ui-controls {
@@ -99,9 +127,13 @@ body[data-ui="v2"][data-ui-appearance="dark"][data-ui-identity="pink"], body[dat
     align-items:center!important;justify-content:center!important;gap:.5rem!important;
     max-width:100%!important;white-space:normal!important;text-decoration:none!important;
   }
-  body[data-ui-nav="v2"] :where(.main,dialog,[role="dialog"]) :where(.button,.btn,.btn-secondary,.stats-tab,.stats-range button,.planner-view-toggle button,.agenda-activity-view-switch button,.agenda-insight-tabs button,.qs-mode-tab,.error-state-switch button,.flash-tab,button.clear,.qr-btn:not(.primary),.luria-back-button,button.secondary) {
+  body[data-ui-nav="v2"]:not([data-ui-work="v2"]):not([data-page^="trabalho_"]) :where(.main,dialog,[role="dialog"]) :where(.button,.btn,.btn-secondary,.stats-tab,.stats-range button,.planner-view-toggle button,.agenda-activity-view-switch button,.agenda-insight-tabs button,.qs-mode-tab,.error-state-switch button,.flash-tab,button.clear,.qr-btn:not(.primary),.luria-back-button,button.secondary) {
     background:var(--color-surface-solid)!important;color:var(--color-text-primary)!important;
     border:1px solid var(--color-border-interactive)!important;box-shadow:none!important;
+  }
+  body[data-ui-nav="v2"]:is([data-ui-work="v2"],[data-page^="trabalho_"]) :where(.main,dialog,[role="dialog"]) :where(.button,.btn,.btn-primary,.btn-secondary,button.clear,.qr-btn,.luria-back-button,button.primary,button.secondary,.temp-note-top-actions a,.temp-note-savebar .primary,.quick-chart-pin-setup button,.gm-security-action,.pm-new,.pm-primary,.pm-export-btn.primary,.go,.score-copy,.primary-action):not(:where(.danger,.destructive,[data-variant="danger"])) {
+    background:var(--luria-work-btn-bg,linear-gradient(135deg,#184888,#2563EB))!important;background-clip:padding-box!important;
+    color:#ffffff!important;border:1px solid var(--luria-work-btn-border,rgba(37,99,235,0.45))!important;box-shadow:var(--luria-work-btn-shadow,0 4px 14px rgba(24,72,136,0.25))!important;
   }
   body[data-ui-nav="v2"] :where(.main,dialog,[role="dialog"]) :where(.stats-tab.active,.stats-range button.active,.planner-view-toggle button.active,.agenda-activity-view-switch button.active,.agenda-insight-tabs button.active,.qs-mode-tab.active,.error-state-switch button.active,.flash-tab.active,.button.primary,.btn.primary,.btn-primary,.qr-btn.primary,.primary-nav,.g-button,.games-link,.cv-hub-btn,.qs-start-button,.reference-new-activity,#reference-new-activity,.dl5-start,.dl-start,.alex-open-tutoring,.alex-send-button,.luria-daily-review-primary,.qs-daily-review-primary,#daily-submit,#start-review-session,#show-answer,.quiz-submit,.google-calendar-primary,.ed-new-exam,.ed-primary-action,.luria-intel-button.primary,.dl-study-now-start,.dl-primary,.temp-note-top-actions a,.temp-note-savebar .primary,.quick-chart-pin-setup button,.gm-security-action,.pm-new,.pm-primary,.pm-export-btn.primary,.go,.score-copy,.admin-primary-button,.primary-action,.alex-action.primary,#plantao-phone-new-chat,#plantao-phone-compose-send,.sc-text-link,.community-shortcut-card .button,.sl-room-card [data-room-enter],#community-friends .friends-actions>.button,#social-suggestions .button,[data-action="primary"],button.primary):not(:where(.danger,.destructive,[data-variant="danger"])) {
     background:var(--ui-pill-gradient,var(--color-primary))!important;background-clip:padding-box!important;
@@ -2629,15 +2661,38 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
   body[data-ui-work-navigation="hub"] .work-hub-navigation a {
     display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
     box-sizing:border-box;min-height:44px;padding:.5rem .875rem;
-    border:1px solid var(--color-shell-control-border);border-radius:var(--ui-radius-control);
-    background:var(--color-shell-control)!important;color:var(--color-primary-text)!important;
-    font-size:var(--ui-secondary);font-weight:600;line-height:1.25;text-decoration:none;white-space:nowrap;
+    border:1px solid rgba(255,255,255,0.28)!important;border-radius:var(--ui-radius-control);
+    background:var(--luria-work-btn-bg,linear-gradient(135deg,#184888,#2563EB))!important;color:#ffffff!important;
+    box-shadow:var(--luria-work-btn-shadow,0 4px 14px rgba(24,72,136,0.25))!important;
+    font-size:var(--ui-secondary);font-weight:700;line-height:1.25;text-decoration:none;white-space:nowrap;
   }
   body[data-ui-work-navigation="hub"] .work-hub-navigation a[hidden] {display:none;}
-  body[data-ui-work-navigation="hub"] .work-hub-navigation svg {width:20px;height:20px;flex:none;}
-  body[data-ui-work-navigation="hub"] .work-hub-navigation a > span {color:inherit!important;}
-  body[data-ui-work-navigation="hub"] .work-hub-navigation .work-hub-pcr {color:var(--color-danger)!important;border-color:color-mix(in srgb,var(--color-danger) 35%,var(--color-border));}
-  body[data-ui-work-navigation="hub"] .work-hub-navigation a:hover {background:var(--color-surface-elevated);}
+  body[data-ui-work-navigation="hub"] .work-hub-navigation svg {width:20px;height:20px;flex:none;color:#ffffff!important;stroke:#ffffff!important;}
+  body[data-ui-work-navigation="hub"] .work-hub-navigation a > span {color:#ffffff!important;}
+  body[data-ui-work-navigation="hub"] .work-hub-navigation .work-hub-pcr {color:#ffffff!important;border-color:rgba(255,255,255,0.32)!important;background:var(--luria-work-btn-bg,linear-gradient(135deg,#184888,#2563EB))!important;}
+  body[data-ui-work-navigation="hub"] .work-hub-navigation a:hover {filter:brightness(1.08);background:var(--luria-work-btn-bg,linear-gradient(135deg,#184888,#2563EB))!important;color:#ffffff!important;}
+  body:is([data-ui-work="v2"],[data-page^="trabalho_"]) :is(.main,dialog,[role="dialog"],.external-chart,#sidebar) :is(button:not(.calc-card-main):not(.score-card-main):not(.fav-btn):not(.score-fav):not(.calc-search-clear):not(.score-search-clear):not(.drug-row):not(.rx-presentation-tab):not(.protocol-row):not(.protocol-item):not(.recipe-row):not(.recipe-item):not(.ex-side button):not(.pm-drug-option):not(.pm-deck-more):not(.pm-priority button):not(.protocol-image-open):not(.shift-calendar-event):not(.shift-day-number):not(.ecg-photo-corner):not(.pcr-rhythm):not(.team-position):not(.patient-problem-chip:not(.is-active)):not(#menu-open):not(#sidebar-desktop-toggle):not(#sidebar-close),.button,.btn,.btn-primary,.btn-secondary,a.button,.luria-back-button,.work-hub-patient-action,.work-hub-emergency-action,#sidebar .work-pcr-button,.work-empty a,.work-action-row a,.work-simple-actions-grid a,.work-card-heading a,.drug-popover-actions a,.ex-back-link,.gm-radar-btn,.gm-tools-link,.patient-primary,.patient-secondary,.patient-tool-actions a,.patient-link-button,.temp-note-top-actions a,.recipe-drug-link,.btn-goto-bulario) {
+    background:var(--luria-work-btn-bg,linear-gradient(135deg,#184888,#2563EB))!important;
+    background-image:var(--luria-work-btn-bg,linear-gradient(135deg,#184888,#2563EB))!important;
+    color:#ffffff!important;
+    border-color:var(--luria-work-btn-border,rgba(37,99,235,0.45))!important;
+    box-shadow:var(--luria-work-btn-shadow,0 4px 14px rgba(24,72,136,0.25))!important;
+    text-shadow:0 1px 2px rgba(0,0,0,0.16)!important;
+  }
+  body:is([data-ui-work="v2"],[data-page^="trabalho_"]) :is(.main,dialog,[role="dialog"],.external-chart,#sidebar) :is(button:not(.calc-card-main):not(.score-card-main):not(.fav-btn):not(.score-fav):not(.calc-search-clear):not(.score-search-clear):not(.drug-row):not(.rx-presentation-tab):not(.protocol-row):not(.protocol-item):not(.recipe-row):not(.recipe-item):not(.ex-side button):not(.pm-drug-option):not(.pm-deck-more):not(.pm-priority button):not(.protocol-image-open):not(.shift-calendar-event):not(.shift-day-number):not(.ecg-photo-corner):not(.pcr-rhythm):not(.team-position):not(.patient-problem-chip:not(.is-active)):not(#menu-open):not(#sidebar-desktop-toggle):not(#sidebar-close),.button,.btn,.btn-primary,.btn-secondary,a.button,.luria-back-button,.work-hub-patient-action,.work-hub-emergency-action,#sidebar .work-pcr-button,.work-empty a,.work-action-row a,.work-simple-actions-grid a,.work-card-heading a,.drug-popover-actions a,.ex-back-link,.gm-radar-btn,.gm-tools-link,.patient-primary,.patient-secondary,.patient-tool-actions a,.patient-link-button,.temp-note-top-actions a,.recipe-drug-link,.btn-goto-bulario) :is(span,strong,b,small,i,em,p,code,svg,svg *) {
+    color:#ffffff!important;
+  }
+  body:is([data-ui-work="v2"],[data-page^="trabalho_"]) :is(.main,dialog,[role="dialog"],.external-chart,#sidebar) :is(button:not(.calc-card-main):not(.score-card-main):not(.fav-btn):not(.score-fav):not(.calc-search-clear):not(.score-search-clear):not(.drug-row):not(.rx-presentation-tab):not(.protocol-row):not(.protocol-item):not(.recipe-row):not(.recipe-item):not(.ex-side button):not(.pm-drug-option):not(.pm-deck-more):not(.pm-priority button):not(.protocol-image-open):not(.shift-calendar-event):not(.shift-day-number):not(.ecg-photo-corner):not(.pcr-rhythm):not(.team-position):not(.patient-problem-chip:not(.is-active)):not(#menu-open):not(#sidebar-desktop-toggle):not(#sidebar-close),.button,.btn,.btn-primary,.btn-secondary,a.button,.luria-back-button,.work-hub-patient-action,.work-hub-emergency-action,#sidebar .work-pcr-button,.work-empty a,.work-action-row a,.work-simple-actions-grid a,.work-card-heading a,.drug-popover-actions a,.ex-back-link,.gm-radar-btn,.gm-tools-link,.patient-primary,.patient-secondary,.patient-tool-actions a,.patient-link-button,.temp-note-top-actions a,.recipe-drug-link,.btn-goto-bulario) :is(svg[stroke],svg [stroke]) {
+    stroke:#ffffff!important;
+  }
+  body:is([data-ui-work="v2"],[data-page^="trabalho_"]) :is(.main,dialog,[role="dialog"],.external-chart,#sidebar) :is(button:not(.calc-card-main):not(.score-card-main):not(.fav-btn):not(.score-fav):not(.calc-search-clear):not(.score-search-clear):not(.drug-row):not(.rx-presentation-tab):not(.protocol-row):not(.protocol-item):not(.recipe-row):not(.recipe-item):not(.ex-side button):not(.pm-drug-option):not(.pm-deck-more):not(.pm-priority button):not(.protocol-image-open):not(.shift-calendar-event):not(.shift-day-number):not(.ecg-photo-corner):not(.pcr-rhythm):not(.team-position):not(.patient-problem-chip:not(.is-active)):not(#menu-open):not(#sidebar-desktop-toggle):not(#sidebar-close),.button,.btn,.btn-primary,.btn-secondary,a.button,.luria-back-button,.work-hub-patient-action,.work-hub-emergency-action,#sidebar .work-pcr-button,.work-empty a,.work-action-row a,.work-simple-actions-grid a,.work-card-heading a,.drug-popover-actions a,.ex-back-link,.gm-radar-btn,.gm-tools-link,.patient-primary,.patient-secondary,.patient-tool-actions a,.patient-link-button,.temp-note-top-actions a,.recipe-drug-link,.btn-goto-bulario):hover:not(:disabled) {
+    filter:brightness(1.07)!important;
+    color:#ffffff!important;
+  }
+  body:is([data-ui-work="v2"],[data-page^="trabalho_"]) :is(.main,dialog,[role="dialog"],.external-chart,#sidebar) :is(button:not(.calc-card-main):not(.score-card-main):not(.fav-btn):not(.score-fav):not(.calc-search-clear):not(.score-search-clear):not(.drug-row):not(.rx-presentation-tab):not(.protocol-row):not(.protocol-item):not(.recipe-row):not(.recipe-item):not(.ex-side button):not(.pm-drug-option):not(.pm-deck-more):not(.pm-priority button):not(.protocol-image-open):not(.shift-calendar-event):not(.shift-day-number):not(.ecg-photo-corner):not(.pcr-rhythm):not(.team-position):not(.patient-problem-chip:not(.is-active)):not(#menu-open):not(#sidebar-desktop-toggle):not(#sidebar-close),.button,.btn,.btn-primary,.btn-secondary,a.button,.luria-back-button,.work-hub-patient-action,.work-hub-emergency-action,#sidebar .work-pcr-button,.work-empty a,.work-action-row a,.work-simple-actions-grid a,.work-card-heading a,.drug-popover-actions a,.ex-back-link,.gm-radar-btn,.gm-tools-link,.patient-primary,.patient-secondary,.patient-tool-actions a,.patient-link-button,.temp-note-top-actions a,.recipe-drug-link,.btn-goto-bulario):is(.active,.is-active,[aria-selected="true"],[aria-pressed="true"]) {
+    filter:brightness(1.12)!important;
+    box-shadow:0 0 0 2px var(--color-surface-solid,#ffffff),0 0 0 4px var(--color-primary,#2563EB),var(--luria-work-btn-shadow,0 4px 14px rgba(24,72,136,0.25))!important;
+  }
   body[data-ui-work-navigation="hub"] .work-hub-navigation a:focus-visible {outline:2px solid var(--color-focus-ring);outline-offset:3px;}
   @media(max-width:760px) {
     body[data-ui-work-navigation="hub"] {--ui-nav-height:120px!important;}
