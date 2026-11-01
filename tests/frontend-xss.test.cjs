@@ -187,7 +187,22 @@ test('Notifications loaded through the actual mocked Supabase query cannot navig
 
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
 function mockTables(w,tables){
-  w.supabaseClient={from:table=>({select(){return this;},order(){return this;},limit(){return this;},then(resolve){resolve({data:tables[table]||[],error:null});}})};
+  w.supabaseClient={from:table=>{
+    let rows=tables[table]||[],start=0,end=Infinity;
+    const query={
+      select(){return this;},
+      eq(field,value){rows=rows.filter(row=>String(row[field])===String(value));return this;},
+      in(field,values){rows=rows.filter(row=>values.includes(row[field]));return this;},
+      contains(field,values){rows=rows.filter(row=>values.every(value=>(row[field]||[]).includes(value)));return this;},
+      or(){return this;},
+      order(){return this;},
+      limit(value){end=Math.min(end,value-1);return this;},
+      range(from,to){start=from;end=to;return this;},
+      single(){return Promise.resolve({data:rows[0]||null,error:null});},
+      then(resolve){const count=rows.length;resolve({data:rows.slice(start,Number.isFinite(end)?end+1:undefined),error:null,count});}
+    };
+    return query;
+  }};
   w.matchMedia=()=>({matches:false});w.HTMLElement.prototype.scrollIntoView=function(){};
 }
 test('Protocol full load, source links, image dialog and clinical bridge keep their rendering contracts',async t=>{
@@ -200,6 +215,7 @@ test('Protocol full load, source links, image dialog and clinical bridge keep th
   row.linked_recipe_slugs=['receita-teste'];
   mockTables(w,{clinical_protocols:[row],recipe_bank:[{slug:'receita-teste',title:'Receita teste',data:{routes:[{route:'Oral',items:[{drug:'Medicamento exemplo'}]}]}}]});
   w.eval(read('assets/js/trabalho-protocolos.js'));await tick();
+  w.document.querySelector('.protocol-row').click();await tick();await tick();
   const detail=w.document.getElementById('protocol-detail'),links=detail.querySelectorAll('.protocol-refs a');
   assert.equal(links[0].getAttribute('href'),'#');assert.equal(links[1].getAttribute('href'),row.source_refs[1].url);assertSafe(detail);
   assert.ok(detail.querySelector('.integrated-recipe-copy-btn'),'Opening a protocol must render linked recipes without a ReferenceError');
