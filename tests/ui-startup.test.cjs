@@ -32,3 +32,8 @@ test('Dashboard is exposed only after its selected model or recovery state is pr
 test('a failed or delayed startup retains a native reload link with the original route',async t=>{
  const f=fixture(t);await settle();assert.equal(f.b.dataset.uiStartup,'pending');assert.equal(f.w.document.querySelector('.ui-startup a').href,'https://traube.test/flashcards/?source=test#section');
 });
+test('TRAUBE startup preserves the provisioned database bootstrap contract',()=>{
+ const app=fs.readFileSync('assets/js/app.js','utf8');
+ assert.match(app,/sb\.rpc\("luria_bootstrap"\)/);
+ assert.doesNotMatch(app,/sb\.rpc\("traube_bootstrap"\)/);
+});
