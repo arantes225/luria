@@ -1524,3 +1524,13 @@ optgroup {
   border-color: var(--landing-button-secondary-border) !important;
   color: var(--landing-button-secondary-text) !important;
 }
+
+:is(a, button, summary):focus-visible {
+  outline: 3px solid var(--landing-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.landing-button:focus-visible {
+  border-radius: 999px; /* Match button radius */
+}
