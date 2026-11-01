@@ -6254,7 +6254,10 @@ async function carregarBootstrap(userId) {
   if (!userId) return null;
 
   try {
-    const { data, error } = await sb.rpc("traube_bootstrap");
+    // Keep the database RPC name stable during the public TRAUBE rebrand.
+    // Renaming this client call without a matching database migration forces
+    // every page through the slower multi-request fallback.
+    const { data, error } = await sb.rpc("luria_bootstrap");
     if (error || !data) {
       if (error) console.warn("Não foi possível carregar o bootstrap da TRAUBE:", error.message);
       return null;

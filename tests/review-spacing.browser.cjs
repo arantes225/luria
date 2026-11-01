@@ -5,7 +5,7 @@ const root=path.resolve(__dirname,'..'),base='https://traube.test';
 const inspect=process.argv.includes('--inspect');
 const output=path.join(root,'browser-results/review-spacing');fs.mkdirSync(output,{recursive:true});
 const fixture=fs.readFileSync(path.join(root,'tests/fixtures/supabase-browser.js'),'utf8')
- .replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{if(name==="traube_bootstrap")return{data:null,error:null};')
+ .replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{if(name==="luria_bootstrap")return{data:null,error:null};')
  .replace('if(name==="is_admin")return{data:false,error:null};','if(name==="is_admin")return{data:true,error:null};');
 const types={'.html':'text/html','.css':'text/css','.js':'application/javascript','.mjs':'application/javascript','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.woff2':'font/woff2','.json':'application/json'};
 (async()=>{
