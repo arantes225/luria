@@ -564,5 +564,5 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
  $("qr-confirm").onclick=confirm;$("qr-prev").onclick=()=>navigateTo(state.index-1);$("qr-next").onclick=()=>navigateTo(state.index+1);setQuestionFont(state.fontSize);setInterval(tick,1000);setTimeout(()=>{if(!$("qr-loading").hidden&&$("qr-loading").textContent.includes("Carregando"))$("qr-loading").textContent="O carregamento demorou mais que o esperado. Atualize a página para tentar novamente."},12000);init().catch(error=>{console.error(error);$("qr-loading").textContent="Não foi possível carregar as questões. Atualize a página para tentar novamente."});
 })();
 </script>
-<script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
+<script defer src="/assets/js/pwa.js?v=20261101-bootstrap1"></script>
 </body></html>
