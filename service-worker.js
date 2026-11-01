@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261101-bootstrap-v1";
+const CACHE_VERSION = "traube-pwa-20261101-labelmask-v2";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";

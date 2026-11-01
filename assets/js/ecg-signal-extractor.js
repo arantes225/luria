@@ -165,10 +165,9 @@
     }
 
     // 3. Filtrar blocos isolados de texto/rótulo no canto esquerdo superior/inferior
-    // Componentes muito compactos nos primeiros 30% da largura que estão afastados da linha central da curva
+    // Componentes muito compactos nos primeiros 32% da largura que estão acima da linha de base
     const textMask = new Uint8Array(width * height);
-    const labelZoneMaxX = Math.floor(width * 0.34);
-    const labelZoneMaxY = Math.floor(height * 0.34);
+    const labelZoneMaxX = Math.floor(width * 0.32);
 
     // Estimar linha de base preliminar na metade direita da imagem (livre de rótulo)
     let prelimY = height / 2;
@@ -184,13 +183,16 @@
     }
     if (prelimWeight > 0) prelimY = prelimSumY / prelimWeight;
 
-    // Marcar pixels de rótulo (no canto superior esquerdo e distantes da linha de base preliminar)
-    for (let y = 0; y < labelZoneMaxY; y++) {
-      if (Math.abs(y - prelimY) < height * 0.18) continue;
+    // Marcar pixels de rótulo:
+    // O texto da nomenclatura (DI, aVR, V1..V6) fica posicionado no canto superior esquerdo
+    // estritamente acima da linha de base preliminar com margem de segurança.
+    const textMaxY = Math.max(0, Math.floor(prelimY - 8));
+    for (let y = 0; y < textMaxY; y++) {
       for (let x = 0; x < labelZoneMaxX; x++) {
-        if (inkStrength[y * width + x] > 0) {
-          // Verificar se não se conecta diretamente a uma subida vertical de QRS
-          textMask[y * width + x] = 1;
+        const index = y * width + x;
+        if (inkStrength[index] > 0) {
+          inkStrength[index] = 0;
+          textMask[index] = 1;
         }
       }
     }
