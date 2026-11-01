@@ -1,4 +1,12 @@
 (()=>{
+  function debounce(func, wait) {
+    let timeout;
+    return function() {
+      const context = this, args = arguments;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+  }
   const search=document.getElementById('drug-search');
   const list=document.getElementById('drug-list');
   const detail=document.getElementById('drug-detail');
@@ -314,7 +322,7 @@
     });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
-  search.addEventListener('input',renderList);
+  search.addEventListener('input',debounce(renderList, 300));
   (async()=>{
     const localSeeds=Array.isArray(window.TRAUBE_BULARIO_SEEDS)?window.TRAUBE_BULARIO_SEEDS:[];
     const localProtoSeeds=Array.isArray(window.TRAUBE_PROTOCOL_SEEDS)?window.TRAUBE_PROTOCOL_SEEDS:[];
