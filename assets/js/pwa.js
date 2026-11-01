@@ -31,7 +31,7 @@
   if (new URL(document.baseURI).pathname !== "/") return;
 
 
-  const release = "20261031-ecg-v7";
+  const release = "20261101-bootstrap-v1";
 
   
 
