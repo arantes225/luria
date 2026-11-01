@@ -972,12 +972,14 @@
 
     if (hasMeasuredGrid) {
       // Se o período dominante medido corresponder ao quadrado maior (5 mm) vs menor (1 mm):
-      // Em fotos ou imagens de ~1000-2000px de uma folha A4 (210-297mm), 1 mm ~ 3.5 a 8 px, e 5 mm ~ 18 a 40 px.
-      // Verificamos se há sub-harmônico em period / 5:
+      // Em fotos ou imagens de ~600-3000px de uma folha de ECG inteira (200-297mm),
+      // 1 mm ~ 2 a 8 px, e 5 mm ~ 10 a 40 px.
+      // Qualquer período detectado >= 12 px em imagem completa de folha (> 400 px de largura)
+      // é fundamentalmente o quadrado maior de 5 mm (uma folha de 1024px a 15px/mm teria apenas 68mm!).
       const subX = evaluateLagCorrelation(hpX, periodX.period / 5);
       const subY = evaluateLagCorrelation(hpY, periodY.period / 5);
 
-      if (periodX.period >= 14 && (subX > 0.12 || periodX.period > width / 65)) {
+      if (periodX.period >= 12 && (width > 400 || subX > 0.12 || periodX.period > width / 65)) {
         // O pico principal é o quadradão de 5 mm
         pixelsPerMmX = periodX.period / 5;
         pixelsPerMmY = periodY.period / 5;
@@ -1404,7 +1406,7 @@
 
       if (totalDarkInZone >= 12) {
         const isContradictionProbe = candidateLabels.length > 4 && options.scales && options.scales.length === 1;
-        const sansScales = isContradictionProbe ? [1] : [1, 1.4];
+        const sansScales = isContradictionProbe ? [1] : [0.70, 0.85, 1, 1.4];
 
         for (const baseLabelName of candidateLabels) {
           const tplKeys = baseLabelName === "V3" ? ["V3", "V3_RECT"] : [baseLabelName];

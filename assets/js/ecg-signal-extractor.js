@@ -331,7 +331,8 @@
       for (let ci = 0; ci < candidates.length; ci++) {
         const c = candidates[ci];
         const darknessReward = Math.min(9, c.weight * 2.2 + c.maxW * 2.5);
-        const baselineCost = Math.abs(c.yCenter - prelimBaselineY) * 0.045;
+        // O custo da linha de base não deve penalizar picos altos de QRS nem ondas S profundas
+        const baselineCost = c.maxW >= 0.35 ? 0 : Math.abs(c.yCenter - prelimBaselineY) * 0.015;
         let bestCost = baselineCost - darknessReward;
         let bestPrev = -1;
         if (previousStates.length) {
@@ -593,7 +594,10 @@
 
     // Regras de rejeição adversarial:
     // 1. Linha plana / grade sem sinal
-    if (peakToPeakMv < 0.08 || totalVariation < 0.20) {
+    // Para derivações de baixa voltagem fisiológica (ex.: V1, aVR), se houver variação cardíaca genuína
+    // (derivadas ou cruzes de zero), não descartar deflexões sutis acima de 0.05 mV.
+    const isFlatline = peakToPeakMv < 0.05 || (peakToPeakMv < 0.08 && totalVariation < 0.12);
+    if (isFlatline) {
       return {
         isMorphologyValid: false,
         reason: "Sinal plano ou sem deflexão eletrocardiográfica.",
