@@ -738,16 +738,29 @@ function getProtocolCalculators(r) {
 
     // Listener do Modal de Detalhes Rápidos do Medicamento
     els.detail.querySelectorAll('[data-quick-drug]').forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', async () => {
         const term = btn.dataset.quickDrug;
-        const bSeeds = Array.isArray(window.TRAUBE_BULARIO_SEEDS) ? window.TRAUBE_BULARIO_SEEDS : [];
         const normStr = (v) => String(v ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
-        const q = normStr(term);
-        const drug = bSeeds.find(d => {
-          const dn = normStr(d.name);
-          const da = normStr(d.active_ingredient);
-          return dn.includes(q) || da.includes(q) || q.includes(da) || (d.data?.products || []).some(p => normStr(p.name).includes(q));
-        });
+        let drug = null;
+        // Use the same canonical database as the Bulário; no local medication seeds.
+        if (window.supabaseClient) {
+          const pattern = '%' + String(term || '').replace(/[%,()]/g, ' ').trim() + '%';
+          for (const column of ['active_ingredient', 'name']) {
+            try {
+              const { data, error } = await window.supabaseClient
+                .from('bulario_catalog')
+                .select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data')
+                .ilike(column, pattern)
+                .limit(20);
+              if (error) continue;
+              if (Array.isArray(data) && data.length) {
+                const q = normStr(term);
+                drug = data.find(d => normStr(d.active_ingredient) === q || normStr(d.name) === q) || data[0];
+                break;
+              }
+            } catch (_) { /* Preserve the link to the full Bulário on query errors. */ }
+          }
+        }
 
         const dialog = document.createElement('dialog');
         dialog.className = 'protocol-drug-dialog';
