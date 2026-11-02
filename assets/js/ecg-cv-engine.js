@@ -2157,9 +2157,17 @@
         : (band && rowGap ? band.yCenterRatio - rowGap : yMin);
       const nextCenter = (r < numMainRows - 1 && mainBands[r + 1])
         ? mainBands[r + 1].yCenterRatio
-        : (hasRhythmRow && topology.bands[numMainRows]
-            ? topology.bands[numMainRows].yCenterRatio
-            : (band && rowGap ? band.yCenterRatio + rowGap : yMax));
+        : (() => {
+            // A faixa seguinte é a primeira faixa realmente ABAIXO desta. Usar
+            // topology.bands[numMainRows] supõe que as 3 linhas principais são as 3
+            // primeiras faixas; com faixas espúrias no topo isso apontava para uma
+            // faixa acima e a última linha ficava com ~1% de altura.
+            const below = band
+              ? topology.bands.find(b2 => b2.yCenterRatio > band.yCenterRatio + 0.02)
+              : null;
+            if (hasRhythmRow && below) return below.yCenterRatio;
+            return band && rowGap ? band.yCenterRatio + rowGap : yMax;
+          })();
 
       const rowYMin = (band && is3x4)
         ? Math.max(yMin, band.yCenterRatio - (band.yCenterRatio - prevCenter) * 0.65)
