@@ -81,3 +81,18 @@ só os 12% mais escuros com piso de 0,58. O suavizamento [1 2 1]² reduz o contr
 que ficava abaixo do piso e sumia (continuidade de tinta 0,1 a 0,3). Com piso 0,30:
 públicas (extrator real) 24 -> 32 de 52 (62%); sintéticas inalteradas (13/20).
 Subconjunto testado (13 falhas + 7 controles): 0,45 -> 9/20; 0,30 e 0,20 -> 12/20; escolhido 0,30.
+
+## Medir o Gemini como "professor" de rótulos (rodar na sua máquina)
+```
+export GEMINI_API_KEY="..."        # só no seu terminal; nunca no repositório nem no chat
+export GEMINI_MODEL="gemini-2.5-flash"   # opcional
+python3 scripts/ecg-bank/make_bank.py /tmp/ecg-synth
+node scripts/ecg-bank/gemini_eval.mjs /tmp/ecg-synth            # 20 imagens
+node scripts/ecg-bank/gemini_eval.mjs /tmp/ecg-synth --only clean,rot3 --limit 6   # teste rápido
+```
+Usa SÓ imagens sintéticas (PTB-XL, CC BY 4.0, sem dado de paciente): a imagem é enviada ao Google.
+Nunca use com ECG de paciente real. Saída: derivações lidas, correlação, MAE (mV), razão de amplitude,
+% de derivações fiéis (r > 0,9 e amplitude 0,8 a 1,25) e tokens (para estimar custo).
+`--dry` valida as métricas sem chamar a API (esperado 100%); `--dry-bad` envia resposta errada de
+propósito (esperado 0%). Critério sugerido para o Gemini servir de professor: >= 80% de derivações
+fiéis também nas imagens degradadas (rot3, rot8, persp_leve, ruido, sombra).
