@@ -98,3 +98,21 @@ test('Generated Traube PDF uses the existing official logo, including 5% waterma
  assert.match(paper, /loadOfficialLogo\(\)/);
  assert.doesNotMatch(paper, /data:image\/svg\+xml|iconLeaf|drawLeaf/);
 });
+
+
+test('Diabetes is discoverable in sidebar, mobile tools and first dashboard screen', () => {
+  const app = read('assets/js/app.js');
+  const mobile = read('assets/js/ui-navigation-v2.js');
+  const index = read('trabalho/index.html');
+  const css = read('assets/css/work-dashboard.css');
+  const sw = read('service-worker.js');
+  assert.match(app, /page === "trabalho_diabetes"[^]*?href="\/trabalho\/diabetes\/"/);
+  assert.match(mobile, /\/diabetes\|calculadora\|scores/);
+  assert.match(hub, /work-hub-diabetes-featured/);
+  assert.match(index, /class="work-hub-diabetes-featured" href="\/trabalho\/diabetes\/"/);
+  assert.ok(index.indexOf('work-hub-diabetes-featured') < index.indexOf('work-hub-patient'));
+  assert.match(css, /work-hub-diabetes-featured/);
+  assert.match(sw, /traube-pwa-20261102-diabetes-nav-v2/);
+  assert.match(index, /work-dashboard\.js\?v=20261102-diabetes-visible/);
+  assert.match(html, /ui-navigation-v2\.js\?v=20261102-diabetes-visible/);
+});
