@@ -956,8 +956,10 @@
     const strongAxesAgree = strongX.period > 0 && strongY.period > 0 &&
       Math.abs(strongX.period - strongY.period) / Math.max(strongX.period, strongY.period) <= 0.2;
     const useStrongPeriod = strongAxesAgree && strongX.confidence >= 0.22 && strongY.confidence >= 0.22;
-    const periodX = useStrongPeriod ? strongX : dominantX;
-    const periodY = useStrongPeriod ? strongY : dominantY;
+    const coarseX = useStrongPeriod ? strongX : dominantX;
+    const coarseY = useStrongPeriod ? strongY : dominantY;
+    const periodX = { ...coarseX, period: coarseX.period > 0 ? refineGridPeriodSubpixel(hpX, coarseX.period) : 0 };
+    const periodY = { ...coarseY, period: coarseY.period > 0 ? refineGridPeriodSubpixel(hpY, coarseY.period) : 0 };
 
     // Detecção do pulso retangular de calibração (1 mV = 10 mm de altura, 200 ms = 5 mm de largura)
     const calPulse = detectCalibrationPulse(imageData, effectiveSheetBoundaries);
@@ -1054,6 +1056,59 @@
       gainSource: (calPulse.detected && calPulse.confidence >= 0.75) ? "measured_pulse" : ((userCalibration && userCalibration.confirmedByUser) ? "user_confirmed" : (hasMeasuredGrid ? "assumed_standard" : "unknown")),
       measurementsAllowed: calibrationSource === "measured" || calibrationSource === "user_confirmed"
     };
+  }
+
+  // O período da grade sai dos estimadores com lag inteiro; com 5 mm ~ 30 px um
+  // erro de 1 px é 3% em toda amplitude/tempo medido. Refina ajustando uma reta
+  // (posição = a + k * período) aos picos reais do perfil ao longo da folha.
+  function refineGridPeriodSubpixel(profile, period) {
+    const n = profile.length;
+    if (!(period >= 4) || n < period * 4) return period;
+    const window = Math.max(2, Math.round(period * 0.18));
+    let seed = 0;
+    for (let i = Math.floor(n * 0.2); i < Math.floor(n * 0.8); i++) if (profile[i] > profile[seed]) seed = i;
+    if (profile[seed] <= 1e-6) return period;
+    const peakNear = (center) => {
+      const lo = Math.max(1, Math.round(center - window)), hi = Math.min(n - 2, Math.round(center + window));
+      if (hi <= lo) return null;
+      let best = lo;
+      for (let i = lo; i <= hi; i++) if (profile[i] > profile[best]) best = i;
+      if (profile[best] < profile[seed] * 0.25 || best === lo || best === hi) return null;
+      const a = profile[best - 1], b = profile[best], d = profile[best + 1];
+      const denom = a - 2 * b + d;
+      return best + (Math.abs(denom) > 1e-9 ? 0.5 * (a - d) / denom : 0);
+    };
+    const points = [{ k: 0, pos: peakNear(seed) ?? seed }];
+    let estimate = period;
+    for (const dir of [1, -1]) {
+      let last = points[0], missed = 0;
+      while (missed < 2) {
+        const expected = last.pos + dir * estimate;
+        if (expected < 2 || expected > n - 3) break;
+        const pos = peakNear(expected);
+        if (pos === null) { missed++; last = { k: last.k + dir, pos: expected }; continue; }
+        missed = 0;
+        last = { k: last.k + dir, pos };
+        points.push(last);
+        if (points.length >= 4) {
+          const fit = fitLine(points);
+          if (fit) estimate = fit.slope;
+        }
+      }
+    }
+    if (points.length < 4) return period;
+    const fit = fitLine(points);
+    if (!fit || Math.abs(fit.slope - period) / period > 0.08) return period;
+    return fit.slope;
+  }
+
+  function fitLine(points) {
+    const m = points.length;
+    let sk = 0, sp = 0, skk = 0, skp = 0;
+    for (const p of points) { sk += p.k; sp += p.pos; skk += p.k * p.k; skp += p.k * p.pos; }
+    const den = m * skk - sk * sk;
+    if (Math.abs(den) < 1e-9) return null;
+    return { slope: Math.abs((m * skp - sk * sp) / den) };
   }
 
   function highPassProfile(profile, windowRadius) {
@@ -1629,6 +1684,22 @@
         anomalies: [{ code: "invalid_image_data" }],
         message: "Imagem inválida ou vazia."
       };
+    }
+
+    // Foto de celular: o ruído de sensor/JPEG cria bandas de traçado falsas na
+    // topologia, falsos "rótulos" no OCR e infla a nitidez medida. Suaviza uma
+    // única vez na entrada (só quando o ruído é mensurável) e usa essa imagem
+    // em todas as etapas seguintes; as coordenadas retornadas são relativas.
+    const noiseTools = global.TraubeEcgSignalExtractor;
+    if (noiseTools?.estimateNoiseSigma && noiseTools?.smoothRgba && options.skipDenoise !== true) {
+      const sigma = noiseTools.estimateNoiseSigma(imageData.data, imageData.width, imageData.height);
+      if (sigma > 2.5) {
+        imageData = {
+          width: imageData.width,
+          height: imageData.height,
+          data: noiseTools.smoothRgba(imageData.data, imageData.width, imageData.height)
+        };
+      }
     }
 
     const { width, height } = imageData;

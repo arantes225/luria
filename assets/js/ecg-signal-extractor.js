@@ -33,8 +33,66 @@
   /**
    * Estágio A: Pré-processamento, normalização de iluminação, remoção de grade e máscara de texto
    */
+  /**
+   * Sigma do ruído de sensor/JPEG via mediana do |Laplaciano de Immerkaer|.
+   * A mediana (não a soma) ignora as bordas esparsas do traçado e da grade.
+   */
+  function estimateNoiseSigma(data, width, height) {
+    if (width < 5 || height < 5) return 0;
+    const samples = [];
+    const stepX = Math.max(1, Math.floor(width / 140));
+    const stepY = Math.max(1, Math.floor(height / 140));
+    const lumaAt = (x, y) => {
+      const i = (y * width + x) * 4;
+      return 0.2126 * data[i] + 0.7152 * data[i + 1] + 0.0722 * data[i + 2];
+    };
+    for (let y = 1; y < height - 1; y += stepY) {
+      for (let x = 1; x < width - 1; x += stepX) {
+        const r = 4 * lumaAt(x, y)
+          - 2 * (lumaAt(x - 1, y) + lumaAt(x + 1, y) + lumaAt(x, y - 1) + lumaAt(x, y + 1))
+          + lumaAt(x - 1, y - 1) + lumaAt(x + 1, y - 1) + lumaAt(x - 1, y + 1) + lumaAt(x + 1, y + 1);
+        samples.push(Math.abs(r));
+      }
+    }
+    if (!samples.length) return 0;
+    samples.sort((a, b) => a - b);
+    return samples[Math.floor(samples.length / 2)] / (0.6745 * 6);
+  }
+
+  /** Suavização binomial [1 2 1]/4 separável nos canais RGB (preserva o alfa). */
+  function smoothRgba(data, width, height) {
+    const tmp = new Float32Array(width * height * 3);
+    const out = new Uint8ClampedArray(data.length);
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        const xl = Math.max(0, x - 1), xr = Math.min(width - 1, x + 1);
+        const i = (y * width + x) * 4, l = (y * width + xl) * 4, r = (y * width + xr) * 4;
+        const t = (y * width + x) * 3;
+        for (let k = 0; k < 3; k++) tmp[t + k] = (data[l + k] + 2 * data[i + k] + data[r + k]) * 0.25;
+      }
+    }
+    for (let y = 0; y < height; y++) {
+      const yu = Math.max(0, y - 1), yd = Math.min(height - 1, y + 1);
+      for (let x = 0; x < width; x++) {
+        const i = (y * width + x) * 4, t = (y * width + x) * 3;
+        const u = (yu * width + x) * 3, d = (yd * width + x) * 3;
+        for (let k = 0; k < 3; k++) out[i + k] = (tmp[u + k] + 2 * tmp[t + k] + tmp[d + k]) * 0.25;
+        out[i + 3] = 255;
+      }
+    }
+    return out;
+  }
+
   function preprocessLeadRegion(imageData, options = {}) {
-    const { width, height, data } = imageData;
+    const { width, height } = imageData;
+    // Foto de celular tem ruído de sensor/JPEG: cada pixel de ruído que passa
+    // do limiar vira um falso "cluster" e o rastreador acusa múltiplas curvas.
+    const noiseSigma = estimateNoiseSigma(imageData.data, width, height);
+    const denoised = noiseSigma > 2.5;
+    const data = denoised ? smoothRgba(imageData.data, width, height) : imageData.data;
+    // Após o [1 2 1]² o ruído cai ~ 4x; o limiar de contraste acompanha o que sobra.
+    const residualSigma = denoised ? noiseSigma * 0.28 : noiseSigma;
+    const contrastFloor = Math.max(20, residualSigma * 5);
     const inkStrength = new Float32Array(width * height);
     const bgLuminance = new Float32Array(width);
     const bgLuminanceRows = new Float32Array(height);
@@ -91,7 +149,7 @@
         // above luma 165. Contrast to the local paper is more reliable than a
         // fixed black threshold; the later long-line suppression removes a
         // grayscale grid that also passes this adaptive gate.
-        if (!isColoredGrid && contrast >= 20 && luma < Math.min(218, localBg - 18)) {
+        if (!isColoredGrid && contrast >= contrastFloor && luma < Math.min(218, localBg - Math.max(18, contrastFloor - 2))) {
           // Keep the full contrast range. Saturating at ~125 levels made a
           // dark grey grid indistinguishable from genuinely black waveform
           // ink in phone photos, so the tracker could confidently follow the
@@ -130,6 +188,29 @@
       }
       for (let i = 0; i < inkStrength.length; i++) {
         if (inkStrength[i] > 0 && inkStrength[i] < denseInkFloor) inkStrength[i] = 0;
+      }
+    }
+
+    // Traço inteiro fraco (impressão térmica desbotada, foto borrada ou de baixa
+    // resolução): a tinta existe mas fica logo abaixo dos limiares absolutos do
+    // rastreador. Se o nível típico da tinta é nitidamente maior que o piso de
+    // ruído, reescala a intensidade para o rastreador (limiares seguem válidos).
+    // O ganho é limitado para que resíduo de ruído perto do piso não suba junto.
+    let inkGain = 1;
+    if (inkPixelCount > 0 && denseInkFloor === 0 && rawInkDensity < 0.085) {
+      const target = inkPixelCount * 0.85;
+      let cumulative = 0, typicalBin = 0;
+      for (let bin = 0; bin < strengthHistogram.length; bin++) {
+        cumulative += strengthHistogram[bin];
+        if (cumulative >= target) { typicalBin = bin; break; }
+      }
+      const typical = (typicalBin + 1) / 64;
+      const floorStrength = contrastFloor / 235;
+      if (typical < 0.5 && typical >= floorStrength * 2.4) {
+        inkGain = Math.min(2.2, 0.55 / typical);
+        for (let i = 0; i < inkStrength.length; i++) {
+          if (inkStrength[i] > 0) inkStrength[i] = Math.min(1, inkStrength[i] * inkGain);
+        }
       }
     }
 
@@ -186,11 +267,69 @@
     // Marcar pixels de rótulo:
     // O texto da nomenclatura (DI, aVR, V1..V6) fica posicionado no canto superior esquerdo
     // estritamente acima da linha de base preliminar com margem de segurança.
+    // Só é rótulo um componente de tinta conectado que fica INTEIRO acima da
+    // zona do traçado, dentro da zona do rótulo e com cara de texto (ver abaixo).
+    // Um QRS alto também passa por essa área: sua haste o liga à linha de base
+    // (o componente desce além de textMaxY) e fragmentos/hastes finas isoladas
+    // não parecem glifos. Antes, todo pixel acima de textMaxY na faixa esquerda
+    // era apagado, cortando o topo dos R das primeiras batidas.
     const textMaxY = Math.max(0, Math.floor(prelimY - 8));
-    for (let y = 0; y < textMaxY; y++) {
-      for (let x = 0; x < labelZoneMaxX; x++) {
-        const index = y * width + x;
-        if (inkStrength[index] > 0) {
+    if (textMaxY > 0) {
+      const visited = new Uint8Array(width * height);
+      const stack = new Int32Array(width * height);
+      const connectFloor = 0.12;
+      const detached = [];
+      for (let sy = 0; sy < textMaxY; sy++) {
+        for (let sx = 0; sx < labelZoneMaxX; sx++) {
+          const startIndex = sy * width + sx;
+          if (visited[startIndex] || inkStrength[startIndex] < connectFloor) continue;
+          let top = 0;
+          let minX = sx, maxX = sx, minY = sy, maxY = sy;
+          const members = [];
+          stack[top++] = startIndex;
+          visited[startIndex] = 1;
+          while (top > 0) {
+            const index = stack[--top];
+            members.push(index);
+            const cy = (index / width) | 0;
+            const cx = index - cy * width;
+            if (cx < minX) minX = cx;
+            if (cx > maxX) maxX = cx;
+            if (cy < minY) minY = cy;
+            if (cy > maxY) maxY = cy;
+            for (let dy = -1; dy <= 1; dy++) {
+              const ny = cy + dy;
+              if (ny < 0 || ny >= height) continue;
+              for (let dx = -1; dx <= 1; dx++) {
+                const nx = cx + dx;
+                if (nx < 0 || nx >= width || (dx === 0 && dy === 0)) continue;
+                const nIndex = ny * width + nx;
+                if (visited[nIndex] || inkStrength[nIndex] < connectFloor) continue;
+                visited[nIndex] = 1;
+                stack[top++] = nIndex;
+              }
+            }
+          }
+          const isDetachedFromTrace = maxY < textMaxY && maxX < labelZoneMaxX + Math.max(4, width * 0.04);
+          if (isDetachedFromTrace) {
+            detached.push({ members, minX, maxX, minY, maxY });
+          }
+        }
+      }
+
+      // Texto = glifos de tamanho plausível, sozinhos (largura >= 4 px) ou
+      // agrupados lado a lado. Fragmentos pequenos e uma haste fina isolada
+      // (topo de um QRS que a foto partiu) não são texto e permanecem.
+      const isGlyphSized = c => c.members.length >= 8 && (c.maxY - c.minY + 1) >= 5;
+      for (const comp of detached) {
+        if (!isGlyphSized(comp)) continue;
+        const compH = comp.maxY - comp.minY + 1;
+        const wideEnough = (comp.maxX - comp.minX + 1) >= 4;
+        const hasSibling = detached.some(other => other !== comp && isGlyphSized(other) &&
+          other.minX - comp.maxX <= compH * 2 && comp.minX - other.maxX <= compH * 2 &&
+          other.minY <= comp.maxY && other.maxY >= comp.minY);
+        if (!wideEnough && !hasSibling) continue;
+        for (const index of comp.members) {
           inkStrength[index] = 0;
           textMask[index] = 1;
         }
@@ -219,7 +358,10 @@
       bgLuminanceRows,
       prelimBaselineY: prelimY,
       rawInkDensity: Number(rawInkDensity.toFixed(4)),
-      denseInkFloor: Number(denseInkFloor.toFixed(3))
+      denseInkFloor: Number(denseInkFloor.toFixed(3)),
+      noiseSigma: Number(noiseSigma.toFixed(2)),
+      denoised,
+      inkGain: Number(inkGain.toFixed(2))
     };
   }
 
@@ -1255,6 +1397,8 @@
 
   const exported = {
     AUDIT_STATUS,
+    estimateNoiseSigma,
+    smoothRgba,
     preprocessLeadRegion,
     trackSignalCurve,
     processGapsAndInterpolation,
