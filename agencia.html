@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-hBWQXIRsaaDbmzTkiC/s7Gi6KdjyI3odxIZtR3l349I='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob: https://drive.google.com; upgrade-insecure-requests">
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Agência TRAUBE</title>
+  <link rel="manifest" href="manifest.webmanifest?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logos/pwa-icon-180.png?v=3">
+  <meta name="theme-color" content="#0A2342">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="TRAUBE">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" type="image/png" href="assets/img/logos/favicon.png?v=traube7">
+  
+  <script src="/assets/js/ui-routes.js?v=2"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261005-thumb-only-global">
+  <link rel="stylesheet" href="/assets/css/admin.css?v=20261013-consolidated1">
+  <link rel="stylesheet" href="/assets/css/agencia.css?v=20261102-agencia">
+  <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=20-admin-factory-pwa">
+  <link rel="canonical" href="/agencia/">
+  <script>(function(){try{if(location.pathname.endsWith("/agencia.html")){location.replace("/agencia/"+location.search+location.hash);}}catch(e){location.href="/agencia/";}})();</script>
+  <link rel="stylesheet" href="/assets/css/admin-ui-v2.css?v=1">
+</head>
+
+<body data-ui="v2" data-ui-nav="v2" data-ui-context="admin" data-ui-admin="v2" data-page="agencia" class="admin-pin-locked">
+  <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+  <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
+
+  <!-- PIN GATE (PROTEÇÃO IDÊNTICA AO ADMIN) -->
+  <section id="admin-pin-gate" class="admin-pin-gate" aria-labelledby="admin-pin-title">
+    <form id="admin-pin-form" class="admin-pin-card" autocomplete="off">
+      <div class="admin-pin-brand">
+        <strong>Agência TRAUBE</strong>
+        <img
+          class="admin-pin-logo"
+          src="assets/img/logos/logo-principal.png?v=traube7"
+          alt="TRAUBE"
+        >
+        <small>Acesso Restrito a Administradores</small>
+      </div>
+
+      <div class="admin-pin-copy">
+        <span class="eyebrow">Marketing</span>
+        <h1 id="admin-pin-title">Verificando acesso...</h1>
+        <p id="admin-pin-description">Digite seu PIN de 6 dígitos para abrir a Agência TRAUBE.</p>
+      </div>
+
+      <div id="admin-pin-fields" class="admin-pin-fields" hidden>
+        <label class="admin-pin-field">
+          <span id="admin-pin-label">PIN de 6 dígitos</span>
+          <input
+            id="admin-pin"
+            type="password"
+            inputmode="numeric"
+            pattern="[0-9]{6}"
+            maxlength="6"
+            minlength="6"
+            autocomplete="off"
+            aria-describedby="admin-pin-message"
+          >
+        </label>
+
+        <label id="admin-pin-confirm-wrap" class="admin-pin-field" hidden>
+          <span>Confirmar PIN</span>
+          <input
+            id="admin-pin-confirm"
+            type="password"
+            inputmode="numeric"
+            pattern="[0-9]{6}"
+            maxlength="6"
+            minlength="6"
+            autocomplete="off"
+          >
+        </label>
+      </div>
+
+      <div id="admin-pin-message" class="admin-pin-message" aria-live="polite">
+        Verificando...
+      </div>
+
+      <button id="admin-pin-submit" class="button primary admin-pin-submit" type="submit" disabled>
+        Continuar
+      </button>
+
+      <a class="admin-pin-back" href="dashboard.html">Voltar ao Dashboard</a>
+    </form>
+  </section>
+
+  <!-- CONTEÚDO PRINCIPAL (DESBLOQUEADO APÓS PIN) -->
+  <div id="editorial-app" class="app-shell" hidden>
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+    <main class="main">
+      <div class="page editorial-page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+
+          <div class="page-heading">
+            <span class="eyebrow">Instagram e TikTok</span>
+            <h1>Agência TRAUBE</h1>
+          </div>
+        </header>
+
+        <p class="editorial-intro">Os posts da semana, do rascunho à sua decisão. Nada é publicado sem a sua aprovação.</p>
+
+        <div class="ag-barra">
+          <div class="ag-seg" role="group" aria-label="Visualização">
+            <button id="ag-v-quadro" type="button" aria-pressed="true">Quadro</button>
+            <button id="ag-v-calendario" type="button" aria-pressed="false">Calendário</button>
+          </div>
+          <div class="ag-seg" role="group" aria-label="Rede">
+            <button type="button" data-ag-rede="todas" aria-pressed="true">Todas</button>
+            <button type="button" data-ag-rede="instagram" aria-pressed="false">Instagram</button>
+            <button type="button" data-ag-rede="tiktok" aria-pressed="false">TikTok</button>
+          </div>
+        </div>
+
+        <div id="ag-avisos"></div>
+        <div class="ag-resumo" id="ag-resumo" aria-live="polite"></div>
+
+        <div class="ag-layout">
+          <div id="ag-principal"></div>
+          <aside class="ag-lateral">
+            <section class="ag-caixa">
+              <h2>Equipe</h2>
+              <ul class="ag-agentes" id="ag-agentes"></ul>
+              <p class="ag-nota" id="ag-rodada"></p>
+            </section>
+            <section class="ag-caixa">
+              <h2>Atividade</h2>
+              <ul class="ag-log" id="ag-log"></ul>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div id="ag-camada"></div>
+
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="assets/js/supabase.js"></script>
+  <script src="/assets/js/app.js?v=20261101-traube-bootstrap1"></script>
+  <script src="/assets/js/agencia.js?v=20261102-agencia"></script>
+  <script defer src="assets/js/pwa.js?v=20261013-width2"></script>
+</body>
+</html>

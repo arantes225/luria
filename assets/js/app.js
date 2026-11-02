@@ -6391,6 +6391,12 @@ async function prepararAdminNavigation(acessoAdmin = null) {
   link.className = `nav-link ${page === "admin" ? "active" : ""}`;
   link.href = "/admin/";
   link.innerHTML = '<span class="nav-icon">◆</span><span>Admin</span>';
+  const agenciaLink = document.createElement("a");
+  agenciaLink.id = "agencia-nav-link";
+  agenciaLink.className = `nav-link ${page === "agencia" ? "active" : ""}`;
+  agenciaLink.href = "/agencia/";
+  agenciaLink.innerHTML = `<span class="nav-icon">${traubeIcon("calendar")}</span><span>Agência</span>`;
+  slot.prepend(agenciaLink);
   slot.prepend(editorialLink);
   slot.prepend(link);
   return true;
