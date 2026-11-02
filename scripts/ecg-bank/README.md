@@ -37,3 +37,8 @@ O critério bruto (>=10 células) contava layouts inventados como "15x1" e infla
 | Rótulo "I" sem conflito falso | 14 |
 | Opções de foto corretas no banco | 18 |
 | Filtro de faixas regulares (rede de passo constante) | 27 |
+| Banco com layout 6 faixas = 3x4 + ritmo por padrão | 31 |
+| Limite inferior da última linha principal | 35 |
+| Limiar de traço das faixas relativo ao fundo (papel claro >= 215 mantém 142) | 43 (83%) |
+
+Sintéticas: 16 de 20 (pendentes: desfoque sigma 2, combinação "celular", resolução 50% do registro 2).

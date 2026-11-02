@@ -1673,6 +1673,21 @@
     // Mede continuidade horizontal em blocos. Uma linha de base de ECG ocupa
     // grande parte da largura; texto do cabeçalho e QRS isolados não. A grade
     // colorida é excluída pelo limite de cromaticidade.
+    // Limiar de traço relativo ao fundo do papel (mediana da luminância): em
+    // fotos escuras/acinzentadas a grade fica abaixo de 142 e toda linha parecia
+    // "traçado" (16 faixas com continuidade 1,0). Nunca passa de 142 (papel claro).
+    const lumaSample = [];
+    for (let y = yMin; y < yMax; y += Math.max(1, Math.floor(spanH / 40))) {
+      for (let x = xMin; x < xMax; x += Math.max(1, Math.floor(spanW / 40))) {
+        const i = (y * width + x) * 4;
+        lumaSample.push(0.2126 * data[i] + 0.7152 * data[i + 1] + 0.0722 * data[i + 2]);
+      }
+    }
+    lumaSample.sort((p, q) => p - q);
+    const paperMedian = lumaSample.length ? lumaSample[lumaSample.length >> 1] : 255;
+    const bandTraceThreshold = paperMedian >= 215
+      ? 142 // papel claro/escaneado: comportamento anterior
+      : Math.max(55, Math.min(142, Math.round(paperMedian * 0.5)));
     const binCount = Math.max(48, Math.min(112, Math.round(spanW / 16)));
     const rowOccupancy = new Float32Array(height);
     for (let y = yMin; y < yMax; y++) {
@@ -1687,7 +1702,7 @@
             const r = data[idx], g = data[idx + 1], b = data[idx + 2];
             const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
             const chroma = Math.max(r, g, b) - Math.min(r, g, b);
-            if (luma < 142 && chroma < 48) { found = true; break; }
+            if (luma < bandTraceThreshold && chroma < 48) { found = true; break; }
           }
         }
         if (found) occupied++;
