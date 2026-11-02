@@ -1,6 +1,6 @@
 (() => {
   const aliases = new Set([
-    'admin', 'amigos', 'aplicar', 'black-november', 'caderno', 'caderno-erros', 'configuracoes', 'cronograma',
+    'admin', 'agencia', 'amigos', 'aplicar', 'black-november', 'caderno', 'caderno-erros', 'configuracoes', 'cronograma',
     'dashboard', 'desafio-diario', 'editais', 'editorial', 'estatisticas', 'feynman', 'flashcards', 'jogos',
     'questoes-simulados', 'registrar-questoes', 'vocacao'
   ]);
