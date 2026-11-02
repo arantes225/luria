@@ -21,7 +21,7 @@
     { n: "Revisor médico", d: "Só em posts médicos (fase 2)", f1: false }
   ];
   const FORMATOS = { reel: "Reel", carrossel: "Carrossel", feed: "Imagem", video: "Vídeo" };
-  const REDES = { instagram: "Instagram", tiktok: "TikTok" };
+  const REDES = { instagram: "Instagram", tiktok: "TikTok", ambas: "Instagram + TikTok" };
 
   const state = {
     user: null,
@@ -227,7 +227,7 @@
   }
 
   function visiveis() {
-    return state.posts.filter((p) => p.coluna !== "descartado" && (state.rede === "todas" || p.rede === state.rede));
+    return state.posts.filter((p) => p.coluna !== "descartado" && (state.rede === "todas" || p.rede === state.rede || p.rede === "ambas"));
   }
   function chipStatus(p) {
     const out = [];
@@ -244,7 +244,8 @@
       el("h3", { text: p.titulo || "Sem título" }),
       el("div", { class: "ag-meta" }, [
         el("span", { text: (REDES[p.rede] || p.rede || "") + " · " + (FORMATOS[p.formato] || p.formato || "") }),
-        el("span", { text: fmtData(p.data) })
+        el("span", { text: fmtData(p.data) }),
+        contagem(p) ? el("span", { text: contagem(p) }) : null
       ]),
       el("div", { class: "ag-meta" }, chipStatus(p))
     ]);
@@ -381,6 +382,94 @@
   function secao(titulo, conteudo) {
     return el("section", null, [el("h3", { text: titulo }), conteudo]);
   }
+
+  // ==============================================================
+  // PRÉVIA: cartões do que vai aparecer em cada página/cena do post
+  // ==============================================================
+  const ROTULO_SLIDE = /^(Capa|Fechamento|Convite|Passo\s*\d+|Slide\s*\d+)\s*:\s*/i;
+  const LINHA_CENA = /^\s*(\d+\s*[-–]\s*\d+\s*s)\s*(?:\(([^)]*)\))?\s*:\s*(.*)$/;
+
+  function cenasDoRoteiro(roteiro) {
+    const cenas = [];
+    const notas = [];
+    String(roteiro || "").split("\n").forEach((linha) => {
+      const t = linha.trim();
+      if (!t) return;
+      const m = LINHA_CENA.exec(t);
+      if (m) {
+        const quem = (m[2] || "").trim();
+        const texto = m[3].trim();
+        cenas.push({ tempo: m[1].replace(/\s+/g, ""), quem, texto, captura: /captura|grava a tela|print/i.test(quem + " " + texto) });
+      } else if (cenas.length && !/^(obs|formato|reel|v[ií]deo)/i.test(t)) {
+        cenas[cenas.length - 1].texto += " " + t;
+      } else {
+        notas.push(t);
+      }
+    });
+    return { cenas, notas };
+  }
+
+  function cartaoSlide(texto, i, total, quadrado) {
+    const m = ROTULO_SLIDE.exec(texto);
+    const rotulo = m ? m[1] : (i === 0 ? "Capa" : i === total - 1 && total > 2 ? "Convite" : "");
+    const corpo = m ? texto.slice(m[0].length) : texto;
+    return el("div", { class: "ag-slide" + (quadrado ? " quadrado" : "") + (i === 0 ? " capa" : "") }, [
+      el("div", { class: "ag-slide-topo" }, [
+        el("span", { text: rotulo || "Slide" }),
+        el("span", { text: total > 1 ? (i + 1) + "/" + total : "" })
+      ]),
+      el("p", { class: "ag-slide-texto", text: corpo })
+    ]);
+  }
+
+  function cartaoCena(c, i) {
+    return el("div", { class: "ag-cena" + (c.captura ? " captura" : "") }, [
+      el("div", { class: "ag-cena-topo" }, [
+        el("span", { text: "Cena " + (i + 1) }),
+        el("span", { text: c.tempo })
+      ]),
+      c.captura ? el("span", { class: "ag-selo", text: "Captura real do site" }) : (c.quem ? el("span", { class: "ag-selo falante", text: c.quem }) : null),
+      el("p", { class: "ag-cena-texto", text: c.texto }),
+      c.captura && c.quem ? el("small", { text: c.quem }) : null
+    ]);
+  }
+
+  function previa(p) {
+    const slides = Array.isArray(p.slides) ? p.slides.filter(Boolean) : [];
+    const caixa = el("div", { class: "ag-previa" });
+    let info = "";
+    if (p.formato === "carrossel" && slides.length) {
+      info = slides.length + " slides";
+      caixa.appendChild(el("div", { class: "ag-faixa", role: "list" }, slides.map((t, i) => cartaoSlide(t, i, slides.length, false))));
+    } else if (p.formato === "feed" && slides.length) {
+      info = "Imagem única";
+      caixa.appendChild(el("div", { class: "ag-faixa", role: "list" }, slides.map((t, i) => cartaoSlide(t, i, slides.length, true))));
+    } else if ((p.formato === "video" || p.formato === "reel") && p.roteiro) {
+      const r = cenasDoRoteiro(p.roteiro);
+      if (r.cenas.length) {
+        info = r.cenas.length + " cenas · vertical 9:16";
+        caixa.appendChild(el("div", { class: "ag-faixa", role: "list" }, r.cenas.map(cartaoCena)));
+        if (r.notas.length) caixa.appendChild(el("p", { class: "ag-nota", text: r.notas.join(" · ") }));
+      }
+    }
+    if (!caixa.firstChild) {
+      caixa.appendChild(el("p", { class: "ag-nota", text: p.gancho ? "Ainda sem conteúdo escrito. Gancho: " + p.gancho : "Ainda sem conteúdo para pré-visualizar." }));
+    }
+    if (p.legenda) {
+      caixa.appendChild(el("div", { class: "ag-legenda" }, [el("small", { text: "Legenda" }), el("p", { text: p.legenda })]));
+    }
+    return secao("Prévia" + (info ? " · " + info : ""), caixa);
+  }
+
+  function contagem(p) {
+    const slides = Array.isArray(p.slides) ? p.slides.length : 0;
+    if (p.formato === "carrossel" && slides) return slides + " slides";
+    if ((p.formato === "video" || p.formato === "reel") && p.roteiro) {
+      const n = cenasDoRoteiro(p.roteiro).cenas.length;
+      if (n) return n + " cenas";
+    }
+    return "";
+  }
   function renderPainel() {
     const camada = $("ag-camada");
     if (!camada) return;
@@ -401,9 +490,13 @@
     const refs = Array.isArray(p.referencias) ? p.referencias : [];
     if (p.notas_ajuste) corpo.push(secao("Ajustes pedidos", el("p", { class: "ag-texto", text: p.notas_ajuste })));
     if (p.gancho) corpo.push(secao("Gancho", el("p", { class: "ag-texto", text: p.gancho })));
-    if (slides.length) corpo.push(secao("Slides do carrossel", el("ol", null, slides.map((s) => el("li", { text: s })))));
-    if (p.roteiro) corpo.push(secao("Roteiro", el("p", { class: "ag-texto", text: p.roteiro })));
-    if (p.legenda) corpo.push(secao("Legenda", el("p", { class: "ag-texto", text: p.legenda })));
+    corpo.push(previa(p));
+    if (slides.length || p.roteiro) {
+      const texto = [];
+      if (slides.length) texto.push(secao("Slides do carrossel", el("ol", null, slides.map((s) => el("li", { text: s })))));
+      if (p.roteiro) texto.push(secao("Roteiro", el("p", { class: "ag-texto", text: p.roteiro })));
+      corpo.push(el("details", { class: "ag-detalhes" }, [el("summary", { text: "Ver como texto" })].concat(texto)));
+    }
     if (refs.length) corpo.push(secao("Referências", el("ul", null, refs.map((r) => el("li", { text: r })))));
     if (p.notas_marca) corpo.push(secao("Revisão de marca", el("p", { class: "ag-texto", text: p.notas_marca })));
     if (p.notas_medico) corpo.push(secao("Revisão médica", el("p", { class: "ag-texto", text: p.notas_medico })));
