@@ -345,7 +345,20 @@
       return;
     }
     // Do not start an anonymous query while a remembered session is being restored.
-    try{await window.TraubeLocalOwnerStore?.ready;}catch(_){}
+    let userId=null;
+    try{userId=await window.TraubeLocalOwnerStore?.ready;}catch(_){}
+    if(!userId){
+      try{
+        const {data}=await window.supabaseClient.auth.getSession();
+        userId=data?.session?.user?.id||null;
+      }catch(_){}
+    }
+    if(!userId){
+      loading=false;
+      count.textContent='Sessão não autenticada';
+      list.innerHTML='<div class="empty" role="status">Para acessar os medicamentos, entre na sua conta da Traube. <a href="/login/">Entrar novamente</a></div>';
+      return;
+    }
     let userSelected=false;
     const originalSelect=()=>{
       if(userSelected||selected)return;
@@ -376,8 +389,11 @@
         'id,name,active_ingredient,therapeutic_class,pharmacological_class,data',
         'id',(page)=>{
           rows.push(...page);
-          originalSelect();
           renderList();
+          try{originalSelect();}catch(error){
+            console.error('Falha ao exibir o detalhe do medicamento; a lista permanece acessível.',error);
+            detail.innerHTML='<div class="empty">Não foi possível abrir esta ficha. Selecione outro medicamento.</div>';
+          }
         });
       loading=false;
       if(!rows.length){
@@ -385,8 +401,10 @@
         list.innerHTML='<div class="empty">Nenhum medicamento disponível para esta sessão. Confirme seu login e as permissões de acesso.</div>';
         return;
       }
-      originalSelect();
       renderList();
+      try{originalSelect();}catch(error){
+        console.error('Falha ao exibir a ficha inicial.',error);
+      }
     }catch(error){
       loading=false;
       console.error('Falha na leitura do catálogo de medicamentos',error);

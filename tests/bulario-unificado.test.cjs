@@ -68,3 +68,10 @@ test('falha dos protocolos relacionados não pode deixar o bulário vazio', () =
   assert.match(code,/data-bulario-retry/);
   assert.match(code,/Carregamento parcial/);
 });
+
+test('sessão sem autenticação apresenta mensagem de login, não inventa lista vazia', () => {
+  const source=load('assets/js/bulario.js');
+  assert.match(source,/Sessão não autenticada/);
+  assert.match(source,/href="\/login\/"/);
+  assert.match(source,/rows\.push\(\.\.\.page\);\s*renderList\(\);/);
+});
