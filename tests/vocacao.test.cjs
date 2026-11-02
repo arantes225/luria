@@ -7,8 +7,11 @@ function simulate(selector) {
   const answers={};
   for(const q of engine.core) answers[q.id]=answer(selector(q));
   const selected=engine.selectAdaptive(answers);
-  const sequence=engine.createSequence(answers,selected);
-  for(const id of sequence) if(!answers[id])answers[id]=answer(selector(engine.questionIndex.get(id)));
+  const initial=engine.createSequence(answers,selected);
+  for(const id of initial) if(!answers[id])answers[id]=answer(selector(engine.questionIndex.get(id)));
+  const final=engine.selectFinal(answers,selected);
+  const sequence=engine.createSequence(answers,selected,final);
+  for(const id of final) answers[id]=answer(selector(engine.questionIndex.get(id)));
   return {answers,sequence,report:engine.calculate(answers,sequence)};
 }
 test("curadoria inclui apenas residências convencionais de acesso direto e com pré-requisito",()=>{
@@ -36,7 +39,7 @@ test("curadoria inclui apenas residências convencionais de acesso direto e com 
 test("perguntas de três etapas não repetem nomes nem alternativas",()=>{
   assert.equal(engine.core.length,16);
   assert.ok(engine.deep.length>=24);
-  assert.equal(engine.end.length,3);
+  assert.ok(engine.end.length>=12,"banco de desempate deve ter alternativas variadas");
   assert.equal(engine.total,29);
   const all=[...engine.core,...engine.deep,...engine.end];
   assert.equal(new Set(all.map(q=>q.id)).size,all.length);
@@ -67,6 +70,42 @@ test("seleção de aprofundamento retorna dez perguntas distintas com diversidad
     assert.equal(groups.filter(x=>x==="atividade").length,1);
     assert.equal(groups.filter(x=>x==="ambiente").length,1);
   }
+});
+test("final verdadeiramente adaptativo: três perguntas de grupos distintos após o aprofundamento",()=>{
+  for(const preference of [0,1,2,3]) {
+    const answers=Object.fromEntries(engine.core.map(q=>[q.id,answer(preference)]));
+    const deep=engine.selectAdaptive(answers);
+    assert.equal(engine.createSequence(answers,deep).length,26);
+    assert.throws(()=>engine.selectFinal(answers,deep),"não pode selecionar final antes de responder");
+    for(const id of deep)answers[id]=answer(preference);
+    const chosen=engine.selectFinal(answers,deep);
+    assert.equal(chosen.length,3);
+    assert.equal(new Set(chosen).size,3);
+    assert.deepEqual(new Set(chosen.map(id=>engine.questionIndex.get(id).group)),
+      new Set(["Conteúdo clínico","Rotina real","Decisão final"]));
+    const sequence=engine.createSequence(answers,deep,chosen);
+    assert.equal(sequence.length,29);
+    assert.ok(sequence.slice(-3).every(id=>engine.end.some(q=>q.id===id)));
+  }
+});
+test("resultado sem três indicações falsas quando predomina não sei",()=>{
+  const answers=Object.fromEntries(engine.core.map(q=>[q.id,answer(-1)]));
+  const deep=engine.selectAdaptive(answers);
+  for(const id of deep)answers[id]=answer(-1);
+  const end=engine.selectFinal(answers,deep);
+  for(const id of end)answers[id]=answer(-1);
+  const report=engine.calculate(answers,engine.createSequence(answers,deep,end));
+  assert.equal(report.insufficient,true);
+  assert.equal(report.certainty,"insuficiente");
+  assert.equal(report.top.length,0);
+  assert.equal(report.skipped,29);
+});
+test("respostas inválidas não podem trocar a ordem oficial do banco",()=>{
+  const {answers,sequence}=simulate(()=>0);
+  const invalid=[...sequence];
+  [invalid[16],invalid[17]]=[invalid[17],invalid[16]];
+  assert.throws(()=>engine.calculate(answers,invalid));
+  assert.throws(()=>engine.createSequence(answers,sequence.slice(16,26),["e01","e02","e03"]));
 });
 test("o questionário não aceita respostas incompletas ou inválidas",()=>{
   assert.equal(engine.validResponse(answer(4)),false);
@@ -106,9 +145,12 @@ test("escolhas por conteúdo pediátrico e neuro reforçam os respectivos intere
 });
 test("segunda escolha e incerteza mudam pesos sem inventar certeza",()=>{
   const a=simulate(q=>0);
-  const b={...a.answers};
-  for(const id of a.sequence)b[id]=answer(0,1,true);
-  const report=engine.calculate(b,a.sequence);
+  const b=Object.fromEntries(engine.core.map(q=>[q.id,answer(0,1,true)]));
+  const deep=engine.selectAdaptive(b);
+  for(const id of deep)b[id]=answer(0,1,true);
+  const final=engine.selectFinal(b,deep);
+  for(const id of final)b[id]=answer(0,1,true);
+  const report=engine.calculate(b,engine.createSequence(b,deep,final));
   assert.equal(report.inexperienced,29);
   assert.equal(report.certainty,"exploratorio");
   assert.notDeepEqual(report.scores,a.report.scores);

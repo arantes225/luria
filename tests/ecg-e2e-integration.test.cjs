@@ -453,7 +453,7 @@ test("6 linhas com 2 colunas e 2 linhas com 6 colunas conservam 12 regiões", ()
         ((20 + row * 100 + y) * width) * 4);
     }
     const detected = engine.detectECGBoundaries({width,height,data}, {
-      paperAlreadyRectified:true, layoutHint: rows === 2 ? "2x6" : "auto"
+      paperAlreadyRectified:true, layoutHint: rows === 2 ? "2x6" : "6x2"
     });
     assert.equal(detected.topology.rowCount, rows);
     assert.equal(detected.detectedLayout?.columnCount, 12 / rows, detected.message);

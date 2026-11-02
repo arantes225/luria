@@ -1,5 +1,23 @@
 [
   {
+    "id": "semana-46-2026",
+    "semana": "Semana Agendada (02/11/2026)",
+    "foco": "Otimização de Engajamento Orgânico & Eficiência de R$ 20",
+    "pilares": [
+      {
+        "titulo": "Conversão de Seguidor para Lead VIP",
+        "dica": "Após ganhar seguidores na fase 1, ative a fase 2 com automação de direct ou link da bio para os 15 dias grátis.",
+        "acao": "Coloque CTA nos stories com sticker de link para /black-november/ reforçando que não precisa de cartão de crédito."
+      },
+      {
+        "titulo": "Análise de Métricas da Semana Anterior",
+        "dica": "Avalie métricas de engajamento verdadeiro: taxa de salvamento > 3% e retenção média de reels > 45%.",
+        "acao": "Arquive ou pause posts que tiveram retenção abaixo de 20% e replique o modelo visual do mais salvo."
+      }
+    ],
+    "atualizado_em": "2026-11-02T14:25:50.529Z"
+  },
+  {
     "id": "semana-45-2026",
     "semana": "Semana Agendada (26/10/2026)",
     "foco": "Otimização de Engajamento Orgânico & Eficiência de R$ 20",

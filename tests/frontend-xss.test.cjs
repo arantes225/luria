@@ -187,7 +187,8 @@ test('Notifications loaded through the actual mocked Supabase query cannot navig
 
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
 function mockTables(w,tables){
-  w.supabaseClient={from:table=>{
+  // These tests exercise the authenticated UI, not the signed-out Bulário guard.
+  w.supabaseClient={auth:{getSession:async()=>({data:{session:{user:{id:'xss-mock-user'}}}})},from:table=>{
     let rows=tables[table]||[],start=0,end=Infinity;
     const query={
       select(){return this;},
@@ -213,7 +214,7 @@ test('Protocol full load, source links, image dialog and clinical bridge keep th
   w.HTMLDialogElement.prototype.close=function(){this.open=false;this.dispatchEvent(new w.Event('close'));};
   const row={id:1,title:'Título <literal>',category:'Clínica',setting:'Ambulatório',summary:'Texto & çã',status:'verified',source_refs:[{url:'javascript:window.auditExecuted=1',label:'Hostil'},{url:'https://example.org/reference?a=1&b=2',label:'Fonte'}],image_assets:[{src:'/assets/img/demo.webp',caption:'Imagem & explicação',alt:'" onerror="window.auditExecuted=1'}]};
   row.linked_recipe_slugs=['receita-teste'];
-  mockTables(w,{clinical_protocols:[row],recipe_bank:[{slug:'receita-teste',title:'Receita teste',data:{routes:[{route:'Oral',items:[{drug:'Medicamento exemplo'}]}]}}]});
+  mockTables(w,{clinical_protocols:[row],recipe_bank:[{slug:'receita-teste',title:'Receita teste',status:'verified',data:{copy_ready:true,routes:[{route:'Oral',items:[{drug:'Medicamento exemplo'}]}]}}]});
   w.eval(read('assets/js/trabalho-protocolos.js'));await tick();
   w.document.querySelector('.protocol-row').click();await tick();await tick();
   const detail=w.document.getElementById('protocol-detail'),links=detail.querySelectorAll('.protocol-refs a');

@@ -130,12 +130,40 @@
       [["Atenção primária, prevenção e comunidade.","community,clinical,prevention"],["Ambulatório de doenças complexas.","complex,diagnosis,followup"],["Serviço de reabilitação com equipe multidisciplinar.","function,team,people"],["Centro de exames com tecnologia especializada.","technology,visual,precision"]]]
   ];
   const END_ROWS = [
-    ["e01","Prioridades","Ao escolher sua residência, o que você não gostaria de perder?","Escolha o elemento mais indispensável, mesmo que outros também importem.",
+    ["e01","Decisão final","Ao escolher sua residência, o que você não gostaria de perder?","Escolha o elemento mais indispensável, mesmo que outros também importem.",
       [["Vínculo e continuidade com pacientes.","people,followup,clinical"],["Autonomia técnica para intervir.","hands,precision,surgery"],["Questões clínicas difíceis para resolver.","diagnosis,complex,research"],["Atuação rápida quando alguém piora.","acute,team,highstakes"]]],
-    ["e02","Limite pessoal","Se tivesse que reduzir uma parte da sua semana, qual reduziria primeiro?","Essa pergunta investiga incômodos, não competência.",
+    ["e02","Rotina real","Se tivesse que reduzir uma parte da sua semana, qual reduziria primeiro?","Essa pergunta investiga incômodos, não competência.",
       [["Procedimentos técnicos longos.","clinical,people,followup"],["Consultas com muitos retornos.","hands,technology,precision"],["Plantões com urgências frequentes.","predictable,diagnosis,visual"],["Exames e laudos repetitivos.","people,clinical,function"]]],
-    ["e03","Checagem","Se seus primeiros estágios não corresponderem à expectativa, qual aspecto vale observar mais?","Busque aquilo que define o trabalho fora dos melhores momentos.",
+    ["e03","Decisão final","Se seus primeiros estágios não corresponderem à expectativa, qual aspecto vale observar mais?","Busque aquilo que define o trabalho fora dos melhores momentos.",
       [["Como os profissionais lidam com sua rotina pessoal.","predictable,followup,people"],["Quais tarefas repetitivas ocupam mais tempo.","precision,systems,clinical"],["Como decisões de alto risco afetam a equipe.","acute,highstakes,team"],["Quanto raciocínio e estudo há fora da assistência direta.","diagnosis,complex,research"]]]
+  ];
+  // Perguntas finais elegíveis: o aluno responde apenas uma de cada grupo.
+  // O sistema compara alternativas que separam hipóteses próximas após a etapa clínica.
+  const FINAL_EXTRA_ROWS = [
+    ["e04","Conteúdo clínico","Se fosse dedicar um mês a um único ambulatório, o que escolheria?","Imagine dezenas de consultas comuns, não um caso raro.",
+      [["Ajustes de insulina, tireoide e risco metabólico.","clinical,followup,predictable","Endocrinologia e Metabologia"],["Doença renal crônica, hipertensão e decisões sobre diálise.","clinical,complex,technology","Nefrologia"],["Artrites inflamatórias e acompanhamento de imunossupressão.","clinical,followup,complex","Reumatologia"],["Cardiopatias, exames funcionais e prevenção cardiovascular.","clinical,diagnosis,technology","Cardiologia"]]],
+    ["e05","Conteúdo clínico","Qual grupo de atendimentos você acompanharia em um dia de serviço cheio?","Escolha pelo cotidiano e não por um diagnóstico fascinante.",
+      [["Consultas de saúde mental e seguimento terapêutico.","mental,people,followup","Psiquiatria"],["Puericultura, febre e desenvolvimento.","kids,clinical,people","Pediatria"],["Pré-natal, planejamento reprodutivo e intercorrências obstétricas.","women,clinical,acute","Ginecologia e Obstetrícia"],["Multimorbidade de adultos e idosos com cuidado longitudinal.","elderly,clinical,followup","Geriatria;Clínica Médica"]]],
+    ["e06","Conteúdo clínico","Ao abrir uma lista de exames, qual problema você gostaria de resolver?","Pense na tarefa técnica que mais o prende à análise.",
+      [["Lesão suspeita em tomografia ou ressonância.","visual,diagnosis,technology","Radiologia e Diagnóstico por Imagem"],["Alteração tecidual em lâmina de biópsia.","visual,precision,diagnosis","Patologia"],["Distúrbios hematológicos e anormalidades no hemograma.","clinical,diagnosis,complex","Hematologia e Hemoterapia"],["Deficiências neurológicas e correlação exame-clínica.","diagnosis,complex,clinical","Neurologia"]]],
+    ["e07","Conteúdo clínico","Em qual linha de procedimentos você gostaria de melhorar por meses?","Todos exigem supervisão, disciplina e controle de complicações.",
+      [["Cirurgias abdominais e cuidados perioperatórios.","surgery,clinical,acute","Cirurgia Geral;Cirurgia do Aparelho Digestivo"],["Microcirurgia e reconstrução de tecidos.","hands,precision,function","Cirurgia Plástica;Cirurgia da Mão"],["Intervenções vasculares e seguimento de doença arterial.","hands,technology,acute","Cirurgia Vascular"],["Procedimentos de olho e visão com microscópio.","hands,visual,precision","Oftalmologia"]]],
+    ["e08","Rotina real","Qual tarefa ainda faria sentido depois de dez turnos semelhantes?","Não escolha o que parece mais admirável; escolha o que aceitaria repetir.",
+      [["Revisar exames e mudar um tratamento já iniciado.","clinical,followup,people"],["Conduzir atendimentos urgentes sem agenda previsível.","acute,highstakes,team"],["Trabalhar muitas horas com técnica e concentração manual.","surgery,hands,precision"],["Interpretar sequências de imagens para produzir laudos.","visual,technology,precision"]]],
+    ["e09","Rotina real","Num mês particularmente difícil, qual incômodo você toleraria melhor?","A tolerância à parte cansativa também importa para escolher a residência.",
+      [["Retornos e ajustes lentos que nem sempre funcionam.","followup,clinical,people"],["Mudanças repentinas de prioridade e possíveis plantões noturnos.","acute,highstakes,team"],["Muitas horas de procedimentos com treinamento repetido.","hands,surgery,precision"],["Longas análises de exames com pouco contato direto.","visual,diagnosis,technology"]]],
+    ["e10","Rotina real","Qual responsabilidade gostaria de manter em quase todos os seus dias?","A resposta ajuda a distinguir ambiente de tarefa central.",
+      [["Decisão clínica e evolução de enfermaria.","clinical,complex,team","Clínica Médica"],["Reavaliação de pacientes e contato com familiares.","followup,people,clinical"],["Execução de procedimentos tecnicamente exigentes.","hands,precision,surgery"],["Interpretação de dados, imagens e detalhes diagnósticos.","visual,technology,diagnosis"]]],
+    ["e11","Rotina real","Se pudesse organizar um estágio inteiro, qual cenário escolheria?","O interesse é pela rotina, não pelo nome da instituição.",
+      [["Ambulatório clínico longitudinal com retorno dos pacientes.","followup,predictable,clinical"],["Centro cirúrgico com preparo, operação e pós-operatório.","surgery,hands,team"],["Pronto-socorro e unidades de suporte a casos graves.","acute,highstakes,team"],["Centro diagnóstico com exames e análise de imagens.","visual,technology,precision"]]],
+    ["e12","Decisão final","Depois de um caso complexo, que tarefa você gostaria de assumir sozinho no futuro?","Isso mede intenção de treinamento, não competência atual.",
+      [["Sustentar hipóteses e conduzir investigação diagnóstica.","diagnosis,complex,clinical"],["Definir um plano de seguimento compartilhado com a pessoa.","people,followup,clinical"],["Executar intervenção de alta precisão em equipe.","hands,surgery,precision"],["Estabilizar rapidamente uma deterioração clínica.","acute,highstakes,team"]]],
+    ["e13","Decisão final","Duas residências parecem igualmente atraentes. O que decidiria seu desempate?","Escolha a experiência que mais gostaria de ter durante o treinamento.",
+      [["Acompanhamento de pessoas ao longo dos anos.","followup,people,clinical"],["Complexidade de diagnóstico e raciocínio com exames.","diagnosis,complex,visual"],["Repetição e evolução de uma técnica procedimental.","hands,precision,surgery"],["Decisões sob pressão e resposta imediata em equipe.","acute,highstakes,team"]]],
+    ["e14","Decisão final","Você poderia observar a rotina de apenas um profissional durante um mês. Qual escolheria?","Observe a atividade predominante, inclusive documentação e repetição.",
+      [["Especialista de doenças crônicas em ambulatório.","clinical,followup,predictable"],["Especialista operando e acompanhando complicações.","surgery,hands,precision"],["Especialista em pronto atendimento e estabilização.","acute,team,highstakes"],["Especialista analisando exames diagnósticos.","visual,diagnosis,technology"]]],
+    ["e15","Conteúdo clínico","Qual linha de cuidado te prenderia mais pela complexidade do caso?","Você não precisa dominar esses assuntos para ter curiosidade.",
+      [["Tratamento oncológico sistêmico e efeitos adversos.","clinical,complex,people","Oncologia Clínica"],["Doença pulmonar avançada, sono e ventilação.","clinical,technology,diagnosis","Pneumologia"],["Gestação de alto risco e decisões obstétricas.","women,acute,clinical","Ginecologia e Obstetrícia"],["Pós-operatório de pacientes cirúrgicos complexos.","surgery,clinical,team","Cirurgia Geral;Cirurgia Oncológica"]]]
   ];
   const mk = (r) => ({
     id:r[0], group:r[1], text:r[2], context:r[3],
@@ -143,10 +171,11 @@
   });
   const core = CORE_ROWS.map(mk);
   const deep = DEEP_ROWS.map(mk);
-  const end = END_ROWS.map(mk);
+  const end = [...END_ROWS,...FINAL_EXTRA_ROWS].map(mk);
   const questionIndex = new Map([...core,...deep,...end].map(q=>[q.id,q]));
   const DEEP_COUNT=10;
-  const total = core.length + DEEP_COUNT + end.length;
+  const FINAL_COUNT=3;
+  const total = core.length + DEEP_COUNT + FINAL_COUNT;
 
   function validResponse(answer) {
     return !!answer && Number.isInteger(answer.first) && answer.first>=-1 && answer.first<=3 &&
@@ -203,44 +232,92 @@
     }).sort((a,b)=>b.affinity-a.affinity||a.name.localeCompare(b.name,"pt-BR"));
   }
 
+  // Relação editorial entre tarefa descrita e atividades predominantes em cada residência.
+  // Este valor é interno, não uma probabilidade de compatibilidade.
+  function utility(option,specialty) {
+    return option.tags.filter(tag=>specialty.tags.includes(tag)).length/Math.max(option.tags.length,1)
+      +(option.targets.includes(specialty.name)?1.65:0);
+  }
+  function discriminatoryValue(question,leaders) {
+    if(leaders.length<2)return 0;
+    const comparisons=[];
+    for(let a=0;a<leaders.length;a++)for(let b=a+1;b<leaders.length;b++){
+      const differences=question.options.map(o=>utility(o,leaders[a])-utility(o,leaders[b]));
+      comparisons.push(Math.max(...differences)-Math.min(...differences));
+    }
+    return comparisons.reduce((sum,value)=>sum+value,0)/comparisons.length;
+  }
   function selectAdaptive(answers) {
     if(core.some(q=>!validResponse(answers[q.id])))throw new Error("Conclua a primeira etapa antes do aprofundamento.");
     const ranking=baseRank(answers);
-    const leading=ranking.slice(0,8);
-    const chosen=[];
-    // Repartição garante perguntas de conteúdo, custos da profissão e contextos reais.
+    const leaders=ranking.slice(0,6);
+    const selected=[];
     const quotas={conteudo:4,tradeoff:2,tensao:2,atividade:1,ambiente:1};
-    for(const [group,limit] of Object.entries(quotas)){
-      const pool=deep.filter(q=>q.group===group).map(q=>{
-        const discrimination=leading.map(s=>{
-          const optionValues=q.options.map(o=>
-            o.tags.filter(t=>s.tags.includes(t)).length/(o.tags.length||1)+
-            (o.targets.includes(s.name)?1.6:0));
-          return Math.max(...optionValues)-Math.min(...optionValues);
-        });
-        const leverage=discrimination.reduce((a,b)=>a+b,0)/discrimination.length;
-        const distinct=q.options.filter(o=>o.targets.some(t=>leading.some(s=>s.name===t))).length;
-        return {q,weight:leverage + distinct*0.23};
-      }).sort((a,b)=>b.weight-a.weight||a.q.id.localeCompare(b.q.id)).slice(0,limit);
-      chosen.push(...pool.map(x=>x.q.id));
+    const seen=new Set();
+    for(const [group,amount] of Object.entries(quotas)) {
+      for(let k=0;k<amount;k++){
+        const pool=deep.filter(q=>q.group===group&&!seen.has(q.id));
+        const winner=pool.map(q=>{
+          const specificity=q.options.filter(o=>o.targets.some(t=>leaders.some(s=>s.name===t))).length;
+          const newCoverage=q.options.flatMap(o=>o.targets).filter(t=>!selected.some(id=>
+            questionIndex.get(id).options.some(option=>option.targets.includes(t)))).length;
+          return {q,value:discriminatoryValue(q,leaders)+specificity*0.12+newCoverage*0.07};
+        }).sort((a,b)=>b.value-a.value||a.q.id.localeCompare(b.q.id))[0];
+        if(!winner)throw Error("Banco adaptativo incompleto.");
+        seen.add(winner.q.id);selected.push(winner.q.id);
+      }
     }
-    return chosen;
+    return selected;
   }
-
-  function createSequence(answers,adaptiveIds) {
+  function selectFinal(answers,adaptiveIds) {
     const adaptive=adaptiveIds || selectAdaptive(answers);
-    if(adaptive.length!==DEEP_COUNT||new Set(adaptive).size!==DEEP_COUNT||adaptive.some(id=>!deep.some(q=>q.id===id)))throw Error("Trilha de aprofundamento inválida.");
-    return [...core.map(q=>q.id),...adaptive,...end.map(q=>q.id)];
+    if(adaptive.length!==DEEP_COUNT||adaptive.some(id=>!deep.some(q=>q.id===id)) ||
+      [...core.map(q=>q.id),...adaptive].some(id=>!validResponse(answers[id])))
+      throw Error("Conclua as perguntas de aprofundamento antes do ajuste fino.");
+    const leaders=baseRank(Object.fromEntries([...core.map(q=>q.id),...adaptive]
+      .map(id=>[id,answers[id]]))).slice(0,5);
+    return ["Conteúdo clínico","Rotina real","Decisão final"].map(group=>{
+      const winner=end.filter(q=>q.group===group).map(q=>{
+        const targeted=q.options.filter(o=>o.targets.some(t=>leaders.some(s=>s.name===t))).length;
+        return {q,value:discriminatoryValue(q,leaders)+targeted*0.14};
+      }).sort((a,b)=>b.value-a.value||a.q.id.localeCompare(b.q.id))[0];
+      if(!winner)throw Error("Banco do ajuste fino incompleto.");
+      return winner.q.id;
+    });
+  }
+  function createSequence(answers,adaptiveIds,finalIds) {
+    const adaptive=adaptiveIds || selectAdaptive(answers);
+    if(adaptive.length!==DEEP_COUNT||new Set(adaptive).size!==DEEP_COUNT ||
+      adaptive.some(id=>!deep.some(q=>q.id===id)))throw Error("Trilha de aprofundamento inválida.");
+    const initial=[...core.map(q=>q.id),...adaptive];
+    if(finalIds==null)return initial;
+    if(finalIds.length!==FINAL_COUNT||new Set(finalIds).size!==FINAL_COUNT ||
+      finalIds.some(id=>!end.some(q=>q.id===id)) ||
+      new Set(finalIds.map(id=>questionIndex.get(id).group)).size!==FINAL_COUNT)
+      throw Error("Trilha de ajuste fino inválida.");
+    return [...initial,...finalIds];
   }
 
   function calculate(answers,sequence) {
     if(!Array.isArray(sequence)||sequence.length!==total||new Set(sequence).size!==sequence.length ||
       sequence.some(id=>!questionIndex.has(id)||!validResponse(answers[id])))throw Error("Responda às etapas para gerar seu perfil.");
+    // A ordem válida é recalculada a partir das respostas, não simplesmente
+    // aceita como correta por listar perguntas existentes. Evita sequências adulteradas.
+    const expectedAdaptive=selectAdaptive(Object.fromEntries(core.map(q=>[q.id,answers[q.id]])));
+    if(expectedAdaptive.some((id,i)=>id!==sequence[core.length+i]))
+      throw Error("Aprofundamento incompatível com as respostas iniciais.");
+    const expectedFinal=selectFinal(answers,expectedAdaptive);
+    const expected=createSequence(answers,expectedAdaptive,expectedFinal);
+    if(expected.some((id,i)=>id!==sequence[i]))throw Error("Ajuste fino incompatível com as respostas.");
     const {scores,responded,inexperienced,skipped}=scoreInterests(Object.fromEntries(sequence.map(id=>[id,answers[id]])));
     const ranked=baseRank(Object.fromEntries(sequence.map(id=>[id,answers[id]])));
     const positive=Object.keys(labels).filter(t=>scores[t]>.04).sort((a,b)=>scores[b]-scores[a]);
     const caution=Object.keys(labels).filter(t=>scores[t]<-.07).sort((a,b)=>scores[a]-scores[b]);
-    const top=ranked.slice(0,3).map(s=>{
+    // Não fabricamos recomendações quando quase todas as respostas foram ignoradas.
+    // "Não vivenciei" atenua evidências, mas não equivale a resposta em branco.
+    const direct=total-skipped;
+    const insufficient=direct<16;
+    const top=(insufficient?[]:ranked.slice(0,3)).map(s=>{
       const strengths=s.tags.slice().sort((a,b)=>scores[b]-scores[a]).slice(0,3);
       const frictions=s.tags.filter(t=>scores[t]<-.07).sort((a,b)=>scores[a]-scores[b]).slice(0,3);
       const evidence=sequence.flatMap(id=>optionsBy(id,answers[id])
@@ -252,10 +329,10 @@
     });
     const firstGap=top.length>1 ? top[0].affinity-top[1].affinity:0;
     return {top,scores,ordered:positive,frictions:caution,responded,inexperienced,skipped,
-      close:firstGap<.095,version:"2026-10-29-residencias-v4",total,
-      certainty:skipped>=7||inexperienced>=total*.55?"exploratorio":"orientativo",
+      close:!insufficient&&firstGap<.095,version:"2026-11-02-residencias-v5",total,insufficient,direct,
+      certainty:insufficient?"insuficiente":skipped>=5||inexperienced>=total*.55?"exploratorio":"orientativo",
       adaptations:sequence.slice(core.length,core.length+DEEP_COUNT)};
   }
-  return Object.freeze({labels,core,deep,end,questions:core,questionIndex,DEEP_COUNT,total,
-    validResponse,scoreInterests,selectAdaptive,createSequence,calculate,catalogue});
+  return Object.freeze({labels,core,deep,end,questions:core,questionIndex,DEEP_COUNT,FINAL_COUNT,total,
+    validResponse,scoreInterests,selectAdaptive,selectFinal,createSequence,calculate,catalogue});
 });

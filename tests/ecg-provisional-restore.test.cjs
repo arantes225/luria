@@ -131,3 +131,13 @@ test("UI marks positional names as hypotheses and requires an explicit per-lead 
   assert.match(ui,/if \(!leadInfo\.captured && !leadInfo\.imageCropUrl\) return/);
   assert.match(ui,/Extração bloqueada — recapture esta região/);
 });
+
+test("confirmação de layout em um toque confirma todas as regiões provisórias e libera só a identidade, não a IA",()=>{
+  const {controller}=scene({sheet:{found:false},calibration:{gridDetected:false,coloredGridRatio:0}});
+  controller.processPhotographCanvas(makeCanvas(),{source:"normal_photo_manual_four_corners",manualPaperCornersApplied:true});
+  const result=controller.confirmAllCandidateLeads();
+  assert.equal(JSON.stringify([...result.confirmed].sort()),JSON.stringify(["DI","DII","aVR"]));
+  assert.equal(result.rejected.length,0);
+  assert.ok(controller.getCapturedLeads().filter(l=>l.captured).every(l=>l.leadIdentity.status==="manual_confirmed"));
+  assert.equal(controller.confirmExtractionAndEnableAI().allowed,false);
+});

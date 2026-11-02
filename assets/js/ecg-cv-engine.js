@@ -775,6 +775,75 @@
    * 3. Estima a orientação do ECG (0°, 90°, 180°, 270°) e ângulo fino de inclinação (skew)
    * Baseia-se na anisotropia horizontal vs vertical dos traçados de ECG (ondas propagam-se horizontalmente).
    */
+  /**
+   * Estima a inclinação (graus, convenção da imagem: y para baixo; uma linha com
+   * inclinação tan(a)) maximizando a nitidez da projeção horizontal de uma
+   * máscara de "estrutura de papel": grade rosada + tinta. Usa imagem reduzida por
+   * média de blocos, ignora a moldura escura da foto e refina em passos de 0,25°.
+   * Retorna { angleDeg, confidence }.
+   */
+  function estimateSkewByGradients(imageData) {
+    const { width, height, data } = imageData;
+    const f = Math.max(1, Math.ceil(Math.max(width, height) / 1000));
+    const w = Math.max(16, Math.floor(width / f));
+    const h = Math.max(16, Math.floor(height / f));
+    const mask = new Uint8Array(w * h);
+    let count = 0;
+    for (let y = 0; y < h; y++) {
+      for (let x = 0; x < w; x++) {
+        let r = 0, g = 0, b = 0, n = 0;
+        for (let dy = 0; dy < f; dy++) {
+          const sy = y * f + dy; if (sy >= height) break;
+          for (let dx = 0; dx < f; dx++) {
+            const sx = x * f + dx; if (sx >= width) break;
+            const i = (sy * width + sx) * 4;
+            r += data[i]; g += data[i + 1]; b += data[i + 2]; n++;
+          }
+        }
+        if (!n) continue;
+        r /= n; g /= n; b /= n;
+        const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+        if (luma < 70) continue; // moldura/fundo escuro da foto
+        const redness = r - Math.max(g, b);
+        const isGrid = redness > 6 && luma > 150 && luma < 246;
+        const isInk = luma < 150 && Math.abs(r - b) < 55;
+        if (isGrid || isInk) { mask[y * w + x] = 1; count++; }
+      }
+    }
+    if (count < 200) return { angleDeg: 0, confidence: 0 };
+    const cx = w / 2;
+    const proj = new Float32Array(h + w); // folga para deslocamentos
+    const sharpness = angle => {
+      const tanA = Math.tan((angle * Math.PI) / 180);
+      proj.fill(0);
+      const off = w / 2;
+      for (let y = 0; y < h; y++) {
+        const row = y * w;
+        for (let x = 0; x < w; x++) {
+          if (!mask[row + x]) continue;
+          proj[Math.round(y - (x - cx) * tanA + off)]++;
+        }
+      }
+      let energy = 0;
+      for (let i = 1; i < proj.length; i++) { const d = proj[i] - proj[i - 1]; energy += d * d; }
+      return energy;
+    };
+    let best = 0, bestE = -1, sum = 0, n = 0;
+    for (let a = -15; a <= 15; a += 1) {
+      const e = sharpness(a); sum += e; n++;
+      if (e > bestE) { bestE = e; best = a; }
+    }
+    let fine = best, fineE = bestE;
+    for (let a = best - 1; a <= best + 1; a += 0.25) {
+      const e = sharpness(a);
+      if (e > fineE) { fineE = e; fine = a; }
+    }
+    const mean = sum / n;
+    const confidence = Math.min(1, Math.max(0, (fineE / Math.max(1e-9, mean) - 1) / 1.5));
+    if (confidence < 0.25) return { angleDeg: 0, confidence: Number(confidence.toFixed(3)) };
+    return { angleDeg: Number(fine.toFixed(2)), confidence: Number(confidence.toFixed(3)) };
+  }
+
   function detectOrientationAndSkew(imageData) {
     const { width, height, data } = imageData;
     let horizGradSum = 0;
@@ -844,41 +913,19 @@
     // Se a variância das colunas for muito maior que a das linhas, as linhas de base das derivações estão na vertical (ECG girado 90° ou 270°)
     const isRotated90 = colNormVar > rowNormVar * 1.65 && colNormVar > 0.002;
 
-    // Estimativa de ângulo fino de skew (-12° a +12°) buscando o ângulo que maximiza a nitidez do perfil horizontal
-    let bestAngleDeg = 0;
-    let maxScore = -1;
-    const sampleStep = Math.max(1, Math.floor(Math.min(width, height) / 120));
-
-    for (let angle = -10; angle <= 10; angle += 1) {
-      const tanA = Math.tan((angle * Math.PI) / 180);
-      const proj = new Float32Array(height);
-      for (let y = 0; y < height; y += sampleStep) {
-        for (let x = 0; x < width; x += sampleStep) {
-          const idx = (y * width + x) * 4;
-          const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
-          if (luma < 130 && Math.abs(data[idx] - data[idx + 2]) < 55) {
-            const shiftedY = Math.round(y - (x - width / 2) * tanA);
-            if (shiftedY >= 0 && shiftedY < height) {
-              proj[shiftedY]++;
-            }
-          }
-        }
-      }
-      let energy = 0;
-      for (let i = 1; i < height; i++) {
-        const d = proj[i] - proj[i - 1];
-        energy += d * d;
-      }
-      if (energy > maxScore) {
-        maxScore = energy;
-        bestAngleDeg = angle;
-      }
-    }
+    // Inclinação fina (-15° a +15°) pela orientação dos gradientes: as linhas da
+    // grade e as linhas de base são quase horizontais/verticais, então o histograma
+    // de orientação (dobrado em 90°) tem um pico no ângulo de inclinação. Ao
+    // contrário da projeção de pixels escuros, ignora bordas escuras da foto e
+    // não depende da cor nem da espessura do traçado.
+    const skewEstimate = estimateSkewByGradients(imageData);
+    const bestAngleDeg = skewEstimate.angleDeg;
 
     return {
       isRotated90,
       quadrantDeg: isRotated90 ? 90 : 0,
       skewAngleDeg: bestAngleDeg,
+      skewConfidence: skewEstimate.confidence,
       rowNormVar: Number(rowNormVar.toFixed(5)),
       colNormVar: Number(colNormVar.toFixed(5)),
       needsDeskew: Math.abs(bestAngleDeg) >= 2
@@ -959,7 +1006,26 @@
     const coarseX = useStrongPeriod ? strongX : dominantX;
     const coarseY = useStrongPeriod ? strongY : dominantY;
     const periodX = { ...coarseX, period: coarseX.period > 0 ? refineGridPeriodSubpixel(hpX, coarseX.period) : 0 };
-    const periodY = { ...coarseY, period: coarseY.period > 0 ? refineGridPeriodSubpixel(hpY, coarseY.period) : 0 };
+    let periodY = { ...coarseY, period: coarseY.period > 0 ? refineGridPeriodSubpixel(hpY, coarseY.period) : 0 };
+
+    // O perfil vertical é contaminado pelos próprios traçados (estruturas
+    // horizontais) e pode escolher um período espúrio (ex.: 3 px). Como o
+    // quadriculado é quadrado, quando X é confiável e Y discorda, procura-se o
+    // período de Y só numa janela de ±20% do período de X e exige-se a mesma
+    // confiança mínima (0,28) da grade medida; caso contrário nada muda.
+    const yDisagrees = periodX.period > 0 && (periodY.period <= 0 ||
+      Math.abs(periodX.period - periodY.period) / Math.max(periodX.period, periodY.period) > 0.22 ||
+      periodY.confidence < 0.28);
+    if (yDisagrees && periodX.confidence >= 0.5) {
+      const lo = Math.max(3, Math.floor(periodX.period * 0.8));
+      const hi = Math.min(Math.floor(height / 8), Math.ceil(periodX.period * 1.2));
+      if (hi > lo) {
+        const constrainedY = findDominantGridPeriod(hpY, lo, hi);
+        if (constrainedY.period > 0 && constrainedY.confidence >= 0.28) {
+          periodY = { ...constrainedY, period: refineGridPeriodSubpixel(hpY, constrainedY.period) };
+        }
+      }
+    }
 
     // Detecção do pulso retangular de calibração (1 mV = 10 mm de altura, 200 ms = 5 mm de largura)
     const calPulse = detectCalibrationPulse(imageData, effectiveSheetBoundaries);
@@ -1224,7 +1290,9 @@
 
     const paperW = xMaxPaper - xMinPaper;
     const paperH = yMaxPaper - yMinPaper;
-    const scanMinX = xMinPaper + Math.max(4, Math.floor(paperW * 0.02));
+    // O pulso de 1 mV costuma começar colado na borda esquerda da folha; começar a
+    // busca 2% adiante cortava a subida e a linha de base do pulso.
+    const scanMinX = xMinPaper + 4;
     const scanMaxX = Math.min(xMaxPaper, scanMinX + Math.floor(paperW * 0.12));
     let bestPulse = { detected: false, heightPx: 0, widthPx: 0, confidence: 0 };
 
@@ -1240,7 +1308,7 @@
         for (let y = yMin; y < yMax; y++) {
           const idx = (y * width + x) * 4;
           const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
-          if (luma < 120 && Math.abs(data[idx] - data[idx + 2]) < 55) {
+          if (luma < 150 && Math.abs(data[idx] - data[idx + 2]) < 55) {
             sumY += y;
             cnt++;
           }
@@ -1273,8 +1341,21 @@
               const runWidth = runEnd - runStart;
               const before = state.slice(Math.max(0, runStart - 18), runStart).filter(v => v === 1).length;
               const after = state.slice(runEnd, Math.min(state.length, runEnd + 18)).filter(v => v === 1).length;
-              if (runWidth >= 6 && runWidth <= 40 && before >= 4 && after >= 4) {
-                const bracketScore = Math.min(1, Math.min(before, after) / 8);
+              // Quando o pulso inicia o traçado, não há linha de base antes dele
+              // (nenhum traço à esquerda); aceita-se base só do lado direito, com
+              // confiança menor. O inverso (só à esquerda) segue a mesma regra.
+              const beforeWin = trace.slice(Math.max(0, runStart - 18), runStart);
+              const afterWin = trace.slice(runEnd, Math.min(trace.length, runEnd + 18));
+              // "Vazio" = metade ou mais da janela sem traço (a subida do pulso e
+              // 1–2 colunas na altura da base não contam como linha de base).
+              const beforeEmpty = runStart >= 8 && beforeWin.filter(v => v === null).length >= Math.ceil(beforeWin.length / 2);
+              const afterEmpty = (trace.length - runEnd) >= 8 && afterWin.filter(v => v === null).length >= Math.ceil(afterWin.length / 2);
+              const bothSides = before >= 4 && after >= 4;
+              const oneSide = (beforeEmpty && after >= 6) || (afterEmpty && before >= 6);
+              if (runWidth >= 6 && runWidth <= 40 && (bothSides || oneSide)) {
+                const bracketScore = bothSides
+                  ? Math.min(1, Math.min(before, after) / 8)
+                  : 0.5 * Math.min(1, Math.max(before, after) / 8);
                 const plateauScore = Math.min(1, runWidth / 10);
                 const confidence = Math.min(0.99, 0.55 + bracketScore * 0.25 + plateauScore * 0.2);
                 if (confidence > bestPulse.confidence) {
@@ -1311,8 +1392,11 @@
       if (expectedResult.recognized) return expectedResult;
       // Sonda curta para contradições explícitas. Ela mantém o fail-closed
       // (ex.: V3 impresso na célula de DI) sem repetir o OCR completo e lento.
+      // Rótulos formados só por barras verticais (I, II, III) casam com picos
+      // QRS e linhas de grade e geravam "conflitos" falsos que reprovavam a
+      // imagem inteira; ficam fora da sonda de contradição. Rótulos com glifos
+      // distintos (aVR/aVL/aVF/V1–V6) continuam sendo contradições explícitas.
       const contradictionLabels = [
-        "DI", "I", "DII", "II", "DIII", "III",
         "aVR", "AVR", "aVL", "AVL", "aVF", "AVF",
         "V1", "V2", "V3", "V4", "V5", "V6"
       ].filter(label => (LEAD_SYNONYMS[label] || label) !== canonicalExpected);
@@ -1340,8 +1424,11 @@
     const scales = options.scales || [1, 2, 3];
     // Na folha completa, testar apenas o rótulo esperado reduz a busca em 12×
     // e impede que um trecho da grade seja promovido a uma derivação diferente.
+    // Sem derivação esperada ("I" e "DI" são uma barra vertical, quase igual a um
+    // pico QRS ou linha da grade) o rótulo isolado "I" não é pesquisado: gerava
+    // "DI" falso em várias linhas e reprovava a folha por rótulos duplicados.
     const candidateLabels = options.candidateLabels ||
-      ["DI", "I", "DII", "II", "DIII", "III", "aVR", "AVR", "aVL", "AVL", "aVF", "AVF", "V1", "V2", "V3", "V4", "V5", "V6"];
+      ["DII", "II", "DIII", "III", "aVR", "AVR", "aVL", "AVL", "aVF", "AVF", "V1", "V2", "V3", "V4", "V5", "V6"];
 
     // Primeiro verifica se há uma caixa de caracteres nítida na zona de rótulo
     for (const labelName of candidateLabels) {
@@ -1586,6 +1673,21 @@
     // Mede continuidade horizontal em blocos. Uma linha de base de ECG ocupa
     // grande parte da largura; texto do cabeçalho e QRS isolados não. A grade
     // colorida é excluída pelo limite de cromaticidade.
+    // Limiar de traço relativo ao fundo do papel (mediana da luminância): em
+    // fotos escuras/acinzentadas a grade fica abaixo de 142 e toda linha parecia
+    // "traçado" (16 faixas com continuidade 1,0). Nunca passa de 142 (papel claro).
+    const lumaSample = [];
+    for (let y = yMin; y < yMax; y += Math.max(1, Math.floor(spanH / 40))) {
+      for (let x = xMin; x < xMax; x += Math.max(1, Math.floor(spanW / 40))) {
+        const i = (y * width + x) * 4;
+        lumaSample.push(0.2126 * data[i] + 0.7152 * data[i + 1] + 0.0722 * data[i + 2]);
+      }
+    }
+    lumaSample.sort((p, q) => p - q);
+    const paperMedian = lumaSample.length ? lumaSample[lumaSample.length >> 1] : 255;
+    const bandTraceThreshold = paperMedian >= 215
+      ? 142 // papel claro/escaneado: comportamento anterior
+      : Math.max(55, Math.min(142, Math.round(paperMedian * 0.5)));
     const binCount = Math.max(48, Math.min(112, Math.round(spanW / 16)));
     const rowOccupancy = new Float32Array(height);
     for (let y = yMin; y < yMax; y++) {
@@ -1600,7 +1702,7 @@
             const r = data[idx], g = data[idx + 1], b = data[idx + 2];
             const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
             const chroma = Math.max(r, g, b) - Math.min(r, g, b);
-            if (luma < 142 && chroma < 48) { found = true; break; }
+            if (luma < bandTraceThreshold && chroma < 48) { found = true; break; }
           }
         }
         if (found) occupied++;
@@ -1652,11 +1754,38 @@
       return (exactDark / spanW) < maxAllowedDarkRatio;
     });
 
+    // Picos QRS/T altos criam "faixas" extras fora do passo regular entre as
+    // linhas de base reais (ex.: 15–16 faixas num 3×4 + ritmo). As derivações
+    // reais ficam numa rede de passo constante; mantém-se a maior cadeia regular
+    // e descartam-se as faixas fora dela. Só atua com mais de 6 faixas.
+    let lattice = baselines;
+    if (baselines.length > 6) {
+      let best = null;
+      for (let i = 0; i < baselines.length - 2; i++) {
+        for (let j = i + 1; j < baselines.length; j++) {
+          const pitch = baselines[j].yCenter - baselines[i].yCenter;
+          if (pitch < spanH * 0.06 || pitch > spanH * 0.4) continue;
+          const chain = [baselines[i]];
+          let expected = baselines[i].yCenter + pitch;
+          for (let k = i + 1; k < baselines.length; k++) {
+            if (Math.abs(baselines[k].yCenter - expected) <= pitch * 0.2) {
+              chain.push(baselines[k]);
+              expected = baselines[k].yCenter + pitch;
+            }
+          }
+          const sum = chain.reduce((t, b) => t + b.score, 0);
+          if (!best || chain.length > best.chain.length ||
+              (chain.length === best.chain.length && sum > best.sum)) best = { chain, sum };
+        }
+      }
+      if (best && best.chain.length >= 3 && best.chain.length < baselines.length) lattice = best.chain;
+    }
+
     return {
-      rowCount: baselines.length,
-      bands: baselines.map((b, idx) => {
-        const prevGap = idx > 0 ? b.yCenter - baselines[idx - 1].yCenter : spanH / Math.max(1, baselines.length);
-        const nextGap = idx < baselines.length - 1 ? baselines[idx + 1].yCenter - b.yCenter : prevGap;
+      rowCount: lattice.length,
+      bands: lattice.map((b, idx) => {
+        const prevGap = idx > 0 ? b.yCenter - lattice[idx - 1].yCenter : spanH / Math.max(1, lattice.length);
+        const nextGap = idx < lattice.length - 1 ? lattice[idx + 1].yCenter - b.yCenter : prevGap;
         const halfSpan = Math.max(12, Math.min(prevGap, nextGap) * 0.43);
         return {
           index: idx,
@@ -1911,7 +2040,37 @@
     } else if (count === 12) {
       rows = 12;
     } else if (count === 6) {
-      rows = 6; cols = 2; uncertain = true;
+      // 6 faixas servem a dois formatos: 6×2 e 3×4 + 3 tiras de ritmo. No banco
+      // público de 52 ECGs, todos os casos de 6 faixas eram 3×4 + ritmo. O padrão
+      // passa a ser 3×4 + ritmo, e só 2+ rótulos reconhecidos no meio das faixas
+      // superiores (sem rótulos nas 3 colunas) mudam o palpite para 6×2.
+      // Em ambos os casos o layout continua "hipótese": o usuário confirma.
+      const votes2 = [1].reduce(() => {
+        let v = 0;
+        for (const band of topology.bands.slice(0, 3)) {
+          const xMin = boundaries.xMin + 0.5 * (boundaries.xMax - boundaries.xMin);
+          const label = recognizeLeadLabelInRegion(imageData, {
+            xMin, xMax: Math.min(boundaries.xMax, xMin + (boundaries.xMax - boundaries.xMin) * 0.15),
+            yMin: band.yMin, yMax: band.yCenterRatio
+          });
+          if (label.recognized) v++;
+        }
+        return v;
+      }, 0);
+      let votes4 = 0;
+      for (const band of topology.bands.slice(0, 3)) {
+        for (const col of [1, 3]) {
+          const xMin = boundaries.xMin + (col / 4) * (boundaries.xMax - boundaries.xMin);
+          const label = recognizeLeadLabelInRegion(imageData, {
+            xMin, xMax: Math.min(boundaries.xMax, xMin + (boundaries.xMax - boundaries.xMin) * 0.1),
+            yMin: band.yMin, yMax: band.yCenterRatio
+          });
+          if (label.recognized) votes4++;
+        }
+      }
+      if (votes2 >= 2 && votes2 > votes4) { rows = 6; cols = 2; }
+      else { rows = 3; cols = 4; rhythmCount = 3; }
+      uncertain = true;
     } else if (count >= 3 && count <= 5) {
       // Test interior printed labels before choosing a column hypothesis.
       const votes = {2: 0, 4: 0};
@@ -2013,9 +2172,17 @@
         : (band && rowGap ? band.yCenterRatio - rowGap : yMin);
       const nextCenter = (r < numMainRows - 1 && mainBands[r + 1])
         ? mainBands[r + 1].yCenterRatio
-        : (hasRhythmRow && topology.bands[numMainRows]
-            ? topology.bands[numMainRows].yCenterRatio
-            : (band && rowGap ? band.yCenterRatio + rowGap : yMax));
+        : (() => {
+            // A faixa seguinte é a primeira faixa realmente ABAIXO desta. Usar
+            // topology.bands[numMainRows] supõe que as 3 linhas principais são as 3
+            // primeiras faixas; com faixas espúrias no topo isso apontava para uma
+            // faixa acima e a última linha ficava com ~1% de altura.
+            const below = band
+              ? topology.bands.find(b2 => b2.yCenterRatio > band.yCenterRatio + 0.02)
+              : null;
+            if (hasRhythmRow && below) return below.yCenterRatio;
+            return band && rowGap ? band.yCenterRatio + rowGap : yMax;
+          })();
 
       const rowYMin = (band && is3x4)
         ? Math.max(yMin, band.yCenterRatio - (band.yCenterRatio - prevCenter) * 0.65)
@@ -2311,12 +2478,28 @@
     const { width, height, data } = cropData;
     let validCols = 0;
     let minY = height, maxY = 0;
+    // Limiar de traço relativo ao fundo da célula: traços finos/anti-aliased
+    // (prints, fotos de baixa resolução) ficam cinza (~100–170) e eram
+    // descartados pelo limiar fixo 130. O limiar nunca fica abaixo de 130
+    // (comportamento anterior) nem acima de 175 (evita grade/sombra).
+    const lumaHist = new Uint32Array(256);
+    for (let i = 0; i < width * height; i++) {
+      const o = i * 4;
+      lumaHist[Math.max(0, Math.min(255, Math.round(0.2126 * data[o] + 0.7152 * data[o + 1] + 0.0722 * data[o + 2])))]++;
+    }
+    let acc = 0, bgLuma = 255;
+    const half = (width * height) / 2;
+    for (let v = 0; v < 256; v++) {
+      acc += lumaHist[v];
+      if (acc >= half) { bgLuma = v; break; }
+    }
+    const traceThreshold = Math.max(130, Math.min(175, Math.round(bgLuma * 0.72)));
     for (let x = 0; x < width; x++) {
       let sumY = 0, cnt = 0;
       for (let y = 1; y < height - 1; y++) {
         const idx = (y * width + x) * 4;
         const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
-        if (luma < 130 && Math.abs(data[idx] - data[idx + 2]) < 55) {
+        if (luma < traceThreshold && Math.abs(data[idx] - data[idx + 2]) < 55) {
           sumY += y;
           cnt++;
         }

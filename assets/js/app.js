@@ -1659,6 +1659,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">✎</span><span>Prescrição</span>
         </a>
 
+        <a class="nav-link ${page === "trabalho_diabetes" ? "active" : ""}" href="/trabalho/diabetes/">
+          <span class="nav-icon" aria-hidden="true">◉</span><span>Diabetes</span>
+        </a>
+
         <a class="nav-link ${page === "trabalho_calculadora" ? "active" : ""}" href="/trabalho/calculadora/">
           <span class="nav-icon">∑</span><span>Calculadoras</span>
         </a>
@@ -1811,14 +1815,14 @@ async function carregarPerfil(userId) {
 
 function traubeLogoSourceForTheme(theme) {
   if (theme === "dark") {
-    return "/assets/img/logos/logo-icone-azul-claro.png?v=traube11";
+    return "/assets/img/logos/logo-icone-azul-claro.png?v=busto20261102";
   }
 
   if (theme === "leila-mood" || theme === "pink" || theme === "rosa") {
-    return "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube11";
+    return "/assets/img/logos/logo-icone-rosa-escuro.png?v=busto20261102";
   }
 
-  return "/assets/img/logos/logo-icone-original.png?v=traube11";
+  return "/assets/img/logos/logo-icone-original.png?v=busto20261102";
 }
 
 
@@ -5632,7 +5636,7 @@ function ensureTraubeDialog() {
   dialog.innerHTML = `
     <form method="dialog" class="traube-global-dialog-card">
       <div class="traube-global-dialog-icon" aria-hidden="true">
-        <img class="traube-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=traube10" alt="">
+        <img class="traube-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=busto20261102" alt="">
       </div>
       <div class="traube-global-dialog-copy">
         <span class="traube-global-dialog-eyebrow">TRAUBE</span>
@@ -5728,10 +5732,10 @@ function openTraubeDialog({
 
     logo.src =
       theme === "dark"
-        ? "/assets/img/logos/logo-icone-azul-claro.png?v=traube10"
+        ? "/assets/img/logos/logo-icone-azul-claro.png?v=busto20261102"
         : theme === "leila-mood"
-          ? "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube10"
-          : "/assets/img/logos/logo-icone-original.png?v=traube10";
+          ? "/assets/img/logos/logo-icone-rosa-escuro.png?v=busto20261102"
+          : "/assets/img/logos/logo-icone-original.png?v=busto20261102";
   }
 
   copy.textContent =
