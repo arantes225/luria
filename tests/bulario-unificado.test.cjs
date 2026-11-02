@@ -57,3 +57,14 @@ test('nenhuma página do Bulário usa a fonte local como catálogo paralelo', ()
   assert.ok(!protocolos.includes('TRAUBE_BULARIO_SEEDS'));
   assert.match(protocolos,/from\('bulario_catalog'\)/);
 });
+
+test('falha dos protocolos relacionados não pode deixar o bulário vazio', () => {
+  const code=load('assets/js/bulario.js');
+  assert.match(code,/const protocolPromise=loadAll\('clinical_protocols'/);
+  assert.match(code,/Protocolos relacionados indisponíveis; bulário continua acessível/);
+  assert.match(code,/rows\.push\(\.\.\.page\)/);
+  assert.match(code,/renderList\(\)/);
+  assert.doesNotMatch(code,/const \[drugRows,protocolRows\]=await Promise\.all/);
+  assert.match(code,/data-bulario-retry/);
+  assert.match(code,/Carregamento parcial/);
+});
