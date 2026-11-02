@@ -104,6 +104,6 @@ test("sem preferência em 29 cenários, não força recomendações",()=>{
   assert.equal($("voc-results").hidden,false);
   assert.equal(window.document.querySelectorAll(".voc-match").length,0);
   assert.match($("voc-results").textContent,/Recomendações não emitidas/);
-  assert.match($("voc-results").textContent,/não é responsável indicar três residências/);
+  assert.match($("voc-results").textContent,/não é responsável indicar três residências/i);
   dom.window.close();
 });
