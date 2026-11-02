@@ -74,3 +74,10 @@ Falhas públicas com o extrator real: 13 imagens "sem derivações válidas sufi
 8 em 3x4 + ritmo com menos de 10 células, 4 de 2 a 3 tiras, 1 rótulo fora de posição, 1 parcial (ecg 8).
 Os ganhos anteriores da validação de células, do filtro de faixas e do limiar das faixas
 precisam ser reavaliados com o extrator real.
+
+## Extrator: piso da regra de tinta densa 0,58 -> 0,30
+Fotos com grade cinza têm densidade de tinta bruta > 8% e caem na regra "densa", que mantém
+só os 12% mais escuros com piso de 0,58. O suavizamento [1 2 1]² reduz o contraste de um traço fino,
+que ficava abaixo do piso e sumia (continuidade de tinta 0,1 a 0,3). Com piso 0,30:
+públicas (extrator real) 24 -> 32 de 52 (62%); sintéticas inalteradas (13/20).
+Subconjunto testado (13 falhas + 7 controles): 0,45 -> 9/20; 0,30 e 0,20 -> 12/20; escolhido 0,30.
