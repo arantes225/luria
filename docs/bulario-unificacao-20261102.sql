@@ -24,6 +24,10 @@ FROM traube_bulario_import i
 WHERE lower(btrim(d.name))=lower(btrim(i.name))
 AND d.data->>'legacy_seed_imported_from' IS DISTINCT FROM 'assets/js/bulario-seeds.js';
 
+-- Earlier bulk imports used explicit IDs, so reset the owned sequence safely.
+SELECT setval(pg_get_serial_sequence('public.bulario_drugs','id'),
+              GREATEST(1,(SELECT max(id) FROM public.bulario_drugs)), true);
+
 INSERT INTO public.bulario_drugs (name,active_ingredient,data)
 SELECT i.name,i.active_ingredient,coalesce(i.data,'{}'::jsonb)
   || jsonb_build_object('imported_from','assets/js/bulario-seeds.js')
