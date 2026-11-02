@@ -139,6 +139,6 @@ test('B-PEWS-Br score has three 0-3 domains and one 0-2 extra, maximum 11',()=>{
   assert.equal(calculate('pews',[0,'',0,0]).value,'—');
 });
 test('Asset version and nonduplication retained in batch10',()=>{
-  assert.match(read('trabalho/scores/index.html'),/work-scores\.js\?v=20261030-batch10/);
+  assert.match(read('trabalho/scores/index.html'),/work-scores\.js\?v=20261102-batch11/);
   for(const id of ids)assert.equal(scores.filter(s=>s.id===id).length,1);
 });
