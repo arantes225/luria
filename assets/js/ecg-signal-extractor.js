@@ -182,7 +182,7 @@
       for (let bin = 0; bin < strengthHistogram.length; bin++) {
         cumulative += strengthHistogram[bin];
         if (cumulative >= target) {
-          denseInkFloor = Math.min(0.86, Math.max(0.58, bin / 63));
+          denseInkFloor = Math.min(0.86, Math.max(0.30, bin / 63)); // piso 0,58 -> 0,30: o suavizamento reduz o contraste de traços finos
           break;
         }
       }

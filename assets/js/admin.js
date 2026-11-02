@@ -5914,6 +5914,20 @@
     renderApostilaImageReviewQueue();
   }
 
+  async function apostilaImageReviewErrorMessage(error) {
+    let message = String(error?.message || "erro desconhecido").trim();
+    const response = error?.context;
+    if (response && typeof response.clone === "function") {
+      try {
+        const body = await response.clone().json();
+        if (typeof body?.error === "string" && body.error.trim()) message = body.error.trim();
+      } catch (_) {
+        // A resposta pode não ter JSON; a mensagem original continua útil.
+      }
+    }
+    return message.replace(/\s+/g, " ").slice(0, 280) || "erro desconhecido";
+  }
+
   async function reviewApostilaImage(id, action, reload = true) {
     const row = apostilaImageReviewRows.find(item => Number(item.id) === Number(id));
     if (action === "approve") {
@@ -5967,10 +5981,12 @@
       button.disabled = true;
       try {
         await reviewApostilaImage(id, action);
+        const status = $("admin-apostila-images-status");
+        if (status) status.textContent = action === "approve" ? "Imagem aprovada." : "Imagem rejeitada.";
       } catch (error) {
         console.error("Falha ao revisar imagem de apostila:", error);
         const status = $("admin-apostila-images-status");
-        if (status) status.textContent = "Falha ao salvar sua decisão.";
+        if (status) status.textContent = "Não foi possível salvar a decisão: " + await apostilaImageReviewErrorMessage(error);
         button.disabled = false;
       }
     });
@@ -6083,12 +6099,18 @@
         const status = $("admin-apostila-images-status");
         if (status) status.textContent = verb + " imagens: " + (success + errors.length + 1) + "/" + ids.length;
         try {await reviewApostilaImage(id, action, false);success++;}
-        catch (error) {console.error("Erro de curadoria " + id, error);errors.push(id);}
+        catch (error) {
+          console.error("Erro de curadoria " + id, error);
+          errors.push({ id, message: await apostilaImageReviewErrorMessage(error) });
+        }
       }
     } finally {
       await loadApostilaImageReviewQueue();
       const status = $("admin-apostila-images-status");
-      if (status) status.textContent = success + " processadas, " + errors.length + " falhas" + (errors.length ? " nos IDs " + errors.join(", ") : "") + ".";
+      if (status) {
+        const detail = errors.slice(0, 3).map(error => "#" + error.id + ": " + error.message).join(" · ");
+        status.textContent = success + " processadas, " + errors.length + " falhas" + (detail ? ". " + detail : ".");
+      }
     }
   }
 

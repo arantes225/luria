@@ -2565,7 +2565,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
     inset:0!important;
     z-index:0!important;
     pointer-events:none!important;
-    background-image:url("/assets/img/logos/logo-icone-original.png?v=inner-pattern-v77")!important;
+    background-image:url("/assets/img/logos/logo-icone-original.png?v=busto20261102")!important;
     background-repeat:repeat!important;
     background-size:132px 132px!important;
     background-position:0 0!important;
@@ -2576,14 +2576,14 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
   }
 
   :root[data-theme="dark"] body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
-    background-image:url("/assets/img/logos/logo-icone-azul-claro.png?v=inner-pattern-v77")!important;
+    background-image:url("/assets/img/logos/logo-icone-azul-claro.png?v=busto20261102")!important;
     background-size:132px 132px!important;
     background-position:0 0!important;
     opacity:.038!important;
   }
 
   :root[data-theme="leila-mood"] body.traube-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
-    background-image:url("/assets/img/logos/logo-icone-rosa-escuro.png?v=inner-pattern-v77")!important;
+    background-image:url("/assets/img/logos/logo-icone-rosa-escuro.png?v=busto20261102")!important;
     background-size:132px 132px!important;
     background-position:0 0!important;
     opacity:.024!important;
@@ -2619,8 +2619,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
         color-mix(in srgb,var(--surface) 93%,transparent),
         color-mix(in srgb,var(--surface) 93%,transparent)
       ),
-      url("/assets/img/logos/logo-icone-original.png?v=dashboard-pattern-v37"),
-      url("/assets/img/logos/logo-icone-original.png?v=dashboard-pattern-v37")!important;
+      url("/assets/img/logos/logo-icone-original.png?v=busto20261102"),
+      url("/assets/img/logos/logo-icone-original.png?v=busto20261102")!important;
     background-repeat:no-repeat,repeat,repeat!important;
     background-size:100% 100%,138px 138px,138px 138px!important;
     background-position:0 0,0 0,69px 69px!important;
@@ -2632,8 +2632,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
         color-mix(in srgb,var(--surface) 92%,transparent),
         color-mix(in srgb,var(--surface) 92%,transparent)
       ),
-      url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v37"),
-      url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v37")!important;
+      url("/assets/img/logos/logo-icone-azul-claro.png?v=busto20261102"),
+      url("/assets/img/logos/logo-icone-azul-claro.png?v=busto20261102")!important;
   }
 
   :root[data-theme="leila-mood"] body.traube-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
@@ -2642,8 +2642,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not
         color-mix(in srgb,var(--surface) 92.5%,transparent),
         color-mix(in srgb,var(--surface) 92.5%,transparent)
       ),
-      url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v37"),
-      url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v37")!important;
+      url("/assets/img/logos/logo-icone-rosa-escuro.png?v=busto20261102"),
+      url("/assets/img/logos/logo-icone-rosa-escuro.png?v=busto20261102")!important;
   }
 
   /* Remove o pattern alternativo que tinha sido colocado via pseudo-elemento. */

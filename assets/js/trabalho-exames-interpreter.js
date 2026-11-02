@@ -175,10 +175,10 @@ window.TRAUBE_EXAM_CATALOG=[{"id":1,"name":"Hematologia e anemias","tests":[{"id
      const patient=state.mode==="patient",kitObj=state.kit?KITS[state.kit]:null;
      const title=state.search?"Resultados da busca":kitObj?kitObj.label:selected?selected.name:"Todos os exames";
      panel.innerHTML=`<div class="ex-catalog-heading"><div><h3 class="ex-section-title">${e(title)}</h3>
-       <p class="ex-subtitle">${items.length+pendingNames.length} ${items.length+pendingNames.length===1?"exame":"exames"} em ordem alfabética${selected&&state.search?" · "+e(selected.name):""} · ${patient?"Informe resultados e limites do laudo, quando disponíveis.":"Valores orientativos; confirme método, unidade e laudo."}</p></div>
+       <p class="ex-subtitle">${items.length+pendingNames.length} ${items.length+pendingNames.length===1?"exame":"exames"} em ordem alfabética${selected&&state.search?" · "+e(selected.name):""} · ${pendingNames.length?`${pendingNames.length} nomes novos marcados A completar · `:""}${patient?"Informe resultados e limites do laudo, quando disponíveis.":"Valores orientativos; confirme método, unidade e laudo."}</p></div>
        <span class="ex-order-pill" aria-label="Ordenação alfabética">A–Z</span></div>
-       <div id="ex-rows" class="ex-card-grid"></div>
        <section id="ex-pending-section" class="ex-pending-section" ${pendingNames.length?"":"hidden"} aria-label="Nomes de exames pendentes"><div class="ex-pending-heading"><h4>Nomes cadastrados para completar</h4><p>${pendingNames.length} nomes adicionais. Sem valores de referência nem interpretação até o preenchimento individual.</p></div><div id="ex-pending-list" class="ex-pending-grid"></div></section>
+       <div id="ex-rows" class="ex-card-grid"></div>
        ${patient?'<div class="ex-actions"><button class="ex-btn primary" id="ex-analyze" type="button">Interpretar resultados</button><button class="ex-btn" id="ex-save" type="button">Registrar coleta nesta sessão</button><button class="ex-btn danger" id="ex-clear" type="button">Limpar sessão</button></div>':""}
        <p class="ex-source-note">Faixas orientativas não são critérios de conduta. Exames dependentes do método aparecem sem intervalo genérico; a ausência de destaque não demonstra normalidade.</p>`;
      const rows=panel.querySelector("#ex-rows");
