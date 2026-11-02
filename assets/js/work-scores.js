@@ -2285,13 +2285,13 @@
     cssrs(f,s){
       f.innerHTML=
         '<div class="score-warning"><strong>Apuração de triagem ambulatorial:</strong> aplique primeiro o formulário C-SSRS Screener 2026 oficial, com seus períodos de referência. Transcreva as respostas abaixo. Não é avaliação autônoma de risco.</div>'+
-        selectField("Item 1 — ideação passiva de morte nas últimas 4 semanas","css1",yesno())+
-        selectField("Item 2 — ideação suicida ativa nas últimas 4 semanas","css2",yesno())+
-        selectField("Item 3 — pensamento sobre método nas últimas 4 semanas","css3",[
+        selectField("Item 1 — ideação passiva de morte no último mês","css1",yesno())+
+        selectField("Item 2 — ideação suicida ativa no último mês","css2",yesno())+
+        selectField("Item 3 — pensamento sobre método no último mês","css3",[
           opt("Não",0),opt("Sim",1),opt("Não perguntado (item 2 negativo)","na")])+
-        selectField("Item 4 — intenção de agir nas últimas 4 semanas","css4",[
+        selectField("Item 4 — intenção de agir no último mês","css4",[
           opt("Não",0),opt("Sim",1),opt("Não perguntado (item 2 negativo)","na")])+
-        selectField("Item 5 — plano com intenção nas últimas 4 semanas","css5",[
+        selectField("Item 5 — plano com intenção no último mês","css5",[
           opt("Não",0),opt("Sim",1),opt("Não perguntado (item 2 negativo)","na")])+
         selectField("Item 6 — comportamento preparatório ou tentativa alguma vez na vida","css6",yesno())+
         selectField("Se item 6 positivo: comportamento nos últimos 3 meses?","css6recent",[
