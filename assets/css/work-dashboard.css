@@ -54,7 +54,9 @@
     @media(max-width:1100px) {& .work-hub-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
     @media(max-width:600px) {
       & .work-hub-grid {grid-template-columns:1fr;gap:10px;}
-      & :is(.work-hub-patient,.work-hub-emergency) {flex-wrap:wrap;padding:1rem;gap:.75rem;}
+      & :is(.work-hub-diabetes-featured,.work-hub-patient,.work-hub-emergency) {flex-wrap:wrap;padding:1rem;gap:.75rem;}
+      & .work-hub-diabetes-copy {flex:1;}
+      & .work-hub-diabetes-action {margin-left:0;width:100%;}
       & .work-hub-patient-copy {flex:1;}
       & .work-hub-patient-action {width:100%;box-sizing:border-box;}
       & .work-hub-emergency-copy {flex:1;}
