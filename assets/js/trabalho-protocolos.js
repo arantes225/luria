@@ -79,6 +79,23 @@
     return matched;
   }
 
+    function standardizePosology(text) {
+    if (!text) return text;
+    return String(text)
+      .replace(/dividir\s+em\s+3\s+tomadas/gi, 'de 8 em 8 horas (8/8h)')
+      .replace(/dividid[oa]s?\s+em\s+3\s+tomadas/gi, 'de 8 em 8 horas (8/8h)')
+      .replace(/dividir\s+em\s+2[–-]3\s+tomadas/gi, 'fracionada de 8/8 horas (8/8h)')
+      .replace(/dividid[oa]s?\s+em\s+2[–-]3\s+tomadas/gi, 'fracionada de 8/8 horas (8/8h)')
+      .replace(/dividir\s+em\s+2\s+tomadas/gi, 'de 12 em 12 horas (12/12h)')
+      .replace(/dividid[oa]s?\s+em\s+2\s+tomadas/gi, 'de 12 em 12 horas (12/12h)')
+      .replace(/dividir\s+em\s+4\s+tomadas/gi, 'de 6 em 6 horas (6/6h)')
+      .replace(/dividid[oa]s?\s+em\s+4\s+tomadas/gi, 'de 6 em 6 horas (6/6h)')
+      .replace(/fracionad[oa]s?\s+em\s+3\s+tomadas/gi, 'de 8 em 8 horas (8/8h)')
+      .replace(/fracionad[oa]s?\s+em\s+4\s+tomadas/gi, 'de 6 em 6 horas (6/6h)')
+      .replace(/fracionad[oa]s?\s+em\s+2\s+tomadas/gi, 'de 12 em 12 horas (12/12h)')
+      .replace(/(\d+)\s+tomadas/gi, '$1 vezes ao dia com intervalos fixos');
+  }
+
   function formatRecipeCleanText(rec) {
     const data = rec.data || {};
     const routes = Array.isArray(data.routes) ? data.routes : [];
@@ -88,15 +105,44 @@
       (rt.items || []).forEach((it, i) => {
         const prefix = rt.mode === "alternatives" ? (i + 1) + "ª OPÇÃO) " : (i + 1) + ") ";
         lines.push(prefix + (it.drug || "Medicamento") + (it.quantity ? " — " + it.quantity : ""));
-        if (it.directions) lines.push("   " + it.directions);
+        if (it.directions) lines.push("   " + standardizePosology(it.directions));
       });
       lines.push("");
     });
     if (Array.isArray(data.orientations) && data.orientations.length) {
       lines.push("ORIENTAÇÕES:");
-      data.orientations.forEach(o => lines.push("- " + o));
+      data.orientations.forEach(o => lines.push("- " + standardizePosology(o)));
     }
     return lines.join("\n").trim();
+  }
+
+    function formatAllRecipesCleanText(recipes, protocolTitle) {
+    if (!Array.isArray(recipes) || !recipes.length) return '';
+    if (recipes.length === 1) return formatRecipeCleanText(recipes[0]);
+
+    const title = protocolTitle ? protocolTitle.toUpperCase() : 'RECEITUÁRIO COMPLETO';
+    const lines = [title, 'PRESCRIÇÃO COMPLETA E ORIENTAÇÕES', '========================================', ''];
+    recipes.forEach((rec, idx) => {
+      lines.push('--- ' + (idx + 1) + ') ' + rec.title.toUpperCase() + ' ---');
+      lines.push('');
+      const data = rec.data || {};
+      const routes = Array.isArray(data.routes) ? data.routes : [];
+      routes.forEach(rt => {
+        lines.push(String(rt.route || 'USO').toUpperCase() + ':');
+        (rt.items || []).forEach((it, i) => {
+          const prefix = rt.mode === 'alternatives' ? (i + 1) + 'ª OPÇÃO) ' : (i + 1) + ') ';
+          lines.push(prefix + (it.drug || 'Medicamento') + (it.quantity ? ' — ' + it.quantity : ''));
+          if (it.directions) lines.push('   ' + standardizePosology(it.directions));
+        });
+        lines.push('');
+      });
+      if (Array.isArray(data.orientations) && data.orientations.length) {
+        lines.push('ORIENTAÇÕES:');
+        data.orientations.forEach(o => lines.push('- ' + standardizePosology(o)));
+        lines.push('');
+      }
+    });
+    return lines.join('\n').trim();
   }
 
   function renderIntegratedRecipes(r, recipesBank, norm, esc) {

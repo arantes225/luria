@@ -182,10 +182,16 @@
     const products=Array.isArray(d.products)?d.products:[];
     const diseases=Array.isArray(d.diseases)?d.diseases:[];
     const keys=[row.active_ingredient,row.name].map(v=>String(v||"").toLocaleLowerCase("pt-BR"));
-    const relatedProtocols=protocols.filter(p=>Array.isArray(p.linked_drug_terms)&&p.linked_drug_terms.some(term=>{const t=String(term||"").toLocaleLowerCase("pt-BR");return keys.some(k=>k&&(k.includes(t)||t.includes(k)));}));
+    const localRecipeList = Array.isArray(window.TRAUBE_RECIPE_SEEDS) ? window.TRAUBE_RECIPE_SEEDS : [];
+    const relatedProtocols=protocols.filter(p=>Array.isArray(p.linked_drug_terms)&&p.linked_drug_terms.some(term=>{const t=normStr(term);return keys.some(k=>k&&(normStr(k).includes(t)||t.includes(normStr(k))));}));
+    const relatedRecipes=localRecipeList.filter(rec=>{
+      const rMeds = (rec.data?.routes||[]).flatMap(rt => (rt.items||[]).map(it => normStr(it.drug)));
+      return keys.some(k => k && rMeds.some(rm => rm.includes(normStr(k)) || normStr(k).includes(rm)));
+    });
     detail.innerHTML=`${mobileDetailBar(row)}<header class="rx-detail-head"><div class="drug-kicker">${ready?'Ficha de posologia por apresentação':summary?'Resumo da bula':'Ficha em revisão'}</div><h2>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</h2><p class="drug-sub">${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<strong>Nome comercial/referência:</strong> ${esc(row.name)} · `:''}${esc(d.therapeutic_class||row.pharmacological_class||'Classe a confirmar')}</p></header>
       <div class="rx-bridge-actions">
         ${relatedProtocols.map(p=>`<button type="button" data-open-protocol="${esc(p.slug)}">Abrir protocolo: ${esc(p.title)}</button>`).join("")}
+        ${relatedRecipes.map(r=>`<button type="button" class="secondary" data-open-recipe="${esc(r.slug)}">Abrir receita: ${esc(r.title)}</button>`).join("")}
         <button type="button" class="secondary" data-send-note="1">${window.TraubeClinicalBridge?.inPrescriptionFlow?.() ? "Adicionar à prescrição" : "Enviar à Cola Rápida"}</button>
       </div>
       <section class="rx-section"><div class="rx-section-head"><h3>Principais indicações</h3></div>${diseases.length?`<div class="rx-tags">${diseases.map(item=>`<span>${esc(item)}</span>`).join('')}</div>`:'<p class="rx-note">Indicações ainda não vinculadas nesta ficha.</p>'}</section>
@@ -251,6 +257,7 @@
       });
     });
     detail.querySelectorAll("[data-open-protocol]").forEach(btn=>btn.addEventListener("click",()=>window.TraubeClinicalBridge?.openProtocol(btn.dataset.openProtocol)));
+    detail.querySelectorAll("[data-open-recipe]").forEach(btn=>btn.addEventListener("click",()=>window.TraubeClinicalBridge?.openRecipe(btn.dataset.openRecipe)));
     detail.querySelector("[data-send-note=\"1\"]")?.addEventListener("click",(event)=>{
       const ok=window.TraubeClinicalBridge?.toQuickChart({type:"drug",title:row.active_ingredient||row.name,text:drugText(row),source:"Bulário TRAUBE"});
       if(window.TraubeClinicalBridge?.inPrescriptionFlow?.() && ok){
@@ -322,7 +329,7 @@
     if(window.supabaseClient){
       try{
         const [bRes,pRes]=await Promise.all([
-          window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data').order('name').limit(1000),
+          window.supabaseClient.from('bulario_drugs').select('id,name,active_ingredient,data').order('name').limit(5000),
           window.supabaseClient.from('clinical_protocols').select('slug,title,linked_drug_terms').order('title')
         ]);
         data=bRes?.data||[];error=bRes?.error||null;protocolRows=pRes?.data||[];
@@ -337,9 +344,10 @@
     const q=new URLSearchParams(location.search).get('q')?.trim();
     if(q){
       search.value=q;
-      const term=q.toLocaleLowerCase('pt-BR');
-      const hit=rows.find(row=>[row.name,row.active_ingredient].some(v=>String(v||'').toLocaleLowerCase('pt-BR')===term))
-        || rows.find(row=>[row.name,row.active_ingredient].some(v=>String(v||'').toLocaleLowerCase('pt-BR').includes(term)));
+      const term=normStr(q);
+      const hit=rows.find(row=>[row.name,row.active_ingredient].some(v=>normStr(v)===term))
+        || rows.find(row=>[row.name,row.active_ingredient].some(v=>normStr(v).includes(term) || term.includes(normStr(v))))
+        || rows.find(row=>[row.therapeutic_class,row.pharmacological_class,...(row.data?.diseases||[])].some(v=>normStr(v).includes(term)));
       selected=hit?.id||rows[0]?.id;
     }else selected=rows.find(row=>row.id===363)?.id||rows[0]?.id;
     renderList();renderDetail(rows.find(row=>String(row.id)===String(selected)));})();

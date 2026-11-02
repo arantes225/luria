@@ -325,8 +325,15 @@
       return;
     }
 
-    all = Array.isArray(data) ? data : [];
-    protocols = Array.isArray(protocolRows) ? protocolRows : [];
+    const localRecipeSeeds = Array.isArray(window.TRAUBE_RECIPE_SEEDS) ? window.TRAUBE_RECIPE_SEEDS : [];
+    const localProtoSeeds = Array.isArray(window.TRAUBE_PROTOCOL_SEEDS) ? window.TRAUBE_PROTOCOL_SEEDS : [];
+    const dbRecipes = Array.isArray(data) ? data : [];
+    const existingRecipeSlugs = new Set(dbRecipes.map((r) => r.slug).filter(Boolean));
+    all = [...dbRecipes, ...localRecipeSeeds.filter((s) => !existingRecipeSlugs.has(s.slug))];
+
+    const dbProtocols = Array.isArray(protocolRows) ? protocolRows : [];
+    const existingProtoSlugs = new Set(dbProtocols.map((p) => p.slug).filter(Boolean));
+    protocols = [...dbProtocols, ...localProtoSeeds.filter((p) => !existingProtoSlugs.has(p.slug))];
     const params = new URLSearchParams(location.search);
     const wanted = params.get("q")?.trim();
     if (wanted) {

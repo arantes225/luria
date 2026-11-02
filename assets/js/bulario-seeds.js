@@ -1,5 +1,4 @@
-(function () {
-  "use strict";
+(() => {
   window.TRAUBE_BULARIO_SEEDS = [
   {
     "id": "seed-drug-noradrenalina",
@@ -188,7 +187,11 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Usar se choque cardiogênico ou baixo débito materno; monitorar FC materna e fetal.",
-      "hepatic_adjustment": "Não requer ajuste de dose; metabolizada nos tecidos e fígado por COMT."
+      "hepatic_adjustment": "Não requer ajuste de dose; metabolizada nos tecidos e fígado por COMT.",
+      "antidote": [
+        "Interrupção ou redução imediata da infusão contínua (meia-vida ultracurta ~2 minutos).",
+        "Betabloqueadores IV de ação curta (ex.: Esmolol) podem ser considerados se arritmias ventriculares graves persistirem."
+      ]
     }
   },
   {
@@ -244,7 +247,15 @@
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Pode provocar contrações uterinas por ação nos receptores oxitócicos; usar se choque refratário.",
       "hepatic_adjustment": "Não requer ajuste na insuficiência hepática.",
-      "renal_adjustment": "Não requer ajuste de dose na disfunção renal."
+      "renal_adjustment": "Não requer ajuste de dose na disfunção renal.",
+      "antidote": [
+        "Interrupção imediata da infusão. Vasodilatadores periféricos diretos se houver isquemia coronariana ou mesentérica induzida."
+      ],
+      "drug_interactions": [
+        "Fármacos que induzem retenção hídrica ou SIADH (Carbamazepina, Clofibrato) potencializam o efeito antidiurético",
+        "Furosemida e diuréticos de alça antagonizam a retenção hídrica",
+        "Lítio e Demeclociclina bloqueiam a resposta renal à vasopressina"
+      ]
     }
   },
   {
@@ -305,7 +316,12 @@
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Evitar na gravidez pelo risco de toxicidade por cianeto fetal; usar apenas se falha de hidralazina/labetalol.",
       "hepatic_adjustment": "Usar com cautela extrema; clearance de cianeto reduzido na disfunção hepática.",
-      "renal_adjustment": "ClCr < 30 mL/min: risco de acúmulo de tiocianato se uso > 24–48h; monitorar níveis séricos e acidose."
+      "renal_adjustment": "ClCr < 30 mL/min: risco de acúmulo de tiocianato se uso > 24–48h; monitorar níveis séricos e acidose.",
+      "drug_interactions": [
+        "Inibidores da fosfodiesterase-5 (Sildenafila, Tadalafila) causam hipotensão refratária grave potencialmente fatal (associação estritamente contraindicada)",
+        "Anestésicos gerais, outros vasodilatadores e anti-hipertensivos potencializam efeito hipotensor",
+        "Dobutamina e agentes inotrópicos aumentam débito cardíaco com redução adicional da pós-carga"
+      ]
     }
   },
   {
@@ -364,7 +380,16 @@
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Segura em edema agudo de pulmão e SCA materna; monitorar PA para evitar hipoperfusão placentária.",
       "hepatic_adjustment": "Usar com cautela em cirrose grave.",
-      "renal_adjustment": "Não requer ajuste na insuficiência renal."
+      "renal_adjustment": "Não requer ajuste na insuficiência renal.",
+      "antidote": [
+        "Interrupção da infusão e elevação dos membros inferiores.",
+        "Expansão volêmica rápida com cristaloides para reverter a hipotensão por venodilatação excessiva."
+      ],
+      "drug_interactions": [
+        "Inibidores da PDE-5 (Sildenafila nas últimas 24h ou Tadalafila nas últimas 48h) causam colapso hemodinâmico e choque vasodilatador irreversível (contraindicação absoluta)",
+        "Heparina: infusões de nitroglicerina em doses elevadas podem diminuir o efeito anticoagulante da heparina (monitorar TTPa frequentemente)",
+        "Álcool e outros vasodilatadores potencializam hipotensão postural e cefaleia"
+      ]
     }
   },
   {
@@ -426,7 +451,11 @@
       "pregnancy_category": "Categoria D (Hipotireoidismo e bócio fetal)",
       "pregnancy_text": "Usar em PCR e arritmias ventriculares instáveis ameaçadoras à vida materna.",
       "hepatic_adjustment": "Metabolismo hepático extenso; monitorar transaminases e reduzir dose se elevação > 3x LSN.",
-      "renal_adjustment": "Não requer ajuste na insuficiência renal (excreção renal mínima)."
+      "renal_adjustment": "Não requer ajuste na insuficiência renal (excreção renal mínima).",
+      "antidote": [
+        "Não há antídoto específico. A amiodarona não é dialisável.",
+        "Em bradicardia grave/bloqueio AV: marca-passo temporário ou Isoproterenol. Em Torsades de Pointes: Sulfato de Magnésio 2 g IV."
+      ]
     }
   },
   {
@@ -482,7 +511,10 @@
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Droga de escolha para reversão de taquicardia supraventricular (TPSV) na gestação; meia-vida ultracurta (< 10s).",
       "hepatic_adjustment": "Não requer ajuste de dose (depuração celular enzimática nas hemácias).",
-      "renal_adjustment": "Não requer ajuste na insuficiência renal."
+      "renal_adjustment": "Não requer ajuste na insuficiência renal.",
+      "antidote": [
+        "Antagonista competitivo: Aminofilina / Teofilina. Devido à meia-vida da adenosina (< 10 segundos), os efeitos colaterais revertem espontaneamente de forma quase imediata."
+      ]
     }
   },
   {
@@ -538,7 +570,15 @@
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Usar em indução anestésica emergencial materna se hipotensão ou broncoespasmo grave.",
       "hepatic_adjustment": "Metabolizada pelo CYP hepático; reduzir dose em cirrose descompensada.",
-      "renal_adjustment": "Não requer ajuste na insuficiência renal."
+      "renal_adjustment": "Não requer ajuste na insuficiência renal.",
+      "antidote": [
+        "Não há antídoto específico. Benzodiazepínicos (Midazolam ou Diazepam) para controle de reações disfóricas de emergência e alucinações."
+      ],
+      "drug_interactions": [
+        "Depressores do SNC (benzodiazepínicos, opioides e álcool) prolongam a sedação e aumentam risco de hipoventilação",
+        "Teofilina ou aminofilina associadas aumentam o risco de convulsões epileptiformes",
+        "Bloqueadores neuromusculares: Cetamina pode prolongar a duração do bloqueio do rocurônio"
+      ]
     }
   },
   {
@@ -591,7 +631,15 @@
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Indutor de escolha em intubação de emergência materna com instabilidade hemodinâmica.",
       "hepatic_adjustment": "Usar com cautela em hepatopatias graves (meia-vida prolongada).",
-      "renal_adjustment": "Não requer ajuste de dose na disfunção renal."
+      "renal_adjustment": "Não requer ajuste de dose na disfunção renal.",
+      "antidote": [
+        "Não há antídoto específico. Suporte ventilatório e hidratação. Monitorar supressão adrenal transitória com reposição de hidrocortisona se choque séptico refratário."
+      ],
+      "drug_interactions": [
+        "Opioides e benzodiazepínicos diminuem a dose necessária de etomidato para perda de consciência",
+        "Cetamina associada na indução de sequência rápida mantém estabilidade hemodinâmica satisfatória",
+        "Evitar coadministração prolongada com sedativos que inibam a síntese de esteroides adrenais"
+      ]
     }
   },
   {
@@ -644,7 +692,12 @@
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Bloqueador neuromuscular de escolha na intubação de sequência rápida (SRI) se contraindicação à succinilcolina.",
       "hepatic_adjustment": "Eliminação biliar/hepática predominante; duração do bloqueio prolongada em cirróticos.",
-      "renal_adjustment": "Não requer ajuste de dose inicial; duração ligeiramente prolongada em insuficiência renal."
+      "renal_adjustment": "Não requer ajuste de dose inicial; duração ligeiramente prolongada em insuficiência renal.",
+      "drug_interactions": [
+        "Antibióticos aminoglicosídeos (Amicacina, Gentamicina), Clindamicina e Vancomicina potencializam e prolongam intensamente o bloqueio neuromuscular",
+        "Sulfato de Magnésio potencializa o bloqueio; monitorar rigorosamente reversão com Sugamadex",
+        "Anticonvulsivantes crônicos (Fenitoína, Carbamazepina) encurtam a duração do efeito do rocurônio por indução enzimática"
+      ]
     }
   },
   {
@@ -704,7 +757,12 @@
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Padrão clássico em SRI; contraindicado em grandes queimados, hipercalemia e trauma medular recente.",
       "hepatic_adjustment": "Hepatopatia grave reduz pseudocolinesterase plasmática, prolongando o bloqueio.",
-      "renal_adjustment": "CONTRAINDICADO em pacientes com hipercalemia prévia ou anúria por risco de elevação de K+ em 0,5–1,0 mEq/L."
+      "renal_adjustment": "CONTRAINDICADO em pacientes com hipercalemia prévia ou anúria por risco de elevação de K+ em 0,5–1,0 mEq/L.",
+      "drug_interactions": [
+        "Inibidores da colinesterase (Neostigmina, Piridostigmina, Organofosforados) prolongam dramaticamente a paralisia muscular por inibirem a pseudocolinesterase plasmática",
+        "Digoxina e digitálicos: a hipercalemia aguda transitória induzida pela succinilcolina pode deflagrar arritmias ventriculares fatais",
+        "Aminoglicosídeos e anestésicos inalatórios voláteis potencializam o bloqueio e aumentam o risco de Hipertermia Maligna"
+      ]
     }
   },
   {
@@ -763,7 +821,12 @@
       "pregnancy_category": "Categoria A/B (Padrão ouro obstétrico)",
       "pregnancy_text": "Droga de escolha mundial na prevenção e tratamento da pré-eclâmpsia grave e eclâmpsia.",
       "hepatic_adjustment": "Não requer ajuste na disfunção hepática.",
-      "renal_adjustment": "ClCr < 30 mL/min: reduzir dose de manutenção em 50% e monitorar reflexo patelar e magnesemia horária."
+      "renal_adjustment": "ClCr < 30 mL/min: reduzir dose de manutenção em 50% e monitorar reflexo patelar e magnesemia horária.",
+      "drug_interactions": [
+        "Bloqueadores dos canais de cálcio (Nifedipino IV/oral): sinergismo perigoso com risco de hipotensão severa e bloqueio neuromuscular agudo (cautela máxima na pré-eclâmpsia)",
+        "Bloqueadores neuromusculares curarizantes (Rocurônio, Pancurônio): o magnésio prolonga a paralisia motora",
+        "Depressores do SNC aumentam risco de depressão respiratória"
+      ]
     }
   },
   {
@@ -820,7 +883,10 @@
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Seguro e indicado na hipercalemia e intoxicação por sulfato de magnésio na gestante.",
       "hepatic_adjustment": "Não requer ajuste de dose.",
-      "renal_adjustment": "Não requer ajuste na insuficiência renal; monitorar cálcio iônico."
+      "renal_adjustment": "Não requer ajuste na insuficiência renal; monitorar cálcio iônico.",
+      "antidote": [
+        "Em caso de hipercalcemia iatrogênica aguda: hidratação salina vigorosa (SF 0,9%), Furosemida e calcitonina se necessário."
+      ]
     }
   },
   {
@@ -879,7 +945,12 @@
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Usar em TEP com choque e AVC isquêmico incapacitante materno quando benefício superar risco de sangramento.",
       "hepatic_adjustment": "Coagulopatia hepática grave e plaquetopenia < 100.000 são contraindicações formais ao trombolítico.",
-      "renal_adjustment": "Não requer ajuste na insuficiência renal."
+      "renal_adjustment": "Não requer ajuste na insuficiência renal.",
+      "drug_interactions": [
+        "Anticoagulantes orais (Varfarina com RNI > 1,7, DOACs nas últimas 48h) e Heparina aumentam exponencialmente o risco de hemorragia intracraniana (contraindicação relativa/absoluta)",
+        "Antiagregantes plaquetários (AAS, Clopidogrel, Ticagrelor) aumentam o risco de sangramento grave (não administrar antiagregantes nas primeiras 24 horas pós-trombólise no AVC)",
+        "Inibidores da ECA: aumento do risco de angioedema orofaríngeo durante a infusão do trombolítico"
+      ]
     }
   },
   {
@@ -928,7 +999,14 @@
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Indicação mandatória na intoxicação por opioides materna com hipoventilação/coma.",
       "hepatic_adjustment": "Metabolismo hepático extenso; titular alíquotas baixas.",
-      "renal_adjustment": "Não requer ajuste na insuficiência renal."
+      "renal_adjustment": "Não requer ajuste na insuficiência renal.",
+      "antidote": [
+        "Suporte sintomático. A naloxona tem margem de segurança extremamente ampla; seu excesso pode precipitar síndrome de abstinência aguda em dependentes de opioides."
+      ],
+      "drug_interactions": [
+        "Antagoniza competitivamente todos os opioides (Morfina, Fentanil, Metadona, Tramadol, Codeína), precipitando síndrome de abstinência aguda violenta em usuários crônicos",
+        "Não reverte a depressão ventilatória induzida por sedativos não opioides (como benzodiazepínicos ou barbitúricos)"
+      ]
     }
   },
   {
@@ -978,7 +1056,14 @@
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Antídoto padrão ouro na intoxicação por paracetamol na gestante (prefine morte fetal por hepatotoxicidade).",
       "hepatic_adjustment": "Não requer ajuste; hepatoprotetor fundamental.",
-      "renal_adjustment": "Não requer ajuste de dose."
+      "renal_adjustment": "Não requer ajuste de dose.",
+      "antidote": [
+        "Em caso de reação anafilactoide com rubor ou broncoespasmo durante infusão da NAC: interromper temporariamente a infusão, administrar anti-histamínico IV e reiniciar em taxa de infusão mais lenta."
+      ],
+      "drug_interactions": [
+        "Carvão ativado: adsorve a acetilcisteína oral no trato gastrointestinal (se necessário descontaminação, separar as administrações por pelo menos 1 a 2 horas)",
+        "Incompatível fisicamente com alguns antibióticos se misturados na mesma seringa/equipo (Penicilinas, Cefalosporinas, Tetraciclinas)"
+      ]
     }
   },
   {
@@ -1031,7 +1116,14 @@
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Usar com cautela em sedação induzida; contraindicado se uso crônico de benzodiazepínicos ou epilepsia.",
       "hepatic_adjustment": "Reduzir dose em insuficiência hepática grave devido à menor depuração.",
-      "renal_adjustment": "Não requer ajuste na insuficiência renal."
+      "renal_adjustment": "Não requer ajuste na insuficiência renal.",
+      "antidote": [
+        "Em caso de abstinência precipitada ou convulsão induzida por flumazenil: administrar anticonvulsivantes não benzodiazepínicos (Fenitoína, Levetiracetam ou Propofol)."
+      ],
+      "drug_interactions": [
+        "Antidepressivos tricíclicos (Amitriptilina, Nortriptilina): contraindicação absoluta! O uso de flumazenil em intoxicação mista com tricíclicos precipita convulsões incoercíveis e arritmias cardíacas fatais",
+        "Usuários crônicos de benzodiazepínicos e epilépticos: precipita estado de mal epiléptico refratário por desinibição abrupta dos receptores GABA-A"
+      ]
     }
   },
   {
@@ -1084,7 +1176,15 @@
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Seguro na indução anestésica em cesariana; evitar infusão prolongada pelo risco de síndrome de infusão do propofol.",
       "hepatic_adjustment": "Reduzir dose e titular lentamente em cirrose descompensada.",
-      "renal_adjustment": "Não requer ajuste na insuficiência renal."
+      "renal_adjustment": "Não requer ajuste na insuficiência renal.",
+      "antidote": [
+        "Não há antídoto farmacológico específico. Interrupção imediata da infusão e ventilação mecânica invasiva de suporte. Em Síndrome da Infusão do Propofol (PRIS): interrupção, suporte hemodinâmico e hemofiltração precoce."
+      ],
+      "drug_interactions": [
+        "Opioides (Fentanil, Remifentanil) produzem sinergismo sedativo profundo com acentuada hipotensão e bradicardia",
+        "Outros depressores do SNC potencializam a depressão miocárdica e ventilatória",
+        "Incompatível em Y com soluções ácidas e diversos medicamentos parenterais"
+      ]
     }
   },
   {
@@ -1141,7 +1241,12 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria D (Evitar no 1º trimestre se eletivo)",
       "pregnancy_text": "Uso de emergência permitido em crises convulsivas refratárias e intubação orotraqueal.",
-      "hepatic_adjustment": "Reduzir dose em 50% em insuficiência hepática avançada (meia-vida prolongada)."
+      "hepatic_adjustment": "Reduzir dose em 50% em insuficiência hepática avançada (meia-vida prolongada).",
+      "drug_interactions": [
+        "Inibidores potentes do CYP3A4 (Claritromicina, Cetoconazol, Fluconazol) aumentam drasticamente a concentração plasmática e o tempo de sedação do midazolam",
+        "Opioides e álcool potencializam depressão respiratória e hipotensão severa",
+        "Indutores do CYP3A4 (Rifampicina, Fenitoína) reduzem a eficácia sedativa"
+      ]
     }
   },
   {
@@ -1197,7 +1302,12 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Opioide de escolha em analgesia de parto e anestesia cirúrgica materna.",
-      "hepatic_adjustment": "Depuração hepática reduzida em cirrose; titular com cautela e monitorar sedação."
+      "hepatic_adjustment": "Depuração hepática reduzida em cirrose; titular com cautela e monitorar sedação.",
+      "drug_interactions": [
+        "Depressores do SNC (benzodiazepínicos, propofol, barbitúricos) aumentam o risco de depressão ventilatória grave e apneia",
+        "Inibidores fortes do CYP3A4 (Ritonavir, Cetoconazol, Voriconazol) reduzem o clearance do fentanil, elevando o risco de toxicidade opioide fatal",
+        "Inibidores da MAO: risco aumentado de síndrome serotoninérgica grave e colapso circulatório"
+      ]
     }
   },
   {
@@ -1255,7 +1365,12 @@
       "pregnancy_category": "Categoria B — Segura (1ª escolha na Gestação e Lactação)",
       "pregnancy_text": "Anticoagulante de escolha em gestantes (não atravessa a placenta e não causa teratogenicidade).",
       "reviewed_at": "2026-10-26",
-      "hepatic_adjustment": "Usar com cautela se coagulopatia associada."
+      "hepatic_adjustment": "Usar com cautela se coagulopatia associada.",
+      "drug_interactions": [
+        "Antiagregantes plaquetários (AAS, Clopidogrel, Prasugrel, Ticagrelor) aumentam expressivamente o risco de hemorragias maiores",
+        "AINEs (Cetoprofeno, Ibuprofeno, Diclofenaco) potencializam o risco de sangramento digestivo e lesão renal aguda",
+        "Outros anticoagulantes (Varfarina, DOACs, Fondaparinux, Heparina Não Fracionada): risco cumulativo hemorrágico"
+      ]
     }
   },
   {
@@ -1310,7 +1425,16 @@
       ],
       "pregnancy_category": "Categoria B — Segura na Gestação",
       "reviewed_at": "2026-10-26",
-      "hepatic_adjustment": "Não requer ajuste isolado; excreção biliar e renal equilibradas (ajustar apenas se falência hepatorrenal combinada)."
+      "hepatic_adjustment": "Não requer ajuste isolado; excreção biliar e renal equilibradas (ajustar apenas se falência hepatorrenal combinada).",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Soluções intravenosas contendo Cálcio (Ringer Lactato, Gluconato de Cálcio): CONTRAINDICAÇÃO ABSOLUTA em neonatos e não correr na mesma via venosa em adultos pelo risco de precipitação fatal de cristais de ceftriaxona-cálcio nos pulmões e rins",
+        "Anticoagulantes orais (Varfarina): a ceftriaxona pode potencializar o efeito anticoagulante por redução da flora intestinal produtora de vitamina K",
+        "Aminoglicosídeos: podem apresentar sinergismo antimicrobiano positivo, mas não misturar no mesmo frasco/equipo"
+      ]
     }
   },
   {
@@ -1367,7 +1491,11 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Seguro na gestação para infecções intra-abdominais e sepse hospitalar grave.",
-      "hepatic_adjustment": "Não requer ajuste de dose."
+      "hepatic_adjustment": "Não requer ajuste de dose.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -1423,7 +1551,11 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Carbapenêmico de escolha na gestação em infecções graves por Gram-negativos multirresistentes (ESBL).",
-      "hepatic_adjustment": "Não requer ajuste de dose."
+      "hepatic_adjustment": "Não requer ajuste de dose.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -1481,7 +1613,12 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Glicopeptídeo indicado em infecções graves maternas por MRSA comprovado.",
-      "hepatic_adjustment": "Não requer ajuste de dose."
+      "hepatic_adjustment": "Não requer ajuste de dose.",
+      "drug_interactions": [
+        "Outros fármacos nefrotóxicos ou ototóxicos (Aminoglicosídeos, Anfotericina B, Piperacilina-Tazobactam, Cisplatina, Furosemida em doses altas): elevam exponencialmente o risco de necrose tubular aguda e perda auditiva irreversível",
+        "Bloqueadores neuromusculares: pode potencializar o bloqueio neuromuscular",
+        "Contrastes radiológicos iodados aumentam a incidência de lesão renal induzida por vancomicina"
+      ]
     }
   },
   {
@@ -1536,7 +1673,17 @@
       ],
       "pregnancy_category": "Categoria B — Seguro na gestação (evitar apenas em ruptura prematura de membranas pré-termo pelo risco neonatal de enterocolite necrosante)",
       "reviewed_at": "2026-10-26",
-      "hepatic_adjustment": "Monitorar função hepática (ácido clavulânico pode induzir hepatite colestática idiossincrática rara)."
+      "hepatic_adjustment": "Monitorar função hepática (ácido clavulânico pode induzir hepatite colestática idiossincrática rara).",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Alopurinol: aumento significativo da incidência de erupções cutâneas e exantema medicamentoso",
+        "Anticoagulantes orais (Varfarina): potencialização do efeito anticoagulante e elevação do RNI",
+        "Metotrexato: penicilinas diminuem a excreção renal de metotrexato, elevando sua toxicidade hematológica",
+        "Anticoncepcionais orais: discreta redução da recirculação entero-hepática de estrogênio (recomendar método de barreira adicional)"
+      ]
     }
   },
   {
@@ -1590,7 +1737,16 @@
       ],
       "pregnancy_category": "Categoria B — Macrolídeo de escolha na gestação",
       "reviewed_at": "2026-10-26",
-      "hepatic_adjustment": "Usar com cautela em cirrose hepática grave (eliminação biliar predominante)."
+      "hepatic_adjustment": "Usar com cautela em cirrose hepática grave (eliminação biliar predominante).",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Medicamentos que prolongam o intervalo QT (Amiodarona, Sotalol, Hidroxicloroquina, Haloperidol, Quinolonas): risco aumentado de Torsades de Pointes e arritmias ventriculares graves",
+        "Digoxina e colchicina: a azitromicina inibe a glicoproteína-P, aumentando os níveis séricos e a toxicidade de digoxina",
+        "Antiácidos contendo magnésio ou alumínio reduzem a concentração sérica de pico da azitromicina (afastar as tomadas por 2 horas)"
+      ]
     }
   },
   {
@@ -1651,7 +1807,11 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C (Evitar no 1º trimestre se alternativa disponível)",
       "pregnancy_text": "Quinolonas associam-se a artropatia em modelos animais; reservar para pielonefrite ou sepse sem opção mais segura.",
-      "hepatic_adjustment": "Não requer ajuste de dose."
+      "hepatic_adjustment": "Não requer ajuste de dose.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -1711,7 +1871,11 @@
       ],
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
-      "pregnancy_text": "Seguro para tricomoníase e infecções anaeróbias na gestação; evitar uso no 1º trimestre em doses muito altas."
+      "pregnancy_text": "Seguro para tricomoníase e infecções anaeróbias na gestação; evitar uso no 1º trimestre em doses muito altas.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -1774,7 +1938,11 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Pode reduzir a perfusão uteroplacentária por hipovolemia; reservar para edema agudo de pulmão materno.",
-      "hepatic_adjustment": "Na cirrose com ascite, associar sempre à Espironolactona (proporção 40:100 mg) para evitar hipocalemia e encefalopatia."
+      "hepatic_adjustment": "Na cirrose com ascite, associar sempre à Espironolactona (proporção 40:100 mg) para evitar hipocalemia e encefalopatia.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -1834,7 +2002,13 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Betabloqueador seguro; monitorar crescimento intrauterino e bradicardia fetal/neonatal.",
-      "hepatic_adjustment": "Metabolismo hepático intenso via CYP2D6; titular doses baixas na insuficiência hepática."
+      "hepatic_adjustment": "Metabolismo hepático intenso via CYP2D6; titular doses baixas na insuficiência hepática.",
+      "drug_interactions": [
+        "Bloqueadores dos canais de cálcio não di-hidropiridínicos (Verapamil e Diltiazem): risco severo de bradicardia extrema, assistolia e bloqueio atrioventricular total",
+        "Antiarrítmicos classe I e III (Amiodarona, Propafenona): depressão aditiva da contratilidade e condução cardíaca",
+        "Inibidores fortes do CYP2D6 (Fluoxetina, Paroxetina, Bupropiona) quadruplicam os níveis plasmáticos de metoprolol",
+        "Insulina e antidiabéticos orais: mascaramento dos sintomas autonômicos de hipoglicemia (exceto sudorese profusa)"
+      ]
     }
   },
   {
@@ -1890,7 +2064,12 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Atravessa a placenta; monitorar toxicidade digitálica materna e fetal.",
-      "hepatic_adjustment": "Não requer ajuste de dose."
+      "hepatic_adjustment": "Não requer ajuste de dose.",
+      "drug_interactions": [
+        "Diuréticos de alça e tiazídicos depletores de potássio e magnésio (Furosemida, Hidroclorotiazida): a hipocalemia/hipomagnesemia precipita toxicidade digitálica severa e arritmias letais",
+        "Amiodarona, Verapamil, Diltiazem, Quinidina e Macrolídeos elevam significativamente os níveis plasmáticos de digitálicos",
+        "Cálcio intravenoso rápido em pacientes digitalizados pode desencadear parada cardíaca em sístole"
+      ]
     }
   },
   {
@@ -1946,7 +2125,16 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Antifibrinolítico padrão na Hemorragia Pós-Parto (HPP - World Maternal Antifibrinolytic Trial - WOMAN).",
-      "hepatic_adjustment": "Não requer ajuste de dose."
+      "hepatic_adjustment": "Não requer ajuste de dose.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Contraceptivos orais combinados, estrogênios e terapia hormonal elevam o risco de trombose venosa profunda e tromboembolismo pulmonar",
+        "Concentrado de complexo protrombínico ou fator VIIa recombinante associados ao tranexâmico aumentam risco de trombose microvascular",
+        "Não administrar na mesma via de soluções contendo penicilinas"
+      ]
     }
   },
   {
@@ -2005,7 +2193,11 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria D (Síndrome da hidantoína fetal)",
       "pregnancy_text": "Teratogênica; na gestante com convulsão em 2ª metade SEMPRE pensar em eclâmpsia e usar sulfato de magnésio primeiro.",
-      "hepatic_adjustment": "Metabolismo hepático saturável (cinética de Michaelis-Menten); titular com base em níveis séricos (10–20 mcg/mL)."
+      "hepatic_adjustment": "Metabolismo hepático saturável (cinética de Michaelis-Menten); titular com base em níveis séricos (10–20 mcg/mL).",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -2064,7 +2256,12 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria D",
       "pregnancy_text": "Evitar uso contínuo no 1º trimestre e próximo ao parto (risco de síndrome do bebê hipotônico e abstinência neonatal).",
-      "renal_adjustment": "Não requer ajuste na insuficiência renal."
+      "renal_adjustment": "Não requer ajuste na insuficiência renal.",
+      "drug_interactions": [
+        "Outros depressores do SNC, álcool e opioides potencializam acentuadamente sedação profunda, depressão respiratória, coma e óbito",
+        "Inibidores do CYP3A4 e CYP2C19 (Cimetidina, Omeprazol, Fluconazol) aumentam a meia-vida e os efeitos sedativos do diazepam",
+        "Rifampicina e Fenitoína induzem o metabolismo e reduzem a eficácia do diazepam"
+      ]
     }
   },
   {
@@ -2125,7 +2322,12 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Antipsicótico típico de escolha para delirium e agitação grave quando medidas não farmacológicas falham.",
-      "hepatic_adjustment": "Metabolismo hepático; reduzir dose em 50% na cirrose hepática."
+      "hepatic_adjustment": "Metabolismo hepático; reduzir dose em 50% na cirrose hepática.",
+      "drug_interactions": [
+        "Fármacos que prolongam o intervalo QT (Amiodarona, Azitromicina, Quinolonas, Clorpromazina): risco aumentado de arritmias ventriculares fatais (Torsades de Pointes)",
+        "Fármacos antiparkinsonianos dopaminérgicos (Levodopa, Pramipexol): o haloperidol antagoniza completamente o efeito dopaminérgico",
+        "Depressores do SNC e álcool aumentam sonolência e hipotensão ortostática"
+      ]
     }
   },
   {
@@ -2185,7 +2387,12 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Opioide padrão ouro para dor intensa; na gestante em trabalho de parto pode causar depressão respiratória neonatal reversível por naloxona.",
-      "hepatic_adjustment": "Reduzir dose e aumentar intervalo na cirrose pelo risco de precipitar encefalopatia hepática."
+      "hepatic_adjustment": "Reduzir dose e aumentar intervalo na cirrose pelo risco de precipitar encefalopatia hepática.",
+      "drug_interactions": [
+        "Depressores do SNC, álcool, benzodiazepínicos e gabapentinoides aumentam gravemente o risco de depressão respiratória fatal e hipotensão",
+        "Inibidores da MAO (Tranilcipromina, Moclobemida): contraindicação com morfina por risco de instabilidade autonômica e hiperpirexia",
+        "Anticolinérgicos associados aumentam intensamente o risco de constipação grave e retenção urinária aguda"
+      ]
     }
   },
   {
@@ -2242,7 +2449,16 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C (1º e 2º trimestres) / D (3º trimestre — fechamento de canal arterial)",
       "pregnancy_text": "Evitar no 3º trimestre da gravidez.",
-      "hepatic_adjustment": "Reduzir dose em cirrose descompensada grave."
+      "hepatic_adjustment": "Reduzir dose em cirrose descompensada grave.",
+      "antidote": [
+        "Não há antídoto específico. Suporte hemodinâmico com reposição volêmica se hipotensão; lavagem gástrica e carvão ativado nas primeiras 2 horas da ingestão maciça."
+      ],
+      "drug_interactions": [
+        "Ciclosporina: a dipirona pode reduzir a concentração sérica de ciclosporina (monitorar níveis séricos)",
+        "Metotrexato: coadministração pode aumentar a toxicidade hematológica do metotrexato",
+        "Álcool: potencialização mútua dos efeitos depressores e sedativos",
+        "Ácido Acetilsalicílico: a dipirona pode reduzir o efeito antiplaquetário do AAS em baixa dose se administrada previamente"
+      ]
     }
   },
   {
@@ -2295,7 +2511,16 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Amplamente utilizada em hiperêmese gravídica refratária; estudos recentes mostram segurança geral.",
-      "renal_adjustment": "Não requer ajuste de dose."
+      "renal_adjustment": "Não requer ajuste de dose.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Apomorfina: CONTRAINDICAÇÃO ABSOLUTA devido a relatos de hipotensão severa e síncope profunda",
+        "Fármacos prolongadores do intervalo QT (Amiodarona, Macrolídeos, Antipsicóticos, Antidepressivos): somatório de risco para Torsades de Pointes",
+        "Medicamentos serotoninérgicos (ISRS, IRSN, Tramadol): risco raro de Síndrome Serotoninérgica"
+      ]
     }
   },
   {
@@ -2351,7 +2576,11 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Inibidor de bomba de prótons mais testado e seguro em todos os trimestres da gestação.",
-      "renal_adjustment": "Não requer ajuste na insuficiência renal."
+      "renal_adjustment": "Não requer ajuste na insuficiência renal.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -2408,7 +2637,12 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B (Insulina de escolha na gestação)",
       "pregnancy_text": "Tratamento padrão ouro no diabetes gestacional e descompensações agudas maternas.",
-      "hepatic_adjustment": "Depuração hepática reduzida em cirrose; monitorar glicemia e risco aumentado de hipoglicemia."
+      "hepatic_adjustment": "Depuração hepática reduzida em cirrose; monitorar glicemia e risco aumentado de hipoglicemia.",
+      "drug_interactions": [
+        "Betabloqueadores: mascaram sintomas de hipoglicemia como taquicardia, palpitações e tremores (sudorese geralmente preservada)",
+        "Corticosteroides, hormônios tireoidianos e catecolaminas elevam a glicemia e aumentam a demanda de insulina",
+        "Inibidores da ECA e hipoglicemiantes orais potencializam a redução glicêmica"
+      ]
     }
   },
   {
@@ -2461,7 +2695,17 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Inativada pela enzima placentária 11-beta-HSD2, protegendo o feto; corticoide de escolha na crise adrenal materna.",
-      "hepatic_adjustment": "Metabolismo hepático; monitorar efeitos sistêmicos em hepatopatas graves."
+      "hepatic_adjustment": "Metabolismo hepático; monitorar efeitos sistêmicos em hepatopatas graves.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "AINEs (Cetoprofeno, Ibuprofeno, AAS) aumentam substancialmente o risco de úlcera péptica e sangramento gastrointestinal",
+        "Diuréticos espoliadores de potássio (Furosemida, Tiazídicos) potencializam a hipocalemia grave",
+        "Indutores enzimáticos (Fenitoína, Carbamazepina, Rifampicina) reduzem a eficácia do corticoide por aumento do clearance hepático",
+        "Antidiabéticos orais e insulina têm sua eficácia diminuída pela indução de resistência insulínica"
+      ]
     }
   },
   {
@@ -2517,7 +2761,17 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C (Atravessa a placenta)",
       "pregnancy_text": "Excelente para maturação pulmonar fetal (Betametasona ou Dexametasona 6 mg IM 12/12h por 4 doses entre 24–34 semanas).",
-      "hepatic_adjustment": "Não requer ajuste de dose."
+      "hepatic_adjustment": "Não requer ajuste de dose.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "AINEs potencializam risco de sangramento gastrointestinal e ulceração",
+        "Indutores hepáticos do CYP3A4 (Fenitoína, Fenobarbital, Rifampicina) reduzem a meia-vida e os níveis da dexametasona",
+        "Anticoagulantes orais: a dexametasona pode alterar a resposta anticoagulante (monitorar RNI)",
+        "Vacinas com vírus vivos atenuados são contraindicadas durante doses imunossupressoras de dexametasona"
+      ]
     }
   },
   {
@@ -2571,7 +2825,16 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Broncodilatador de curta ação de escolha na crise asmática em gestantes.",
-      "hepatic_adjustment": "Não requer ajuste na insuficiência hepática."
+      "hepatic_adjustment": "Não requer ajuste na insuficiência hepática.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Betabloqueadores não seletivos (Propranolol, Carvedilol, Timolol colírio): antagonizam os efeitos broncodilatadores do salbutamol e podem desencadear broncoespasmo grave",
+        "Diuréticos espoliadores de K+ e corticosteroides: aumentam o risco de hipocalemia grave",
+        "Agentes simpaticomiméticos adicionais aumentam risco de taquiarritmias e palpitações"
+      ]
     }
   },
   {
@@ -2622,7 +2885,15 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Anticolinérgico inalatório seguro como adjuvante na crise de asma e DPOC na gestação.",
-      "hepatic_adjustment": "Não requer ajuste de dose."
+      "hepatic_adjustment": "Não requer ajuste de dose.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Outros fármacos com atividade anticolinérgica (Anti-histamínicos de 1ª geração, Antidepressivos tricíclicos, Atropina) aumentam efeitos colaterais como boca seca, retenção urinária e constipação",
+        "Beta-2 agonistas (Salbutamol, Fenoterol): sinergismo terapêutico broncodilatador benéfico sem aumento de toxicidade"
+      ]
     }
   },
   {
@@ -2680,7 +2951,10 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Usar na gestante com SCA ou stent coronário recente quando indicado pelo cardiologista.",
-      "hepatic_adjustment": "Pró-droga que requer bioativação hepática pelo CYP2C19; usar com cautela em cirróticos."
+      "hepatic_adjustment": "Pró-droga que requer bioativação hepática pelo CYP2C19; usar com cautela em cirróticos.",
+      "antidote": [
+        "Transfusão de concentrado de plaquetas em caso de hemorragia com risco de vida não responsiva às medidas hemostáticas locais."
+      ]
     }
   },
   {
@@ -2799,7 +3073,12 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B/C (CONTRAINDICADA na gestação e lactação)",
       "pregnancy_text": "Usar Enoxaparina na gestante; DOACs não devem ser prescritos na gravidez.",
-      "hepatic_adjustment": "CONTRAINDICADA em cirrose Child-Pugh C."
+      "hepatic_adjustment": "CONTRAINDICADA em cirrose Child-Pugh C.",
+      "drug_interactions": [
+        "Inibidores duplos fortes do CYP3A4 e da glicoproteína-P (Cetoconazol, Itraconazol, Ritonavir) aumentam a concentração plasmática de apixabana e o risco hemorrágico (reduzir dose ou evitar)",
+        "Indutores duplos fortes (Rifampicina, Carbamazepina, Erva-de-são-joão) reduzem em 50% os níveis de apixabana, aumentando risco trombótico",
+        "AINEs, AAS e outros anticoagulantes potencializam riscos de sangramento maior"
+      ]
     }
   },
   {
@@ -2858,7 +3137,13 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C (Dose baixa 100–150 mg é Categoria B e indicada para prevenção de pré-eclâmpsia) / Categoria D (Dose alta no 3º trimestre)",
       "pregnancy_text": "Dose baixa (100 a 150 mg/dia iniciada entre 12–16 semanas) é formalmente recomendada para gestantes com alto risco de pré-eclâmpsia.",
-      "hepatic_adjustment": "Evitar em insuficiência hepática grave associada a coagulopatia e varizes esofágicas."
+      "hepatic_adjustment": "Evitar em insuficiência hepática grave associada a coagulopatia e varizes esofágicas.",
+      "drug_interactions": [
+        "Outros AINEs e corticosteroides elevam exponencialmente o risco de úlcera péptica e hemorragia digestiva",
+        "Anticoagulantes orais (Varfarina, DOACs) e heparinas potencializam o risco de hemorragias maiores",
+        "Metotrexato: o AAS reduz o clearance renal de metotrexato, aumentando gravemente a toxicidade medular",
+        "Inibidores da ECA: o AAS em doses anti-inflamatórias elevadas pode atenuar a resposta anti-hipertensiva"
+      ]
     }
   },
   {
@@ -2910,7 +3195,16 @@
       ],
       "pregnancy_category": "Segura e de 1ª escolha na emergência hipertensiva da gestação e puerpério",
       "reviewed_at": "2026-10-26",
-      "hepatic_adjustment": "Metabolismo hepático via acetilação; titular cuidadosamente."
+      "hepatic_adjustment": "Metabolismo hepático via acetilação; titular cuidadosamente.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Outros anti-hipertensivos, nitratos e diuréticos potencializam o efeito hipotensor",
+        "Betabloqueadores associados são benéficos pois previnem a taquicardia reflexa e o aumento do débito cardíaco induzidos pela hidralazina",
+        "AINEs podem diminuir a eficácia anti-hipertensiva por retenção hidrossalina"
+      ]
     }
   },
   {
@@ -2963,7 +3257,16 @@
       ],
       "pregnancy_category": "Fármaco de 1ª linha para crise hipertensiva na gestação e tocólise",
       "reviewed_at": "2026-10-26",
-      "hepatic_adjustment": "Reduzir dose em insuficiência hepática grave."
+      "hepatic_adjustment": "Reduzir dose em insuficiência hepática grave.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Betabloqueadores (Metoprolol, Propranolol): hipotensão excessiva e potencial agravamento de insuficiência cardíaca em disfunção ventricular",
+        "Inibidores do CYP3A4 (Claritromicina, Cetoconazol, Suco de Toranja/Grapefruit) aumentam significativamente os níveis séricos do nifedipino",
+        "Sulfato de Magnésio intravenoso: risco de hipotensão severa e colapso circulatório na pré-eclâmpsia"
+      ]
     }
   },
   {
@@ -3015,7 +3318,16 @@
       ],
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C (Antiepiléptico de menor risco teratogênico na gestação)",
-      "pregnancy_text": "Perfil de segurança superior em relação a ácido valproico e carbamazepina; monitorar níveis séricos no 3º trimestre."
+      "pregnancy_text": "Perfil de segurança superior em relação a ácido valproico e carbamazepina; monitorar níveis séricos no 3º trimestre.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Pouquíssimas interações farmacocinéticas relevantes conhecidas; não é metabolizado pelo citocromo P450 e não induz enzimas hepáticas",
+        "Depressores do SNC e sedativos podem potencializar fadiga, tontura e sonolência",
+        "Metotrexato: relatos raros de aumento nos níveis de metotrexato com uso concomitante"
+      ]
     }
   },
   {
@@ -3071,7 +3383,17 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Evitar na gravidez pelo risco de lesão em cartilagens de crescimento fetal; preferir betalactâmicos.",
-      "hepatic_adjustment": "Não requer ajuste na disfunção hepática."
+      "hepatic_adjustment": "Não requer ajuste na disfunção hepática.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Cátions polivalentes (Antiácidos com Alumínio/Magnésio, Sulfato Ferroso, Zinco, Cálcio, Sucralfato) quelam o levofloxacino e reduzem drasticamente sua absorção (separar tomadas por 2 horas)",
+        "Fármacos prolongadores do intervalo QT (Amiodarona, Sotalol, Antipsicóticos) aumentam o risco de arritmias ventriculares",
+        "Corticosteroides sistêmicos associados aumentam dramaticamente o risco de tendinite e rotura de tendão (especialmente tendão calcâneo)",
+        "AINEs associados a quinolonas podem aumentar o risco de estimulação do SNC e convulsões"
+      ]
     }
   },
   {
@@ -3125,7 +3447,16 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Penicilina isoxazolil segura na gestação; droga de escolha para mastite puerperal e estafilococcias maternas.",
-      "hepatic_adjustment": "Pode causar hepatite colestática reversível; monitorar enzimas em uso prolongado."
+      "hepatic_adjustment": "Pode causar hepatite colestática reversível; monitorar enzimas em uso prolongado.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Probenecida: bloqueia a secreção tubular renal de oxacilina, aumentando e prolongando seus níveis séricos",
+        "Metotrexato: a oxacilina pode diminuir a depuração renal de metotrexato, elevando a toxicidade hematológica",
+        "Aminoglicosídeos: sinergismo bactericida benéfico contra estafilococos, mas incompatíveis se misturados na mesma bolsa de infusão"
+      ]
     }
   },
   {
@@ -3177,7 +3508,16 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Segura na gestação em infecções graves por Pseudomonas ou neutropenia febril.",
-      "hepatic_adjustment": "Não requer ajuste de dose."
+      "hepatic_adjustment": "Não requer ajuste de dose.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Aminoglicosídeos e diuréticos de alça (Furosemida em doses altas) aumentam o risco de nefrotoxicidade e ototoxicidade",
+        "Probenecida reduz a excreção renal e eleva os níveis séricos de cefepima",
+        "Monitorar rigorosamente níveis em idosos e doentes renais crônicos para prevenir neurotoxicidade e encefalopatia por cefepima"
+      ]
     }
   },
   {
@@ -3230,7 +3570,16 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Lincosamida segura em todos os trimestres da gestação; excelente para vaginose bacteriana e infecções anaeróbias/cutâneas.",
-      "hepatic_adjustment": "Metabolismo hepático intenso; monitorar níveis e função hepática em cirróticos graves."
+      "hepatic_adjustment": "Metabolismo hepático intenso; monitorar níveis e função hepática em cirróticos graves.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Bloqueadores neuromusculares (Rocurônio, Vecurônio, Succinilcolina): a clindamicina tem propriedades de bloqueio neuromuscular intrínsecas e potencializa a paralisia muscular respiratória",
+        "Macrolídeos (Eritromicina, Azitromicina) e Cloranfenicol: antagonismo competitivo mútuo pelo sítio de ligação no ribossomo 50S bacteriano (não associar)",
+        "Inibidores ou indutores fortes do CYP3A4 alteram os níveis séricos da clindamicina"
+      ]
     }
   },
   {
@@ -3286,7 +3635,16 @@
       "reviewed_at": "2026-10-26",
       "pregnancy_category": "Categoria B (Até 36 semanas)",
       "pregnancy_text": "Segura nos dois primeiros trimestres da gestação; contraindicada nas últimas semanas de gravidez e no parto pelo risco de anemia hemolítica neonatal por imaturidade de enzimas eritrocitárias.",
-      "hepatic_adjustment": "Contraindicada em insuficiência hepática grave ou história prévia de hepatotoxicidade por nitrofurantoína."
+      "hepatic_adjustment": "Contraindicada em insuficiência hepática grave ou história prévia de hepatotoxicidade por nitrofurantoína.",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ],
+      "drug_interactions": [
+        "Antiácidos contendo trissilicato de magnésio reduzem a taxa e a extensão da absorção da nitrofurantoína",
+        "Probenecida e Sulfimpirazona inibem a secreção tubular renal de nitrofurantoína, diminuindo a eficácia antibacteriana na urina e aumentando o risco de toxicidade sistêmica",
+        "Quinolonas (Ciprofloxacino, Levofloxacino): antagonismo in vitro documentado; evitar terapia combinada"
+      ]
     }
   },
   {
@@ -3449,7 +3807,10 @@
       ],
       "pregnancy_category": "Categoria C (1º e 2º trimestres) / Categoria D (3º trimestre — risco de fechamento prematuro do canal arterial e oligoâmnio)",
       "pregnancy_text": "CONTRAINDICADO no 3º trimestre da gravidez.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto específico. Carvão ativado se precoce (< 2h), hidratação venosa e inibidores da bomba de prótons para proteção da mucosa gástrica."
+      ]
     }
   },
   {
@@ -3524,7 +3885,10 @@
       ],
       "pregnancy_category": "Categoria D (3º trimestre)",
       "pregnancy_text": "Contraindicado no terceiro trimestre da gravidez.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto específico. Carvão ativado, expansão hidroeletrolítica e proteção gástrica com omeprazol."
+      ]
     }
   },
   {
@@ -3749,7 +4113,11 @@
       ],
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Usar apenas se benefício superar riscos; evitar no final da gestação.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -3811,7 +4179,11 @@
       ],
       "pregnancy_category": "Categoria D/X (Teratogênico grave)",
       "pregnancy_text": "ABSOLUTAMENTE CONTRAINDICADO na gestação.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -3870,7 +4242,11 @@
       ],
       "pregnancy_category": "Categoria D (Teratogênico)",
       "pregnancy_text": "CONTRAINDICADO formalmente durante toda a gestação.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -3931,7 +4307,10 @@
       ],
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Pode ser utilizado na gestação como droga de segunda linha quando Metildopa ou Hidralazina forem insuficientes.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Antídotos para bloqueadores dos canais de cálcio: Gluconato de Cálcio a 10% IV, Glucagon, HIET (Insulina em altas doses com reposição de glicose) e emulsão lipídica."
+      ]
     }
   },
   {
@@ -3990,7 +4369,11 @@
       ],
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Segura na gestação; em diabetes gestacional a insulina é o tratamento padrão ouro, mas a metformina pode ser mantida ou utilizada em cenários selecionados.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -4067,7 +4450,11 @@
       ],
       "pregnancy_category": "Categoria B (Antimicrobiano de escolha na gestação)",
       "pregnancy_text": "Segura e amplamente indicada na gestação e lactação.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -4142,7 +4529,11 @@
       ],
       "pregnancy_category": "Categoria B (Antimicrobiano seguro na gestação)",
       "pregnancy_text": "Droga de escolha para cistite, bacteriúria assintomática e infecções de pele na gestante e lactante.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -4198,7 +4589,11 @@
       ],
       "pregnancy_category": "Categoria B",
       "pregnancy_text": "Segura na gestação; padrão de profilaxia cirúrgica em cesarianas na indução anestésica.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -4261,7 +4656,11 @@
       ],
       "pregnancy_category": "Categoria D (Antagonista do folato)",
       "pregnancy_text": "CONTRAINDICADO no 1º trimestre (risco de defeitos do tubo neural) e no termo/lactação (risco de kernicterus por deslocamento da bilirrubina da albumina).",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -4341,7 +4740,11 @@
       ],
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Pode ser utilizado na gestação quando indicado; metabolizado em 90% pela placenta pela enzima 11-beta-HSD2, protegendo o feto.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -4398,7 +4801,10 @@
       ],
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Usar imediatamente em emergências bradicárdicas maternas.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Antídoto específico da síndrome anticolinérgica grave (delírio, hipertermia, arritmias): Salicilato de Fisostigmina 1 a 2 mg IV lento (ter atropina à beira do leito)."
+      ]
     }
   },
   {
@@ -4455,7 +4861,10 @@
       ],
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Uso hospitalar monitorizado seguro para correção de distúrbio eletrolítico materno.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Em hipercalemia aguda iatrogênica: Gluconato de Cálcio 10% IV (estabilização de membrana), Insulina regular + Glicose 50% (shift celular), beta-2 agonistas e resinas de troca / diálise."
+      ]
     }
   },
   {
@@ -4513,7 +4922,11 @@
       ],
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Indicação mandatória na hipoglicemia materna sintomática.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, suporte clínico das vias aéreas e hemodinâmica, hidratação e medidas de eliminação gástrica precoce (carvão ativado) se indicada."
+      ]
     }
   },
   {
@@ -4571,7 +4984,651 @@
       ],
       "pregnancy_category": "Categoria C",
       "pregnancy_text": "Uso hospitalar de emergência para correção de acidose crítica materna.",
-      "reviewed_at": "2026-10-30"
+      "reviewed_at": "2026-10-30",
+      "antidote": [
+        "Em alcalose metabólica ou sobrecarga hiperosmolar: suspender a infusão, repor cloreto com SF 0,9% e corrigir hipocalemia concomitante."
+      ]
+    }
+  },
+  {
+    "id": 1001,
+    "name": "Axetilcefuroxima (Zinnat)",
+    "active_ingredient": "Axetilcefuroxima",
+    "therapeutic_class": "Antibacteriano sistêmico",
+    "pharmacological_class": "Cefalosporina de 2ª geração",
+    "data": {
+      "status": "posology_verified",
+      "diseases": [
+        "Rinossinusite bacteriana aguda",
+        "Faringite estreptocócica",
+        "Exacerbação de DPOC",
+        "ITU não complicada"
+      ],
+      "contraindications": [
+        "Hipersensibilidade prévia a cefalosporinas ou reação anafilática grave a penicilinas."
+      ],
+      "pregnancy_category": "Categoria B (Geralmente segura na gestação)",
+      "renal_adjustment": "ClCr > 30 mL/min: dose plena. ClCr 10–29 mL/min: intervalo a cada 24 horas. ClCr < 10 mL/min: a cada 48 horas.",
+      "hepatic_adjustment": "Sem necessidade de ajuste de dose.",
+      "drug_interactions": [
+        {
+          "drug": "Antiácidos e bloqueadores H2",
+          "effect": "Redução da absorção e biodisponibilidade do axetilcefuroxima; administrar com pelo menos 2 horas de intervalo."
+        },
+        {
+          "drug": "Probenecida",
+          "effect": "Aumento da concentração sérica e prolongamento da meia-vida da cefuroxima."
+        }
+      ],
+      "formulations": [
+        {
+          "presentation": "Comprimido revestido 500 mg",
+          "dose_text": "500 mg",
+          "interval_text": "12/12 horas",
+          "route": "Via oral",
+          "duration_text": "7 a 14 dias",
+          "max_daily_text": "1000 mg/dia",
+          "administration": "Administrar logo após uma refeição para otimizar a absorção gastrointestinal.",
+          "cautions": "Avaliar histórico de alergia cruzada a beta-lactâmicos. Risco de diarreia associada a Clostridioides difficile.",
+          "prescription_type": "Receita de Controle Especial (Branca, 2 vias - RDC 20/2011)"
+        }
+      ],
+      "products": [
+        {
+          "name": "Zinnat",
+          "type": "Referência",
+          "presentation": "Comprimidos 250 mg e 500 mg; suspensão oral 250 mg/5 mL"
+        },
+        {
+          "name": "Axetilcefuroxima",
+          "type": "Genérico",
+          "presentation": "Comprimidos 500 mg (diversos fabricantes)"
+        }
+      ],
+      "adverse_reactions": [
+        "Gastrointestinais: náuseas, diarreia, dor abdominal e vômitos.",
+        "Reações de hipersensibilidade: erupção cutânea, prurido, urticária.",
+        "Hematológicas: eosinofilia transitória e aumento leve das transaminases hepáticas."
+      ],
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: interrupção imediata da administração, lavagem gástrica se ingestão recente, hidratação e medidas de suporte sintomático. A cefuroxima pode ser removida por hemodiálise."
+      ]
+    }
+  },
+  {
+    "id": 1002,
+    "name": "Doxiciclina (Vibramicina)",
+    "active_ingredient": "Hiclato de Doxiciclina",
+    "therapeutic_class": "Antibacteriano sistêmico",
+    "pharmacological_class": "Tetraciclina",
+    "data": {
+      "status": "posology_verified",
+      "diseases": [
+        "Febre maculosa",
+        "Pneumonia atípica",
+        "Clamídia genital",
+        "Doença de Lyme",
+        "Leptospirose"
+      ],
+      "contraindications": [
+        "Hipersensibilidade a tetraciclinas, gestação (2º/3º trimestres) e crianças < 8 anos (exceto na suspeita de febre maculosa por risco iminente de morte)."
+      ],
+      "pregnancy_category": "Categoria D (Risco de pigmentação dentária definitiva e hipoplasia de esmalte no feto)",
+      "renal_adjustment": "Sem necessidade de ajuste posológico na insuficiência renal (eliminação fecal e metabólica predominante).",
+      "hepatic_adjustment": "Usar com cautela em disfunção hepática grave por metabolização hepática parcial.",
+      "drug_interactions": [
+        {
+          "drug": "Antiácidos, ferro, cálcio, magnésio",
+          "effect": "Quelam a doxiciclina no trato gastrointestinal, reduzindo drasticamente sua absorção; espaçar no mínimo 2 a 3 horas."
+        },
+        {
+          "drug": "Varfarina",
+          "effect": "Potencialização do efeito anticoagulante por redução da síntese de vitamina K pela flora bacteriana intestinal."
+        }
+      ],
+      "formulations": [
+        {
+          "presentation": "Comprimido ou cápsula 100 mg",
+          "dose_text": "100 mg (dose de ataque de 200 mg no 1º dia na infecção grave)",
+          "interval_text": "12/12 horas",
+          "route": "Via oral",
+          "duration_text": "Pelo menos 7 dias e mantida por 3 dias após o desaparecimento da febre (febre maculosa).",
+          "max_daily_text": "200 mg/dia",
+          "administration": "Tomar sempre com um copo cheio de água (200 mL) e permanecer em pé ou sentado por pelo menos 30 minutos após a ingestão para evitar esofagite erosiva.",
+          "cautions": "Fotossensibilidade cutânea intensa (orientar protetor solar). Não deitar imediatamente após ingerir.",
+          "prescription_type": "Receita de Controle Especial (Branca, 2 vias - RDC 20/2011)"
+        }
+      ],
+      "products": [
+        {
+          "name": "Vibramicina",
+          "type": "Referência",
+          "presentation": "Comprimidos solúveis 100 mg"
+        },
+        {
+          "name": "Doxiciclina / Cloridrato de Doxiciclina",
+          "type": "Genérico",
+          "presentation": "Comprimidos e cápsulas 100 mg"
+        }
+      ],
+      "adverse_reactions": [
+        "Gastrointestinais: esofagite erosiva, dor epigástrica, náuseas e vômitos.",
+        "Dermatológicas: fotossensibilidade com eritema cutâneo grave à exposição solar.",
+        "Disbiose: candidíase vaginal ou oral e colite associada a antibióticos."
+      ],
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: suspender a medicação, administrar antiácidos contendo cálcio ou magnésio (ou leite) para quelação gástrica imediata da doxiciclina ainda não absorvida. A hemodiálise não altera a depuração sérica."
+      ]
+    }
+  },
+  {
+    "id": 1003,
+    "name": "Loratadina (Claritin)",
+    "active_ingredient": "Loratadina",
+    "therapeutic_class": "Antialérgico sistêmico",
+    "pharmacological_class": "Anti-histamínico H1 de 2ª geração (não sedativo)",
+    "data": {
+      "status": "posology_verified",
+      "diseases": [
+        "Rinite alérgica",
+        "Urticária crônica espontânea",
+        "Conjuntivite alérgica",
+        "Prurido cutâneo alérgico"
+      ],
+      "contraindications": [
+        "Hipersensibilidade à loratadina ou à desloratadina."
+      ],
+      "pregnancy_category": "Categoria B (Uso seguro quando claramente necessário)",
+      "renal_adjustment": "ClCr < 30 mL/min: administrar 10 mg em dias alternados.",
+      "hepatic_adjustment": "Insuficiência hepática grave: iniciar com 10 mg em dias alternados.",
+      "drug_interactions": [
+        {
+          "drug": "Cetoconazol, Eritromicina, Cimetidina",
+          "effect": "Inibidores enzimáticos que aumentam a concentração plasmática da loratadina sem repercussão clínica grave."
+        }
+      ],
+      "formulations": [
+        {
+          "presentation": "Comprimido 10 mg",
+          "dose_text": "10 mg",
+          "interval_text": "24/24 horas (1 vez ao dia)",
+          "route": "Via oral",
+          "duration_text": "Uso por período curto a moderado conforme sintomas alérgicos",
+          "max_daily_text": "10 mg/dia",
+          "administration": "Pode ser administrado com ou sem alimentos, preferencialmente pela manhã.",
+          "cautions": "Muito baixo potencial sedativo, mas cautela individual ao operar máquinas pesadas.",
+          "prescription_type": "Medicamento Isento de Prescrição (MIP)"
+        }
+      ],
+      "products": [
+        {
+          "name": "Claritin",
+          "type": "Referência",
+          "presentation": "Comprimidos 10 mg; xarope 1 mg/mL"
+        },
+        {
+          "name": "Loratadina",
+          "type": "Genérico",
+          "presentation": "Comprimidos 10 mg; xarope 1 mg/mL (vários laboratórios)"
+        }
+      ],
+      "adverse_reactions": [
+        "Sistema nervoso: cefaleia, sonolência leve ou fadiga (em menos de 2% dos pacientes).",
+        "Gastrointestinais: xerostomia (boca seca), desconforto gástrico e náusea leve."
+      ],
+      "antidote": [
+        "Não há antídoto específico.",
+        "Manejo da superdosagem: lavagem gástrica precoce, carvão ativado, monitoramento de sinais vitais e suporte cardiovascular. A hemodiálise não remove a loratadina de forma relevante."
+      ]
+    }
+  },
+  {
+    "id": 1004,
+    "name": "Succinato de Sumatriptano (Imigran)",
+    "active_ingredient": "Succinato de Sumatriptano",
+    "therapeutic_class": "Antienxaquecoso específico",
+    "pharmacological_class": "Agonista seletivo dos receptores 5-HT1B/1D (Triptano)",
+    "data": {
+      "status": "posology_verified",
+      "diseases": [
+        "Crise aguda de migrânea (enxaqueca) com ou sem aura",
+        "Cefaleia em salvas"
+      ],
+      "contraindications": [
+        "Doença arterial coronariana, angina, infarto prévio, hipertensão arterial não controlada, AVC/AIT prévio, doença vascular periférica."
+      ],
+      "pregnancy_category": "Categoria C (Usar apenas se o benefício justificar o risco fetal)",
+      "renal_adjustment": "Sem necessidade de ajuste posológico em disfunção renal.",
+      "hepatic_adjustment": "Insuficiência hepática moderada a grave: dose máxima por tomada de 50 mg.",
+      "drug_interactions": [
+        {
+          "drug": "Ergotamina e derivados ergolínicos",
+          "effect": "Risco de vasoespasmo coronariano prolongado; aguardar intervalo de pelo menos 24 horas entre o uso."
+        },
+        {
+          "drug": "ISRS e IRSN",
+          "effect": "Risco de síndrome serotoninérgica (monitorar clonus, hipertermia e agitação)."
+        }
+      ],
+      "formulations": [
+        {
+          "presentation": "Comprimido revestido 50 mg",
+          "dose_text": "50 mg (podendo ser 100 mg se não houver resposta suficiente)",
+          "interval_text": "Se houver resposta inicial e a dor retornar, repetir após no mínimo 2 horas",
+          "route": "Via oral",
+          "duration_text": "Apenas durante a crise álgica",
+          "max_daily_text": "200 mg em 24 horas",
+          "administration": "Administrar o mais precocemente possível logo no início da fase de dor da enxaqueca com água.",
+          "cautions": "Não utilizar na fase de aura antes da dor de cabeça se manifestar. Sensação de opressão torácica atípica transitória pode ocorrer.",
+          "prescription_type": "Receita Simples"
+        }
+      ],
+      "products": [
+        {
+          "name": "Imigran",
+          "type": "Referência",
+          "presentation": "Comprimidos 50 mg e 100 mg; spray nasal 20 mg/dose"
+        },
+        {
+          "name": "Sumax",
+          "type": "Similar",
+          "presentation": "Comprimidos 50 mg e 100 mg"
+        },
+        {
+          "name": "Succinato de Sumatriptano",
+          "type": "Genérico",
+          "presentation": "Comprimidos 50 mg e 100 mg"
+        }
+      ],
+      "adverse_reactions": [
+        "Sensações atípicas de aperto/opressão no peito, mandíbula ou pescoço (geralmente não isquêmicas, mas requerem atenção).",
+        "Parestesias, sensação de calor ou rubor facial e fadiga pós-crise.",
+        "Cardiovasculares: hipertensão transitória e, raramente, espasmo coronariano."
+      ],
+      "antidote": [
+        "Não há antídoto específico.",
+        "Manejo da superdosagem: suspensão do fármaco, monitorização eletrocardiográfica contínua por pelo menos 10 a 12 horas. Em caso de vasoespasmo coronariano, instituir nitratos ou bloqueadores dos canais de cálcio."
+      ]
+    }
+  },
+  {
+    "id": 1005,
+    "name": "Aciclovir (Zovirax)",
+    "active_ingredient": "Aciclovir",
+    "therapeutic_class": "Antiviral sistêmico",
+    "pharmacological_class": "Análogo de nucleosídeo inibidor da DNA-polimerase viral",
+    "data": {
+      "status": "posology_verified",
+      "diseases": [
+        "Herpes simples genital primário e recidivante",
+        "Herpes zoster",
+        "Gengivoestomatite herpética",
+        "Varicela em adultos/imunossuprimidos"
+      ],
+      "contraindications": [
+        "Hipersensibilidade ao aciclovir ou ao valaciclovir."
+      ],
+      "pregnancy_category": "Categoria B (Extenso registro de segurança clínica em gestantes com herpes genital)",
+      "renal_adjustment": "ClCr 10–25 mL/min: administrar a cada 12 horas. ClCr < 10 mL/min: administrar a cada 24 horas.",
+      "hepatic_adjustment": "Sem necessidade de ajuste de dose.",
+      "drug_interactions": [
+        {
+          "drug": "Fármacos nefrotóxicos (AINEs, aminoglicosídeos)",
+          "effect": "Aumento do risco de nefrotoxicidade e cristalúria tubular."
+        },
+        {
+          "drug": "Probenecida",
+          "effect": "Aumento da meia-vida plasmática e redução da depuração renal do aciclovir."
+        }
+      ],
+      "formulations": [
+        {
+          "presentation": "Comprimido 200 mg / 400 mg",
+          "dose_text": "400 mg (2 comprimidos de 200 mg ou 1 de 400 mg)",
+          "interval_text": "8/8 horas (ou 200 mg de 4/4 horas durante o dia)",
+          "route": "Via oral",
+          "duration_text": "7 a 10 dias no primeiro episódio; 5 dias na recorrência",
+          "max_daily_text": "1200 mg/dia no herpes genital; até 4000 mg/dia no zoster (800 mg de 4/4h)",
+          "administration": "Ingerir com bastante líquido para manter boa diurese e prevenir cristalúria tubular renal.",
+          "cautions": "Manter hidratação vigorosa durante todo o tratamento. Iniciar o mais cedo possível diante das primeiras lesões.",
+          "prescription_type": "Receita de Controle Especial (Branca, 2 vias)"
+        }
+      ],
+      "products": [
+        {
+          "name": "Zovirax",
+          "type": "Referência",
+          "presentation": "Comprimidos 200 mg; pó para solução injetável 250 mg; creme 5%"
+        },
+        {
+          "name": "Aciclovir",
+          "type": "Genérico",
+          "presentation": "Comprimidos 200 mg e 400 mg; creme dermatológico 5%"
+        }
+      ],
+      "adverse_reactions": [
+        "Renais: insuficiência renal aguda por cristalúria tubular intratubular (especialmente com infusão rápida ou hipovolemia).",
+        "Neurológicas: cefaleia, tontura, tremores, confusão mental e alucinações (mais comuns em idosos com insuficiência renal).",
+        "Gastrointestinais: náuseas, vômitos e diarreia transitória."
+      ],
+      "antidote": [
+        "Não há antídoto farmacológico específico.",
+        "Manejo da superdosagem: hidratação intravenosa vigorosa para manter alto fluxo urinário e evitar a precipitação de cristais de aciclovir nos túbulos renais. A hemodiálise remove eficazmente o aciclovir e deve ser considerada se houver nefrotoxicidade ou neurotoxicidade aguda."
+      ]
+    }
+  },
+  {
+    "id": 1006,
+    "name": "Oseltamivir (Tamiflu)",
+    "active_ingredient": "Fosfato de Oseltamivir",
+    "therapeutic_class": "Antiviral sistêmico anti-influenza",
+    "pharmacological_class": "Inibidor seletivo da neuraminidase viral (Influenza A e B)",
+    "data": {
+      "status": "posology_verified",
+      "diseases": [
+        "Síndrome gripal / Influenza em grupos de alto risco",
+        "Síndrome Respiratória Aguda Grave (SRAG)",
+        "Profilaxia pós-exposição de influenza"
+      ],
+      "contraindications": [
+        "Hipersensibilidade grave ao oseltamivir."
+      ],
+      "pregnancy_category": "Categoria C (Recomendado oficialmente pelo Ministério da Saúde e CDC na gestante com suspeita de Influenza pelo alto risco materno-fetal)",
+      "renal_adjustment": "ClCr 30–60 mL/min: 30 mg de 12/12 horas. ClCr 10–30 mL/min: 30 mg a cada 24 horas. Hemodiálise: 30 mg após cada sessão.",
+      "hepatic_adjustment": "Sem necessidade de ajuste de dose em disfunção hepática leve a moderada.",
+      "drug_interactions": [
+        {
+          "drug": "Vacina viva atenuada contra influenza",
+          "effect": "Oseltamivir pode inibir a replicação viral da vacina atenuada; evitar a vacina até 48h após o antiviral."
+        }
+      ],
+      "formulations": [
+        {
+          "presentation": "Cápsula gelatinosa 75 mg",
+          "dose_text": "75 mg",
+          "interval_text": "12/12 horas",
+          "route": "Via oral",
+          "duration_text": "5 dias consecutivos",
+          "max_daily_text": "150 mg/dia",
+          "administration": "Pode ser tomado com alimentos para reduzir náuseas e vômitos gastrointestinais.",
+          "cautions": "Maior benefício clínico se iniciado nas primeiras 48 horas do início dos sintomas gripais, mas na SRAG deve ser iniciado em qualquer momento.",
+          "prescription_type": "Receita de Controle Especial (Branca, 2 vias)"
+        }
+      ],
+      "products": [
+        {
+          "name": "Tamiflu",
+          "type": "Referência",
+          "presentation": "Cápsulas 30 mg, 45 mg e 75 mg; pó para suspensão oral 6 mg/mL"
+        },
+        {
+          "name": "Fosfato de Oseltamivir",
+          "type": "Genérico",
+          "presentation": "Cápsulas 75 mg (distribuição pública e farmácias)"
+        }
+      ],
+      "adverse_reactions": [
+        "Gastrointestinais: náuseas e vômitos (muito frequentes nas primeiras 48h; reduzidos quando administrado com alimentos).",
+        "Sistema nervoso: cefaleia, insônia e raros relatos de alterações neuropsiquiátricas transitórias (delírio, alucinações em jovens).",
+        "Dermatológicas: erupções cutâneas e raramente síndrome de Stevens-Johnson."
+      ],
+      "antidote": [
+        "Não há antídoto específico.",
+        "Manejo da superdosagem: interrupção do uso, medidas de suporte sintomático e hidratação. Doses únicas de até 1.000 mg foram bem toleradas, com predomínio de náuseas e tonturas."
+      ]
+    }
+  },
+  {
+    "id": 1007,
+    "name": "Fluconazol (Zoltec)",
+    "active_ingredient": "Fluconazol",
+    "therapeutic_class": "Antifúngico sistêmico",
+    "pharmacological_class": "Triazol inibidor da síntese de ergosterol na membrana fúngica",
+    "data": {
+      "status": "posology_verified",
+      "diseases": [
+        "Candidíase vulvovaginal não complicada",
+        "Candidíase oral e esofágica",
+        "Criptococose meníngea (fase de consolidação/manutenção)"
+      ],
+      "contraindications": [
+        "Hipersensibilidade a compostos azólicos, coadministração com terfenadina ou cisaprida, e uso durante o primeiro trimestre da gestação."
+      ],
+      "pregnancy_category": "Categoria D (Evitar na gestação pelo risco de anomalias congênitas e aborto espontâneo; preferir antifúngicos tópicos)",
+      "renal_adjustment": "Dose única de 150 mg não requer ajuste. Em esquemas múltiplos: se ClCr <= 50 mL/min, reduzir a dose em 50% após dose de ataque.",
+      "hepatic_adjustment": "Monitorar enzimas hepáticas em tratamentos prolongados.",
+      "drug_interactions": [
+        {
+          "drug": "Varfarina",
+          "effect": "Inibição de CYP2C9 aumentando significativamente o tempo de protrombina (RNI) e risco de sangramento."
+        },
+        {
+          "drug": "Sulfonilureias (Glibenclamida, Gliclazida)",
+          "effect": "Potencialização do efeito hipoglicemiante por redução do clearance hepático."
+        }
+      ],
+      "formulations": [
+        {
+          "presentation": "Cápsula 150 mg",
+          "dose_text": "150 mg",
+          "interval_text": "Dose única",
+          "route": "Via oral",
+          "duration_text": "Dose única (na candidíase vulvovaginal não complicada)",
+          "max_daily_text": "150 mg (em dose única)",
+          "administration": "Ingerir com água, com ou sem alimentos.",
+          "cautions": "Não utilizar na gravidez. Em candidíase recorrente (> 4 episódios/ano), aplicar protocolo de indução e manutenção.",
+          "prescription_type": "Receita de Controle Especial (Branca, 2 vias)"
+        }
+      ],
+      "products": [
+        {
+          "name": "Zoltec",
+          "type": "Referência",
+          "presentation": "Cápsulas 50 mg e 150 mg; solução para infusão IV 2 mg/mL"
+        },
+        {
+          "name": "Fluconazol",
+          "type": "Genérico",
+          "presentation": "Cápsulas 150 mg; suspensão oral; bolsas injetáveis"
+        }
+      ],
+      "adverse_reactions": [
+        "Gastrointestinais: náuseas, desconforto epigástrico, diarreia e flatulência.",
+        "Hepáticas: elevação transitória assintomática de transaminases e fosfatase alcalina; hepatotoxicidade grave é rara.",
+        "Cardiovasculares: prolongamento do intervalo QTc em doses elevadas ou associação com outros fármacos pró-arritmogênicos."
+      ],
+      "antidote": [
+        "Não há antídoto específico.",
+        "Manejo da superdosagem: suporte clínico, lavagem gástrica se ingestão recente e monitorização eletrocardiográfica. A hemodiálise de 3 horas reduz os níveis plasmáticos de fluconazol em aproximadamente 50%."
+      ]
+    }
+  },
+  {
+    "id": 1008,
+    "name": "Benzilpenicilina Benzatina (Benzetacil)",
+    "active_ingredient": "Benzilpenicilina Benzatina",
+    "therapeutic_class": "Antibacteriano sistêmico",
+    "pharmacological_class": "Penicilina natural de ação prolongada",
+    "data": {
+      "status": "posology_verified",
+      "diseases": [
+        "Sífilis primária, secundária e latente precoce",
+        "Sífilis latente tardia e terciária",
+        "Faringoamigdalite estreptocócica",
+        "Profilaxia da febre reumática"
+      ],
+      "contraindications": [
+        "Hipersensibilidade grave e anafilática a penicilinas. NUNCA administrar por via intravenosa (risco de embolia pulmonar e PCR imediata!)."
+      ],
+      "pregnancy_category": "Categoria B (ÚNICO tratamento eficaz comprovado para prevenir a transmissão vertical da sífilis congênita)",
+      "renal_adjustment": "Geralmente não necessita de ajuste em doses únicas devido à liberação lenta e níveis séricos baixos e prolongados.",
+      "hepatic_adjustment": "Sem necessidade de ajuste de dose.",
+      "drug_interactions": [
+        {
+          "drug": "Metotrexato",
+          "effect": "A penicilina reduz a depuração tubular renal do metotrexato, aumentando o risco de toxicidade grave."
+        },
+        {
+          "drug": "Probenecida",
+          "effect": "Aumento dos níveis séricos de penicilina por bloqueio competitivo da secreção tubular renal."
+        }
+      ],
+      "formulations": [
+        {
+          "presentation": "Suspensão injetável 1.200.000 UI por frasco-ampola",
+          "dose_text": "2.400.000 UI (2 frascos de 1.200.000 UI, sendo 1 aplicação em cada glúteo)",
+          "interval_text": "Dose única na sífilis recente; ou semanal por 3 semanas (total 7.200.000 UI) na sífilis tardia/latente",
+          "route": "Exclusivamente Via Intramuscular profunda (glúteo)",
+          "duration_text": "Dose única ou 3 doses semanais",
+          "max_daily_text": "2.400.000 UI em uma única sessão",
+          "administration": "Injeção intramuscular profunda estrita no quadrante superior externo da nádega ou região ventroglútea. Aspirar antes para garantir não atingir vasos sanguíneos.",
+          "cautions": "Alertar sobre Reação de Jarisch-Herxheimer (febre, calafrios e exacerbação de lesões nas primeiras 24 horas, benigna e autolimitada). Ter suporte para anafilaxia.",
+          "prescription_type": "Receita de Controle Especial (Branca, 2 vias)"
+        }
+      ],
+      "products": [
+        {
+          "name": "Benzetacil",
+          "type": "Referência",
+          "presentation": "Suspensão injetável 600.000 UI e 1.200.000 UI por frasco-ampola"
+        },
+        {
+          "name": "Benzilpenicilina Benzatina",
+          "type": "Genérico",
+          "presentation": "Frascos-ampola injetáveis 1.200.000 UI"
+        }
+      ],
+      "adverse_reactions": [
+        "Locais: dor intensa, enduração, hematoma e nódulo inflamatório no local da injeção intramuscular profunda.",
+        "Reações imunológicas: urticária, prurido, febre medicamentosa e choque anafilático grave mediado por IgE.",
+        "Reação de Jarisch-Herxheimer: febre, calafrios, cefaleia e mialgia nas primeiras 24h de tratamento da sífilis."
+      ],
+      "antidote": [
+        "Não há antídoto químico para a penicilina.",
+        "Manejo de reações alérgicas graves/anafilaxia: Adrenalina IM 0,5 mg (1:1000) imediata na face anterolateral da coxa, oxigênio, expansão volêmica e anti-histamínicos/corticoides IV. Em caso de injeção intravenosa acidental inadvertida: suporte intensivo cardiopulmonar imediato."
+      ]
+    }
+  },
+  {
+    "id": 1009,
+    "name": "Mupirocina Tópica (Bactroban)",
+    "active_ingredient": "Mupirocina",
+    "therapeutic_class": "Antibacteriano dermatológico",
+    "pharmacological_class": "Inibidor da isoleucil-tRNA sintetase bacteriana",
+    "data": {
+      "status": "posology_verified",
+      "diseases": [
+        "Impetigo bolhoso e não bolhoso",
+        "Foliculite superficial",
+        "Erradicação nasal de carreadores de Staphylococcus aureus (MRSA)"
+      ],
+      "contraindications": [
+        "Hipersensibilidade à mupirocina ou ao polietilenoglicol (veículo da pomada)."
+      ],
+      "pregnancy_category": "Categoria B (Absorção sistêmica desprezível pela pele intacta)",
+      "renal_adjustment": "Sem necessidade de ajuste em pele intacta. Se aplicada em extensas queimaduras abertas, o polietilenoglicol pode ser absorvido e exigir cautela se ClCr baixo.",
+      "hepatic_adjustment": "Sem necessidade de ajuste de dose.",
+      "drug_interactions": [
+        {
+          "drug": "Outras pomadas e cremes na mesma área",
+          "effect": "Diluição da concentração ativa de mupirocina e perda de eficácia bactericida."
+        }
+      ],
+      "formulations": [
+        {
+          "presentation": "Pomada tópica 2% (20 mg/g)",
+          "dose_text": "Aplicar camada fina sobre as lesões acometidas",
+          "interval_text": "8/8 horas (3 vezes ao dia)",
+          "route": "Via dermatológica (uso tópico)",
+          "duration_text": "5 a 7 dias",
+          "max_daily_text": "3 aplicações ao dia",
+          "administration": "Lavar as mãos e higienizar suavemente a pele com água e sabão neutro antes da aplicação. Pode ser coberta com gaze estéril se necessário.",
+          "cautions": "Não utilizar nos olhos nem em mucosas genitais. Se não houver melhora clínica em 3 a 5 dias, reavaliar diagnóstico.",
+          "prescription_type": "Receita de Controle Especial (Branca, 2 vias)"
+        }
+      ],
+      "products": [
+        {
+          "name": "Bactroban",
+          "type": "Referência",
+          "presentation": "Pomada dermatológica 2% (tubo com 15 g)"
+        },
+        {
+          "name": "Mupirocina",
+          "type": "Genérico",
+          "presentation": "Pomada dermatológica 20 mg/g"
+        }
+      ],
+      "adverse_reactions": [
+        "Locais: queimação, ardor local transitório, prurido, eritema e ressecamento cutâneo.",
+        "Hipersensibilidade de contato: dermatite alérgica e edema localizado."
+      ],
+      "antidote": [
+        "Toxicidade sistêmica por superdosagem tópica é improvável devido à absorção percutânea mínima.",
+        "Manejo: lavar a área afetada com água abundante e sabão neutro para interrupção do contato."
+      ]
+    }
+  },
+  {
+    "id": 1010,
+    "name": "Tobramicina Oftálmica (Tobrex)",
+    "active_ingredient": "Sulfato de Tobramicina",
+    "therapeutic_class": "Antibacteriano oftálmico",
+    "pharmacological_class": "Aminoglicosídeo tópico ocular",
+    "data": {
+      "status": "posology_verified",
+      "diseases": [
+        "Conjuntivite bacteriana aguda",
+        "Blefarite bacteriana",
+        "Ceratite bacteriana superficial"
+      ],
+      "contraindications": [
+        "Hipersensibilidade a aminoglicosídeos."
+      ],
+      "pregnancy_category": "Categoria B (Absorção ocular sistêmica mínima)",
+      "renal_adjustment": "Sem necessidade de ajuste para a formulação oftálmica tópica.",
+      "hepatic_adjustment": "Sem necessidade de ajuste de dose.",
+      "drug_interactions": [
+        {
+          "drug": "Outros colírios",
+          "effect": "Espaçar a aplicação de diferentes colírios por pelo menos 5 a 10 minutos para não haver diluição ou lavagem mecânica."
+        }
+      ],
+      "formulations": [
+        {
+          "presentation": "Solução oftálmica (colírio) 0,3% (3 mg/mL)",
+          "dose_text": "Instilar 1 gota no saco conjuntival do olho acometido",
+          "interval_text": "6/6 horas (ou 4/4h nas infecções graves nas primeiras 48h)",
+          "route": "Via ocular (tópico oftálmico)",
+          "duration_text": "5 a 7 dias",
+          "max_daily_text": "1 gota até 6 vezes ao dia",
+          "administration": "Puxar a pálpebra inferior para baixo formando uma bolsa e instilar a gota sem tocar o conta-gotas no olho ou nos cílios. Fechar os olhos suavemente por 1 minuto.",
+          "cautions": "Suspender o uso de lentes de contato durante todo o tratamento infeccioso ativo.",
+          "prescription_type": "Receita de Controle Especial (Branca, 2 vias)"
+        }
+      ],
+      "products": [
+        {
+          "name": "Tobrex",
+          "type": "Referência",
+          "presentation": "Solução oftálmica 0,3% (frasco com 5 mL); pomada oftálmica 0,3%"
+        },
+        {
+          "name": "Sulfato de Tobramicina",
+          "type": "Genérico",
+          "presentation": "Colírio 0,3% (diversos laboratórios)"
+        }
+      ],
+      "adverse_reactions": [
+        "Oculares: hiperemia conjuntival, sensação de corpo estranho, ardência, prurido e lacrimejamento transitório.",
+        "Pálpebras: eritema e edema palpebral alérgico localizado."
+      ],
+      "antidote": [
+        "Superdosagem tópica ocular: irrigar o olho com solução fisiológica 0,9% estéril abundante ou água corrente morna.",
+        "A absorção sistêmica a partir do uso ocular é clinicamente desprezível."
+      ]
     }
   }
 ];

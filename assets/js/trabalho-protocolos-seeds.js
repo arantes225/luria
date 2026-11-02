@@ -3125,7 +3125,7 @@
         "title": "Desmame para Dose Fisiológica após Estabilização (48–72h)",
         "regimen": "Transição para Prednisona ou Hidrocortisona Oral (± Fludrocortisona)",
         "items": [
-          "Após resolução do fator desencadeante e estabilidade hemodinâmica por 24–48h, reduzir gradualmente a Hidrocortisona IV em 50% ao dia até atingir a dose de reposição oral fisiológica (Prednisona 5 mg VO pela manhã ou Hidrocortisona VO 15–25 mg/dia divididos em 2–3 tomadas; na IA Primária, reintroduzir Fludrocortisona 0,1 mg/dia VO quando a dose de hidrocortisona cair para < 50 mg/dia)."
+          "Após resolução do fator desencadeante e estabilidade hemodinâmica por 24–48h, reduzir gradualmente a Hidrocortisona IV em 50% ao dia até atingir a dose de reposição oral fisiológica (Prednisona 5 mg VO pela manhã ou Hidrocortisona VO 15–25 mg/dia fracionada em intervalos de 8/8 horas (ex.: 10 mg às 08h, 5 mg às 14h e 5 mg às 20h); na IA Primária, reintroduzir Fludrocortisona 0,1 mg/dia VO quando a dose de hidrocortisona cair para < 50 mg/dia)."
         ]
       }
     ],
@@ -3464,7 +3464,451 @@
         ]
       }
     ]
-  }
+  },
+  {
+  "id": "seed-protocolo-pcr-acls",
+  "slug": "parada-cardiorrespiratoria-pcr-acls-2025",
+  "title": "Parada Cardiorrespiratória (PCR no Adulto — Diretrizes ACLS)",
+  "category": "Emergência e UTI",
+  "setting": "Sala Vermelha / Emergência / UTI / APH",
+  "status": "verified",
+  "linked_recipe_slugs": [
+    "prescricao-pcr-acls"
+  ],
+  "summary": "Reconhecimento imediato, compressões torácicas de alta qualidade (100–120/min, 5–6 cm), diferenciação imediata entre ritmos chocáveis (FV/TVSP) e não chocáveis (AESP/Assistolia), adrenalina precoce e amiodarona após o 3º choque.",
+  "suspicion": [
+    {
+      "title": "Reconhecimento Imediato (Menos de 10 Segundos)",
+      "items": [
+        "Vítima não responsiva, sem respiração ou apenas com gasping agônico.",
+        "Ausência de pulso central palpável (carotídeo no adulto) verificado simultaneamente em menos de 10 segundos.",
+        "Iniciar imediatamente RCP de alta qualidade: frequência de 100 a 120 compressões/minuto, profundidade de pelo menos 5 cm (sem exceder 6 cm), permitir retorno total do tórax e minimizar interrupções (< 10 segundos de pausa)."
+      ]
+    }
+  ],
+  "initial_actions": [
+    {
+      "title": "Manejo Inicial por Ciclos de 2 Minutos",
+      "items": [
+        "1. Conectar monitor cardíaco / desfibrilador e analisar o ritmo.",
+        "2. Se RITMO CHOCÁVEL (FV / TV sem pulso): 1 choque imediato (Bifásico 120 a 200 J; Monofásico 360 J) seguido IMEDIATAMENTE de 2 minutos de RCP antes de rechecar pulso/ritmo.",
+        "3. Se RITMO NÃO CHOCÁVEL (AESP / Assistolia): Adrenalina 1 mg IV/IO o mais rápido possível e manter ciclos de 2 minutos de RCP de alta qualidade investigando ativamente causas reversíveis (5 Hs e 5 Ts)."
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "title": "Monitorização e Investigação Etiológica na PCR",
+      "items": [
+        "Capnografia quantitativa em forma de onda contínua (alvo de ETCO2 > 10–20 mmHg durante a RCP; elevação abrupta para > 35–40 mmHg indica retorno da circulação espontânea - RCE).",
+        "Gasometria arterial, Eletrólitos (K+, Ca2+, Na+), Glicemia capilar e Ultrassom point-of-care (POCUS) subxifoide e pulmonar durante trocas de socorrista sem atrasar compressões."
+      ]
+    }
+  ],
+  "decision_flow": [
+    {
+      "if": "Ritmo chocável (Fibrilação Ventricular / Taquicardia Ventricular sem Pulso)",
+      "then": "Desfibrilação imediata + RCP por 2 min -> Adrenalina 1 mg IV a cada 3 a 5 min (a partir do 2º choque) -> Amiodarona 300 mg IV em bolus após o 3º choque (2ª dose de 150 mg após o 5º choque)."
+    },
+    {
+      "if": "Ritmo não chocável (Atividade Elétrica Sem Pulso / Assistolia)",
+      "then": "Adrenalina 1 mg IV IMEDIATAMENTE, repetir a cada 3 a 5 min + investigar e tratar 5 Hs (Hipovolemia, Hipóxia, Hidrogênio/Acidose, Hipo/Hipercalemia, Hipotermia) e 5 Ts (Tensão no tórax/Pneumotórax, Tamponamento, Toxinas, Trombose coronária, Trombose pulmonar)."
+    }
+  ],
+  "treatment": [
+    {
+      "title": "Farmacoterapia Avançada no Algoritmo ACLS",
+      "regimen": "Drogas Vasopressoras e Antiarrítmicas em Bolus Rápido",
+      "items": [
+        "Adrenalina (Epinefrina) 1 mg IV/IO em bolus rápido seguido de flush de 20 mL de SF 0,9% e elevação do membro por 10–20s. Repetir a cada 3 a 5 minutos durante toda a PCR.",
+        "Amiodarona 300 mg IV/IO em bolus rápido na FV/TV refratária ao 3º choque. Segunda dose de 150 mg IV se FV/TV persistir após 5º choque. (Alternativa à Amiodarona: Lidocaína 1 a 1,5 mg/kg IV no 1º bolus e 0,5 a 0,75 mg/kg na repetição).",
+        "Sulfato de Magnésio 10%: 2 g IV em 1 a 2 minutos se suspeita ou confirmação de Torsades de Pointes (TV polimórfica com QT longo prévio)."
+      ]
+    }
+  ],
+  "linked_drug_terms": [
+    "Adrenalina",
+    "Amiodarona",
+    "Lidocaína",
+    "Sulfato de Magnésio"
+  ],
+  "red_flags": [
+    "NUNCA interromper compressões torácicas por mais de 10 segundos durante trocas de socorrista, intubação ou análise de ritmo.",
+    "Não administrar Bicarbonato de Sódio ou Cálcio de rotina; indicar Bicarbonato apenas se hipercalemia grave prévia, acidose metabólica grave preexistente ou intoxicação por antidepressivos tricíclicos.",
+    "Queda persistente do ETCO2 para < 10 mmHg indica compressões ineficazes ou prognóstico neurológico reservado se mantida por > 20 minutos de suporte avançado."
+  ],
+  "source_refs": [
+    {
+      "label": "AHA Guidelines for CPR and ECC 2025 / ACLS Update",
+      "url": "https://cpr.heart.org/"
+    }
+  ],
+  "follow_up": [
+    {
+      "title": "Cuidados Pós-Parada Cardiorrespiratória Imediatos (RCE)",
+      "items": [
+        "Otimização hemodinâmica: meta de PAS >= 90 mmHg ou PAM >= 65 mmHg (iniciar Noradrenalina IV precoce se hipotensão pós-RCE).",
+        "Controle direcionado de temperatura (alvo 32°C a 36°C) em pacientes que permanecem comatosos após o RCE por pelo menos 24 a 48 horas.",
+        "Eletrocardiograma de 12 derivações imediato: se IAM com supra de ST, encaminhar para cineangiocoronariografia de urgência / hemodinâmica sem atraso."
+      ]
+    }
+  ],
+  "special_situations": [
+    {
+      "title": "Via Aérea Avançada durante a PCR",
+      "items": [
+        "A intubação orotraqueal não deve retardar o início das compressões nem a desfibrilação precoce.",
+        "Após intubação confirmada com capnografia em onda, realizar 1 ventilação a cada 6 segundos (10 ventilações por minuto) sem interromper as compressões torácicas contínuas."
+      ]
+    }
+  ],
+  "prophylaxis": [
+    {
+      "title": "Prevenção de Lesão Cerebral Anóxica e Nova PCR",
+      "items": [
+        "Evitar hiperóxia e hiperventilação agressiva (manter SpO2 entre 92% e 98% e PaCO2 entre 35 e 45 mmHg).",
+        "Controle glicêmico estrito pós-PCR (alvo 140 a 180 mg/dL), evitando hipoglicemia inadvertida."
+      ]
+    }
+  ]
+},
+  {
+  "id": "seed-protocolo-cefaleias",
+  "slug": "cefaleias-agudas-sinais-alarme-e-enxaqueca",
+  "title": "Cefaleia Aguda na Emergência e Sinais de Alarme (Red Flags / SNOOP4)",
+  "category": "Neurologia",
+  "setting": "Pronto-Socorro / Ambulatório de Neurologia",
+  "status": "verified",
+  "linked_recipe_slugs": [
+    "prescricao-cefaleia-aguda"
+  ],
+  "summary": "Triagem imediata de sinais de perigo (cefaleia em trovoada, febre, déficit focal), exclusão de hemorragia subaracnóidea (HSA) e hipertensão intracraniana, e protocolo multimodal de abortamento de crise de migrânea.",
+  "suspicion": [
+    {
+      "title": "Critérios de Alarme Clínico (Mnemônico SNOOP4)",
+      "items": [
+        "S (Sintomas sistêmicos / Febre, perda de peso, câncer, infecção por HIV).",
+        "N (Neurológico / Déficit focal, confusão mental, papiledema, crise convulsiva).",
+        "O (Onset súbito / 'Thunderclap' ou cefaleia em trovoada: intensidade máxima em < 1 minuto — suspeita mandatória de Hemorragia Subaracnóidea!).",
+        "O (Older / Início novo após os 50 anos de idade — suspeita de arterite de células gigantes ou lesão expansiva).",
+        "P4 (Papiledema, Piora com manobra de Valsalva, Postural/ortostática e Padrão progressivo ou diferente de todas as crises anteriores)."
+      ]
+    }
+  ],
+  "initial_actions": [
+    {
+      "title": "Conduta Diagnóstica Imediata",
+      "items": [
+        "1. Cefaleia em Trovoada (Thunderclap Headache): TC de crânio sem contraste de crânio URGENTE nas primeiras 6 horas. Se TC normal e alta suspeita, realizar punção lombar para pesquisa de xantocromia.",
+        "2. Se sinais de hipertensão intracraniana ou infecção do SNC (rigidez de nuca + febre): TC antes da punção se déficit focal, rebaixamento ou papiledema.",
+        "3. Enxaqueca / Cefaleia Primária sem sinais de alarme: analgesia multimodal escalonada rápida em ambiente calmo e escuro."
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "title": "Investigação Subsidiária de Emergência",
+      "items": [
+        "Tomografia computadorizada de crânio sem contraste de emergência.",
+        "VHS e Proteína C Reativa em pacientes > 50 anos com dor têmporo-mandibular ou claudicação de mandíbula (Arterite Temporal).",
+        "Líquor com contagem de células, glicose, proteínas, microbiologia e espectrofotometria."
+      ]
+    }
+  ],
+  "decision_flow": [
+    {
+      "if": "Presença de qualquer sinal SNOOP4 (especialmente cefaleia em trovoada ou déficit focal)",
+      "then": "Tomografia computadorizada de crânio imediata; não liberar da emergência antes de descartar HSA, meningite, trombose venosa cerebral ou dissecção arterial."
+    },
+    {
+      "if": "Crise aguda de Enxaqueca moderada a grave sem sinais de alarme secundário",
+      "then": "Dipirona 1 g IV + Cetoprofeno 100 mg IV + Metoclopramida 10 mg IV (ou Clorpromazina 0,1 a 0,25 mg/kg IV lenta) + Sumatriptano 50 a 100 mg VO se fase inicial."
+    }
+  ],
+  "treatment": [
+    {
+      "title": "Tratamento Abortivo de Crise de Enxaqueca na Sala de Medicação",
+      "regimen": "Esquema Multimodal Parenteral (Anti-inflamatório + Analgésico + Antidopaminérgico)",
+      "items": [
+        "Dipirona 1 g a 2 g IV diluída em 100 mL de SF 0,9% em 15 minutos.",
+        "Cetoprofeno 100 mg IV diluído em 100 mL de SF 0,9% infundido em 20 minutos (ou Cetorolaco 30 mg IV).",
+        "Metoclopramida 10 mg IV lento (potencializa analgesia gástrica e reduz náuseas) OU Clorpromazina 12,5 mg a 25 mg IV diluída em 250 mL de SF 0,9% em infusão lenta.",
+        "Dexametasona 4 a 10 mg IV dose única (previne recidiva precoce da cefaleia nas próximas 72 horas).",
+        "Sumatriptano 50 a 100 mg via oral (ou 6 mg SC) no início dos sintomas (contraindicado se IAM prévio, AVC ou hipertensão não controlada)."
+      ]
+    }
+  ],
+  "linked_drug_terms": [
+    "Dipirona",
+    "Cetoprofeno",
+    "Metoclopramida",
+    "Dexametasona",
+    "Clorpromazina"
+  ],
+  "red_flags": [
+    "Cefaleia de início abrupto que atinge o pico de dor ('pior dor da vida') em menos de 1 minuto.",
+    "Sinais meníngeos (rigidez de nuca, sinais de Kernig e Brudzinski).",
+    "Associação com déficit motor, afasia, ataxia ou paralisia de pares cranianos."
+  ],
+  "source_refs": [
+    {
+      "label": "Sociedade Brasileira de Cefaleia (SBCe) — Diretrizes para Tratamento de Cefaleia",
+      "url": "https://sbce.med.br/"
+    }
+  ],
+  "follow_up": [
+    {
+      "title": "Orientação de Alta e Prevenção de Cefaleia por Uso Excessivo",
+      "items": [
+        "Alertar o paciente contra o uso frequente de analgésicos e triptanos (> 10 a 15 dias no mês leva a cefaleia por abuso de medicamentos).",
+        "Indicar profilaxia medicamentosa se o paciente apresentar >= 3 a 4 crises incapacitantes por mês (ex.: Topiramato, Propranolol, Amitriptilina ou Flunarizina).",
+        "Retornar imediatamente à emergência se a dor mudar de padrão, surgir febre, confusão mental ou fraqueza muscular."
+      ]
+    }
+  ],
+  "special_situations": [
+    {
+      "title": "Crise em Gestantes",
+      "items": [
+        "Evitar AINEs no 1º e especialmente no 3º trimestre (fechamento prematuro do canal arterial).",
+        "Evitar triptanos na gestação.",
+        "Esquema seguro na gestante: Paracetamol 750 mg a 1.000 mg VO/IV associado a Metoclopramida 10 mg IV e hidratação parenteral."
+      ]
+    }
+  ],
+  "prophylaxis": [
+    {
+      "title": "Higiene do Sono e Modulação de Gatilhos",
+      "items": [
+        "Manter regularidade de horários de sono e alimentação (jejum prolongado é um dos maiores deflagradores).",
+        "Prática de atividade física aeróbica regular moderada fora dos períodos de crise."
+      ]
+    }
+  ]
+},
+  {
+  "id": "seed-protocolo-apendicite-aguda",
+  "slug": "apendicite-aguda-e-abdome-agudo-inflamatorio",
+  "title": "Apendicite Aguda e Abdome Agudo Inflamatório (Escore de Alvarado e Conduta)",
+  "category": "Cirurgia Geral",
+  "setting": "Pronto-Socorro / Centro Cirúrgico",
+  "status": "verified",
+  "linked_recipe_slugs": [
+    "prescricao-apendicite-aguda"
+  ],
+  "summary": "Dor periumbilical migratória para fossa ilíaca direita, sinal de Blumberg positivo, febre e leucocitose. Escore de Alvarado para estratificação, jejum imediato, analgesia e antibioticoprofilaxia cirúrgica.",
+  "suspicion": [
+    {
+      "title": "Apresentação Clínica e Sinais Semiológicos",
+      "items": [
+        "Dor abdominal inicialmente periumbilical ou epigástrica vaga que migra e se fixa na fossa ilíaca direita (FID) / ponto de McBurney em 12 a 24 horas.",
+        "Anorexia em quase 100% dos casos ('se o paciente tem fome, desconfie do diagnóstico de apendicite!'), náuseas e vômitos que surgem APÓS o início da dor.",
+        "Sinais clássicos de irritação peritoneal: Sinal de Blumberg (descompressão dolorosa no ponto de McBurney), Sinal de Rovsing (dor na FID à palpação da FIE), Sinal do Obturador e Sinal do Psoas."
+      ]
+    }
+  ],
+  "initial_actions": [
+    {
+      "title": "Estratificação pelo Escore de Alvarado (MANTRELS)",
+      "items": [
+        "M (Migração da dor para FID - 1 pt); A (Anorexia - 1 pt); N (Náuseas/vômitos - 1 pt); T (Tenderness/dor à palpação na FID - 2 pts); R (Rebound/descompressão dolorosa - 1 pt); E (Elevação de temperatura >= 37,3°C - 1 pt); L (Leucocitose > 10.000 - 2 pts); S (Shift/desvio à esquerda de neutrófilos - 1 pt). Total = 10 pontos.",
+        "Escore <= 4: Baixa probabilidade (investigar outros diagnósticos / observação clínica).",
+        "Escore 5 a 6: Probabilidade intermediária (indicação de imagem confirmatória: USG ou TC de abdome).",
+        "Escore >= 7: Alta probabilidade cirúrgica (avaliação cirúrgica imediata para apendicectomia)."
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "title": "Exames Complementares Laboratoriais e de Imagem",
+      "items": [
+        "Hemograma completo com contagem de plaquetas e leucograma (leucocitose com neutrofilia e desvio à esquerda).",
+        "EAS / Urina rotina (para excluir ITU e litíase; pequenas hematúrias e leucocitúrias podem ocorrer por contato do apêndice inflamado com o ureter).",
+        "Beta-hCG sérico em todas as mulheres em idade fértil (afastar prenhez ectópica).",
+        "Tomografia computadorizada de abdome e pelve com contraste (padrão-ouro no adulto: apêndice > 6 mm de diâmetro, espessamento de parede, densificação da gordura periapendicular e apendicolito).",
+        "Ultrassonografia de abdome (método de escolha em crianças e gestantes)."
+      ]
+    }
+  ],
+  "decision_flow": [
+    {
+      "if": "Diagnóstico confirmado ou Escore de Alvarado >= 7 em homem jovem",
+      "then": "Jejum oral absoluto imediato, hidratação venosa vigorosa com Ringer Lactato, analgesia parenteral e acionamento imediato da equipe de Cirurgia Geral para Apendicectomia (laparoscópica preferencial)."
+    },
+    {
+      "if": "Apendicite complicada com abscesso ou plastrão bloqueado estável há > 5 dias",
+      "then": "Tratamento conservador inicial com antibioticoterapia venosa de amplo espectro (Ceftriaxona + Metronidazol ou Piperacilina-Tazobactam) + drenagem percutânea se abscesso > 3–4 cm + colonoscopia após 4–6 semanas para excluir neoplasia cecal."
+    }
+  ],
+  "treatment": [
+    {
+      "title": "Prescrição Hospitalar Pré e Perioperatória",
+      "regimen": "Antibioticoprofilaxia e Suporte Clínico Imediato",
+      "items": [
+        "Dieta zero / Jejum absoluto imediato.",
+        "Hidratação venosa: Ringer Lactato 1.000 mL IV nas primeiras 2 horas, seguido de manutenção 30 mL/kg/dia.",
+        "Antibioticoprofilaxia cirúrgica (iniciar até 60 minutos antes da incisão): Cefazolina 2 g IV + Metronidazol 500 mg IV dose única (ou Ceftriaxona 2 g IV + Metronidazol 500 mg IV se apendicite perfurada/peritonite).",
+        "Dipirona 1 g a 2 g IV de 6 em 6 horas (6/6h) para controle álgico (o uso de analgesia não mascara o exame físico do abdome cirúrgico e é dever ético).",
+        "Ondansetrona 4 a 8 mg IV de 8 em 8 horas (8/8h) para controle de náuseas e vômitos."
+      ]
+    }
+  ],
+  "linked_drug_terms": [
+    "Cefazolina",
+    "Metronidazol",
+    "Ceftriaxona",
+    "Dipirona",
+    "Ondansetrona"
+  ],
+  "red_flags": [
+    "Dor em todo o abdome com abdome 'em tábua' e defesa involuntária generalizada (perfuração apendicular e peritonite fecal difusa).",
+    "Sinais de sepse ou choque séptico (hipotensão PAS < 90 mmHg, taquicardia > 120 bpm, taquipneia > 24 irpm, alteração do nível de consciência).",
+    "Massa palpável dolorosa na fossa ilíaca direita (plastrão apendicular)."
+  ],
+  "source_refs": [
+    {
+      "label": "WSES Jerusalem Guidelines for Diagnosis and Management of Acute Appendicitis",
+      "url": "https://wses.biomedcentral.com/"
+    }
+  ],
+  "follow_up": [
+    {
+      "title": "Pós-Operatório e Alta Hospitalar",
+      "items": [
+        "Apendicite não complicada: alta hospitalar precoce em 24 a 48 horas após retorno da dieta oral e alívio da dor.",
+        "Não manter antibioticoterapia pós-operatória na apendicite não complicada sem perfuração.",
+        "Orientar retorno se febre >= 37,8°C, parada de eliminação de gases e fezes, dor abdominal progressiva ou hiperemia com secreção na incisão cirúrgica."
+      ]
+    }
+  ],
+  "special_situations": [
+    {
+      "title": "Apendicite na Gestação",
+      "items": [
+        "Emergência cirúrgica não obstétrica mais comum da gravidez.",
+        "Com o crescimento uterino, o ceco e o apêndice migram cefalicamente em direção ao flanco e hipocôndrio direito.",
+        "USG de abdome é o exame inicial; se inconclusivo, a Ressonância Magnética (sem gadolínio) é o padrão-ouro seguro na gestação."
+      ]
+    }
+  ],
+  "prophylaxis": [
+    {
+      "title": "Prevenção de Infecção do Sítio Cirúrgico (ISC)",
+      "items": [
+        "Não realizar tricotomia com lâmina (usar tricotomizador elétrico imediatamente antes do ato se necessário).",
+        "Administrar o antibiótico profilático rigorosamente entre 30 a 60 minutos antes da incisão da pele."
+      ]
+    }
+  ]
+},
+  {
+  "id": "seed-protocolo-tromboembolismo-tvp",
+  "slug": "trombose-venosa-profunda-tvp-membros-inferiores",
+  "title": "Trombose Venosa Profunda (TVP de Membros Inferiores — Escore de Wells e DOACs)",
+  "category": "Cardiologia",
+  "setting": "Pronto-Socorro / Ambulatório / Enfermaria",
+  "status": "verified",
+  "linked_recipe_slugs": [
+    "prescricao-tvp-membros-inferiores"
+  ],
+  "summary": "Edema assimétrico de membro inferior, empastamento de panturrilha e dor. Estratificação pelo Escore de Wells, dosagem de D-dímero em baixa probabilidade, Eco-Doppler venoso e anticoagulação plena oral ou parenteral.",
+  "suspicion": [
+    {
+      "title": "Quadro Clínico e Avaliação Inicial",
+      "items": [
+        "Dor na perna, empastamento muscular doloroso da panturrilha, aumento de volume e edema assimétrico unilateral (diferença de diâmetro de panturrilha > 3 cm medida 10 cm abaixo da tuberosidade da tíbia).",
+        "Sinal de Homans (dor na panturrilha à dorsiflexão passiva do pé — sinal clássico, porém de baixa sensibilidade/especificidade isolada).",
+        "Eritema, calor local e turgência venosa superficial colateral."
+      ]
+    }
+  ],
+  "initial_actions": [
+    {
+      "title": "Escore de Wells para TVP",
+      "items": [
+        "Câncer ativo (+1); Paralisia, paresia ou imobilização recente de MMII (+1); Acamamento recente > 3 dias ou cirurgia de grande porte nas últimas 12 semanas (+1); Dor ao longo do trajeto venoso profundo (+1); Edema de toda a perna (+1); Panturrilha sintomática > 3 cm maior que a assintomática (+1); Edema depressível maior na perna afetada (+1); Veias colaterais superficiais não varicosas (+1); Diagnóstico alternativo tão ou mais provável que TVP (-2).",
+        "Escore <= 1: TVP improvável -> Solicitar D-dímero de alta sensibilidade. Se normal (< 500 ng/mL ou ajustado para idade: idade x 10 em > 50 anos), TVP EXCLUÍDA com segurança sem necessidade de ultrassom.",
+        "Escore >= 2: TVP provável -> Solicitar Ultrassonografia Vascular com Doppler Venoso de MMII imediata."
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "title": "Exames de Imagem e Laboratório",
+      "items": [
+        "Ultrassonografia com Doppler venoso de compressão dos membros inferiores (ausência de colabamento da veia sob pressão direta do transdutor é o critério diagnóstico definitivo).",
+        "D-dímero quantitativo (alta sensibilidade e valor preditivo negativo excelente na probabilidade clínica improvável).",
+        "Função renal (Creatinina e ClCr pela fórmula de Cockcroft-Gault) e Coagulograma basal antes de iniciar anticoagulação."
+      ]
+    }
+  ],
+  "decision_flow": [
+    {
+      "if": "TVP confirmada ao Doppler em paciente sem contraindicação a anticoagulação e hemodinamicamente estável",
+      "then": "Iniciar anticoagulação oral plena de preferência com Rivaroxabana (15 mg VO 12/12h por 21 dias) ou Apixabana (10 mg VO 12/12h por 7 dias) dispensando heparina prévia."
+    },
+    {
+      "if": "Paciente com insuficiência renal grave (ClCr < 15–30 mL/min), gestante ou neoplasia ativa com alto risco de sangramento",
+      "then": "Usar Enoxaparina 1 mg/kg SC de 12 em 12 horas (12/12h) ou Heparina Não Fracionada com monitorização de TTPa, ou migrar para Varfarina com alvo de RNI 2,0 a 3,0."
+    }
+  ],
+  "treatment": [
+    {
+      "title": "Anticoagulação Plena Ambulatorial e Hospitalar",
+      "regimen": "Inibidores Diretos Orais (DOACs) de Primeira Escolha",
+      "items": [
+        "Rivaroxabana 15 mg comprimidos VO: Tomar 1 comprimido de 12 em 12 horas (12/12h) com alimentos por exatos 21 dias; após 21 dias, passar para 20 mg VO 1x ao dia.",
+        "Apixabana 5 mg comprimidos VO (Alternativa): Tomar 2 comprimidos (10 mg) VO de 12 em 12 horas (12/12h) por 7 dias; após 7 dias, passar para 5 mg VO de 12 em 12 horas (12/12h).",
+        "Enoxaparina Sódica 1 mg/kg via subcutânea (SC) de 12 em 12 horas (12/12h) se gestante, disfunção renal grave (ajustar dose se ClCr < 30) ou antes de transição para varfarina.",
+        "Estimular deambulação precoce assim que iniciada a anticoagulação plena eficaz (o repouso estrito absoluto no leito NÃO previne embolia pulmonar e aumenta estase venosa)."
+      ]
+    }
+  ],
+  "linked_drug_terms": [
+    "Rivaroxabana",
+    "Apixabana",
+    "Enoxaparina",
+    "Varfarina"
+  ],
+  "red_flags": [
+    "Surgimento agudo de dispneia, taquipneia súbita, dor torácica pleurítica ou síncope (sinais de Embolia Pulmonar aguda associada).",
+    "Phlegmasia Cerulea Dolens (membro cianótico, intensamente edemaciado com dor lancinante e risco de gangrena venosa e perda do membro — indicação cirúrgica/trombectomia de urgência).",
+    "Sinais de sangramento ativo oculto ou queda de hemoglobina."
+  ],
+  "source_refs": [
+    {
+      "label": "CHEST Guideline and Expert Panel Report: Antithrombotic Therapy for VTE Disease",
+      "url": "https://journal.chestnet.org/"
+    }
+  ],
+  "follow_up": [
+    {
+      "title": "Duração do Tratamento Anticoagulante",
+      "items": [
+        "TVP provocada por fator de risco transitório (cirurgia de grande porte, trauma, imobilização): manter anticoagulação por exatos 3 meses.",
+        "TVP não provocada (idiopática) ou fator de risco persistente (trombofilia de alto risco, câncer ativo): manter anticoagulação por pelo menos 3 a 6 meses e reavaliar anticoagulação por tempo indefinido.",
+        "Uso de meias elásticas de compressão graduada (20–30 mmHg) no membro afetado para prevenção de Síndrome Pós-Trombótica."
+      ]
+    }
+  ],
+  "special_situations": [
+    {
+      "title": "TVP em Paciente Oncológico",
+      "items": [
+        "DOACs (Apixabana, Rivaroxabana ou Edoxabana) ou Enoxaparina em monoterapia são as drogas preferenciais recomendadas pelas diretrizes internacionais.",
+        "Em tumores gastrointestinais ou urológicos com mucosa exposta não ressecada, a Enoxaparina é preferível aos DOACs devido ao menor risco de sangramento luminal."
+      ]
+    }
+  ],
+  "prophylaxis": [
+    {
+      "title": "Tromboprofilaxia Hospitalar Primária",
+      "items": [
+        "Em todos os pacientes clínicos ou cirúrgicos internados com risco moderado a alto de TVP (Escore de Pádua >= 4 ou Escore de Caprini >= 3), prescrever Enoxaparina 40 mg SC 1x ao dia (ou HNF 5.000 UI SC 8/8h) associada a compressão pneumática intermitente."
+      ]
+    }
+  ]
+}
 ];
 
   window.TRAUBE_RECIPE_SEEDS = [
@@ -4800,6 +5244,22 @@
               "directions": "Infundir 1.000 mL de SF 0,9% na primeira hora para correção da hipovolemia e hiponatremia. Associar SG 5% se hipoglicemia associada."
             }
           ]
+        },
+        {
+          "route": "Uso Oral / Transição Fisiológica de Manutenção (Após Estabilização 24–48h)",
+          "mode": "standard",
+          "items": [
+            {
+              "drug": "Hidrocortisona 20 mg Comprimidos VO",
+              "quantity": "1 caixa",
+              "directions": "Tomar 10 mg às 08h, 5 mg às 14h e 5 mg às 20h (dose fracionada de 8/8 horas para mimetizar o ritmo circadiano de cortisol). Alternativa: Prednisona 5 mg VO 1x pela manhã."
+            },
+            {
+              "drug": "Fludrocortisona 0,1 mg Comprimidos VO (Na Insuficiência Adrenal Primária)",
+              "quantity": "1 caixa",
+              "directions": "Tomar 1 comprimido (0,1 mg) VO 1x ao dia pela manhã quando a dose de hidrocortisona IV/VO for reduzida para < 50 mg/dia."
+            }
+          ]
         }
       ],
       "orientations": [
@@ -4809,5 +5269,199 @@
       ]
     }
   }
+,
+  {
+  "id": "rec-seed-pcr-acls",
+  "slug": "prescricao-pcr-acls",
+  "title": "Prescrição de Emergência — Parada Cardiorrespiratória (Suporte Avançado de Vida ACLS)",
+  "status": "verified",
+  "data": {
+    "copy_ready": true,
+    "routes": [
+      {
+        "route": "Uso Endovenoso / Intraósseo Imediato na PCR (Drogas Vasoativas e Antiarrítmicos)",
+        "mode": "standard",
+        "items": [
+          {
+            "drug": "Adrenalina (Epinefrina) 1 mg/mL (Ampola 1 mL)",
+            "quantity": "5 a 10 ampolas na sala de emergência",
+            "directions": "Administrar 1 mg (1 mL) IV/IO em bolus direto imediato, seguido de 20 mL de SF 0,9% em flush e elevação do membro. Repetir a cada 3 a 5 minutos durante toda a parada cardiorrespiratória."
+          },
+          {
+            "drug": "Amiodarona 150 mg/3 mL (Ampola)",
+            "quantity": "3 ampolas",
+            "directions": "Fibrilação Ventricular / Taquicardia Ventricular sem Pulso refratária: Administrar 300 mg (2 ampolas) IV/IO em bolus rápido após o 3º choque. Se a arritmia persistir após o 5º choque, administrar 2ª dose de 150 mg (1 ampola) IV/IO."
+          },
+          {
+            "drug": "Sulfato de Magnésio 10% (Ampola 10 mL = 1 g)",
+            "quantity": "2 ampolas",
+            "directions": "Fazer 2 g (20 mL) IV/IO em bolus lento em 1 a 2 minutos se suspeita de Torsades de Pointes ou hipomagnesemia documentada."
+          }
+        ]
+      },
+      {
+        "route": "Fase Pós-RCE (Cuidados Imediatos de Manutenção Hemodinâmica)",
+        "mode": "standard",
+        "items": [
+          {
+            "drug": "Noradrenalina 4 mg/4 mL (Ampola)",
+            "quantity": "4 ampolas em 234 mL de SG 5%",
+            "directions": "Iniciar infusão contínua em bomba a 0,05 a 0,5 mcg/kg/min imediatamente após o retorno da circulação espontânea se PAS < 90 mmHg ou PAM < 65 mmHg."
+          }
+        ]
+      }
+    ],
+    "orientations": [
+      "Manter compressões torácicas contínuas a 100–120/min com profundidade de 5 a 6 cm e permitir o retorno completo do tórax.",
+      "Trocar o socorrista que realiza compressões rigorosamente a cada 2 minutos para evitar fadiga muscular e queda na qualidade da RCP.",
+      "Verificar ETCO2 contínuo: ETCO2 < 10 mmHg indica necessidade de melhorar a técnica de compressão; elevação abrupta para > 35 mmHg indica provável RCE."
+    ]
+  }
+},
+  {
+  "id": "rec-seed-cefaleia-aguda",
+  "slug": "prescricao-cefaleia-aguda",
+  "title": "Prescrição de Emergência e Alta — Cefaleia Aguda e Crise de Migrânea",
+  "status": "verified",
+  "data": {
+    "copy_ready": true,
+    "routes": [
+      {
+        "route": "Uso Endovenoso na Sala de Medicação (Esquema Abortivo Multimodal)",
+        "mode": "standard",
+        "items": [
+          {
+            "drug": "Dipirona 1 g/2 mL (Ampola)",
+            "quantity": "1 a 2 ampolas (1 g a 2 g)",
+            "directions": "Diluir em 100 mL de SF 0,9% e infundir por via endovenosa em 15 minutos."
+          },
+          {
+            "drug": "Cetoprofeno 100 mg pó liofilizado IV (Ampola)",
+            "quantity": "1 ampola",
+            "directions": "Diluir em 100 mL de SF 0,9% e infundir por via endovenosa em 20 minutos (evitar se disfunção renal ou úlcera péptica ativa)."
+          },
+          {
+            "drug": "Metoclopramida 10 mg/2 mL (Ampola)",
+            "quantity": "1 ampola",
+            "directions": "Administrar 10 mg por via endovenosa lenta em 2 a 3 minutos para alívio de náuseas e estase gástrica associada à enxaqueca."
+          },
+          {
+            "drug": "Dexametasona 4 mg/mL (Frasco-ampola)",
+            "quantity": "1 frasco (10 mg = 2,5 mL)",
+            "directions": "Administrar 10 mg IV em dose única associada aos analgésicos para prevenção de recidiva precoce da cefaleia nas próximas 72 horas."
+          }
+        ]
+      },
+      {
+        "route": "Uso Oral Domiciliar / Resgate de Alta",
+        "mode": "standard",
+        "items": [
+          {
+            "drug": "Succinato de Sumatriptano 50 mg Comprimidos",
+            "quantity": "1 caixa (2 comprimidos)",
+            "directions": "Tomar 1 comprimido (50 mg) via oral ao primeiro sinal de início da crise de enxaqueca. Se a dor persistir ou retornar, pode tomar o 2º comprimido após intervalo mínimo de 2 horas (dose máxima: 200 mg em 24h). Não usar se hipertensão grave ou coronariopatia."
+          },
+          {
+            "drug": "Dipirona 1 g Comprimidos",
+            "quantity": "1 caixa",
+            "directions": "Tomar 1 comprimido (1 g) via oral de 6 em 6 horas (6/6h) se dor de cabeça, por até 3 dias consecutivos."
+          }
+        ]
+      }
+    ],
+    "orientations": [
+      "Permanecer em repouso em ambiente com pouca luz e livre de ruídos sonoros durante a crise.",
+      "Manter hidratação oral vigorosa (beber 2 a 3 litros de água ao longo do dia).",
+      "Evitar uso de analgésicos e triptanos por mais de 2 dias por semana para prevenir cefaleia crônica por abuso de medicação.",
+      "Retornar imediatamente à emergência se a dor mudar de padrão, surgir febre, rigidez de nuca, vômitos em jato, convulsão ou fraqueza nos braços ou pernas."
+    ]
+  }
+},
+  {
+  "id": "rec-seed-apendicite-aguda",
+  "slug": "prescricao-apendicite-aguda",
+  "title": "Prescrição Hospitalar — Apendicite Aguda e Abdome Agudo Inflamatório",
+  "status": "verified",
+  "data": {
+    "copy_ready": true,
+    "routes": [
+      {
+        "route": "Uso Endovenoso Hospitalar (Jejum, Hidratação e Profilaxia)",
+        "mode": "standard",
+        "items": [
+          {
+            "drug": "Ringer Lactato 1.000 mL",
+            "quantity": "2 frascos de 1.000 mL",
+            "directions": "Infundir 1.000 mL IV rápido nas primeiras 2 horas; a seguir manter 2.000 a 2.500 mL/24h em bomba ou gotejamento contínuo."
+          },
+          {
+            "drug": "Cefazolina 2 g pó injetável IV + Metronidazol 500 mg injetável IV",
+            "quantity": "1 dose pré-operatória",
+            "directions": "Administrar por via endovenosa de 30 a 60 minutos antes da incisão cirúrgica. (Se apendicite perfurada com peritonite: substituir por Ceftriaxona 2 g IV 24/24h + Metronidazol 500 mg IV 8/8h)."
+          },
+          {
+            "drug": "Dipirona 1 g/2 mL (Ampola)",
+            "quantity": "1 ampola diluída em 100 mL de SF 0,9%",
+            "directions": "Infundir por via endovenosa em intervalos de 6 em 6 horas (6/6h) para controle da dor abdominal."
+          },
+          {
+            "drug": "Ondansetrona 8 mg/4 mL (Ampola)",
+            "quantity": "1 ampola",
+            "directions": "Administrar por via endovenosa em intervalos de 8 em 8 horas (8/8h) se náuseas ou vômitos."
+          }
+        ]
+      }
+    ],
+    "orientations": [
+      "Manter jejum oral estrito absoluto (incluindo líquidos e água) até avaliação da equipe cirúrgica e realização do procedimento.",
+      "Manter cabeceira elevada a 30 graus e repouso no leito.",
+      "Comunicar imediatamente a enfermagem ou plantonista em caso de febre, taquicardia ou piora súbita da dor abdominal."
+    ]
+  }
+},
+  {
+  "id": "rec-seed-tvp-membros-inferiores",
+  "slug": "prescricao-tvp-membros-inferiores",
+  "title": "Prescrição Ambulatorial e de Alta — Trombose Venosa Profunda (TVP)",
+  "status": "verified",
+  "data": {
+    "copy_ready": true,
+    "routes": [
+      {
+        "route": "Uso Oral de Primeira Escolha (Anticoagulante de Ação Direta — DOAC)",
+        "mode": "alternatives",
+        "items": [
+          {
+            "drug": "Rivaroxabana 15 mg Comprimidos Revestidos (Fase de Ataque)",
+            "quantity": "1 caixa com 42 comprimidos",
+            "directions": "Tomar 1 comprimido (15 mg) via oral de 12 em 12 horas (12/12h) junto com as refeições por exatamente 21 dias. No 22º dia, transicionar para Rivaroxabana 20 mg 1x ao dia."
+          },
+          {
+            "drug": "Apixabana 5 mg Comprimidos Revestidos (Fase de Ataque)",
+            "quantity": "1 caixa com 60 comprimidos",
+            "directions": "Tomar 2 comprimidos (10 mg) via oral de 12 em 12 horas (12/12h) por exatamente 7 dias. No 8º dia, passar para 1 comprimido (5 mg) de 12 em 12 horas (12/12h)."
+          }
+        ]
+      },
+      {
+        "route": "Uso Oral de Manutenção (A partir do 22º dia)",
+        "mode": "standard",
+        "items": [
+          {
+            "drug": "Rivaroxabana 20 mg Comprimidos Revestidos (Fase de Manutenção)",
+            "quantity": "1 caixa com 28 comprimidos",
+            "directions": "Tomar 1 comprimido (20 mg) via oral 1 vez ao dia (24/24h) com o jantar ou almoço por pelo menos 3 meses."
+          }
+        ]
+      }
+    ],
+    "orientations": [
+      "A medicação Rivaroxabana deve ser tomada obrigatoriamente junto a uma refeição (almoço ou jantar) para garantir sua correta absorção pelo organismo.",
+      "Estimular caminhadas leves e deambulação assim que a dor diminuir; não permanecer em repouso deitado por períodos prolongados.",
+      "Não usar meias elásticas de compressão se houver dor intensa súbita ou suspeita de doença arterial periférica associada.",
+      "Procurar imediatamente a emergência médica em caso de falta de ar súbita, tosse com sangue (hemoptise), dor no peito ao respirar, ou sinais de sangramento significativo (urina avermelhada, fezes pretas tipo borra de café ou manchas roxas espontâneas extensas)."
+    ]
+  }
+}
 ];
 })();
