@@ -2025,7 +2025,37 @@
     } else if (count === 12) {
       rows = 12;
     } else if (count === 6) {
-      rows = 6; cols = 2; uncertain = true;
+      // 6 faixas servem a dois formatos: 6×2 e 3×4 + 3 tiras de ritmo. No banco
+      // público de 52 ECGs, todos os casos de 6 faixas eram 3×4 + ritmo. O padrão
+      // passa a ser 3×4 + ritmo, e só 2+ rótulos reconhecidos no meio das faixas
+      // superiores (sem rótulos nas 3 colunas) mudam o palpite para 6×2.
+      // Em ambos os casos o layout continua "hipótese": o usuário confirma.
+      const votes2 = [1].reduce(() => {
+        let v = 0;
+        for (const band of topology.bands.slice(0, 3)) {
+          const xMin = boundaries.xMin + 0.5 * (boundaries.xMax - boundaries.xMin);
+          const label = recognizeLeadLabelInRegion(imageData, {
+            xMin, xMax: Math.min(boundaries.xMax, xMin + (boundaries.xMax - boundaries.xMin) * 0.15),
+            yMin: band.yMin, yMax: band.yCenterRatio
+          });
+          if (label.recognized) v++;
+        }
+        return v;
+      }, 0);
+      let votes4 = 0;
+      for (const band of topology.bands.slice(0, 3)) {
+        for (const col of [1, 3]) {
+          const xMin = boundaries.xMin + (col / 4) * (boundaries.xMax - boundaries.xMin);
+          const label = recognizeLeadLabelInRegion(imageData, {
+            xMin, xMax: Math.min(boundaries.xMax, xMin + (boundaries.xMax - boundaries.xMin) * 0.1),
+            yMin: band.yMin, yMax: band.yCenterRatio
+          });
+          if (label.recognized) votes4++;
+        }
+      }
+      if (votes2 >= 2 && votes2 > votes4) { rows = 6; cols = 2; }
+      else { rows = 3; cols = 4; rhythmCount = 3; }
+      uncertain = true;
     } else if (count >= 3 && count <= 5) {
       // Test interior printed labels before choosing a column hypothesis.
       const votes = {2: 0, 4: 0};
