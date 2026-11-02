@@ -38,10 +38,15 @@ test("Traube frontend selects each bust logo by theme", () => {
   }
 });
 
-test("PWA generation script and manifest declare 180, 192 and 512 icons", () => {
+test("PWA icon PNGs and manifest declare 180, 192 and 512 icons", () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(root, "manifest.webmanifest"), "utf8"));
   const icons = manifest.icons || [];
   assert.ok(icons.some(icon => icon.sizes === "192x192"));
   assert.ok(icons.some(icon => icon.sizes === "512x512"));
-  assert.ok(fs.existsSync(path.join(root, "scripts/build-traube-pwa-icons.py")));
+  for (const size of [180, 192, 512]) {
+    const bytes = fs.readFileSync(path.join(logoDir, `pwa-icon-${size}.png`));
+    assert.equal(bytes.subarray(0, 8).toString("hex"), "89504e470d0a1a0a");
+    assert.equal(bytes.readUInt32BE(16), size);
+    assert.equal(bytes.readUInt32BE(20), size);
+  }
 });
