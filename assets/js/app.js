@@ -1393,6 +1393,7 @@ const PAGE_INFO = {
   trabalho_laboratorio: { title: "Laboratório", eyebrow: "Exames e interpretação", helper: "Consulte exames e pontos-chave de interpretação." },
   trabalho_prescricao: { title: "Prescrição", eyebrow: "Prescrições e doses", helper: "Acesse esquemas práticos para a rotina clínica." },
   trabalho_protocolos: { title: "Protocolos", eyebrow: "Protocolos e condutas", helper: "Consulte fluxos e condutas de forma objetiva." },
+  trabalho_modelos: { title: "Modelos", eyebrow: "Receitas, exames e anamnese", helper: "Copie modelos rápidos sem abrir os protocolos completos." },
   trabalho_ecg: { title: "ECG", eyebrow: "Traçados e ritmo", helper: "Revise ritmos e achados eletrocardiográficos." },
   trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Reposição e correção", helper: "Calcule e revise reposições com segurança." },
   trabalho_receitas: { title: "Tratamentos gerais", eyebrow: "Receitas e condutas", helper: "Encontre tratamentos práticos para situações frequentes." },
@@ -1655,8 +1656,16 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">▧</span><span>Cola rápida</span>
         </a>
 
-        <a class="nav-link ${["trabalho_prescricao","trabalho_bulario","trabalho_protocolos","trabalho_receitas","trabalho_antimicrobianos"].includes(page) ? "active" : ""}" href="/trabalho/prescricao/">
+        <a class="nav-link ${["trabalho_prescricao","trabalho_bulario","trabalho_receitas","trabalho_antimicrobianos"].includes(page) ? "active" : ""}" href="/trabalho/prescricao/">
           <span class="nav-icon">✎</span><span>Prescrição</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_modelos" ? "active" : ""}" href="/trabalho/modelos/">
+          <span class="nav-icon">▤</span><span>Modelos</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_protocolos" ? "active" : ""}" href="/trabalho/protocolos/">
+          <span class="nav-icon">☷</span><span>Protocolos</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_calculadora" ? "active" : ""}" href="/trabalho/calculadora/">
