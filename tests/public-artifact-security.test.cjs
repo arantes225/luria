@@ -50,3 +50,15 @@ test('complete weekly answer packs must never return to public Git',()=>{
   const exposed=tracked.filter(p=>/^content\/weekly\/\d{4}-W\d{2}\//.test(p));
   assert.deepEqual(exposed,[], 'Weekly question and answer packs require a private, authenticated API');
 });
+
+test('Exames pending catalogue and refreshed PWA files are included in published Pages artifact',()=>{
+ for(const asset of [
+  'assets/js/trabalho-exames-pending-catalog.js',
+  'assets/js/trabalho-exames-interpreter.js',
+  'assets/css/trabalho-exames-interpreter.css',
+  'assets/js/pwa.js',
+  'service-worker.js',
+  'trabalho/exames/index.html',
+  'trabalho/laboratorio/index.html'
+ ])assert.equal(isPublicFile(asset),true,asset);
+});

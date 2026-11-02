@@ -203,6 +203,10 @@ function mockTables(w,tables){
     };
     return query;
   }};
+  // Tests that exercise authenticated clinical catalogues must model a restored session.
+  // The production Bulário intentionally denies anonymous access; a missing auth mock
+  // made all three rendering tests fail before they could assert HTML safety.
+  w.supabaseClient.auth={getSession:async()=>({data:{session:{user:{id:'fixture-authenticated-user'}}},error:null})};
   w.matchMedia=()=>({matches:false});w.HTMLElement.prototype.scrollIntoView=function(){};
 }
 test('Protocol full load, source links, image dialog and clinical bridge keep their rendering contracts',async t=>{
