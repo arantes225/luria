@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Modelos rápidos · TRAUBE</title>
+  <meta name="theme-color" content="#184888">
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
+  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+  <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
+  <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
+  <style>
+    .quick-models{display:grid;gap:16px}
+    .model-tabs{display:flex;flex-wrap:wrap;gap:8px}
+    .model-tabs button{border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font:inherit;font-weight:800;padding:12px 18px;cursor:pointer}
+    .model-tabs button[aria-selected="true"]{background:var(--theme,#184888);border-color:var(--theme,#184888);color:#fff}
+    .model-intro{margin:0;color:var(--muted);font-size:.92rem;line-height:1.5}
+    .model-filters{display:grid;grid-template-columns:minmax(190px,1fr) minmax(160px,250px) auto;gap:10px;align-items:center}
+    .model-filters input,.model-filters select{width:100%;min-height:44px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font:inherit;padding:9px 12px}
+    .model-count{font-weight:700;font-size:.8rem;color:var(--muted);white-space:nowrap}
+    .model-workspace{display:grid;grid-template-columns:minmax(235px,32%) minmax(0,1fr);gap:14px;align-items:start}
+    .model-list,.model-detail{border:1px solid var(--border);background:var(--surface);border-radius:18px;overflow:hidden}
+    .model-list{max-height:65vh;overflow:auto}
+    .model-list button{display:grid;width:100%;gap:5px;padding:15px;text-align:left;background:transparent;color:var(--text);border:0;border-bottom:1px solid var(--border);font:inherit;cursor:pointer}
+    .model-list button.active,.model-list button:hover{background:color-mix(in srgb,var(--theme,#184888) 7%,var(--surface))}
+    .model-list button strong{font-size:.91rem;line-height:1.35}.model-list small{color:var(--muted)}
+    .model-detail{padding:20px;min-height:240px}
+    .model-detail-head{display:flex;align-items:start;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:15px}
+    .model-detail-head h2{margin:0 0 6px;font-size:1.27rem;line-height:1.25}
+    .model-detail-head small{color:var(--muted);font-weight:700}
+    .model-detail h3{font-size:.88rem;margin:0 0 8px}
+    .model-block{padding:14px;background:var(--surface-2);border:1px solid var(--border);border-radius:12px;margin-top:12px}
+    .model-choice{display:flex;align-items:flex-start;gap:9px;margin-top:9px;line-height:1.48;cursor:pointer}
+    .model-choice input{margin-top:4px;accent-color:var(--theme,#184888);flex:0 0 auto}
+    .model-choice span{min-width:0;overflow-wrap:anywhere}
+    .model-choice small{display:block;color:var(--muted);font-size:.79rem;margin-top:3px}
+    .model-choice.disabled{opacity:.72;cursor:not-allowed}
+    .model-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+    .model-button{border:1px solid var(--theme,#184888);background:var(--theme,#184888);color:#fff;border-radius:11px;padding:10px 14px;font:inherit;font-weight:800;cursor:pointer}
+    .model-button:disabled{opacity:.46;cursor:not-allowed}
+    .model-link{display:inline-flex;align-items:center;border:1px solid var(--border);background:var(--surface-2);color:var(--text);text-decoration:none;border-radius:11px;padding:10px 14px;font-size:.84rem;font-weight:800}
+    .model-hint,.model-message{color:var(--muted);font-size:.82rem;line-height:1.5}
+    .model-message{padding:22px;text-align:center}
+    .model-preview{white-space:pre-wrap;overflow-wrap:anywhere;font-family:inherit;font-size:.84rem;line-height:1.5;background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:15px;max-height:55vh;overflow:auto}
+    .model-note{color:var(--muted);font-size:.79rem;padding:9px 0;line-height:1.5}
+    @media(max-width:880px){.model-workspace{grid-template-columns:1fr}.model-list{max-height:280px}.model-detail{padding:15px}}
+    @media(max-width:580px){.model-filters{grid-template-columns:1fr}.model-tabs button{flex:1;padding:11px 8px}.model-list{max-height:240px}}
+    @media print{#sidebar,.topbar,.traube-page-spotlight,.model-tabs,.model-filters,.model-list,.model-actions,.model-note{display:none!important}.model-workspace{display:block}.model-detail{border:0}}
+  </style>
+</head>
+<body data-page="trabalho_modelos" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
+  <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+  <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
+        </header>
+        <section class="traube-page-spotlight" aria-label="Modelos rápidos">
+          <div class="traube-page-spotlight-copy">
+            <strong data-page-title>Modelos</strong>
+            <small class="traube-page-spotlight-helper">Receitas, solicitações de exames e anamneses para copiar e colar.</small>
+          </div>
+        </section>
+        <section class="quick-models" aria-label="Biblioteca de modelos">
+          <nav id="model-tabs" class="model-tabs" role="tablist" aria-label="Tipo de modelo">
+            <button type="button" role="tab" data-type="receitas" aria-selected="true">Receitas</button>
+            <button type="button" role="tab" data-type="exames" aria-selected="false">Exames</button>
+            <button type="button" role="tab" data-type="anamnese" aria-selected="false">Anamnese</button>
+          </nav>
+          <p class="model-intro">Apenas o modelo operacional. A explicação completa permanece em <a href="/trabalho/protocolos/">Protocolos</a>.</p>
+          <div class="model-filters">
+            <input id="model-search" type="search" autocomplete="off" aria-label="Buscar modelo" placeholder="Buscar modelo…">
+            <select id="model-category" aria-label="Filtrar área"><option value="">Todas as áreas</option></select>
+            <span id="model-count" class="model-count" aria-live="polite">Carregando…</span>
+          </div>
+          <div class="model-workspace">
+            <div id="model-list" class="model-list" role="region" aria-label="Modelos encontrados"><p class="model-message">Carregando modelos…</p></div>
+            <article id="model-detail" class="model-detail" aria-live="polite"><p class="model-message">Selecione um modelo.</p></article>
+          </div>
+          <p class="model-note">Modelos de apoio profissional. Antes de utilizar, confira dados do paciente, indicações, alergias, dose, via, contraindicações e adequação clínica. Nenhum conteúdo em revisão é liberado para cópia automática.</p>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js"></script>
+  <script src="/assets/js/app.js?v=20261102-modelos1"></script>
+  <script defer src="/assets/js/trabalho-modelos.js?v=20261102-modelos1"></script>
+  <script defer src="/assets/js/pwa.js?v=20261101-bootstrap1"></script>
+</body>
+</html>
