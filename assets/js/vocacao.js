@@ -146,11 +146,17 @@
     return '<section class="voc-report-section"><h3>'+html(title)+'</h3>'+body+'</section>';
   }
   function chosenSamples(ids,max=3){
-    return ids.map(id=>{
-      const q=engine.questionIndex.get(id);
-      const a=answers[id];
-      return q&&a?.first>=0?{q,text:q.options[a.first].label}:null;
-    }).filter(Boolean).slice(0,max);
+    // Evitar que as evidências do relatório sejam sempre só as três primeiras respostas.
+    const stages=[ids.slice(0,engine.core.length),
+      ids.slice(engine.core.length,engine.core.length+engine.DEEP_COUNT),
+      ids.slice(engine.core.length+engine.DEEP_COUNT)];
+    return stages.flatMap(stage=>{
+      const choice=stage.map(id=>{
+        const q=engine.questionIndex.get(id),a=answers[id];
+        return q&&a?.first>=0?{q,text:q.options[a.first].label}:null;
+      }).find(Boolean);
+      return choice?[choice]:[];
+    }).slice(0,max);
   }
   function scoreGroups(report,tags){
     return tags.slice().sort((a,b)=>(report.scores[b]||0)-(report.scores[a]||0));
