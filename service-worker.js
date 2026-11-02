@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261102-diabetes-nav-v2";
+const CACHE_VERSION = "traube-pwa-20261102-busto-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -61,8 +61,8 @@ const APP_SHELL = [
   "/jogos/plantao-relampago/",
   "/jogos/sequencia-salvadora/",
   "/jogos/escapando-do-plantao/",
-  "/assets/img/logos/pwa-icon-180.png?v=pwa5",
-  "/assets/img/logos/logo-principal.png?v=traube7",
+  "/assets/img/logos/pwa-icon-180.png?v=busto20261102",
+  "/assets/img/logos/logo-principal.png?v=busto20261102",
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/js/pwa.js?v=20261101-bootstrap1",
   "/assets/css/style.css?v=16.14-font-unified",
@@ -122,7 +122,7 @@ const APP_SHELL = [
   "/assets/css/calculadora-pwa-fix.css?v=20261012-pwa-calcs-2",
   "/assets/js/calculadora-pwa-dates.js?v=20261012-pwa-calcs-2",
   "/assets/js/weekly-content.js?v=1",
-  "/assets/img/logos/pwa-icon-180.png?v=3",
+  "/assets/img/logos/pwa-icon-180.png?v=busto20261102",
   "/assets/js/supabase.js",
   "/assets/css/education-pages-v2.css?v=1",
   "/assets/css/style.css?v=16.12-no-legacy-dashboard",
@@ -130,8 +130,8 @@ const APP_SHELL = [
   "/assets/js/dashboard.js?v=20261006-css-owned-height",
   "/assets/js/study-mode.js?v=12.1",
   "/assets/js/traube-brand-v5.js?v=20261031-leco-actions-center1",
-  "/assets/img/logos/pwa-icon-192.png?v=pwa5",
-  "/assets/img/logos/pwa-icon-512.png?v=pwa5"
+  "/assets/img/logos/pwa-icon-192.png?v=busto20261102",
+  "/assets/img/logos/pwa-icon-512.png?v=busto20261102"
 ];
 
 // APP_SHELL permanece como lista de rotas públicas reconhecidas pelo service worker.
