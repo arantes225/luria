@@ -7,7 +7,7 @@ const engine = require("../assets/js/ecg-cv-engine.js");
 
 const W = 1200, H = 480;
 
-function paperImage(traceLuma, withTrace = true) {
+function paperImage(traceLuma, withTrace = true, withPulse = false) {
   const data = new Uint8ClampedArray(W * H * 4);
   for (let i = 0; i < W * H; i++) { data[i * 4] = 16; data[i * 4 + 1] = 16; data[i * 4 + 2] = 16; data[i * 4 + 3] = 255; }
   const x0 = 60, x1 = 1140, y0 = 50, y1 = 440;
@@ -22,6 +22,15 @@ function paperImage(traceLuma, withTrace = true) {
     }
   }
   if (!withTrace) return { data, width: W, height: H };
+  if (withPulse) {
+    // Pulso de 1 mV (10 mm = 60 px) e 5 mm (30 px) colado na borda esquerda do papel,
+    // sem linha de base antes dele; base só à direita (como em muitos impressos).
+    const base = 150, top = base - 60;
+    const dot = (x, y) => { const i = (y * W + x) * 4; data[i] = data[i + 1] = data[i + 2] = traceLuma; };
+    for (let y = top; y <= base; y++) { dot(x0 + 22, y); dot(x0 + 52, y); }
+    for (let x = x0 + 22; x <= x0 + 52; x++) dot(x, top);
+    for (let x = x0 + 52; x < x0 + 120; x++) dot(x, base);
+  }
   const bandY = [110, 220, 330, 405];
   const put = (x, y) => {
     if (x < x0 || x >= x1 || y < y0 || y >= y1) return;
@@ -29,7 +38,7 @@ function paperImage(traceLuma, withTrace = true) {
     data[i] = data[i + 1] = data[i + 2] = traceLuma;
   };
   bandY.forEach((cy, row) => {
-    const segs = row === 3 ? [[x0 + 20, x1 - 20]] : [0, 1, 2, 3].map(c => [x0 + 20 + c * 265, x0 + 20 + c * 265 + 245]);
+    const segs = (withPulse && row === 0) ? [[x0 + 140, x0 + 265]] : row === 3 ? [[x0 + 20, x1 - 20]] : [0, 1, 2, 3].map(c => [x0 + 20 + c * 265, x0 + 20 + c * 265 + 245]);
     segs.forEach(([a, b]) => {
       let prev = cy;
       for (let x = a; x < b; x++) {
@@ -60,4 +69,27 @@ test("papel quadriculado sem traçado nunca gera células válidas", () => {
   const out = engine.detectECGBoundaries(paperImage(150, false), {});
   const cells = out.detectedLayout ? out.detectedLayout.validWaveformCells : 0;
   assert.equal(cells, 0);
+});
+
+test("grade medida nos dois eixos mesmo com perfil vertical contaminado pelos traçados", () => {
+  const cal = engine.detectECGGridAndCalibration(paperImage(40, true), null, engine.locatePaperSheet(paperImage(40, true)).boundaries);
+  assert.equal(cal.gridDetected, true);
+  assert.ok(Math.abs(cal.pixelsPerMmX - 6) < 0.4, "px/mm X ~ 6, obtido " + cal.pixelsPerMmX);
+  assert.ok(Math.abs(cal.pixelsPerMmY - 6) < 0.4, "px/mm Y ~ 6, obtido " + cal.pixelsPerMmY);
+});
+
+test("pulso de calibração sem linha de base à esquerda é detectado e a escala vira medida", () => {
+  const img = paperImage(40, true, true);
+  const cal = engine.detectECGGridAndCalibration(img, null, engine.locatePaperSheet(img).boundaries);
+  assert.equal(cal.calibrationPulse.detected, true);
+  assert.equal(cal.gainMmPerMv, 10);
+  assert.equal(cal.paperSpeedMmPerSec, 25);
+  assert.equal(cal.calibrationSource, "measured");
+  assert.equal(cal.measurementsAllowed, true);
+});
+
+test("sem pulso, a escala nunca é marcada como medida", () => {
+  const img = paperImage(40, true, false);
+  const cal = engine.detectECGGridAndCalibration(img, null, engine.locatePaperSheet(img).boundaries);
+  assert.equal(cal.measurementsAllowed, false);
 });

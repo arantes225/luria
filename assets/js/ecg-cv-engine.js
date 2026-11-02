@@ -959,7 +959,26 @@
     const coarseX = useStrongPeriod ? strongX : dominantX;
     const coarseY = useStrongPeriod ? strongY : dominantY;
     const periodX = { ...coarseX, period: coarseX.period > 0 ? refineGridPeriodSubpixel(hpX, coarseX.period) : 0 };
-    const periodY = { ...coarseY, period: coarseY.period > 0 ? refineGridPeriodSubpixel(hpY, coarseY.period) : 0 };
+    let periodY = { ...coarseY, period: coarseY.period > 0 ? refineGridPeriodSubpixel(hpY, coarseY.period) : 0 };
+
+    // O perfil vertical é contaminado pelos próprios traçados (estruturas
+    // horizontais) e pode escolher um período espúrio (ex.: 3 px). Como o
+    // quadriculado é quadrado, quando X é confiável e Y discorda, procura-se o
+    // período de Y só numa janela de ±20% do período de X e exige-se a mesma
+    // confiança mínima (0,28) da grade medida; caso contrário nada muda.
+    const yDisagrees = periodX.period > 0 && (periodY.period <= 0 ||
+      Math.abs(periodX.period - periodY.period) / Math.max(periodX.period, periodY.period) > 0.22 ||
+      periodY.confidence < 0.28);
+    if (yDisagrees && periodX.confidence >= 0.5) {
+      const lo = Math.max(3, Math.floor(periodX.period * 0.8));
+      const hi = Math.min(Math.floor(height / 8), Math.ceil(periodX.period * 1.2));
+      if (hi > lo) {
+        const constrainedY = findDominantGridPeriod(hpY, lo, hi);
+        if (constrainedY.period > 0 && constrainedY.confidence >= 0.28) {
+          periodY = { ...constrainedY, period: refineGridPeriodSubpixel(hpY, constrainedY.period) };
+        }
+      }
+    }
 
     // Detecção do pulso retangular de calibração (1 mV = 10 mm de altura, 200 ms = 5 mm de largura)
     const calPulse = detectCalibrationPulse(imageData, effectiveSheetBoundaries);
@@ -1224,7 +1243,9 @@
 
     const paperW = xMaxPaper - xMinPaper;
     const paperH = yMaxPaper - yMinPaper;
-    const scanMinX = xMinPaper + Math.max(4, Math.floor(paperW * 0.02));
+    // O pulso de 1 mV costuma começar colado na borda esquerda da folha; começar a
+    // busca 2% adiante cortava a subida e a linha de base do pulso.
+    const scanMinX = xMinPaper + 4;
     const scanMaxX = Math.min(xMaxPaper, scanMinX + Math.floor(paperW * 0.12));
     let bestPulse = { detected: false, heightPx: 0, widthPx: 0, confidence: 0 };
 
@@ -1240,7 +1261,7 @@
         for (let y = yMin; y < yMax; y++) {
           const idx = (y * width + x) * 4;
           const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
-          if (luma < 120 && Math.abs(data[idx] - data[idx + 2]) < 55) {
+          if (luma < 150 && Math.abs(data[idx] - data[idx + 2]) < 55) {
             sumY += y;
             cnt++;
           }
@@ -1273,8 +1294,21 @@
               const runWidth = runEnd - runStart;
               const before = state.slice(Math.max(0, runStart - 18), runStart).filter(v => v === 1).length;
               const after = state.slice(runEnd, Math.min(state.length, runEnd + 18)).filter(v => v === 1).length;
-              if (runWidth >= 6 && runWidth <= 40 && before >= 4 && after >= 4) {
-                const bracketScore = Math.min(1, Math.min(before, after) / 8);
+              // Quando o pulso inicia o traçado, não há linha de base antes dele
+              // (nenhum traço à esquerda); aceita-se base só do lado direito, com
+              // confiança menor. O inverso (só à esquerda) segue a mesma regra.
+              const beforeWin = trace.slice(Math.max(0, runStart - 18), runStart);
+              const afterWin = trace.slice(runEnd, Math.min(trace.length, runEnd + 18));
+              // "Vazio" = metade ou mais da janela sem traço (a subida do pulso e
+              // 1–2 colunas na altura da base não contam como linha de base).
+              const beforeEmpty = runStart >= 8 && beforeWin.filter(v => v === null).length >= Math.ceil(beforeWin.length / 2);
+              const afterEmpty = (trace.length - runEnd) >= 8 && afterWin.filter(v => v === null).length >= Math.ceil(afterWin.length / 2);
+              const bothSides = before >= 4 && after >= 4;
+              const oneSide = (beforeEmpty && after >= 6) || (afterEmpty && before >= 6);
+              if (runWidth >= 6 && runWidth <= 40 && (bothSides || oneSide)) {
+                const bracketScore = bothSides
+                  ? Math.min(1, Math.min(before, after) / 8)
+                  : 0.5 * Math.min(1, Math.max(before, after) / 8);
                 const plateauScore = Math.min(1, runWidth / 10);
                 const confidence = Math.min(0.99, 0.55 + bracketScore * 0.25 + plateauScore * 0.2);
                 if (confidence > bestPulse.confidence) {
