@@ -1345,8 +1345,11 @@
       if (expectedResult.recognized) return expectedResult;
       // Sonda curta para contradições explícitas. Ela mantém o fail-closed
       // (ex.: V3 impresso na célula de DI) sem repetir o OCR completo e lento.
+      // Rótulos formados só por barras verticais (I, II, III) casam com picos
+      // QRS e linhas de grade e geravam "conflitos" falsos que reprovavam a
+      // imagem inteira; ficam fora da sonda de contradição. Rótulos com glifos
+      // distintos (aVR/aVL/aVF/V1–V6) continuam sendo contradições explícitas.
       const contradictionLabels = [
-        "DI", "I", "DII", "II", "DIII", "III",
         "aVR", "AVR", "aVL", "AVL", "aVF", "AVF",
         "V1", "V2", "V3", "V4", "V5", "V6"
       ].filter(label => (LEAD_SYNONYMS[label] || label) !== canonicalExpected);
@@ -1374,8 +1377,11 @@
     const scales = options.scales || [1, 2, 3];
     // Na folha completa, testar apenas o rótulo esperado reduz a busca em 12×
     // e impede que um trecho da grade seja promovido a uma derivação diferente.
+    // Sem derivação esperada ("I" e "DI" são uma barra vertical, quase igual a um
+    // pico QRS ou linha da grade) o rótulo isolado "I" não é pesquisado: gerava
+    // "DI" falso em várias linhas e reprovava a folha por rótulos duplicados.
     const candidateLabels = options.candidateLabels ||
-      ["DI", "I", "DII", "II", "DIII", "III", "aVR", "AVR", "aVL", "AVL", "aVF", "AVF", "V1", "V2", "V3", "V4", "V5", "V6"];
+      ["DII", "II", "DIII", "III", "aVR", "AVR", "aVL", "AVL", "aVF", "AVF", "V1", "V2", "V3", "V4", "V5", "V6"];
 
     // Primeiro verifica se há uma caixa de caracteres nítida na zona de rótulo
     for (const labelName of candidateLabels) {
