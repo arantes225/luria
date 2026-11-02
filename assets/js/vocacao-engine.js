@@ -301,8 +301,14 @@
   function calculate(answers,sequence) {
     if(!Array.isArray(sequence)||sequence.length!==total||new Set(sequence).size!==sequence.length ||
       sequence.some(id=>!questionIndex.has(id)||!validResponse(answers[id])))throw Error("Responda às etapas para gerar seu perfil.");
-    const expected=createSequence(answers,sequence.slice(core.length,core.length+DEEP_COUNT),sequence.slice(-FINAL_COUNT));
-    if(expected.some((id,i)=>id!==sequence[i]))throw Error("Ordem das perguntas inválida.");
+    // A ordem válida é recalculada a partir das respostas, não simplesmente
+    // aceita como correta por listar perguntas existentes. Evita sequências adulteradas.
+    const expectedAdaptive=selectAdaptive(answers);
+    if(expectedAdaptive.some((id,i)=>id!==sequence[core.length+i]))
+      throw Error("Aprofundamento incompatível com as respostas iniciais.");
+    const expectedFinal=selectFinal(answers,expectedAdaptive);
+    const expected=createSequence(answers,expectedAdaptive,expectedFinal);
+    if(expected.some((id,i)=>id!==sequence[i]))throw Error("Ajuste fino incompatível com as respostas.");
     const {scores,responded,inexperienced,skipped}=scoreInterests(Object.fromEntries(sequence.map(id=>[id,answers[id]])));
     const ranked=baseRank(Object.fromEntries(sequence.map(id=>[id,answers[id]])));
     const positive=Object.keys(labels).filter(t=>scores[t]>.04).sort((a,b)=>scores[b]-scores[a]);
