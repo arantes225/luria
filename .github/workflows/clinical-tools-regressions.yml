@@ -1,0 +1,31 @@
+name: Clinical Tools Regression Tests
+
+on:
+  pull_request:
+    paths:
+      - "assets/js/work-scores.js"
+      - "assets/js/clinical-calculators-batch4.js"
+      - "trabalho/scores/index.html"
+      - "trabalho/calculadora/index.html"
+      - "tests/clinical-tools-batch*.test.cjs"
+      - ".github/workflows/clinical-tools-regressions.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  regression-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check score and calculator JavaScript syntax
+        run: |
+          node --check assets/js/work-scores.js
+          node --check assets/js/clinical-calculators-batch4.js
+      - name: Run all clinical score/calculator regression fixtures
+        run: node --test tests/clinical-tools-batch*.test.cjs
