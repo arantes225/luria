@@ -55,11 +55,11 @@ test("retomar sessão e refazer com escolhas limpas",()=>{
   $("voc-start").click();
   $("voc-options").querySelector(".voc-option").click();
   assert.equal($("voc-next").disabled,false);
-  const saved=window.sessionStorage.getItem("traube.vocacao.v3.session");
+  const saved=window.sessionStorage.getItem("traube.vocacao.v5.session");
   assert.ok(saved);
   dom.window.close();
   const newRun=start();
-  newRun.window.sessionStorage.setItem("traube.vocacao.v3.session",saved);
+  newRun.window.sessionStorage.setItem("traube.vocacao.v5.session",saved);
   // Código é avaliado de novo após a sessão restaurada.
   newRun.window.eval(fs.readFileSync("assets/js/vocacao.js","utf8"));
   assert.equal(newRun.$("voc-quiz").hidden,false);
