@@ -1187,7 +1187,7 @@
 
     /* Barra superior – vence o width:28px do ui-app.css */
     ${topbarLogo} {
-      ${size(48)}
+      ${size(70)}
       transform: none !important;
       image-rendering: auto !important;
       filter: brightness(0) invert(1) !important;
@@ -1195,7 +1195,7 @@
 
     /* Container da brand na topbar */
     :is(${topbarCtx}) .topbar .ui-topbar-brand {
-      height: 48px !important;
+      height: 70px !important;
       gap: 0.75rem !important;
       align-items: center !important;
     }
@@ -1217,13 +1217,13 @@
 
     @media (max-width: 980px) {
       ${sidebarLogo} {${size(92)}}
-      ${topbarLogo} {${size(44)}}
-      :is(${topbarCtx}) .topbar .ui-topbar-brand {height: 44px !important;}
+      ${topbarLogo} {${size(56)}}
+      :is(${topbarCtx}) .topbar .ui-topbar-brand {height: 56px !important;}
     }
 
     @media (max-width: 600px) {
-      ${topbarLogo} {${size(38)}}
-      :is(${topbarCtx}) .topbar .ui-topbar-brand {height: 38px !important; flex: 0 0 38px !important;}
+      ${topbarLogo} {${size(48)}}
+      :is(${topbarCtx}) .topbar .ui-topbar-brand {height: 48px !important; flex: 0 0 48px !important;}
     }
   `;
 
