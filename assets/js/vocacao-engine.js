@@ -303,7 +303,7 @@
       sequence.some(id=>!questionIndex.has(id)||!validResponse(answers[id])))throw Error("Responda às etapas para gerar seu perfil.");
     // A ordem válida é recalculada a partir das respostas, não simplesmente
     // aceita como correta por listar perguntas existentes. Evita sequências adulteradas.
-    const expectedAdaptive=selectAdaptive(answers);
+    const expectedAdaptive=selectAdaptive(Object.fromEntries(core.map(q=>[q.id,answers[q.id]])));
     if(expectedAdaptive.some((id,i)=>id!==sequence[core.length+i]))
       throw Error("Aprofundamento incompatível com as respostas iniciais.");
     const expectedFinal=selectFinal(answers,expectedAdaptive);
