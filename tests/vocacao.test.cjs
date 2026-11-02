@@ -145,9 +145,12 @@ test("escolhas por conteúdo pediátrico e neuro reforçam os respectivos intere
 });
 test("segunda escolha e incerteza mudam pesos sem inventar certeza",()=>{
   const a=simulate(q=>0);
-  const b={...a.answers};
-  for(const id of a.sequence)b[id]=answer(0,1,true);
-  const report=engine.calculate(b,a.sequence);
+  const b=Object.fromEntries(engine.core.map(q=>[q.id,answer(0,1,true)]));
+  const deep=engine.selectAdaptive(b);
+  for(const id of deep)b[id]=answer(0,1,true);
+  const final=engine.selectFinal(b,deep);
+  for(const id of final)b[id]=answer(0,1,true);
+  const report=engine.calculate(b,engine.createSequence(b,deep,final));
   assert.equal(report.inexperienced,29);
   assert.equal(report.certainty,"exploratorio");
   assert.notDeepEqual(report.scores,a.report.scores);
