@@ -6,6 +6,10 @@
 const fs = require("fs");
 const path = require("path");
 const { execFileSync } = require("child_process");
+// O motor lê global.TraubeEcgSignalExtractor em tempo de chamada, como no navegador.
+// Sem este require, ele cai numa checagem simplificada de célula e o placar não
+// representa o app.
+require("../../assets/js/ecg-signal-extractor.js");
 const engine = require("../../assets/js/ecg-cv-engine.js");
 
 const dir = process.argv[2];

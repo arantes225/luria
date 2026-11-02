@@ -56,3 +56,21 @@ resolução 50% do registro 2, rot3 do registro 1).
 - Razão de amplitude extraída/real 1,03 a 1,07 (superestima 3 a 7%).
 - Com desfoque forte (res50) o período da grade dobra (12 px/mm no lugar de 6): risco de escala 2x.
 - Escala segue `assumed` (pulso de calibração não detectado nas sintéticas).
+
+## ATENÇÃO: correção do banco (extrator real)
+Até o commit 97530a2, `run_bank.cjs` NÃO carregava `ecg-signal-extractor.js`. O motor lê
+`global.TraubeEcgSignalExtractor` na hora da chamada; sem ele cai na checagem simplificada de
+célula (`basicCellWaveformCheck`), que é bem mais permissiva que o app real. Todos os placares
+acima (inclusive 43/52) refletem esse caminho simplificado. Com o extrator carregado, como no
+navegador:
+
+| Banco | Estrito (extrator real) |
+|---|---|
+| Públicas (52) | 24 (46%) |
+| Sintéticas (20) | 13 |
+
+Falhas públicas com o extrator real: 13 imagens "sem derivações válidas suficientes"
+(continuidade de tinta 0,1 a 0,3 em fotos de traço fino; ou grade/sombra dominando, 0,88),
+8 em 3x4 + ritmo com menos de 10 células, 4 de 2 a 3 tiras, 1 rótulo fora de posição, 1 parcial (ecg 8).
+Os ganhos anteriores da validação de células, do filtro de faixas e do limiar das faixas
+precisam ser reavaliados com o extrator real.
