@@ -996,6 +996,26 @@
       return true;
     }
 
+    /**
+     * Confirmação de layout em um toque: o usuário conferiu na foto original que a
+     * ordem proposta (linhas × colunas) corresponde ao papel e confirma todas as
+     * regiões candidatas de uma vez. Reaproveita confirmCandidateLead, portanto
+     * cada região ainda passa pela checagem de posição (expectedInTemplate) e pela
+     * nova auditoria; regiões que falharem continuam provisórias.
+     */
+    function confirmAllCandidateLeads() {
+      const confirmed = [];
+      const rejected = [];
+      CANONICAL_LEADS.forEach(lead => {
+        const info = capturedLeads.get(lead);
+        if (!info?.captured || info.status !== "provisional") return;
+        const result = confirmCandidateLead(lead);
+        if (result?.confirmed) confirmed.push(lead);
+        else rejected.push({ lead, reason: result?.reason || "Não confirmada." });
+      });
+      return { confirmed, rejected };
+    }
+
     function rejectUncertainLeadCapture() {
       pendingUncertainCapture = null;
       autoCaptureLock = false;
@@ -1242,6 +1262,7 @@
       confirmUncertainLeadCapture,
       rejectUncertainLeadCapture,
       confirmCandidateLead,
+      confirmAllCandidateLeads,
       setUserCalibration,
       getSessionCalibration: () => ({ ...sessionCalibration }),
       getSessionStructuredPackage,

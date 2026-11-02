@@ -684,6 +684,39 @@
       if (!leadInfo.captured || audit.status === "Inválida") hasMissing = true;
     });
 
+    // Confirmação de layout em 1 toque (só quando há 2+ regiões candidatas pendentes)
+    const oldLayoutBox = document.getElementById("ecg-layout-confirm-box");
+    if (oldLayoutBox) oldLayoutBox.remove();
+    if (candidateCount >= 2 && reviewGrid.parentNode) {
+      const grid = currentSessionPackage?.layout?.grid || cameraController?.getSessionStructuredPackage?.()?.layout?.grid || null;
+      const box = document.createElement("div");
+      box.id = "ecg-layout-confirm-box";
+      box.className = "ecg-alert";
+      const msg = document.createElement("p");
+      msg.style.margin = "0 0 8px";
+      msg.textContent = "Confira na foto original se a ordem das derivações é esta" +
+        (Array.isArray(grid) ? ": " + grid.map((row, i) => "linha " + (i + 1) + " = " + row.join(", ")).join(" · ") : " (layout padrão 3×4).") +
+        " Se estiver certa, confirme tudo de uma vez; se não, confirme uma a uma abaixo.";
+      const btnAll = document.createElement("button");
+      btnAll.type = "button";
+      btnAll.className = "ecg-btn";
+      btnAll.textContent = "Confirmar layout (" + candidateCount + " derivações)";
+      btnAll.addEventListener("click", () => {
+        const result = cameraController?.confirmAllCandidateLeads?.();
+        if (!result) return;
+        currentLeadsData = cameraController.getCapturedLeads();
+        currentSessionPackage = cameraController.getSessionStructuredPackage();
+        renderStage2Waveforms(currentLeadsData);
+        if (result.rejected.length && missingAlert) {
+          missingAlert.hidden = false;
+          missingAlert.textContent = result.rejected.length + " região(ões) não puderam ser confirmadas: " + result.rejected.map(r => r.lead).join(", ") + ".";
+        }
+      });
+      box.appendChild(msg);
+      box.appendChild(btnAll);
+      reviewGrid.parentNode.insertBefore(box, reviewGrid);
+    }
+
     // Atualiza barra de resumo do auditor técnico
     if (auditSummaryText) {
       auditSummaryText.textContent = candidateCount > 0
