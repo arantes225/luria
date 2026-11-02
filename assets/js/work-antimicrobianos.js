@@ -762,17 +762,24 @@
 
     try {
       if (window.supabaseClient && typeof window.supabaseClient.from === "function") {
-        const { data, error } = await window.supabaseClient
-          .from("bulario_catalog")
-          .select("id,name,active_ingredient,therapeutic_class,pharmacological_class,data")
-          .order("name")
-          .limit(1000);
-        if (!error && Array.isArray(data)) {
-          activeCatalog = data;
+        // Read the unified Supabase catalog in bounded pages; never truncate at 1,000.
+        const pageSize = 500;
+        const catalog = [];
+        for (let offset = 0; ; offset += pageSize) {
+          const { data, error } = await window.supabaseClient
+            .from("bulario_catalog")
+            .select("id,name,active_ingredient,therapeutic_class,pharmacological_class,data")
+            .order("id", { ascending: true })
+            .range(offset, offset + pageSize - 1);
+          if (error) throw error;
+          const page = Array.isArray(data) ? data : [];
+          catalog.push(...page);
+          if (page.length < pageSize) break;
         }
+        activeCatalog = catalog;
       }
     } catch (_) {
-      // Fallback bridge handles seeds if offline
+      // Keep the antimicrobial tools available even if the catalog request fails.
     }
   }
 
