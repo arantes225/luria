@@ -1146,14 +1146,18 @@
   if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
-// Logo do TRAUBE (canto superior esquerdo do menu lateral) com o dobro do
-// tamanho em todas as páginas. As folhas de CSS antigas definem a logo em vários
+// Logo do TRAUBE (canto superior esquerdo) maior e nítida em todas as páginas.
+// Nas páginas de estudo/trabalho/admin o script ui-navigation-v2.js move a logo
+// do menu lateral para a barra superior (fundo azul, logo branca); nas demais ela
+// continua no menu lateral. As folhas de CSS antigas definem a logo em vários
 // tamanhos com !important; os IDs repetidos abaixo só servem para vencer todas.
 (function ensureLargeBrandLogo() {
   if (document.getElementById("traube-large-brand-logo")) return;
 
-  const logo =
+  const sidebarLogo =
     "html body #sidebar#sidebar#sidebar#sidebar #traube-brand-logo#traube-brand-logo#traube-brand-logo";
+  const topbarLogo =
+    "html body .topbar .ui-topbar-brand #traube-brand-logo#traube-brand-logo#traube-brand-logo";
   const size = (px) => `
     width: ${px}px !important;
     height: ${px}px !important;
@@ -1164,15 +1168,31 @@
     flex: 0 0 ${px}px !important;
     object-fit: contain !important;
   `;
+  // Contexto em que a logo NÃO é movida para a barra superior.
+  const notMoved =
+    ':not([data-ui-context="study"]):not([data-ui-work="v2"]):not([data-ui-admin="v2"])';
 
   const style = document.createElement("style");
   style.id = "traube-large-brand-logo";
   style.textContent = `
-    ${logo} {${size(96)}}
+    /* Menu lateral */
+    ${sidebarLogo} {${size(96)}}
+
+    /* Barra superior (logo branca sobre o fundo azul) */
+    ${topbarLogo} {
+      ${size(56)}
+      transform: none !important;
+      image-rendering: auto !important;
+    }
+
+    html body[data-ui-nav] .topbar.topbar .ui-topbar-brand.ui-topbar-brand {
+      height: 56px !important;
+      gap: 0.75rem !important;
+    }
 
     @media (min-width: 981px) {
-      /* menu recolhido: alarga o menu para a logo maior caber inteira */
-      html body[data-ui-nav="v2"][data-ui-sidebar="collapsed"] {
+      /* menu recolhido sem a logo movida: alarga para a logo maior caber */
+      html body[data-ui-nav="v2"]${notMoved}[data-ui-sidebar="collapsed"] {
         --ui-nav-width: 120px;
       }
 
@@ -1186,12 +1206,23 @@
     }
 
     @media (max-width: 980px) {
-      ${logo} {${size(92)}}
+      ${sidebarLogo} {${size(92)}}
+      ${topbarLogo} {${size(48)}}
+      html body[data-ui-nav] .topbar.topbar .ui-topbar-brand.ui-topbar-brand {height: 48px !important;}
+    }
+
+    @media (max-width: 600px) {
+      ${topbarLogo} {${size(40)}}
+      html body[data-ui-nav] .topbar.topbar .ui-topbar-brand.ui-topbar-brand {
+        height: 40px !important;
+        flex: 0 0 40px !important;
+      }
     }
   `;
 
   document.head.appendChild(style);
 })();
+
 
 // A patient session is optional context for independent Work tools. It lives
 // only in sessionStorage and is never copied into a tool automatically.
