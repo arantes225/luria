@@ -114,8 +114,8 @@ const APP_SHELL = [
   "/assets/js/patient-workspace.js?v=2",
   "/assets/css/vocacao.css?v=20261029-residencias-v1",
   "/assets/js/vocacao-data.js?v=20261029-residencias-v1",
-  "/assets/js/vocacao-engine.js?v=20261029-residencias-v1",
-  "/assets/js/vocacao.js?v=20261029-residencias-v1",
+  "/assets/js/vocacao-engine.js?v=20261102-v5",
+  "/assets/js/vocacao.js?v=20261102-v5",
   "/assets/js/dashboard-layouts.js?v=20261005-dashboard3-v101",
   "/assets/css/pwa-mobile.css?v=20260930-layout-pcr",
   "/assets/css/flashcards-ui-v2.css?v=1",
@@ -166,8 +166,8 @@ const INSTALL_PRECACHE = new Set([
   "/assets/js/app.js?v=20261101-traube-bootstrap1",
   "/assets/css/vocacao.css?v=20261029-residencias-v1",
   "/assets/js/vocacao-data.js?v=20261029-residencias-v1",
-  "/assets/js/vocacao-engine.js?v=20261029-residencias-v1",
-  "/assets/js/vocacao.js?v=20261029-residencias-v1",
+  "/assets/js/vocacao-engine.js?v=20261102-v5",
+  "/assets/js/vocacao.js?v=20261102-v5",
   "/assets/fonts/inter/InterVariable.woff2",
   "/assets/js/traube-brand-v5.js?v=20261031-leco-actions-center1"
 ]);
