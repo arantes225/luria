@@ -8012,11 +8012,11 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .brand .traube-theme-logo,
   body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar #traube-brand-logo{
-    width:48.4px!important;
-    height:48.4px!important;
-    min-width:48.4px!important;
-    min-height:48.4px!important;
-    flex:0 0 48.4px!important;
+    width:80px!important;
+    height:80px!important;
+    min-width:80px!important;
+    min-height:80px!important;
+    flex:0 0 80px!important;
     filter:brightness(0) invert(1)!important;
   }
 }

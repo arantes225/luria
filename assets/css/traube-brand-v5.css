@@ -3195,17 +3195,17 @@ body *::-webkit-scrollbar-button:end{
 }
 
 
-/* TRAUBE v87 — logo única e compacta em todas as páginas */
+/* TRAUBE v87 — logo visível em todas as páginas */
 body #sidebar.sidebar .brand .traube-theme-logo,
 body #sidebar.sidebar .brand #traube-brand-logo,
 body #sidebar.sidebar #traube-brand-logo{
-  width:46px!important;
-  height:46px!important;
-  min-width:46px!important;
-  min-height:46px!important;
-  max-width:46px!important;
-  max-height:46px!important;
-  flex:0 0 46px!important;
+  width:80px!important;
+  height:80px!important;
+  min-width:80px!important;
+  min-height:80px!important;
+  max-width:80px!important;
+  max-height:80px!important;
+  flex:0 0 80px!important;
   object-fit:contain!important;
 }
 
