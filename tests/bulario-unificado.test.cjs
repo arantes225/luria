@@ -29,12 +29,16 @@ test('bulário percorre todas as páginas acima do limite de 1000', async () => 
     }
   };
   const fn = vm.runInNewContext('('+code+')', {window:{supabaseClient:client}});
-  const found = await fn('bulario_catalog','id,name','id');
+  const rendered=[];
+  const found = await fn('bulario_catalog','id,name','id',page=>rendered.push(page.length));
   assert.equal(found.length,4546);
+  assert.equal(rendered.length,19);
+  assert.equal(rendered[0],250);
+  assert.equal(rendered.at(-1),46);
   assert.equal(found[4545].id,4546);
-  assert.equal(calls.length,10);
-  assert.deepEqual(calls[0],[0,499]);
-  assert.deepEqual(calls[9],[4500,4999]);
+  assert.equal(calls.length,19);
+  assert.deepEqual(calls[0],[0,249]);
+  assert.deepEqual(calls[18],[4500,4749]);
 });
 
 test('nenhuma página do Bulário usa a fonte local como catálogo paralelo', () => {
