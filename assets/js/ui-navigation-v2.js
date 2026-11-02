@@ -141,7 +141,7 @@
       ? ["Ferramentas médicas","Rotina e acompanhamento","Conta e gestão"]
       : ["Estudar e revisar","Praticar e consolidar","Planejamento e desempenho","Comunidade","Conta e gestão"];
     const groupFor = href => work
-      ? (/calculadora|scores|diagnostico|fluidos|prontuario|prescricao|paciente/.test(href) ? categories[0] : /admin|editorial|agencia|beta/.test(href) ? categories[2] : categories[1])
+      ? (/diabetes|calculadora|scores|diagnostico|fluidos|prontuario|prescricao|paciente/.test(href) ? categories[0] : /admin|editorial|agencia|beta/.test(href) ? categories[2] : categories[1])
       : (/aprender/.test(href) ? categories[0] : /consolidar|jogos|desafio|plantao/.test(href) ? categories[1] : /cronograma|estatisticas|aplicar/.test(href) ? categories[2] : /amigos/.test(href) ? categories[3] : categories[4]);
     const extra = sources.filter(source => !main.some(item => item.href === source.getAttribute("href"))).map(source => {
       const href = source.getAttribute("href");
