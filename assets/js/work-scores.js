@@ -1602,6 +1602,57 @@
     scores[i]=item;
   }
 
+
+  // Lote 11: SAPS 3 admission score, tabela oficial saps3.org (versão 2005).
+  // Requer avaliação na admissão de UTI, não os piores dados em 24 h (APACHE II).
+  const batch11Scores=[
+    {id:"saps3",name:"SAPS 3 — escore de admissão à UTI",category:"Emergência",
+      aliases:"saps3 saps iii gravidade admissão terapia intensiva",
+      desc:"Pontuação SAPS 3 de admissão, incluindo constante de 16 pontos, Box I (antes), Box II (admissão) e Box III (fisiologia). Sem converter a mortalidade não calibrada.",
+      tags:["UTI","Prognóstico"],auditDate:"2026-11-02",
+      questions:[
+        q("BOX I · Idade",[opt("<40 anos",0),opt("40–59 anos",5),opt("60–69 anos",9),opt("70–74 anos",13),opt("75–79 anos",15),opt("≥80 anos",18)]),
+        q("BOX I · Permanência hospitalar antes da UTI",[opt("<14 dias",0),opt("14–27 dias",6),opt("≥28 dias",7)]),
+        q("BOX I · Origem antes da admissão à UTI",[opt("Centro cirúrgico",0),opt("Pronto-socorro",5),opt("Outra UTI/recuperação/unidade intermediária",7),opt("Enfermaria ou outro setor",8)]),
+        q("BOX I · Tratamento oncológico (quimioterapia, radioterapia, corticosteroide, outra imunossupressão)",yesno(3)),
+        q("BOX I · Câncer metastático",yesno(11)),
+        q("BOX I · Neoplasia hematológica",yesno(6)),
+        q("BOX I · Insuficiência cardíaca crônica NYHA IV",yesno(6)),
+        q("BOX I · Cirrose",yesno(8)),
+        q("BOX I · AIDS",yesno(8)),
+        q("BOX I · Uso de drogas vasoativas antes da UTI",yesno(3)),
+        q("BOX II · Admissão planejada?",[opt("Sim, planejada",0),opt("Não, não planejada",3)]),
+        q("BOX II · Motivo cardiovascular de admissão",[opt("Outro/nenhum",0),opt("Arritmia", -5),opt("Choque hipovolêmico hemorrágico OU não hemorrágico",3),opt("Ambos os choques hipovolêmicos",6),opt("Choque séptico",5),opt("Choque anafilático, misto ou indefinido",5)]),
+        q("BOX II · Motivo hepático",[opt("Outro/nenhum",0),opt("Falência hepática",6)]),
+        q("BOX II · Pancreatite grave como motivo de admissão",yesno(9)),
+        q("BOX II · Abdome agudo/outro motivo digestivo",yesno(3)),
+        q("BOX II · Motivo neurológico",[opt("Outro/nenhum",0),opt("Efeito de massa intracraniana",10),opt("Déficit neurológico focal",7),opt("Crise convulsiva", -4),opt("Coma, estupor, delirium, agitação ou alteração de vigilância",4)]),
+        q("BOX II · Estado cirúrgico na admissão à UTI",[opt("Cirurgia programada",0),opt("Cirurgia de emergência",6),opt("Sem cirurgia",5)]),
+        q("BOX II · Local anatômico da cirurgia",[opt("Não se aplica: não houve cirurgia",99),opt("Outro procedimento cirúrgico",0),opt("Transplante", -11),opt("Trauma cirúrgico (isolado/múltiplo)",-8),opt("CRM isolada sem reparo valvar",-6),opt("Neurocirurgia por AVC",5)]),
+        q("BOX II · Infecção aguda hospitalar na admissão",yesno(4)),
+        q("BOX II · Infecção aguda respiratória baixa na admissão",yesno(5)),
+        q("BOX III · Menor Glasgow estimado",[opt("≥13",0),opt("7–12",2),opt("6",7),opt("5",10),opt("3–4",15)]),
+        q("BOX III · Maior bilirrubina total (mg/dL)",[opt("<2",0),opt("2–5,9",4),opt("≥6",5)]),
+        q("BOX III · Maior temperatura (°C)",[opt("≥35",0),opt("<35",7)]),
+        q("BOX III · Maior creatinina (mg/dL)",[opt("<1,2",0),opt("1,2–1,99",2),opt("2–3,49",7),opt("≥3,5",8)]),
+        q("BOX III · Maior FC (bpm)",[opt("<120",0),opt("120–159",5),opt("≥160",7)]),
+        q("BOX III · Leucócitos (10³/µL) no período de admissão",[opt("<15",0),opt("≥15",2)]),
+        q("BOX III · Menor pH",[opt(">7,25",0),opt("≤7,25",3)]),
+        q("BOX III · Menor plaquetas (10³/µL)",[opt("≥100",0),opt("50–99",5),opt("20–49",8),opt("<20",13)]),
+        q("BOX III · Menor pressão sistólica (mmHg)",[opt("≥120",0),opt("70–119",3),opt("40–69",8),opt("<40",11)]),
+        q("BOX III · Oxigenação/ventilação",[opt("Sem ventilação mecânica e PaO₂ ≥60 mmHg",0),opt("Sem VM e PaO₂ <60 mmHg",5),opt("Com VM e PaO₂/FiO₂ ≥100",7),opt("Com VM e PaO₂/FiO₂ <100",11)])
+      ],
+      interpret:n=>"SAPS 3 "+n+" pontos na admissão à UTI. Pontuação descritiva de gravidade; NÃO converter diretamente em porcentagem de mortalidade sem equação regional validada.",
+      reference:"SAPS 3 Admission Score Sheet and Score Algorithm, SAPS3.org, tabela de 2005; Moreno RP et al. Intensive Care Med. 2005;31:1336–1344. PMC1315315.",
+      safetyNote:"O SAPS 3 usa dados ao redor da admissão, não piores valores em 24 h. Não pontuar dados faltantes como normais. A ficha original possui definições operacionais para variáveis e motivo de admissão. Coeficientes de mortalidade variam por região e calibração; nenhum risco percentual é calculado aqui."
+    }
+  ];
+  for(const item of batch11Scores){
+    const idx=scores.findIndex(s=>s.id===item.id);
+    if(idx<0||scores[idx].custom!=="reference")throw Error("SAPS3 original missing/not placeholder");
+    scores[idx]=item;
+  }
+
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
@@ -1839,6 +1890,22 @@
         "POSSUM fisiológico "+physiological+" / operatório "+operative+
         ". Morbidade POSSUM estimada: "+fixed(morbidity)+"%. Mortalidade POSSUM histórica: "+fixed(mortality)+"%.",
         "Riscos estimados por regressão logística populacional; exigem cirurgia realizada e classificação completa dos 18 critérios. Não são probabilidades individuais validadas para todas as especialidades.");
+      return;
+    }
+    if(s.id==="saps3"){
+      const surgicalIndex=s.questions.findIndex(q=>q.label.includes("Estado cirúrgico na admissão"));
+      const anatomyIndex=s.questions.findIndex(q=>q.label.includes("Local anatômico da cirurgia"));
+      const cvIndex=s.questions.findIndex(q=>q.label.includes("Motivo cardiovascular de admissão"));
+      const neuroIndex=s.questions.findIndex(q=>q.label.includes("Motivo neurológico"));
+      const surgery=Number(vals[surgicalIndex]),anatomy=Number(vals[anatomyIndex]);
+      if((surgery===5&&anatomy!==99)||(surgery!==5&&anatomy===99)){
+        setResult("—","Estado cirúrgico e local anatômico incompatíveis.","Em admissão sem cirurgia, selecionar 'Não se aplica'; em paciente cirúrgico, selecionar o procedimento.");return;
+      }
+      let points=vals.reduce((a,v,i)=>a+Number(i===anatomyIndex&&v==="99"?0:v),16);
+      // Tabela oficial: arritmia e convulsão simultâneas não somam -9; prevalece -4.
+      if(Number(vals[cvIndex])===-5&&Number(vals[neuroIndex])===-4)points+=5;
+      setResult(formatNum(points)+" pontos",s.interpret(points),
+        "Offset 16 + itens selecionados conforme tabela SAPS3.org. Não atribuir mortalidade sem calibração local; conferir janela de admissão e definições do instrumento.");
       return;
     }
     const total=vals.reduce((a,v)=>a+Number(v),0);
