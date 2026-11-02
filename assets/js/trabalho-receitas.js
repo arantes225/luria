@@ -312,6 +312,12 @@
       return;
     }
 
+    const { data: sessionData } = await client.auth.getSession();
+    if (!sessionData?.session) {
+      els.list.innerHTML = '<div class="recipe-error">Entre na sua conta para ver o banco de receitas. <a href="/login/">Entrar</a></div>';
+      return;
+    }
+
     els.list.innerHTML = '<div class="recipe-loading">Carregando banco de receitas…</div>';
 
     const [{ data, error }, { data: protocolRows }] = await Promise.all([
