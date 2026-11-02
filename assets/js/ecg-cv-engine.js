@@ -2311,12 +2311,28 @@
     const { width, height, data } = cropData;
     let validCols = 0;
     let minY = height, maxY = 0;
+    // Limiar de traço relativo ao fundo da célula: traços finos/anti-aliased
+    // (prints, fotos de baixa resolução) ficam cinza (~100–170) e eram
+    // descartados pelo limiar fixo 130. O limiar nunca fica abaixo de 130
+    // (comportamento anterior) nem acima de 175 (evita grade/sombra).
+    const lumaHist = new Uint32Array(256);
+    for (let i = 0; i < width * height; i++) {
+      const o = i * 4;
+      lumaHist[Math.max(0, Math.min(255, Math.round(0.2126 * data[o] + 0.7152 * data[o + 1] + 0.0722 * data[o + 2])))]++;
+    }
+    let acc = 0, bgLuma = 255;
+    const half = (width * height) / 2;
+    for (let v = 0; v < 256; v++) {
+      acc += lumaHist[v];
+      if (acc >= half) { bgLuma = v; break; }
+    }
+    const traceThreshold = Math.max(130, Math.min(175, Math.round(bgLuma * 0.72)));
     for (let x = 0; x < width; x++) {
       let sumY = 0, cnt = 0;
       for (let y = 1; y < height - 1; y++) {
         const idx = (y * width + x) * 4;
         const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
-        if (luma < 130 && Math.abs(data[idx] - data[idx + 2]) < 55) {
+        if (luma < traceThreshold && Math.abs(data[idx] - data[idx + 2]) < 55) {
           sumY += y;
           cnt++;
         }
