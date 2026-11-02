@@ -1653,6 +1653,23 @@
     scores[idx]=item;
   }
 
+
+  // Lote 11B — apurador do C-SSRS Screener 2026 (ambulatorial).
+  // Não reproduz o instrumento completo; exige aplicação do formulário oficial.
+  const batch11bScores=[
+    {id:"cssrs",name:"C-SSRS Screener 2026 — triagem ambulatorial",category:"Psiquiatria",
+      aliases:"columbia suicidio ideacao comportamento triagem screener",desc:"Apura respostas já coletadas com a versão oficial de rastreio C-SSRS para ambulatório; orienta encaminhamento e precauções conforme fluxo público de 2026.",
+      tags:["Saúde mental","Triagem"],custom:"cssrs",auditDate:"2026-11-02",
+      reference:"Columbia Lighthouse Project. C-SSRS Screen with Triage Points for Outpatient/Ambulatory (2026). https://cssrs.columbia.edu/wp-content/uploads/C-SSRS-Screener-with-Triage-Points-for-outpatientambulatory-2026.pdf",
+      safetyNote:"Exige que o profissional aplique previamente as questões oficiais. Não é um 'risco baixo/médio/alto' calculado nem exclui suicidabilidade em respostas negativas. Itens 4/5 positivos ou comportamento há até 3 meses implicam avaliação urgente de saúde mental e precauções de segurança segundo o material do Columbia Lighthouse Project. Adotar protocolos locais de manejo de crise e avaliação imediata de risco."
+    }
+  ];
+  for(const item of batch11bScores){
+    const idx=scores.findIndex(s=>s.id===item.id);
+    if(idx<0||scores[idx].custom!=="reference")throw Error("CSSRS reference-only placeholder missing");
+    scores[idx]=item;
+  }
+
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
   const recentKey = "luria:scores:recent";
@@ -2264,6 +2281,50 @@
       $$("input,select",f).forEach(el=>el.onchange=el.oninput=update);
       setResult("—","Preencha os piores valores das primeiras 24 horas de UTI.","Nunca registrar ausência de exame como valor normal.");
     },
+
+    cssrs(f,s){
+      f.innerHTML=
+        '<div class="score-warning"><strong>Apuração de triagem ambulatorial:</strong> aplique primeiro o formulário C-SSRS Screener 2026 oficial, com seus períodos de referência. Transcreva as respostas abaixo. Não é avaliação autônoma de risco.</div>'+
+        selectField("Item 1 — ideação passiva de morte nas últimas 4 semanas","css1",yesno())+
+        selectField("Item 2 — ideação suicida ativa nas últimas 4 semanas","css2",yesno())+
+        selectField("Item 3 — pensamento sobre método nas últimas 4 semanas","css3",[
+          opt("Não",0),opt("Sim",1),opt("Não perguntado (item 2 negativo)","na")])+
+        selectField("Item 4 — intenção de agir nas últimas 4 semanas","css4",[
+          opt("Não",0),opt("Sim",1),opt("Não perguntado (item 2 negativo)","na")])+
+        selectField("Item 5 — plano com intenção nas últimas 4 semanas","css5",[
+          opt("Não",0),opt("Sim",1),opt("Não perguntado (item 2 negativo)","na")])+
+        selectField("Item 6 — comportamento preparatório ou tentativa alguma vez na vida","css6",yesno())+
+        selectField("Se item 6 positivo: comportamento nos últimos 3 meses?","css6recent",[
+          opt("Não",0),opt("Sim",1),opt("Não se aplica (item 6 negativo)","na")]);
+      const update=()=>{
+        const keys=["css1","css2","css3","css4","css5","css6","css6recent"];
+        const answers=keys.map(id=>$("#"+id,f).value);
+        if(answers.some(v=>v==="")){
+          setResult("—","Transcreva todos os campos obrigatórios do instrumento.","Os itens 3–5 só são aplicados após item 2 positivo; comportamento no último trimestre depende do item 6.");return;
+        }
+        const [i1,i2,i3,i4,i5,i6,i6recent]=answers;
+        if((i2==="0" && [i3,i4,i5].some(x=>x!=="na")) ||
+           (i2==="1" && [i3,i4,i5].some(x=>x==="na")) ||
+           (i6==="0"&&i6recent!=="na") || (i6==="1"&&i6recent==="na")){
+          setResult("Inconsistência","As respostas não seguem o fluxo do screener oficial. Confira a aplicação.",
+            "Quando item 2 é negativo, itens 3–5 não são perguntados; quando item 6 é negativo, últimos 3 meses não se aplica.");return;
+        }
+        const urgent=i4==="1"||i5==="1"||i6recent==="1";
+        const referral=[i1,i2,i3,i6].some(x=>x==="1");
+        const status=urgent?"Avaliação urgente + precauções"
+          :referral?"Encaminhamento para avaliação":"Nenhum item positivo transcrito";
+        const interpretation=urgent
+          ?"Conforme fluxo ambulatorial C-SSRS 2026, acionar avaliação de saúde mental imediata e precauções de segurança. Se risco atual iminente, seguir protocolo institucional de emergência."
+          :referral
+          ?"O fluxo ambulatorial C-SSRS recomenda encaminhamento para avaliação em saúde mental. Determinar prioridade e segurança por avaliação clínica."
+          :"Nenhum sinal selecionado entre as respostas transcritas. NÃO significa ausência de risco suicida, nem dispensa avaliação clínica.";
+        setResult(status,interpretation,
+          "Instrumento oficial 2026. Não converter os 'sim' em escore numérico ou probabilidade individual. Não registrar respostas do paciente em analytics ou logs.");
+      };
+      $$("select",f).forEach(el=>el.onchange=update);
+      setResult("—","Transcreva as respostas do formulário oficial C-SSRS ambulatorial.","A ferramenta não substitui a entrevista clínica nem instrumentos autorizados.");
+    },
+
     reference(f,s){
       f.innerHTML='<div class="score-warning"><strong>Referência clínica — cálculo não habilitado.</strong> Esta ferramenta necessita de regras oficiais, tabelas completas ou aplicação por profissional treinado. Não há pontuação automatizada nesta versão.</div><p class="score-intro">'+esc(s.desc)+'</p><p><strong>Fonte para conferência:</strong> '+esc(s.reference)+'</p>';
       setResult("—","Não calcular nesta interface.","Use a diretriz original ou instrumento oficial. Não há validação automatizada para este item.");
