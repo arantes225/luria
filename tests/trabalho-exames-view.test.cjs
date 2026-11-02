@@ -70,14 +70,14 @@ test("Both clinical pages use same versioned assets and suppress duplicate top t
   for (const dir of ["exames", "laboratorio"]) {
     const html = fs.readFileSync(path.join(root, "trabalho", dir, "index.html"), "utf8");
     assert.match(html, /data-ui-heading="provided"/);
-    assert.match(html, /trabalho-exames-interpreter\.css\?v=20261030-pending1/);
+    assert.match(html, /trabalho-exames-interpreter\.css\?v=20261102-pubfix3/);
     assert.match(html, /trabalho-exames-extra-catalog\.js\?v=20261029-extras/);
     for(let i=1;i<=5;i++)assert.match(html,new RegExp(`trabalho-exames-curated-0${i}\\.js\\?v=20261030-individual`));
     assert.match(html, /trabalho-exames-preanalytical\.js\?v=20261030-prep1/);
     for(let i=1;i<=4;i++)assert.match(html,new RegExp(`trabalho-exames-preanalytical-extra-${i}\\.js\\?v=20261030-prep2`));
-    assert.match(html, /trabalho-exames-pending-catalog\.js\?v=20261030-pending1/);
+    assert.match(html, /trabalho-exames-pending-catalog\.js\?v=20261102-pubfix3/);
     assert.match(html, /trabalho-exames-details\.js\?v=20261030-prep2/);
-    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261030-pending1/);
+    assert.match(html, /trabalho-exames-interpreter\.js\?v=20261102-pubfix3/);
   }
 });
 
@@ -446,6 +446,24 @@ test("Both exam pages load pending names before clinical interpreter and use upd
   const s=fs.readFileSync(path.join(root,"trabalho",dir,"index.html"),"utf8");
   const pending=s.indexOf("trabalho-exames-pending-catalog.js"),interpreter=s.indexOf("trabalho-exames-interpreter.js");
   assert.ok(pending>0&&pending<interpreter);
-  assert.match(s,/trabalho-exames-interpreter\.css\?v=20261030-pending1/);
+  assert.match(s,/trabalho-exames-interpreter\.css\?v=20261102-pubfix3/);
+ }
+});
+
+test("Pending names are discoverable before the 423 completed cards",()=>{
+ const dom=openTool(),d=dom.window.document;
+ const section=d.getElementById("ex-pending-section");
+ const rows=d.getElementById("ex-rows");
+ assert.ok(section && rows);
+ assert.ok(Boolean(section.compareDocumentPosition(rows)&dom.window.Node.DOCUMENT_POSITION_FOLLOWING));
+ assert.equal(section.querySelectorAll(".ex-pending-card").length,602);
+ assert.match(d.querySelector(".ex-catalog-heading").textContent,/602 nomes novos marcados A completar/);
+ dom.window.close();
+});
+test("Both exam URLs request new PWA bootstrap to avoid stale installed cache",()=>{
+ for(const dir of ["exames","laboratorio"]){
+  const html=fs.readFileSync(path.join(root,"trabalho",dir,"index.html"),"utf8");
+  assert.match(html,/pwa\.js\?v=20261102-pubfix3/);
+  assert.match(html,/trabalho-exames-pending-catalog\.js\?v=20261102-pubfix3/);
  }
 });
