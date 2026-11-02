@@ -775,6 +775,75 @@
    * 3. Estima a orientação do ECG (0°, 90°, 180°, 270°) e ângulo fino de inclinação (skew)
    * Baseia-se na anisotropia horizontal vs vertical dos traçados de ECG (ondas propagam-se horizontalmente).
    */
+  /**
+   * Estima a inclinação (graus, convenção da imagem: y para baixo; uma linha com
+   * inclinação tan(a)) maximizando a nitidez da projeção horizontal de uma
+   * máscara de "estrutura de papel": grade rosada + tinta. Usa imagem reduzida por
+   * média de blocos, ignora a moldura escura da foto e refina em passos de 0,25°.
+   * Retorna { angleDeg, confidence }.
+   */
+  function estimateSkewByGradients(imageData) {
+    const { width, height, data } = imageData;
+    const f = Math.max(1, Math.ceil(Math.max(width, height) / 1000));
+    const w = Math.max(16, Math.floor(width / f));
+    const h = Math.max(16, Math.floor(height / f));
+    const mask = new Uint8Array(w * h);
+    let count = 0;
+    for (let y = 0; y < h; y++) {
+      for (let x = 0; x < w; x++) {
+        let r = 0, g = 0, b = 0, n = 0;
+        for (let dy = 0; dy < f; dy++) {
+          const sy = y * f + dy; if (sy >= height) break;
+          for (let dx = 0; dx < f; dx++) {
+            const sx = x * f + dx; if (sx >= width) break;
+            const i = (sy * width + sx) * 4;
+            r += data[i]; g += data[i + 1]; b += data[i + 2]; n++;
+          }
+        }
+        if (!n) continue;
+        r /= n; g /= n; b /= n;
+        const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+        if (luma < 70) continue; // moldura/fundo escuro da foto
+        const redness = r - Math.max(g, b);
+        const isGrid = redness > 6 && luma > 150 && luma < 246;
+        const isInk = luma < 150 && Math.abs(r - b) < 55;
+        if (isGrid || isInk) { mask[y * w + x] = 1; count++; }
+      }
+    }
+    if (count < 200) return { angleDeg: 0, confidence: 0 };
+    const cx = w / 2;
+    const proj = new Float32Array(h + w); // folga para deslocamentos
+    const sharpness = angle => {
+      const tanA = Math.tan((angle * Math.PI) / 180);
+      proj.fill(0);
+      const off = w / 2;
+      for (let y = 0; y < h; y++) {
+        const row = y * w;
+        for (let x = 0; x < w; x++) {
+          if (!mask[row + x]) continue;
+          proj[Math.round(y - (x - cx) * tanA + off)]++;
+        }
+      }
+      let energy = 0;
+      for (let i = 1; i < proj.length; i++) { const d = proj[i] - proj[i - 1]; energy += d * d; }
+      return energy;
+    };
+    let best = 0, bestE = -1, sum = 0, n = 0;
+    for (let a = -15; a <= 15; a += 1) {
+      const e = sharpness(a); sum += e; n++;
+      if (e > bestE) { bestE = e; best = a; }
+    }
+    let fine = best, fineE = bestE;
+    for (let a = best - 1; a <= best + 1; a += 0.25) {
+      const e = sharpness(a);
+      if (e > fineE) { fineE = e; fine = a; }
+    }
+    const mean = sum / n;
+    const confidence = Math.min(1, Math.max(0, (fineE / Math.max(1e-9, mean) - 1) / 1.5));
+    if (confidence < 0.25) return { angleDeg: 0, confidence: Number(confidence.toFixed(3)) };
+    return { angleDeg: Number(fine.toFixed(2)), confidence: Number(confidence.toFixed(3)) };
+  }
+
   function detectOrientationAndSkew(imageData) {
     const { width, height, data } = imageData;
     let horizGradSum = 0;
@@ -844,41 +913,19 @@
     // Se a variância das colunas for muito maior que a das linhas, as linhas de base das derivações estão na vertical (ECG girado 90° ou 270°)
     const isRotated90 = colNormVar > rowNormVar * 1.65 && colNormVar > 0.002;
 
-    // Estimativa de ângulo fino de skew (-12° a +12°) buscando o ângulo que maximiza a nitidez do perfil horizontal
-    let bestAngleDeg = 0;
-    let maxScore = -1;
-    const sampleStep = Math.max(1, Math.floor(Math.min(width, height) / 120));
-
-    for (let angle = -10; angle <= 10; angle += 1) {
-      const tanA = Math.tan((angle * Math.PI) / 180);
-      const proj = new Float32Array(height);
-      for (let y = 0; y < height; y += sampleStep) {
-        for (let x = 0; x < width; x += sampleStep) {
-          const idx = (y * width + x) * 4;
-          const luma = 0.2126 * data[idx] + 0.7152 * data[idx + 1] + 0.0722 * data[idx + 2];
-          if (luma < 130 && Math.abs(data[idx] - data[idx + 2]) < 55) {
-            const shiftedY = Math.round(y - (x - width / 2) * tanA);
-            if (shiftedY >= 0 && shiftedY < height) {
-              proj[shiftedY]++;
-            }
-          }
-        }
-      }
-      let energy = 0;
-      for (let i = 1; i < height; i++) {
-        const d = proj[i] - proj[i - 1];
-        energy += d * d;
-      }
-      if (energy > maxScore) {
-        maxScore = energy;
-        bestAngleDeg = angle;
-      }
-    }
+    // Inclinação fina (-15° a +15°) pela orientação dos gradientes: as linhas da
+    // grade e as linhas de base são quase horizontais/verticais, então o histograma
+    // de orientação (dobrado em 90°) tem um pico no ângulo de inclinação. Ao
+    // contrário da projeção de pixels escuros, ignora bordas escuras da foto e
+    // não depende da cor nem da espessura do traçado.
+    const skewEstimate = estimateSkewByGradients(imageData);
+    const bestAngleDeg = skewEstimate.angleDeg;
 
     return {
       isRotated90,
       quadrantDeg: isRotated90 ? 90 : 0,
       skewAngleDeg: bestAngleDeg,
+      skewConfidence: skewEstimate.confidence,
       rowNormVar: Number(rowNormVar.toFixed(5)),
       colNormVar: Number(colNormVar.toFixed(5)),
       needsDeskew: Math.abs(bestAngleDeg) >= 2

@@ -33,7 +33,20 @@ for (const f of fs.readdirSync(dir).filter(x => /\.(jpe?g|png)$/i.test(x)).sort(
   const row = { file: f };
   try {
     const img = decode(path.join(dir, f));
-    const b = engine.detectECGBoundaries(img, {});
+    let b = engine.detectECGBoundaries(img, {});
+    // Mesma correção que processPhotographCanvas faz: endireita e redetecta.
+    const skew = Number(b.orientation && b.orientation.skewAngleDeg);
+    row.skew = Number.isFinite(skew) ? skew : 0;
+    if (!(b.orientation && b.orientation.isRotated90) && Math.abs(row.skew) > 1.5) {
+      const rect = engine.rectifyImagePerspective(img, (b.sheet && b.sheet.corners) || {
+        topLeft: { x: 0, y: 0 }, topRight: { x: img.width, y: 0 },
+        bottomLeft: { x: 0, y: img.height }, bottomRight: { x: img.width, y: img.height }
+      }, -row.skew);
+      if (rect && rect.width > 80 && rect.height > 80) {
+        img.data = rect.data; img.width = rect.width; img.height = rect.height;
+        b = engine.detectECGBoundaries(img, {});
+      }
+    }
     const sheet = engine.locatePaperSheet(img);
     const c = engine.detectECGGridAndCalibration(img, null, sheet.boundaries);
     Object.assign(row, {
@@ -51,7 +64,7 @@ for (const f of fs.readdirSync(dir).filter(x => /\.(jpe?g|png)$/i.test(x)).sort(
 }
 for (const r of rows) {
   console.log(r.file.padEnd(34),
-    r.error ? "ERRO " + r.error : `det=${r.detected ? "S" : "n"} cel=${String(r.cells).padStart(2)}/12 grade=${r.grid ? "S" : "n"} px/mm=${r.pxPerMm ?? "-"} pulso=${r.pulse ? "S" : "n"} escala=${r.scale}`);
+    r.error ? "ERRO " + r.error : `skew=${String(r.skew).padStart(5)} det=${r.detected ? "S" : "n"} cel=${String(r.cells).padStart(2)}/12 grade=${r.grid ? "S" : "n"} px/mm=${r.pxPerMm ?? "-"} pulso=${r.pulse ? "S" : "n"} escala=${r.scale}`);
 }
 const ok = rows.filter(r => r.detected && r.cells >= 10).length;
 const meas = rows.filter(r => r.scale === "measured").length;

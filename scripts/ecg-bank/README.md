@@ -14,3 +14,14 @@ Nada aqui é validação clínica; mede só detecção, grade e calibração.
 - Públicas (52 imagens): detectadas 18 (35%); com >=10 células 11 (21%); grade 47; pulso 0; escala medida 0.
 - Sintéticas (20): >=10 células 9; escala medida 0; px/mm medido 3 contra 6 real (período da grade em metade).
 - Imagem real do usuário: 12/12 células e escala medida só na versão original e com sombra; rotação 3°, desfoque, resolução baixa e perspectiva leve falham.
+
+## Evolução (>=10 células)
+| Commit | Públicas (52) | Sintéticas (20) |
+|---|---|---|
+| 5178016 (base) | 11 | 9 |
+| 444f5e2 (rótulo "I" sem conflito falso) | 23 | 11 |
+| endireitamento por projeção da grade | 23 | 15 |
+
+O endireitamento recupera 100% das rotações de 3° e 8° e a combinação "celular"
+do primeiro registro; não muda as públicas porque quase nenhuma está inclinada.
+Pendentes nas sintéticas: desfoque (sigma 2), sombra forte e a combinação "celular" do segundo registro.

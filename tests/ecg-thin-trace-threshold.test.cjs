@@ -93,3 +93,36 @@ test("sem pulso, a escala nunca é marcada como medida", () => {
   const cal = engine.detectECGGridAndCalibration(img, null, engine.locatePaperSheet(img).boundaries);
   assert.equal(cal.measurementsAllowed, false);
 });
+
+function rotateImage(img, deg) {
+  const { width: w, height: h, data } = img;
+  const out = new Uint8ClampedArray(w * h * 4);
+  const a = (deg * Math.PI) / 180, cos = Math.cos(a), sin = Math.sin(a), cx = w / 2, cy = h / 2;
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      // rotação anti-horária visual (y para baixo), como cv2.getRotationMatrix2D
+      const sx = Math.round(cx + (x - cx) * cos - (y - cy) * sin);
+      const sy = Math.round(cy + (x - cx) * sin + (y - cy) * cos);
+      const o = (y * w + x) * 4;
+      if (sx < 0 || sy < 0 || sx >= w || sy >= h) { out[o] = out[o + 1] = out[o + 2] = 30; out[o + 3] = 255; continue; }
+      const i = (sy * w + sx) * 4;
+      out[o] = data[i]; out[o + 1] = data[i + 1]; out[o + 2] = data[i + 2]; out[o + 3] = 255;
+    }
+  }
+  return { data: out, width: w, height: h };
+}
+
+test("inclinação da folha é estimada com erro menor que 0,6° (moldura escura não interfere)", () => {
+  const base = paperImage(40, true);
+  assert.ok(Math.abs(engine.detectOrientationAndSkew(base).skewAngleDeg) < 0.5);
+  for (const deg of [3, 8, -5]) {
+    const est = engine.detectOrientationAndSkew(rotateImage(base, deg)).skewAngleDeg;
+    // convenção do motor: linha com inclinação tan(a) em coordenadas de imagem (y para baixo)
+    assert.ok(Math.abs(est - (-deg)) < 0.6, `giro ${deg}°: estimado ${est}`);
+  }
+});
+
+test("imagem sem estrutura de papel não propõe correção de inclinação", () => {
+  const flat = { data: new Uint8ClampedArray(W * H * 4).fill(128), width: W, height: H };
+  assert.equal(engine.detectOrientationAndSkew(flat).skewAngleDeg, 0);
+});
