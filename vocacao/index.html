@@ -54,19 +54,19 @@
           <p class="voc-eyebrow">ESCOLHA DA RESIDÊNCIA MÉDICA</p>
           <h1 id="voc-title">Qual residência médica combina com você?</h1>
           <p>Explore seus interesses em situações clínicas e rotinas reais. Ao final, veja até três residências médicas convencionais — de acesso direto ou com pré-requisito — com justificativas personalizadas.</p>
-          <div class="voc-meta"><span>29 cenários de trabalho</span><span>3 etapas com aprofundamento</span><span>~12–15 minutos</span></div>
+          <div class="voc-meta"><span>29 cenários de trabalho</span><span>3 etapas e desempate personalizado</span><span>~12–15 minutos</span></div>
         </section>
         <section id="voc-intro" class="voc-panel" aria-labelledby="voc-start-title">
           <div class="voc-panel-copy">
             <p class="voc-kicker">COMO RESPONDER</p>
             <h2 id="voc-start-title">Descubra quais residências vale a pena explorar</h2>
-            <p>Em cada situação, escolha a atividade que mais gostaria de realizar. Você pode marcar uma segunda preferência ou responder que ainda não sabe. O teste se adapta depois da primeira etapa, investiga os desafios das residências e não depende de já ter realizado procedimentos.</p>
-            <p class="voc-scale-help">As três etapas investigam tarefas, temas clínicos, dificuldades e prioridades. Você pode revisar respostas; se alterar as primeiras escolhas, as perguntas de aprofundamento poderão mudar. O progresso fica salvo apenas nesta aba.</p>
+            <p>Em cada situação, escolha a atividade que mais gostaria de realizar. Você pode marcar uma segunda preferência ou responder que ainda não sabe. Depois da primeira etapa, o teste escolhe cenários de aprofundamento; as três perguntas finais são selecionadas novamente para distinguir residências próximas. Não é necessário já ter realizado os procedimentos.</p>
+            <p class="voc-scale-help">As três etapas investigam tarefas, temas clínicos, dificuldades e prioridades; o resultado pode não emitir recomendações se faltarem informações. Você pode revisar respostas; se alterar as primeiras escolhas, as perguntas de aprofundamento poderão mudar. O progresso fica salvo apenas nesta aba.</p>
             <button id="voc-start" class="voc-button voc-button-primary" type="button">Começar o questionário <span aria-hidden="true">→</span></button>
           </div>
           <aside class="voc-method-note">
             <strong>Como o resultado é calculado</strong>
-            <p>A primeira etapa investiga seu estilo profissional. Em seguida, perguntas adicionais são escolhidas conforme suas respostas, incluindo conteúdo clínico e compromissos difíceis da rotina. O relatório recupera exemplos concretos das suas escolhas.</p>
+            <p>A primeira etapa investiga preferências gerais. Depois, perguntas clínicas e de rotina são escolhidas conforme as respostas; ao fim, uma nova seleção de perguntas busca distinguir as residências mais próximas. O relatório recupera exemplos concretos das suas escolhas.</p>
             <p>Este é um instrumento exploratório criado pela TRAUBE. O resultado não é diagnóstico, avaliação psicológica validada nem previsão de satisfação, desempenho ou aprovação na residência.</p>
             <a href="https://portal.cfm.org.br/buscar-normas-cfm-e-crm/" target="_blank" rel="noopener noreferrer">Consultar normas do CFM ↗</a>
           </aside>
@@ -98,7 +98,7 @@
         <section id="voc-results" class="voc-results" hidden aria-labelledby="voc-results-title"></section>
         <section class="voc-sources" aria-label="Fontes e metodologia">
           <details><summary>Fontes, metodologia e limites</summary><div>
-            <p>Metodologia: 16 cenários iniciais, 10 aprofundamentos selecionados com base nas escolhas e três verificações finais. O estudante pode indicar primeira e segunda preferência, incerteza e falta de experiência. O motor compara sinais de interesse nas dimensões profissionais, considera o conteúdo clínico citado nas escolhas e descreve evidências, possíveis atritos e limitações. O algoritmo não foi validado psicometricamente e não mede competência, personalidade clínica ou probabilidade de satisfação.</p>
+            <p>Metodologia: 16 cenários iniciais, 10 aprofundamentos selecionados após a primeira etapa e três perguntas de desempate selecionadas após o aprofundamento. Quando as respostas não permitem diferenciar residências, o teste evita emitir recomendações artificiais. O estudante pode indicar primeira e segunda preferência, incerteza e falta de experiência. O motor compara sinais de interesse nas dimensões profissionais, considera o conteúdo clínico citado nas escolhas e descreve evidências, possíveis atritos e limitações. O algoritmo não foi validado psicometricamente e não mede competência, personalidade clínica ou probabilidade de satisfação.</p>
             <p>Escopo: a TRAUBE recomenda somente residências médicas convencionais selecionadas por curadoria, incluindo subespecialidades clínicas e cirúrgicas com pré-requisito. Homeopatia e Medicina Legal e Perícia Médica foram excluídas desta curadoria, assim como especialidades pouco usuais e áreas de atuação sem residência equivalente. A inclusão não confirma vagas em uma instituição específica. Consulte a CNRM e cada edital para confirmar credenciamento, ingresso, pré-requisitos e duração.</p>
             <p><a href="https://mecnormas.mec.gov.br/pesquisa/detalhar/2129" target="_blank" rel="noopener noreferrer">Normas da CNRM (acesso e pré-requisitos)</a> · <a href="https://portal.mec.gov.br/sesu-secretaria-de-educacao-superior/apresentacao/30000-uncategorised/71531-matrizes-de-competencias-aprovadas-pela-cnrm" target="_blank" rel="noopener noreferrer">Matrizes de competências</a></p>
           </div></details>
@@ -110,8 +110,8 @@
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261101-traube-bootstrap1"></script>
   <script defer src="/assets/js/vocacao-data.js?v=20261029-residencias-v1"></script>
-  <script defer src="/assets/js/vocacao-engine.js?v=20261029-residencias-v1"></script>
-  <script defer src="/assets/js/vocacao.js?v=20261029-residencias-v1"></script>
+  <script defer src="/assets/js/vocacao-engine.js?v=20261102-v5"></script>
+  <script defer src="/assets/js/vocacao.js?v=20261102-v5"></script>
   <script defer src="/assets/js/pwa.js?v=20261101-bootstrap1"></script>
 </body>
 </html>
