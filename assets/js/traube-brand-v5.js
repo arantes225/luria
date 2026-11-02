@@ -35,9 +35,9 @@
   }
 
   const LOGOS = {
-    light: "assets/img/logos/logo-icone-original.png?v=traube9",
-    dark: "assets/img/logos/logo-icone-azul-claro.png?v=traube9",
-    "leila-mood": "assets/img/logos/logo-icone-rosa-escuro.png?v=traube9"
+    light: "assets/img/logos/logo-icone-original.png?v=busto20261102",
+    dark: "assets/img/logos/logo-icone-azul-claro.png?v=busto20261102",
+    "leila-mood": "assets/img/logos/logo-icone-rosa-escuro.png?v=busto20261102"
   };
 
   function getTheme() {
@@ -262,7 +262,7 @@
       "any";
 
     const source =
-      "/assets/img/logos/logo-icone-original.png?v=favicon1";
+      "/assets/img/logos/logo-icone-original.png?v=busto20261102";
 
     if (
       favicon.getAttribute("href")
