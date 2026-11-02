@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; upgrade-insecure-requests">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Meus receituários · TRAUBE</title>
+  <meta name="theme-color" content="#184888">
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <script src="/assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261025-work-spotlight">
+  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+  <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
+  <link rel="stylesheet" href="/assets/css/work-ui-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/meus-receituarios.css?v=1">
+</head>
+<body data-page="trabalho_meus_receituarios" data-ui-nav="v2" data-ui-context="work" data-ui-shell="v2" data-ui="v2" data-ui-work="v2" data-ui-work-navigation="hub">
+<script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+<script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
+<div class="app-shell">
+  <aside id="sidebar" class="sidebar"></aside>
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+  <main class="main"><div class="page">
+    <header class="topbar">
+      <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+      <div class="page-heading"><span class="eyebrow">Modelos privados</span><h1>Meus receituários</h1></div>
+    </header>
+    <section class="traube-page-spotlight" aria-label="Meus receituários">
+      <div class="traube-page-spotlight-copy"><strong>Meus receituários</strong><small class="traube-page-spotlight-helper">Modelos privados associados à sua conta.</small></div>
+    </section>
+    <div class="my-recipes">
+      <header class="my-recipes-hero"><div><h2>Meus receituários</h2><p>Crie modelos com medicamentos, exames, tratamento e orientações. Selecione os medicamentos antes de copiar.</p></div><a href="/trabalho/protocolos/">Ver protocolos</a></header>
+      <p id="my-recipes-status" class="my-recipes-status" role="status" aria-live="polite">Verificando sua conta…</p>
+      <div id="my-recipes-workspace" class="my-recipes-workspace" hidden>
+        <section class="my-recipes-panel" aria-labelledby="my-recipes-list-title">
+          <div class="my-recipes-panel-head"><h3 id="my-recipes-list-title">Modelos salvos</h3><button type="button" id="my-recipes-new">Novo modelo</button></div>
+          <div id="my-recipes-list" class="my-recipes-list"></div>
+          <button type="button" id="my-recipes-more" class="my-recipes-more" hidden>Carregar mais</button>
+        </section>
+        <section class="my-recipes-panel" aria-labelledby="my-recipes-form-title">
+          <div class="my-recipes-panel-head"><h3 id="my-recipes-form-title">Criar modelo</h3></div>
+          <form id="my-recipes-form" autocomplete="off">
+            <label>Título do modelo <input id="my-recipe-title" name="title" maxlength="180" required placeholder="Ex.: analgesia ambulatorial"></label>
+            <div class="my-recipes-field-head"><h4>Medicamentos</h4><button type="button" id="my-recipes-add-med">Adicionar medicamento</button></div>
+            <div id="my-recipes-meds" class="my-recipes-meds"></div>
+            <label>Exames <small>Um exame por linha.</small><textarea id="my-recipe-exams" rows="4" maxlength="10000" placeholder="Ex.: hemograma completo"></textarea></label>
+            <label>Tratamento <small>Condutas adicionais do seu modelo.</small><textarea id="my-recipe-treatment" rows="4" maxlength="10000"></textarea></label>
+            <label>Orientações <small>Serão incluídas automaticamente na cópia do tratamento.</small><textarea id="my-recipe-orientations" rows="4" maxlength="10000"></textarea></label>
+            <div class="my-recipes-form-actions"><button type="submit" id="my-recipes-save">Salvar modelo</button><button type="button" id="my-recipes-delete" class="danger" hidden>Excluir modelo</button></div>
+          </form>
+        </section>
+        <section id="my-recipes-preview" class="my-recipes-panel my-recipes-preview" aria-live="polite"></section>
+      </div>
+    </div>
+  </div></main>
+</div>
+<script src="/assets/vendor/supabase-2.110.6.js"></script>
+<script src="/assets/js/supabase.js"></script>
+<script src="/assets/js/app.js?v=20261020-sidebar-nav"></script>
+<script src="/assets/js/meus-receituarios.js?v=1"></script>
+<script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
+</body>
+</html>
