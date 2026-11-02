@@ -28,6 +28,8 @@
       ['protocol', 'Anamnese IA', 'Organize relatos soltos em anamnese formal.', 'anamnese/', 'indigo'],
       ['rx', 'Bulário', 'Consulte medicamentos e apresentações.', 'bulario/', 'blue'],
       ['file', 'Prescrição', 'Organize suas prescrições.', 'prescricao/', 'green'],
+      ['file', 'Modelos', 'Receitas, exames e anamnese prontos para copiar.', 'modelos/', 'blue'],
+      ['protocol', 'Protocolos', 'Leia os protocolos clínicos completos.', 'protocolos/', 'indigo'],
       ['protocol', 'Cola rápida', 'Anotações com acesso temporário.', 'prontuario-rapido/', 'violet']
     ]],
     ['Avaliação e apoio clínico', [
