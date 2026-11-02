@@ -34,6 +34,16 @@ test("avaliação profunda: 29 respostas, segunda preferência e relatório espe
       assert.equal($("voc-next").disabled,false);
     }
     $("voc-next").click();
+    if(i===15){
+      const state=JSON.parse(window.sessionStorage.getItem("traube.vocacao.v5.session"));
+      assert.equal(state.sequence.length,26,"etapa clínica selecionada após os primeiros 16 cenários");
+    }
+    if(i===25){
+      const state=JSON.parse(window.sessionStorage.getItem("traube.vocacao.v5.session"));
+      assert.equal(state.sequence.length,29,"perguntas finais selecionadas após o aprofundamento");
+      assert.deepEqual(new Set(state.sequence.slice(26).map(id=>window.TraubeVocacaoEngine.questionIndex.get(id).group)),
+        new Set(["Conteúdo clínico","Rotina real","Decisão final"]));
+    }
   }
   assert.equal($("voc-results").hidden,false);
   assert.equal(window.document.querySelectorAll(".voc-match").length,3);
@@ -80,5 +90,20 @@ test("catálogo pesquisável apresenta apenas residências convencionais",()=>{
   $("voc-search").value="medicina legal";
   $("voc-search").dispatchEvent(new window.Event("input",{bubbles:true}));
   assert.equal(window.document.querySelectorAll(".voc-catalog-item").length,0);
+  dom.window.close();
+});
+
+test("sem preferência em 29 cenários, não força recomendações",()=>{
+  const {dom,window,$}=start();
+  $("voc-start").click();
+  for(let i=0;i<29;i++){
+    $("voc-none").click();
+    assert.equal($("voc-next").disabled,false);
+    $("voc-next").click();
+  }
+  assert.equal($("voc-results").hidden,false);
+  assert.equal(window.document.querySelectorAll(".voc-match").length,0);
+  assert.match($("voc-results").textContent,/Recomendações não emitidas/);
+  assert.match($("voc-results").textContent,/não é responsável indicar três residências/);
   dom.window.close();
 });
