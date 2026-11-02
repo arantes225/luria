@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./docs/CEREBRO-STATUS.md)",
+      "Read(./docs/archive/**)",
+      "Read(./docs/mascot-lab/**)",
+      "Read(./.tmp/**)",
+      "Read(./assets/vendor/**)",
+      "Read(./assets/img/**)",
+      "Read(./marketing/public/**)",
+      "Read(./plantao/personagens-traube.html)",
+      "Read(./assets/js/traube-personagens-original.js)",
+      "Read(./apostilas/curadoria-imagens/data.json)",
+      "Read(./.env)",
+      "Read(./.env.*)"
+    ]
+  }
+}
