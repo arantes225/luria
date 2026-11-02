@@ -1,4 +1,6 @@
 import {getAlexConversation, rememberAlexTurn, clearAlexConversation} from './alex-conversation-history.mjs?v=20261028-1';
+// Loaded defensively: if this module is ever unavailable, Leco keeps working with the browser recognizer.
+const liveStt = await import('./leco-live-stt.mjs?v=20261102-1').catch(() => null);
 
 // Secure Leco front-end: only the user's Supabase JWT goes to our Edge Function.
 // The Gemini API key is read exclusively inside the Edge Function.
@@ -122,6 +124,7 @@ let isLiveActive = false;
 let liveRecognition = null;
 let startLiveListening = null;
 let stopLiveListening = null;
+let pauseServerStt = null;
 
 const ERROR_MESSAGES = {
   invalid_request_id: "Atualize a página para continuar a conversa.",
@@ -793,6 +796,7 @@ function showSpeechRetry(text, onComplete) {
       try { liveRecognition.abort(); } catch {}
       liveRecognition = null;
     }
+    pauseServerStt?.();
     unlockLiveAudio();
     speakText(text, onComplete);
   };
@@ -1132,6 +1136,103 @@ function initLiveVoiceMode() {
     (window.navigator?.standalone === true || window.matchMedia?.("(display-mode: standalone)")?.matches);
   let retryTimer = null;
   let retryDelay = 500;
+
+  // Default path: record each utterance locally (echo cancelled) and transcribe
+  // it on the server with Gemini, which keeps medical terms intact. The browser
+  // recognizer below remains as an automatic fallback (?stt=device forces it).
+  let useServerStt = Boolean(liveStt?.shouldUseServerStt(window));
+  let serverListener = null;
+  let serverSttFailures = 0;
+  const playbackActive = () => Boolean(audioPlaybackPending || currentPuckAudio || currentPuckSource);
+  const normalizeHeard = value => String(value || "").toLocaleLowerCase("pt-BR")
+    .normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+  const buildSttHint = () => {
+    const topic = document.getElementById("alex-topic")?.value.trim() || "";
+    const recent = sessionHistory.slice(-2).map(item => String(item?.text || "")).join(" ");
+    return [topic, recent].filter(Boolean).join(" | ").slice(0, 600);
+  };
+  async function transcribeUtterance(wav) {
+    const client = window.supabaseClient;
+    if (!client?.functions) throw Object.assign(new Error("no_client"), { code: "no_client" });
+    const { data, error } = await client.functions.invoke("leco-transcribe", {
+      body: { request_id: crypto.randomUUID(), mime_type: "audio/wav", audio_base64: liveStt.bytesToBase64(wav), hint: buildSttHint() },
+    });
+    if (error) throw error;
+    if (data?.usage) renderUsage(data.usage);
+    if (data?.accounting_pending) window.setTimeout(() => refreshUsage().catch(() => {}), 1_300);
+    if (data?.error) throw Object.assign(new Error(String(data.error)), { code: String(data.error) });
+    return data;
+  }
+  function handleServerBargeIn() {
+    if (!isLiveActive || !playbackActive()) return;
+    newConversationTurn(); // barge-in: cancel playback and pending requests
+    liveStatus("🎙️ Estou ouvindo sua nova pergunta...");
+    if (submit) { submit.disabled = false; submit.textContent = "Perguntar"; }
+  }
+  function handleServerTranscript({ text, uncertain }) {
+    serverSttFailures = 0;
+    if (!isLiveActive || !text) return;
+    const heard = normalizeHeard(text);
+    const leco = normalizeHeard(lastSpokenAnswer);
+    // Avoid a feedback loop where the mic picked up the assistant's own speech.
+    if (leco && heard.length >= 4 &&
+        (leco.includes(heard) || (heard.length > 15 && heard.includes(leco.slice(0, 15))))) return;
+    // The server flags ambiguous audio; reuse the existing low-confidence
+    // clarification instead of answering a question that may be misheard.
+    liveTranscriptConfidence = uncertain ? 0.5 : null;
+    liveTranscriptFromSpeech = true;
+    const input = document.getElementById("alex-prompt");
+    if (input) input.value = text;
+    if (form) form.dispatchEvent(new Event("submit", { cancelable: true, bubbles: true }));
+  }
+  function switchToDeviceRecognizer(reason) {
+    console.warn("[Leco Voice] Transcrição por áudio indisponível; usando o navegador:", reason);
+    useServerStt = false;
+    destroyServerListener();
+    if (SpeechRec) {
+      liveStatus("⚠️ Transcrição avançada indisponível. Usando o reconhecimento do navegador.");
+      startListening();
+    } else {
+      liveStatus("⚠️ Não foi possível ouvir. Digite sua pergunta.");
+    }
+  }
+  function handleServerSttError({ fatal, code }) {
+    if (!isLiveActive) return;
+    if (fatal && code === "not-allowed") {
+      microphonePermissionDenied = true;
+      destroyServerListener(); // The next attempt builds a fresh listener and asks again.
+      liveStatus("⚠️ Microfone bloqueado pelo sistema. Permita o acesso ou digite sua pergunta.");
+      return;
+    }
+    serverSttFailures += 1;
+    if (fatal || serverSttFailures >= 2) { switchToDeviceRecognizer(code); return; }
+    liveStatus("⚠️ Não consegui transcrever. Pode repetir?");
+  }
+  function startServerListening() {
+    if (!isLiveActive || microphonePermissionDenied) return;
+    // Installed iOS PWAs route audio differently while the mic is open: keep the
+    // legacy rule of not listening while the answer plays (interrupt button reopens).
+    if (isIOSPwa && playbackActive()) { serverListener?.pause(); return; }
+    if (!serverListener) {
+      serverListener = liveStt.createLiveListener({
+        transcribe: transcribeUtterance,
+        isPlaybackActive: playbackActive,
+        onStatus: liveStatus,
+        onSpeechStart: handleServerBargeIn,
+        onTranscript: handleServerTranscript,
+        onError: handleServerSttError,
+        win: window,
+      });
+      serverListener.start().catch(error => handleServerSttError({ fatal: true, code: error?.name || "start_failed" }));
+      return;
+    }
+    serverListener.resume();
+  }
+  function destroyServerListener() {
+    if (serverListener) { serverListener.destroy(); serverListener = null; }
+  }
+  pauseServerStt = () => serverListener?.pause();
+
   const setInterruptVisible = active => {
     if (!interruptBtn) return;
     interruptBtn.hidden = !active;
@@ -1140,6 +1241,7 @@ function initLiveVoiceMode() {
   function stopListening() {
     clearTimeout(retryTimer);
     retryTimer = null;
+    serverListener?.pause();
     if (liveRecognition) {
       const recognition = liveRecognition;
       liveRecognition = null;
@@ -1173,7 +1275,7 @@ function initLiveVoiceMode() {
     liveCallBtn.style.boxShadow = "0 0 0 3px var(--accent-soft)";
     liveCallBtn.addEventListener("click", () => { liveCallBtn.style.boxShadow = ""; }, { once: true });
   }
-  if (!SpeechRec) liveCallBtn.title = "O microfone contínuo não está disponível. Você pode digitar e ouvir as respostas.";
+  if (!SpeechRec && !useServerStt) liveCallBtn.title = "O microfone contínuo não está disponível. Você pode digitar e ouvir as respostas.";
 
   liveCallBtn.addEventListener("click", () => {
     if (isLiveActive) stopLiveMode();
@@ -1186,7 +1288,7 @@ function initLiveVoiceMode() {
     liveCallBtn.classList.add("is-active");
     if (liveCallText) liveCallText.textContent = "Encerrar Conversa ao Vivo";
     setInterruptVisible(true);
-    liveStatus(SpeechRec
+    liveStatus((SpeechRec || useServerStt)
       ? "🎙️ Ouvindo. Fale a qualquer momento; use Interromper e falar se necessário."
       : "🔊 Voz ativada. Digite para receber respostas faladas.");
     // No spoken greeting: it used to block first microphone activation on iOS.
@@ -1196,6 +1298,8 @@ function initLiveVoiceMode() {
     isLiveActive = false;
     newConversationTurn();
     stopListening();
+    destroyServerListener();
+    serverSttFailures = 0;
     setInterruptVisible(false);
     microphonePermissionDenied = false;
     if (submit) { submit.disabled = false; submit.textContent = "Perguntar"; }
@@ -1206,6 +1310,7 @@ function initLiveVoiceMode() {
   startLiveListening = startListening;
 
   function startListening() {
+    if (useServerStt) { startServerListening(); return; }
     if (!SpeechRec || !isLiveActive || liveRecognition || microphonePermissionDenied) return;
     // iOS standalone Safari cannot reliably do speech recognition while TTS plays.
     // The explicit interrupt button always stops playback and reopens the mic.
