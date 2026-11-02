@@ -1154,8 +1154,8 @@ function initLiveVoiceMode() {
   async function transcribeUtterance(wav) {
     const client = window.supabaseClient;
     if (!client?.functions) throw Object.assign(new Error("no_client"), { code: "no_client" });
-    const { data, error } = await client.functions.invoke("professor-alex-gemini", {
-      body: { action: "transcribe", request_id: crypto.randomUUID(), mime_type: "audio/wav", audio_base64: liveStt.bytesToBase64(wav), hint: buildSttHint() },
+    const { data, error } = await client.functions.invoke("leco-transcribe", {
+      body: { request_id: crypto.randomUUID(), mime_type: "audio/wav", audio_base64: liveStt.bytesToBase64(wav), hint: buildSttHint() },
     });
     if (error) throw error;
     if (data?.usage) renderUsage(data.usage);

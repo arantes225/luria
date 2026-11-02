@@ -10,6 +10,7 @@ on:
       - "assets/js/alex-conversation-history.mjs"
       - "assets/js/leco-live-stt.mjs"
       - "supabase/functions/professor-alex-gemini/**"
+      - "supabase/functions/leco-transcribe/**"
       - "db/professor_alex_daily_quota.sql"
       - "tests/professor-alex-gemini.test.cjs"
       - "tests/leco-phonetic-stt.test.cjs"

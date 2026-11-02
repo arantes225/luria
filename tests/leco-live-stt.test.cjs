@@ -9,7 +9,7 @@ const { stripTypeScriptTypes } = require("node:module");
 const root = path.resolve(__dirname, "..");
 const modulePath = path.join(root, "assets/js/leco-live-stt.mjs");
 const client = fs.readFileSync(path.join(root, "assets/js/professor-alex-gemini.mjs"), "utf8");
-const edge = fs.readFileSync(path.join(root, "supabase/functions/professor-alex-gemini/index.ts"), "utf8");
+const edge = fs.readFileSync(path.join(root, "supabase/functions/leco-transcribe/index.ts"), "utf8");
 const load = () => import(pathToFileURL(modulePath).href);
 const tick = () => new Promise(resolve => setImmediate(resolve));
 async function settleAsync(times = 6) { for (let i = 0; i < times; i++) await tick(); }
@@ -199,9 +199,9 @@ test("Server transcription can be forced off and requires browser support", asyn
 
 function edgeHelpers() {
   const start = edge.indexOf("function sttInstruction(");
-  const end = edge.indexOf("function studyPlannerInstruction(");
+  const end = edge.indexOf("Deno.serve(");
   assert.ok(start > 0 && end > start, "STT helpers are present");
-  const constants = edge.slice(edge.indexOf("const MAX_STT_WAV_BASE64"), edge.indexOf("const STT_PCM_BYTES_PER_SECOND")) + "const STT_PCM_BYTES_PER_SECOND = 32_000;\n";
+  const constants = "const STT_AUDIO_TOKENS_PER_SECOND = 32;\nconst STT_PCM_BYTES_PER_SECOND = 32_000;\n";
   const code = stripTypeScriptTypes(constants + edge.slice(start, end));
   const context = {};
   vm.runInNewContext(code + "\nthis.sttInstruction = sttInstruction; this.parseSttAnswer = parseSttAnswer; this.estimateSttInputTokens = estimateSttInputTokens;", context);
@@ -226,26 +226,28 @@ test("Edge transcription helpers keep the speaker's words and parse strict JSON"
   assert.ok(tenSeconds - oneSecond >= 9 * 32 && tenSeconds - oneSecond <= 9 * 32 + 20);
 });
 
-test("Edge transcribe action authenticates, validates audio and uses the atomic budget", () => {
-  const block = edge.slice(edge.indexOf('data.action === "transcribe"'), edge.indexOf('const experience = data.experience'));
-  assert.ok(block.length > 500, "transcribe block present");
-  assert.ok(edge.indexOf('data.action === "transcribe"') > edge.indexOf("auth.getUser(token)"), "after authentication");
-  assert.match(block, /data\.mime_type !== "audio\/wav"/);
-  assert.match(block, /MAX_STT_WAV_BASE64/);
-  assert.match(block, /invalid_audio/);
-  assert.match(block, /reserve_alex_budget/);
-  assert.match(block, /p_channel: "chat"/);
-  assert.match(block, /settle_alex_budget/);
-  assert.match(block, /token_budget_reached/);
-  assert.match(block, /thinkingLevel: "minimal"/);
-  assert.match(block, /temperature: 0/);
-  assert.doesNotMatch(block, /console\.(log|warn|error)\([^)]*(transcript|sttText|audio|hint)/i);
+test("Edge transcribe function authenticates, validates audio and uses the atomic budget", () => {
+  assert.ok(edge.indexOf("client.auth.getUser(token)") > 0);
+  assert.ok(edge.indexOf("client.auth.getUser(token)") < edge.indexOf("reserve_alex_budget"), "authenticates before reserving");
+  assert.match(edge, /origin_not_allowed/);
+  assert.match(edge, /user\.is_anonymous/);
+  assert.match(edge, /data\.mime_type !== "audio\/wav"/);
+  assert.match(edge, /MAX_STT_WAV_BASE64/);
+  assert.match(edge, /invalid_audio/);
+  assert.match(edge, /reserve_alex_budget/);
+  assert.match(edge, /p_channel: "chat"/);
+  assert.match(edge, /settle_alex_budget/);
+  assert.match(edge, /token_budget_reached/);
+  assert.match(edge, /thinkingLevel: "minimal"/);
+  assert.match(edge, /temperature: 0/);
   assert.match(edge, /ALEX_STT_MODEL/);
+  assert.doesNotMatch(edge, /console\.(log|warn|error)\([^)]*(transcript|text\b|audio|hint)/i);
+  assert.doesNotMatch(client, /Deno\.env|x-goog-api-key|generativelanguage\.googleapis\.com/);
 });
 
 test("Live mode uses server transcription first and keeps the browser recognizer as fallback", () => {
   assert.match(client, /await import\('\.\/leco-live-stt\.mjs\?v=[^']+'\)\.catch\(\(\) => null\)/);
-  assert.match(client, /action: "transcribe"/);
+  assert.match(client, /functions\.invoke\("leco-transcribe"/);
   assert.match(client, /mime_type: "audio\/wav"/);
   assert.match(client, /if \(useServerStt\) \{ startServerListening\(\); return; \}/);
   assert.match(client, /function switchToDeviceRecognizer/);
