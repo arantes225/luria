@@ -7,7 +7,7 @@
   }
   const $=id=>document.getElementById(id);
   const intro=$("voc-intro"),quiz=$("voc-quiz"),results=$("voc-results"),choices=$("voc-options");
-  const storageKey="traube.vocacao.v3.session";
+  const storageKey="traube.vocacao.v5.session";
   let sequence=engine.core.map(q=>q.id);
   let answers={}, current=0, finish=false;
   const html=value=>String(value??"").replace(/[&<>"']/g,char=>({
@@ -23,11 +23,14 @@
   function validSaved(s) {
     if(!s||typeof s!=="object"||!Array.isArray(s.sequence)||typeof s.answers!=="object")return false;
     const ids=s.sequence, base=engine.core.map(q=>q.id);
-    if(ids.length!==base.length&&ids.length!==engine.total)return false;
+    if(![base.length,base.length+engine.DEEP_COUNT,engine.total].includes(ids.length))return false;
     if(!base.every((id,i)=>ids[i]===id))return false;
-    if(ids.length===engine.total){
-      try{engine.createSequence(s.answers,ids.slice(base.length,base.length+engine.DEEP_COUNT));}
-      catch(_){return false;}
+    if(ids.length>base.length){
+      try {
+        const expected=engine.createSequence(s.answers,ids.slice(base.length,base.length+engine.DEEP_COUNT),
+          ids.length===engine.total?ids.slice(base.length+engine.DEEP_COUNT):null);
+        if(expected.join("|")!==ids.join("|"))return false;
+      }catch(_){return false;}
     }
     if(new Set(ids).size!==ids.length)return false;
     if(Object.entries(s.answers).some(([id,v])=>!ids.includes(id)||!engine.validResponse(v)))return false;
@@ -60,7 +63,7 @@
   function phase(index=current) {
     if(index<engine.core.length)return ["ETAPA 1 DE 3 · SUA PRÁTICA","Entender preferências e estilo de trabalho"];
     if(index<engine.core.length+engine.DEEP_COUNT)return ["ETAPA 2 DE 3 · APROFUNDAMENTO","Questões selecionadas pelo seu perfil inicial"];
-    return ["ETAPA 3 DE 3 · AJUSTE FINO","Prioridades reais e limites de rotina"];
+    return ["ETAPA 3 DE 3 · DESEMPATE PERSONALIZADO","Perguntas finais escolhidas entre as residências com maior afinidade"];
   }
   function renderQuestion(){
     const q=currentQuestion();
@@ -113,11 +116,17 @@
     const old=sequence.slice(engine.core.length,engine.core.length+engine.DEEP_COUNT);
     const changed=desired.some((id,i)=>id!==old[i])||old.length!==desired.length;
     if(changed) {
-      const keep=new Set([...engine.core.map(q=>q.id),...desired,...engine.end.map(q=>q.id)]);
+      const keep=new Set([...engine.core.map(q=>q.id),...desired]);
       answers=Object.fromEntries(Object.entries(answers).filter(([id])=>keep.has(id)));
       // Respostas de aprofundamento permanecem apenas quando a pergunta ainda está na trilha.
       sequence=engine.createSequence(answers,desired);
     }
+  }
+  function adaptFinal(){
+    const selected=engine.selectFinal(answers,sequence.slice(engine.core.length,engine.core.length+engine.DEEP_COUNT));
+    const keep=new Set([...sequence.slice(0,engine.core.length+engine.DEEP_COUNT),...selected]);
+    answers=Object.fromEntries(Object.entries(answers).filter(([id])=>keep.has(id)));
+    sequence=engine.createSequence(answers,sequence.slice(engine.core.length,engine.core.length+engine.DEEP_COUNT),selected);
   }
   function next(){
     if(!engine.validResponse(answers[currentQuestion().id])){
@@ -125,6 +134,7 @@
       return;
     }
     if(current===engine.core.length-1)adapt();
+    if(current===engine.core.length+engine.DEEP_COUNT-1)adaptFinal();
     if(current===sequence.length-1&&sequence.length===engine.total){
       try{renderResults();}catch(error){$("voc-error").textContent="Não foi possível concluir a análise. Revise suas respostas.";console.error(error);}
       return;
@@ -198,6 +208,13 @@
       '<p class="voc-kicker">MAPA DE RESIDÊNCIAS · RESULTADO PERSONALIZADO</p>'+
       '<h2 id="voc-results-title">O que realmente pesa na sua escolha</h2>'+
       '<p class="voc-result-intro">'+headline+'</p>'+
+      sections("Qualidade das evidências", '<p>'+
+        (report.insufficient?
+        'Você indicou uma preferência em apenas '+report.direct+' das '+report.total+
+        ' situações. Não é responsável indicar três residências com esse volume de informações. Refaça o teste quando puder escolher mais atividades ou após novos estágios.':
+        report.certainty==="exploratorio"?
+        'O resultado é preliminar: há muitas respostas sem experiência direta ou sem preferência. Use as hipóteses para escolher estágios de observação, não para decidir a inscrição.':
+        'O conjunto de respostas permite identificar tendências editoriais de preferência, mas não mede aptidão e não substitui a vivência real.')+'</p>')+
       sections("Seu jeito de raciocinar",'<p>Nas tarefas intelectuais, suas escolhas sugerem interesse em '+html(diagnostic)+
         '. Observe se gosta de investigar hipóteses por muito tempo ou prefere que o raciocínio leve rapidamente a uma ação.</p>')+
       sections("Sua relação com procedimentos e tecnologia",'<p>Nas alternativas práticas, você privilegiou '+html(procedural)+
@@ -214,8 +231,11 @@
         '<p>Você marcou poucas preferências diretas; considere repetir o teste depois de vivenciar mais estágios.</p>')+
       '<h2 class="voc-top-title">Até três residências médicas para explorar</h2>'+
       '<p class="voc-result-intro">As recomendações incluem apenas residências convencionais da curadoria TRAUBE, de acesso direto ou com pré-requisito. A ordem representa afinidades editoriais, nunca chance de aprovação, competência ou satisfação.</p>'+
-      uncertain+'<div class="voc-match-list">'+top+'</div>'+
-      sections("Como diferenciar as residências sugeridas",difference)+
+      uncertain+(report.insufficient?
+      '<p class="voc-result-intro" role="status"><strong>Recomendações não emitidas:</strong> faltam respostas para diferenciar residências de modo responsável. É possível revisar as perguntas.</p>':
+      '<div class="voc-match-list">'+top+'</div>')+
+      (report.insufficient?'' : sections("Como diferenciar as residências sugeridas",difference))+
+      sections("O que a etapa de desempate investigou",'<p>As últimas três perguntas foram selecionadas para comparar tarefas clínicas, custos de rotina e prioridades entre as possibilidades que ficaram mais próximas após o aprofundamento. Não é um diagnóstico de personalidade.</p>')+
       sections("Plano de validação no mundo real",'<p>Para cada residência sugerida: acompanhe ao menos um dia comum, converse com residentes e especialistas, observe tarefas repetitivas e compare seu bem-estar ao final do turno. Refaça a avaliação após novas experiências; a ordem pode mudar.</p>')+
       '<p class="voc-result-intro"><strong>Limitações:</strong> avaliação exploratória da TRAUBE; não é teste psicométrico validado nem prevê aprovação. A inclusão no catálogo não garante vagas em todas as instituições ou anos. Confira os editais e a CNRM.</p>'+
       '<div class="voc-actions"><button id="voc-restart" class="voc-button voc-button-primary" type="button">Refazer desde o início</button>'+
