@@ -40,6 +40,8 @@ def render(sig, fs):
         if abs(d - round(d)) < 1e-6 or (x - x0) % int(PX_MM) == 0:
             img[y0:y1, x] = (225, 222, 250) if (x - x0) % int(PX_MM * 5) else (190, 185, 240)
     for y in range(y0, y1):
+        if (y - y0) % int(PX_MM) != 0:
+            continue  # só as linhas da grade (1 mm); antes pintava todas as linhas de pixel
         img[y, x0:x1] = (225, 222, 250) if (y - y0) % int(PX_MM * 5) else (190, 185, 240)
     rows_y = [y0 + 130 + i * 250 for i in range(4)]
     seg_px = int(2.5 * 25 * PX_MM)  # 2,5 s por coluna
@@ -63,7 +65,12 @@ def render(sig, fs):
             pts = np.stack([cell_x + np.arange(n), cy - ys * 10 * PX_MM], 1).astype(np.int32)
             cv2.polylines(img, [pts], False, (25, 25, 25), 1, cv2.LINE_AA)
             cv2.putText(img, LABEL[lead] if r < 3 else "II", (cell_x + 4, cy + 95), cv2.FONT_HERSHEY_COMPLEX, 0.55, (10, 10, 10), 1, cv2.LINE_AA)
-            truth[f"{lead}@{r}.{c}"] = {"x0": int(cell_x), "baseline_y": int(cy), "samples": int(n)}
+            truth[f"{lead}@{r}.{c}"] = {
+                "lead": lead, "row": r, "col": c, "x0": int(cell_x), "baseline_y": int(cy), "samples": int(n),
+                # curva verdadeira em pixels da imagem limpa (y cresce para baixo)
+                "y": [round(float(v), 2) for v in (cy - ys * 10 * PX_MM)],
+                "mv": [round(float(v), 4) for v in ys],
+            }
     return img, truth
 
 
