@@ -3,7 +3,7 @@
   const list=document.getElementById('drug-list');
   const detail=document.getElementById('drug-detail');
   const count=document.getElementById('drug-count');
-  let rows=[], protocols=[], selected=null, activeChip="", visibleCount=100; const normStr=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+  let rows=[], protocols=[], selected=null, activeChip="", visibleCount=100, loading=true; const normStr=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
   const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const number=value=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(value);
   const status=row=>row.data?.status==='posology_verified'?2:row.data?.status==='verified'?1:0;
@@ -48,8 +48,8 @@
       return [row.name,row.active_ingredient,row.therapeutic_class,row.pharmacological_class,...(row.data?.diseases||[]),...commercial,...products].some(value=>normStr(typeof value==='string'?value:value?.name).includes(term));
     });
     matches.sort((a,b)=>status(b)-status(a)||String(a.name||'').localeCompare(String(b.name||''),'pt-BR'));
-    count.textContent=`${matches.length} medicamento${matches.length===1?'':'s'}`;
-    list.innerHTML=matches.slice(0,visibleCount).map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${String(row.id)===String(selected)}"><span class="drug-row-content"><strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong><small>${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<span class="drug-row-description">Nome comercial/referência: ${esc(row.name)}</span>`:''}${status(row)===2?`<span class="drug-row-presentations">${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}</span>`:status(row)===1?'<span class="drug-row-description">Resumo da bula</span>':''}</small></span></button>`).join('')+(matches.length>visibleCount?`<button type="button" class="drug-row" data-bulario-more="1">Mostrar mais ${Math.min(100,matches.length-visibleCount)} medicamentos (${visibleCount} de ${matches.length})</button>`:'')||'<div class="empty">Nenhum medicamento encontrado.</div>';
+    count.textContent=`${matches.length} medicamento${matches.length===1?'':'s'}${loading?` · ${rows.length} carregados, buscando mais…`:''}`;
+    list.innerHTML=matches.slice(0,visibleCount).map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${String(row.id)===String(selected)}"><span class="drug-row-content"><strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong><small>${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<span class="drug-row-description">Nome comercial/referência: ${esc(row.name)}</span>`:''}${status(row)===2?`<span class="drug-row-presentations">${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}</span>`:status(row)===1?'<span class="drug-row-description">Resumo da bula</span>':''}</small></span></button>`).join('')+(matches.length>visibleCount?`<button type="button" class="drug-row" data-bulario-more="1">Mostrar mais ${Math.min(100,matches.length-visibleCount)} medicamentos (${visibleCount} de ${matches.length})</button>`:'')||(loading?'<div class="empty">Buscando medicamentos na base central…</div>':'<div class="empty">Nenhum medicamento encontrado.</div>');
   }
   function calculator(formulation,index){
     const c=formulation.calculator;
@@ -320,45 +320,88 @@
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
   search.addEventListener('input',()=>{visibleCount=100;renderList();});
-  // Canonical source: Supabase bulario_catalog (view over bulario_drugs).
-  // Explicit ranges bypass PostgREST's 1,000-row cap without truncating the index.
-  async function loadAll(table,fields,sortKey){
-    const pageSize=500,all=[];
+  // Canonical database: bulario_catalog is the public projection of bulario_drugs.
+  // Show records as soon as each page arrives, independently from protocol loading.
+  async function loadAll(table,fields,sortKey,onPage){
+    const pageSize=250,all=[];
     for(let offset=0;;offset+=pageSize){
       const {data,error}=await window.supabaseClient.from(table)
         .select(fields).order(sortKey,{ascending:true}).range(offset,offset+pageSize-1);
       if(error)throw error;
       const page=Array.isArray(data)?data:[];
       all.push(...page);
+      if(typeof onPage==='function'&&page.length)onPage(page,offset);
       if(page.length<pageSize)return all;
     }
   }
   (async()=>{
     const localProtoSeeds=Array.isArray(window.TRAUBE_PROTOCOL_SEEDS)?window.TRAUBE_PROTOCOL_SEEDS:[];
+    const initialQuery=new URLSearchParams(location.search).get('q')?.trim()||'';
+    if(initialQuery)search.value=initialQuery;
     if(!window.supabaseClient){
-      list.innerHTML='<div class="empty">Bulário indisponível sem conexão com a base central.</div>';
+      loading=false;
+      count.textContent='Catálogo indisponível';
+      list.innerHTML='<div class="empty">Não foi possível inicializar a conexão com o bulário. Recarregue a página.</div>';
       return;
     }
+    // Do not start an anonymous query while a remembered session is being restored.
+    try{await window.TraubeLocalOwnerStore?.ready;}catch(_){}
+    let userSelected=false;
+    const originalSelect=()=>{
+      if(userSelected||selected)return;
+      const normQuery=normStr(initialQuery);
+      const hit=initialQuery?rows.find(row=>[row.name,row.active_ingredient,
+        ...(Array.isArray(row.data?.commercial_names)?row.data.commercial_names:[]),
+        ...(Array.isArray(row.data?.products)?row.data.products.map(p=>p?.name):[])
+      ].some(value=>normStr(value).includes(normQuery))):rows.find(row=>row.id===363)||rows[0];
+      if(hit){selected=hit.id;renderDetail(hit);}
+    };
+    list.addEventListener('click',event=>{
+      if(event.target.closest('[data-id]'))userSelected=true;
+    },{capture:true});
+    // Associated protocols are optional. Failure here must NEVER hide medicines.
+    const protocolPromise=loadAll('clinical_protocols','slug,title,linked_drug_terms','slug')
+      .then(protocolRows=>{
+        const known=new Set(protocolRows.map(row=>row.slug).filter(Boolean));
+        protocols=[...protocolRows,...localProtoSeeds.filter(row=>!known.has(row.slug))];
+      })
+      .catch(error=>{
+        console.warn('Protocolos relacionados indisponíveis; bulário continua acessível.',error);
+        protocols=localProtoSeeds;
+      });
     try{
-      const [drugRows,protocolRows]=await Promise.all([
-        loadAll('bulario_catalog','id,name,active_ingredient,therapeutic_class,pharmacological_class,data','id'),
-        loadAll('clinical_protocols','slug,title,linked_drug_terms','slug')
-      ]);
-      rows=drugRows;
-      const existingProtoSlugs=new Set(protocolRows.map(p=>p.slug).filter(Boolean));
-      protocols=[...protocolRows,...localProtoSeeds.filter(p=>!existingProtoSlugs.has(p.slug))];
-      const q=new URLSearchParams(location.search).get('q')?.trim();
-      if(q){
-        search.value=q;
-        const term=normStr(q);
-        const hit=rows.find(row=>[row.name,row.active_ingredient,...(Array.isArray(row.data?.commercial_names)?row.data.commercial_names:[])].some(v=>normStr(v)===term))
-          || rows.find(row=>[row.name,row.active_ingredient,...(Array.isArray(row.data?.commercial_names)?row.data.commercial_names:[])].some(v=>normStr(v).includes(term)));
-        selected=hit?.id||rows[0]?.id;
-      }else selected=rows.find(row=>row.id===363)?.id||rows[0]?.id;
-      renderList();renderDetail(rows.find(row=>String(row.id)===String(selected)));
+      // The previous implementation used Promise.all and delayed every medicine
+      // until ALL 4,546 drug details AND 1,700 protocols had loaded.
+      await loadAll('bulario_catalog',
+        'id,name,active_ingredient,therapeutic_class,pharmacological_class,data',
+        'id',(page)=>{
+          rows.push(...page);
+          originalSelect();
+          renderList();
+        });
+      loading=false;
+      if(!rows.length){
+        count.textContent='0 medicamentos';
+        list.innerHTML='<div class="empty">Nenhum medicamento disponível para esta sessão. Confirme seu login e as permissões de acesso.</div>';
+        return;
+      }
+      originalSelect();
+      renderList();
     }catch(error){
-      console.error('Falha ao carregar o catálogo completo do bulário',error);
-      list.innerHTML='<div class="empty">Falha ao carregar a base central de medicamentos. Tente novamente.</div>';
+      loading=false;
+      console.error('Falha na leitura do catálogo de medicamentos',error);
+      if(rows.length){
+        renderList();
+        list.insertAdjacentHTML('afterbegin',
+          '<div class="empty" role="alert">Carregamento parcial: '+rows.length+
+          ' medicamentos disponíveis. Não foi possível buscar o restante. Recarregue para tentar novamente.</div>');
+      }else{
+        count.textContent='Falha no carregamento';
+        list.innerHTML='<div class="empty" role="alert">Não foi possível consultar o bulário no Supabase. Verifique a conexão e o login. <button type="button" data-bulario-retry="1">Tentar novamente</button></div>';
+        list.querySelector('[data-bulario-retry]')?.addEventListener('click',()=>location.reload());
+      }
     }
+    // Do not block the medication list on related-protocol loading.
+    void protocolPromise;
   })();
 })();
