@@ -1146,6 +1146,53 @@
   if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
+// Logo do TRAUBE (canto superior esquerdo do menu lateral) com o dobro do
+// tamanho em todas as páginas. As folhas de CSS antigas definem a logo em vários
+// tamanhos com !important; os IDs repetidos abaixo só servem para vencer todas.
+(function ensureLargeBrandLogo() {
+  if (document.getElementById("traube-large-brand-logo")) return;
+
+  const logo =
+    "html body #sidebar#sidebar#sidebar#sidebar #traube-brand-logo#traube-brand-logo#traube-brand-logo";
+  const size = (px) => `
+    width: ${px}px !important;
+    height: ${px}px !important;
+    min-width: ${px}px !important;
+    min-height: ${px}px !important;
+    max-width: ${px}px !important;
+    max-height: ${px}px !important;
+    flex: 0 0 ${px}px !important;
+    object-fit: contain !important;
+  `;
+
+  const style = document.createElement("style");
+  style.id = "traube-large-brand-logo";
+  style.textContent = `
+    ${logo} {${size(96)}}
+
+    @media (min-width: 981px) {
+      /* menu recolhido: alarga o menu para a logo maior caber inteira */
+      html body[data-ui-nav="v2"][data-ui-sidebar="collapsed"] {
+        --ui-nav-width: 120px;
+      }
+
+      html body.sidebar-collapsed:not([data-ui-nav="v2"]) .app-shell {
+        grid-template-columns: 120px minmax(0, 1fr) !important;
+      }
+
+      html body.sidebar-collapsed:not([data-ui-nav="v2"]) #sidebar.sidebar {
+        padding-inline: 12px !important;
+      }
+    }
+
+    @media (max-width: 980px) {
+      ${logo} {${size(92)}}
+    }
+  `;
+
+  document.head.appendChild(style);
+})();
+
 // A patient session is optional context for independent Work tools. It lives
 // only in sessionStorage and is never copied into a tool automatically.
 (() => {

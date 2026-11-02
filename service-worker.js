@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261102-busto-v1";
+const CACHE_VERSION = "traube-pwa-20261102-logo-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
