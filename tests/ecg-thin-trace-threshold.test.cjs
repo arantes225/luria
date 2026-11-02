@@ -126,3 +126,17 @@ test("imagem sem estrutura de papel não propõe correção de inclinação", ()
   const flat = { data: new Uint8ClampedArray(W * H * 4).fill(128), width: W, height: H };
   assert.equal(engine.detectOrientationAndSkew(flat).skewAngleDeg, 0);
 });
+
+test("picos QRS altos não criam faixas fora do passo regular (3×4 + ritmo continua 3×4 + ritmo)", () => {
+  const img = paperImage(40, true);
+  // acrescenta 4 picos largos entre as linhas de base, como QRS de V2/V3 que invadem a linha vizinha
+  const { data } = img;
+  for (const cy of [165, 275, 365]) {
+    for (let x = 200; x < 1000; x += 7) for (let y = cy - 14; y <= cy + 14; y++) {
+      const i = (y * W + x) * 4; data[i] = data[i + 1] = data[i + 2] = 40;
+    }
+  }
+  const out = engine.detectECGBoundaries(img, { allowDensePreview: true, allowTopologyFallback: true });
+  assert.ok(out.topology.rowCount <= 6, "faixas: " + out.topology.rowCount);
+  if (out.detectedLayout) assert.match(out.detectedLayout.name, /^(3x4|6x2|12x1)/);
+});

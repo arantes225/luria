@@ -11,6 +11,8 @@ const engine = require("../../assets/js/ecg-cv-engine.js");
 const dir = process.argv[2];
 if (!dir) { console.error("uso: node run_bank.cjs <pasta> [--json saida.json]"); process.exit(1); }
 const jsonOut = process.argv.includes("--json") ? process.argv[process.argv.indexOf("--json") + 1] : null;
+// Mesmas opções que processPhotographCanvas usa para foto/imagem importada.
+const PHOTO_OPTS = { allowDensePreview: true, allowTopologyFallback: true };
 const MAX = 2600; // mesma ordem de grandeza do limite do extrator no app
 
 function decode(file) {
@@ -33,7 +35,7 @@ for (const f of fs.readdirSync(dir).filter(x => /\.(jpe?g|png)$/i.test(x)).sort(
   const row = { file: f };
   try {
     const img = decode(path.join(dir, f));
-    let b = engine.detectECGBoundaries(img, {});
+    let b = engine.detectECGBoundaries(img, PHOTO_OPTS);
     // Mesma correção que processPhotographCanvas faz: endireita e redetecta.
     const skew = Number(b.orientation && b.orientation.skewAngleDeg);
     row.skew = Number.isFinite(skew) ? skew : 0;
@@ -44,7 +46,7 @@ for (const f of fs.readdirSync(dir).filter(x => /\.(jpe?g|png)$/i.test(x)).sort(
       }, -row.skew);
       if (rect && rect.width > 80 && rect.height > 80) {
         img.data = rect.data; img.width = rect.width; img.height = rect.height;
-        b = engine.detectECGBoundaries(img, {});
+        b = engine.detectECGBoundaries(img, PHOTO_OPTS);
       }
     }
     const sheet = engine.locatePaperSheet(img);
@@ -66,7 +68,10 @@ for (const r of rows) {
   console.log(r.file.padEnd(34),
     r.error ? "ERRO " + r.error : `skew=${String(r.skew).padStart(5)} det=${r.detected ? "S" : "n"} cel=${String(r.cells).padStart(2)}/12 grade=${r.grid ? "S" : "n"} px/mm=${r.pxPerMm ?? "-"} pulso=${r.pulse ? "S" : "n"} escala=${r.scale}`);
 }
-const ok = rows.filter(r => r.detected && r.cells >= 10).length;
+const KNOWN = /^(3x4_plus_rhythm|3x4_standard|6x2_standard|12x1_stacked)/;
+// Critério estrito: layout conhecido E 10–12 células válidas (um "15x1" com 14
+// células não é sucesso; é um layout inventado a partir de faixas espúrias).
+const ok = rows.filter(r => r.detected && KNOWN.test(r.layout || "") && r.cells >= 10 && r.cells <= 12).length;
 const meas = rows.filter(r => r.scale === "measured").length;
-console.log(`\nTotal ${rows.length} | detectadas com >=10 células: ${ok} | escala medida: ${meas}`);
+console.log(`\nTotal ${rows.length} | sucesso estrito (layout conhecido, 10-12 células): ${ok} | escala medida: ${meas}`);
 if (jsonOut) fs.writeFileSync(jsonOut, JSON.stringify(rows, null, 1));

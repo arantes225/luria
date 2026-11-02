@@ -1739,11 +1739,38 @@
       return (exactDark / spanW) < maxAllowedDarkRatio;
     });
 
+    // Picos QRS/T altos criam "faixas" extras fora do passo regular entre as
+    // linhas de base reais (ex.: 15–16 faixas num 3×4 + ritmo). As derivações
+    // reais ficam numa rede de passo constante; mantém-se a maior cadeia regular
+    // e descartam-se as faixas fora dela. Só atua com mais de 6 faixas.
+    let lattice = baselines;
+    if (baselines.length > 6) {
+      let best = null;
+      for (let i = 0; i < baselines.length - 2; i++) {
+        for (let j = i + 1; j < baselines.length; j++) {
+          const pitch = baselines[j].yCenter - baselines[i].yCenter;
+          if (pitch < spanH * 0.06 || pitch > spanH * 0.4) continue;
+          const chain = [baselines[i]];
+          let expected = baselines[i].yCenter + pitch;
+          for (let k = i + 1; k < baselines.length; k++) {
+            if (Math.abs(baselines[k].yCenter - expected) <= pitch * 0.2) {
+              chain.push(baselines[k]);
+              expected = baselines[k].yCenter + pitch;
+            }
+          }
+          const sum = chain.reduce((t, b) => t + b.score, 0);
+          if (!best || chain.length > best.chain.length ||
+              (chain.length === best.chain.length && sum > best.sum)) best = { chain, sum };
+        }
+      }
+      if (best && best.chain.length >= 3 && best.chain.length < baselines.length) lattice = best.chain;
+    }
+
     return {
-      rowCount: baselines.length,
-      bands: baselines.map((b, idx) => {
-        const prevGap = idx > 0 ? b.yCenter - baselines[idx - 1].yCenter : spanH / Math.max(1, baselines.length);
-        const nextGap = idx < baselines.length - 1 ? baselines[idx + 1].yCenter - b.yCenter : prevGap;
+      rowCount: lattice.length,
+      bands: lattice.map((b, idx) => {
+        const prevGap = idx > 0 ? b.yCenter - lattice[idx - 1].yCenter : spanH / Math.max(1, lattice.length);
+        const nextGap = idx < lattice.length - 1 ? lattice[idx + 1].yCenter - b.yCenter : prevGap;
         const halfSpan = Math.max(12, Math.min(prevGap, nextGap) * 0.43);
         return {
           index: idx,

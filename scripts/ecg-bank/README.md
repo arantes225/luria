@@ -25,3 +25,15 @@ Nada aqui é validação clínica; mede só detecção, grade e calibração.
 O endireitamento recupera 100% das rotações de 3° e 8° e a combinação "celular"
 do primeiro registro; não muda as públicas porque quase nenhuma está inclinada.
 Pendentes nas sintéticas: desfoque (sigma 2), sombra forte e a combinação "celular" do segundo registro.
+
+## Critério estrito (a partir do commit seguinte ao dd5a6fc)
+Sucesso = layout conhecido (3x4, 3x4+ritmo, 6x2, 12x1) e 10–12 células válidas.
+O critério bruto (>=10 células) contava layouts inventados como "15x1" e inflava o placar.
+`run_bank.cjs` agora usa as mesmas opções de foto da câmera (allowDensePreview/allowTopologyFallback).
+
+| Etapa | Públicas, estrito (52) |
+|---|---|
+| Linha de base | 10 |
+| Rótulo "I" sem conflito falso | 14 |
+| Opções de foto corretas no banco | 18 |
+| Filtro de faixas regulares (rede de passo constante) | 27 |
