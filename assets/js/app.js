@@ -1156,15 +1156,6 @@
 
   const sidebarLogo =
     "html body #sidebar#sidebar#sidebar#sidebar #traube-brand-logo#traube-brand-logo#traube-brand-logo";
-  // ui-app.css usa body[data-ui-nav="v2"]:is([data-ui-context="study"],...) .ui-topbar-brand #traube-brand-logo com !important.
-  // Para vencer, espelhamos os atributos do body E repetimos o ID — isso garante especificidade maior.
-  const topbarCtx =
-    'body[data-ui-nav="v2"][data-ui-context="study"],' +
-    'body[data-ui-nav="v2"][data-ui-work="v2"],' +
-    'body[data-ui-nav="v2"][data-ui-admin="v2"]';
-  const topbarLogo =
-    `:is(${topbarCtx}) .ui-topbar-brand #traube-brand-logo#traube-brand-logo#traube-brand-logo`;
-
   const size = (px) => `
     width: ${px}px !important;
     height: ${px}px !important;
@@ -1182,26 +1173,15 @@
   const style = document.createElement("style");
   style.id = "traube-large-brand-logo";
   style.textContent = `
-    /* Menu lateral */
+    /* Logo no menu lateral (páginas sem nav v2 ou com logo no sidebar) */
     ${sidebarLogo} {${size(96)}}
 
-    /* Barra superior – vence o width:28px do ui-app.css */
-    ${topbarLogo} {
-      ${size(70)}
-      transform: none !important;
-      image-rendering: auto !important;
-      filter: brightness(0) invert(1) !important;
-    }
-
-    /* Container da brand na topbar */
-    :is(${topbarCtx}) .topbar .ui-topbar-brand {
-      height: 70px !important;
-      gap: 0.75rem !important;
-      align-items: center !important;
+    @media (max-width: 980px) {
+      ${sidebarLogo} {${size(92)}}
     }
 
     @media (min-width: 981px) {
-      /* menu recolhido sem a logo movida: alarga para a logo maior caber */
+      /* menu recolhido: alarga para a logo caber */
       html body[data-ui-nav="v2"]${notMoved}[data-ui-sidebar="collapsed"] {
         --ui-nav-width: 120px;
       }
@@ -1213,17 +1193,6 @@
       html body.sidebar-collapsed:not([data-ui-nav="v2"]) #sidebar.sidebar {
         padding-inline: 12px !important;
       }
-    }
-
-    @media (max-width: 980px) {
-      ${sidebarLogo} {${size(92)}}
-      ${topbarLogo} {${size(56)}}
-      :is(${topbarCtx}) .topbar .ui-topbar-brand {height: 56px !important;}
-    }
-
-    @media (max-width: 600px) {
-      ${topbarLogo} {${size(48)}}
-      :is(${topbarCtx}) .topbar .ui-topbar-brand {height: 48px !important; flex: 0 0 48px !important;}
     }
   `;
 
