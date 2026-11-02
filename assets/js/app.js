@@ -1659,6 +1659,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">✎</span><span>Prescrição</span>
         </a>
 
+        <a class="nav-link ${page === "trabalho_diabetes" ? "active" : ""}" href="/trabalho/diabetes/">
+          <span class="nav-icon" aria-hidden="true">◉</span><span>Diabetes</span>
+        </a>
+
         <a class="nav-link ${page === "trabalho_calculadora" ? "active" : ""}" href="/trabalho/calculadora/">
           <span class="nav-icon">∑</span><span>Calculadoras</span>
         </a>
