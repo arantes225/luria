@@ -4,6 +4,14 @@
   const detail=document.getElementById('drug-detail');
   const count=document.getElementById('drug-count');
   let rows=[], protocols=[], selected=null, activeChip="", visibleCount=100, loading=true; const normStr=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+  function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+      const later = () => { timeout = null; func.apply(this, args); };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
   const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const number=value=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(value);
   const status=row=>row.data?.status==='posology_verified'?2:row.data?.status==='verified'?1:0;
@@ -319,7 +327,8 @@
     });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
-  search.addEventListener('input',()=>{visibleCount=100;renderList();});
+  // ⚡ Bolt: Added debounce to search input to prevent main thread blocking and redundant renders on every keystroke
+  search.addEventListener('input', debounce(()=>{visibleCount=100;renderList();}, 300));
   // Canonical database: bulario_catalog is the public projection of bulario_drugs.
   // Show records as soon as each page arrives, independently from protocol loading.
   async function loadAll(table,fields,sortKey,onPage){
