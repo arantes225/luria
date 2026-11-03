@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261103-logo-v7";
+const CACHE_VERSION = "traube-pwa-20261103-logo-v8";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -66,7 +66,7 @@ const APP_SHELL = [
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/js/pwa.js?v=20261101-bootstrap1",
   "/assets/css/style.css?v=16.14-font-unified",
-  "/assets/css/traube-brand-v5.css?v=20261102-logo70topbar",
+  "/assets/css/traube-brand-v5.css?v=20261103-logo70-final",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
   "/assets/css/review-continuation-20261022.css?v=20261031-leco-actions-center1",
   "/assets/js/review-continuation-20261022.js?v=1",
@@ -148,7 +148,7 @@ const INSTALL_PRECACHE = new Set([
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/js/pwa.js?v=20261101-bootstrap1",
   "/assets/css/style.css?v=16.14-font-unified",
-  "/assets/css/traube-brand-v5.css?v=20261102-logo70topbar",
+  "/assets/css/traube-brand-v5.css?v=20261103-logo70-final",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
   "/assets/css/review-continuation-20261022.css?v=20261031-leco-actions-center1",
   "/assets/js/review-continuation-20261022.js?v=1",

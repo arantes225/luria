@@ -41,29 +41,6 @@
     filter .18s ease;
 }
 
-/* TRAUBE topbar — logo 70px quando movida para o topbar pelo JS */
-body .topbar .ui-topbar-brand .traube-theme-logo,
-body .topbar .ui-topbar-brand #traube-brand-logo {
-  width: 70px !important;
-  height: 70px !important;
-  min-width: 70px !important;
-  min-height: 70px !important;
-  max-width: 70px !important;
-  max-height: 70px !important;
-  flex: 0 0 70px !important;
-}
-@media (max-width: 600px) {
-  body .topbar .ui-topbar-brand .traube-theme-logo,
-  body .topbar .ui-topbar-brand #traube-brand-logo {
-    width: 48px !important;
-    height: 48px !important;
-    min-width: 48px !important;
-    min-height: 48px !important;
-    max-width: 48px !important;
-    max-height: 48px !important;
-    flex: 0 0 48px !important;
-  }
-}
 
 .brand:hover .traube-theme-logo {
   transform: scale(1.05);
@@ -3771,4 +3748,38 @@ body[data-page="aprender"] .book-hero .book-badge{
   body[data-page="aprender"] .book-hero h1 { font-size: clamp(21px, 6vw, 27px) !important; }
   body[data-page="aprender"] .book-callout { padding: 16px 16px 16px 74px !important; }
   body[data-page="aprender"] .book-callout::before { left: 12px !important; width: 46px !important; height: 46px !important; }
+}
+
+/* =========================================================
+   TRAUBE TOPBAR LOGO — 70px
+   Bloco no FINAL do arquivo para vencer todas as regras acima.
+   A especificidade "html body .topbar" supera qualquer
+   "@media .brand .traube-theme-logo" definido antes.
+   ========================================================= */
+html body .topbar .ui-topbar-brand .traube-theme-logo,
+html body .topbar .ui-topbar-brand img.traube-theme-logo,
+html body .topbar .ui-topbar-brand #traube-brand-logo {
+  width: 70px !important;
+  height: 70px !important;
+  min-width: 70px !important;
+  min-height: 70px !important;
+  max-width: 70px !important;
+  max-height: 70px !important;
+  flex: 0 0 70px !important;
+  display: block !important;
+  position: static !important;
+  object-fit: contain !important;
+}
+@media (max-width: 600px) {
+  html body .topbar .ui-topbar-brand .traube-theme-logo,
+  html body .topbar .ui-topbar-brand img.traube-theme-logo,
+  html body .topbar .ui-topbar-brand #traube-brand-logo {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    max-width: 48px !important;
+    max-height: 48px !important;
+    flex: 0 0 48px !important;
+  }
 }
