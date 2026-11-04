@@ -109,7 +109,13 @@ export default {
     try { body = JSON.parse(raw); }
     catch { return finish(json({ error: "JSON inválido" }, 400)); }
 
-    const { image_b64, mime_type = "image/jpeg" } = body;
+    const mime_type = body.mime_type || "image/jpeg";
+    const image_b64 = body.image_b64;
+
+    // Limpa o body imediatamente — a imagem não deve permanecer em memória além do necessário
+    delete body.image_b64;
+    delete body.mime_type;
+
     if (!image_b64 || typeof image_b64 !== "string")
       return finish(json({ error: "Campo image_b64 obrigatório" }, 400));
     if (image_b64.length > MAX_B64_BYTES)
@@ -118,6 +124,7 @@ export default {
       return finish(json({ error: "Tipo de imagem inválido (use jpeg, png ou webp)" }, 400));
 
     // Chama Claude Haiku (apenas extração de estrutura, sem interpretação clínica)
+    // A imagem é enviada diretamente à Anthropic e nunca registrada em log.
     let anthropicResponse;
     try {
       anthropicResponse = await fetch("https://api.anthropic.com/v1/messages", {
@@ -150,13 +157,14 @@ export default {
         signal: AbortSignal.timeout(25000)
       });
     } catch (err) {
-      console.error("[ecg-vision] Falha na chamada Anthropic:", err);
+      // Nunca logar a imagem — apenas o erro de rede
+      console.error("[ecg-vision] Falha na chamada Anthropic:", err?.message || "timeout");
       return finish(json({ error: "Serviço de visão temporariamente indisponível" }, 503));
     }
 
     if (!anthropicResponse.ok) {
-      const errBody = await anthropicResponse.text().catch(() => "");
-      console.error("[ecg-vision] Anthropic erro:", anthropicResponse.status, errBody.slice(0, 200));
+      // Nunca logar o status em contexto que possa expor dados da imagem
+      console.error("[ecg-vision] Anthropic HTTP", anthropicResponse.status);
       return finish(json({ error: "Falha na análise da imagem" }, 502));
     }
 
@@ -170,13 +178,15 @@ export default {
       if (!match) throw new Error("Sem JSON na resposta");
       structured = JSON.parse(match[0]);
     } catch (err) {
-      console.error("[ecg-vision] JSON inválido na resposta Haiku:", rawText.slice(0, 300));
-      return finish(json({ error: "Resposta de IA inválida", raw: rawText.slice(0, 200) }, 502));
+      // Apenas loga que houve erro de parse — sem incluir conteúdo da resposta
+      console.error("[ecg-vision] JSON inválido na resposta Haiku — comprimento:", rawText.length);
+      return finish(json({ error: "Resposta de IA inválida" }, 502));
     }
 
-    // Validação mínima
+    // Validação mínima — sem expor conteúdo da resposta de IA na resposta ao cliente
     if (!structured.layout || !Array.isArray(structured.derivacoes)) {
-      return finish(json({ error: "Estrutura de resposta incompleta", raw: rawText.slice(0, 200) }, 502));
+      console.error("[ecg-vision] Estrutura incompleta na resposta Haiku");
+      return finish(json({ error: "Estrutura de resposta incompleta" }, 502));
     }
 
     return finish(json({ ok: true, ...structured }));
