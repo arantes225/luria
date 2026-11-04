@@ -41,12 +41,18 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    overflow: hidden !important;
+    width: 144px !important;
+    height: 144px !important;
+    border-radius: 12px !important;
   }
   body[data-ui="v2"][data-page="aprender"] .alex-character-img {
     display: block !important;
     width: 144px !important;
     height: 144px !important;
     max-width: 144px !important;
+    max-height: 144px !important;
+    object-fit: contain !important;
   }
   body[data-ui="v2"][data-page="aprender"] .alex-content {
     grid-column: 2 !important;
