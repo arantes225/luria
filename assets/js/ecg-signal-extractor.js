@@ -1046,7 +1046,14 @@
     // prévia serve apenas para casos limítrofes; uma região em que mais da
     // metade das colunas contém curvas concorrentes é incompatível com uma
     // extração fiel e nunca deve produzir uma linha vermelha convincente.
-    const catastrophicOverlap = tracked.overlapRatio > 0.55;
+    // Em fotos de ECG de papel (allowDensePreview), o QRS alto pode ultrapassar
+    // a borda da célula e fazer o rastreador detectar "duas curvas" onde há apenas
+    // uma com amplitude grande. O limiar 0.55 era muito agressivo para esse caso:
+    // eleva-se para 0.90 em modo foto (rejeita só se >90% das colunas com tinta
+    // tiverem sobreposição, o que indica duas derivações literalmente sobrepostas),
+    // mantendo 0.55 para captura ao vivo onde cada frame deve ter uma só derivação.
+    const catastrophicOverlapThreshold = options.allowDensePreview === true ? 0.90 : 0.55;
+    const catastrophicOverlap = tracked.overlapRatio > catastrophicOverlapThreshold;
     if (tracked.hasMultipleCurves && (!options.allowOverlappingPreview || catastrophicOverlap)) {
       const failOverlap = {
         isValid: false,
