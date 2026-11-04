@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261103-logo-v9";
+const CACHE_VERSION = "traube-pwa-20261103-clean-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -65,7 +65,7 @@ const APP_SHELL = [
   "/assets/img/logos/logo-principal.png?v=busto20261102",
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/js/pwa.js?v=20261101-bootstrap1",
-  "/assets/css/style.css?v=16.14-font-unified",
+  "/assets/css/style.css?v=20261103-clean1",
   "/assets/css/traube-brand-v5.css?v=20261103-logo70-final",
   "/assets/css/traube-logo.css?v=20261103-v1",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",
@@ -126,7 +126,7 @@ const APP_SHELL = [
   "/assets/img/logos/pwa-icon-180.png?v=busto20261102",
   "/assets/js/supabase.js",
   "/assets/css/education-pages-v2.css?v=1",
-  "/assets/css/style.css?v=16.12-no-legacy-dashboard",
+  "/assets/css/style.css?v=20261103-clean1",
   "/assets/fonts/inter/InterVariable.woff2",
   "/assets/js/dashboard.js?v=20261006-css-owned-height",
   "/assets/js/study-mode.js?v=12.1",
@@ -148,7 +148,7 @@ const INSTALL_PRECACHE = new Set([
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/js/pwa.js?v=20261101-bootstrap1",
-  "/assets/css/style.css?v=16.14-font-unified",
+  "/assets/css/style.css?v=20261103-clean1",
   "/assets/css/traube-brand-v5.css?v=20261103-logo70-final",
   "/assets/css/traube-logo.css?v=20261103-v1",
   "/assets/css/review-fixes-20261020.css?v=20261021-darktext-grad-v4",

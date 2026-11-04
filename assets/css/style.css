@@ -56,7 +56,6 @@
   }
 }
 
-
 :root[data-theme="leila-mood"] {
   --bg: #fff6fa;
   --surface: #fffdfd;
@@ -110,17 +109,6 @@ button:disabled { cursor: not-allowed; opacity: .65; }
   box-shadow: var(--shadow);
 }
 
-.loading-card {
-  padding: 30px;
-  text-align: center;
-}
-
-.loading-card span {
-  display: block;
-  margin-top: 8px;
-  color: var(--muted);
-}
-
 .auth-card { padding: 34px; }
 
 .auth-brand {
@@ -132,17 +120,6 @@ button:disabled { cursor: not-allowed; opacity: .65; }
 
 .auth-brand h1 { margin: 0; font-size: 26px; }
 .auth-brand p { margin: 4px 0 0; color: var(--muted); }
-
-.brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 13px;
-  background: var(--accent);
-  color: #fff;
-  font-weight: 800;
-}
 
 .auth-form { display: grid; gap: 16px; }
 
@@ -333,35 +310,10 @@ button:disabled { cursor: not-allowed; opacity: .65; }
   font-size: 17px;
 }
 
-.nav-group { margin: 2px 0; }
-
-.nav-submenu {
-  display: grid;
-  gap: 3px;
-  margin: 2px 0 7px 42px;
-}
-
-.nav-sublink {
-  min-height: 36px;
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-  border-radius: 9px;
-  color: var(--muted);
-  font-size: 15px;
-}
-
 .nav-sublink.active {
   background: var(--accent-soft);
   color: var(--accent);
   font-weight: 700;
-}
-
-.sidebar-footer {
-  display: grid;
-  gap: 12px;
-  margin-top: auto;
-  padding-top: 20px;
 }
 
 /* Modo Estudos: somente a lista de navegação rola; Ofensiva, usuário e Sair ficam fixos. */
@@ -415,32 +367,6 @@ button:disabled { cursor: not-allowed; opacity: .65; }
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.user-avatar {
-  flex: 0 0 auto;
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: var(--surface-2);
-  color: var(--text);
-  font-weight: 800;
-}
-
-.logout-button {
-  min-height: 40px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--muted);
-  border-radius: 10px;
-  font-weight: 700;
-}
-
-.logout-button:hover {
-  color: var(--danger);
-  border-color: var(--danger);
 }
 
 .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)) {
@@ -601,12 +527,6 @@ button:disabled { cursor: not-allowed; opacity: .65; }
   color: var(--accent);
 }
 
-.area-list {
-  display: grid;
-  gap: 10px;
-  margin-top: 16px;
-}
-
 .area-row {
   display: flex;
   align-items: center;
@@ -671,7 +591,6 @@ button:disabled { cursor: not-allowed; opacity: .65; }
   background: var(--accent-soft);
   color: var(--accent);
 }
-
 
 .theme-option.leila-preview span {
   gap: 2px;
@@ -760,170 +679,6 @@ body.app-ready .app-shell .main:where(:not(body[data-ui-nav="v2"], body[data-ui-
   }
 }
 
-
-/* =========================================================
-   LO-FI DOCMAP
-   ========================================================= */
-
-.sidebar-lofi {
-  display: grid;
-  gap: 9px;
-  padding: 11px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--surface);
-}
-
-.sidebar-lofi-head {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  min-width: 0;
-}
-
-.sidebar-lofi-toggle {
-  flex: 0 0 auto;
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 13px;
-  font-weight: 850;
-}
-
-.sidebar-lofi-toggle:hover {
-  border-color: var(--accent);
-}
-
-.sidebar-lofi-copy {
-  min-width: 0;
-}
-
-.sidebar-lofi-copy strong,
-.sidebar-lofi-copy small {
-  display: block;
-}
-
-.sidebar-lofi-copy strong {
-  overflow: hidden;
-  font-size: 12px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.sidebar-lofi-copy small {
-  margin-top: 2px;
-  color: var(--muted);
-  font-size: 9px;
-}
-
-.sidebar-lofi-volume {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 8px;
-  align-items: center;
-  color: var(--muted);
-  font-size: 11px;
-}
-
-.sidebar-lofi-volume input,
-.lofi-volume input,
-.lofi-progress input {
-  width: 100%;
-  accent-color: var(--accent);
-}
-
-.lofi-player {
-  display: grid;
-  gap: 16px;
-  margin-top: 16px;
-  padding: 18px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  background: var(--surface-2);
-}
-
-.lofi-player-main {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.lofi-main-toggle {
-  flex: 0 0 auto;
-  display: grid;
-  place-items: center;
-  width: 54px;
-  height: 54px;
-  border: 0;
-  border-radius: 50%;
-  background: var(--accent);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 850;
-}
-
-.lofi-player-copy {
-  min-width: 0;
-}
-
-.lofi-player-copy strong,
-.lofi-player-copy small {
-  display: block;
-}
-
-.lofi-player-copy strong {
-  font-size: 15px;
-}
-
-.lofi-player-copy small {
-  margin-top: 4px;
-  color: var(--muted);
-  font-size: 11px;
-}
-
-.lofi-progress {
-  display: grid;
-  gap: 6px;
-}
-
-.lofi-time {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--muted);
-  font-size: 10px;
-  font-variant-numeric: tabular-nums;
-}
-
-.lofi-volume {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 10px;
-  align-items: center;
-  color: var(--muted);
-  font-size: 11px;
-}
-
-.lofi-loop-note {
-  display: inline-flex;
-  width: fit-content;
-  min-height: 27px;
-  align-items: center;
-  padding: 0 9px;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 9px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: .04em;
-}
-
 /* Mantém a atividade escolhida na Ambientação sem depender do fase3.css. */
 .selected-activity {
   display: flex;
@@ -973,88 +728,6 @@ body.app-ready .app-shell .main:where(:not(body[data-ui-nav="v2"], body[data-ui-
   }
 }
 
-
-
-.sidebar-lofi-select {
-  width: 100%;
-  min-height: 34px;
-  border: 1px solid var(--border);
-  border-radius: 9px;
-  padding: 0 9px;
-  background: var(--surface-2);
-  color: var(--text);
-  outline: none;
-  font: inherit;
-}
-
-.lofi-track-picker {
-  position: relative;
-}
-
-.lofi-track-picker select {
-  width: 100%;
-  min-height: 42px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0 38px 0 12px;
-  background: var(--surface);
-  color: var(--text);
-  outline: none;
-  font: inherit;
-  font-size: 11px;
-  font-weight: 750;
-  appearance: none;
-  -webkit-appearance: none;
-  cursor: pointer;
-}
-
-.lofi-track-picker::after {
-  content: "⌄";
-  position: absolute;
-  right: 13px;
-  bottom: 11px;
-  color: var(--muted);
-  font-size: 15px;
-  line-height: 1;
-  pointer-events: none;
-}
-
-.sidebar-lofi-select {
-  font-size: 10px;
-  font-weight: 750;
-}
-
-.sidebar-lofi-select:focus,
-.lofi-track-picker select:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-soft);
-}
-
-.lofi-track-picker {
-  display: grid;
-  gap: 7px;
-}
-
-.lofi-track-picker > span {
-  font-size: 11px;
-  font-weight: 800;
-}
-
-.lofi-note-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.lofi-note-row small {
-  color: var(--muted);
-  font-size: 9px;
-}
-
-
-
 /* =========================================================
    TRAUBE — BRANDING FINAL
    ========================================================= */
@@ -1068,70 +741,6 @@ body.app-ready .app-shell .main:where(:not(body[data-ui-nav="v2"], body[data-ui-
   align-items: center;
   gap: 12px;
   min-width: 0;
-}
-
-.brand-logo-stack {
-  position: relative;
-  display: block;
-  width: 62px;
-  height: 62px;
-  flex: 0 0 62px;
-}
-
-.brand-logo {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: contain;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-  transition:
-    transform .18s ease,
-    opacity .18s ease;
-}
-
-/* Claro / padrão */
-.brand-logo-light {
-  display: block;
-}
-
-.brand-logo-dark,
-.brand-logo-pink {
-  display: none;
-}
-
-/* Escuro */
-:root[data-theme="dark"] .brand-logo-light,
-:root[data-theme="dark"] .brand-logo-pink {
-  display: none;
-}
-
-:root[data-theme="dark"] .brand-logo-dark {
-  display: block;
-  filter:
-    drop-shadow(
-      0 4px 13px
-      rgba(45, 160, 255, .22)
-    );
-}
-
-/* Rosa / Pink Mood */
-:root[data-theme="leila-mood"] .brand-logo-light,
-:root[data-theme="leila-mood"] .brand-logo-dark {
-  display: none;
-}
-
-:root[data-theme="leila-mood"] .brand-logo-pink {
-  display: block;
-  filter:
-    drop-shadow(
-      0 4px 13px
-      rgba(232, 93, 158, .22)
-    );
 }
 
 .brand:hover .brand-logo {
@@ -1208,28 +817,6 @@ body.app-ready .app-shell .main:where(:not(body[data-ui-nav="v2"], body[data-ui-
 }
 
 /* ---------------------------------------------------------
-   TELA DE CARREGAMENTO
-   --------------------------------------------------------- */
-
-.loading-logo {
-  width: 125px;
-  height: 125px;
-  display: block;
-  margin: 0 auto 14px;
-  object-fit: contain;
-  background: transparent;
-  border: 0;
-}
-
-.loading-card strong {
-  display: block;
-  color: var(--text);
-  font-size: 25px;
-  font-weight: 850;
-  letter-spacing: -.02em;
-}
-
-/* ---------------------------------------------------------
    RESPONSIVO
    --------------------------------------------------------- */
 
@@ -1254,7 +841,6 @@ body.app-ready .app-shell .main:where(:not(body[data-ui-nav="v2"], body[data-ui-
     font-size: 24px;
   }
 }
-
 
 /* =========================================================
    TRAUBE — HOTFIX DE LOGO
@@ -1321,15 +907,10 @@ body.app-ready .app-shell .main:where(:not(body[data-ui-nav="v2"], body[data-ui-
 
 }
 
-
 /* =========================================================
    FASE 12 — SIDEBAR RECOLHÍVEL
    ========================================================= */
 .sidebar-top-actions { display:flex; align-items:center; gap:4px; }
-.sidebar-collapse { width:32px; height:32px; display:inline-grid; place-items:center; border:1px solid var(--border); border-radius:9px; background:var(--surface-2); color:var(--muted); font-size:22px; line-height:1; }
-.sidebar-collapse:hover { color:var(--text); border-color:var(--accent); }
-.nav-group-label { width:100%; border:0; background:transparent; text-align:left; cursor:pointer; }
-.nav-group-chevron { margin-left:auto; font-size:14px; transition:transform .16s ease; }
 .nav-group.nav-group-collapsed .nav-group-chevron { transform:rotate(-90deg); }
 .nav-group.nav-group-collapsed .nav-submenu { display:none; }
 body.sidebar-collapsed .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)) { grid-template-columns:82px minmax(0,1fr); }
@@ -1360,7 +941,6 @@ body.sidebar-collapsed .nav-icon { font-size:18px; }
   body.sidebar-collapsed .nav-link,
   body.sidebar-collapsed .nav-group-label { justify-content:flex-start; padding:0 12px; }
 }
-
 
 /* =========================================================
    FASE 12.1 — SIDEBAR REBATÍVEL DE VERDADE
@@ -1444,16 +1024,6 @@ body.sidebar-hidden
   min-width: 0;
 }
 
-.nav-group-label {
-  border: 0;
-}
-
-.nav-group-chevron {
-  margin-left: auto;
-  transition:
-    transform .16s ease;
-}
-
 .nav-group.nav-group-collapsed
 .nav-group-chevron {
   transform:
@@ -1486,7 +1056,6 @@ body.sidebar-hidden
     pointer-events: auto;
   }
 }
-
 
 /* =========================================================
    SIDEBAR V12.3 — BOTÃO HAMBÚRGUER NO TOPO
@@ -1562,7 +1131,6 @@ body.sidebar-hidden
     padding-right: 0;
   }
 }
-
 
 /* =========================================================
    TRAUBE GOLD ACCENTS — uso seletivo, premium e acadêmico
@@ -1795,8 +1363,6 @@ body .caderno-editor-content * {
   letter-spacing: -.02em !important;
 }
 
-
-
 /* TRAUBE — identidade do tema claro baseada no azul dos callouts */
 :root,
 :root[data-theme="light"] {
@@ -1812,7 +1378,6 @@ body .caderno-editor-content * {
 :root[data-theme="light"] h3 {
   color: var(--brand-light-blue) !important;
 }
-
 
 /* =========================================================
    TRAUBE — HIERARQUIA DE BOTÕES NO TEMA CLARO
@@ -1886,7 +1451,6 @@ body .caderno-editor-content * {
   border-color: var(--border) !important;
   color: var(--button-neutral-text) !important;
 }
-
 
 /* =========================================================
    TRAUBE — PWA MOBILE: CRONOGRAMA + ESTATÍSTICAS
@@ -2277,7 +1841,6 @@ body .caderno-editor-content * {
   }
 }
 
-
 /* =========================================================
    TRAUBE — FILE INPUT PREMIUM
    Melhora visual global para "Escolher arquivo"
@@ -2345,28 +1908,6 @@ input[type="file"]:focus-visible::file-selector-button {
 @supports selector(::-webkit-file-upload-button) {
   input[type="file"]::-webkit-file-upload-button {
     min-height: 36px;
-    margin-right: 10px;
-    padding: 0 13px;
-    border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--border));
-    border-radius: 10px;
-    background:
-      linear-gradient(
-        180deg,
-        color-mix(in srgb, var(--surface) 94%, var(--accent-soft)),
-        color-mix(in srgb, var(--surface-2) 88%, var(--accent-soft))
-      );
-    color: var(--accent);
-    font: inherit;
-    font-size: 9px;
-    font-weight: 850;
-    cursor: pointer;
-  }
-}
-
-.file-picker-shell,
-.upload-file-shell {
-  border-radius: 12px;
-}
 
 @media (max-width: 760px) {
   input[type="file"] {
@@ -2402,7 +1943,6 @@ input[type="file"]:focus-visible::file-selector-button {
   border: 0 !important;
   box-shadow: none !important;
 }
-
 
 /* =========================================================
    TRAUBE — PATTERN DE FUNDO GLOBAL
@@ -2520,8 +2060,6 @@ body > footer {
     --traube-pattern-opacity: 0.030;
   }
 }
-
-
 
 /* =========================================================
    TRAUBE — CENTRAL GLOBAL DE NOTIFICAÇÕES
@@ -2695,23 +2233,6 @@ body > footer {
   overscroll-behavior: contain;
 }
 
-.traube-notification-item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 36px minmax(0, 1fr) auto;
-  gap: 10px;
-  align-items: start;
-  padding: 12px 13px;
-  border-bottom: 1px solid var(--border);
-  color: var(--text);
-  text-decoration: none;
-  transition: background 130ms ease;
-}
-
-.traube-notification-item:hover {
-  background: var(--surface-2);
-}
-
 .traube-notification-item.unread {
   background:
     color-mix(
@@ -2874,9 +2395,6 @@ body > footer {
   }
 }
 
-.nav-icon-settings{display:inline-grid;place-items:center;overflow:hidden;border-radius:5px}.nav-icon-settings img{display:block;width:18px;height:18px;object-fit:cover;border-radius:4px}
-
-
 /* Questões e Simulados — selects arredondados do Novo Simulado */
 .qs-extraction-settings .qs-field{position:relative}
 .qs-extraction-settings select{
@@ -2916,7 +2434,6 @@ body > footer {
 @media(max-width:620px){
   .qs-extraction-settings select{min-height:48px;border-radius:12px;font-size:13px}
 }
-
 
 /* =========================================================
    TRAUBE — DIÁLOGOS GLOBAIS
@@ -2988,7 +2505,6 @@ body > footer {
   .traube-global-dialog-actions .button{width:100%}
 }
 
-
 /* AGENDA v15 — controles alinhados e ação em largura total */
 body[data-page="dashboard"] .calendar-actions {
   display: flex;
@@ -3046,7 +2562,6 @@ body[data-page="dashboard"] .calendar-add-event {
     min-width: 0;
   }
 }
-
 
 /* =========================================================
    TRAUBE — CALENDÁRIO
@@ -3113,7 +2628,6 @@ input[type="date"]::-webkit-calendar-picker-indicator{
   .traube-calendar{padding:12px;border-radius:15px}
   .traube-calendar-days button{font-size:11px}
 }
-
 
 /* Calendário TRAUBE — acabamento visual do tema */
 .traube-calendar{
@@ -3246,7 +2760,6 @@ body[data-page="cronograma"] .traube-calendar .traube-calendar-days button{
   .traube-calendar .traube-calendar-weekdays{gap:3px!important;}
 }
 
-
 /* TRAUBE — seletor de hora do Adicionar evento */
 .traube-time-picker{
   position:fixed;
@@ -3346,7 +2859,6 @@ body[data-page="cronograma"] .traube-calendar .traube-calendar-days button{
   pointer-events:none!important;
 }
 
-
 /* LOGIN — pattern de logos reforçado */
 body.auth-page{
   position:relative;
@@ -3387,7 +2899,6 @@ body.auth-page>.auth-card{
 :root[data-theme="leila-mood"] body.auth-page{
   --traube-pattern-opacity:.048;
 }
-
 
 /* =========================================================
    TRAUBE — CABEÇALHO/CARD SUPERIOR GLOBAL v53
@@ -3435,7 +2946,6 @@ body.auth-page>.auth-card{
     --traube-page-title-card-pad-x: 14px;
   }
 }
-
 
 /* TRAUBE v54 — cards/callouts superiores: azul oficial da marca apenas no tema claro */
 :root[data-theme="light"]{
@@ -3499,7 +3009,6 @@ body.auth-page>.auth-card{
   color:#fff!important;
 }
 
-
 /* Fallback de primeiro paint: ausência de data-theme é o tema claro. */
 :root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .traube-page-spotlight,
 :root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .daily-hero,
@@ -3511,7 +3020,6 @@ body.auth-page>.auth-card{
   border-color:rgba(255,255,255,.14)!important;
   color:#fff!important;
 }
-
 
 /* TRAUBE v55 — cards/callouts superiores também unificados no tema escuro */
 :root[data-theme="dark"] .traube-page-spotlight,
@@ -3565,7 +3073,6 @@ body.theme-dark .error-cat-spotlight{
   color:#fff!important;
 }
 
-
 /* v56 — alinhamento global entre controles superiores e callout de título */
 @media (min-width:981px){
   body:not([data-page="dashboard"]) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
@@ -3574,7 +3081,6 @@ body.theme-dark .error-cat-spotlight{
     margin-bottom:14px!important;
   }
 }
-
 
 /* v2026.09.29 — switches/segmented controls maiores em todo o TRAUBE */
 :root{
@@ -3628,33 +3134,6 @@ body.theme-dark .error-cat-spotlight{
   line-height: 1.15 !important;
 }
 
-/* Questões e Simulados */
-.qs-mode-tabs{
-  min-height: 56px !important;
-  padding: 6px !important;
-  gap: 6px !important;
-  border-radius: 14px !important;
-}
-.qs-mode-tab{
-  min-height: 46px !important;
-  padding: 0 21px !important;
-  border-radius: 11px !important;
-  font-size: 14px !important;
-  line-height: 1.15 !important;
-}
-
-/* Anotações / Caderno */
-.notebook-tabs{
-  min-height: 56px !important;
-  gap: 12px !important;
-}
-.notebook-tab{
-  min-height: 46px !important;
-  padding: 0 22px !important;
-  font-size: 14px !important;
-  line-height: 1.15 !important;
-}
-
 /* Estatísticas */
 .stats-tabs-shell,
 .stats-range{
@@ -3688,33 +3167,6 @@ body.theme-dark .error-cat-spotlight{
   line-height: 1.15 !important;
 }
 
-/* Famílias de switch/tab usadas em páginas auxiliares */
-.mode-tabs,
-.view-tabs,
-.section-tabs,
-.page-tabs,
-.scope-tabs,
-.switch-group,
-.view-switch,
-.mode-switch{
-  min-height: 46px !important;
-  padding: 5px !important;
-  gap: 5px !important;
-}
-.mode-tab,
-.view-tab,
-.section-tab,
-.page-tab,
-.scope-tab,
-.switch-group > button,
-.view-switch > button,
-.mode-switch > button{
-  min-height: 44px !important;
-  padding: 0 20px !important;
-  font-size: 14px !important;
-  line-height: 1.15 !important;
-}
-
 /* PWA: mantém usável sem encolher a tipografia dos switches */
 @media (max-width: 700px){
   .error-main-tab,
@@ -3739,7 +3191,6 @@ body.theme-dark .error-cat-spotlight{
     font-size: 16px !important;
   }
 }
-
 
 /* v2026.09.29 — alinhamento global de conteúdo em botões */
 button,
@@ -3816,7 +3267,6 @@ button,
   line-height:1.2 !important;
 }
 
-
 /* v2026.09.29b — tipografia global reforçada para switches/tabs */
 :is(
   .error-main-tab,
@@ -3876,7 +3326,6 @@ button,
   }
 }
 
-
 /* v2026.09.29c — subtítulo curto acima dos títulos dos cards, padrão Cronograma */
 .traube-page-spotlight-label{
   position:relative;
@@ -3901,7 +3350,6 @@ body.theme-dark .traube-page-spotlight-label{
   }
 }
 
-
 /* v2026.09.29d — frase curta abaixo dos títulos dos cards */
 .traube-page-spotlight-helper{
   position:relative;
@@ -3922,7 +3370,6 @@ body.theme-dark .traube-page-spotlight-label{
     font-size:10px!important;
   }
 }
-
 
 /* v2026.09.29e — box de título automático em todas as abas do modo Trabalho */
 body[data-page^="trabalho_"] .traube-work-page-spotlight{
@@ -3973,7 +3420,6 @@ body[data-page^="trabalho_"] .traube-work-page-spotlight .traube-page-spotlight-
   }
 }
 
-
 /* v2026.09.29f — teste do box de título no Dashboard Estudo */
 body[data-page="dashboard"] .traube-dashboard-spotlight{
   position:relative;
@@ -4022,7 +3468,6 @@ body[data-page="dashboard"] .traube-dashboard-spotlight .traube-page-spotlight-c
     font-size:27px;
   }
 }
-
 
 /* =========================================================
    v2026.09.29 — TODOS OS SWITCHES = CADERNO DE ERROS
@@ -4158,7 +3603,6 @@ body[data-page="dashboard"] .traube-dashboard-spotlight .traube-page-spotlight-c
   }
 }
 
-
 /* =========================================================
    v2026.09.29 — TIPOGRAFIA PRINCIPAL GLOBAL = 16PX
    Mantém hierarquia própria para títulos, métricas, badges,
@@ -4264,7 +3708,6 @@ small,
   }
 }
 
-
 /* v2026.09.29 — força final: todos os switches em 15px */
 :is(
   .error-main-tab,
@@ -4321,7 +3764,6 @@ small,
     font-size:15px!important;
   }
 }
-
 
 /* =========================================================
    v2026.09.29 — ALTURA GLOBAL = "REVISAR AGORA"
@@ -4451,7 +3893,6 @@ small,
   }
 }
 
-
 /* v2026.09.29 — BOTÕES VOLTAR = SWITCHES */
 .traube-back-switch-btn{
   min-height:var(--traube-switch-height,42px)!important;
@@ -4472,7 +3913,6 @@ small,
     font-size:15px!important;
   }
 }
-
 
 /* =========================================================
    TRAUBE v2026.09.29 — DASHBOARD COMO RÉGUA GLOBAL
@@ -4556,7 +3996,6 @@ body:not([data-page="dashboard"]) :is(
     padding:var(--traube-dashboard-title-pad-y) var(--traube-dashboard-title-pad-x)!important;
   }
 }
-
 
 /* =========================================================
    TRAUBE v2026.09.29 — TIPOGRAFIA ÚNICA DOS CARDS DE TÍTULO
@@ -4696,7 +4135,6 @@ body:not([data-page="dashboard"]) :is(
   }
 }
 
-
 /* =========================================================
    TRAUBE LOGIN — fundo branco texturizado com logos repetidas
    Correção v2026-09-29
@@ -4780,7 +4218,6 @@ button,input,select,textarea{font-family:var(--traube-font)!important}
   letter-spacing:.07em!important;
 }
 
-
 /* TRAUBE v16.13 — tipografia única global.
    A referência oficial é a tipografia usada em Questões do dia / subtítulo.
    Esta regra fica por último para neutralizar fontes locais antigas. */
@@ -4817,8 +4254,6 @@ body *::-webkit-scrollbar-thumb{
   background:var(--accent);
   border-radius:8px;
 }
-
-
 
 /* =========================================================
    v2026.10.02 — LISTAS CLICÁVEIS / DROPDOWNS NO PADRÃO TRAUBE
@@ -4912,7 +4347,6 @@ body *::-webkit-scrollbar-thumb{
   .traube-site-list>label{min-height:40px!important;padding:9px 10px!important}
 }
 
-
 /* TRAUBE v2026.10.04 — tipografia global mais leve em botões e callouts.
    Exceções visuais: Flashcards, Questões e Simulados e Caderno de Erros mantêm
    seus pesos próprios onde o destaque faz parte do design. */
@@ -4924,8 +4358,6 @@ body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="e
 body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="erros"]) :is(.metric-card,.panel,.feature-card,.callout,[class*="callout"]) :is(h1,h2,h3,h4,h5,h6,strong,b,.metric-label,.metric-value){
   font-weight:400!important;
 }
-
-
 
 /* TRAUBE SCROLLBAR — THUMB ONLY v1 — 2026-10-04 */
 /* Scrollbar global: sem setas, sem trilho/fundo — apenas a barra móvel. */
@@ -4985,7 +4417,6 @@ body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="e
   width:0!important;
   height:0!important;
 }
-
 
 /* =========================================================
    TRAUBE GLOBAL — TRUE THUMB-ONLY SCROLLBAR v2026.10.05
@@ -5068,7 +4499,6 @@ body *::-webkit-resizer{
   border:0!important;
   box-shadow:none!important;
 }
-
 
 /* TRAUBE SCROLLBAR — NO ARROW BUTTONS HARD LOCK v2026.10.05
    Remove qualquer botão/seta nativa de scrollbar em TODA área rolável. */
