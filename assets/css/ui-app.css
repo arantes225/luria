@@ -241,9 +241,9 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
       html.pwa-standalone body #sidebar.sidebar .brand-logo-single,
       html.pwa-standalone body #sidebar.sidebar .traube-theme-logo,
       html.pwa-standalone body #sidebar.sidebar .brand-logo-stack {
-        width: 54px !important;
-        height: 54px !important;
-        flex: 0 0 54px !important;
+        
+        
+        
       }
 
       html.pwa-standalone body #sidebar.sidebar .brand-copy {
@@ -2751,7 +2751,7 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) #sidebar .sidebar-top-actions {display:none!important;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand {display:flex!important;align-items:center!important;gap:.5rem!important;position:static!important;margin:0!important;padding:0!important;min-width:0!important;height:70px!important;background:transparent!important;transform:none!important;color:#FFFFFF!important;text-decoration:none!important;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand #traube-brand-logo,
-  body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand .traube-theme-logo {position:static!important;width:70px!important;height:70px!important;min-width:70px!important;min-height:70px!important;max-width:70px!important;max-height:70px!important;flex:0 0 70px!important;object-fit:contain!important;transform:none!important;filter:brightness(0) invert(1)!important;}
+  body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand .traube-theme-logo {position:static!important;object-fit:contain!important;transform:none!important;filter:brightness(0) invert(1)!important;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"])[data-ui-appearance="dark"] .ui-topbar-brand #traube-brand-logo {filter:brightness(0) invert(1)!important;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand :is(strong,.brand-copy) {color:#FFFFFF!important;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand strong {font-size:1rem!important;line-height:1.25!important;}
@@ -2762,7 +2762,7 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
     body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .topbar .ui-context-label, body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand .brand-copy {display:none!important;}
     body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand {flex:0 0 48px!important;height:48px!important;}
     body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand #traube-brand-logo,
-    body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand .traube-theme-logo {width:48px!important;height:48px!important;min-width:48px!important;min-height:48px!important;max-width:48px!important;max-height:48px!important;flex:0 0 48px!important;}
+    body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand .traube-theme-logo {}
     body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .traube-notifications {flex:0 0 auto!important;gap:.125rem!important;}
     body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-streak {padding:.25rem .125rem!important;gap:.125rem!important;}
     body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-streak-unit {display:none!important;}
@@ -2778,7 +2778,7 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
   body[data-ui-nav="v2"] #sidebar.sidebar {display:block!important;position:absolute!important;inset:0 auto 0 0!important;width:var(--ui-nav-width)!important;min-width:0!important;max-width:calc(100vw - 32px)!important;height:100%!important;max-height:100%!important;padding:1.25rem .75rem!important;margin:0!important;box-sizing:border-box!important;background:var(--color-shell-surface,var(--color-surface))!important;color:var(--color-text-primary)!important;border:0!important;border-radius:0!important;transform:none!important;overflow:auto!important;z-index:80!important;transition:width 240ms ease,transform 240ms ease;}
   body[data-ui-nav="v2"] #sidebar .sidebar-top {position:relative!important;inset:auto!important;transform:none!important;visibility:visible!important;overflow:visible!important;width:100%!important;height:auto!important;min-height:44px!important;margin:0 0 1.5rem!important;padding:0!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:.5rem!important;}
   body[data-ui-nav="v2"] #sidebar .brand {position:static!important;display:flex!important;align-items:center!important;gap:.75rem!important;margin:0!important;padding:.25rem .5rem!important;min-width:0!important;transform:none!important;background:transparent!important;}
-  body[data-ui-nav="v2"] #sidebar #traube-brand-logo {position:static!important;transform:none!important;filter:none!important;width:36px!important;height:36px!important;max-width:36px!important;object-fit:contain!important;}
+  body[data-ui-nav="v2"] #sidebar #traube-brand-logo {position:static!important;transform:none!important;filter:none!important;object-fit:contain!important;}
   body[data-ui-nav="v2"][data-ui-appearance="dark"] #sidebar #traube-brand-logo {filter:grayscale(1) brightness(0) invert(1)!important;}
   body[data-ui-nav="v2"] #sidebar .brand strong {font-size:1.375rem!important;color:var(--color-text-primary)!important;}
   body[data-ui-nav="v2"] #sidebar .brand small {display:block!important;font-size:.75rem!important;line-height:1.4!important;color:var(--color-text-secondary)!important;}

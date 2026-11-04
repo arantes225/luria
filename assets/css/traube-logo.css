@@ -1,0 +1,67 @@
+/*
+ * traube-logo.css — FONTE ÚNICA DE VERDADE para tamanho e aparência da logo
+ *
+ * Contextos:
+ *  - Topbar (logo movida pelo JS para .ui-topbar-brand): 70px desktop, 48px mobile
+ *  - Sidebar (#sidebar .brand, quando não movida): 48px
+ *
+ * NUNCA defina width/height/flex da logo em outro arquivo CSS.
+ */
+
+/* ── 1. RESET BASE ──────────────────────────────────────────────────────── */
+/* Garante que a logo seja um bloco simples sem posicionamento herdado       */
+.traube-theme-logo,
+#traube-brand-logo {
+  display: block !important;
+  position: static !important;
+  inset: auto !important;
+  object-fit: contain !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+  transition: transform .18s ease, filter .18s ease;
+}
+
+/* ── 2. SIDEBAR ─────────────────────────────────────────────────────────── */
+/* Logo no sidebar (posição padrão antes do JS mover para o topbar)          */
+#sidebar .brand .traube-theme-logo,
+#sidebar .brand #traube-brand-logo {
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+  max-width: 48px !important;
+  max-height: 48px !important;
+  flex: 0 0 48px !important;
+  filter: none !important;
+}
+
+/* ── 3. TOPBAR (após JS mover .brand para .ui-topbar-brand) ─────────────── */
+/* Desktop: 70px                                                              */
+.topbar .ui-topbar-brand .traube-theme-logo,
+.topbar .ui-topbar-brand #traube-brand-logo {
+  width: 70px !important;
+  height: 70px !important;
+  min-width: 70px !important;
+  min-height: 70px !important;
+  max-width: 70px !important;
+  max-height: 70px !important;
+  flex: 0 0 70px !important;
+  filter: brightness(0) invert(1) !important;
+}
+
+/* Mobile ≤600px: 48px                                                        */
+@media (max-width: 600px) {
+  .topbar .ui-topbar-brand .traube-theme-logo,
+  .topbar .ui-topbar-brand #traube-brand-logo {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    max-width: 48px !important;
+    max-height: 48px !important;
+    flex: 0 0 48px !important;
+  }
+}
