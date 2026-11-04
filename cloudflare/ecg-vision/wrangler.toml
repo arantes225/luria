@@ -1,0 +1,10 @@
+name = "luria-ecg-vision"
+main = "worker.mjs"
+compatibility_date = "2026-10-13"
+
+[vars]
+ALLOWED_ORIGINS = ""
+SUPABASE_URL = ""
+SUPABASE_PUBLISHABLE_KEY = ""
+# ANTHROPIC_API_KEY é um secret — nunca colocar aqui
+# Configure via: wrangler secret put ANTHROPIC_API_KEY

@@ -1,0 +1,12 @@
+{
+  "name": "luria-ecg-vision",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "deploy:staging": "wrangler deploy --config wrangler.staging.toml"
+  },
+  "devDependencies": {
+    "wrangler": "^3"
+  }
+}
