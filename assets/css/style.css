@@ -1908,6 +1908,23 @@ input[type="file"]:focus-visible::file-selector-button {
 @supports selector(::-webkit-file-upload-button) {
   input[type="file"]::-webkit-file-upload-button {
     min-height: 36px;
+    margin-right: 10px;
+    padding: 0 13px;
+    border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--border));
+    border-radius: 10px;
+    background:
+      linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--surface) 94%, var(--accent-soft)),
+        color-mix(in srgb, var(--surface-2) 88%, var(--accent-soft))
+      );
+    color: var(--accent);
+    font: inherit;
+    font-size: 9px;
+    font-weight: 850;
+    cursor: pointer;
+  }
+}
 
 @media (max-width: 760px) {
   input[type="file"] {
