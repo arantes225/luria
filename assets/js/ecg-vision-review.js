@@ -5,12 +5,17 @@
    1. Recebe canvas da foto + token de autenticação Supabase
    2. Envia imagem (base64, max 1.1 MB) ao worker ecg-vision
    3. Exibe tela modal com overlay (retângulos coloridos sobre a imagem)
-   4. Usuário confirma → resolve({ confirmed: true, visionLayout })
+   4. Usuário confirma → resolve({ confirmed: true, visionLayout, cleanCanvas })
       Usuário cancela → resolve({ confirmed: false })
+   5. cleanCanvas: canvas padronizado PhysioNet (fundo branco, grade rosa, traçado preto)
+      pronto para entrada no motor CV — zero custo de API adicional.
 
    Uso:
      const result = await TraubeEcgVisionReview.review(canvas, { authToken, workerUrl });
-     if (result.confirmed) { ... usar result.visionLayout ... }
+     if (result.confirmed) {
+       const canvasParaMotor = result.cleanCanvas || canvas;
+       // usar result.visionLayout e canvasParaMotor
+     }
 */
 (function (global) {
   "use strict";
@@ -166,6 +171,205 @@
     return { overlay, btnConfirm, btnRetake };
   }
 
+  /* ── Reconstrução de canvas padronizado PhysioNet ───────── */
+
+  /**
+   * Aplica threshold adaptativo em blocos para binarizar o traçado.
+   * Remove fundo, grade impressa e ruído de moiré — mantém apenas o traçado.
+   * @param {ImageData} imgData — dados de pixel de uma célula
+   * @returns {Uint8ClampedArray} canal de luminância binarizado (0 = traçado, 255 = fundo)
+   */
+  function adaptiveThreshold(imgData) {
+    const { data, width, height } = imgData;
+    const gray = new Uint8Array(width * height);
+
+    // Converte para escala de cinza (luminância perceptual)
+    for (let i = 0; i < gray.length; i++) {
+      const p = i * 4;
+      gray[i] = Math.round(0.299 * data[p] + 0.587 * data[p + 1] + 0.114 * data[p + 2]);
+    }
+
+    // Threshold adaptativo: compara cada pixel com média local em bloco
+    const blockSize = Math.max(15, Math.round(Math.min(width, height) / 8));
+    const halfB = Math.floor(blockSize / 2);
+    const C = 10; // constante de subtração (ajuste de sensibilidade)
+    const result = new Uint8Array(width * height);
+
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        const x0 = Math.max(0, x - halfB), x1 = Math.min(width - 1, x + halfB);
+        const y0 = Math.max(0, y - halfB), y1 = Math.min(height - 1, y + halfB);
+        let sum = 0, count = 0;
+        for (let yy = y0; yy <= y1; yy++) {
+          for (let xx = x0; xx <= x1; xx++) {
+            sum += gray[yy * width + xx];
+            count++;
+          }
+        }
+        const mean = sum / count;
+        result[y * width + x] = gray[y * width + x] < mean - C ? 0 : 255; // 0=traçado, 255=fundo
+      }
+    }
+    return result;
+  }
+
+  /**
+   * Desenha a grade padrão PhysioNet em um canvas.
+   * Grade fina: 1mm (pequeno) em rosa claro; grade grossa: 5mm em rosa médio.
+   * @param {CanvasRenderingContext2D} ctx
+   * @param {number} w largura do canvas
+   * @param {number} h altura do canvas
+   * @param {number} pxPerMm pixels por milímetro (padrão PhysioNet ≈ 4px/mm)
+   */
+  function drawPhysionetGrid(ctx, w, h, pxPerMm) {
+    const step1mm = pxPerMm;      // grade fina
+    const step5mm = pxPerMm * 5;  // grade grossa
+
+    // Grade fina (1mm) — rosa muito claro
+    ctx.strokeStyle = "rgba(255,180,180,0.5)";
+    ctx.lineWidth = 0.5;
+    ctx.beginPath();
+    for (let x = 0; x < w; x += step1mm) { ctx.moveTo(x, 0); ctx.lineTo(x, h); }
+    for (let y = 0; y < h; y += step1mm) { ctx.moveTo(0, y); ctx.lineTo(w, y); }
+    ctx.stroke();
+
+    // Grade grossa (5mm) — rosa médio
+    ctx.strokeStyle = "rgba(255,120,120,0.55)";
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (let x = 0; x < w; x += step5mm) { ctx.moveTo(x, 0); ctx.lineTo(x, h); }
+    for (let y = 0; y < h; y += step5mm) { ctx.moveTo(0, y); ctx.lineTo(w, y); }
+    ctx.stroke();
+  }
+
+  /**
+   * Reconstrói um canvas padronizado PhysioNet a partir da foto e do visionLayout.
+   *
+   * Processo por célula:
+   *   1. Recorta a região da célula usando as coordenadas normalizadas do Haiku
+   *   2. Aplica threshold adaptativo → binariza traçado vs fundo
+   *   3. Renderiza no canvas final: fundo branco, grade PhysioNet, traçado preto
+   *
+   * O canvas resultante tem dimensões padronizadas (escala PhysioNet: 4px/mm)
+   * compatíveis com as imagens de treinamento do motor CV (PhysioNet).
+   *
+   * @param {HTMLCanvasElement} sourceCanvas — foto original
+   * @param {object} visionLayout — JSON retornado pelo Haiku
+   * @returns {HTMLCanvasElement} canvas padronizado pronto para o motor CV
+   */
+  function reconstructDigitalCanvas(sourceCanvas, visionLayout) {
+    if (!visionLayout?.derivacoes?.length) return sourceCanvas;
+
+    const derivacoes = visionLayout.derivacoes;
+    const layout = visionLayout.layout || {};
+    const nLinhas = layout.linhas || 3;
+    const nColunas = layout.colunas || 4;
+
+    // Dimensões alvo: padrão PhysioNet (25mm/s, 10mm/mV, 4px/mm)
+    // ECG padrão 10s = 250mm largura, 3 linhas × 40mm + tira 10mm = 130mm altura
+    const PX_PER_MM = 4;
+    const CELL_W_MM = 62.5; // 10s / 4 colunas × 25mm/s
+    const CELL_H_MM = 40;
+    const TIRA_H_MM = 15;
+    const MARGIN_MM = 4;
+
+    const cellW = Math.round(CELL_W_MM * PX_PER_MM);
+    const cellH = Math.round(CELL_H_MM * PX_PER_MM);
+    const tiraH = Math.round(TIRA_H_MM * PX_PER_MM);
+    const margin = Math.round(MARGIN_MM * PX_PER_MM);
+
+    const temTira = visionLayout.tira_ritmo?.presente === true;
+    const totalW = nColunas * cellW + margin * 2;
+    const totalH = nLinhas * cellH + (temTira ? tiraH : 0) + margin * 2;
+
+    const outCanvas = doc.createElement("canvas");
+    outCanvas.width = totalW;
+    outCanvas.height = totalH;
+    const ctx = outCanvas.getContext("2d");
+
+    // Fundo branco
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, totalW, totalH);
+
+    // Grade PhysioNet
+    drawPhysionetGrid(ctx, totalW, totalH, PX_PER_MM);
+
+    const srcW = sourceCanvas.width;
+    const srcH = sourceCanvas.height;
+
+    // Renderiza cada derivação
+    derivacoes.forEach(d => {
+      const pos = d.posicao;
+      if (!pos) return;
+
+      const isTira = d.tipo === "tira_ritmo";
+
+      // Posição no canvas de saída
+      let dstX, dstY, dstW, dstH;
+      if (isTira) {
+        dstX = margin;
+        dstY = margin + nLinhas * cellH;
+        dstW = totalW - margin * 2;
+        dstH = tiraH;
+      } else {
+        const col = typeof d.coluna === "number" ? d.coluna - 1 : 0;
+        const row = (d.linha || 1) - 1;
+        dstX = margin + col * cellW;
+        dstY = margin + row * cellH;
+        dstW = cellW;
+        dstH = cellH;
+      }
+
+      // Recorta célula da foto original
+      const srcX = Math.round(pos.xMin * srcW);
+      const srcY = Math.round(pos.yMin * srcH);
+      const srcCellW = Math.round((pos.xMax - pos.xMin) * srcW);
+      const srcCellH = Math.round((pos.yMax - pos.yMin) * srcH);
+
+      if (srcCellW < 2 || srcCellH < 2) return;
+
+      // Extrai pixels da célula
+      const tmpCanvas = doc.createElement("canvas");
+      tmpCanvas.width = srcCellW;
+      tmpCanvas.height = srcCellH;
+      const tmpCtx = tmpCanvas.getContext("2d");
+      tmpCtx.drawImage(sourceCanvas, srcX, srcY, srcCellW, srcCellH, 0, 0, srcCellW, srcCellH);
+      const imgData = tmpCtx.getImageData(0, 0, srcCellW, srcCellH);
+
+      // Threshold adaptativo — binariza traçado
+      const binary = adaptiveThreshold(imgData);
+
+      // Escala para dimensão destino e renderiza traçado preto sobre grade
+      const scaleX = dstW / srcCellW;
+      const scaleY = dstH / srcCellH;
+
+      // Renderiza pixel a pixel (escala billinear aproximada por blocos)
+      const outData = ctx.getImageData(dstX, dstY, dstW, dstH);
+      for (let py = 0; py < dstH; py++) {
+        for (let px = 0; px < dstW; px++) {
+          const sx = Math.min(srcCellW - 1, Math.round(px / scaleX));
+          const sy = Math.min(srcCellH - 1, Math.round(py / scaleY));
+          const isTrace = binary[sy * srcCellW + sx] === 0;
+          if (isTrace) {
+            const idx = (py * dstW + px) * 4;
+            outData.data[idx] = 0;
+            outData.data[idx + 1] = 0;
+            outData.data[idx + 2] = 0;
+            outData.data[idx + 3] = 255;
+          }
+        }
+      }
+      ctx.putImageData(outData, dstX, dstY);
+
+      // Rótulo da derivação (canto superior esquerdo, pequeno)
+      ctx.fillStyle = "rgba(80,80,80,0.8)";
+      ctx.font = `bold ${Math.round(cellH * 0.08)}px monospace`;
+      ctx.fillText(d.nome || "", dstX + 3, dstY + Math.round(cellH * 0.1));
+    });
+
+    return outCanvas;
+  }
+
   /* ── API pública ─────────────────────────────────────────── */
 
   /**
@@ -174,7 +378,7 @@
    * @param {object} options
    * @param {string} options.authToken — Bearer token Supabase
    * @param {string} options.workerUrl — URL base do worker (ex: https://ecg-vision.luria.workers.dev)
-   * @returns {Promise<{ confirmed: boolean, visionLayout?: object, error?: string }>}
+   * @returns {Promise<{ confirmed: boolean, visionLayout?: object, cleanCanvas?: HTMLCanvasElement, error?: string }>}
    */
   async function review(sourceCanvas, options = {}) {
     const { authToken, workerUrl } = options;
@@ -216,7 +420,11 @@
 
       btnConfirm.addEventListener("click", () => {
         cleanup();
-        resolve({ confirmed: true, visionLayout: visionData });
+        // Reconstrói canvas padronizado PhysioNet (JS local, sem custo de API)
+        let cleanCanvas = null;
+        try { cleanCanvas = reconstructDigitalCanvas(sourceCanvas, visionData); }
+        catch (e) { console.warn("[ecg-vision] Falha na reconstrução do canvas:", e?.message); }
+        resolve({ confirmed: true, visionLayout: visionData, cleanCanvas });
       });
 
       btnRetake.addEventListener("click", () => {

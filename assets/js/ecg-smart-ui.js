@@ -371,7 +371,7 @@
           const selectedPaper = manualSelection
             ? perspective.rectifyCanvas(orientedCanvas, chosenCorners, maxSide)
             : null;
-          const snapCanvas = selectedPaper?.canvas || orientedCanvas;
+          let snapCanvas = selectedPaper?.canvas || orientedCanvas;
 
           stage = "análise de layout via visão";
           // ── Vision AI: identifica layout antes do motor CV ──────────────
@@ -395,6 +395,10 @@
             }
             if (reviewResult.visionLayout) {
               resolvedLayoutHint = visionReview.visionLayoutToHint(reviewResult.visionLayout);
+            }
+            // Canvas padronizado PhysioNet gerado localmente (sem custo de API)
+            if (reviewResult.cleanCanvas) {
+              snapCanvas = reviewResult.cleanCanvas;
             }
           }
           // ────────────────────────────────────────────────────────────────
