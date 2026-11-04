@@ -321,7 +321,7 @@
         resolve(result);
       };
       img.onerror = () => finish({ ok: false, reason: "Não foi possível decodificar a imagem escolhida." });
-      img.onload = () => {
+      img.onload = async () => {
         try {
           stage = "preparação da imagem";
           const originalW = img.naturalWidth || img.width;
