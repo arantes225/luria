@@ -345,6 +345,9 @@
   async function agir(p, acao) {
     const sb = sbClient();
     if (state.ocupado || !sb) return;
+    // Ler os campos ANTES de redesenhar o painel, senão eles voltam ao valor inicial.
+    const campoAgendar = (($("ag-publicar-em") || {}).value || "").trim();
+    const campoAjuste = (($("ag-nota-ajuste") || {}).value || "").trim();
     state.ocupado = true;
     renderPainel();
     const agora = new Date().toISOString();
@@ -354,9 +357,20 @@
       if (acao === "aprovar-ideia") { upd = { coluna: "redacao" }; texto = "aprovou a ideia"; }
       else if (acao === "descartar") { upd = { coluna: "descartado" }; texto = "descartou"; }
       else if (acao === "aprovar") { upd = { coluna: "aprovado", aprovado_em: agora }; texto = "aprovou para publicar"; }
-      else if (acao === "agendar") { upd = { coluna: "agendado", agendado_em: agora }; texto = "marcou como agendado"; }
+      else if (acao === "agendar") {
+        const campo = campoAgendar;
+        const quando = campo ? new Date(campo) : null;
+        if (!quando || isNaN(quando.getTime())) { state.ocupado = false; state.erro = "Escolha a data e a hora da publicação."; renderAll(); return; }
+        if (quando.getTime() < Date.now() + 10 * 60 * 1000) { state.ocupado = false; state.erro = "A publicação precisa ser pelo menos 10 minutos no futuro."; renderAll(); return; }
+        upd = { coluna: "agendado", status_publicacao: "agendado", publicar_em: quando.toISOString(), agendado_em: agora, publicacao_erro: null };
+        texto = "agendou a publicação para " + fmtHora(quando.toISOString());
+      }
+      else if (acao === "cancelar-agendamento") {
+        upd = { coluna: "aprovado", status_publicacao: "nao_agendado", publicar_em: null, publicacao_erro: null };
+        texto = "cancelou o agendamento";
+      }
       else if (acao === "ajustes") {
-        const nota = (($("ag-nota-ajuste") || {}).value || "").trim();
+        const nota = campoAjuste;
         if (!nota) { state.ocupado = false; renderPainel(); return; }
         upd = { coluna: "redacao", notas_ajuste: nota, marca: "pendente" };
         texto = "pediu ajustes";
@@ -514,9 +528,26 @@
       acoes.appendChild(btn("Aprovar para publicar", "aprovar", true, motivo, motivo));
       acoes.appendChild(el("button", { class: "ag-btn", type: "button", disabled: !pode, onclick: () => { state.ajuste = !state.ajuste; renderPainel(); }, text: "Pedir ajustes" }));
     }
-    if (p.coluna === "aprovado") acoes.appendChild(btn("Marcar como agendado", "agendar", true));
+    if (p.coluna === "aprovado") {
+      const nMidia = Array.isArray(p.midia) ? p.midia.length : 0;
+      const sugestao = new Date(Date.now() + 24 * 3600 * 1000); sugestao.setMinutes(0, 0, 0);
+      const valorInicial = sugestao.getFullYear() + "-" + pad(sugestao.getMonth() + 1) + "-" + pad(sugestao.getDate()) + "T" + pad(sugestao.getHours()) + ":00";
+      corpo.push(secao("Agendar publicação", el("div", null, [
+        el("label", { for: "ag-publicar-em", class: "ag-nota", text: "Data e hora (horário de Brasília)" }),
+        el("input", { id: "ag-publicar-em", type: "datetime-local", value: valorInicial }),
+        el("p", { class: "ag-nota", text: nMidia ? nMidia + " arquivo(s) de mídia anexado(s)." : "Sem mídia anexada: a publicação vai falhar até as imagens ou o vídeo serem anexados." })
+      ])));
+      acoes.appendChild(btn("Agendar publicação", "agendar", true));
+    }
     if (p.coluna === "redacao") acoes.appendChild(el("p", { class: "ag-nota", text: "O redator está trabalhando neste post." }));
-    if (p.coluna === "agendado") acoes.appendChild(el("p", { class: "ag-nota", text: "Agendado" + (p.agendado_em ? " em " + fmtHora(p.agendado_em) : "") + "." }));
+    if (p.coluna === "agendado") {
+      const st = p.status_publicacao || "agendado";
+      const rotulo = { agendado: "Agendado para " + fmtHora(p.publicar_em || p.agendado_em), publicando: "Publicando agora…", publicado: "Publicado" + (p.publicado_em ? " em " + fmtHora(p.publicado_em) : ""), simulado: "Simulação concluída: nada foi enviado ao Instagram.", erro: "Erro na publicação" }[st] || "Agendado";
+      acoes.appendChild(el("p", { class: "ag-nota", text: rotulo + "." }));
+      if (p.publicacao_erro) corpo.push(secao("Motivo do erro", el("p", { class: "ag-texto", text: p.publicacao_erro })));
+      if (/^https:\/\//.test(p.publicacao_url || "")) corpo.push(secao("Publicação", el("a", { href: p.publicacao_url, target: "_blank", rel: "noopener noreferrer", text: "Abrir no Instagram" })));
+      if (st !== "publicando") acoes.appendChild(btn("Cancelar agendamento", "cancelar-agendamento", false));
+    }
     corpo.push(acoes);
     if (p.coluna === "revisao" && bloqueioAprovar(p)) corpo.push(el("p", { class: "ag-nota", text: bloqueioAprovar(p) }));
     if (state.ajuste) {
