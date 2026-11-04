@@ -21,6 +21,7 @@ function mostrarMensagem(texto, tipo = "") {
 
 function setCarregando(ativo) {
   entrarButton.disabled = ativo;
+  entrarButton.textContent = ativo ? "Carregando..." : "Entrar";
   criarButton.disabled = ativo;
   if (passkeyButton) passkeyButton.disabled = ativo;
 }
