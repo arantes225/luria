@@ -21,6 +21,12 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
     return null;
   }
   if (sessionStorage.getItem('traube:alex:recharging') === 'true') {
+    // Consome a marca de "recarregando" nesta tentativa: o Leco some na
+    // página atual (intencional), mas a marca não fica presa para sempre —
+    // o botão "restore" que a limparia está dentro do próprio host que foi
+    // removido do DOM, então nunca era clicável de novo. Sem isto, o Leco
+    // sumia de todas as páginas pelo resto da sessão do navegador.
+    sessionStorage.removeItem('traube:alex:recharging');
     return null;
   }
 
