@@ -313,15 +313,30 @@
     }
     m.appendChild(state.vista === "quadro" ? renderQuadro() : renderCalendario());
   }
+  function colunaDoAgente(nome) {
+    const c = COLUNAS.find((c) => c.dono === nome || (c.dono === "Revisores" && nome.startsWith("Revisor")));
+    return c ? c.id : null;
+  }
   function renderLateral() {
     const ag = $("ag-agentes");
     const lg = $("ag-log");
     if (!ag || !lg) return;
     ag.textContent = "";
     AGENTES.forEach((a) => {
+      const colId = colunaDoAgente(a.n);
+      const pendentes = a.f1 && colId ? state.posts.filter((p) => p.coluna === colId).length : 0;
+      const ocupado = pendentes > 0;
+      const estado = !a.f1 ? "Em espera (fase 2)" : ocupado ? "Trabalhando agora" : "Livre no momento";
       ag.appendChild(el("li", { class: a.f1 ? "" : "depois" }, [
-        el("strong", { text: a.n + (a.f1 ? "" : " (fase 2)") }),
-        el("span", { text: a.d })
+        el("span", {
+          class: "ag-boneco" + (!a.f1 ? " pausado" : ocupado ? " trabalhando" : " livre"),
+          "aria-hidden": "true"
+        }),
+        el("div", { class: "ag-agente-copy" }, [
+          el("strong", { text: a.n + (a.f1 ? "" : " (fase 2)") }),
+          el("span", { text: a.d }),
+          el("small", { class: "ag-agente-estado", text: estado })
+        ])
       ]));
     });
     const r = state.config && state.config.ultima_rodada;
