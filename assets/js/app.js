@@ -1869,14 +1869,14 @@ async function carregarPerfil(userId) {
 
 function traubeLogoSourceForTheme(theme) {
   if (theme === "dark") {
-    return "/assets/img/logos/logo-icone-azul-claro.png?v=busto20261102";
+    return "/assets/img/logos/logo-icone-azul-claro.png?v=traube20261104v2";
   }
 
   if (theme === "leila-mood" || theme === "pink" || theme === "rosa") {
-    return "/assets/img/logos/logo-icone-rosa-escuro.png?v=busto20261102";
+    return "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261104v2";
   }
 
-  return "/assets/img/logos/logo-icone-original.png?v=busto20261102";
+  return "/assets/img/logos/logo-icone-original.png?v=traube20261104v2";
 }
 
 
@@ -5690,7 +5690,7 @@ function ensureTraubeDialog() {
   dialog.innerHTML = `
     <form method="dialog" class="traube-global-dialog-card">
       <div class="traube-global-dialog-icon" aria-hidden="true">
-        <img class="traube-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=busto20261102" alt="">
+        <img class="traube-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=traube20261104v2" alt="">
       </div>
       <div class="traube-global-dialog-copy">
         <span class="traube-global-dialog-eyebrow">TRAUBE</span>
@@ -5786,10 +5786,10 @@ function openTraubeDialog({
 
     logo.src =
       theme === "dark"
-        ? "/assets/img/logos/logo-icone-azul-claro.png?v=busto20261102"
+        ? "/assets/img/logos/logo-icone-azul-claro.png?v=traube20261104v2"
         : theme === "leila-mood"
-          ? "/assets/img/logos/logo-icone-rosa-escuro.png?v=busto20261102"
-          : "/assets/img/logos/logo-icone-original.png?v=busto20261102";
+          ? "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261104v2"
+          : "/assets/img/logos/logo-icone-original.png?v=traube20261104v2";
   }
 
   copy.textContent =

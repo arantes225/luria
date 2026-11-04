@@ -35,12 +35,14 @@
   }
 
   const LOGOS = {
-    light: "assets/img/logos/logo-icone-original.png?v=busto20261102",
-    dark: "assets/img/logos/logo-icone-azul-claro.png?v=busto20261102",
-    "leila-mood": "assets/img/logos/logo-icone-rosa-escuro.png?v=busto20261102"
+    light: "assets/img/logos/logo-icone-original.png?v=traube20261104v2",
+    dark: "assets/img/logos/logo-icone-azul-claro.png?v=traube20261104v2",
+    "leila-mood": "assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261104v2"
   };
 
   function getTheme() {
+    if (document.body?.dataset.uiIdentity === "pink" && document.body?.dataset.uiAppearance !== "dark") return "leila-mood";
+    if (document.body?.dataset.uiAppearance === "dark") return "dark";
     const theme =
       document.documentElement.dataset.theme
       || "light";
@@ -209,6 +211,9 @@
       "traube-theme-logo"
     );
 
+    // Preserve each theme logo's native ink color (no legacy whitening).
+    logo.style.setProperty("filter", "none", "important");
+
     removeOldBrandElements(
       brand,
       logo
@@ -262,7 +267,7 @@
       "any";
 
     const source =
-      "/assets/img/logos/logo-icone-original.png?v=busto20261102";
+      "/assets/img/logos/logo-icone-original.png?v=traube20261104v2";
 
     if (
       favicon.getAttribute("href")

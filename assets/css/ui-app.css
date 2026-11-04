@@ -2733,8 +2733,8 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand :is(strong,.brand-copy),
   body[data-ui-nav="v2"] .ui-context-label,
   body[data-ui-nav="v2"] .topbar #menu-open {color:#FFFFFF!important;}
-  body[data-ui-nav="v2"] .topbar #traube-brand-logo {filter:brightness(0) invert(1)!important;}
-  body[data-ui-nav="v2"][data-ui-appearance="dark"] .topbar #traube-brand-logo {filter:brightness(0) invert(1)!important;}
+  body[data-ui-nav="v2"] .topbar #traube-brand-logo {filter:none!important;}
+  body[data-ui-nav="v2"][data-ui-appearance="dark"] .topbar #traube-brand-logo {filter:none!important;}
   body[data-ui-nav="v2"] .main {scroll-padding-block:1.5rem;}
   body[data-ui-nav="v2"] .main::-webkit-scrollbar {width:8px!important;}
   body[data-ui-nav="v2"] .main::-webkit-scrollbar-track {background:transparent!important;}
@@ -2751,7 +2751,7 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) #sidebar .sidebar-top-actions {display:none!important;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand {display:flex!important;align-items:center!important;gap:.5rem!important;position:static!important;margin:0!important;padding:0!important;min-width:0!important;height:70px!important;background:transparent!important;transform:none!important;color:#FFFFFF!important;text-decoration:none!important;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand #traube-brand-logo,
-  body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand .traube-theme-logo {position:static!important;object-fit:contain!important;transform:none!important;filter:brightness(0) invert(1)!important;}
+  body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand .traube-theme-logo {position:static!important;object-fit:contain!important;transform:none!important;filter:none!important;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"])[data-ui-appearance="dark"] .ui-topbar-brand #traube-brand-logo {filter:brightness(0) invert(1)!important;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand :is(strong,.brand-copy) {color:#FFFFFF!important;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-brand strong {font-size:1rem!important;line-height:1.25!important;}

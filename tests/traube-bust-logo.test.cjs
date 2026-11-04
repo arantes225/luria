@@ -34,7 +34,7 @@ test("Traube frontend selects each bust logo by theme", () => {
     for (const name of ["logo-icone-original.png", "logo-icone-azul-claro.png", "logo-icone-rosa-escuro.png"]) {
       assert.match(source, new RegExp(name.replaceAll(".", "\\.")), file + " " + name);
     }
-    assert.match(source, /busto20261102/, file);
+    assert.match(source, /traube20261104v2/, file);
   }
 });
 
