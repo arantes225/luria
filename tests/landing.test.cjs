@@ -23,10 +23,11 @@ test('home landing has unique ids, a single h1 and the brand assets', () => {
   assert.equal(new Set(ids).size, ids.length);
   assert.equal(doc.querySelectorAll('h1').length, 1);
   assert.ok(doc.querySelector('link[rel="manifest"]'));
-  for (const file of ['ludwig-traube-retrato.webp', 'ludwig-traube-assinatura.webp']) {
-    assert.ok(fs.existsSync('assets/img/traube/' + file), file);
-    assert.ok(html.includes('/assets/img/traube/' + file), file);
-  }
+  assert.ok(fs.existsSync('assets/img/traube/ludwig-traube-retrato.webp'));
+  assert.ok(html.includes('/assets/img/traube/ludwig-traube-retrato.webp'));
+  assert.ok(fs.existsSync('assets/img/traube/assinatura-transparente.png'));
+  assert.ok(css.includes('assinatura-transparente.png'));
+  assert.ok(doc.querySelectorAll('.sigmark').length >= 5, 'assinatura aplicada em varias partes');
   dom.window.close();
 });
 
@@ -40,6 +41,14 @@ test('home has no inline script and no invented plan price', () => {
   assert.equal(/<script(?![^>]*\bsrc=)[^>]*>/i.test(html), false);
   assert.equal(/R\$\s*\d/.test(html), false);
   assert.ok(html.includes('plan__price'));
+});
+
+test('landing covers the seven differentiators', () => {
+  const dom = new JSDOM(html);
+  const text = dom.window.document.body.textContent;
+  for (const w of ['Simulador', 'anatomia', 'ao vivo', 'Cronograma', 'Leco', 'Jogos', 'ECG']) assert.ok(new RegExp(w, 'i').test(text), w);
+  assert.equal(dom.window.document.querySelectorAll('.chap').length, 7);
+  dom.window.close();
 });
 
 test('motion respects prefers-reduced-motion', () => {
