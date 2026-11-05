@@ -35,6 +35,8 @@ if (mode === "prepare") {
   scene = scene.replace(oldMaterial, "metalness:0,roughness:system==='muscular'||system==='cardiac'?.78:system==='skeletal'?.86:.62");
   scene = scene.replace("renderer.setClearColor('#f2f3f3')", "renderer.setClearColor('#e9f0f8')");
   scene = scene.replace("renderer.toneMappingExposure=1.12", "renderer.toneMappingExposure=1.02");
+  scene = scene.replace("This browser could not start the 3D viewer. Please try a browser with WebGL enabled.", "Este navegador não conseguiu iniciar o atlas 3D. Ative o WebGL ou tente outro navegador.");
+  scene = scene.replace("Interactive human anatomy. Drag to orbit, pinch or scroll to zoom, and tap a structure to inspect it.", "Anatomia humana interativa. Arraste para girar, aproxime com dois dedos ou a roda do mouse e toque em uma estrutura para identificá-la.");
   scene = scene.replace("scene.add(new T.HemisphereLight(0xffffff,0xa7acb2,1.05));", "scene.add(new T.HemisphereLight(0xfff3e9,0x617184,1.18));");
   scene = scene.replace("const key=new T.DirectionalLight(0xfffaf4,2.3)", "const key=new T.DirectionalLight(0xffeadc,2.8)");
   scene = scene.replace("const rim=new T.DirectionalLight(0xe9f0ff,1.8)", "const rim=new T.DirectionalLight(0xc9ddfa,1.45)");
@@ -46,6 +48,12 @@ if (mode === "prepare") {
   if (!scene.includes(oldColor)) throw new Error("Human Atlas selection shader changed upstream");
   scene = scene.replace(oldColor, newColor);
   fs.writeFileSync(scenePath, scene);
+
+  const webPath = path.join(source, "web/index.html");
+  let web = fs.readFileSync(webPath, "utf8");
+  web = web.replace('lang="en"', 'lang="pt-BR"').replace('<title>Human Atlas</title>', '<title>Sala de Anatomia · TRAUBE</title>');
+  web = web.replace('An interactive atlas of the human body. Explore named anatomical structures, reveal organ systems, and inspect individual parts in 3D.', 'Atlas interativo do corpo humano. Explore sistemas e identifique estruturas anatômicas em 3D.');
+  fs.writeFileSync(webPath, web);
 
   fs.appendFileSync(path.join(source, "app/globals.css"), `\n:root{--background:#e9f0f8;--foreground:#132b4a;--primary:#184888;--primary-foreground:#fff;--secondary:#e7eef7;--muted:#e7eef7;--accent:#dae8f7;--border:#18488822;--ring:#184888}\nbody{display:flex;flex-direction:column;background:#e9f0f8}#root{height:calc(100dvh - 60px);flex:1;min-height:0}.studio{height:100%;background:radial-gradient(ellipse at 52% 42%,#f5f8fc 0%,#e9f0f8 58%,#d9e5f3 100%)}.glass{background:#fffffff0;border:1px solid #18488820;box-shadow:0 16px 48px #102c5420}.identity h1{color:#132b4a;font-weight:800;letter-spacing:-.045em}.identity .eyebrow{color:#184888;font-weight:800}.layers-panel,.bottom-dock,.view-controls,.search-panel,.detail-sheet,.about-sheet{border-radius:18px}.system-row.enabled .system-name{color:#132b4a}.top-actions button,.view-controls button{border-radius:12px}.traube-atlas-header{height:60px;flex:0 0 60px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:0 22px;background:#143f79;color:#fff;box-shadow:0 4px 18px #0b265238;position:relative;z-index:30;font:700 14px system-ui,sans-serif}.traube-atlas-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}.traube-atlas-brand img{height:37px;width:37px;object-fit:contain}.traube-atlas-nav{display:flex;align-items:center;gap:12px}.traube-atlas-nav a{color:#fff;text-decoration:none;padding:8px 12px;border:1px solid #ffffff66;border-radius:999px}.traube-atlas-nav a:hover{background:#ffffff24}@media(max-width:767px){.traube-atlas-header{height:56px;flex-basis:56px;padding:0 12px;font-size:12px}#root{height:calc(100dvh - 56px)}.traube-atlas-brand img{height:30px;width:30px}.traube-atlas-nav{gap:5px}.traube-atlas-nav a{padding:7px 9px}.identity{top:17px}.top-actions{top:17px}}\n`);
   console.log(`Human Atlas prepared: ${manifest.parts.length} selectable meshes, ${manifest.chunks.length} chunks`);
