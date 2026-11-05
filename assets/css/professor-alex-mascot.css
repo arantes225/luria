@@ -1,1 +1,56 @@
-/* professor-alex-mascot.css — estilos do mascote Professor Alex */
+/* Styles for the 3D Leco mascot inside its shadow root. */
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 80px;
+  min-height: 80px;
+  overflow: visible;
+  contain: layout paint;
+}
+.alex-surface {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 80px;
+  min-height: 80px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  box-shadow: none;
+  appearance: none;
+  cursor: pointer;
+  overflow: visible;
+}
+.alex-surface:focus-visible {
+  outline: 3px solid #50d8ff;
+  outline-offset: 4px;
+  border-radius: 18px;
+}
+.alex-surface canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0;
+  min-height: 0;
+  pointer-events: none;
+}
+.alex-fallback {
+  position: absolute;
+  inset: 12%;
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  border-radius: 22%;
+  background: radial-gradient(circle at 35% 25%, #50d8ff, #184888 70%);
+  color: #fff;
+  font: 700 11px/1.2 system-ui, sans-serif;
+  text-align: center;
+}
+.alex-fallback[hidden] { display: none !important; }
