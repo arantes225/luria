@@ -108,7 +108,9 @@ jobs:
         with:
           node-version: '24'
       - name: Install pinned 3D build dependencies
-        run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12
+        run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12 playwright@1.56.1
+      - name: Prepare local site for browser smoke
+        run: node scripts/build-pages.cjs
       - name: Restore attributed BodyParts3D heart model
         run: |
           mkdir -p build/pages/assets/models/anatomia
@@ -117,6 +119,19 @@ jobs:
         run: ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
       - name: Check anatomical room contracts
         run: node --test tests/anatomia-room.test.cjs
+      - name: Install Chromium
+        run: npx playwright install chromium --with-deps
+      - name: Exercise 3D anatomy in browser
+        run: node scripts/anatomy-browser-smoke.cjs
+      - name: Save visual verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: anatomy-visual-check
+          path: |
+            build/anatomy-desktop.png
+            build/anatomy-mobile.png
+          if-no-files-found: ignore
 
   deploy:
     if: github.event_name != 'pull_request'
