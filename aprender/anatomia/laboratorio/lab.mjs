@@ -40,7 +40,7 @@ const $ = (s, r = document) => r.querySelector(s);
 const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
 
 /* ---------------- Microscopia ---------------- */
-function setupMicro() {
+export function setupMicro() {
   const host = $("[data-micro-stage]"), tabs = $("[data-micro-tabs]"), layer = $("[data-micro-labels]");
   if (!host) return;
   let renderer;
@@ -96,7 +96,7 @@ function setupMicro() {
 
 /* ---------------- Desafio ---------------- */
 const shuffle = a => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
-async function setupQuiz() {
+export async function setupQuiz() {
   const root = $("[data-quiz-root]"); if (!root) return;
   let bank = [];
   try { bank = (await (await fetch("/aprender/anatomia/laboratorio/questoes-pt.json")).json()).questoes; }
@@ -145,5 +145,3 @@ async function setupQuiz() {
   start();
 }
 
-setupMicro();
-setupQuiz();

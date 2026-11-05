@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'wasm-unsafe-eval'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self'; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Sala de Anatomia · TRAUBE</title>
-  <meta name="description" content="Explore modelos tridimensionais de anatomia humana e teste seus conhecimentos no TRAUBE.">
+  <meta name="description" content="Atlas 3D do corpo humano em português no TRAUBE: 2.234 estruturas, cortes, remoção de peças, tours, microscopia e desafio de questões.">
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <meta name="theme-color" content="#0A2342">
@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/traube-logo.css?v=20261103-v1">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-learning-hubs">
-  <link rel="stylesheet" href="/assets/css/anatomia.css?v=5">
+  <link rel="stylesheet" href="/assets/css/anatomia.css?v=6">
+  <link rel="stylesheet" href="/aprender/anatomia/laboratorio/lab.css?v=2">
   <script defer src="/assets/js/traube-brand-v5.js?v=20261025-review-fixes3"></script>
   <link rel="canonical" href="/aprender/anatomia/">
 </head>
@@ -36,120 +37,66 @@
           <div class="page-heading"><span class="eyebrow">APRENDER</span><h1>Sala de Anatomia</h1></div>
         </header>
 
-        <section class="anatomy-page" aria-labelledby="anatomy-title">
+        <section class="anatomy-room" aria-label="Sala de Anatomia">
           <section class="traube-page-spotlight" aria-label="Sala de Anatomia">
             <div class="traube-page-spotlight-copy">
               <strong>Sala de Anatomia</strong>
-              <small class="traube-page-spotlight-helper">Explore o corpo em 3D, disseque, aproxime até o microscópio e teste o que aprendeu.</small>
+              <small class="traube-page-spotlight-helper">Atlas 3D do corpo humano: selecione, corte, remova estruturas e estude por sistemas.</small>
             </div>
           </section>
 
-          <nav class="anatomy-tools" aria-label="Módulos da Sala de Anatomia">
-            <a class="tool-card" href="/aprender/anatomia/atlas/">
-              <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2.2"/><path d="M12 7v7m0 0-3 7m3-7 3 7M7 10l5-2 5 2"/></svg></span>
-              <h3>Atlas do corpo</h3>
-              <p>2.234 peças em 15 sistemas, com nomes em português, tours guiados e busca por comando.</p>
-              <span class="tool-cta">Abrir atlas</span>
-            </a>
-            <a class="tool-card" href="/aprender/anatomia/corpo/">
-              <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20 20 4"/><path d="M14 4h6v6"/><rect x="3" y="13" width="8" height="8" rx="2"/></svg></span>
-              <h3>Corpo dissecável</h3>
-              <p>Cortes sagital, coronal e transversal sobre 107 estruturas em 11 sistemas.</p>
-              <span class="tool-cta">Dissecar</span>
-            </a>
-            <a class="tool-card" href="#coracao">
-              <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></span>
-              <h3>Coração em detalhe</h3>
-              <p>Corte ventricular, identificação de estruturas e fluxo sanguíneo ilustrativo.</p>
-              <span class="tool-cta">Ver abaixo</span>
-            </a>
-            <a class="tool-card" href="/aprender/anatomia/laboratorio/">
-              <span class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3"/><path d="M7.5 15h9"/></svg></span>
-              <h3>Laboratório</h3>
-              <p>Microscopia 3D animada e desafio com mais de 200 questões de anatomia.</p>
-              <span class="tool-cta">Entrar</span>
-            </a>
-          </nav>
-
-          <h2 class="anatomy-section-title" id="coracao">Coração em detalhe</h2>
-          <div class="anatomy-workspace">
-            <section class="anatomy-stage-card" aria-label="Modelo tridimensional do coração">
-              <div class="anatomy-stage-head">
-                <div class="anatomy-stage-title"><strong>Coração humano</strong><span>Cor · atlas anatômico interativo</span></div>
-                <div class="anatomy-stage-tools" aria-label="Controles do modelo">
-                  <button class="anatomy-mode-button" type="button" data-anatomy-exterior aria-pressed="true">Exterior</button>
-                  <button class="anatomy-mode-button" type="button" data-anatomy-interior aria-pressed="false">Ver por dentro</button>
-                  <button class="anatomy-mode-button anatomy-flow-button" type="button" data-anatomy-flow aria-pressed="false">Mostrar fluxo</button>
-                  <button class="anatomy-tool" type="button" data-anatomy-reset aria-label="Restaurar visualização" title="Restaurar visualização"><svg viewBox="0 0 24 24"><path d="M4 4v6h6"/><path d="M5.5 16a8 8 0 1 0 .5-9"/></svg></button>
-                  <button class="anatomy-tool" type="button" data-anatomy-rotate aria-label="Ativar ou pausar rotação" title="Rotação automática"><svg viewBox="0 0 24 24"><path d="M20 7h-5V2"/><path d="M4 17h5v5"/><path d="M6.1 9A7 7 0 0 1 19 7M17.9 15A7 7 0 0 1 5 17"/></svg></button>
-                  <button class="anatomy-tool" type="button" data-anatomy-fullscreen aria-label="Ver em tela cheia" title="Tela cheia"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg></button>
-                </div>
-              </div>
-              <div class="anatomy-viewer" data-anatomy-viewer>
-                <canvas aria-label="Coração humano tridimensional interativo"></canvas>
-                <div class="anatomy-hotspot-layer" data-hotspot-layer></div>
-                <div class="anatomy-loading" data-anatomy-loading>
-                  <div class="anatomy-loading-mark" aria-hidden="true">♥</div>
-                  <strong>Preparando o coração</strong>
-                  <span>Carregando o modelo tridimensional…</span>
-                  <div class="anatomy-progress" aria-hidden="true"><i data-anatomy-progress></i></div>
-                </div>
-                <div class="anatomy-mode-note" aria-live="polite"><span class="anatomy-mode-note-exterior">Clique diretamente em uma estrutura colorida para identificá-la</span><span class="anatomy-mode-note-interior">Corte didático da parede ventricular · fluxo ilustrativo: azul venoso, vermelho oxigenado</span></div>
-                <div class="anatomy-stage-hint">Arraste para girar · role para aproximar · clique em uma estrutura</div>
-              </div>
-            </section>
-
-            <aside class="anatomy-info-card" aria-label="Estruturas do coração">
-              <div class="anatomy-info-head">
-                <small>Estrutura selecionada</small>
-                <h3 data-structure-title>Aorta</h3>
-                <em data-structure-latin>Aorta</em>
-              </div>
-              <div class="anatomy-info-copy">
-                <p data-structure-detail>Maior artéria do corpo. Recebe o sangue ejetado pelo ventrículo esquerdo e o distribui para a circulação sistêmica.</p>
-                <div class="anatomy-flow-chip" data-structure-flow>Sangue oxigenado → corpo</div>
-              </div>
-              <div class="anatomy-structure-list" data-anatomy-structures aria-label="Selecionar estrutura"></div>
-              <div class="anatomy-info-actions"><button class="anatomy-primary-button" type="button" data-quiz-start>Testar identificação</button></div>
-            </aside>
+          <div class="anatomy-room-bar">
+            <div class="anatomy-room-tabs" role="tablist" aria-label="Modos da Sala de Anatomia">
+              <button type="button" role="tab" id="tab-atlas" aria-controls="panel-atlas" aria-selected="true" data-room-tab="atlas">Atlas 3D</button>
+              <button type="button" role="tab" id="tab-micro" aria-controls="panel-micro" aria-selected="false" data-room-tab="micro" tabindex="-1">Microscopia</button>
+              <button type="button" role="tab" id="tab-quiz" aria-controls="panel-quiz" aria-selected="false" data-room-tab="quiz" tabindex="-1">Desafio</button>
+              <a class="anatomy-room-link" href="/aprender/anatomia/coracao/">Coração em detalhe</a>
+            </div>
+            <div class="anatomy-room-actions">
+              <button type="button" class="anatomy-room-ghost" data-room-fullscreen>Tela cheia</button>
+              <button type="button" class="anatomy-room-ghost" data-credits-open aria-expanded="false" aria-controls="creditos">Créditos</button>
+            </div>
           </div>
 
-          <div class="anatomy-lessons">
-            <section class="anatomy-lesson-card">
-              <h3>Fluxo sanguíneo essencial</h3>
-              <p>Acompanhe o circuito em quatro etapas para fixar o caminho do sangue pelo coração.</p>
-              <div class="blood-flow" aria-label="Caminho do sangue">
-                <div class="blood-flow-step"><small>1 · entrada</small><strong>Veias cavas → átrio direito</strong></div>
-                <div class="blood-flow-step"><small>2 · pulmões</small><strong>VD → artéria pulmonar</strong></div>
-                <div class="blood-flow-step"><small>3 · retorno</small><strong>Veias pulmonares → AE</strong></div>
-                <div class="blood-flow-step"><small>4 · corpo</small><strong>VE → aorta</strong></div>
-              </div>
-              <div class="anatomy-quiz" data-anatomy-quiz hidden>
-                <div class="anatomy-quiz-head"><div><span>Encontre no modelo</span><strong data-quiz-target>Aorta</strong></div><div class="anatomy-quiz-score" data-quiz-score>0/0</div></div>
-                <div class="quiz-feedback" data-quiz-feedback>Toque no ponto correspondente no modelo.</div>
-              </div>
-            </section>
+          <section class="anatomy-room-stage" id="panel-atlas" role="tabpanel" aria-labelledby="tab-atlas" data-room-panel="atlas">
+            <iframe class="anatomy-room-frame" src="/aprender/anatomia/atlas/?embed=1" title="Atlas 3D do corpo humano" allow="fullscreen" loading="eager"></iframe>
+          </section>
 
-            <section class="anatomy-lesson-card">
-              <h3>Visão rápida</h3>
-              <p>Dados de referência para contextualizar o modelo anatômico.</p>
-              <div class="anatomy-fact-grid">
-                <div><small>Peso médio</small><strong>250–350 g</strong></div>
-                <div><small>Localização</small><strong>Mediastino médio</strong></div>
-                <div><small>Frequência</small><strong>≈ 100 mil batimentos/dia</strong></div>
+          <section class="lab-card" id="panel-micro" role="tabpanel" aria-labelledby="tab-micro" data-room-panel="micro" hidden>
+            <div class="lab-card-head">
+              <div><span class="lab-kicker">Microscopia 3D</span><h2 data-micro-title>Troca gasosa no alvéolo</h2></div>
+              <button type="button" class="lab-ghost" data-micro-play aria-pressed="true">Pausar</button>
+            </div>
+            <div class="micro-tabs" data-micro-tabs role="group" aria-label="Escolha a cena"></div>
+            <div class="micro-layout">
+              <div class="micro-stage" data-micro-stage>
+                <div class="micro-labels" data-micro-labels aria-hidden="true"></div>
+                <p class="lab-muted" data-micro-fallback hidden>Seu navegador não ativou o WebGL; os textos ao lado continuam disponíveis.</p>
+                <span class="micro-hint">Arraste para girar · role para aproximar</span>
               </div>
-              <p class="anatomy-source-note">Conteúdo educacional. As cores ajudam a diferenciar estruturas; o fluxo animado é didático, sem escala ou simulação hemodinâmica. As cavidades representam espaços internos, não tecido. Valvas, veias pulmonares e veia cava inferior não estão incluídas no modelo. Conteúdo educacional sujeito a revisão anatômica especializada.</p>
-            </section>
-          </div>
-          <p class="anatomy-sr-only" role="status" aria-live="polite" data-anatomy-status></p>
-          <button type="button" class="anatomy-credits-trigger" data-credits-open aria-expanded="false" aria-controls="creditos">ⓘ Créditos</button>
+              <div class="micro-info">
+                <ul class="micro-facts" data-micro-facts></ul>
+                <p class="lab-muted">Representação esquemática, fora de escala.</p>
+                <a class="micro-source" data-micro-source href="#" target="_blank" rel="noopener noreferrer"></a>
+              </div>
+            </div>
+          </section>
+
+          <section class="lab-card" id="panel-quiz" role="tabpanel" aria-labelledby="tab-quiz" data-room-panel="quiz" hidden>
+            <div class="lab-card-head">
+              <div><span class="lab-kicker">Desafio</span><h2>Rodadas de 5 questões</h2></div>
+            </div>
+            <div class="lab-chips" data-quiz-themes role="group" aria-label="Tema das questões"></div>
+            <div class="quiz-root" data-quiz-root aria-live="polite"><p class="lab-muted">Carregando questões…</p></div>
+          </section>
+
           <section class="anatomy-credits-card" id="creditos" hidden aria-label="Créditos da Sala de Anatomia">
             <div class="anatomy-credits-head"><strong>Créditos</strong><button type="button" data-credits-close aria-label="Fechar créditos">✕</button></div>
             <ul>
-              <li>Modelos do corpo e do coração: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html" target="_blank" rel="noopener noreferrer">BodyParts3D</a>, © The Database Center for Life Science, CC BY 4.0. Coração preparado e segmentado por <a href="https://github.com/organui/heart-3d" target="_blank" rel="noopener noreferrer">OrganUI</a>; geometria simplificada e recolorida.</li>
-              <li>Visualizadores do atlas, do corpo dissecável e da microscopia adaptados de software de código aberto MIT; licenças incluídas junto de cada módulo.</li>
-              <li>Parte das questões do desafio foi traduzida e revisada a partir de um banco Apache-2.0; licença incluída no laboratório.</li>
-              <li>Conteúdo de anatomia e fisiologia: <a href="https://openstax.org/books/anatomy-and-physiology-2e" target="_blank" rel="noopener noreferrer">OpenStax</a> e <a href="https://www.nhlbi.nih.gov/health/heart/blood-flow" target="_blank" rel="noopener noreferrer">NHLBI</a>.</li>
+              <li>Modelos do corpo e do coração: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html" target="_blank" rel="noopener noreferrer">BodyParts3D</a>, © The Database Center for Life Science, CC BY 4.0. Coração preparado por <a href="https://github.com/organui/heart-3d" target="_blank" rel="noopener noreferrer">OrganUI</a>; geometria simplificada e recolorida.</li>
+              <li>Visualizador do atlas e cenas microscópicas adaptados de software MIT; licenças publicadas junto de cada módulo.</li>
+              <li>Parte das questões foi traduzida e revisada a partir de um banco Apache-2.0 (<a href="/aprender/anatomia/laboratorio/LICENSE-questoes-apache.txt">licença</a>).</li>
+              <li>Fisiologia: <a href="https://openstax.org/books/anatomy-and-physiology-2e" target="_blank" rel="noopener noreferrer">OpenStax</a> e <a href="https://www.nhlbi.nih.gov/health/heart/blood-flow" target="_blank" rel="noopener noreferrer">NHLBI</a>.</li>
             </ul>
             <p>Conteúdo educacional, sujeito a revisão anatômica especializada.</p>
           </section>
@@ -161,9 +108,8 @@
 <script src="/assets/vendor/supabase-2.110.6.js"></script>
 <script src="/assets/js/supabase.js?v=auth4"></script>
 <script src="/assets/js/app.js?v=20261101-traube-bootstrap1"></script>
-<script defer src="/assets/js/anatomy-loading-guard.js?v=1"></script>
-<script defer src="/assets/js/anatomy-credits.js?v=1"></script>
-<script type="module" src="/assets/vendor/traube-anatomy-viewer.mjs?v=6"></script>
+<script defer src="/assets/js/anatomy-credits.js?v=2"></script>
+<script type="module" src="/assets/js/anatomy-room.mjs?v=2"></script>
 <script defer src="/assets/js/pwa.js?v=20261101-bootstrap1"></script>
 </body>
 </html>

@@ -9,6 +9,9 @@
     open.setAttribute("aria-expanded", String(visible));
   }
   open.addEventListener("click", function () { set(card.hidden); });
+  document.addEventListener("click", function (event) {
+    if (!card.hidden && !card.contains(event.target) && !open.contains(event.target)) set(false);
+  });
   close.addEventListener("click", function () { set(false); open.focus(); });
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape" && !card.hidden) set(false);

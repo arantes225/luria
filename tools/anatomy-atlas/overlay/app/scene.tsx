@@ -1,7 +1,6 @@
 import {useEffect,useRef} from 'react';
 import * as T from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
-import {RoomEnvironment} from 'three/examples/jsm/environments/RoomEnvironment.js';
 import {mergeGeometries} from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import {createExplosionLayout} from './explosion-layout';
 import {decodeModelResponse} from './model-download';
@@ -16,23 +15,27 @@ export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:P
   let lastState:SceneState|null=null;
   const abort=new AbortController();
   let renderer:T.WebGLRenderer;
-  try{renderer=new T.WebGLRenderer({antialias:true,alpha:false,powerPreference:'high-performance'});}catch{onError('Este navegador não conseguiu iniciar o visualizador 3D. Tente um navegador com WebGL ativado.');return;}
-  renderer.setPixelRatio(Math.min(devicePixelRatio,innerWidth<768?1.5:2));renderer.setClearColor('#eef2f7');renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.0;el.appendChild(renderer.domElement);
+  try{renderer=new T.WebGLRenderer({antialias:true,alpha:true,powerPreference:'high-performance'});}catch{onError('Este navegador não conseguiu iniciar o visualizador 3D. Tente um navegador com WebGL ativado.');return;}
+  renderer.setPixelRatio(Math.min(devicePixelRatio,innerWidth<768?1.5:2));renderer.setClearColor(0x000000,0);renderer.localClippingEnabled=true;renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.0;el.appendChild(renderer.domElement);
   renderer.domElement.setAttribute('aria-label','Anatomia humana interativa. Arraste para girar, use pinça ou rolagem para aproximar e toque em uma estrutura para ver detalhes.');
   const scene=new T.Scene(),camera=new T.PerspectiveCamera(34,1,.005,100),controls=new OrbitControls(camera,renderer.domElement);
   camera.position.set(1.4,1.05,3.6);controls.target.set(0,.85,0);controls.enableDamping=true;controls.dampingFactor=.085;controls.minDistance=.07;controls.maxDistance=40;controls.maxPolarAngle=Math.PI*.96;controls.zoomToCursor=true;/* TRAUBE: zoom na direção do ponteiro */controls.addEventListener('change',()=>{dirty=true;});
-  const pmrem=new T.PMREMGenerator(renderer),room=new RoomEnvironment(),env=pmrem.fromScene(room,.04);scene.environment=env.texture;room.dispose();pmrem.dispose();
-  scene.add(new T.HemisphereLight(0xffffff,0x9fa9b6,1.0));
-  const key=new T.DirectionalLight(0xfff6ee,2.4);key.position.set(-2,4,3);scene.add(key);
-  const fill=new T.DirectionalLight(0xdfe8ff,.7);fill.position.set(3,1.2,2.5);scene.add(fill);
-  const rim=new T.DirectionalLight(0xe9f0ff,1.9);rim.position.set(2,2,-3);scene.add(rim);
-  const ground=new T.Mesh(new T.CircleGeometry(30,96),new T.MeshStandardMaterial({color:0xd3dbe6,roughness:1}));ground.rotation.x=-Math.PI/2;ground.position.y=-.019;scene.add(ground);
-  const platform=new T.Mesh(new T.CylinderGeometry(.68,.7,.028,100),new T.MeshStandardMaterial({color:0xf2f5f9,metalness:.12,roughness:.62}));platform.position.y=-.016;scene.add(platform);
+  const envData=new Uint8Array(16*32*4),envTop=new T.Color(0xfff3e4),envBottom=new T.Color(0x6b4f45),envMix=new T.Color();for(let y=0;y<32;y++){envMix.copy(envBottom).lerp(envTop,Math.pow(1-y/31,.7));for(let x=0;x<16;x++){const i=(y*16+x)*4;envData[i]=envMix.r*255;envData[i+1]=envMix.g*255;envData[i+2]=envMix.b*255;envData[i+3]=255;}}
+  const envSource=new T.DataTexture(envData,16,32);envSource.mapping=T.EquirectangularReflectionMapping;envSource.colorSpace=T.SRGBColorSpace;envSource.needsUpdate=true;
+  const pmrem=new T.PMREMGenerator(renderer),env=pmrem.fromEquirectangular(envSource);scene.environment=env.texture;pmrem.dispose();envSource.dispose();
+  scene.add(new T.AmbientLight(0xffffff,.42));scene.add(new T.HemisphereLight(0xfff8ee,0x33252d,.72));
+  const key=new T.DirectionalLight(0xfff3e7,3.2);key.position.set(4.8,6.5,6.8);scene.add(key);
+  const fill=new T.DirectionalLight(0xe6ecff,1.1);fill.position.set(-4.5,1.2,5.2);scene.add(fill);const warm=new T.DirectionalLight(0xff8d70,.45);warm.position.set(-3,-1.4,3.5);scene.add(warm);
+  const rim=new T.DirectionalLight(0xffb7a5,1.6);rim.position.set(-4,3.5,-5.5);scene.add(rim);const back=new T.DirectionalLight(0xe9f0ff,1.0);back.position.set(3,2,-4);scene.add(back);
+  const ground=new T.Mesh(new T.CircleGeometry(30,96),new T.MeshStandardMaterial({color:0xd3dbe6,roughness:1}));ground.rotation.x=-Math.PI/2;ground.position.y=-.019;ground.visible=false;
+  const platform=new T.Mesh(new T.CylinderGeometry(.68,.7,.028,100),new T.MeshStandardMaterial({color:0xf2f5f9,metalness:.12,roughness:.62}));platform.position.y=-.016;platform.visible=false;
   const ring=new T.Mesh(new T.RingGeometry(.63,.632,128),new T.MeshBasicMaterial({color:0x184888,transparent:true,opacity:.45,side:T.DoubleSide}));ring.rotation.x=-Math.PI/2;ring.position.y=.001;scene.add(ring);
   const innerRing=new T.Mesh(new T.RingGeometry(.55,.551,128),new T.MeshBasicMaterial({color:0x184888,transparent:true,opacity:.16,side:T.DoubleSide}));innerRing.rotation.x=-Math.PI/2;innerRing.position.y=.001;scene.add(innerRing);
   const width=T.MathUtils.ceilPowerOfTwo(atlas.parts.length),data=new Float32Array(width*4),partTexture=new T.DataTexture(data,width,1,T.RGBAFormat,T.FloatType);partTexture.needsUpdate=true;
   const selectedData=new Uint8Array(width*4),selectionTexture=new T.DataTexture(selectedData,width,1);selectionTexture.needsUpdate=true;
   // TRAUBE: cor (RGB, sRGB) e rugosidade (A) por peça, escolhidas pelo tecido.
+  const cutPlane=new T.Plane(new T.Vector3(-1,0,0),0);let lastCut='';
+  const bodyBox=new T.Box3();atlas.parts.forEach(p=>{bodyBox.expandByPoint(new T.Vector3().fromArray(p.bounds[0]));bodyBox.expandByPoint(new T.Vector3().fromArray(p.bounds[1]));});
   const tintData=new Uint8Array(width*4),detailData=new Uint8Array(width*4);atlas.parts.forEach((p,i)=>{const a=partAppearance(p);tintData.set([a.rgb[0],a.rgb[1],a.rgb[2],Math.round(a.rough*255)],i*4);detailData[i*4]=a.detail*32;});
   const tintTexture=new T.DataTexture(tintData,width,1);tintTexture.colorSpace=T.SRGBColorSpace;tintTexture.needsUpdate=true;
   // Microtextura procedural (sem UV no atlas): tipo de tecido no canal R.
@@ -75,7 +78,7 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?600.0:kind<3.5?650.0:kin
    return best;
   };
   const materialFor=(system:string)=>{
-   const m=new T.MeshStandardMaterial({color:SYSTEMS.find(s=>s.id===system)?.color??'#aebbb8',metalness:.08,roughness:.53,side:T.DoubleSide,transparent:system==='integumentary',opacity:system==='integumentary'?.1:1,depthWrite:system!=='integumentary'});
+   const m=new T.MeshStandardMaterial({envMapIntensity:.32,color:SYSTEMS.find(s=>s.id===system)?.color??'#aebbb8',metalness:.08,roughness:.53,side:T.DoubleSide,transparent:system==='integumentary',opacity:system==='integumentary'?.1:1,depthWrite:system!=='integumentary'});
    m.onBeforeCompile=shader=>{
     shader.uniforms.partState={value:partTexture};shader.uniforms.selectionState={value:selectionTexture};shader.uniforms.partTint={value:tintTexture};shader.uniforms.partDetail={value:detailTexture};shader.uniforms.ghostAmount=ghostUniform;shader.uniforms.stateWidth={value:width};
     shader.vertexShader='attribute float partIndex; uniform sampler2D partState; uniform sampler2D selectionState; uniform sampler2D partTint; uniform sampler2D partDetail; uniform float stateWidth; varying float partVisible; varying float partSelected; varying vec4 vTint; varying float vKind; varying vec3 vDetailPos;\n'+shader.vertexShader;
@@ -86,7 +89,7 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?600.0:kind<3.5?650.0:kin
     // Cor por tecido + destaque de seleção no azul TRAUBE (#2f6fc4 em linear).
     shader.fragmentShader=shader.fragmentShader.replace('#include <color_fragment>','#include <color_fragment>\nfloat dK = vKind; float dS = dStrength(dK);\n// esmaece a microtextura quando ela fica menor que um pixel (evita serrilhado)\nfloat dFade = dS > 0.0 ? clamp(1.5 - length(fwidth(vDetailPos)) * dFreq(dK) * 1.4, 0.0, 1.0) : 0.0;\nfloat dH = dHeight(vDetailPos, dK);\ndiffuseColor.rgb = vTint.rgb * (1.0 + (dH - 0.5) * 0.5 * dS * dFade);\n');
     // Seleção: contorno azul TRAUBE (fresnel), preservando a cor do tecido.
-    shader.fragmentShader=shader.fragmentShader.replace('#include <emissivemap_fragment>','#include <emissivemap_fragment>\nfloat selRim = pow(1.0 - clamp(abs(dot(normalize(normal), normalize(vViewPosition))), 0.0, 1.0), 2.2);\ntotalEmissiveRadiance += vec3(0.05, 0.22, 0.75) * partSelected * selRim * 1.1;');
+    shader.fragmentShader=shader.fragmentShader.replace('#include <emissivemap_fragment>','#include <emissivemap_fragment>\nfloat selRim = pow(1.0 - clamp(abs(dot(normalize(normal), normalize(vViewPosition))), 0.0, 1.0), 2.2);\ntotalEmissiveRadiance += vec3(0.05, 0.22, 0.75) * partSelected * selRim * 1.1 + vec3(0.07, 0.035, 0.03) * selRim * (1.0 - partSelected);');
     shader.fragmentShader=shader.fragmentShader.replace('#include <roughnessmap_fragment>','#include <roughnessmap_fragment>\nroughnessFactor = mix(roughnessFactor, vTint.a, 0.85) + (dH - 0.5) * 0.12 * dS * dFade;');
     // Relevo por derivadas da altura procedural (bump sem UV).
     shader.fragmentShader=shader.fragmentShader.replace('#include <normal_fragment_maps>','#include <normal_fragment_maps>\nif (dFade > 0.0) { vec3 dpx = dFdx(-vViewPosition), dpy = dFdy(-vViewPosition); float dAmp = 0.0016 * dS * dFade; float dhx = dFdx(dH) * dAmp, dhy = dFdy(dH) * dAmp; vec3 r1 = cross(dpy, normal), r2 = cross(normal, dpx); float det = dot(dpx, r1); vec3 grad = sign(det) * (dhx * r1 + dhy * r2); normal = normalize(abs(det) * normal - grad); }');
@@ -111,11 +114,11 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?600.0:kind<3.5?650.0:kin
   };
   (async()=>{try{let cursor=0;await Promise.all(Array.from({length:3},async()=>{while(cursor<atlas.chunks.length){const i=cursor++;await loadChunk(i);}}));if(!disposed){ready=true;dirty=true;}}catch(e){if(!disposed)onError(e instanceof Error?e.message:'Não foi possível carregar a anatomia.');}})();
   const fit=(view:string,extent=0)=>{
-   const aspect=camera.aspect,mobile=el.clientWidth<768,normalDistance=mobile?Math.max(4.5,1.8*el.clientHeight/Math.max(160,el.clientHeight-350)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))):4;
-   const reservedHeight=mobile?350:270;const availableAspect=Math.max(.35,(el.clientWidth-(mobile?40:340))/Math.max(160,el.clientHeight-reservedHeight));const atlasDistance=Math.max(packingHeight,packingWidth/availableAspect)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*(el.clientHeight/Math.max(160,el.clientHeight-reservedHeight))*1.08;
+   const aspect=camera.aspect,mobile=el.clientWidth<768,normalDistance=Math.max(2.3,1.82/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))/Math.min(1,aspect*1.25));
+   const reservedHeight=40;const availableAspect=Math.max(.35,(el.clientWidth-40)/Math.max(160,el.clientHeight-reservedHeight));const atlasDistance=Math.max(packingHeight,packingWidth/availableAspect)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*(el.clientHeight/Math.max(160,el.clientHeight-reservedHeight))*1.08;
    const distance=T.MathUtils.lerp(normalDistance,Math.max(.2,atlasDistance),extent);if(extent>.8)view='front';
    const direction=view==='front'?new T.Vector3(0,.02,1):view==='back'?new T.Vector3(0,.02,-1):view==='side'?new T.Vector3(1,.02,0):new T.Vector3(.35,.06,1).normalize();
-   controls.target.set(extent>.1&&el.clientWidth>767?-packingWidth*.12:0,extent>.1||mobile?.85:.68,0);camera.position.copy(controls.target).addScaledVector(direction,distance);controls.update();dirty=true;
+   controls.target.set(0,.86,0);camera.position.copy(controls.target).addScaledVector(direction,distance);controls.update();dirty=true;
   };
   const resize=()=>{layoutKey='';lastState=null;renderer.setPixelRatio(Math.min(devicePixelRatio,el.clientWidth<768||el.clientHeight<600?1.5:2));camera.aspect=el.clientWidth/el.clientHeight;camera.updateProjectionMatrix();renderer.setSize(el.clientWidth,el.clientHeight);fit(latest.current.view,amount);};const observer=new ResizeObserver(resize);observer.observe(el);
   const raycaster=new T.Raycaster(),pointer=new T.Vector2(),tap=new PointerTap(),worldBox=new T.Box3(),hitPoint=new T.Vector3();
@@ -132,12 +135,12 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?600.0:kind<3.5?650.0:kin
   const clock=new T.Clock();let lastExtent=-1;
   const animate=()=>{
    if(disposed)return;frame=requestAnimationFrame(animate);const dt=Math.min(clock.getDelta(),.05),s=latest.current;
-   const changed=lastState?.visible!==s.visible||lastState?.selected!==s.selected||lastState?.isolate!==s.isolate;
+   const changed=lastState?.visible!==s.visible||lastState?.selected!==s.selected||lastState?.isolate!==s.isolate||lastState?.hidden!==s.hidden;
    const moving=Math.abs(amount-s.explode)>.0001;
    if(moving){amount=T.MathUtils.damp(amount,s.explode,8,dt);dirty=true;}
    if(changed||moving||lastExtent<0){
-    const visible=new Set(s.visible),selection=new Set(s.selected);
-    const visibleParts=atlas.parts.filter(p=>s.isolate?selection.has(p.id):visible.has(p.system)||selection.has(p.id));
+    const visible=new Set(s.visible),selection=new Set(s.selected),removed=new Set(s.hidden);
+    const visibleParts=atlas.parts.filter(p=>!removed.has(p.id)&&(s.isolate?selection.has(p.id):visible.has(p.system)||selection.has(p.id)));
     const nextLayoutKey=visibleParts.map(p=>p.id).join(',')+':'+camera.aspect.toFixed(3);
     if(nextLayoutKey!==layoutKey){const layout=createExplosionLayout(visibleParts,camera.aspect);packingWidth=layout.width;packingHeight=layout.height;atlas.parts.forEach((p,i)=>{const cell=layout.cells.get(p.id);offsets[i]=cell?new T.Vector3(cell.x,cell.y+.85,0):centers[i].clone();});layoutKey=nextLayoutKey;if(amount>.05&&!s.isolate)fit(s.view,Math.max(0,(amount-.3)/.7));}
 
@@ -145,10 +148,14 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?600.0:kind<3.5?650.0:kin
      const c=centers[i],destination=offsets[i];let dx=0,dy=0,dz=0;
      if(amount<=.45){const t=amount/.45;const group=SYSTEMS.findIndex(sys=>sys.id===p.system);const angle=group/SYSTEMS.length*Math.PI*2;dx=Math.sin(angle)*t*.48;dy=(c.y-.85)*t*.28;dz=Math.cos(angle)*t*.48;}
      else {const t=(amount-.45)/.55,group=SYSTEMS.findIndex(sys=>sys.id===p.system),angle=group/SYSTEMS.length*Math.PI*2;dx=T.MathUtils.lerp(Math.sin(angle)*.48,destination.x-c.x,t);dy=T.MathUtils.lerp((c.y-.85)*.28,destination.y-c.y,t);dz=T.MathUtils.lerp(Math.cos(angle)*.48,-c.z,t);}
-     const selected=selection.has(p.id);data.set([dx,dy,dz,(s.isolate?selected:visible.has(p.system)||selected)?1:0],i*4);selectedData[i*4]=selected?255:0;
+     const selected=selection.has(p.id);data.set([dx,dy,dz,!removed.has(p.id)&&(s.isolate?selected:visible.has(p.system)||selected)?1:0],i*4);selectedData[i*4]=selected?255:0;
      markerPositions.set(data[i*4+3]>.5?[c.x+dx,c.y+dy,c.z+dz]:[10000,10000,10000],i*3);const mesh=pickers[i];if(mesh){mesh.position.set(dx,dy,dz);mesh.updateMatrix();mesh.updateMatrixWorld(true);}
     });partTexture.needsUpdate=true;selectionTexture.needsUpdate=true;markerGeometry.attributes.position.needsUpdate=true;lastState=s;lastExtent=amount;dirty=true;
    }
+   const cutKey=s.cutAxis+':'+s.cut.toFixed(3);
+   if(cutKey!==lastCut){lastCut=cutKey;const on=s.cutAxis!=='none';
+    if(on){const min=bodyBox.min,max=bodyBox.max;if(s.cutAxis==='sagittal'){cutPlane.normal.set(-1,0,0);cutPlane.constant=T.MathUtils.lerp(min.x,max.x,s.cut);}else if(s.cutAxis==='coronal'){cutPlane.normal.set(0,0,-1);cutPlane.constant=T.MathUtils.lerp(min.z,max.z,s.cut);}else{cutPlane.normal.set(0,-1,0);cutPlane.constant=T.MathUtils.lerp(min.y,max.y,s.cut);}}
+    materials.forEach(m=>{const want=on?[cutPlane]:null;if((m.clippingPlanes?.length??0)!==(want?.length??0)){m.clippingPlanes=want;m.needsUpdate=true;}});dirty=true;}
    const ghost=s.selected.length&&!s.isolate?(s.ghost??0):0;
    if(ghost!==lastGhost){const on=ghost>0;materials.forEach(m=>{if(m.userData.skin===undefined)m.userData.skin=m.transparent;if(m.userData.skin)return;if(m.transparent!==on){m.transparent=on;m.depthWrite=!on;m.needsUpdate=true;}});ghostUniform.value=ghost;lastGhost=ghost;dirty=true;}
    if(s.view!==lastView||s.reset!==lastReset){fit(s.view,amount);lastView=s.view;lastReset=s.reset;}
@@ -156,7 +163,7 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?600.0:kind<3.5?650.0:kin
    const isolateKey=s.isolate?s.selected.join(',')+':'+s.reset+':'+s.inspectorOpen+':'+camera.aspect:'';
    if(isolateKey!==lastIsolate||(s.isolate&&moving)){
     if(s.isolate){const box=new T.Box3();atlas.parts.forEach((p,i)=>{if(s.selected.includes(p.id))box.union(bounds[i].clone().translate(new T.Vector3(data[i*4],data[i*4+1],data[i*4+2])));});
-     if(!box.isEmpty()){const center=box.getCenter(new T.Vector3()),size=box.getSize(new T.Vector3());const w=el.clientWidth,h=el.clientHeight,mobile=w<768,landscape=w>h&&h<=600;let left=20,right=w-20,top=mobile?175:110,bottom=h-170;if(s.inspectorOpen){if(landscape){right=w-335;top=100;bottom=h-125;}else if(mobile){const sheet=document.querySelector('.detail-sheet')?.getBoundingClientRect(),header=document.querySelector('.identity')?.getBoundingClientRect();top=(header?.bottom??94)+16;bottom=(sheet?.top??h*.58-139)-16;}else{right=w-370;left=w>1100?285:25;}}const availableWidth=Math.max(150,right-left),availableHeight=Math.max(40,bottom-top);camera.setViewOffset(w,h,w/2-(left+right)/2,h/2-(top+bottom)/2,w,h);const distance=Math.max(.07,Math.max(size.y*h/availableHeight,size.x*w/availableWidth/camera.aspect,size.z)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*1.35);controls.maxDistance=Math.max(40,distance*2);controls.target.copy(center);camera.position.copy(center).add(new T.Vector3(.2,.1,1).normalize().multiplyScalar(distance));controls.update();dirty=true;}
+     if(!box.isEmpty()){const center=box.getCenter(new T.Vector3()),size=box.getSize(new T.Vector3());const w=el.clientWidth,h=el.clientHeight,mobile=w<768,landscape=w>h&&h<=600;let left=24,right=w-24,top=mobile?24:36,bottom=h-(mobile?24:36);if(s.inspectorOpen){if(landscape){right=w-335;top=100;bottom=h-125;}else if(mobile){const sheet=document.querySelector('.detail-sheet')?.getBoundingClientRect(),header=document.querySelector('.identity')?.getBoundingClientRect();top=(header?.bottom??94)+16;bottom=(sheet?.top??h*.58-139)-16;}else{right=w-370;left=w>1100?285:25;}}const availableWidth=Math.max(150,right-left),availableHeight=Math.max(40,bottom-top);camera.setViewOffset(w,h,w/2-(left+right)/2,h/2-(top+bottom)/2,w,h);const distance=Math.max(.07,Math.max(size.y*h/availableHeight,size.x*w/availableWidth/camera.aspect,size.z)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*1.35);controls.maxDistance=Math.max(40,distance*2);controls.target.copy(center);camera.position.copy(center).add(new T.Vector3(.2,.1,1).normalize().multiplyScalar(distance));controls.update();dirty=true;}
     }else if(lastIsolate){camera.clearViewOffset();fit(s.view,amount);}
     lastIsolate=isolateKey;
    }

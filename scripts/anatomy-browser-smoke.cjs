@@ -28,7 +28,7 @@ const server = http.createServer((request, response) => {
     const page = await browser.newPage({ viewport: { width: 1365, height: 900 }, deviceScaleFactor: 1 });
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
-    await page.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/", { waitUntil: "domcontentloaded" });
+    await page.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/coracao/", { waitUntil: "domcontentloaded" });
     await page.locator("[data-anatomy-viewer].is-ready").waitFor({ timeout: 45000 });
     assert.equal(await page.locator("[data-anatomy-viewer].is-static").count(), 0);
     await page.locator(".anatomy-stage-card").screenshot({ path: path.resolve(__dirname, "../build/anatomy-exterior.png") });
@@ -47,14 +47,14 @@ const server = http.createServer((request, response) => {
     const atlasErrors = [];
     atlas.on("pageerror", error => atlasErrors.push(error.message));
     await atlas.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/atlas/", { waitUntil: "domcontentloaded" });
-    await atlas.locator(".system-row").first().waitFor({ timeout: 45000 });
-    assert.equal(await atlas.locator(".system-row").count(), 15);
+    await atlas.locator(".atlas-system").first().waitFor({ timeout: 45000 });
+    assert.equal(await atlas.locator(".atlas-system").count(), 15);
     await atlas.locator("canvas").first().waitFor({ timeout: 45000 });
-    await atlas.locator(".loading").waitFor({ state: "hidden", timeout: 120000 });
+    await atlas.locator(".atlas-loading").waitFor({ state: "hidden", timeout: 120000 });
     await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-desktop.png") });
     await atlas.setViewportSize({ width: 390, height: 844 });
-    await atlas.getByRole("button", { name: "Abrir sistemas" }).click();
-    await atlas.locator(".system-row").first().waitFor({ state: "visible" });
+    await atlas.getByRole("button", { name: "Sistemas" }).click();
+    await atlas.locator(".atlas-system").first().waitFor({ state: "visible" });
     await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-mobile.png") });
     assert.equal(atlasErrors.length, 0, atlasErrors.join("\n"));
     assert.equal(errors.filter(message => message.includes("anatomy")).length, 0, errors.join("\n"));

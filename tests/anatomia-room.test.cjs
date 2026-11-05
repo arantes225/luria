@@ -14,7 +14,7 @@ test("Sala de Anatomia está ligada ao hub Aprender e à navegação móvel", ()
 });
 
 test("modelo segmentado possui seleção real, interior e fluxo didático", () => {
-  const page = read("aprender/anatomia/index.html");
+  const page = read("aprender/anatomia/coracao/index.html");
   const viewer = read("assets/js/anatomy-heart-entry.mjs");
   const build = read("scripts/build-anatomy-viewer.cjs");
   assert.match(page, /data-anatomy-interior/);
@@ -36,16 +36,18 @@ test("publicação substitui o GLB do repositório pelo atlas verificado", () =>
   assert.match(read("assets/js/anatomy-loading-guard.js"), /anatomy-static-fallback/);
 });
 
-test("Sala reestilizada liga os quatro módulos e guarda créditos num card discreto", () => {
+test("Sala de Anatomia é o atlas aberto no layout do site, com créditos discretos", () => {
   const page = read("aprender/anatomia/index.html");
-  for (const href of ["/aprender/anatomia/atlas/", "/aprender/anatomia/corpo/", "/aprender/anatomia/laboratorio/", "#coracao"]) {
-    assert.match(page, new RegExp('href="' + href.replace(/[.*+?^${}()|[\]\/]/g, "\$&") + '"'));
-  }
+  assert.match(page, /traube-page-spotlight/);
+  assert.ok(page.includes('src="/aprender/anatomia/atlas/?embed=1"'), "atlas embutido na Sala");
+  assert.match(page, /frame-src 'self'/);
+  for (const tab of ["atlas", "micro", "quiz"]) assert.match(page, new RegExp('data-room-tab="' + tab + '"'));
+  assert.ok(page.includes('href="/aprender/anatomia/coracao/"'), "link para o coração em detalhe");
   const credits = page.slice(page.indexOf('id="creditos"'));
-  const body = page.replace(credits, "");
-  assert.doesNotMatch(body, /Human Atlas|BodyVista|ashemag|OrganUI/, "marcas de terceiros só no card de créditos");
+  assert.doesNotMatch(page.replace(credits, ""), /Human Atlas|BodyVista|ashemag|OrganUI/, "marcas de terceiros só no card de créditos");
   assert.match(credits, /BodyParts3D/);
-  assert.match(read("assets/js/app.js"), /anatomia: \{ title: "Sala de Anatomia"/);
+  assert.ok(read("assets/js/app.js").includes('anatomia: { title: "Sala de Anatomia"'), "PAGE_INFO da Sala");
+  assert.equal(fs.existsSync(path.join(root, "aprender/anatomia/corpo")), false, "corpo dissecável removido");
 });
 
 test("atlas usa sobreposição em português sem marca de terceiros", () => {
@@ -53,8 +55,9 @@ test("atlas usa sobreposição em português sem marca de terceiros", () => {
   const page = read(overlay + "app/page.tsx");
   assert.match(read(overlay + "web/index.html"), /lang="pt-BR"/);
   assert.doesNotMatch(read(overlay + "web/index.html"), /Human Atlas/);
-  assert.match(page, /Atlas do corpo/);
-  assert.match(page, /Créditos/);
+  assert.match(page, /removeSelected/);
+  assert.match(page, /cutAxis/);
+  assert.match(page, /THEME_VARS/);
   assert.match(read(overlay + "app/scene.tsx"), /controls\.zoomToCursor=true/);
   const glossary = read("tools/anatomy-atlas/glossario-pt.tsv").trim().split(/\r?\n/);
   assert.ok(glossary.length >= 2600, "glossário cobre os termos do atlas");
@@ -62,11 +65,7 @@ test("atlas usa sobreposição em português sem marca de terceiros", () => {
   assert.ok(read("scripts/build-human-atlas.cjs").includes("quebras de linha normalizadas"), "hash independe de CRLF/LF");
 });
 
-test("corpo dissecável e laboratório estão traduzidos e com licenças", () => {
-  const corpus = read("aprender/anatomia/corpo/corpus-pt.js");
-  assert.ok((corpus.match(/^ "[^"]+":\[/gm) || []).length >= 107, "107 estruturas traduzidas");
-  assert.match(read("aprender/anatomia/corpo/corpus.js"), /zoom em direção ao/);
-  assert.match(read("aprender/anatomia/corpo/LICENSE-corpus.txt"), /MIT License/);
+test("laboratório (microscopia e desafio) está traduzido e com licenças", () => {
   const scenes = read("aprender/anatomia/laboratorio/micro-scenes.mjs");
   assert.doesNotMatch(scenes, /[\u4e00-\u9fff]/, "sem rótulos em chinês");
   const bank = JSON.parse(read("aprender/anatomia/laboratorio/questoes-pt.json")).questoes;
