@@ -96,9 +96,25 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Run outstanding editorial and external PIN tests
         run: node --test --test-isolation=none tests/apostilas-batch.test.cjs tests/quick-chart-daily-code.test.cjs tests/quick-chart-pairing.test.cjs tests/notes-independent.test.cjs
+  anatomy-bundle:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pinned 3D build dependencies
+        run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12
+      - name: Verify heart model and build browser module
+        run: node scripts/build-anatomy-viewer.cjs
+
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [quality, historical-regressions]
+    needs: [quality, historical-regressions, anatomy-bundle]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -110,8 +126,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24'
+      - name: Install pinned 3D build dependencies
+        run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12
       - name: Prepare public assets only
         run: node scripts/build-pages.cjs
+      - name: Replace visualizer with verified browser module
+        run: node scripts/build-anatomy-viewer.cjs
       - name: Prepare optimized UI images
         uses: actions/setup-python@v5
         with:
