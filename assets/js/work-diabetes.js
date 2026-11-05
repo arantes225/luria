@@ -2,6 +2,7 @@
 (() => {
   'use strict';
   const root = document.getElementById('diabetes-app');
+  try {
   const data = window.TraubeDiabetesData;
   if (!root || !data) {
     if (root) root.textContent = 'O catálogo de Diabetes não pôde ser carregado.';
@@ -258,4 +259,17 @@
     renderHistory();
   });
   renderHistory();
+
+  } catch (error) {
+    // A visible, accessible failure is safer than an indefinitely spinning loader.
+    console.error('Traube Diabetes: falha ao iniciar a central', error);
+    if (root) {
+      root.innerHTML = '<section class="dm-panel" role="alert">' +
+        '<h2>Não foi possível carregar a central Diabetes</h2>' +
+        '<p>Houve um erro ao iniciar esta página. Recarregue para tentar novamente.</p>' +
+        '<button type="button" id="dm-reload" class="dm-btn primary">Recarregar página</button>' +
+        '</section>';
+      root.querySelector('#dm-reload')?.addEventListener('click', () => window.location.reload());
+    }
+  }
 })();
