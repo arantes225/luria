@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261104-logo-v2";
+const CACHE_VERSION = "traube-pwa-20261105-anatomia-fix1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -31,6 +31,7 @@ const APP_SHELL = [
   "/assets/vendor/traube-anatomy-viewer.mjs?v=1",
   "/assets/models/anatomia/coracao.glb",
   "/assets/img/anatomia/coracao-estatico.webp",
+  "/assets/js/anatomy-loading-guard.js?v=1",
   "/feynman/",
   "/consolidar/",
   "/cronograma/",
