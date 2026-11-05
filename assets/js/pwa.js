@@ -31,7 +31,7 @@
   if (new URL(document.baseURI).pathname !== "/") return;
 
 
-  const release = "20261104-logo-v2";
+  const release = "20261105-anatomia-fix1";
 
   
 
