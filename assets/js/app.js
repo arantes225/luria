@@ -1404,7 +1404,7 @@ const sb = window.supabaseClient;
 
 const PAGE_INFO = {
   dashboard: { title: "Dashboard", eyebrow: "Visão geral", helper: "Seu dia de estudos em um só lugar." },
-  anatomia: { title: "Sala de Anatomia", eyebrow: "Aprender", helper: "Explore o corpo em 3D, disseque, aproxime até o microscópio e teste o que aprendeu." },
+  anatomia: { title: "Sala de Anatomia", eyebrow: "Aprender", helper: "Atlas 3D do corpo humano: selecione, corte, remova estruturas e estude por sistemas." },
   vocacao: { title: "Mapa de interesses", eyebrow: "Orientação de carreira", helper: "Explore interesses profissionais e áreas de acesso direto." },
   sessao_estudo: { title: "Sessão de estudo do dia", eyebrow: "Estudar agora", helper: "Complete as etapas planejadas para hoje no seu ritmo." },
   cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos", helper: "Organize o que estudar e quando revisar." },

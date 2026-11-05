@@ -255,3 +255,31 @@ body[data-page="anatomia"] :is(.anatomy-page,.lab-page){position:relative}
 body[data-page="anatomia"] .anatomy-credits-trigger{position:static;display:block;margin:1.25rem 0 0 auto;box-shadow:none}
 body[data-page="anatomia"] .anatomy-credits-card{position:absolute;right:0;bottom:3rem}
 @media(max-width:560px){body[data-page="anatomia"] .anatomy-credits-trigger{bottom:auto}body[data-page="anatomia"] .anatomy-credits-card{bottom:3rem}}
+
+/* ===== Sala de Anatomia = atlas aberto no layout do site ===== */
+body[data-page="anatomia"] .anatomy-room{position:relative;display:grid;gap:14px}
+body[data-page="anatomia"] .anatomy-room .traube-page-spotlight{margin:0!important}
+.anatomy-room-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.anatomy-room-tabs,.anatomy-room-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.anatomy-room-tabs [role="tab"],.anatomy-room-link,.anatomy-room-ghost{display:inline-flex;align-items:center;min-height:38px;padding:0 16px;border-radius:999px;border:1px solid var(--color-border,#d8e3f3);background:var(--color-surface,#fff);color:var(--color-text-primary,#10243E);font:650 13px/1 var(--font-ui,"Traube Inter",Inter,system-ui,sans-serif);text-decoration:none;cursor:pointer;box-shadow:0 2px 8px rgba(15,35,66,.04);transition:background .18s,color .18s,border-color .18s,box-shadow .18s}
+.anatomy-room-tabs [role="tab"]:hover,.anatomy-room-link:hover,.anatomy-room-ghost:hover{border-color:var(--color-border-interactive,#bcd3f5);color:var(--color-primary,#184888)}
+.anatomy-room-tabs [role="tab"][aria-selected="true"]{background:var(--ui-pill-gradient,linear-gradient(135deg,#184888,#2563EB,#0EA5E9));color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(24,72,136,.22)}
+.anatomy-room-link{color:var(--color-text-secondary,#4E6178)}
+.anatomy-room-link::after{content:"→";margin-left:6px}
+.anatomy-room-ghost{color:var(--color-text-secondary,#4E6178)}
+.anatomy-room-ghost[hidden]{display:none}
+.anatomy-room-stage{position:relative;height:clamp(560px,calc(100dvh - 290px),900px);border-radius:var(--ui-radius-card,1.375rem);overflow:hidden;border:1px solid var(--color-border,#d8e3f3);background:var(--color-surface,#fff);box-shadow:var(--ui-shadow,0 14px 34px rgb(15 35 66 / 7%))}
+.anatomy-room-stage:fullscreen{height:100vh;border-radius:0;border:0}
+.anatomy-room-frame{display:block;width:100%;height:100%;border:0;background:transparent}
+body[data-page="anatomia"] .anatomy-room > .anatomy-credits-card{position:absolute;top:186px;right:0;bottom:auto;z-index:20}
+body[data-page="anatomia"] .anatomy-back{justify-self:start;font-size:13px;font-weight:650;color:var(--color-primary,#184888);text-decoration:none;margin-bottom:6px;display:inline-block}
+@media(max-width:760px){
+  .anatomy-room-bar{align-items:stretch}
+  .anatomy-room-tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}
+  .anatomy-room-tabs [role="tab"],.anatomy-room-link{flex:none}
+  .anatomy-room-stage{height:calc(100dvh - 200px);min-height:520px}
+  body[data-page="anatomia"] .anatomy-room > .anatomy-credits-card{top:150px;left:0;right:0;width:auto}
+}
+/* O atlas já desenha os próprios cards; o contêiner da Sala fica transparente. */
+.anatomy-room-stage{border:0;background:transparent;box-shadow:none;border-radius:0;overflow:visible}
+.anatomy-room-stage:fullscreen{background:var(--color-background,#EEF4FF)}
