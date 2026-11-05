@@ -32,8 +32,8 @@ body[data-page="anatomia"] .page { max-width: 1540px; }
 
 .anatomy-workspace { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(300px, .72fr); gap: 18px; min-height: 650px; }
 .anatomy-stage-card, .anatomy-info-card, .anatomy-lesson-card { border: 1px solid var(--anatomy-line); border-radius: 26px; background: var(--anatomy-surface); box-shadow: var(--anatomy-shadow); }
-.anatomy-stage-card { position: relative; min-width: 0; overflow: hidden; background: radial-gradient(circle at 50% 38%, color-mix(in srgb, var(--anatomy-primary) 12%, #fff) 0, color-mix(in srgb, var(--anatomy-primary) 3%, #eef4fb) 42%, color-mix(in srgb, var(--anatomy-primary) 10%, #dce7f3) 100%); }
-.anatomy-stage-card::before { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(var(--anatomy-line) 1px, transparent 1px), linear-gradient(90deg, var(--anatomy-line) 1px, transparent 1px); background-size: 42px 42px; opacity: .22; mask-image: radial-gradient(circle at center, black, transparent 72%); }
+.anatomy-stage-card { position: relative; min-width: 0; overflow: hidden; background: radial-gradient(ellipse at 50% 42%, #42515a 0%, #263540 45%, #101b27 100%); }
+.anatomy-stage-card::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, transparent 30%, rgba(3, 10, 18, .22) 100%); }
 .anatomy-stage-head { position: absolute; z-index: 5; inset: 18px 18px auto 18px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; pointer-events: none; }
 .anatomy-stage-title { padding: 10px 13px; border: 1px solid color-mix(in srgb, var(--anatomy-primary) 15%, transparent); border-radius: 14px; background: color-mix(in srgb, var(--anatomy-surface) 82%, transparent); backdrop-filter: blur(14px); }
 .anatomy-stage-title strong, .anatomy-stage-title span { display: block; }
