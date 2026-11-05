@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261105-diabetes-runtime1-anatomia-atlas4";
+const CACHE_VERSION = "traube-pwa-20261105-diabetes-runtime1-anatomia-atlas-ptbr1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -27,6 +27,7 @@ const APP_SHELL = [
   "/questoes-simulados/",
   "/aprender/",
   "/aprender/anatomia/",
+  "/aprender/anatomia/coracao/",
   "/assets/css/anatomia.css?v=1",
   "/assets/vendor/traube-anatomy-viewer.mjs?v=1",
   "/assets/models/anatomia/coracao.glb",
