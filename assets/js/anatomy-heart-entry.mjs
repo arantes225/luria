@@ -93,20 +93,69 @@ if (root) {
     renderer.setPixelRatio(Math.min(devicePixelRatio, 1.6));
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.1;
+    renderer.toneMappingExposure = 1.0;
+    renderer.localClippingEnabled = true;
     const controls = new OrbitControls(camera, canvas);
     controls.enableDamping = !reducedMotion;
     controls.enablePan = false;
     controls.minDistance = 4;
     controls.maxDistance = 12;
     controls.autoRotate = false;
-    scene.add(new THREE.HemisphereLight(0xfff2e9, 0x736174, 2.4));
-    const key = new THREE.DirectionalLight(0xffeadc, 3);
-    key.position.set(4, 6, 7);
+    scene.add(new THREE.HemisphereLight(0xffe9dd, 0x47343c, 1.15));
+    const key = new THREE.DirectionalLight(0xffe2cf, 3.3);
+    key.position.set(4, 6, 5);
     scene.add(key);
-    const fill = new THREE.DirectionalLight(0xc9dbff, 1.5);
-    fill.position.set(-5, 0, 4);
+    const fill = new THREE.DirectionalLight(0xc4d7ef, 0.8);
+    fill.position.set(-5, 1, 3);
     scene.add(fill);
+    const rim = new THREE.DirectionalLight(0xffd2bf, 1.6);
+    rim.position.set(-2, 3, -5);
+    scene.add(rim);
+    // Subtle tissue variation is generated in object space, so the atlas geometry
+    // and its anatomical IDs remain untouched and selection still follows the mesh.
+    function tissueMaterial(color, vessel) {
+      const material = new THREE.MeshPhysicalMaterial({
+        color, roughness: vessel ? 0.66 : 0.83, metalness: 0,
+        clearcoat: vessel ? 0.18 : 0.08, clearcoatRoughness: 0.72,
+        side: THREE.DoubleSide
+      });
+      material.onBeforeCompile = shader => {
+        shader.vertexShader = shader.vertexShader.replace(
+          '#include <common>',
+          '#include <common>\nvarying vec3 vTissuePosition;'
+        ).replace(
+          '#include <begin_vertex>',
+          '#include <begin_vertex>\nvTissuePosition = position;'
+        );
+        shader.fragmentShader = shader.fragmentShader.replace(
+          '#include <common>',
+          `#include <common>
+          varying vec3 vTissuePosition;
+          float tissueHash(vec3 p) {
+            p = fract(p * 0.1031);
+            p += dot(p, p.yxz + 33.33);
+            return fract((p.x + p.y) * p.z);
+          }
+          float tissueNoise(vec3 p) {
+            vec3 i = floor(p), f = fract(p);
+            f = f * f * (3.0 - 2.0 * f);
+            return mix(mix(mix(tissueHash(i), tissueHash(i + vec3(1,0,0)), f.x),
+                           mix(tissueHash(i + vec3(0,1,0)), tissueHash(i + vec3(1,1,0)), f.x), f.y),
+                       mix(mix(tissueHash(i + vec3(0,0,1)), tissueHash(i + vec3(1,0,1)), f.x),
+                           mix(tissueHash(i + vec3(0,1,1)), tissueHash(i + vec3(1,1,1)), f.x), f.y), f.z);
+          }`
+        ).replace(
+          '#include <color_fragment>',
+          `#include <color_fragment>
+          float tissueBroad = tissueNoise(vTissuePosition * 9.0);
+          float tissueFine = tissueNoise(vTissuePosition * 47.0);
+          float tissueGrain = 0.78 + 0.31 * tissueBroad + 0.11 * tissueFine;
+          diffuseColor.rgb *= tissueGrain;`
+        );
+      };
+      material.customProgramCacheKey = () => 'anatomy-tissue-v1';
+      return material;
+    }
     let organ = null;
     let interior = false;
     let flowEnabled = false;
@@ -114,6 +163,7 @@ if (root) {
     const raycaster = new THREE.Raycaster();
     const pointer = new THREE.Vector2();
     const blood = new THREE.Group();
+    const ventricularCut = new THREE.Plane(new THREE.Vector3(0, 0, -1), 0.05);
     scene.add(blood);
     blood.visible = false;
     const particles = [];
@@ -149,14 +199,15 @@ if (root) {
       for (const [id, mesh] of meshes) {
         mesh.visible = active || (id !== "right-ventricle" && id !== "left-ventricle");
         if (id === "ventricular-wall") {
-          mesh.material.transparent = active;
-          mesh.material.opacity = active ? 0.15 : 1;
-          mesh.material.depthWrite = !active;
+          mesh.material.clippingPlanes = active ? [ventricularCut] : [];
+          mesh.material.transparent = false;
+          mesh.material.opacity = 1;
+          mesh.material.depthWrite = true;
           mesh.material.needsUpdate = true;
         }
       }
       blood.visible = active && flowEnabled;
-      announce(active ? "Cavidades ventriculares expostas; a parede está translúcida." : "Vista externa do coração.");
+      announce(active ? "Cavidades ventriculares expostas por um corte didático da parede." : "Vista externa do coração.");
     }
     document.querySelector("[data-anatomy-interior]")?.addEventListener("click", () => setInterior(true));
     document.querySelector("[data-anatomy-exterior]")?.addEventListener("click", () => setInterior(false));
@@ -183,11 +234,7 @@ if (root) {
           const id = object.userData.structureId || object.name;
           const structure = byId.get(id);
           if (!structure) return;
-          const material = Array.isArray(object.material) ? object.material[0] : object.material;
-          object.material = material.clone();
-          object.material.color.set(structure.color);
-          object.material.roughness = 0.72;
-          object.material.metalness = 0;
+          object.material = tissueMaterial(structure.color, structure.group === "Grandes vasos" || structure.group === "Coronárias");
           object.userData.structureId = id;
           meshes.set(id, object);
         });

@@ -26,14 +26,18 @@ body[data-page="anatomia"] .page { max-width: 1540px; }
 .anatomy-catalog { display: flex; gap: 10px; overflow-x: auto; padding: 2px 1px 5px; scrollbar-width: thin; }
 .anatomy-organ-chip { min-width: max-content; display: inline-flex; align-items: center; gap: 9px; min-height: 42px; padding: 0 15px; border: 1px solid var(--anatomy-line); border-radius: 999px; background: var(--anatomy-surface); color: var(--anatomy-muted); font: 750 .86rem/1 system-ui, sans-serif; }
 .anatomy-organ-chip span { font-size: 1rem; }
+.anatomy-organ-chip-atlas { color: var(--anatomy-primary); text-decoration: none; border-color: color-mix(in srgb, var(--anatomy-primary) 35%, transparent); }
+.anatomy-organ-chip-atlas:hover, .anatomy-organ-chip-atlas:focus-visible { background: var(--anatomy-wash); }
+.anatomy-atlas-note { margin: -14px 2px 0; color: var(--anatomy-muted); font-size: .76rem; line-height: 1.5; }
+.anatomy-atlas-note a { color: var(--anatomy-primary); }
 .anatomy-organ-chip.is-active { border-color: color-mix(in srgb, var(--anatomy-primary) 45%, transparent); background: var(--anatomy-primary); color: #fff; box-shadow: 0 8px 18px color-mix(in srgb, var(--anatomy-primary) 25%, transparent); }
 .anatomy-organ-chip[disabled] { opacity: .55; cursor: not-allowed; }
 .anatomy-organ-chip em { font-style: normal; font-size: .65rem; opacity: .75; }
 
 .anatomy-workspace { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(300px, .72fr); gap: 18px; min-height: 650px; }
 .anatomy-stage-card, .anatomy-info-card, .anatomy-lesson-card { border: 1px solid var(--anatomy-line); border-radius: 26px; background: var(--anatomy-surface); box-shadow: var(--anatomy-shadow); }
-.anatomy-stage-card { position: relative; min-width: 0; overflow: hidden; background: radial-gradient(circle at 50% 38%, color-mix(in srgb, var(--anatomy-primary) 12%, #fff) 0, color-mix(in srgb, var(--anatomy-primary) 3%, #eef4fb) 42%, color-mix(in srgb, var(--anatomy-primary) 10%, #dce7f3) 100%); }
-.anatomy-stage-card::before { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(var(--anatomy-line) 1px, transparent 1px), linear-gradient(90deg, var(--anatomy-line) 1px, transparent 1px); background-size: 42px 42px; opacity: .22; mask-image: radial-gradient(circle at center, black, transparent 72%); }
+.anatomy-stage-card { position: relative; min-width: 0; overflow: hidden; background: radial-gradient(ellipse at 50% 42%, #42515a 0%, #263540 45%, #101b27 100%); }
+.anatomy-stage-card::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at center, transparent 30%, rgba(3, 10, 18, .22) 100%); }
 .anatomy-stage-head { position: absolute; z-index: 5; inset: 18px 18px auto 18px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; pointer-events: none; }
 .anatomy-stage-title { padding: 10px 13px; border: 1px solid color-mix(in srgb, var(--anatomy-primary) 15%, transparent); border-radius: 14px; background: color-mix(in srgb, var(--anatomy-surface) 82%, transparent); backdrop-filter: blur(14px); }
 .anatomy-stage-title strong, .anatomy-stage-title span { display: block; }
