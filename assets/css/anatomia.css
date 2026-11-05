@@ -26,6 +26,10 @@ body[data-page="anatomia"] .page { max-width: 1540px; }
 .anatomy-catalog { display: flex; gap: 10px; overflow-x: auto; padding: 2px 1px 5px; scrollbar-width: thin; }
 .anatomy-organ-chip { min-width: max-content; display: inline-flex; align-items: center; gap: 9px; min-height: 42px; padding: 0 15px; border: 1px solid var(--anatomy-line); border-radius: 999px; background: var(--anatomy-surface); color: var(--anatomy-muted); font: 750 .86rem/1 system-ui, sans-serif; }
 .anatomy-organ-chip span { font-size: 1rem; }
+.anatomy-organ-chip-atlas { color: var(--anatomy-primary); text-decoration: none; border-color: color-mix(in srgb, var(--anatomy-primary) 35%, transparent); }
+.anatomy-organ-chip-atlas:hover, .anatomy-organ-chip-atlas:focus-visible { background: var(--anatomy-wash); }
+.anatomy-atlas-note { margin: -14px 2px 0; color: var(--anatomy-muted); font-size: .76rem; line-height: 1.5; }
+.anatomy-atlas-note a { color: var(--anatomy-primary); }
 .anatomy-organ-chip.is-active { border-color: color-mix(in srgb, var(--anatomy-primary) 45%, transparent); background: var(--anatomy-primary); color: #fff; box-shadow: 0 8px 18px color-mix(in srgb, var(--anatomy-primary) 25%, transparent); }
 .anatomy-organ-chip[disabled] { opacity: .55; cursor: not-allowed; }
 .anatomy-organ-chip em { font-style: normal; font-size: .65rem; opacity: .75; }
