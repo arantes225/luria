@@ -25,6 +25,14 @@ if (root) {
     { id: "left-ventricle", label: "Ventrículo esquerdo", latin: "Ventriculus sinister", detail: "Câmara de parede espessa que gera a pressão necessária para impulsionar o sangue por toda a circulação sistêmica.", flow: "Coração → aorta → corpo", point: [0.7, -0.75, 0.65], color: "#f2a33b" },
     { id: "right-ventricle", label: "Ventrículo direito", latin: "Ventriculus dexter", detail: "Bombeia o sangue venoso através do tronco pulmonar em direção aos pulmões para realizar a hematose.", flow: "Coração → pulmões", point: [-0.65, -0.68, 0.66], color: "#ef6b62" },
     { id: "mitral", label: "Valva mitral", latin: "Valva atrioventricularis sinistra", detail: "Valva bicúspide entre o átrio e o ventrículo esquerdos. Evita o refluxo durante a sístole ventricular.", flow: "Fluxo unidirecional no coração esquerdo", point: [0.18, -1.35, 0.48], color: "#d98fc0" },
+
+    { id: "pulmonary-trunk", label: "Tronco pulmonar", latin: "Truncus pulmonalis", detail: "Sai do ventrículo direito e se divide nas artérias pulmonares, levando sangue aos pulmões.", flow: "Ventrículo direito → pulmões", point: [-0.55, 1.22, 0.58], color: "#4f8fd4" },
+    { id: "vena-cava", label: "Veia cava superior", latin: "Vena cava superior", detail: "Traz ao átrio direito o sangue venoso da cabeça, do pescoço, dos membros superiores e do tórax.", flow: "Corpo → átrio direito", point: [-1.02, 1.08, 0.42], color: "#547bc5" },
+    { id: "pulmonary-veins", label: "Veias pulmonares", latin: "Venae pulmonales", detail: "Devolvem ao átrio esquerdo o sangue oxigenado nos pulmões.", flow: "Pulmões → átrio esquerdo", point: [1.08, 0.9, 0.36], color: "#e47a75" },
+    { id: "coronary", label: "Artérias coronárias", latin: "Arteriae coronariae", detail: "Ramificações da aorta que irrigam o músculo cardíaco. O trajeto destacado neste modelo é apenas uma referência visual.", flow: "Aorta → miocárdio", point: [0.12, 0.05, 0.83], color: "#f5a85f" },
+    { id: "tricuspid", label: "Valva tricúspide", latin: "Valva atrioventricularis dextra", detail: "Entre o átrio e o ventrículo direitos, limita o refluxo de sangue durante a contração ventricular.", flow: "Átrio direito → ventrículo direito", point: [-0.65, -0.18, 0.52], color: "#9f9ce5" },
+    { id: "aortic-valve", label: "Valva aórtica", latin: "Valva aortae", detail: "Na saída do ventrículo esquerdo para a aorta, impede o retorno do sangue ao ventrículo.", flow: "Ventrículo esquerdo → aorta", point: [-0.18, 1.18, 0.55], color: "#eab363" },
+    { id: "myocardium", label: "Miocárdio", latin: "Myocardium", detail: "Camada muscular do coração que se contrai para impulsionar o sangue. A superfície externa exibida é um modelo anatômico.", flow: "Contração → ejeção", point: [0.18, -0.8, 0.7], color: "#b94d59" },
   ];
 
   function updateInfo(structure) {
@@ -37,6 +45,22 @@ if (root) {
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
     });
+  }
+
+
+  const detailCard = document.createElement("section");
+  detailCard.className = "anatomy-picked-card";
+  detailCard.hidden = true;
+  detailCard.setAttribute("aria-label", "Estrutura identificada");
+  detailCard.innerHTML = '<button type="button" class="anatomy-picked-close" aria-label="Fechar informação">×</button><small>ESTRUTURA IDENTIFICADA</small><h3></h3><em></em><p></p><span></span>';
+  root.append(detailCard);
+  detailCard.querySelector("button").addEventListener("click", () => { detailCard.hidden = true; });
+  function showDetailCard(structure) {
+    detailCard.querySelector("h3").textContent = structure.label;
+    detailCard.querySelector("em").textContent = structure.latin;
+    detailCard.querySelector("p").textContent = structure.detail;
+    detailCard.querySelector("span").textContent = structure.flow;
+    detailCard.hidden = false;
   }
 
   viewerInit: {
@@ -124,6 +148,7 @@ if (root) {
     if (!structure) return;
     selected = structure;
     updateInfo(structure);
+    showDetailCard(structure);
     markers.forEach((button, key) => button.classList.toggle("is-active", key === id));
 
     if (quiz?.active && fromModel) {
@@ -146,13 +171,18 @@ if (root) {
       const center = box.getCenter(new THREE.Vector3());
       const scale = 4.25 / Math.max(size.x, size.y, size.z);
       organ.position.sub(center);
-      organ.scale.setScalar(scale);
+      organ.scale.setScalar(scale * 0.82);
       organ.rotation.y = -0.08;
       organ.traverse(child => {
         if (!child.isMesh) return;
-        child.material = child.material.clone();
-        child.material.roughness = Math.min(0.72, child.material.roughness ?? 0.62);
-        child.material.metalness = 0;
+        const tint = material => {
+          const copy = material.clone();
+          copy.color.set("#b95b64");
+          copy.roughness = 0.9;
+          copy.metalness = 0;
+          return copy;
+        };
+        child.material = Array.isArray(child.material) ? child.material.map(tint) : tint(child.material);
       });
       scene.add(organ);
       loading.classList.add("is-hidden");
@@ -169,6 +199,115 @@ if (root) {
     }
   );
 
+
+  const interior = new THREE.Group();
+  interior.visible = false;
+  scene.add(interior);
+  const internalTargets = [];
+  const internalMaterial = (color, opacity = 1) => new THREE.MeshStandardMaterial({
+    color, roughness: 0.66, metalness: 0, transparent: opacity < 1, opacity,
+    side: THREE.DoubleSide, depthWrite: opacity === 1
+  });
+  function addChamber(id, x, y, z, sx, sy, sz, color) {
+    const mesh = new THREE.Mesh(new THREE.SphereGeometry(1, 32, 22), internalMaterial(color, 0.86));
+    mesh.position.set(x, y, z);
+    mesh.scale.set(sx, sy, sz);
+    mesh.userData.structureId = id;
+    interior.add(mesh);
+    internalTargets.push(mesh);
+  }
+  function addVessel(id, points, radius, color) {
+    const curve = new THREE.CatmullRomCurve3(points.map(p => new THREE.Vector3(...p)));
+    const mesh = new THREE.Mesh(new THREE.TubeGeometry(curve, 48, radius, 12, false), internalMaterial(color));
+    mesh.userData.structureId = id;
+    interior.add(mesh);
+    internalTargets.push(mesh);
+    return curve;
+  }
+  addChamber("right-atrium", -0.75, 0.7, 0, 0.48, 0.52, 0.34, "#467ac5");
+  addChamber("right-ventricle", -0.62, -0.72, 0, 0.6, 0.78, 0.37, "#2764a7");
+  addChamber("left-atrium", 0.72, 0.7, 0, 0.48, 0.52, 0.34, "#de7979");
+  addChamber("left-ventricle", 0.63, -0.72, 0, 0.63, 0.8, 0.39, "#b7374c");
+  const septum = new THREE.Mesh(new THREE.BoxGeometry(0.12, 2.25, 0.38), internalMaterial("#d89a91"));
+  septum.position.set(0, -0.13, -0.15);
+  interior.add(septum);
+  addVessel("vena-cava", [[-0.85, 2.05, 0], [-0.85, 1.25, 0], [-0.75, 0.77, 0]], 0.18, "#4d80c9");
+  addVessel("pulmonary-trunk", [[-0.62, -0.55, 0], [-0.65, 0.35, 0.1], [-0.42, 1.47, 0.12], [-0.82, 1.94, 0.12]], 0.17, "#478ac9");
+  addVessel("pulmonary-veins", [[1.75, 0.98, 0], [1.13, 0.82, 0], [0.74, 0.7, 0]], 0.13, "#d96b70");
+  addVessel("aorta", [[0.62, -0.5, 0], [0.5, 0.45, 0.15], [0.31, 1.67, 0.15], [0.8, 2.12, 0.1]], 0.18, "#c94253");
+  function addValve(id, x, y, color) {
+    const mesh = new THREE.Mesh(new THREE.TorusGeometry(0.3, 0.045, 10, 32), internalMaterial(color));
+    mesh.position.set(x, y, 0.39);
+    mesh.userData.structureId = id;
+    interior.add(mesh);
+    internalTargets.push(mesh);
+  }
+  addValve("tricuspid", -0.66, 0.12, "#c4b3ec");
+  addValve("mitral", 0.65, 0.12, "#f6baad");
+  addValve("aortic-valve", 0.52, 0.5, "#f5bf79");
+
+  const flowGroup = new THREE.Group();
+  interior.add(flowGroup);
+  const flows = [
+    { color: "#7ec2ff", points: [[-0.85, 1.95, 0.48], [-0.75, 0.72, 0.48], [-0.65, 0.05, 0.48], [-0.62, -0.74, 0.48], [-0.48, 0.56, 0.48], [-0.78, 1.8, 0.48]] },
+    { color: "#ff9b8e", points: [[1.65, 0.95, 0.48], [0.72, 0.7, 0.48], [0.64, 0.05, 0.48], [0.62, -0.8, 0.48], [0.48, 0.65, 0.48], [0.78, 2.05, 0.48]] }
+  ];
+  const movingBlood = flows.flatMap((flow, lane) => {
+    const curve = new THREE.CatmullRomCurve3(flow.points.map(p => new THREE.Vector3(...p)));
+    return Array.from({ length: 12 }, (_, index) => {
+      const dot = new THREE.Mesh(new THREE.SphereGeometry(0.055, 10, 8),
+        new THREE.MeshBasicMaterial({ color: flow.color }));
+      flowGroup.add(dot);
+      return { dot, curve, phase: (index / 12 + lane * 0.06) % 1 };
+    });
+  });
+  let interiorMode = false;
+  let flowEnabled = false;
+  const raycaster = new THREE.Raycaster();
+  const pointer = new THREE.Vector2();
+  const clock = new THREE.Clock();
+
+  function setInterior(active) {
+    interiorMode = active;
+    if (organ) organ.visible = !active;
+    interior.visible = active;
+    flowGroup.visible = active && flowEnabled;
+    root.dataset.anatomyMode = active ? "interior" : "exterior";
+    document.querySelector("[data-anatomy-interior]")?.setAttribute("aria-pressed", String(active));
+    document.querySelector("[data-anatomy-exterior]")?.setAttribute("aria-pressed", String(!active));
+    document.querySelector("[data-hotspot-layer]").hidden = active;
+    announce(active ? "Corte esquemático do coração. Clique nas câmaras, valvas ou vasos." : "Vista externa do coração.");
+  }
+  document.querySelector("[data-anatomy-interior]")?.addEventListener("click", () => setInterior(true));
+  document.querySelector("[data-anatomy-exterior]")?.addEventListener("click", () => setInterior(false));
+  const flowButton = document.querySelector("[data-anatomy-flow]");
+  flowButton?.addEventListener("click", () => {
+    flowEnabled = !flowEnabled;
+    if (flowEnabled) setInterior(true);
+    flowGroup.visible = flowEnabled && interiorMode;
+    flowButton.setAttribute("aria-pressed", String(flowEnabled));
+    flowButton.textContent = flowEnabled ? "Pausar fluxo" : "Mostrar fluxo";
+  });
+  canvas.addEventListener("click", event => {
+    if (!organ) return;
+    const rect = canvas.getBoundingClientRect();
+    pointer.set(((event.clientX - rect.left) / rect.width) * 2 - 1,
+      -((event.clientY - rect.top) / rect.height) * 2 + 1);
+    raycaster.setFromCamera(pointer, camera);
+    if (interiorMode) {
+      const hit = raycaster.intersectObjects(internalTargets, false)[0];
+      if (hit?.object.userData.structureId) selectStructure(hit.object.userData.structureId, true);
+      return;
+    }
+    const hit = raycaster.intersectObject(organ, true)[0];
+    if (!hit) return;
+    organ.updateMatrixWorld(true);
+    const nearby = structures.filter(item => ["aorta", "pulmonary-trunk", "vena-cava", "pulmonary-veins", "coronary"].includes(item.id))
+      .map(item => ({ item, distance: hit.point.distanceTo(new THREE.Vector3(...item.point).applyMatrix4(organ.matrixWorld)) }))
+      .sort((a, b) => a.distance - b.distance)[0];
+    selectStructure(nearby && nearby.distance < 0.72 ? nearby.item.id : "myocardium", true);
+  });
+
   function resize() {
     const rect = root.getBoundingClientRect();
     const width = Math.max(1, Math.round(rect.width));
@@ -183,7 +322,7 @@ if (root) {
   resize();
 
   function updateMarkers() {
-    if (!organ) return;
+    if (!organ || interiorMode) return;
     const width = root.clientWidth;
     const height = root.clientHeight;
     for (const structure of structures) {
@@ -195,6 +334,10 @@ if (root) {
   }
 
   function render() {
+    const elapsed = clock.getElapsedTime();
+    if (flowEnabled && interiorMode) movingBlood.forEach(({ dot, curve, phase }) => {
+      dot.position.copy(curve.getPoint((elapsed * 0.16 + phase) % 1));
+    });
     controls.update();
     renderer.render(scene, camera);
     updateMarkers();
