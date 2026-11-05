@@ -129,6 +129,7 @@ jobs:
         with:
           name: anatomy-visual-check
           path: |
+            build/anatomy-exterior.png
             build/anatomy-desktop.png
             build/anatomy-mobile.png
           if-no-files-found: ignore
