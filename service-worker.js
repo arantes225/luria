@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261105-diabetes-runtime1-anatomia-layers3";
+const CACHE_VERSION = "traube-pwa-20261105-diabetes-runtime1-anatomia-atlas4";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
