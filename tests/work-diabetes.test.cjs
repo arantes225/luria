@@ -112,7 +112,7 @@ test('Diabetes is discoverable in sidebar, mobile tools and first dashboard scre
   assert.match(index, /class="work-hub-diabetes-featured" href="\/trabalho\/diabetes\/"/);
   assert.ok(index.indexOf('work-hub-diabetes-featured') < index.indexOf('work-hub-patient'));
   assert.match(css, /work-hub-diabetes-featured/);
-  assert.match(sw, /traube-pwa-20261104-logo-v2/);
+  assert.match(sw, /traube-pwa-20261105-anatomia-fix1/);
   assert.match(index, /work-dashboard\.js\?v=20261102-diabetes-visible/);
   assert.match(html, /ui-navigation-v2\.js\?v=20261102-diabetes-visible/);
 });
