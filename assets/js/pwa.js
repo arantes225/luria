@@ -31,7 +31,7 @@
   if (new URL(document.baseURI).pathname !== "/") return;
 
 
-  const release = "20261105-diabetes-runtime1";
+  const release = "20261105-diabetes-runtime1-anatomia-bundle2";
 
   
 
