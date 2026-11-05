@@ -12,7 +12,7 @@ if (mode === "prepare") {
   const original = fs.readFileSync(pagePath, "utf8");
   const needle = "fetch('/models/atlas.json'";
   if (!original.includes(needle)) throw new Error("Human Atlas model URL changed upstream");
-  fs.writeFileSync(pagePath, original.replace(needle, "fetch(import.meta.env.BASE_URL+'models/atlas.json'"));
+  fs.writeFileSync(pagePath, original.replace(needle, "fetch(new URL('models/atlas.json',document.baseURI)"));
 
   const manifestPath = path.join(source, "public/models/atlas.json");
   const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
