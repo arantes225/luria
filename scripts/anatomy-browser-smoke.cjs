@@ -28,7 +28,7 @@ const server = http.createServer((request, response) => {
     const page = await browser.newPage({ viewport: { width: 1365, height: 900 }, deviceScaleFactor: 1 });
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
-    await page.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/", { waitUntil: "domcontentloaded" });
+    await page.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/coracao/", { waitUntil: "domcontentloaded" });
     await page.locator("[data-anatomy-viewer].is-ready").waitFor({ timeout: 45000 });
     assert.equal(await page.locator("[data-anatomy-viewer].is-static").count(), 0);
     await page.locator(".anatomy-stage-card").screenshot({ path: path.resolve(__dirname, "../build/anatomy-exterior.png") });
