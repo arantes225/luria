@@ -100,6 +100,8 @@ if (root) {
     controls.enablePan = false;
     controls.minDistance = 4;
     controls.maxDistance = 12;
+    // Zoom na direção do ponteiro, para aproximar exatamente a região de interesse.
+    controls.zoomToCursor = true;
     controls.autoRotate = false;
     scene.add(new THREE.HemisphereLight(0xffe9dd, 0x47343c, 1.15));
     const key = new THREE.DirectionalLight(0xffe2cf, 3.3);

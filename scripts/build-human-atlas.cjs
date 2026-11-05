@@ -1,45 +1,70 @@
 "use strict";
+// Monta o Atlas do corpo (/aprender/anatomia/atlas/) a partir do projeto MIT
+// fixado no deploy, aplicando a sobreposição TRAUBE de tools/anatomy-atlas:
+// interface em português, nomes PT de 5.090 estruturas, cores e microtextura
+// por tecido e tema visual do site. A licença MIT de origem vai junto no build
+// (LICENSE-human-atlas.txt) e os créditos dos dados ficam no botão "Fontes".
 const fs = require("node:fs");
 const path = require("node:path");
+const crypto = require("node:crypto");
+const { execFileSync } = require("node:child_process");
 
+const root = path.resolve(__dirname, "..");
 const source = path.resolve(process.argv[3] || "/tmp/luria-human-atlas");
-const output = path.resolve("build/pages/aprender/anatomia/atlas");
+const output = path.resolve(root, "build/pages/aprender/anatomia/atlas");
+const overlay = path.join(root, "tools/anatomy-atlas/overlay");
 const base = "/aprender/anatomia/atlas/";
 const mode = process.argv[2];
 
+// Arquivos de origem substituídos pela sobreposição. Se o projeto fixado mudar,
+// o hash muda e o build para, em vez de sobrescrever algo que não revisamos.
+const REPLACED = {
+  "app/page.tsx": "f62ddd7960bdbe99ef3da18e5f220ff8e2e1879a592fa74d6b97d7216d76e6d9",
+  "app/anatomy.ts": "092ebc28e6ea1e70a3c78bc6bb6f0651c6714f83960aa3be2ee57434f4b610f4",
+  "app/scene.tsx": "a90debd67d622543a7ede1fd07bc4cddd380a4977c7afcd21be08e70910cd2d8",
+  "app/globals.css": "efc2909fe2630a7abb6c3533e817185a8c60d495ff2e9e9d5ef577e0afa254c5",
+  "web/index.html": "0ac70a2c5f793183abec28f706a0dd1da6a90e68afb3bd840f341c04b8dfe8ea",
+};
+// Hash do texto com quebras de linha normalizadas (LF), igual em Windows e Linux.
+const sha = file => crypto.createHash("sha256").update(fs.readFileSync(file, "utf8").replace(/\r\n/g, "\n")).digest("hex");
+
 if (mode === "prepare") {
-  const pagePath = path.join(source, "app/page.tsx");
-  const original = fs.readFileSync(pagePath, "utf8");
-  const needle = "fetch('/models/atlas.json'";
-  if (!original.includes(needle)) throw new Error("Human Atlas model URL changed upstream");
-  fs.writeFileSync(pagePath, original.replace(needle, "fetch(new URL('models/atlas.json',document.baseURI)"));
+  for (const [rel, expected] of Object.entries(REPLACED)) {
+    const actual = sha(path.join(source, rel));
+    if (actual !== expected) throw new Error(`Arquivo de origem mudou (${rel}); revise a sobreposição antes de atualizar o hash`);
+  }
+  for (const rel of ["app/page.tsx", "app/anatomy.ts", "app/scene.tsx", "app/study.ts", "web/index.html"]) {
+    fs.copyFileSync(path.join(overlay, rel), path.join(source, rel));
+  }
+  fs.appendFileSync(path.join(source, "app/globals.css"), fs.readFileSync(path.join(overlay, "traube-theme.css")));
 
   const manifestPath = path.join(source, "public/models/atlas.json");
   const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
   if (!Array.isArray(manifest.chunks) || manifest.chunks.length < 10 || !Array.isArray(manifest.parts) || manifest.parts.length < 2000) {
-    throw new Error("Human Atlas catalogue coverage changed");
+    throw new Error("Cobertura do catálogo do atlas mudou");
   }
+  execFileSync(process.execPath, [
+    path.join(root, "tools/anatomy-atlas/build-pt-names.cjs"),
+    manifestPath,
+    path.join(source, "public/models/pt-names.json"),
+  ], { stdio: "inherit" });
   for (const chunk of manifest.chunks) {
     for (const key of ["url", "gzip"]) {
       if (chunk[key]) chunk[key] = base + "models/" + path.basename(chunk[key]);
     }
   }
   fs.writeFileSync(manifestPath, JSON.stringify(manifest));
-  console.log(`Human Atlas prepared: ${manifest.parts.length} selectable meshes, ${manifest.chunks.length} chunks`);
+  console.log(`Atlas preparado: ${manifest.parts.length} peças selecionáveis, ${manifest.chunks.length} blocos`);
 } else if (mode === "install") {
   const dist = path.join(source, "dist");
-  if (!fs.existsSync(path.join(dist, "index.html")) || !fs.existsSync(path.join(dist, "models/atlas.json"))) {
-    throw new Error("Human Atlas build is incomplete");
+  for (const rel of ["index.html", "models/atlas.json", "models/pt-names.json"]) {
+    if (!fs.existsSync(path.join(dist, rel))) throw new Error("Build do atlas incompleto: falta " + rel);
   }
   fs.cpSync(dist, output, { recursive: true, force: true });
   fs.copyFileSync(path.join(source, "LICENSE"), path.join(output, "LICENSE-human-atlas.txt"));
-  let html = fs.readFileSync(path.join(output, "index.html"), "utf8");
-  const navigation = '<a href="/aprender/anatomia/" aria-label="Voltar à Sala de Anatomia do LURIA" style="position:fixed;z-index:10000;left:12px;bottom:12px;display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid #b8c8ce;border-radius:999px;background:#fff;color:#123344;font:700 13px system-ui,sans-serif;text-decoration:none;box-shadow:0 8px 25px #12334425">← LURIA · Sala de Anatomia</a>';
-  if (!html.includes("</body>")) throw new Error("Human Atlas index changed upstream");
-  html = html.replace("</body>", navigation + "</body>");
-  fs.writeFileSync(path.join(output, "index.html"), html);
-  console.log(`Human Atlas installed at ${output}`);
+  const html = fs.readFileSync(path.join(output, "index.html"), "utf8");
+  if (/Human Atlas|LURIA/.test(html)) throw new Error("Marca de terceiros ou nome antigo no index do atlas");
+  console.log(`Atlas instalado em ${path.relative(root, output)}`);
 } else {
-  throw new Error("Use prepare or install");
+  throw new Error("Use prepare ou install");
 }
-

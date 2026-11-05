@@ -1,0 +1,73 @@
+
+/* ==== TRAUBE · tema do Atlas do corpo (anexado ao globals.css no build) ==== */
+@font-face{font-family:"Traube Inter";src:url("/assets/fonts/inter/InterVariable.woff2") format("woff2");font-weight:100 900;font-display:swap}
+:root{
+ --traube-blue:#184888;--traube-blue-2:#123A70;--traube-navy:#0A2342;--traube-sky:#2563EB;
+ font-family:"Traube Inter",Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+ color:#0f2240;background:#eef2f7;--background:#eef2f7;--foreground:#0f2240;
+ --primary:#184888;--primary-foreground:#ffffff;--ring:#184888;--border:#18488822;--input:#18488826;--radius:.75rem;
+}
+body{background:#eef2f7}
+button:focus-visible,a:focus-visible{outline:2px solid #2563EB;outline-offset:3px}
+button:not([data-slot]):hover{color:var(--traube-blue);background:#1848880d}
+.vignette{background:radial-gradient(ellipse at 51% 43%,transparent 38%,#18488812 100%)}
+.glass{background:#ffffffef;border:1px solid #18488818;box-shadow:0 18px 44px #0a234214;backdrop-filter:blur(18px);border-radius:16px!important}
+.back-link{pointer-events:auto;display:inline-flex;align-items:center;gap:7px;margin-bottom:14px;padding:8px 13px 8px 10px;border-radius:999px;background:#fff;border:1px solid #18488822;color:var(--traube-blue);font-size:13px;font-weight:600;text-decoration:none;box-shadow:0 6px 18px #0a234212}
+.back-link:hover{background:var(--traube-blue);color:#fff}
+.eyebrow{color:var(--traube-blue);font-weight:600;letter-spacing:.14em}
+.status-dot{background:var(--traube-sky);box-shadow:0 0 12px #2563eb55}
+h1{font-weight:700;letter-spacing:-.03em;color:var(--traube-navy)}
+h1 .edition{opacity:.7;color:var(--traube-blue);border-color:#18488840}
+.identity-meta{color:#4b5f7a}
+.top-actions button{color:var(--traube-blue);font-weight:500}
+.top-actions button.active{background:#18488812}
+.layer-presets{flex-wrap:wrap}
+.layer-presets button{border-radius:999px;border-color:#18488826;color:#35507a;font-weight:500}
+.layer-presets button[aria-pressed=true]{background:var(--traube-blue);border-color:var(--traube-blue);color:#fff}
+.system-name{color:#1d3354}
+.system-dot{width:8px;height:8px;box-shadow:0 0 0 2px #fff,0 0 0 3px #18488818}
+[data-slot=switch][data-checked],[data-slot=switch][aria-checked=true]{background:var(--traube-blue)!important}
+.view-controls .active{color:#fff;background:var(--traube-blue)}
+.view-controls button{color:#35507a}
+.scene-caption{color:#4b5f7a}
+.explode-label output{color:var(--traube-blue);font-weight:600}
+[data-slot=slider] [data-slot=slider-range]{background:var(--traube-blue)!important}
+[data-slot=slider] [data-slot=slider-thumb]{border-color:var(--traube-blue)!important}
+.loading-track i{background:linear-gradient(90deg,#184888,#2563EB)}
+.structure-title,.search-result-name,.part-hover{text-transform:none!important}
+.structure-title{font-weight:700!important;color:var(--traube-navy);letter-spacing:-.02em}
+.structure-original{margin:-6px 0 0;font-size:12px;color:#6b7c93;font-style:italic}
+.search-result-name{display:flex;flex-direction:column;gap:2px}
+.search-result-name small{font-size:11px;color:#7a8aa0}
+.primary-action{border-color:#184888!important;color:#fff!important;background:linear-gradient(135deg,#184888,#2563EB)!important;border-radius:12px!important;font-weight:600}
+.primary-action:hover{filter:brightness(1.06)}
+.primary-action.active{background:#fff!important;color:#184888!important;border:1px solid #184888!important}
+.part-hover{background:#0a2342f2;border-radius:10px}
+.about-copy a{color:var(--traube-blue);font-weight:500}
+.detail-accent{width:32px;height:3px;border-radius:3px}
+@media(max-width:767px){.back-link{margin-bottom:8px;font-size:12px;padding:6px 11px 6px 8px}.layers-panel{top:auto}}
+@media(min-width:768px){.layers-panel{top:228px}}
+/* Comandos, transparência, tours, créditos */
+.command-suggestion{display:flex;align-items:center;gap:9px;width:100%;margin-top:10px;padding:10px 12px;border-radius:12px;border:1px dashed #2563EB66!important;background:#2563EB0d!important;color:#184888!important;font-size:13px;font-weight:600;text-align:left}
+.command-suggestion span{flex:1}.command-suggestion kbd{font-size:10px;font-weight:500;opacity:.6}
+.command-suggestion:hover{background:#2563EB1a!important}
+.ghost-control{padding:4px 0 2px}.ghost-control .explode-label{font-size:12px;margin-bottom:6px}
+.studio-footer .credits-trigger{display:inline-flex;align-items:center;gap:5px;padding:6px 10px;border-radius:999px;color:#4b5f7a;font-size:11px}
+.credits-trigger:hover{background:#1848880f}
+.credits-card{position:absolute;right:24px;bottom:52px;width:min(330px,calc(100vw - 32px));padding:14px 16px;z-index:60;font-size:12px;line-height:1.55;color:#3e5270}
+.credits-card p{margin:8px 0}.credits-card a{color:#184888;font-weight:600}.credits-small{font-size:11px;color:#6b7c93}
+.credits-head{display:flex;align-items:center;justify-content:space-between;gap:8px;color:#0A2342}
+.credits-head strong{font-size:13px}.credits-head .icon-button{min-width:32px;min-height:32px}
+.tour-menu{position:absolute;right:30px;top:94px;width:320px;padding:12px 14px;z-index:40;display:flex;flex-direction:column;gap:6px}
+.tour-menu>button{display:grid;grid-template-columns:1fr auto;align-items:center;text-align:left;padding:10px 12px;border-radius:12px;border:1px solid #18488818!important;background:#fff!important}
+.tour-menu>button strong{font-size:14px;color:#0A2342}.tour-menu>button span{grid-column:1;font-size:12px;color:#5b6e88}.tour-menu>button svg{grid-row:1/3;grid-column:2;color:#184888}
+.tour-menu>button:hover{border-color:#184888!important;background:#18488808!important}
+.tour-card{position:absolute;left:30px;bottom:54px;width:min(360px,calc(100vw - 32px));padding:16px 18px;z-index:35}
+.tour-top{display:flex;align-items:center;justify-content:space-between}.tour-card h2{margin:6px 0 6px;font-size:20px;color:#0A2342;letter-spacing:-.02em}
+.tour-card p{margin:0;font-size:13.5px;line-height:1.6;color:#3e5270}
+.tour-nav{display:flex;align-items:center;justify-content:space-between;margin-top:12px;font-size:12px;color:#5b6e88}
+.tour-nav button{display:inline-flex;align-items:center;gap:4px;color:#184888;font-weight:600;padding:8px 10px;border-radius:10px}
+.atlas-notice{position:absolute;left:50%;top:96px;transform:translateX(-50%);max-width:min(460px,calc(100vw - 32px));padding:12px 16px;font-size:13px;line-height:1.5;color:#0A2342;z-index:70}
+@media(min-width:768px){body:has(.tour-card) .layers-panel{display:none}}
+@media(max-width:767px){.tour-card{left:12px;right:12px;width:auto;bottom:calc(140px + env(safe-area-inset-bottom))}.tour-menu{left:12px;right:12px;width:auto;top:112px}.credits-card{right:12px;bottom:calc(36px + env(safe-area-inset-bottom))}}
+@media(min-width:768px){.tour-card{top:228px;bottom:auto}}
