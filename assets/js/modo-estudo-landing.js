@@ -5,6 +5,16 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
 
+  // Quem já está logado vai direto para o app
+  (async () => {
+    const sb = window.supabaseClient;
+    if (!sb) return;
+    try {
+      const { data, error } = await sb.auth.getSession();
+      if (!error && data && data.session) window.location.replace(window.traubeSitePath?.('/dashboard/') || '/dashboard/');
+    } catch (e) { console.warn('Não foi possível verificar a sessão:', e); }
+  })();
+
   // Entrada do hero
   requestAnimationFrame(() => document.body.classList.add('is-ready'));
 
