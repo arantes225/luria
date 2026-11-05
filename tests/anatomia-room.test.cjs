@@ -13,8 +13,13 @@ test("Sala de Anatomia está ligada ao hub Aprender e à navegação móvel", ()
   assert.match(read("service-worker.js"), /\/aprender\/anatomia\//);
 });
 
+test("Sala de Anatomia abre o atlas completo e preserva o coração detalhado", () => {
+  assert.match(read("aprender/anatomia/index.html"), /location\\.replace\\("\/aprender\/anatomia\/atlas\/"\\)/);
+  assert.match(read("aprender/anatomia/coracao/index.html"), /data-anatomy-interior/);
+});
+
 test("modelo segmentado possui seleção real, interior e fluxo didático", () => {
-  const page = read("aprender/anatomia/index.html");
+  const page = read("aprender/anatomia/coracao/index.html");
   const viewer = read("assets/js/anatomy-heart-entry.mjs");
   const build = read("scripts/build-anatomy-viewer.cjs");
   assert.match(page, /data-anatomy-interior/);
