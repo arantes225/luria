@@ -48,8 +48,10 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
       prefs = {
         x: Math.max(0, Math.min(1, saved.x)),
         y: Math.max(0, Math.min(1, saved.y)),
-        minimized: saved.visibilityVersion === 2 ? (saved.minimized === true) : false,
-        visibilityVersion: 2
+        // Version 3 invalidates stale hidden state left by the old recharge/minimize flow.
+        // A new install starts visible; only an explicit minimize made on v3 persists.
+        minimized: saved.visibilityVersion === 3 ? (saved.minimized === true) : false,
+        visibilityVersion: 3
       };
     }
   } catch {}
@@ -170,7 +172,7 @@ export function mountAlexCompanion({userId, isAdmin=false}={}) {
 
   const save = () => {
     try {
-      prefs.visibilityVersion = 2;
+      prefs.visibilityVersion = 3;
       if (isStudyActionPage) prefs[page + '_minimized'] = prefs.minimized;
       localStorage.setItem(key + ':' + page, JSON.stringify(prefs));
       localStorage.setItem(key, JSON.stringify(prefs));
