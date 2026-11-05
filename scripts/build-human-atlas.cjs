@@ -1,6 +1,7 @@
 "use strict";
 const fs = require("node:fs");
 const path = require("node:path");
+const localizeHumanAtlas = require("./localize-human-atlas.cjs");
 
 const source = path.resolve(process.argv[3] || "/tmp/luria-human-atlas");
 const output = path.resolve("build/pages/aprender/anatomia/atlas");
@@ -25,6 +26,28 @@ if (mode === "prepare") {
     }
   }
   fs.writeFileSync(manifestPath, JSON.stringify(manifest));
+  localizeHumanAtlas(source, process.env.ANATOMY_TA2_CSV);
+
+  const scenePath = path.join(source, "app/scene.tsx");
+  let scene = fs.readFileSync(scenePath, "utf8");
+  const oldMaterial = "metalness:.08,roughness:.53";
+  if (!scene.includes(oldMaterial)) throw new Error("Human Atlas material changed upstream");
+  scene = scene.replace(oldMaterial, "metalness:0,roughness:system==='muscular'||system==='cardiac'?.78:system==='skeletal'?.86:.62");
+  scene = scene.replace("renderer.setClearColor('#f2f3f3')", "renderer.setClearColor('#e9f0f8')");
+  scene = scene.replace("renderer.toneMappingExposure=1.12", "renderer.toneMappingExposure=1.02");
+  scene = scene.replace("scene.add(new T.HemisphereLight(0xffffff,0xa7acb2,1.05));", "scene.add(new T.HemisphereLight(0xfff3e9,0x617184,1.18));");
+  scene = scene.replace("const key=new T.DirectionalLight(0xfffaf4,2.3)", "const key=new T.DirectionalLight(0xffeadc,2.8)");
+  scene = scene.replace("const rim=new T.DirectionalLight(0xe9f0ff,1.8)", "const rim=new T.DirectionalLight(0xc9ddfa,1.45)");
+  scene = scene.replace("shader.vertexShader='attribute float partIndex;", "shader.vertexShader='varying vec3 tissueCoord; attribute float partIndex;");
+  scene = scene.replace("transformed += state.xyz; partVisible", "transformed += state.xyz; tissueCoord = position; partVisible");
+  scene = scene.replace("shader.fragmentShader='varying float partVisible;", "shader.fragmentShader='varying vec3 tissueCoord; varying float partVisible;");
+  const oldColor = "diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.42, 0.85, 0.78), partSelected * 0.75);";
+  const newColor = "float tissueNoise = fract(sin(dot(floor(tissueCoord * 420.0), vec3(12.9898, 78.233, 37.719))) * 43758.5453); diffuseColor.rgb *= 0.94 + 0.12 * tissueNoise; diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.38, 0.72, 0.89), partSelected * 0.72);";
+  if (!scene.includes(oldColor)) throw new Error("Human Atlas selection shader changed upstream");
+  scene = scene.replace(oldColor, newColor);
+  fs.writeFileSync(scenePath, scene);
+
+  fs.appendFileSync(path.join(source, "app/globals.css"), `\n:root{--background:#e9f0f8;--foreground:#132b4a;--primary:#184888;--primary-foreground:#fff;--secondary:#e7eef7;--muted:#e7eef7;--accent:#dae8f7;--border:#18488822;--ring:#184888}\nbody{display:flex;flex-direction:column;background:#e9f0f8}#root{height:calc(100dvh - 60px);flex:1;min-height:0}.studio{height:100%;background:radial-gradient(ellipse at 52% 42%,#f5f8fc 0%,#e9f0f8 58%,#d9e5f3 100%)}.glass{background:#fffffff0;border:1px solid #18488820;box-shadow:0 16px 48px #102c5420}.identity h1{color:#132b4a;font-weight:800;letter-spacing:-.045em}.identity .eyebrow{color:#184888;font-weight:800}.layers-panel,.bottom-dock,.view-controls,.search-panel,.detail-sheet,.about-sheet{border-radius:18px}.system-row.enabled .system-name{color:#132b4a}.top-actions button,.view-controls button{border-radius:12px}.traube-atlas-header{height:60px;flex:0 0 60px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:0 22px;background:#143f79;color:#fff;box-shadow:0 4px 18px #0b265238;position:relative;z-index:30;font:700 14px system-ui,sans-serif}.traube-atlas-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}.traube-atlas-brand img{height:37px;width:37px;object-fit:contain}.traube-atlas-nav{display:flex;align-items:center;gap:12px}.traube-atlas-nav a{color:#fff;text-decoration:none;padding:8px 12px;border:1px solid #ffffff66;border-radius:999px}.traube-atlas-nav a:hover{background:#ffffff24}@media(max-width:767px){.traube-atlas-header{height:56px;flex-basis:56px;padding:0 12px;font-size:12px}#root{height:calc(100dvh - 56px)}.traube-atlas-brand img{height:30px;width:30px}.traube-atlas-nav{gap:5px}.traube-atlas-nav a{padding:7px 9px}.identity{top:17px}.top-actions{top:17px}}\n`);
   console.log(`Human Atlas prepared: ${manifest.parts.length} selectable meshes, ${manifest.chunks.length} chunks`);
 } else if (mode === "install") {
   const dist = path.join(source, "dist");
@@ -34,10 +57,12 @@ if (mode === "prepare") {
   fs.cpSync(dist, output, { recursive: true, force: true });
   fs.copyFileSync(path.join(source, "LICENSE"), path.join(output, "LICENSE-human-atlas.txt"));
   let html = fs.readFileSync(path.join(output, "index.html"), "utf8");
-  const navigation = '<a href="/aprender/anatomia/" aria-label="Voltar à Sala de Anatomia do LURIA" style="position:fixed;z-index:10000;left:12px;bottom:12px;display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid #b8c8ce;border-radius:999px;background:#fff;color:#123344;font:700 13px system-ui,sans-serif;text-decoration:none;box-shadow:0 8px 25px #12334425">← LURIA · Sala de Anatomia</a>';
+  const navigation = '<header class="traube-atlas-header"><a class="traube-atlas-brand" href="/aprender/"><img src="/assets/img/logos/logo-icone-original.png" alt=""><span>TRAUBE <small>· Sala de Anatomia</small></span></a><nav class="traube-atlas-nav" aria-label="Navegação da anatomia"><a href="/aprender/anatomia/coracao/">Coração em detalhe</a><a href="/aprender/">Voltar</a></nav></header>';
   if (!html.includes("</body>")) throw new Error("Human Atlas index changed upstream");
-  html = html.replace("</body>", navigation + "</body>");
+  html = html.replace('<html lang="en"', '<html lang="pt-BR"');
+  html = html.replace('<div id="root"></div>', navigation + '<div id="root"></div>');
   fs.writeFileSync(path.join(output, "index.html"), html);
+  fs.writeFileSync(path.join(output, "TRADUCOES.md"), "Traduções de termos anatômicos por correspondência exata com TA2.csv do Z-Anatomy, © contribuidores do Z-Anatomy, CC BY-SA 4.0. Termos sem correspondência permanecem no idioma original para evitar traduções anatômicas especulativas. Fonte: https://github.com/LluisV/Z-Anatomy .\n");
   console.log(`Human Atlas installed at ${output}`);
 } else {
   throw new Error("Use prepare or install");
