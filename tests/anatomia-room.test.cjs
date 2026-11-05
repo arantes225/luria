@@ -14,7 +14,7 @@ test("Sala de Anatomia está ligada ao hub Aprender e à navegação móvel", ()
 });
 
 test("Sala de Anatomia abre o atlas completo e preserva o coração detalhado", () => {
-  assert.match(read("aprender/anatomia/index.html"), /aprender\\/anatomia\\/atlas/);
+  assert.match(read("aprender/anatomia/index.html"), /aprender.anatomia.atlas/);
   assert.match(read("aprender/anatomia/coracao/index.html"), /data-anatomy-interior/);
 });
 
