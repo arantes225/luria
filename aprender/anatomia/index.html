@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'wasm-unsafe-eval'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'none'; upgrade-insecure-requests">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Sala de Anatomia · TRAUBE</title>
+  <meta name="description" content="Explore modelos tridimensionais de anatomia humana e teste seus conhecimentos no TRAUBE.">
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <meta name="theme-color" content="#0A2342">
+  <script src="/assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=10">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20261103-clean1">
+  <link rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261103-logo70-final">
+  <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/traube-logo.css?v=20261103-v1">
+  <link rel="stylesheet" href="/assets/css/anatomia.css?v=1">
+  <script defer src="/assets/js/traube-brand-v5.js?v=20261025-review-fixes3"></script>
+  <link rel="canonical" href="/aprender/anatomia/">
+</head>
+<body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="anatomia">
+<script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+<script defer src="/assets/js/ui-navigation-v2.js?v=20261105-anatomia1"></script>
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"><span class="eyebrow">APRENDER</span><h1>Sala de Anatomia</h1></div>
+        </header>
+
+        <section class="anatomy-page" aria-labelledby="anatomy-title">
+          <header class="anatomy-hero">
+            <div>
+              <span class="anatomy-kicker">Laboratório interativo</span>
+              <h2 id="anatomy-title">Sala de Anatomia</h2>
+              <p>Explore estruturas em três dimensões, gire o modelo e fixe os principais marcos anatômicos. Começamos pelo coração — os próximos órgãos serão adicionados a esta coleção.</p>
+            </div>
+            <div class="anatomy-specimen-meta" aria-label="Dados do coração">
+              <div><small>Sistema</small><strong>Cardiovascular</strong></div>
+              <div><small>Terminologia</small><strong>TA2</strong></div>
+            </div>
+          </header>
+
+          <nav class="anatomy-catalog" aria-label="Modelos anatômicos">
+            <button class="anatomy-organ-chip is-active" type="button" aria-current="page"><span aria-hidden="true">♥</span>Coração</button>
+            <button class="anatomy-organ-chip" type="button" disabled><span aria-hidden="true">◉</span>Cérebro <em>em breve</em></button>
+            <button class="anatomy-organ-chip" type="button" disabled><span aria-hidden="true">◍</span>Pulmões <em>em breve</em></button>
+            <button class="anatomy-organ-chip" type="button" disabled><span aria-hidden="true">≈</span>Fígado <em>em breve</em></button>
+            <button class="anatomy-organ-chip" type="button" disabled><span aria-hidden="true">◌</span>Rins <em>em breve</em></button>
+          </nav>
+
+          <div class="anatomy-workspace">
+            <section class="anatomy-stage-card" aria-label="Modelo tridimensional do coração">
+              <div class="anatomy-stage-head">
+                <div class="anatomy-stage-title"><strong>Coração humano</strong><span>Cor · modelo tridimensional</span></div>
+                <div class="anatomy-stage-tools" aria-label="Controles do modelo">
+                  <button class="anatomy-tool" type="button" data-anatomy-reset aria-label="Restaurar visualização" title="Restaurar visualização"><svg viewBox="0 0 24 24"><path d="M4 4v6h6"/><path d="M5.5 16a8 8 0 1 0 .5-9"/></svg></button>
+                  <button class="anatomy-tool" type="button" data-anatomy-rotate aria-label="Ativar ou pausar rotação" title="Rotação automática"><svg viewBox="0 0 24 24"><path d="M20 7h-5V2"/><path d="M4 17h5v5"/><path d="M6.1 9A7 7 0 0 1 19 7M17.9 15A7 7 0 0 1 5 17"/></svg></button>
+                  <button class="anatomy-tool" type="button" data-anatomy-labels aria-label="Mostrar ou ocultar identificações" title="Identificações"><svg viewBox="0 0 24 24"><circle cx="8" cy="12" r="2"/><path d="M10 12h10M4 5h16M4 19h16"/></svg></button>
+                  <button class="anatomy-tool" type="button" data-anatomy-fullscreen aria-label="Ver em tela cheia" title="Tela cheia"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg></button>
+                </div>
+              </div>
+              <div class="anatomy-viewer" data-anatomy-viewer>
+                <canvas aria-label="Coração humano tridimensional interativo"></canvas>
+                <div class="anatomy-hotspot-layer" data-hotspot-layer></div>
+                <div class="anatomy-loading" data-anatomy-loading>
+                  <div class="anatomy-loading-mark" aria-hidden="true">♥</div>
+                  <strong>Preparando o coração</strong>
+                  <span>Carregando o modelo tridimensional…</span>
+                  <div class="anatomy-progress" aria-hidden="true"><i data-anatomy-progress></i></div>
+                </div>
+                <div class="anatomy-stage-hint">Arraste para girar · role para aproximar · toque nos pontos para identificar</div>
+              </div>
+            </section>
+
+            <aside class="anatomy-info-card" aria-label="Estruturas do coração">
+              <div class="anatomy-info-head">
+                <small>Estrutura selecionada</small>
+                <h3 data-structure-title>Aorta</h3>
+                <em data-structure-latin>Aorta</em>
+              </div>
+              <div class="anatomy-info-copy">
+                <p data-structure-detail>Maior artéria do corpo. Recebe o sangue ejetado pelo ventrículo esquerdo e o distribui para a circulação sistêmica.</p>
+                <div class="anatomy-flow-chip" data-structure-flow>Sangue oxigenado → corpo</div>
+              </div>
+              <div class="anatomy-structure-list" aria-label="Selecionar estrutura">
+                <button class="anatomy-structure-button is-active" style="--dot:#ef6b62" type="button" data-structure-id="aorta" aria-pressed="true"><span>Aorta</span><small>Artéria principal</small></button>
+                <button class="anatomy-structure-button" style="--dot:#f2a33b" type="button" data-structure-id="left-atrium" aria-pressed="false"><span>Átrio esquerdo</span><small>Recebe sangue oxigenado</small></button>
+                <button class="anatomy-structure-button" style="--dot:#6393d8" type="button" data-structure-id="right-atrium" aria-pressed="false"><span>Átrio direito</span><small>Recebe sangue venoso</small></button>
+                <button class="anatomy-structure-button" style="--dot:#f2a33b" type="button" data-structure-id="left-ventricle" aria-pressed="false"><span>Ventrículo esquerdo</span><small>Bombeia para o corpo</small></button>
+                <button class="anatomy-structure-button" style="--dot:#ef6b62" type="button" data-structure-id="right-ventricle" aria-pressed="false"><span>Ventrículo direito</span><small>Bombeia para os pulmões</small></button>
+                <button class="anatomy-structure-button" style="--dot:#d98fc0" type="button" data-structure-id="mitral" aria-pressed="false"><span>Valva mitral</span><small>Evita o refluxo</small></button>
+              </div>
+              <div class="anatomy-info-actions"><button class="anatomy-primary-button" type="button" data-quiz-start>Testar identificação</button></div>
+            </aside>
+          </div>
+
+          <div class="anatomy-lessons">
+            <section class="anatomy-lesson-card">
+              <h3>Fluxo sanguíneo essencial</h3>
+              <p>Acompanhe o circuito em quatro etapas para fixar o caminho do sangue pelo coração.</p>
+              <div class="blood-flow" aria-label="Caminho do sangue">
+                <div class="blood-flow-step"><small>1 · entrada</small><strong>Veias cavas → átrio direito</strong></div>
+                <div class="blood-flow-step"><small>2 · pulmões</small><strong>VD → artéria pulmonar</strong></div>
+                <div class="blood-flow-step"><small>3 · retorno</small><strong>Veias pulmonares → AE</strong></div>
+                <div class="blood-flow-step"><small>4 · corpo</small><strong>VE → aorta</strong></div>
+              </div>
+              <div class="anatomy-quiz" data-anatomy-quiz hidden>
+                <div class="anatomy-quiz-head"><div><span>Encontre no modelo</span><strong data-quiz-target>Aorta</strong></div><div class="anatomy-quiz-score" data-quiz-score>0/0</div></div>
+                <div class="quiz-feedback" data-quiz-feedback>Toque no ponto correspondente no modelo.</div>
+              </div>
+            </section>
+
+            <section class="anatomy-lesson-card">
+              <h3>Visão rápida</h3>
+              <p>Dados de referência para contextualizar o modelo anatômico.</p>
+              <div class="anatomy-fact-grid">
+                <div><small>Peso médio</small><strong>250–350 g</strong></div>
+                <div><small>Localização</small><strong>Mediastino médio</strong></div>
+                <div><small>Frequência</small><strong>≈ 100 mil batimentos/dia</strong></div>
+              </div>
+              <p class="anatomy-source-note">Conteúdo educacional. A visualização tridimensional simplifica estruturas e não substitui atlas anatômicos ou peças de laboratório.</p>
+            </section>
+          </div>
+          <p class="anatomy-sr-only" role="status" aria-live="polite" data-anatomy-status></p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+<script src="/assets/vendor/supabase-2.110.6.js"></script>
+<script src="/assets/js/supabase.js?v=auth4"></script>
+<script src="/assets/js/app.js?v=20261101-traube-bootstrap1"></script>
+<script type="module" src="/assets/vendor/traube-anatomy-viewer.mjs?v=1"></script>
+<script defer src="/assets/js/pwa.js?v=20261101-bootstrap1"></script>
+</body>
+</html>

@@ -1749,7 +1749,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${traubeIcon("calendar")}</span><span>Cronograma</span>
         </a>
 
-        <a class="nav-link ${page === "aprender" ? "active" : ""}" href="/aprender/">
+        <a class="nav-link ${["aprender", "anatomia"].includes(page) ? "active" : ""}" href="/aprender/">
           <span class="nav-icon">${traubeIcon("book")}</span><span>Aprender</span>
         </a>
 
