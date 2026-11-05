@@ -38,30 +38,65 @@ if (mode === "prepare") {
   }
   fs.appendFileSync(path.join(source, "app/globals.css"), fs.readFileSync(path.join(overlay, "traube-theme.css")));
 
-  const manifestPath = path.join(source, "public/models/atlas.json");
-  const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-  if (!Array.isArray(manifest.chunks) || manifest.chunks.length < 10 || !Array.isArray(manifest.parts) || manifest.parts.length < 2000) {
+  const models = path.join(source, "public/models");
+  const manifestPath = path.join(models, "atlas.json");
+  const first = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  if (!Array.isArray(first.chunks) || first.chunks.length < 10 || !Array.isArray(first.parts) || first.parts.length < 2000) {
     throw new Error("Cobertura do catálogo do atlas mudou");
   }
+
+  // Acréscimos do corpo masculino (Z-Anatomy + HRA), gerados aqui a partir das
+  // fontes fixadas e conferidas por sha256 no workflow. Sem eles o build para:
+  // o atlas publicado precisa ter pulmões, tireoide, parede abdominal etc.
+  const extras = process.env.TRAUBE_ATLAS_SOURCES;
+  if (!extras) throw new Error("Defina TRAUBE_ATLAS_SOURCES (pasta com za-muscles.fbx, za-visceral.fbx e hra-male.glb)");
+  execFileSync(process.execPath, [
+    "--max-old-space-size=8000",
+    path.join(root, "tools/anatomy-atlas/build-atlas-extras.mjs"),
+    source,
+    path.join(extras, "za-muscles.fbx"),
+    path.join(extras, "za-visceral.fbx"),
+    path.join(extras, "hra-male.glb"),
+  ], { stdio: "inherit" });
+
+  // Corpo feminino de referência (HRA feminino v1.10, já convertido no projeto MIT
+  // slorksmo/Human-Atlas, fixado no workflow).
+  const female = process.env.TRAUBE_ATLAS_FEMALE;
+  if (!female) throw new Error("Defina TRAUBE_ATLAS_FEMALE (pasta public/models do atlas feminino)");
+  const femaleManifest = JSON.parse(fs.readFileSync(path.join(female, "atlas-female.json"), "utf8"));
+  if (femaleManifest.sex !== "female" || femaleManifest.parts.length < 1000) throw new Error("Atlas feminino inesperado");
+  for (const chunk of femaleManifest.chunks) {
+    for (const key of ["url", "gzip"]) if (chunk[key]) fs.copyFileSync(path.join(female, path.basename(chunk[key])), path.join(models, path.basename(chunk[key])));
+  }
+  const femalePath = path.join(models, "atlas-female.json");
+  fs.writeFileSync(femalePath, JSON.stringify(femaleManifest));
+
   execFileSync(process.execPath, [
     path.join(root, "tools/anatomy-atlas/build-pt-names.cjs"),
     manifestPath,
-    path.join(source, "public/models/pt-names.json"),
+    path.join(models, "pt-names.json"),
+    femalePath,
   ], { stdio: "inherit" });
-  for (const chunk of manifest.chunks) {
-    for (const key of ["url", "gzip"]) {
-      if (chunk[key]) chunk[key] = base + "models/" + path.basename(chunk[key]);
+  for (const file of [manifestPath, femalePath]) {
+    const manifest = JSON.parse(fs.readFileSync(file, "utf8"));
+    for (const chunk of manifest.chunks) {
+      for (const key of ["url", "gzip"]) {
+        if (chunk[key]) chunk[key] = base + "models/" + path.basename(chunk[key]);
+      }
     }
+    fs.writeFileSync(file, JSON.stringify(manifest));
+    console.log(`Atlas preparado (${path.basename(file)}): ${manifest.parts.length} peças selecionáveis, ${manifest.chunks.length} blocos`);
   }
-  fs.writeFileSync(manifestPath, JSON.stringify(manifest));
-  console.log(`Atlas preparado: ${manifest.parts.length} peças selecionáveis, ${manifest.chunks.length} blocos`);
 } else if (mode === "install") {
   const dist = path.join(source, "dist");
-  for (const rel of ["index.html", "models/atlas.json", "models/pt-names.json"]) {
+  for (const rel of ["index.html", "models/atlas.json", "models/atlas-female.json", "models/pt-names.json"]) {
     if (!fs.existsSync(path.join(dist, rel))) throw new Error("Build do atlas incompleto: falta " + rel);
   }
   fs.cpSync(dist, output, { recursive: true, force: true });
   fs.copyFileSync(path.join(source, "LICENSE"), path.join(output, "LICENSE-human-atlas.txt"));
+  const femaleLicense = process.env.TRAUBE_ATLAS_FEMALE && path.join(process.env.TRAUBE_ATLAS_FEMALE, "../../LICENSE");
+  if (femaleLicense && fs.existsSync(femaleLicense)) fs.copyFileSync(femaleLicense, path.join(output, "LICENSE-atlas-feminino.txt"));
+  fs.copyFileSync(path.join(root, "tools/anatomy-atlas/CREDITOS-MODELOS.txt"), path.join(output, "models/CREDITOS-MODELOS.txt"));
   const html = fs.readFileSync(path.join(output, "index.html"), "utf8");
   if (/Human Atlas|LURIA/.test(html)) throw new Error("Marca de terceiros ou nome antigo no index do atlas");
   console.log(`Atlas instalado em ${path.relative(root, output)}`);

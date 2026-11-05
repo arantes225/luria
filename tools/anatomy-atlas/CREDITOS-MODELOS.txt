@@ -1,0 +1,42 @@
+Créditos e licenças dos modelos 3D do Atlas do corpo · TRAUBE
+=============================================================
+
+atlas.json + body-*.bin (corpo masculino)
+  BodyParts3D, © The Database Center for Life Science, CC BY 4.0.
+  https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html
+  Adaptação: unidades e eixos convertidos, simplificação, normais quantizadas.
+
+extra-*.bin (acréscimos ao corpo masculino)
+  1) Z-Anatomy — The open source atlas of anatomy, CC BY-SA 4.0, derivado do
+     BodyParts3D (atribuição pedida pela fonte: "BodyParts3D - The Database Center
+     for Life Science"; "Z-Anatomy - The open source atlas of anatomy - CC-BY-SA 4.0").
+     https://github.com/LluisV/Z-Anatomy (commit 6c7f9016bd5899ac8edafd31b9900c151df42ed6)
+     Peças usadas: músculos e vísceras ausentes no BodyParts3D (parede abdominal,
+     mímica facial, mastigação, pulmões por lobo, tireoide e paratireoides,
+     segmentos do fígado, glândulas salivares, palato).
+     Peças excluídas por licença: rim (CC BY-NC 4.0), orelha interna
+     (CC BY-NC-SA 4.0) e peças de encéfalo de origem não declarada.
+     Adaptação: reposicionadas por ajuste afim de mínimos quadrados sobre estruturas
+     homônimas, simplificadas e com normais quantizadas.
+     ESTA GEOMETRIA ADAPTADA É DISTRIBUÍDA SOB CC BY-SA 4.0:
+     https://creativecommons.org/licenses/by-sa/4.0/
+  2) Kristen Browne e Heidi Schlehlein, Human Reference Atlas / HuBMAP,
+     3D Reference Organ Set for Male v1.10, CC BY 4.0.
+     https://lod.humanatlas.io/ref-organ/united-male/v1.10
+     Peças usadas: encéfalo (regiões do Allen Brain incluídas no conjunto), rins
+     (cápsula, córtex, colunas, pirâmides, papilas, cálices, pelve), bexiga,
+     próstata, ceco e válvula ileocecal.
+     Adaptação: cada órgão ajustado por escala uniforme e translação ao órgão
+     correspondente do BodyParts3D, que foi substituído; simplificação.
+
+atlas-female.json + female-*.bin (corpo feminino)
+  Kristen Browne e Heidi Schlehlein, Human Reference Atlas / HuBMAP,
+  3D Reference Organ Set for Female v1.10, CC BY 4.0.
+  https://lod.humanatlas.io/ref-organ/united-female/v1.10
+  Ossos complementares: BodyParts3D (CC BY 4.0), ajustados ao corpo feminino.
+  Músculos do membro inferior: Andreassen et al., Three Dimensional Lower Extremity
+  Musculoskeletal Geometry of the Visible Human Female and Male, Scientific Data
+  10:34 (2023), CC BY 4.0. https://doi.org/10.1038/s41597-022-01905-2
+  Conversão: slorksmo/Human-Atlas (licença MIT em LICENSE-atlas-feminino.txt).
+
+Conteúdo educacional, sujeito a revisão anatômica especializada.

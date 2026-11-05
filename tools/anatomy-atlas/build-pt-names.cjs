@@ -1,7 +1,7 @@
 "use strict";
 // Gera pt-names.json (nome FMA em inglês -> nome em português) a partir do
 // glossário revisável glossario-pt.tsv e do catálogo atlas.json do atlas.
-// Uso: node build-pt-names.cjs <atlas.json> [saida.json]
+// Uso: node build-pt-names.cjs <atlas.json> [saida.json] [outro-atlas.json ...]
 const fs = require("node:fs");
 const path = require("node:path");
 
@@ -46,8 +46,12 @@ function translate(name) {
   return out.charAt(0).toUpperCase() + out.slice(1);
 }
 
-const atlas = JSON.parse(fs.readFileSync(atlasPath, "utf8"));
-const names = new Set([...atlas.concepts.map(c => c.name), ...atlas.parts.map(p => p.name)]);
+// Atlas adicionais (ex.: o feminino) entram no mesmo arquivo de nomes.
+const names = new Set();
+for (const file of [atlasPath, ...process.argv.slice(4)]) {
+  const atlas = JSON.parse(fs.readFileSync(file, "utf8"));
+  for (const n of [...atlas.concepts.map(c => c.name), ...atlas.parts.map(p => p.name)]) names.add(n);
+}
 const result = {};
 const missing = [];
 for (const name of [...names].sort()) {

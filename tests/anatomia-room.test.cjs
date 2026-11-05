@@ -78,3 +78,29 @@ test("laboratório (microscopia e desafio) está traduzido e com licenças", () 
   assert.equal(new Set(bank.map(q => q.id)).size, bank.length, "ids únicos");
   assert.match(read("aprender/anatomia/laboratorio/LICENSE-questoes-apache.txt"), /Apache License/);
 });
+
+test("atlas ampliado: fontes fixadas, corpo feminino, interior dos órgãos e carregamento resiliente", () => {
+  const workflow = read(".github/workflows/deploy-pages.yml");
+  assert.ok(workflow.includes("Z-Anatomy/raw/6c7f9016bd5899ac8edafd31b9900c151df42ed6"), "Z-Anatomy fixado por commit");
+  assert.ok(workflow.includes("united-male/v1.10"), "HRA masculino fixado por versão");
+  assert.ok(workflow.includes("sha256sum --check"), "fontes conferidas por sha256");
+  assert.ok(workflow.includes("slorksmo/Human-Atlas.git 5bb5713aab18d7fe9380c3339eb09f173491ea06"), "atlas feminino fixado");
+  assert.ok(workflow.includes("node tools/anatomy-atlas/validate-atlas.mjs"), "validador próprio no deploy");
+  const extras = read("tools/anatomy-atlas/build-atlas-extras.mjs");
+  assert.ok(extras.includes("^kidney") && extras.includes("pineal"), "peças NC ou sem licença declarada ficam de fora");
+  const validator = read("tools/anatomy-atlas/validate-atlas.mjs");
+  for (const s of ["rectus abdominis", "transversus abdominis", "lobe of right lung", "Thyroid gland", "renal pyramid", "Body of uterus"]) assert.ok(validator.includes(s), "cobertura obrigatória: " + s);
+  const credits = read("tools/anatomy-atlas/CREDITOS-MODELOS.txt");
+  assert.match(credits, /CC BY-SA 4\.0/);
+  assert.match(credits, /HuBMAP/);
+  const page = read("tools/anatomy-atlas/overlay/app/page.tsx");
+  assert.ok(page.includes("atlas-female.json"), "seletor do corpo feminino");
+  assert.ok(page.includes("seeInside") && page.includes("toggleFlow"), "ver por dentro e fluxo sanguíneo");
+  const scene = read("tools/anatomy-atlas/overlay/app/scene.tsx");
+  assert.ok(scene.includes("fetchChunk") && scene.includes("20000"), "download com timeout por inatividade e novas tentativas");
+  assert.ok(scene.includes("dMucosa") && scene.includes("flowLayers"), "mucosa interna e partículas de fluxo");
+  const sala = read("aprender/anatomia/index.html");
+  const card = sala.slice(sala.indexOf('id="creditos"'));
+  assert.match(card, /Z-Anatomy/);
+  assert.match(card, /Human Reference Atlas/);
+});

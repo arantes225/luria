@@ -36,7 +36,7 @@ export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:P
   // TRAUBE: cor (RGB, sRGB) e rugosidade (A) por peça, escolhidas pelo tecido.
   const cutPlane=new T.Plane(new T.Vector3(-1,0,0),0);let lastCut='';
   const bodyBox=new T.Box3();atlas.parts.forEach(p=>{bodyBox.expandByPoint(new T.Vector3().fromArray(p.bounds[0]));bodyBox.expandByPoint(new T.Vector3().fromArray(p.bounds[1]));});
-  const tintData=new Uint8Array(width*4),detailData=new Uint8Array(width*4);atlas.parts.forEach((p,i)=>{const a=partAppearance(p);tintData.set([a.rgb[0],a.rgb[1],a.rgb[2],Math.round(a.rough*255)],i*4);detailData[i*4]=a.detail*32;});
+  const tintData=new Uint8Array(width*4),detailData=new Uint8Array(width*4);atlas.parts.forEach((p,i)=>{const a=partAppearance(p);tintData.set([a.rgb[0],a.rgb[1],a.rgb[2],Math.round(a.rough*255)],i*4);detailData[i*4]=a.detail*16;const b0=p.bounds[0],b1=p.bounds[1],ext=[b1[0]-b0[0],b1[1]-b0[1],b1[2]-b0[2]];detailData[i*4+1]=ext.indexOf(Math.max(...ext))*80;});
   const tintTexture=new T.DataTexture(tintData,width,1);tintTexture.colorSpace=T.SRGBColorSpace;tintTexture.needsUpdate=true;
   // Microtextura procedural (sem UV no atlas): tipo de tecido no canal R.
   const detailTexture=new T.DataTexture(detailData,width,1);detailTexture.needsUpdate=true;
@@ -49,18 +49,30 @@ float dNoise(vec3 x){vec3 i=floor(x);vec3 f=fract(x);f=f*f*f*(f*(f*6.0-15.0)+10.
  return mix(mix(mix(dHash(i),dHash(i+vec3(1,0,0)),f.x),mix(dHash(i+vec3(0,1,0)),dHash(i+vec3(1,1,0)),f.x),f.y),
             mix(mix(dHash(i+vec3(0,0,1)),dHash(i+vec3(1,0,1)),f.x),mix(dHash(i+vec3(0,1,1)),dHash(i+vec3(1,1,1)),f.x),f.y),f.z);}
 // Altura da microtextura por tecido; posição em metros no espaço do modelo.
-float dHeight(vec3 p,float kind){
+float dHeight(vec3 p,float kind,float axis){
  if(kind<0.5) return 0.0;
  if(kind<1.5) return dNoise(p*380.0)*0.65+dNoise(p*1100.0)*0.35;                       // osso: poros
- if(kind<2.5) return dNoise(vec3(p.x*260.0,p.y*70.0,p.z*260.0))*0.7+dNoise(p*600.0)*0.3; // músculo: fibras
+ if(kind<2.5){                                                                        // músculo: fascículos ao longo do eixo da peça
+  vec3 q = axis<0.5 ? p.yzx : axis<1.5 ? p : p.xzy;
+  float fasc = dNoise(vec3(q.x*320.0,q.y*28.0,q.z*320.0));
+  float fib = dNoise(vec3(q.x*1300.0,q.y*90.0,q.z*1300.0));
+  return smoothstep(0.25,0.75,fasc)*0.6+fib*0.3+dNoise(p*90.0)*0.1; }
  if(kind<3.5) return dNoise(p*180.0)*0.7+dNoise(p*650.0)*0.3;                          // órgão: granulado
  if(kind<4.5) return dNoise(p*220.0);                                                  // vaso: quase liso
  if(kind<5.5) return dNoise(vec3(p.x*700.0,p.y*90.0,p.z*700.0));                       // fibroso: feixes
- return dNoise(p*140.0)*0.6+dNoise(p*480.0)*0.4;                                       // encéfalo
+ if(kind<6.5) return dNoise(p*140.0)*0.6+dNoise(p*480.0)*0.4;                          // encéfalo
+ return dNoise(p*180.0)*0.7+dNoise(p*650.0)*0.3;                                       // órgão oco por fora
 }
-float dStrength(float kind){return kind<0.5?0.0:kind<1.5?0.6:kind<2.5?0.45:kind<3.5?0.4:kind<4.5?0.15:kind<5.5?0.4:0.35;}
+// Mucosa vista por dentro (face interna, aparece no corte).
+float dMucosa(vec3 p,float kind,float axis){
+ vec3 q = axis<0.5 ? p.yzx : axis<1.5 ? p : p.xzy;
+ if(kind<7.5){ float w = dNoise(p*30.0)*7.0+dNoise(p*90.0)*2.0; float r = 0.5+0.5*sin((q.x+q.z)*260.0+w); return smoothstep(0.45,0.9,r)*0.8+dNoise(p*900.0)*0.2; }          // rugas gástricas
+ if(kind<8.5){ float plica = 0.5+0.5*sin(q.y*900.0+dNoise(p*60.0)*6.0); float villi = dNoise(p*3200.0); return plica*0.55+villi*0.45; } // pregas circulares + vilosidades
+ float haustra = 0.5+0.5*sin(q.y*260.0+dNoise(p*40.0)*5.0); return smoothstep(0.55,0.95,haustra)*0.75+dNoise(p*1400.0)*0.25;        // pregas semilunares do colo
+}
+float dStrength(float kind){return kind<0.5?0.0:kind<1.5?0.6:kind<2.5?0.75:kind<3.5?0.4:kind<4.5?0.15:kind<5.5?0.4:kind<6.5?0.35:0.4;}
 // Frequência dominante, para esmaecer a textura quando ela fica menor que um pixel.
-float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?600.0:kind<3.5?650.0:kind<4.5?220.0:kind<5.5?700.0:480.0;}
+float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?1300.0:kind<3.5?650.0:kind<4.5?220.0:kind<5.5?700.0:kind<6.5?480.0:650.0;}
 `;
   const materials:T.Material[]=[],geometries:T.BufferGeometry[]=[],pickers:(T.Mesh|undefined)[]=[],centers=atlas.parts.map(p=>new T.Vector3().fromArray(p.bounds[0]).add(new T.Vector3().fromArray(p.bounds[1])).multiplyScalar(.5));
   const offsets:T.Vector3[]=[],bounds=atlas.parts.map(p=>new T.Box3(new T.Vector3().fromArray(p.bounds[0]),new T.Vector3().fromArray(p.bounds[1])));
@@ -69,6 +81,23 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?600.0:kind<3.5?650.0:kin
   const markerMaterial=new T.PointsMaterial({color:0x64748b,size:5,sizeAttenuation:false,transparent:true,opacity:.72,depthTest:false});
   markerMaterial.onBeforeCompile=shader=>{shader.fragmentShader=shader.fragmentShader.replace('#include <clipping_planes_fragment>','#include <clipping_planes_fragment>\nif (distance(gl_PointCoord, vec2(0.5)) > 0.5) discard;');};
   const markers=new T.Points(markerGeometry,markerMaterial);markers.frustumCulled=false;markers.renderOrder=10;markers.visible=false;scene.add(markers);
+  // ---- Fluxo sanguíneo no coração ----
+  const centerOf=(...patterns:RegExp[])=>{for(const re of patterns){const i=atlas.parts.findIndex(p=>re.test(p.name));if(i>=0)return centers[i].clone();}return null;};
+  const route=(...stops:(T.Vector3|null)[])=>{const pts=stops.filter((v):v is T.Vector3=>!!v);return pts.length>=3?new T.CatmullRomCurve3(pts,false,'centripetal'):null;};
+  const RA=centerOf(/^cavity of right atrium$/i,/^right cardiac atrium$/i),RV=centerOf(/^cavity of right ventricle$/i,/^heart right ventricle$/i);
+  const LA=centerOf(/^cavity of left atrium$/i,/^left cardiac atrium$/i),LV=centerOf(/^cavity of left ventricle$/i,/^heart left ventricle$/i);
+  const flowRoutes=[
+   {color:0x3f6fd1,curve:route(centerOf(/^superior vena cava$/i,/superior vena cava/i),RA,RV,centerOf(/^pulmonary trunk$/i,/pulmonary trunk/i))},
+   {color:0x3f6fd1,curve:route(centerOf(/^inferior vena cava$/i,/inferior vena cava/i),RA,RV,centerOf(/^pulmonary trunk$/i,/pulmonary trunk/i))},
+   {color:0xe0483e,curve:route(centerOf(/^right superior pulmonary vein$/i,/pulmonary vein superior \(right\)/i,/pulmonary vein/i),LA,LV,centerOf(/^ascending aorta$/i),centerOf(/^arch of aorta$/i,/^aortic arch$/i))},
+   {color:0xe0483e,curve:route(centerOf(/^left superior pulmonary vein$/i,/pulmonary vein superior \(left\)/i,/pulmonary vein/i),LA,LV,centerOf(/^ascending aorta$/i),centerOf(/^arch of aorta$/i,/^aortic arch$/i))},
+  ].filter(r=>r.curve&&r.curve.getLength()>.02);
+  const FLOW_N=140;
+  const flowLayers=flowRoutes.map(r=>{const g=new T.BufferGeometry();g.setAttribute('position',new T.BufferAttribute(new Float32Array(FLOW_N*3),3));
+   const m=new T.PointsMaterial({color:r.color,size:.0065,sizeAttenuation:true,transparent:true,opacity:.92,depthTest:false,depthWrite:false});
+   m.onBeforeCompile=sh=>{sh.fragmentShader=sh.fragmentShader.replace('#include <clipping_planes_fragment>','#include <clipping_planes_fragment>\nif (distance(gl_PointCoord, vec2(0.5)) > 0.5) discard;');};
+   const pts=new T.Points(g,m);pts.frustumCulled=false;pts.renderOrder=12;pts.visible=false;scene.add(pts);return {pts,curve:r.curve!,seed:Math.random()};});
+  let flowClock=0,flowShown=false;const flowTmp=new T.Vector3();
   const hover=document.createElement('div');hover.className='part-hover';hover.setAttribute('role','tooltip');hover.hidden=true;el.appendChild(hover);
   type Target={index:number;x:number;y:number;left:number;right:number;top:number;bottom:number};let targets:Target[]=[];
   const projected=new T.Vector3();
@@ -81,24 +110,48 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?600.0:kind<3.5?650.0:kin
    const m=new T.MeshStandardMaterial({envMapIntensity:.32,color:SYSTEMS.find(s=>s.id===system)?.color??'#aebbb8',metalness:.08,roughness:.53,side:T.DoubleSide,transparent:system==='integumentary',opacity:system==='integumentary'?.1:1,depthWrite:system!=='integumentary'});
    m.onBeforeCompile=shader=>{
     shader.uniforms.partState={value:partTexture};shader.uniforms.selectionState={value:selectionTexture};shader.uniforms.partTint={value:tintTexture};shader.uniforms.partDetail={value:detailTexture};shader.uniforms.ghostAmount=ghostUniform;shader.uniforms.stateWidth={value:width};
-    shader.vertexShader='attribute float partIndex; uniform sampler2D partState; uniform sampler2D selectionState; uniform sampler2D partTint; uniform sampler2D partDetail; uniform float stateWidth; varying float partVisible; varying float partSelected; varying vec4 vTint; varying float vKind; varying vec3 vDetailPos;\n'+shader.vertexShader;
-    shader.vertexShader=shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\nvec2 stateUv = vec2((partIndex + 0.5) / stateWidth, 0.5); vec4 state = texture2D(partState, stateUv); vDetailPos = position; transformed += state.xyz; partVisible = state.w; partSelected = texture2D(selectionState, stateUv).r; vTint = texture2D(partTint, stateUv); vKind = floor(texture2D(partDetail, stateUv).r * 255.0 / 32.0 + 0.5);');
-    shader.fragmentShader='uniform float ghostAmount; varying float partVisible; varying float partSelected; varying vec4 vTint; varying float vKind; varying vec3 vDetailPos;\n'+DETAIL_GLSL+shader.fragmentShader;
+    shader.vertexShader='attribute float partIndex; uniform sampler2D partState; uniform sampler2D selectionState; uniform sampler2D partTint; uniform sampler2D partDetail; uniform float stateWidth; varying float partVisible; varying float partSelected; varying vec4 vTint; varying float vKind; varying float vAxis; varying vec3 vDetailPos;\n'+shader.vertexShader;
+    shader.vertexShader=shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\nvec2 stateUv = vec2((partIndex + 0.5) / stateWidth, 0.5); vec4 state = texture2D(partState, stateUv); vDetailPos = position; transformed += state.xyz; partVisible = state.w; partSelected = texture2D(selectionState, stateUv).r; vTint = texture2D(partTint, stateUv); vec4 dd = texture2D(partDetail, stateUv); vKind = floor(dd.r * 255.0 / 16.0 + 0.5); vAxis = floor(dd.g * 255.0 / 80.0 + 0.5);');
+    shader.fragmentShader='uniform float ghostAmount; varying float partVisible; varying float partSelected; varying vec4 vTint; varying float vKind; varying float vAxis; varying vec3 vDetailPos;\n'+DETAIL_GLSL+shader.fragmentShader;
     shader.fragmentShader=shader.fragmentShader.replace('#include <clipping_planes_fragment>','#include <clipping_planes_fragment>\nif (partVisible < 0.5) discard;');
     shader.fragmentShader=shader.fragmentShader.replace('#include <alphatest_fragment>','#include <alphatest_fragment>\nif (partSelected < 0.5) diffuseColor.a *= 1.0 - ghostAmount;');
     // Cor por tecido + destaque de seleção no azul TRAUBE (#2f6fc4 em linear).
-    shader.fragmentShader=shader.fragmentShader.replace('#include <color_fragment>','#include <color_fragment>\nfloat dK = vKind; float dS = dStrength(dK);\n// esmaece a microtextura quando ela fica menor que um pixel (evita serrilhado)\nfloat dFade = dS > 0.0 ? clamp(1.5 - length(fwidth(vDetailPos)) * dFreq(dK) * 1.4, 0.0, 1.0) : 0.0;\nfloat dH = dHeight(vDetailPos, dK);\ndiffuseColor.rgb = vTint.rgb * (1.0 + (dH - 0.5) * 0.5 * dS * dFade);\n');
+    shader.fragmentShader=shader.fragmentShader.replace('#include <color_fragment>','#include <color_fragment>\nfloat dK = vKind; bool dIn = !gl_FrontFacing && dK > 6.5; float dS = dIn ? 0.9 : dStrength(dK);\n// esmaece a microtextura quando ela fica menor que um pixel (evita serrilhado)\nfloat dFade = dS > 0.0 ? clamp(1.5 - length(fwidth(vDetailPos)) * (dIn ? 260.0 : dFreq(dK)) * 1.4, 0.0, 1.0) : 0.0;\n// vilosidades só aparecem quando a câmera chega perto\nfloat dFine = clamp(1.5 - length(fwidth(vDetailPos)) * 3200.0 * 1.4, 0.0, 1.0);\nfloat dH = dIn ? mix(dMucosa(vDetailPos, dK, vAxis), dMucosa(vDetailPos, dK, vAxis) * 0.7 + dNoise(vDetailPos*3200.0) * 0.3, dFine) : dHeight(vDetailPos, dK, vAxis);\nvec3 dBase = dIn ? mix(vTint.rgb, vec3(0.86, 0.36, 0.33), 0.55) : vTint.rgb;\ndiffuseColor.rgb = dBase * (1.0 + (dH - 0.5) * (dIn ? 0.9 : 0.5) * dS * dFade);\n');
     // Seleção: contorno azul TRAUBE (fresnel), preservando a cor do tecido.
     shader.fragmentShader=shader.fragmentShader.replace('#include <emissivemap_fragment>','#include <emissivemap_fragment>\nfloat selRim = pow(1.0 - clamp(abs(dot(normalize(normal), normalize(vViewPosition))), 0.0, 1.0), 2.2);\ntotalEmissiveRadiance += vec3(0.05, 0.22, 0.75) * partSelected * selRim * 1.1 + vec3(0.07, 0.035, 0.03) * selRim * (1.0 - partSelected);');
     shader.fragmentShader=shader.fragmentShader.replace('#include <roughnessmap_fragment>','#include <roughnessmap_fragment>\nroughnessFactor = mix(roughnessFactor, vTint.a, 0.85) + (dH - 0.5) * 0.12 * dS * dFade;');
     // Relevo por derivadas da altura procedural (bump sem UV).
-    shader.fragmentShader=shader.fragmentShader.replace('#include <normal_fragment_maps>','#include <normal_fragment_maps>\nif (dFade > 0.0) { vec3 dpx = dFdx(-vViewPosition), dpy = dFdy(-vViewPosition); float dAmp = 0.0016 * dS * dFade; float dhx = dFdx(dH) * dAmp, dhy = dFdy(dH) * dAmp; vec3 r1 = cross(dpy, normal), r2 = cross(normal, dpx); float det = dot(dpx, r1); vec3 grad = sign(det) * (dhx * r1 + dhy * r2); normal = normalize(abs(det) * normal - grad); }');
+    shader.fragmentShader=shader.fragmentShader.replace('#include <normal_fragment_maps>','#include <normal_fragment_maps>\nif (dFade > 0.0) { vec3 dpx = dFdx(-vViewPosition), dpy = dFdy(-vViewPosition); float dAmp = (dIn ? 0.004 : dK > 1.5 && dK < 2.5 ? 0.0022 : 0.0016) * dS * dFade; float dhx = dFdx(dH) * dAmp, dhy = dFdy(dH) * dAmp; vec3 r1 = cross(dpy, normal), r2 = cross(normal, dpx); float det = dot(dpx, r1); vec3 grad = sign(det) * (dhx * r1 + dhy * r2); normal = normalize(abs(det) * normal - grad); }');
    };materials.push(m);return m;
   };
   const mats=new Map(SYSTEMS.map(s=>[s.id,materialFor(s.id)]));
   let loaded=0;
+  // Progresso por bytes e download resiliente: cada parte tem timeout por inatividade e até 4 tentativas,
+  // para o carregamento não ficar parado em 87% quando uma conexão trava.
+  const got=new Float64Array(atlas.chunks.length),totalBytes=atlas.chunks.reduce((n,c)=>n+(c.gzipBytes??c.bytes),0)||1;
+  const report=()=>{const b=got.reduce((n,x)=>n+x,0);onProgress(Math.min(99,Math.floor(b/totalBytes*96+loaded/atlas.chunks.length*3)));};
+  const fetchOnce=async(url:string,wire:number,expected:number,compressed:boolean,ci:number)=>{
+   const ctl=new AbortController(),stop=()=>ctl.abort();abort.signal.addEventListener('abort',stop);
+   let timer=0;const arm=()=>{clearTimeout(timer);timer=window.setTimeout(stop,20000);};arm();
+   try{
+    const response=await fetch(url,{signal:ctl.signal,cache:'no-store'});
+    if(!response.ok||!response.body)return await decodeModelResponse(response,expected,compressed);
+    const reader=response.body.getReader(),parts:Uint8Array[]=[];let n=0;
+    for(;;){const {done,value}=await reader.read();if(done)break;arm();parts.push(value);n+=value.byteLength;got[ci]=Math.min(n,wire);report();}
+    const all=new Uint8Array(n);let o=0;for(const p of parts){all.set(p,o);o+=p.byteLength;}
+    return await decodeModelResponse(new Response(all),expected,compressed);
+   }finally{clearTimeout(timer);abort.signal.removeEventListener('abort',stop);}
+  };
+  const fetchChunk=async(ci:number,url:string,wire:number,expected:number,compressed:boolean)=>{
+   for(let attempt=0;attempt<4;attempt++){
+    if(disposed)throw new Error('cancelado');
+    try{return await fetchOnce(attempt?url+(url.includes('?')?'&':'?')+'r='+attempt:url,wire,expected,compressed,ci);}
+    catch(e){got[ci]=0;report();if(abort.signal.aborted)throw e;await new Promise(r=>setTimeout(r,800*(attempt+1)));}
+   }
+   throw new Error('Uma parte do modelo não chegou depois de várias tentativas. Verifique a conexão e tente de novo.');
+  };
   const loadChunk=async(ci:number)=>{
-   const chunk=atlas.chunks[ci],compressed=!!chunk.gzip&&typeof DecompressionStream!=='undefined';const response=await fetch(compressed?chunk.gzip!:chunk.url,{signal:abort.signal});const buffer=await decodeModelResponse(response,chunk.bytes,compressed);if(disposed)return;
+   const chunk=atlas.chunks[ci],compressed=!!chunk.gzip&&typeof DecompressionStream!=='undefined';const buffer=await fetchChunk(ci,compressed?chunk.gzip!:chunk.url,compressed?(chunk.gzipBytes??chunk.bytes):chunk.bytes,chunk.bytes,compressed);if(disposed)return;
    const groups=new Map<string,T.BufferGeometry[]>();
    atlas.parts.forEach((p,i)=>{
     if(p.chunk!==ci)return;
@@ -110,7 +163,7 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?600.0:kind<3.5?650.0:kin
     const list=groups.get(p.system)??[];list.push(g);groups.set(p.system,list);
    });
    groups.forEach((gs,system)=>{const geometry=mergeGeometries(gs,false);if(!geometry)throw new Error('Não foi possível montar a geometria anatômica.');geometries.push(geometry);const mesh=new T.Mesh(geometry,mats.get(system as never));mesh.frustumCulled=false;scene.add(mesh);});
-   lastState=null;loaded++;onProgress(Math.round(loaded/atlas.chunks.length*100));dirty=true;
+   lastState=null;loaded++;got[ci]=atlas.chunks[ci].gzipBytes??atlas.chunks[ci].bytes;if(loaded===atlas.chunks.length)onProgress(100);else report();dirty=true;
   };
   (async()=>{try{let cursor=0;await Promise.all(Array.from({length:3},async()=>{while(cursor<atlas.chunks.length){const i=cursor++;await loadChunk(i);}}));if(!disposed){ready=true;dirty=true;}}catch(e){if(!disposed)onError(e instanceof Error?e.message:'Não foi possível carregar a anatomia.');}})();
   const fit=(view:string,extent=0)=>{
@@ -156,6 +209,13 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?600.0:kind<3.5?650.0:kin
    if(cutKey!==lastCut){lastCut=cutKey;const on=s.cutAxis!=='none';
     if(on){const min=bodyBox.min,max=bodyBox.max;if(s.cutAxis==='sagittal'){cutPlane.normal.set(-1,0,0);cutPlane.constant=T.MathUtils.lerp(min.x,max.x,s.cut);}else if(s.cutAxis==='coronal'){cutPlane.normal.set(0,0,-1);cutPlane.constant=T.MathUtils.lerp(min.z,max.z,s.cut);}else{cutPlane.normal.set(0,-1,0);cutPlane.constant=T.MathUtils.lerp(min.y,max.y,s.cut);}}
     materials.forEach(m=>{const want=on?[cutPlane]:null;if((m.clippingPlanes?.length??0)!==(want?.length??0)){m.clippingPlanes=want;m.needsUpdate=true;}});dirty=true;}
+   const flowOn=!!s.flow&&flowLayers.length>0&&amount<.05;
+   if(flowOn){
+    // ciclo de ~0,85 s: o sangue acelera na sístole e quase para na diástole
+    flowClock+=dt*(0.25+0.9*Math.max(0,Math.sin(performance.now()/1000*Math.PI*2/0.85)));
+    flowLayers.forEach(L=>{const a=L.pts.geometry.attributes.position as T.BufferAttribute;for(let k=0;k<FLOW_N;k++){const t=((k/FLOW_N)+flowClock*.45+L.seed)%1;L.curve.getPointAt(t,flowTmp);const j=(Math.sin(k*12.9898+L.seed*78.2)*43758.5453)%1;a.setXYZ(k,flowTmp.x+j*.004,flowTmp.y+((j*7)%1-.5)*.006,flowTmp.z+((j*13)%1-.5)*.006);}a.needsUpdate=true;L.pts.visible=true;});
+    dirty=true;flowShown=true;
+   }else if(flowShown){flowLayers.forEach(L=>L.pts.visible=false);flowShown=false;dirty=true;}
    const ghost=s.selected.length&&!s.isolate?(s.ghost??0):0;
    if(ghost!==lastGhost){const on=ghost>0;materials.forEach(m=>{if(m.userData.skin===undefined)m.userData.skin=m.transparent;if(m.userData.skin)return;if(m.transparent!==on){m.transparent=on;m.depthWrite=!on;m.needsUpdate=true;}});ghostUniform.value=ghost;lastGhost=ghost;dirty=true;}
    if(s.view!==lastView||s.reset!==lastReset){fit(s.view,amount);lastView=s.view;lastReset=s.reset;}
