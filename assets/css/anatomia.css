@@ -153,3 +153,72 @@ body[data-page="anatomia"] .page { max-width: 1540px; }
 
 :fullscreen.anatomy-viewer { background: #e7eef7; }
 :fullscreen.anatomy-viewer .anatomy-stage-hint { bottom: 24px; }
+
+
+/* Interactive exterior and didactic cutaway */
+.anatomy-mode-button {
+  min-height: 42px;
+  padding: 0 12px;
+  border: 1px solid color-mix(in srgb, var(--anatomy-primary) 25%, transparent);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--anatomy-surface) 90%, transparent);
+  color: var(--anatomy-primary);
+  font: 750 .76rem/1 system-ui, sans-serif;
+  white-space: nowrap;
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+}
+.anatomy-mode-button:hover, .anatomy-mode-button:focus-visible,
+.anatomy-mode-button[aria-pressed="true"] {
+  background: var(--anatomy-primary);
+  color: #fff;
+}
+.anatomy-flow-button[aria-pressed="true"] { background: #ae4056; border-color: #ae4056; color: #fff; }
+.anatomy-mode-note {
+  position: absolute;
+  z-index: 4;
+  left: 18px;
+  bottom: 57px;
+  max-width: calc(100% - 36px);
+  padding: 8px 11px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--anatomy-surface) 88%, transparent);
+  color: var(--anatomy-text);
+  font: 700 .72rem/1.3 system-ui, sans-serif;
+  pointer-events: none;
+}
+.anatomy-mode-note-interior { display: none; }
+.anatomy-viewer[data-anatomy-mode="interior"] .anatomy-mode-note-exterior { display: none; }
+.anatomy-viewer[data-anatomy-mode="interior"] .anatomy-mode-note-interior { display: inline; }
+.anatomy-picked-card {
+  position: absolute;
+  z-index: 8;
+  left: 18px;
+  top: 94px;
+  width: min(320px, calc(100% - 36px));
+  padding: 17px 18px 18px;
+  border: 1px solid var(--anatomy-line);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--anatomy-surface) 96%, transparent);
+  box-shadow: 0 20px 55px rgba(16, 35, 64, .2);
+  backdrop-filter: blur(18px);
+}
+.anatomy-picked-card[hidden] { display: none; }
+.anatomy-picked-card small { display: block; padding-right: 25px; color: var(--anatomy-primary); font-size: .65rem; font-weight: 850; letter-spacing: .1em; }
+.anatomy-picked-card h3 { margin: 8px 0 1px; font-size: 1.2rem; line-height: 1.2; }
+.anatomy-picked-card em { color: var(--anatomy-muted); font: italic .8rem Georgia, serif; }
+.anatomy-picked-card p { margin: 13px 0; color: var(--anatomy-text); font-size: .83rem; line-height: 1.48; }
+.anatomy-picked-card span { display: block; padding: 8px 9px; border-radius: 9px; background: var(--anatomy-wash); color: var(--anatomy-primary); font-size: .75rem; font-weight: 760; }
+.anatomy-picked-close { position: absolute; right: 10px; top: 8px; width: 31px; height: 31px; border: 0; border-radius: 9px; background: var(--anatomy-wash); color: var(--anatomy-primary); font-size: 1.35rem; cursor: pointer; }
+.anatomy-structure-list { max-height: 530px; overflow-y: auto; scrollbar-width: thin; }
+@media (max-width: 760px) {
+  .anatomy-stage-head { left: 9px; right: 9px; }
+  .anatomy-stage-tools { gap: 5px; }
+  .anatomy-mode-button { min-height: 36px; padding: 0 8px; font-size: .69rem; }
+  .anatomy-mode-note { bottom: 53px; left: 10px; max-width: calc(100% - 20px); font-size: .66rem; }
+  .anatomy-picked-card { top: auto; bottom: 94px; left: 10px; width: min(310px, calc(100% - 20px)); }
+  .anatomy-structure-list { max-height: 430px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .anatomy-flow-button { transition: none; }
+}
