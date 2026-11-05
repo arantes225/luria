@@ -20,6 +20,7 @@ module.exports = function localizeHumanAtlas(source, lexiconPath) {
     ["Start with a major organ, or search every named structure.", "Comece por um órgão ou busque pelo nome de uma estrutura."],
     ["piece'", "estrutura'"], ["pieces'", "estruturas'"],
     ["Camera controls", "Controles da câmera"], ["Pause rotation", "Pausar rotação"], ["Rotate body", "Girar corpo"],
+    ["Open system layers", "Abrir camadas de sistemas"],
     ["Reset view and layers", "Restaurar vista e camadas"], ["Auto rotate", "Giro automático"], ["Reset", "Restaurar"],
     ["SELECTED STRUCTURE", "ESTRUTURA SELECIONADA"], ["ANATOMICAL INVENTORY", "PEÇAS ANATÔMICAS"],
     ["SEPARATED STRUCTURES", "ESTRUTURAS SEPARADAS"], ["ADULT HUMAN · MALE", "CORPO ADULTO · MASCULINO"],
