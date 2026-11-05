@@ -115,6 +115,8 @@ jobs:
           curl --fail --location --retry 3 'https://raw.githubusercontent.com/organui/heart-3d/c72ce6654ff8e282942f97750d3104f55ef4fc3d/public/models/heart.glb' --output build/pages/assets/models/anatomia/coracao.glb
       - name: Verify heart model and build browser module
         run: ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
+      - name: Check anatomical room contracts
+        run: node --test tests/anatomia-room.test.cjs
 
   deploy:
     if: github.event_name != 'pull_request'
