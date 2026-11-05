@@ -7,6 +7,21 @@
   const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const number=value=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(value);
   const status=row=>row.data?.status==='posology_verified'?2:row.data?.status==='verified'?1:0;
+
+  // ⚡ Bolt: Debounce function to prevent expensive rendering on every keystroke
+  function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+      const context = this;
+      const later = function() {
+        timeout = null;
+        func.apply(context, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
   const field=(label,value)=>`<div class="rx-field"><span>${esc(label)}</span><b>${esc(value||'A confirmar')}</b></div>`;
   const multilineField=(label,value)=>{
     const raw=String(value||'A confirmar').trim();
@@ -319,7 +334,8 @@
     });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
-  search.addEventListener('input',()=>{visibleCount=100;renderList();});
+  // ⚡ Bolt: Delays the search execution by 300ms so it only runs when typing stops
+  search.addEventListener('input',debounce(()=>{visibleCount=100;renderList();}, 300));
   // Canonical database: bulario_catalog is the public projection of bulario_drugs.
   // Show records as soon as each page arrives, independently from protocol loading.
   async function loadAll(table,fields,sortKey,onPage){
