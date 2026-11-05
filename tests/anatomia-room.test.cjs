@@ -29,7 +29,7 @@ test("modelo do coração possui estrutura, controles e conteúdo anatômico", (
 });
 
 test("Sala de Anatomia mantém alternativa estática para navegadores sem WebGL", () => {
-  const source = read("assets/js/anatomy-heart-entry.js");
+  const source = read("assets/js/anatomy-heart-entry.mjs");
   assert.match(source, /anatomy-static-fallback/);
   assert.match(source, /Quiz disponível no modo 3D/);
   assert.ok(fs.statSync(path.join(root, "assets/img/anatomia/coracao-estatico.webp")).size > 10_000);
