@@ -1,277 +1,289 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js";
 
 const root = document.querySelector("[data-anatomy-viewer]");
-
 if (root) {
   const canvas = root.querySelector("canvas");
   const loading = root.querySelector("[data-anatomy-loading]");
   const progress = root.querySelector("[data-anatomy-progress]");
   const status = document.querySelector("[data-anatomy-status]");
-  const structureTitle = document.querySelector("[data-structure-title]");
-  const structureLatin = document.querySelector("[data-structure-latin]");
-  const structureDetail = document.querySelector("[data-structure-detail]");
-  const structureFlow = document.querySelector("[data-structure-flow]");
-  const structureButtons = [...document.querySelectorAll("[data-structure-id]")];
-  const hotspotLayer = root.querySelector("[data-hotspot-layer]");
+  const list = document.querySelector("[data-anatomy-structures]");
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
-
   const structures = [
-    { id: "aorta", label: "Aorta", latin: "Aorta", detail: "Maior artéria do corpo. Recebe o sangue ejetado pelo ventrículo esquerdo e o distribui para a circulação sistêmica.", flow: "Sangue oxigenado → corpo", point: [-0.35, 1.65, 0.55], color: "#ef6b62" },
-    { id: "left-atrium", label: "Átrio esquerdo", latin: "Atrium sinistrum", detail: "Câmara que recebe o sangue oxigenado proveniente das veias pulmonares e o direciona ao ventrículo esquerdo.", flow: "Pulmões → ventrículo esquerdo", point: [0.82, 0.65, 0.5], color: "#f2a33b" },
-    { id: "right-atrium", label: "Átrio direito", latin: "Atrium dextrum", detail: "Recebe o sangue venoso pelas veias cavas e pelo seio coronário antes de enviá-lo ao ventrículo direito.", flow: "Corpo → ventrículo direito", point: [-0.9, 0.35, 0.55], color: "#6393d8" },
-    { id: "left-ventricle", label: "Ventrículo esquerdo", latin: "Ventriculus sinister", detail: "Câmara de parede espessa que gera a pressão necessária para impulsionar o sangue por toda a circulação sistêmica.", flow: "Coração → aorta → corpo", point: [0.7, -0.75, 0.65], color: "#f2a33b" },
-    { id: "right-ventricle", label: "Ventrículo direito", latin: "Ventriculus dexter", detail: "Bombeia o sangue venoso através do tronco pulmonar em direção aos pulmões para realizar a hematose.", flow: "Coração → pulmões", point: [-0.65, -0.68, 0.66], color: "#ef6b62" },
-    { id: "mitral", label: "Valva mitral", latin: "Valva atrioventricularis sinistra", detail: "Valva bicúspide entre o átrio e o ventrículo esquerdos. Evita o refluxo durante a sístole ventricular.", flow: "Fluxo unidirecional no coração esquerdo", point: [0.18, -1.35, 0.48], color: "#d98fc0" },
+    { id: "right-atrium", label: "Parede do átrio direito", latin: "Paries atrii dextri", color: "#a96d70", group: "Câmaras e paredes", detail: "Parede da câmara que recebe o sangue venoso do corpo. A cavidade atrial não está representada separadamente neste modelo.", flow: "Corpo → átrio direito" },
+    { id: "left-atrium", label: "Parede do átrio esquerdo", latin: "Paries atrii sinistri", color: "#b77c76", group: "Câmaras e paredes", detail: "Parede da câmara que recebe o sangue oxigenado dos pulmões. Observe-a melhor pela face posterior.", flow: "Pulmões → átrio esquerdo" },
+    { id: "ventricular-wall", label: "Parede ventricular", latin: "Paries ventriculi", color: "#ab6159", group: "Câmaras e paredes", detail: "Parede muscular combinada dos ventrículos. O conjunto de dados não separa as paredes direita e esquerda; o modo interior a torna translúcida.", flow: "Contração ventricular → ejeção" },
+    { id: "right-ventricle", label: "Cavidade do ventrículo direito", latin: "Cavitas ventriculi dextri", color: "#668db7", group: "Cavidades", detail: "Superfície que representa o espaço dentro do ventrículo direito, e não seu tecido muscular. O ventrículo envia sangue ao tronco pulmonar.", flow: "Ventrículo direito → pulmões" },
+    { id: "left-ventricle", label: "Cavidade do ventrículo esquerdo", latin: "Cavitas ventriculi sinistri", color: "#d28b72", group: "Cavidades", detail: "Superfície que representa o espaço dentro do ventrículo esquerdo, e não sua parede. O ventrículo envia sangue à aorta.", flow: "Ventrículo esquerdo → aorta" },
+    { id: "ascending-aorta", label: "Aorta ascendente", latin: "Aorta ascendens", color: "#c37f6a", group: "Grandes vasos", detail: "Segmento inicial da aorta que recebe sangue do ventrículo esquerdo. Os ramos do arco não estão incluídos.", flow: "Ventrículo esquerdo → circulação sistêmica" },
+    { id: "aortic-arch", label: "Arco da aorta", latin: "Arcus aortae", color: "#ca8d78", group: "Grandes vasos", detail: "Curvatura da aorta após o segmento ascendente. Seus ramos e a aorta descendente foram omitidos desta seleção.", flow: "Aorta ascendente → corpo" },
+    { id: "pulmonary-trunk", label: "Tronco pulmonar", latin: "Truncus pulmonalis", color: "#789aab", group: "Grandes vasos", detail: "Recebe sangue do ventrículo direito e segue em direção às artérias pulmonares. As árvores arteriais pulmonares não integram o modelo.", flow: "Ventrículo direito → pulmões" },
+    { id: "superior-vena-cava", label: "Veia cava superior", latin: "Vena cava superior", color: "#8c9fab", group: "Grandes vasos", detail: "Retorna ao átrio direito o sangue venoso da parte superior do corpo. A veia cava inferior não está incluída.", flow: "Corpo → átrio direito" },
+    { id: "left-coronary", label: "Árvore coronária esquerda", latin: "Arteria coronaria sinistra", color: "#dfb58a", group: "Coronárias", detail: "Conjunto de ramos mapeados à coronária esquerda, que irrigam parte do miocárdio. Ramos finos estão simplificados.", flow: "Aorta → miocárdio" },
+    { id: "right-coronary", label: "Árvore coronária direita", latin: "Arteria coronaria dextra", color: "#d4a777", group: "Coronárias", detail: "Conjunto de ramos mapeados à coronária direita. A seleção corresponde à árvore do atlas, não a cada ramo individual.", flow: "Aorta → miocárdio" }
   ];
-
-  function updateInfo(structure) {
-    structureTitle.textContent = structure.label;
-    structureLatin.textContent = structure.latin;
-    structureDetail.textContent = structure.detail;
-    structureFlow.textContent = structure.flow;
-    structureButtons.forEach(button => {
-      const active = button.dataset.structureId === structure.id;
+  const byId = new Map(structures.map(item => [item.id, item]));
+  const title = document.querySelector("[data-structure-title]");
+  const latin = document.querySelector("[data-structure-latin]");
+  const detail = document.querySelector("[data-structure-detail]");
+  const flow = document.querySelector("[data-structure-flow]");
+  const card = document.createElement("section");
+  card.className = "anatomy-picked-card";
+  card.hidden = true;
+  card.setAttribute("aria-label", "Estrutura identificada");
+  card.innerHTML = '<button type="button" class="anatomy-picked-close" aria-label="Fechar informação">×</button><small>ESTRUTURA IDENTIFICADA</small><h3></h3><em></em><p></p><span></span>';
+  root.append(card);
+  card.querySelector("button").addEventListener("click", () => { card.hidden = true; });
+  function announce(message) { if (status) status.textContent = message; }
+  function select(id, fromModel = false) {
+    const item = byId.get(id);
+    if (!item) return;
+    title.textContent = item.label;
+    latin.textContent = item.latin;
+    detail.textContent = item.detail;
+    flow.textContent = item.flow;
+    list.querySelectorAll("[data-structure-id]").forEach(button => {
+      const active = button.dataset.structureId === id;
       button.classList.toggle("is-active", active);
       button.setAttribute("aria-pressed", String(active));
     });
+    card.querySelector("h3").textContent = item.label;
+    card.querySelector("em").textContent = item.latin;
+    card.querySelector("p").textContent = item.detail;
+    card.querySelector("span").textContent = item.flow;
+    card.hidden = false;
+    if (quiz?.active && fromModel) quiz.answer(id);
+    announce(item.label + ". " + item.detail);
   }
-
-  viewerInit: {
+  let quiz = null;
+  list.innerHTML = "";
+  for (const group of ["Câmaras e paredes", "Cavidades", "Grandes vasos", "Coronárias"]) {
+    const heading = document.createElement("h4");
+    heading.className = "anatomy-list-group";
+    heading.textContent = group;
+    list.append(heading);
+    for (const item of structures.filter(value => value.group === group)) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "anatomy-structure-button";
+      button.style.setProperty("--dot", item.color);
+      button.dataset.structureId = item.id;
+      button.setAttribute("aria-pressed", "false");
+      const name = document.createElement("span");
+      name.textContent = item.label;
+      button.append(name);
+      button.addEventListener("click", () => select(item.id));
+      list.append(button);
+    }
+  }
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100);
-  camera.position.set(0, 0.85, 7.6);
+  camera.position.set(0, 0.55, 8.2);
   let renderer;
   try {
-    renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: "high-performance" });
+    renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: "low-power" });
   } catch {
-    loading.classList.add("anatomy-static-fallback");
-    loading.innerHTML = `<img src="/assets/img/anatomia/coracao-estatico.webp" alt="Vista anatômica externa do coração humano"><strong>Visualização estática</strong><span>Seu navegador não disponibilizou o modo 3D. As estruturas e o conteúdo continuam acessíveis ao lado.</span>`;
     root.classList.add("is-static");
-    if (status) status.textContent = "O modo tridimensional não está disponível neste navegador. Uma imagem estática do coração foi exibida.";
-    structureButtons.forEach(button => button.addEventListener("click", () => {
-      const structure = structures.find(item => item.id === button.dataset.structureId);
-      if (structure) updateInfo(structure);
-    }));
-    const fallbackQuiz = document.querySelector("[data-quiz-start]");
-    if (fallbackQuiz) {
-      fallbackQuiz.disabled = true;
-      fallbackQuiz.textContent = "Quiz disponível no modo 3D";
-    }
-    break viewerInit;
+    loading.classList.add("anatomy-static-fallback");
+    loading.innerHTML = '<img src="/assets/img/anatomia/coracao-estatico.webp" alt="Coração humano"><strong>Visualização estática</strong><span>O modo 3D não está disponível neste navegador.</span>';
+    announce("Visualização 3D indisponível.");
   }
-  renderer.setPixelRatio(Math.min(devicePixelRatio, innerWidth < 760 ? 1.4 : 2));
-  renderer.outputColorSpace = THREE.SRGBColorSpace;
-  renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.03;
-
-  const controls = new OrbitControls(camera, canvas);
-  controls.enableDamping = true;
-  controls.dampingFactor = 0.055;
-  controls.enablePan = false;
-  controls.minDistance = 4.4;
-  controls.maxDistance = 11;
-  controls.target.set(0, 0, 0);
-  controls.autoRotate = !reducedMotion;
-  controls.autoRotateSpeed = 0.7;
-
-  scene.add(new THREE.HemisphereLight(0xfff6ed, 0x251a26, 2.15));
-  const key = new THREE.DirectionalLight(0xffefe2, 4.2);
-  key.position.set(4.5, 6, 6);
-  scene.add(key);
-  const fill = new THREE.DirectionalLight(0xb9d4ff, 2.1);
-  fill.position.set(-5, 1.5, 5);
-  scene.add(fill);
-  const rim = new THREE.DirectionalLight(0xff7f6e, 2.4);
-  rim.position.set(-4, 3, -4);
-  scene.add(rim);
-
-  const pedestal = new THREE.Mesh(
-    new THREE.CylinderGeometry(2.05, 2.18, 0.22, 64),
-    new THREE.MeshStandardMaterial({ color: 0xdce7f5, roughness: 0.74, metalness: 0.04 })
-  );
-  pedestal.position.y = -2.42;
-  scene.add(pedestal);
-
-  let organ = null;
-  let selected = structures[0];
-  let labelsVisible = true;
-  let quiz = null;
-  const markers = new Map();
-  const vector = new THREE.Vector3();
-
-  for (const structure of structures) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "anatomy-hotspot";
-    button.dataset.hotspotId = structure.id;
-    button.style.setProperty("--hotspot", structure.color);
-    button.innerHTML = `<span class="anatomy-hotspot-dot" aria-hidden="true"></span><span class="anatomy-hotspot-label">${structure.label}</span>`;
-    button.setAttribute("aria-label", `Ver ${structure.label}`);
-    button.addEventListener("click", () => selectStructure(structure.id, true));
-    hotspotLayer.append(button);
-    markers.set(structure.id, button);
-  }
-
-  function announce(message) {
-    if (status) status.textContent = message;
-  }
-
-  function selectStructure(id, fromModel = false) {
-    const structure = structures.find(item => item.id === id);
-    if (!structure) return;
-    selected = structure;
-    updateInfo(structure);
-    markers.forEach((button, key) => button.classList.toggle("is-active", key === id));
-
-    if (quiz?.active && fromModel) {
-      const correct = quiz.target === id;
-      quiz.answer(id, correct);
-      return;
-    }
-    announce(`${structure.label}. ${structure.detail}`);
-  }
-
-  structureButtons.forEach(button => button.addEventListener("click", () => selectStructure(button.dataset.structureId)));
-
-  const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
-  loader.load(
-    "/assets/models/anatomia/coracao.glb",
-    gltf => {
-      organ = gltf.scene;
-      const box = new THREE.Box3().setFromObject(organ);
-      const size = box.getSize(new THREE.Vector3());
-      const center = box.getCenter(new THREE.Vector3());
-      const scale = 4.25 / Math.max(size.x, size.y, size.z);
-      organ.position.sub(center);
-      organ.scale.setScalar(scale);
-      organ.rotation.y = -0.08;
-      organ.traverse(child => {
-        if (!child.isMesh) return;
-        child.material = child.material.clone();
-        child.material.roughness = Math.min(0.72, child.material.roughness ?? 0.62);
-        child.material.metalness = 0;
-      });
-      scene.add(organ);
-      loading.classList.add("is-hidden");
-      root.classList.add("is-ready");
-      announce("Modelo tridimensional do coração carregado. Arraste para girar e use a roda do mouse para aproximar.");
-    },
-    event => {
-      if (event.total && progress) progress.style.width = `${Math.min(100, event.loaded / event.total * 100)}%`;
-    },
-    () => {
-      loading.querySelector("strong").textContent = "Não foi possível carregar o modelo";
-      loading.querySelector("span").textContent = "Tente atualizar a página.";
-      announce("Falha ao carregar o modelo tridimensional do coração.");
-    }
-  );
-
-  function resize() {
-    const rect = root.getBoundingClientRect();
-    const width = Math.max(1, Math.round(rect.width));
-    const height = Math.max(1, Math.round(rect.height));
-    renderer.setSize(width, height, false);
-    camera.aspect = width / height;
-    camera.updateProjectionMatrix();
-  }
-
-  const observer = new ResizeObserver(resize);
-  observer.observe(root);
-  resize();
-
-  function updateMarkers() {
-    if (!organ) return;
-    const width = root.clientWidth;
-    const height = root.clientHeight;
-    for (const structure of structures) {
-      vector.set(...structure.point).applyMatrix4(organ.matrixWorld).project(camera);
-      const marker = markers.get(structure.id);
-      marker.style.transform = `translate3d(${(vector.x * .5 + .5) * width}px, ${(-vector.y * .5 + .5) * height}px, 0)`;
-      marker.hidden = !labelsVisible || vector.z > 1;
-    }
-  }
-
-  function render() {
-    controls.update();
-    renderer.render(scene, camera);
-    updateMarkers();
-    requestAnimationFrame(render);
-  }
-  render();
-
-  document.querySelector("[data-anatomy-reset]")?.addEventListener("click", () => {
-    camera.position.set(0, 0.85, 7.6);
-    controls.target.set(0, 0, 0);
-    controls.update();
-    announce("Visualização inicial restaurada.");
-  });
-
-  const rotateButton = document.querySelector("[data-anatomy-rotate]");
-  rotateButton?.addEventListener("click", () => {
-    controls.autoRotate = !controls.autoRotate;
-    rotateButton.classList.toggle("is-active", controls.autoRotate);
-    rotateButton.setAttribute("aria-pressed", String(controls.autoRotate));
-    announce(controls.autoRotate ? "Rotação automática ativada." : "Rotação automática pausada.");
-  });
-  rotateButton?.classList.toggle("is-active", controls.autoRotate);
-  rotateButton?.setAttribute("aria-pressed", String(controls.autoRotate));
-
-  const labelsButton = document.querySelector("[data-anatomy-labels]");
-  labelsButton?.addEventListener("click", () => {
-    labelsVisible = !labelsVisible;
-    labelsButton.classList.toggle("is-active", labelsVisible);
-    labelsButton.setAttribute("aria-pressed", String(labelsVisible));
-    announce(labelsVisible ? "Identificações visíveis." : "Identificações ocultas.");
-  });
-  labelsButton?.classList.add("is-active");
-
-  document.querySelector("[data-anatomy-fullscreen]")?.addEventListener("click", async () => {
-    if (!document.fullscreenElement) await root.requestFullscreen?.();
-    else await document.exitFullscreen?.();
-  });
-
-  const quizPanel = document.querySelector("[data-anatomy-quiz]");
-  const quizTarget = quizPanel?.querySelector("[data-quiz-target]");
-  const quizFeedback = quizPanel?.querySelector("[data-quiz-feedback]");
-  const quizScore = quizPanel?.querySelector("[data-quiz-score]");
-  const quizStart = document.querySelector("[data-quiz-start]");
-
-  function nextQuestion() {
-    const choices = structures.filter(item => item.id !== quiz?.target);
-    const target = choices[Math.floor(Math.random() * choices.length)];
-    quiz.target = target.id;
-    quizTarget.textContent = target.label;
-    quizFeedback.textContent = "Toque no ponto correspondente no modelo.";
-    quizFeedback.className = "quiz-feedback";
-  }
-
-  quizStart?.addEventListener("click", () => {
-    quizPanel.hidden = false;
-    labelsVisible = true;
-    quiz = {
-      active: true,
-      target: null,
-      correct: 0,
-      total: 0,
-      answer(id, correct) {
-        this.total += 1;
-        if (correct) this.correct += 1;
-        quizScore.textContent = `${this.correct}/${this.total}`;
-        quizFeedback.textContent = correct ? "Correto! Próxima estrutura…" : `Quase. Você marcou ${structures.find(item => item.id === id)?.label}.`;
-        quizFeedback.className = `quiz-feedback ${correct ? "is-correct" : "is-wrong"}`;
-        window.setTimeout(nextQuestion, correct ? 850 : 1500);
-      }
-    };
+  if (renderer) {
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 1.6));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.1;
+    const controls = new OrbitControls(camera, canvas);
+    controls.enableDamping = !reducedMotion;
+    controls.enablePan = false;
+    controls.minDistance = 4;
+    controls.maxDistance = 12;
     controls.autoRotate = false;
-    quizStart.textContent = "Reiniciar quiz";
-    quizScore.textContent = "0/0";
-    nextQuestion();
-    quizPanel.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "nearest" });
-  });
-
-  selectStructure("aorta");
+    scene.add(new THREE.HemisphereLight(0xfff2e9, 0x736174, 2.4));
+    const key = new THREE.DirectionalLight(0xffeadc, 3);
+    key.position.set(4, 6, 7);
+    scene.add(key);
+    const fill = new THREE.DirectionalLight(0xc9dbff, 1.5);
+    fill.position.set(-5, 0, 4);
+    scene.add(fill);
+    let organ = null;
+    let interior = false;
+    let flowEnabled = false;
+    const meshes = new Map();
+    const raycaster = new THREE.Raycaster();
+    const pointer = new THREE.Vector2();
+    const blood = new THREE.Group();
+    scene.add(blood);
+    blood.visible = false;
+    const particles = [];
+    const clock = new THREE.Clock();
+    function center(id) {
+      const mesh = meshes.get(id);
+      return mesh ? new THREE.Box3().setFromObject(mesh).getCenter(new THREE.Vector3()) : null;
+    }
+    function buildFlow() {
+      blood.clear();
+      particles.length = 0;
+      const paths = [
+        { ids: ["superior-vena-cava", "right-atrium", "right-ventricle", "pulmonary-trunk"], color: 0x82c8ff },
+        { ids: ["left-atrium", "left-ventricle", "ascending-aorta", "aortic-arch"], color: 0xffa091 }
+      ];
+      for (const path of paths) {
+        const points = path.ids.map(center).filter(Boolean).map(point => point.clone().add(new THREE.Vector3(0, 0, 0.1)));
+        if (points.length < 2) continue;
+        const curve = new THREE.CatmullRomCurve3(points);
+        for (let i = 0; i < 14; i++) {
+          const dot = new THREE.Mesh(new THREE.SphereGeometry(0.035, 9, 7), new THREE.MeshBasicMaterial({ color: path.color }));
+          dot.position.copy(curve.getPoint(i / 14));
+          blood.add(dot);
+          particles.push({ dot, curve, phase: i / 14 });
+        }
+      }
+    }
+    function setInterior(active) {
+      interior = active;
+      root.dataset.anatomyMode = active ? "interior" : "exterior";
+      document.querySelector("[data-anatomy-interior]")?.setAttribute("aria-pressed", String(active));
+      document.querySelector("[data-anatomy-exterior]")?.setAttribute("aria-pressed", String(!active));
+      for (const [id, mesh] of meshes) {
+        mesh.visible = active || (id !== "right-ventricle" && id !== "left-ventricle");
+        if (id === "ventricular-wall") {
+          mesh.material.transparent = active;
+          mesh.material.opacity = active ? 0.15 : 1;
+          mesh.material.depthWrite = !active;
+          mesh.material.needsUpdate = true;
+        }
+      }
+      blood.visible = active && flowEnabled;
+      announce(active ? "Cavidades ventriculares expostas; a parede está translúcida." : "Vista externa do coração.");
+    }
+    document.querySelector("[data-anatomy-interior]")?.addEventListener("click", () => setInterior(true));
+    document.querySelector("[data-anatomy-exterior]")?.addEventListener("click", () => setInterior(false));
+    const flowButton = document.querySelector("[data-anatomy-flow]");
+    flowButton?.addEventListener("click", () => {
+      flowEnabled = !flowEnabled;
+      if (flowEnabled) setInterior(true);
+      blood.visible = flowEnabled && interior;
+      flowButton.setAttribute("aria-pressed", String(flowEnabled));
+      flowButton.textContent = flowEnabled ? "Pausar fluxo" : "Mostrar fluxo";
+    });
+    new GLTFLoader().load("/assets/models/anatomia/coracao.glb", gltf => {
+      try {
+        organ = gltf.scene;
+        const box = new THREE.Box3().setFromObject(organ);
+        const size = box.getSize(new THREE.Vector3());
+        const middle = box.getCenter(new THREE.Vector3());
+        const scale = 3.8 / Math.max(size.x, size.y, size.z);
+        organ.scale.setScalar(scale);
+        organ.position.copy(middle).multiplyScalar(-scale);
+        organ.updateMatrixWorld(true);
+        organ.traverse(object => {
+          if (!object.isMesh) return;
+          const id = object.userData.structureId || object.name;
+          const structure = byId.get(id);
+          if (!structure) return;
+          const material = Array.isArray(object.material) ? object.material[0] : object.material;
+          object.material = material.clone();
+          object.material.color.set(structure.color);
+          object.material.roughness = 0.72;
+          object.material.metalness = 0;
+          object.userData.structureId = id;
+          meshes.set(id, object);
+        });
+        const missing = structures.filter(item => !meshes.has(item.id));
+        if (missing.length) throw new Error("Estruturas esperadas ausentes do modelo: " + missing.map(item => item.id).join(", "));
+        scene.add(organ);
+        buildFlow();
+        setInterior(false);
+        loading.classList.add("is-hidden");
+        root.classList.add("is-ready");
+        announce("Coração 3D carregado. Selecione uma estrutura no modelo ou na lista.");
+      } catch (error) {
+        showFailure(error);
+      }
+    }, event => {
+      if (event.total && progress) progress.style.width = Math.min(100, event.loaded / event.total * 100) + "%";
+    }, showFailure);
+    function showFailure(error) {
+      root.classList.add("is-static");
+      loading.classList.add("anatomy-static-fallback");
+      loading.innerHTML = '<img src="/assets/img/anatomia/coracao-estatico.webp" alt="Coração humano"><strong>Modelo 3D indisponível</strong><span>As estruturas continuam disponíveis na lista.</span>';
+      announce("Não foi possível carregar o modelo: " + (error?.message || "erro desconhecido"));
+    }
+    canvas.addEventListener("click", event => {
+      if (!organ) return;
+      const rect = canvas.getBoundingClientRect();
+      pointer.set((event.clientX - rect.left) / rect.width * 2 - 1, -(event.clientY - rect.top) / rect.height * 2 + 1);
+      raycaster.setFromCamera(pointer, camera);
+      const hits = raycaster.intersectObject(organ, true).filter(hit => hit.object.visible && byId.has(hit.object.userData.structureId));
+      const hit = hits.find(value => !value.object.material.transparent || value.object.material.opacity >= 1) || hits[0];
+      if (hit) select(hit.object.userData.structureId, true);
+    });
+    document.querySelector("[data-anatomy-reset]")?.addEventListener("click", () => {
+      camera.position.set(0, 0.55, 8.2);
+      controls.target.set(0, 0, 0);
+      controls.update();
+      announce("Vista inicial restaurada.");
+    });
+    const rotate = document.querySelector("[data-anatomy-rotate]");
+    rotate?.addEventListener("click", () => {
+      controls.autoRotate = !controls.autoRotate;
+      rotate.classList.toggle("is-active", controls.autoRotate);
+      rotate.setAttribute("aria-pressed", String(controls.autoRotate));
+    });
+    document.querySelector("[data-anatomy-fullscreen]")?.addEventListener("click", async () => {
+      if (document.fullscreenElement) await document.exitFullscreen?.();
+      else await root.requestFullscreen?.();
+    });
+    const quizPanel = document.querySelector("[data-anatomy-quiz]");
+    const quizTarget = quizPanel?.querySelector("[data-quiz-target]");
+    const quizFeedback = quizPanel?.querySelector("[data-quiz-feedback]");
+    const quizScore = quizPanel?.querySelector("[data-quiz-score]");
+    function nextQuestion() {
+      const choices = structures.filter(item => interior || !["right-ventricle", "left-ventricle"].includes(item.id));
+      const target = choices[Math.floor(Math.random() * choices.length)];
+      quiz.target = target.id;
+      quizTarget.textContent = target.label;
+      quizFeedback.textContent = "Clique na estrutura correspondente no modelo.";
+      quizFeedback.className = "quiz-feedback";
+    }
+    document.querySelector("[data-quiz-start]")?.addEventListener("click", () => {
+      if (!organ) return;
+      quizPanel.hidden = false;
+      quiz = { active: true, target: null, correct: 0, total: 0, answer(id) {
+        this.total++;
+        const correct = id === this.target;
+        if (correct) this.correct++;
+        quizScore.textContent = this.correct + "/" + this.total;
+        quizFeedback.textContent = correct ? "Correto!" : "Você selecionou " + byId.get(id).label + ".";
+        quizFeedback.className = "quiz-feedback " + (correct ? "is-correct" : "is-wrong");
+        window.setTimeout(nextQuestion, correct ? 900 : 1500);
+      }};
+      controls.autoRotate = false;
+      nextQuestion();
+    });
+    function resize() {
+      const width = Math.max(1, root.clientWidth);
+      const height = Math.max(1, root.clientHeight);
+      renderer.setSize(width, height, false);
+      camera.aspect = width / height;
+      camera.updateProjectionMatrix();
+    }
+    new ResizeObserver(resize).observe(root);
+    resize();
+    function render() {
+      controls.update();
+      if (blood.visible && !reducedMotion) {
+        const elapsed = clock.getElapsedTime();
+        for (const particle of particles) particle.dot.position.copy(particle.curve.getPoint((elapsed * 0.15 + particle.phase) % 1));
+      }
+      renderer.render(scene, camera);
+      requestAnimationFrame(render);
+    }
+    render();
   }
+  select("ascending-aorta");
+  card.hidden = true;
 }
+

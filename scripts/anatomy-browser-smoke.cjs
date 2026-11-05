@@ -1,0 +1,51 @@
+"use strict";
+const fs = require("node:fs");
+const http = require("node:http");
+const path = require("node:path");
+const assert = require("node:assert/strict");
+const { chromium } = require("playwright");
+
+const root = path.resolve(__dirname, "../build/pages");
+const mime = { ".html": "text/html", ".js": "text/javascript", ".mjs": "text/javascript",
+  ".css": "text/css", ".glb": "model/gltf-binary", ".webp": "image/webp",
+  ".png": "image/png", ".svg": "image/svg+xml", ".json": "application/json",
+  ".webmanifest": "application/manifest+json" };
+const server = http.createServer((request, response) => {
+  let pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
+  if (pathname.endsWith("/")) pathname += "index.html";
+  const file = path.resolve(root, "." + pathname);
+  if (!file.startsWith(root + path.sep)) { response.writeHead(403).end(); return; }
+  fs.readFile(file, (error, data) => {
+    if (error) { response.writeHead(404).end(); return; }
+    response.writeHead(200, { "Content-Type": mime[path.extname(file)] || "application/octet-stream" }).end(data);
+  });
+});
+(async () => {
+  await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
+  const browser = await chromium.launch({ headless: true,
+    args: ["--enable-webgl", "--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"] });
+  try {
+    const page = await browser.newPage({ viewport: { width: 1365, height: 900 }, deviceScaleFactor: 1 });
+    const errors = [];
+    page.on("pageerror", error => errors.push(error.message));
+    await page.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/", { waitUntil: "domcontentloaded" });
+    await page.locator("[data-anatomy-viewer].is-ready").waitFor({ timeout: 45000 });
+    assert.equal(await page.locator("[data-anatomy-viewer].is-static").count(), 0);
+    await page.locator("[data-anatomy-interior]").click();
+    assert.equal(await page.locator("[data-anatomy-viewer]").getAttribute("data-anatomy-mode"), "interior");
+    await page.locator("[data-anatomy-flow]").click();
+    assert.equal(await page.locator("[data-anatomy-flow]").getAttribute("aria-pressed"), "true");
+    await page.locator("[data-structure-id='pulmonary-trunk']").click();
+    assert.equal(await page.locator(".anatomy-picked-card h3").textContent(), "Tronco pulmonar");
+    await page.screenshot({ path: path.resolve(__dirname, "../build/anatomy-desktop.png"), fullPage: true });
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.locator("[data-anatomy-exterior]").click();
+    assert.equal(await page.locator("[data-anatomy-viewer]").getAttribute("data-anatomy-mode"), "exterior");
+    await page.screenshot({ path: path.resolve(__dirname, "../build/anatomy-mobile.png"), fullPage: true });
+    assert.equal(errors.filter(message => message.includes("anatomy")).length, 0, errors.join("\n"));
+    console.log("Anatomy browser smoke passed: model, interior, flow, card, mobile");
+  } finally {
+    await browser.close();
+    server.close();
+  }
+})().catch(error => { console.error(error); process.exitCode = 1; server.close(); });

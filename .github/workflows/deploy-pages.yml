@@ -97,7 +97,7 @@ jobs:
       - name: Run outstanding editorial and external PIN tests
         run: node --test --test-isolation=none tests/apostilas-batch.test.cjs tests/quick-chart-daily-code.test.cjs tests/quick-chart-pairing.test.cjs tests/notes-independent.test.cjs
   anatomy-bundle:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
     steps:
@@ -108,13 +108,30 @@ jobs:
         with:
           node-version: '24'
       - name: Install pinned 3D build dependencies
-        run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12
-      - name: Restore complete pinned heart model
+        run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12 playwright@1.56.1
+      - name: Prepare local site for browser smoke
+        run: node scripts/build-pages.cjs
+      - name: Restore attributed BodyParts3D heart model
         run: |
           mkdir -p build/pages/assets/models/anatomia
-          curl --fail --location --retry 3 'https://raw.githubusercontent.com/thebuggeddev/anatomy/8c0e6f321a47f895ae58ce098028b92774733ee9/public/models/heart.glb' --output build/pages/assets/models/anatomia/coracao.glb
+          curl --fail --location --retry 3 'https://raw.githubusercontent.com/organui/heart-3d/c72ce6654ff8e282942f97750d3104f55ef4fc3d/public/models/heart.glb' --output build/pages/assets/models/anatomia/coracao.glb
       - name: Verify heart model and build browser module
         run: ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
+      - name: Check anatomical room contracts
+        run: node --test tests/anatomia-room.test.cjs
+      - name: Install Chromium
+        run: npx playwright install chromium --with-deps
+      - name: Exercise 3D anatomy in browser
+        run: node scripts/anatomy-browser-smoke.cjs
+      - name: Save visual verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: anatomy-visual-check
+          path: |
+            build/anatomy-desktop.png
+            build/anatomy-mobile.png
+          if-no-files-found: ignore
 
   deploy:
     if: github.event_name != 'pull_request'
@@ -134,10 +151,10 @@ jobs:
         run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12
       - name: Prepare public assets only
         run: node scripts/build-pages.cjs
-      - name: Restore complete pinned heart model
+      - name: Restore attributed BodyParts3D heart model
         run: |
           mkdir -p build/pages/assets/models/anatomia
-          curl --fail --location --retry 3 'https://raw.githubusercontent.com/thebuggeddev/anatomy/8c0e6f321a47f895ae58ce098028b92774733ee9/public/models/heart.glb' --output build/pages/assets/models/anatomia/coracao.glb
+          curl --fail --location --retry 3 'https://raw.githubusercontent.com/organui/heart-3d/c72ce6654ff8e282942f97750d3104f55ef4fc3d/public/models/heart.glb' --output build/pages/assets/models/anatomia/coracao.glb
       - name: Replace visualizer with verified browser module
         run: ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
       - name: Prepare optimized UI images
