@@ -284,5 +284,6 @@ if (root) {
     render();
   }
   select("ascending-aorta");
+  card.hidden = true;
 }
 
