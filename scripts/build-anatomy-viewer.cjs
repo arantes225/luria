@@ -24,6 +24,14 @@ if (model.toString("ascii", 0, 4) !== "glTF" || model.readUInt32LE(8) !== model.
 if (model.readUInt32LE(16) !== 0x4e4f534a) {
   throw new Error("Cabeçalho JSON do modelo do coração inválido");
 }
+const jsonLength = model.readUInt32LE(12);
+const gltf = JSON.parse(model.toString("utf8", 20, 20 + jsonLength));
+const ids = new Set((gltf.nodes || []).map(node => node.extras?.structureId || node.name));
+const required = ["right-atrium", "left-atrium", "ventricular-wall", "right-ventricle",
+  "left-ventricle", "ascending-aorta", "aortic-arch", "pulmonary-trunk",
+  "superior-vena-cava", "left-coronary", "right-coronary"];
+const missing = required.filter(id => !ids.has(id));
+if (missing.length) throw new Error("Estruturas do atlas ausentes: " + missing.join(", "));
 
 fs.mkdirSync(path.dirname(target), { recursive: true });
 buildSync({
