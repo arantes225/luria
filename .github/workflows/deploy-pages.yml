@@ -127,7 +127,8 @@ jobs:
       - name: Build attributed whole-body atlas
         run: |
           npm ci --ignore-scripts --prefix /tmp/luria-human-atlas
-          node scripts/build-human-atlas.cjs prepare
+          curl --fail --location --retry 3 'https://raw.githubusercontent.com/Nurkan1/Anatria-3D/c830ea3a3b62030bf08e7353e8cb641bd38d2bfa/tools/asset-pipeline/vendor/TA2.csv' --output /tmp/luria-ta2.csv
+          ANATOMY_TA2_CSV=/tmp/luria-ta2.csv node scripts/build-human-atlas.cjs prepare
           npm run check --prefix /tmp/luria-human-atlas
           node /tmp/luria-human-atlas/scripts/validate-atlas.mjs
           node /tmp/luria-human-atlas/scripts/validate-interactions.mjs
@@ -182,7 +183,8 @@ jobs:
       - name: Build attributed whole-body atlas
         run: |
           npm ci --ignore-scripts --prefix /tmp/luria-human-atlas
-          node scripts/build-human-atlas.cjs prepare
+          curl --fail --location --retry 3 'https://raw.githubusercontent.com/Nurkan1/Anatria-3D/c830ea3a3b62030bf08e7353e8cb641bd38d2bfa/tools/asset-pipeline/vendor/TA2.csv' --output /tmp/luria-ta2.csv
+          ANATOMY_TA2_CSV=/tmp/luria-ta2.csv node scripts/build-human-atlas.cjs prepare
           npm run check --prefix /tmp/luria-human-atlas
           node /tmp/luria-human-atlas/scripts/validate-atlas.mjs
           node /tmp/luria-human-atlas/scripts/validate-interactions.mjs
