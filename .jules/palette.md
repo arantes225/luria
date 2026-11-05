@@ -1,0 +1,3 @@
+## 2024-11-05 - Add aria-controls to popup toggle buttons
+**Learning:** In Vanilla JS components, popup menus (like filters or dropdowns) that are toggled by a button often rely on JavaScript to manage `hidden` or `aria-expanded` state. If the toggle button lacks the `aria-controls` attribute pointing to the menu's ID, screen reader users may not understand which element the button interacts with.
+**Action:** When working on toggle buttons that control other elements (e.g. popups, dialogs, menus, panels), ensure they always have an `aria-controls` attribute matching the ID of the target element they control, in addition to `aria-expanded` and `aria-haspopup`.
