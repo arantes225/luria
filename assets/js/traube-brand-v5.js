@@ -35,9 +35,9 @@
   }
 
   const LOGOS = {
-    light: "assets/img/logos/logo-icone-original.png?v=traube20261104v2",
-    dark: "assets/img/logos/logo-icone-azul-claro.png?v=traube20261104v2",
-    "leila-mood": "assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261104v2"
+    light: "assets/img/logos/logo-icone-original.png?v=traube20261105brand1",
+    dark: "assets/img/logos/logo-icone-azul-claro.png?v=traube20261105brand1",
+    "leila-mood": "assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261105brand1"
   };
 
   function getTheme() {
@@ -267,7 +267,7 @@
       "any";
 
     const source =
-      "/assets/img/logos/logo-icone-original.png?v=traube20261104v2";
+      "/assets/img/logos/logo-icone-original.png?v=traube20261105brand1";
 
     if (
       favicon.getAttribute("href")

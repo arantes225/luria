@@ -38,7 +38,7 @@
     const logo = document.getElementById("traube-brand-logo");
     const logoName = body.dataset.uiAppearance === "dark" ? "logo-icone-azul-claro.png"
       : body.dataset.uiIdentity === "pink" ? "logo-icone-rosa-escuro.png" : "logo-icone-original.png";
-    const source = `/assets/img/logos/${logoName}?v=traube20261104v2`;
+    const source = `/assets/img/logos/${logoName}?v=traube20261105brand1`;
     if (logo && logo.getAttribute("src") !== source) logo.setAttribute("src", source);
     document.querySelectorAll("[data-ui-theme-control]").forEach(button => {
       const dimension = button.dataset.uiThemeControl;
