@@ -303,7 +303,7 @@ test('existing study dialog gets a name, isolates background and returns focus a
 
 
 test("migrated modules load foundations once and keep PCR priority ahead of the work bridge", () => {
-  const paths = ["dashboard","cronograma","aprender","consolidar","flashcards","caderno-erros","questoes-simulados","estatisticas","desafio-diario","editais","amigos","plantao/sala-emergencia","trabalho","trabalho/passometro","trabalho/prontuario-rapido","trabalho/prescricao","trabalho/calculadora","trabalho/scores","trabalho/diagnostico","trabalho/fluidos-eletrólitos","trabalho/gestor-plantoes","trabalho/pcr","trabalho/pcr/executar","trabalho/pcr/historico","admin"];
+  const paths = ["dashboard","cronograma","aprender","consolidar","flashcards","caderno-erros","questoes-simulados","estatisticas","desafio-diario","editais","amigos","plantao/sala-emergencia","trabalho","trabalho/passometro","trabalho/prontuario-rapido","trabalho/bulario","trabalho/calculadora","trabalho/scores","trabalho/diagnostico","trabalho/fluidos-eletrólitos","trabalho/gestor-plantoes","trabalho/pcr","trabalho/pcr/executar","trabalho/pcr/historico","admin"];
   for (const path of paths) {
     // This guard inspects link order; legacy inline styles are outside its scope.
     const html = fs.readFileSync(path+"/index.html", "utf8").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "");

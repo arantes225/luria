@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261105-diabetes-runtime1-anatomia-atlas4";
+const CACHE_VERSION = "traube-pwa-20261105-prescricao-diabetes-ux1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -46,9 +46,9 @@ const APP_SHELL = [
   "/assets/js/apostilas-app.js?v=20261028-area-flow1",
   "/trabalho/",
   "/trabalho/diabetes/",
-  "/assets/css/work-diabetes.css?v=20261104-diabetes-runtime1",
+  "/assets/css/work-diabetes.css?v=20261105-diabetes-ux1",
   "/assets/js/work-diabetes-data.js?v=20261104-diabetes-runtime1",
-  "/assets/js/work-diabetes.js?v=20261104-diabetes-runtime1",
+  "/assets/js/work-diabetes.js?v=20261105-diabetes-ux1",
   "/assets/js/work-diabetes-paper.js?v=20261104-diabetes-runtime1",
   "/trabalho/paciente/",
   "/trabalho/calculadora/",
