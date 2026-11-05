@@ -13,9 +13,9 @@ const modelPath = process.env.ANATOMY_MODEL_PATH
   ? path.resolve(process.env.ANATOMY_MODEL_PATH)
   : path.join(root, "assets/models/anatomia/coracao.glb");
 const model = fs.readFileSync(modelPath);
-const blobSha = crypto.createHash("sha1").update(`blob ${model.length}\0`).update(model).digest("hex");
-if (blobSha !== "613df32ebb5e2b73c59312b3b2c81fc63ece4884") {
-  throw new Error("O modelo do coração não corresponde à revisão verificada");
+const modelSha = crypto.createHash("sha256").update(model).digest("hex");
+if (modelSha !== "b80a727d022a4ab07ccfcf15caccc228eaccb6d69ec0e72923324946ac35a946") {
+  throw new Error("O modelo BodyParts3D não corresponde à revisão verificada");
 }
 
 if (model.toString("ascii", 0, 4) !== "glTF" || model.readUInt32LE(8) !== model.length) {
