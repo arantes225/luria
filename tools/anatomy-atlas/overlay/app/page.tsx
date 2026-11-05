@@ -31,11 +31,11 @@ const SUGGESTED:Record<Sex,string[]>={
  male:['heart','brain','lungs','liver','thyroid gland','left kidney','stomach','muscles of anterolateral abdominal wall','prostate','femur'],
  female:['heart','brain','uterus','ovary','mammary gland','liver','kidney','lungs','urinary bladder','stomach'],
 };
-const SEXES:{id:Sex;label:string;manifest:string;caption:string}[]=[
+const BODIES:{id:Sex;label:string;manifest:string;caption:string}[]=[
  {id:'male',label:'Masculino',manifest:'models/atlas.json',caption:'Adulto · referência masculina'},
  {id:'female',label:'Feminino',manifest:'models/atlas-female.json',caption:'Adulta · referência feminina'},
 ];
-const startSex=():Sex=>{try{return new URLSearchParams(location.search).get('corpo')==='feminino'||localStorage.getItem('traube-atlas-sexo')==='female'?'female':'male';}catch{return 'male';}};
+const startBody=():Sex=>{try{return new URLSearchParams(location.search).get('corpo')==='feminino'||localStorage.getItem('traube-atlas-corpo')==='female'?'female':'male';}catch{return 'male';}};
 const ORGANS:SystemId[]=['cardiac','brain','respiratory','digestive','urinary','endocrine','reproductive'];
 // Variáveis de tema copiadas da página do site quando o atlas está embutido.
 const THEME_VARS=['--color-background','--color-surface','--color-surface-solid','--color-surface-elevated','--color-border','--color-border-interactive','--color-primary','--color-primary-text','--color-primary-subtle','--color-primary-hover','--color-text-primary','--color-text-secondary','--ui-pill-gradient','--ui-frame-bg','--ui-shadow','--ui-radius-card'];
@@ -61,18 +61,18 @@ function useSiteTheme(){
 
 export default function Home(){
  useSiteTheme();
- const [atlas,setAtlas]=useState<Atlas|null>(null),[state,setState]=useState(initial),[progress,setProgress]=useState(0),[error,setError]=useState(''),[panel,setPanel]=useState<'layers'|null>(null),[searchOpen,setSearchOpen]=useState(false),[query,setQuery]=useState(''),[chosen,setChosen]=useState<Concept|null>(null),[tour,setTour]=useState<{tour:Tour;step:number}|null>(null),[tourMenu,setTourMenu]=useState(false),[notice,setNotice]=useState(''),[removedStack,setRemovedStack]=useState<string[][]>([]),[sex,setSex]=useState<Sex>(startSex);
+ const [atlas,setAtlas]=useState<Atlas|null>(null),[state,setState]=useState(initial),[progress,setProgress]=useState(0),[error,setError]=useState(''),[panel,setPanel]=useState<'layers'|null>(null),[searchOpen,setSearchOpen]=useState(false),[query,setQuery]=useState(''),[chosen,setChosen]=useState<Concept|null>(null),[tour,setTour]=useState<{tour:Tour;step:number}|null>(null),[tourMenu,setTourMenu]=useState(false),[notice,setNotice]=useState(''),[removedStack,setRemovedStack]=useState<string[][]>([]),[bodyKind,setBodyKind]=useState<Sex>(startBody);
  const searchBox=useRef<HTMLDivElement>(null);
  useEffect(()=>{
   const abort=new AbortController();
   const json=(path:string)=>fetch(asset(path),{signal:abort.signal}).then(r=>{if(!r.ok)throw new Error('Não foi possível carregar o catálogo anatômico.');return r.json();});
   setAtlas(null);setProgress(0);setError('');setChosen(null);setTour(null);setRemovedStack([]);setState(s=>({...initial,reset:s.reset+1}));
-  try{localStorage.setItem('traube-atlas-sexo',sex);}catch{}
-  Promise.all([json(SEXES.find(x=>x.id===sex)!.manifest),json('models/pt-names.json').catch(()=>({}))])
+  try{localStorage.setItem('traube-atlas-corpo',bodyKind);}catch{}
+  Promise.all([json(BODIES.find(x=>x.id===bodyKind)!.manifest),json('models/pt-names.json').catch(()=>({}))])
    .then(([data,names])=>{setPtNames(names as Record<string,string>);setAtlas(data as Atlas);})
    .catch(e=>{if(e.name!=='AbortError')setError(e.message);});
   return()=>abort.abort();
- },[sex]);
+ },[bodyKind]);
  const parts=useMemo(()=>new Map(atlas?.parts.map(p=>[p.id,p])),[atlas]);
  const counts=useMemo(()=>Object.fromEntries(SYSTEMS.map(s=>[s.id,atlas?.parts.filter(p=>p.system===s.id).length??0])),[atlas]);
  const keys=useMemo(()=>new Map(atlas?.concepts.map(c=>[c.id,searchKey(c.name)])),[atlas]);
@@ -83,10 +83,10 @@ export default function Home(){
  const results=useMemo(()=>{
   if(!atlas)return[];
   const term=normalizeQuery(query);
-  if(!term)return SUGGESTED[sex].map(name=>atlas.concepts.find(c=>c.name.toLowerCase()===name)).filter((x):x is Concept=>!!x);
+  if(!term)return SUGGESTED[bodyKind].map(name=>atlas.concepts.find(c=>c.name.toLowerCase()===name)).filter((x):x is Concept=>!!x);
   return atlas.concepts.filter(c=>(keys.get(c.id)??'').includes(term)||c.id.toLowerCase().includes(term))
    .sort((a,b)=>ptName(a.name).length-ptName(b.name).length).slice(0,80);
- },[atlas,query,keys,sex]);
+ },[atlas,query,keys,bodyKind]);
  const choose=(c:Concept)=>{setChosen(c);setState(s=>({...s,flow:false,selected:c.elements,hidden:s.hidden.filter(id=>!c.elements.includes(id)),isolate:false,rotate:false}));setSearchOpen(false);setQuery('');};
  useEffect(()=>{if(!atlas)return;return registerAtlasTools(atlas,c=>flushSync(()=>choose(c)));},[atlas]);
  const choosePart=(id:string)=>{const p=parts.get(id);if(!p)return;setChosen({id:p.conceptId,name:p.name,elements:[id]});setState(s=>({...s,flow:false,selected:[id],isolate:false,rotate:false}));};
@@ -123,22 +123,25 @@ export default function Home(){
  const goTour=(t:Tour,step:number)=>{const st=t.steps[step];setTour({tour:t,step});setTourMenu(false);const hit=atlas?.concepts.find(c=>c.name.toLowerCase()===st.concept);setState(s=>({...s,visible:st.visible,explode:0,rotate:false,isolate:false,ghost:.6,selected:hit?.elements??[]}));if(hit)setChosen(hit);};
  const endTour=()=>{setTour(null);setState(s=>({...s,ghost:0,selected:[],visible:DEFAULT_VISIBLE}));setChosen(null);};
  const bodyBox=useMemo(()=>{const mn=[Infinity,Infinity,Infinity],mx=[-Infinity,-Infinity,-Infinity];atlas?.parts.forEach(p=>{for(let i=0;i<3;i++){mn[i]=Math.min(mn[i],p.bounds[0][i]);mx[i]=Math.max(mx[i],p.bounds[1][i]);}});return {mn,mx};},[atlas]);
- const insideOn=state.isolate&&state.cutAxis==='coronal';
+ const AXIS_INDEX:Record<string,number>={sagittal:0,transverse:1,coronal:2};
+ // posição relativa (0–1) do centro da seleção no eixo do corte; sem seleção, meio do corpo
+ const cutCenter=(axis:CutAxis)=>{const k=AXIS_INDEX[axis];if(k===undefined||!selectedParts.length)return .5;let lo=Infinity,hi=-Infinity;selectedParts.forEach(p=>{lo=Math.min(lo,p.bounds[0][k]);hi=Math.max(hi,p.bounds[1][k]);});const span=(bodyBox.mx[k]-bodyBox.mn[k])||1;return Math.min(1,Math.max(0,((lo+hi)/2-bodyBox.mn[k])/span));};
+ const setCut=(axis:CutAxis)=>setState(s=>({...s,cutAxis:axis,explode:0,cut:axis==='none'?s.cut:cutCenter(axis)}));
+ const insideOn=state.isolate&&state.cutAxis!=='none';
  const seeInside=()=>{
   if(insideOn){setState(s=>({...s,isolate:false,cutAxis:'none'}));return;}
-  if(!selectedParts.length)return;let lo=Infinity,hi=-Infinity;selectedParts.forEach(p=>{lo=Math.min(lo,p.bounds[0][2]);hi=Math.max(hi,p.bounds[1][2]);});
-  const span=(bodyBox.mx[2]-bodyBox.mn[2])||1,cut=Math.min(1,Math.max(0,((lo+hi)/2-bodyBox.mn[2])/span));
-  setState(s=>({...s,isolate:true,explode:0,rotate:false,cutAxis:'coronal',cut,view:'front',reset:s.reset+1}));
+  if(!selectedParts.length)return;
+  setState(s=>({...s,isolate:true,explode:0,rotate:false,cutAxis:'coronal',cut:cutCenter('coronal'),view:'front',reset:s.reset+1}));
   flash('Corte coronal pelo meio da estrutura. Ajuste a posição do corte na barra inferior.');
  };
  const isHeart=!!chosen&&(/^heart$|^(wall|cavity) of|cardiac atrium|heart (left|right) ventricle|valve|leaflet|cusp/i.test(chosen.name));
  const toggleFlow=()=>setState(s=>s.flow?{...s,flow:false}:{...s,flow:true,explode:0,ghost:s.isolate?s.ghost:Math.max(s.ghost??0,.7)});
  const removedCount=state.hidden.length;
- const sexInfo=SEXES.find(x=>x.id===sex)!;
+ const bodyInfo=BODIES.find(x=>x.id===bodyKind)!;
  return <main className="atlas-app">
   <aside className={`atlas-side atlas-card ${panel==='layers'?'is-open':''}`} aria-label="Sistemas e camadas">
    <div className="atlas-card-head"><div><span className="atlas-kicker">Camadas</span><h2>Sistemas</h2></div><Button variant="ghost" className="atlas-icon mobile-only" onClick={()=>setPanel(null)} aria-label="Fechar sistemas"><X size={18}/></Button></div>
-   <div className="atlas-segment atlas-sex" role="group" aria-label="Corpo de referência">{SEXES.map(x=><button type="button" key={x.id} aria-pressed={sex===x.id} onClick={()=>setSex(x.id)}>{x.label}</button>)}</div>
+   <div className="atlas-segment atlas-sex" role="group" aria-label="Corpo de referência">{BODIES.map(x=><button type="button" key={x.id} aria-pressed={bodyKind===x.id} onClick={()=>setBodyKind(x.id)}>{x.label}</button>)}</div>
    <div className="atlas-presets">
     <button type="button" aria-pressed={activeSystems.every(x=>state.visible.includes(x.id))} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:activeSystems.map(x=>x.id)}))}>Tudo</button>
     <button type="button" aria-pressed={state.visible.length===1&&state.visible[0]==='skeletal'} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:['skeletal']}))}>Esqueleto</button>
@@ -179,7 +182,7 @@ export default function Home(){
 
    <div className="atlas-canvas">
     {atlas&&<AnatomyScene key={atlas.sex??'male'} atlas={atlas} state={{...state,inspectorOpen:false}} onSelect={choosePart} onProgress={n=>{setProgress(n);if(n===100)setError('');}} onError={setError}/>}
-    <div className="atlas-caption">{state.isolate?(chosenName||'Estrutura isolada'):state.explode>.95?'Inventário anatômico':state.explode>.05?'Estruturas separadas':state.cutAxis!=='none'?`Corte ${CUTS.find(c=>c.id===state.cutAxis)?.label.toLowerCase()}`:sexInfo.caption}</div>
+    <div className="atlas-caption">{state.isolate?(chosenName||'Estrutura isolada'):state.explode>.95?'Inventário anatômico':state.explode>.05?'Estruturas separadas':state.cutAxis!=='none'?`Corte ${CUTS.find(c=>c.id===state.cutAxis)?.label.toLowerCase()}`:bodyInfo.caption}</div>
     {progress<100&&!error&&<div className="atlas-loading" role="status"><Activity size={18}/><div><strong>Preparando a anatomia</strong><span>{progress}% · {fmt(atlas?.parts.length??0)} peças</span><div className="atlas-track"><i style={{width:`${progress}%`}}/></div></div></div>}
     {error&&<div className="atlas-loading is-error" role="alert"><p>{error}</p><Button variant="ghost" onClick={()=>location.reload()}>Recarregar</Button></div>}
     {notice&&<div className="atlas-notice" role="status">{notice}</div>}
@@ -194,7 +197,7 @@ export default function Home(){
     </div>
     <div className="atlas-dock-group atlas-cut">
      <label><Scissors size={14}/>Corte</label>
-     <div className="atlas-segment" role="group" aria-label="Plano de corte">{CUTS.map(c=><button type="button" key={c.id} aria-pressed={state.cutAxis===c.id} title={c.title} onClick={()=>setState(s=>({...s,cutAxis:c.id,explode:0}))}>{c.label}</button>)}</div>
+     <div className="atlas-segment" role="group" aria-label="Plano de corte">{CUTS.map(c=><button type="button" key={c.id} aria-pressed={state.cutAxis===c.id} title={c.title} onClick={()=>setCut(c.id)}>{c.label}</button>)}</div>
      {state.cutAxis!=='none'&&<Slider aria-label="Posição do corte" min={0} max={100} step={1} value={[state.cut*100]} onValueChange={v=>setState(s=>({...s,cut:(Array.isArray(v)?v[0]:v)/100}))}/>}
     </div>
    </div>

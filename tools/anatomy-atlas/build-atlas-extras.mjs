@@ -44,7 +44,6 @@ const modelsDir = path.join(atlasDir, 'public/models');
 const manifestPath = path.join(modelsDir, 'atlas.json');
 const atlas = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 if (atlas.extras) throw new Error('O atlas já recebeu os acréscimos; reinstale a origem antes.');
-const chunkBuf = atlas.chunks.map(c => fs.readFileSync(path.join(modelsDir, path.basename(c.url))));
 const center = b => [0, 1, 2].map(i => (b[0][i] + b[1][i]) / 2);
 const size = b => [0, 1, 2].map(i => b[1][i] - b[0][i]);
 const union = bs => [[0, 1, 2].map(i => Math.min(...bs.map(b => b[0][i]))), [0, 1, 2].map(i => Math.max(...bs.map(b => b[1][i])))];
@@ -169,7 +168,7 @@ function readGlb(file) {
   });
   return meshes;
 }
-const EXPAND = { inf: 'inferior', sup: 'superior', ant: 'anterior', post: 'posterior' };
+const EXPAND = { inf: 'inferior', sup: 'superior', ant: 'anterior', post: 'posterior', caecum: 'cecum' };
 function hraLabel(raw) {
   let t = raw.replace(/^(VH_[MF]_|Allen_)/, '').split('_').filter(Boolean), side = '', en = '';
   if (t.length > 1 && /^[a-z]$/.test(t[t.length - 1])) en = t.pop();
@@ -259,20 +258,35 @@ for (const c of chunks) { const gz = zlib.gzipSync(fs.readFileSync(path.join(mod
 // conceitos: um por peça nova + grupos (pulmões, fígado, coração, rins, encéfalo…)
 const concepts = atlas.concepts.map(c => ({ ...c, elements: c.elements.filter(e => !removed.has(e)) })).filter(c => c.elements.length);
 const have = new Set(concepts.map(c => c.id));
-const add = (id, name, elements) => { if (!elements.length || have.has(id)) return; have.add(id); concepts.push({ id, name, elements }); };
+// Conceito com o mesmo nome de um já existente (ex.: Fígado = vasos/ductos do BodyParts3D + segmentos)
+// é fundido nele, para que isolar o órgão mostre todas as suas partes.
+const partById = new Map([...keep, ...newParts].map(p => [p.id, p]));
+const byConceptName = new Map(concepts.map(c => [c.name.toLowerCase(), c]));
+const add = (id, name, elements) => { if (!elements.length || have.has(id)) return; have.add(id); const same = byConceptName.get(name.toLowerCase()); if (same) { same.elements = [...new Set([...elements, ...same.elements])]; return; } const c = { id, name, elements }; concepts.push(c); byConceptName.set(name.toLowerCase(), c); };
 for (const p of newParts) add(p.conceptId, p.name, [p.id]);
 const ids = re => newParts.filter(p => re.test(p.name)).map(p => p.id);
 add('TRAUBE:right-lung', 'Right lung', ids(/lobe of right lung/i));
 add('TRAUBE:left-lung', 'Left lung', ids(/lobe of left lung/i));
 add('TRAUBE:lungs', 'Lungs', ids(/lobe of (left|right) lung/i));
+// Homônimos de fora do tórax (ex.: artéria segmentar anterior do fígado) saem dos conceitos do pulmão.
+{ const lobes = newParts.filter(p => /lobe of (left|right) lung/i.test(p.name)); if (lobes.length) { const box = union(lobes.map(p => p.bounds)); const inside = id => { const p = partById.get(id); if (!p) return true; const c = center(p.bounds); return [0, 1, 2].every(i => c[i] > box[0][i] - 0.03 && c[i] < box[1][i] + 0.03); }; for (const n of ['right lung', 'left lung']) { const c = byConceptName.get(n); if (c) c.elements = c.elements.filter(inside); } } }
+{ const both = ['right lung', 'left lung'].flatMap(n => byConceptName.get(n)?.elements ?? []); const lungs = byConceptName.get('lungs'); if (lungs && both.length) lungs.elements = [...new Set([...lungs.elements, ...both])]; }
 add('TRAUBE:liver', 'Liver', ids(/segment of liver/i));
 // Lobos anatômicos a partir dos segmentos de Couinaud: direito V–VIII, esquerdo II–III, quadrado IV, caudado I.
 add('TRAUBE:right-lobe-liver', 'Right lobe of liver', ids(/segment of liver (V|VI|VII|VIII)$/));
 add('TRAUBE:left-lobe-liver', 'Left lobe of liver', ids(/segment of liver (II|III)$/));
+// Vasos do coração (BodyParts3D): grupos com nome clínico, para isolar e buscar.
+const keepIds = re => keep.filter(p => (p.system === 'arterial' || p.system === 'venous') && re.test(p.name)).map(p => p.id);
+add('TRAUBE:coronary-arteries', 'Coronary arteries', keepIds(/coronary artery|conus artery/i));
+add('TRAUBE:cardiac-veins', 'Cardiac veins', keepIds(/cardiac vein|coronary sinus|(left|right) marginal vein|oblique vein of left atrium|posterior vein of left ventricle/i));
+add('TRAUBE:left-coronary', 'Left coronary artery', keepIds(/left coronary artery/i));
+add('TRAUBE:right-coronary', 'Right coronary artery', keepIds(/right coronary artery|right conus artery/i));
+add('TRAUBE:left-circumflex', 'Left circumflex artery', keepIds(/circumflex branch of left coronary/i));
+add('TRAUBE:left-anterior-descending', 'Left anterior descending artery', keepIds(/anterior interventricular branch|anterior descending branch/i));
 add('TRAUBE:quadrate-lobe', 'Quadrate lobe', ids(/segment of liver IV$/));
 add('TRAUBE:caudate-lobe', 'Caudate lobe of liver', ids(/segment of liver I$/));
 add('TRAUBE:thyroid', 'Thyroid gland', ids(/^thyroid gland$/i));
-add('TRAUBE:abdominal-wall', 'Muscles of anterolateral abdominal wall', ids(/rectus abdominis|abdominal oblique|transversus abdominis|pyramidalis/i));
+add('TRAUBE:abdominal-wall', 'Muscles of anterolateral abdominal wall', [...ids(/rectus abdominis|abdominal oblique|transversus abdominis|pyramidalis/i), ...atlas.parts.filter(p => /^(left|right) external oblique$/i.test(p.name)).map(p => p.id)]);
 for (const g of hraGroups) {
   const label = { VH_M_heart: 'Heart', VH_M_cardiac_artery: 'Coronary arteries', VH_M_cardiac_vein: 'Cardiac veins', VH_M_left_kidney: 'Left kidney', VH_M_right_kidney: 'Right kidney', VH_M_urinary_bladder: 'Urinary bladder', VH_M_prostate_gland: 'Prostate', Allen_brain: 'Brain' }[g.group];
   if (g.group === 'VH_M_colon') continue; // peças avulsas, sem conceito de grupo

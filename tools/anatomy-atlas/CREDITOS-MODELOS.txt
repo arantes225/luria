@@ -37,6 +37,11 @@ atlas-female.json + female-*.bin (corpo feminino)
   Músculos do membro inferior: Andreassen et al., Three Dimensional Lower Extremity
   Musculoskeletal Geometry of the Visible Human Female and Male, Scientific Data
   10:34 (2023), CC BY 4.0. https://doi.org/10.1038/s41597-022-01905-2
+  Músculos complementares (female-extra-*.bin): músculos do corpo masculino acima
+  (BodyParts3D CC BY 4.0; os do Z-Anatomy seguem CC BY-SA 4.0) levados ao corpo feminino por
+  deformação ancorada nos ossos dos dois corpos; parede abdominal por mapeamento da região
+  (púbis, crista ilíaca, esterno, gordura subcutânea). Referência de forma e posição, não
+  anatomia própria deste corpo.
   Conversão: slorksmo/Human-Atlas (licença MIT em LICENSE-atlas-feminino.txt).
 
 Conteúdo educacional, sujeito a revisão anatômica especializada.

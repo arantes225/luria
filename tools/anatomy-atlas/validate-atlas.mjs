@@ -12,9 +12,9 @@ const REQUIRED = {
     /^(Left|Right) rectus abdominis$/, /internal abdominal oblique/, /transversus abdominis/, /^(Left|Right) external oblique$/, /^Diaphragm$/,
     /lobe of right lung/, /lobe of left lung/, /^Thyroid gland$/, /segment of liver/, /^Stomach$/, /^Esophagus$/,
     /^Wall of ventricle$/, /leaflet of mitral valve/, /papillary muscle/, /coronary artery/, /renal pyramid/, /calyx/, /trigone of urinary bladder/i,
-    /zone of prostate/, /^Thalamus/, /hippocampus/, /gyrus/, /cerebell/i, /^(Left|Right) latissimus dorsi$/, /zygomaticus major/,
+    /zone of prostate/, /^Thalamus/, /hippocampus/, /gyrus/, /cerebell/i, /^(Left|Right) latissimus dorsi$/, /zygomaticus major/, /circumflex branch of left coronary/,
   ],
-  'atlas-female.json': [/^Body of uterus$/, /^(left|right) ovary$/, /uterine tube/, /^Vagina$/, /^mammary lobes/, /^Thalamus/, /renal pyramid/, /bronchopulmonary segment/, /papillary muscle of heart/],
+  'atlas-female.json': [/^Body of uterus$/, /^(left|right) ovary$/, /uterine tube/, /^Vagina$/, /^mammary lobes/, /^Thalamus/, /renal pyramid/, /bronchopulmonary segment/, /papillary muscle of heart/, /rectus abdominis/, /transversus abdominis/, /circumflex/],
 };
 for (const [file, required] of Object.entries(REQUIRED)) {
   const atlas = JSON.parse(fs.readFileSync(path.join(models, file), 'utf8'));

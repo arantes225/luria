@@ -156,12 +156,12 @@ jobs:
           TRAUBE_ATLAS_FEMALE: /tmp/traube-atlas-female/public/models
         run: |
           npm ci --ignore-scripts --prefix /tmp/luria-human-atlas
-          node scripts/build-human-atlas.cjs prepare
+          node scripts/build-human-atlas.cjs prepare /tmp/luria-human-atlas
           npm run check --prefix /tmp/luria-human-atlas
           node tools/anatomy-atlas/validate-atlas.mjs /tmp/luria-human-atlas
           node /tmp/luria-human-atlas/scripts/validate-interactions.mjs
           npm run build --prefix /tmp/luria-human-atlas -- --base=/aprender/anatomia/atlas/
-          node scripts/build-human-atlas.cjs install
+          node scripts/build-human-atlas.cjs install /tmp/luria-human-atlas
       - name: Install Chromium
         run: npx playwright install chromium --with-deps
       - name: Exercise 3D anatomy in browser
@@ -240,12 +240,12 @@ jobs:
           TRAUBE_ATLAS_FEMALE: /tmp/traube-atlas-female/public/models
         run: |
           npm ci --ignore-scripts --prefix /tmp/luria-human-atlas
-          node scripts/build-human-atlas.cjs prepare
+          node scripts/build-human-atlas.cjs prepare /tmp/luria-human-atlas
           npm run check --prefix /tmp/luria-human-atlas
           node tools/anatomy-atlas/validate-atlas.mjs /tmp/luria-human-atlas
           node /tmp/luria-human-atlas/scripts/validate-interactions.mjs
           npm run build --prefix /tmp/luria-human-atlas -- --base=/aprender/anatomia/atlas/
-          node scripts/build-human-atlas.cjs install
+          node scripts/build-human-atlas.cjs install /tmp/luria-human-atlas
       - name: Prepare optimized UI images
         uses: actions/setup-python@v5
         with:

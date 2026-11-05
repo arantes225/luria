@@ -10,7 +10,9 @@ const crypto = require("node:crypto");
 const { execFileSync } = require("node:child_process");
 
 const root = path.resolve(__dirname, "..");
-const source = path.resolve(process.argv[3] || "/tmp/luria-human-atlas");
+// Pasta do projeto do atlas, sempre explícita (o workflow informa o caminho).
+if (!process.argv[3]) throw new Error("Informe a pasta do projeto do atlas: node scripts/build-human-atlas.cjs <prepare|install> <pasta>");
+const source = path.resolve(process.argv[3]);
 const output = path.resolve(root, "build/pages/aprender/anatomia/atlas");
 const overlay = path.join(root, "tools/anatomy-atlas/overlay");
 const base = "/aprender/anatomia/atlas/";
@@ -70,6 +72,8 @@ if (mode === "prepare") {
   }
   const femalePath = path.join(models, "atlas-female.json");
   fs.writeFileSync(femalePath, JSON.stringify(femaleManifest));
+  // Músculos complementares e vasos do coração no corpo feminino (ver o script).
+  execFileSync(process.execPath, ["--max-old-space-size=8000", path.join(root, "tools/anatomy-atlas/build-female-extras.mjs"), models], { stdio: "inherit" });
 
   execFileSync(process.execPath, [
     path.join(root, "tools/anatomy-atlas/build-pt-names.cjs"),

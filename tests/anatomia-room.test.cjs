@@ -95,7 +95,12 @@ test("atlas ampliado: fontes fixadas, corpo feminino, interior dos órgãos e ca
   assert.match(credits, /HuBMAP/);
   const page = read("tools/anatomy-atlas/overlay/app/page.tsx");
   assert.ok(page.includes("atlas-female.json"), "seletor do corpo feminino");
-  assert.ok(page.includes("seeInside") && page.includes("toggleFlow"), "ver por dentro e fluxo sanguíneo");
+  assert.ok(page.includes("seeInside") && page.includes("toggleFlow") && page.includes("cutCenter"), "ver por dentro, cortes centrados e fluxo sanguíneo");
+  const femaleExtras = read("tools/anatomy-atlas/build-female-extras.mjs");
+  assert.ok(femaleExtras.includes("borrowed-muscle") && femaleExtras.includes("ABDOMINAL_WALL"), "músculos complementares no corpo feminino");
+  assert.ok(femaleExtras.includes("Coronary arteries"), "coronárias no coração feminino");
+  assert.ok(read("tools/anatomy-atlas/build-atlas-extras.mjs").includes("Left circumflex artery"), "grupos coronários no masculino");
+  assert.ok(read("scripts/build-human-atlas.cjs").includes("build-female-extras.mjs"), "acréscimos femininos no build");
   const scene = read("tools/anatomy-atlas/overlay/app/scene.tsx");
   assert.ok(scene.includes("fetchChunk") && scene.includes("20000"), "download com timeout por inatividade e novas tentativas");
   assert.ok(scene.includes("dMucosa") && scene.includes("flowLayers"), "mucosa interna e partículas de fluxo");
