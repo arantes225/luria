@@ -146,6 +146,8 @@ jobs:
             build/anatomy-exterior.png
             build/anatomy-desktop.png
             build/anatomy-mobile.png
+            build/anatomy-atlas-desktop.png
+            build/anatomy-atlas-mobile.png
           if-no-files-found: ignore
 
   deploy:
