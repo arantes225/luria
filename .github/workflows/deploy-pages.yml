@@ -97,7 +97,7 @@ jobs:
       - name: Run outstanding editorial and external PIN tests
         run: node --test --test-isolation=none tests/apostilas-batch.test.cjs tests/quick-chart-daily-code.test.cjs tests/quick-chart-pairing.test.cjs tests/notes-independent.test.cjs
   anatomy-bundle:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
     steps:
