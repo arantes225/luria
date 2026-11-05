@@ -6,8 +6,8 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>TRAUBE · Aprenda. Conecte. Consolide.</title>
-  <meta name="description" content="Cronograma, apostilas, questões, flashcards, caderno de erros e um tutor de IA no mesmo lugar. O Modo Estudo do TRAUBE organiza sua preparação para residência e ENAMED.">
-  <meta name="theme-color" content="#0a0f1d">
+  <meta name="description" content="Cronograma, apostilas, questões, flashcards, caderno de erros e um tutor de IA no mesmo lugar. O TRAUBE organiza sua preparação para residência e ENAMED.">
+  <meta name="theme-color" content="#06122e">
   <link rel="manifest" href="/manifest.webmanifest?v=7">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=traube20261105brand1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,10 +16,13 @@
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-principal.png?v=traube20261105brand1">
   <link rel="preload" href="/assets/fonts/inter/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/modo-estudo-landing.css?v=2">
+  <link rel="stylesheet" href="/assets/css/modo-estudo-landing.css?v=3">
+  <noscript><style>.reveal,.hero-in,.words .w{opacity:1!important;transform:none!important;filter:none!important}.sig-write{clip-path:none!important}</style></noscript>
 </head>
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scrollbar" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
   <!-- ============ NAV ============ -->
   <header class="nav" id="topo">
@@ -31,13 +34,14 @@
       <nav class="nav__links" aria-label="Seções">
         <a href="#problema">O problema</a>
         <a href="#metodo">O método</a>
-        <a href="#prova">Por dentro</a>
-        <a href="#inspiracao">Inspiração</a>
+        <a href="#prova">Números</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#traube">Inspiração</a>
         <a href="#planos">Planos</a>
       </nav>
       <div class="nav__cta">
         <a class="link" href="/login/">Entrar</a>
-        <a class="btn btn--sm btn--light" href="/login/">Criar conta</a>
+        <a class="btn btn--sm btn--glass magnetic" href="/login/">Criar conta</a>
       </div>
     </div>
   </header>
@@ -46,28 +50,29 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="mesh" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="gridlines" aria-hidden="true"></div>
       <div class="grain" aria-hidden="true"></div>
 
       <div class="wrap hero__grid">
         <div class="hero__copy">
-          <p class="eyebrow eyebrow--dark hero-in" style="--d:0">Modo Estudo · Residência &amp; ENAMED</p>
+          <p class="pill hero-in" style="--d:0"><span class="pill__dot" aria-hidden="true"></span> Residência médica &amp; ENAMED</p>
           <h1 id="hero-title" class="hero__title hero-in" style="--d:1">
             Seu estudo de residência,
-            <span class="swap" aria-live="off">
+            <span class="swap">
               <span class="swap__word is-on">sem caos.</span>
-              <span class="swap__word">sem 23 abas.</span>
-              <span class="swap__word">sem planilha.</span>
               <span class="swap__word">com método.</span>
+              <span class="swap__word">no seu ritmo.</span>
+              <span class="swap__word">num só lugar.</span>
             </span>
           </h1>
           <p class="hero__sub hero-in" style="--d:2">
-            Cronograma, apostilas, questões, flashcards, caderno de erros e um tutor de IA
-            <strong>conversando entre si</strong>. Você abre, escolhe quanto tempo tem e estuda.
+            Cronograma, apostilas, questões, flashcards, caderno de erros e um tutor de IA que
+            <strong>conversam entre si</strong>. Você abre, escolhe quanto tempo tem e estuda.
           </p>
           <div class="hero__actions hero-in" style="--d:3">
-            <a class="btn btn--primary" href="/login/">Começar agora <span aria-hidden="true">→</span></a>
-            <a class="btn btn--ghost" href="#metodo">Ver como funciona</a>
+            <a class="btn btn--primary btn--lg magnetic" href="/login/"><span>Começar agora</span><i class="arrow" aria-hidden="true"></i></a>
+            <a class="btn btn--glass btn--lg magnetic" href="#metodo">Ver como funciona</a>
           </div>
           <div class="hero__sig hero-in" style="--d:4">
             <span>inspirado por</span>
@@ -76,20 +81,39 @@
         </div>
 
         <div class="hero__stage" data-tilt>
-          <figure class="device device--browser hero-in" style="--d:2">
-            <div class="device__bar" aria-hidden="true"><i></i><i></i><i></i><span>traube · questões e simulados</span></div>
-            <img src="/assets/img/traube/tela-questoes.jpg" alt="Tela real do TRAUBE: Questões e Simulados com as questões do dia e métricas da semana" width="1600" height="1000">
+          <div class="halo" aria-hidden="true"></div>
+          <figure class="frame frame--back hero-in" style="--d:3">
+            <div class="frame__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="/assets/img/traube/tela-aprender.jpg" alt="Tela real do TRAUBE: Aprender, com o tutor Leco" width="1600" height="815">
           </figure>
-          <figure class="device device--phone hero-in" style="--d:4">
+          <figure class="frame frame--main hero-in" style="--d:2">
+            <div class="frame__bar" aria-hidden="true"><i></i><i></i><i></i><span>traube · dashboard</span></div>
+            <img src="/assets/img/traube/tela-dashboard.jpg" alt="Tela real do TRAUBE: Dashboard com a sessão guiada Estudar agora" width="1600" height="941">
+            <span class="scan" aria-hidden="true"></span>
+          </figure>
+          <figure class="phone hero-in" style="--d:5">
             <img src="/assets/img/traube/tela-flashcards-mobile.jpg" alt="Tela real do TRAUBE no celular: Flashcards" width="520" height="1000">
           </figure>
-          <div class="float-chip float-chip--a hero-in" style="--d:5"><b>50</b> questões do dia</div>
-          <div class="float-chip float-chip--b hero-in" style="--d:6"><span class="dot" aria-hidden="true"></span> Leco: “O que você quer entender hoje?”</div>
-          <div class="float-chip float-chip--c hero-in" style="--d:7">⏱ sessão de 30 min</div>
+          <div class="chip chip--a hero-in" style="--d:6"><b>50</b> questões do dia</div>
+          <div class="chip chip--b hero-in" style="--d:7"><span class="pill__dot" aria-hidden="true"></span> Leco: “O que você quer entender hoje?”</div>
+          <div class="chip chip--c hero-in" style="--d:8">⏱ sessão de 30 min</div>
         </div>
       </div>
 
-      <a class="scroll-cue" href="#problema" aria-label="Rolar para o problema"><span></span></a>
+      <a class="scroll-cue" href="#faixa" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- ============ FAIXA ============ -->
+    <section class="band" id="faixa" aria-label="Grandes áreas cobertas">
+      <div class="band__row"><div class="band__track"><span>Clínica Médica</span><i>✦</i><span>Cirurgia</span><i>✦</i><span>Pediatria</span><i>✦</i><span>Ginecologia e Obstetrícia</span><i>✦</i><span>Medicina Preventiva</span><i>✦</i><span>Psiquiatria</span><i>✦</i></div><div class="band__track" aria-hidden="true"><span>Clínica Médica</span><i>✦</i><span>Cirurgia</span><i>✦</i><span>Pediatria</span><i>✦</i><span>Ginecologia e Obstetrícia</span><i>✦</i><span>Medicina Preventiva</span><i>✦</i><span>Psiquiatria</span><i>✦</i></div></div>
+    </section>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="manifest" aria-label="Manifesto">
+      <div class="wrap wrap--narrow">
+        <p class="eyebrow reveal">Antes de tudo</p>
+        <p class="scrolltext" data-scrolltext>Estudar para residência não é uma maratona de força de vontade. É um problema de organização. Quem sabe o que estudar hoje, o que revisar amanhã e onde errou ontem chega mais leve — e mais preparado — na prova.</p>
+      </div>
     </section>
 
     <!-- ============ PROBLEMA ============ -->
@@ -97,30 +121,28 @@
       <div class="wrap">
         <header class="section__head reveal">
           <p class="eyebrow">O problema</p>
-          <h2 id="problem-title">Você não tem um problema de esforço.<br><span class="hl">Tem um problema de bagunça.</span></h2>
-          <p class="lead">PDF num lugar, Anki no outro, cronograma numa planilha que você abandonou em março, questão no print do celular e o grupo da turma com 400 mensagens. Você passa mais tempo <em>procurando</em> do que estudando.</p>
+          <h2 id="problem-title" class="words" data-split>Você não tem um problema de esforço. Tem um problema de bagunça.</h2>
+          <p class="lead">PDF num lugar, Anki no outro, cronograma numa planilha abandonada em março, questão no print do celular e o grupo da turma com 400 mensagens. Você passa mais tempo <em>procurando</em> do que estudando.</p>
         </header>
 
-        <div class="chaos" data-chaos>
+        <div class="chaos reveal" data-chaos>
           <div class="chaos__cols" aria-hidden="true">
             <div class="chaos__col"><span>Aprender</span><i data-slot="0"></i><i data-slot="1"></i><i data-slot="2"></i></div>
             <div class="chaos__col"><span>Consolidar</span><i data-slot="3"></i><i data-slot="4"></i><i data-slot="5"></i></div>
             <div class="chaos__col"><span>Aplicar</span><i data-slot="6"></i><i data-slot="7"></i><i data-slot="8"></i></div>
           </div>
-
           <ul class="chaos__items">
-            <li class="chip" data-to="0" style="--x:4%;--y:8%;--r:-7deg"><span class="chip__a">📄 resumo_cardio_FINAL_v3(2).pdf</span><span class="chip__b">📘 Apostila · Endocardite Infecciosa</span></li>
-            <li class="chip" data-to="1" style="--x:52%;--y:2%;--r:5deg"><span class="chip__a">🎥 aula em 2x… sem anotar nada</span><span class="chip__b">🤖 Leco explica o que travou</span></li>
-            <li class="chip" data-to="2" style="--x:30%;--y:30%;--r:-3deg"><span class="chip__a">🗂️ aba 14 de 23</span><span class="chip__b">📝 Minhas anotações, por área</span></li>
-            <li class="chip" data-to="3" style="--x:66%;--y:24%;--r:8deg"><span class="chip__a">🔥 1.284 cards atrasados</span><span class="chip__b">🃏 Revisões do dia, no ritmo certo</span></li>
-            <li class="chip" data-to="4" style="--x:2%;--y:50%;--r:4deg"><span class="chip__a">📸 print de questão sem gabarito</span><span class="chip__b">📕 Caderno de erros + Pulo do Gato</span></li>
-            <li class="chip" data-to="5" style="--x:44%;--y:58%;--r:-9deg"><span class="chip__a">📊 cronograma (1).xlsx</span><span class="chip__b">🗓️ Cronograma com o que revisar</span></li>
-            <li class="chip" data-to="6" style="--x:70%;--y:52%;--r:-4deg"><span class="chip__a">💬 Grupo da turma · 437 msgs</span><span class="chip__b">✅ 50 questões do dia</span></li>
-            <li class="chip" data-to="7" style="--x:12%;--y:78%;--r:6deg"><span class="chip__a">😵 “o que eu estudo hoje?”</span><span class="chip__b">⏱ Estudar agora: 15 min a 2 h</span></li>
-            <li class="chip" data-to="8" style="--x:56%;--y:82%;--r:-2deg"><span class="chip__a">📉 “será que estou evoluindo?”</span><span class="chip__b">📈 Métricas da semana</span></li>
+            <li class="cchip" data-to="0" style="--x:4%;--y:8%;--r:-7deg"><span class="cchip__a">📄 resumo_cardio_FINAL_v3(2).pdf</span><span class="cchip__b">📘 Apostila · Endocardite Infecciosa</span></li>
+            <li class="cchip" data-to="1" style="--x:52%;--y:2%;--r:5deg"><span class="cchip__a">🎥 aula em 2x… sem anotar nada</span><span class="cchip__b">🤖 Leco explica o que travou</span></li>
+            <li class="cchip" data-to="2" style="--x:30%;--y:30%;--r:-3deg"><span class="cchip__a">🗂️ aba 14 de 23</span><span class="cchip__b">📝 Minhas anotações, por área</span></li>
+            <li class="cchip" data-to="3" style="--x:66%;--y:24%;--r:8deg"><span class="cchip__a">🔥 1.284 cards atrasados</span><span class="cchip__b">🃏 Revisões do dia, no ritmo certo</span></li>
+            <li class="cchip" data-to="4" style="--x:2%;--y:50%;--r:4deg"><span class="cchip__a">📸 print de questão sem gabarito</span><span class="cchip__b">📕 Caderno de erros + Pulo do Gato</span></li>
+            <li class="cchip" data-to="5" style="--x:44%;--y:58%;--r:-9deg"><span class="cchip__a">📊 cronograma (1).xlsx</span><span class="cchip__b">🗓️ Cronograma com o que revisar</span></li>
+            <li class="cchip" data-to="6" style="--x:70%;--y:52%;--r:-4deg"><span class="cchip__a">💬 Grupo da turma · 437 msgs</span><span class="cchip__b">✅ 50 questões do dia</span></li>
+            <li class="cchip" data-to="7" style="--x:12%;--y:78%;--r:6deg"><span class="cchip__a">😵 “o que eu estudo hoje?”</span><span class="cchip__b">⏱ Estudar agora: 15 min a 2 h</span></li>
+            <li class="cchip" data-to="8" style="--x:56%;--y:82%;--r:-2deg"><span class="cchip__a">📉 “será que estou evoluindo?”</span><span class="cchip__b">📈 Métricas da semana</span></li>
           </ul>
-
-          <button class="btn btn--primary chaos__btn" type="button" data-organize aria-pressed="false">
+          <button class="btn btn--primary chaos__btn magnetic" type="button" data-organize aria-pressed="false">
             <span class="when-off">Organizar com o TRAUBE ✨</span>
             <span class="when-on">Voltar pro caos 🙃</span>
           </button>
@@ -128,142 +150,193 @@
       </div>
     </section>
 
-    <!-- ============ MÉTODO ============ -->
-    <section class="section method" id="metodo" aria-labelledby="method-title">
-      <div class="wrap">
-        <header class="section__head reveal">
-          <p class="eyebrow">O método</p>
-          <h2 id="method-title">Três verbos. <span class="hl">Um lugar só.</span></h2>
-          <p class="lead">O Modo Estudo foi desenhado em torno de um ciclo simples — o mesmo que organiza o menu do app.</p>
-        </header>
+    <!-- ============ MÉTODO (pinned) ============ -->
+    <section class="story" id="metodo" data-story style="--n:5" aria-labelledby="story-title">
+      <div class="story__pin">
+        <div class="mesh mesh--soft" aria-hidden="true"><i></i><i></i></div>
+        <div class="wrap story__grid">
+          <div class="story__text">
+            <header class="story__head">
+              <p class="eyebrow eyebrow--dark">O método</p>
+              <h2 id="story-title">Um ciclo simples.<br><span class="hl">Tudo conectado.</span></h2>
+            </header>
+            <ol class="story__steps">
+              <li class="sstep is-active" data-step="0">
+                <span class="sstep__n">01</span>
+                <h3>Aprender</h3>
+                <p>Apostilas TRAUBE por área, suas anotações e o <strong>Leco</strong>, tutor de IA para destravar o tema que não entra. Dá até para anexar o seu material.</p>
+                <figure class="sstep__shot"><img src="/assets/img/traube/tela-aprender.jpg" alt="Tela real do TRAUBE: Aprender, com o Leco, Apostilas e Minhas anotações" width="1600" height="815" loading="lazy"></figure>
+              </li>
+              <li class="sstep" data-step="1">
+                <span class="sstep__n">02</span>
+                <h3>Planejar</h3>
+                <p>Cronograma em mês, semana ou lista, com filtros por área e tema. Seu estudo agendado e as revisões aparecendo na hora certa.</p>
+                <figure class="sstep__shot"><img src="/assets/img/traube/tela-cronograma.jpg" alt="Tela real do TRAUBE: Cronograma mensal" width="1600" height="1000" loading="lazy"></figure>
+              </li>
+              <li class="sstep" data-step="2">
+                <span class="sstep__n">03</span>
+                <h3>Revisar</h3>
+                <p>Flashcards com <strong>revisões do dia</strong>, no ritmo certo. Importe seus decks do Anki e continue de onde parou.</p>
+                <figure class="sstep__shot"><img src="/assets/img/traube/tela-flashcards.jpg" alt="Tela real do TRAUBE: Flashcards" width="1600" height="1000" loading="lazy"></figure>
+              </li>
+              <li class="sstep" data-step="3">
+                <span class="sstep__n">04</span>
+                <h3>Corrigir</h3>
+                <p>Errou? O erro vai para o <strong>Caderno de Erros</strong> e volta como revisão direcionada, com o Pulo do Gato do dia.</p>
+                <figure class="sstep__shot"><img src="/assets/img/traube/tela-caderno.jpg" alt="Tela real do TRAUBE: Caderno de Erros" width="1600" height="1000" loading="lazy"></figure>
+              </li>
+              <li class="sstep" data-step="4">
+                <span class="sstep__n">05</span>
+                <h3>Aplicar</h3>
+                <p>Questões do dia prontas, listas montadas do banco TRAUBE e seus simulados externos, com métricas de acerto na semana.</p>
+                <figure class="sstep__shot"><img src="/assets/img/traube/tela-questoes.jpg" alt="Tela real do TRAUBE: Questões e Simulados" width="1600" height="1000" loading="lazy"></figure>
+              </li>
+            </ol>
+            <div class="story__bar" aria-hidden="true"><i></i></div>
+          </div>
 
-        <div class="steps" data-steps>
-          <ol class="steps__list">
-            <li class="step is-active" data-step="0">
-              <span class="step__n">01</span>
-              <h3>Aprender</h3>
-              <p>Apostilas TRAUBE organizadas por área, suas anotações e o <strong>Leco</strong>, um tutor de IA para destravar aquele tema que não entra. Dá até para anexar o seu material.</p>
-              <ul class="ticks"><li>Apostilas por grande área</li><li>Leco: pergunte qualquer coisa</li><li>Estudo guiado, passo a passo</li></ul>
-            </li>
-            <li class="step" data-step="1">
-              <span class="step__n">02</span>
-              <h3>Consolidar</h3>
-              <p>Memória não é sorte. Flashcards com <strong>revisões do dia</strong>, caderno de erros para não cair duas vezes na mesma pegadinha e cronograma para saber o que revisar e quando.</p>
-              <ul class="ticks"><li>Importe seus decks do Anki</li><li>Caderno de erros + Pulo do Gato</li><li>Cronograma de revisões</li></ul>
-            </li>
-            <li class="step" data-step="2">
-              <span class="step__n">03</span>
-              <h3>Aplicar</h3>
-              <p>Hora de provar pra você mesmo. <strong>Questões do dia</strong> prontas para responder, listas montadas do banco TRAUBE e seus simulados externos no mesmo painel.</p>
-              <ul class="ticks"><li>50 questões do dia</li><li>Listas com até 100 questões</li><li>Métricas de acerto da semana</li></ul>
-            </li>
-          </ol>
-
-          <div class="steps__screen" aria-hidden="true">
-            <figure class="device device--browser">
-              <div class="device__bar"><i></i><i></i><i></i><span data-step-label>traube · aprender</span></div>
+          <div class="story__screen" aria-hidden="true">
+            <div class="frame frame--story">
+              <div class="frame__bar"><i></i><i></i><i></i><span data-story-label>traube · aprender</span></div>
               <div class="screens">
-                <img class="is-on" data-screen="0" src="/assets/img/traube/tela-aprender.jpg" alt="" width="1600" height="815" loading="lazy">
-                <img data-screen="1" src="/assets/img/traube/tela-flashcards.jpg" alt="" width="1600" height="1000" loading="lazy">
-                <img data-screen="2" src="/assets/img/traube/tela-questoes.jpg" alt="" width="1600" height="1000" loading="lazy">
+                <img class="is-on" src="/assets/img/traube/tela-aprender.jpg" alt="" width="1600" height="815">
+                <img src="/assets/img/traube/tela-cronograma.jpg" alt="" width="1600" height="1000" loading="lazy">
+                <img src="/assets/img/traube/tela-flashcards.jpg" alt="" width="1600" height="1000" loading="lazy">
+                <img src="/assets/img/traube/tela-caderno.jpg" alt="" width="1600" height="1000" loading="lazy">
+                <img src="/assets/img/traube/tela-questoes.jpg" alt="" width="1600" height="1000" loading="lazy">
               </div>
-            </figure>
-            <div class="progress" aria-hidden="true"><i data-dot="0" class="is-on"></i><i data-dot="1"></i><i data-dot="2"></i></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ PROVA ============ -->
-    <section class="section proof" id="prova" aria-labelledby="proof-title">
-      <div class="aurora aurora--soft" aria-hidden="true"><i></i><i></i></div>
+    <!-- ============ NÚMEROS ============ -->
+    <section class="section numbers" id="prova" aria-labelledby="proof-title">
+      <div class="mesh mesh--soft" aria-hidden="true"><i></i><i></i></div>
       <div class="wrap">
         <header class="section__head section__head--dark reveal">
           <p class="eyebrow eyebrow--dark">A prova</p>
-          <h2 id="proof-title">Não acredita? <span class="hl hl--dark">Abre e confere.</span></h2>
-          <p class="lead">Sem promessa milagrosa e sem número inventado. Isso aqui é o que já está dentro do TRAUBE hoje.</p>
+          <h2 id="proof-title" class="words" data-split>Não acredita? Abre e confere.</h2>
+          <p class="lead">Sem promessa milagrosa e sem número inventado. Isso é o que já está dentro do TRAUBE hoje.</p>
         </header>
 
         <dl class="stats">
-          <div class="stat reveal"><dt>apostilas no acervo</dt><dd><span data-count="275">275</span></dd></div>
-          <div class="stat reveal"><dt>grandes áreas cobertas</dt><dd><span data-count="6">6</span></dd></div>
-          <div class="stat reveal"><dt>questões do dia, prontas</dt><dd><span data-count="50">50</span></dd></div>
-          <div class="stat reveal"><dt>questões por lista personalizada</dt><dd>até <span data-count="100">100</span></dd></div>
+          <div class="stat reveal"><dd><span data-count="275">275</span></dd><dt>apostilas no acervo</dt></div>
+          <div class="stat reveal"><dd><span data-count="6">6</span></dd><dt>grandes áreas cobertas</dt></div>
+          <div class="stat reveal"><dd><span data-count="50">50</span></dd><dt>questões do dia, prontas</dt></div>
+          <div class="stat reveal"><dd>até <span data-count="100">100</span></dd><dt>questões por lista personalizada</dt></div>
         </dl>
 
-        <div class="marquee" aria-label="Alguns temas do acervo de apostilas">
-          <div class="marquee__row">
-            <ul class="marquee__track">
-              <li>Abdome Agudo</li><li>Choque Hemorrágico</li><li>Endocardite Infecciosa</li><li>Doença de Parkinson</li><li>Abortamento</li><li>Climatério e Menopausa</li><li>Doença Trofoblástica Gestacional</li><li>Bronquiolite Viral Aguda</li><li>Pancreatite Aguda</li><li>Transtorno Bipolar</li>
-            </ul>
-            <ul class="marquee__track" aria-hidden="true">
-              <li>Abdome Agudo</li><li>Choque Hemorrágico</li><li>Endocardite Infecciosa</li><li>Doença de Parkinson</li><li>Abortamento</li><li>Climatério e Menopausa</li><li>Doença Trofoblástica Gestacional</li><li>Bronquiolite Viral Aguda</li><li>Pancreatite Aguda</li><li>Transtorno Bipolar</li>
-            </ul>
-          </div>
-          <div class="marquee__row marquee__row--rev">
-            <ul class="marquee__track">
-              <li>Sensibilidade e Especificidade</li><li>Ética Médica e Prontuário</li><li>Rastreamento e Prevenção Quaternária</li><li>Febre sem Sinais Localizatórios</li><li>Puberdade e Adolescência</li><li>Massas Anexiais</li><li>Emergências Psiquiátricas</li><li>Artrites Inflamatórias</li><li>Hemorragias na Gestação</li><li>Afogamento na Infância</li>
-            </ul>
-            <ul class="marquee__track" aria-hidden="true">
-              <li>Sensibilidade e Especificidade</li><li>Ética Médica e Prontuário</li><li>Rastreamento e Prevenção Quaternária</li><li>Febre sem Sinais Localizatórios</li><li>Puberdade e Adolescência</li><li>Massas Anexiais</li><li>Emergências Psiquiátricas</li><li>Artrites Inflamatórias</li><li>Hemorragias na Gestação</li><li>Afogamento na Infância</li>
-            </ul>
-          </div>
+        <div class="areas reveal" aria-label="Apostilas por grande área">
+          <h3 class="areas__title">Apostilas por grande área</h3>
+          <ul class="areas__list">
+            <li style="--v:100"><span>Clínica Médica</span><div class="bar"><i></i></div><b data-count="72">72</b></li>
+            <li style="--v:79"><span>Ginecologia e Obstetrícia</span><div class="bar"><i></i></div><b data-count="57">57</b></li>
+            <li style="--v:69"><span>Cirurgia Geral</span><div class="bar"><i></i></div><b data-count="50">50</b></li>
+            <li style="--v:67"><span>Pediatria</span><div class="bar"><i></i></div><b data-count="48">48</b></li>
+            <li style="--v:49"><span>Medicina Preventiva</span><div class="bar"><i></i></div><b data-count="35">35</b></li>
+            <li style="--v:18"><span>Psiquiatria</span><div class="bar"><i></i></div><b data-count="13">13</b></li>
+          </ul>
         </div>
 
-        <div class="bento">
-          <article class="tile tile--wide reveal">
-            <p class="tile__k">Sessão guiada</p>
-            <h3>“Tenho 30 minutos.” Pronto, já tem plano.</h3>
-            <p>Escolha 15 min, 1 h, 2 h ou “completar o dia” no botão <b>Estudar agora</b> — o Leco monta a sessão por você.</p>
-            <div class="pills" aria-hidden="true"><span>15 min</span><span class="on">30 min</span><span>1 hora</span><span>1h30</span><span>2 horas</span></div>
-          </article>
-          <article class="tile reveal">
-            <p class="tile__k">Caderno de erros</p>
-            <h3>Errou? Vira revisão.</h3>
-            <p>Seus erros ficam num caderno com o <b>Pulo do Gato</b> do dia, pra pegadinha não se repetir.</p>
-          </article>
-          <article class="tile reveal">
-            <p class="tile__k">Study Rats</p>
-            <h3>Estudar com amigos vira corrida.</h3>
-            <p>Monte desafios de estudo com a galera e acompanhe quem está na frente.</p>
-          </article>
-          <article class="tile reveal">
-            <p class="tile__k">Desafio diário &amp; jogos</p>
-            <h3>Um empurrão todo dia.</h3>
-            <p>Desafio diário, jogos e simulador de emergência para treinar raciocínio sem cara de aula.</p>
-          </article>
-          <article class="tile reveal">
-            <p class="tile__k">No celular</p>
-            <h3>Instala como app.</h3>
-            <p>Funciona no navegador e pode ser instalado na tela inicial — estude no busão, na fila, no intervalo.</p>
-          </article>
+        <div class="topics" aria-label="Alguns temas do acervo de apostilas">
+          <div class="topics__row"><ul class="topics__track"><li>Abdome Agudo</li><li>Choque Hemorrágico</li><li>Endocardite Infecciosa</li><li>Doença de Parkinson</li><li>Abortamento</li><li>Climatério e Menopausa</li><li>Doença Trofoblástica Gestacional</li><li>Bronquiolite Viral Aguda</li><li>Pancreatite Aguda</li><li>Transtorno Bipolar</li></ul><ul class="topics__track" aria-hidden="true"><li>Abdome Agudo</li><li>Choque Hemorrágico</li><li>Endocardite Infecciosa</li><li>Doença de Parkinson</li><li>Abortamento</li><li>Climatério e Menopausa</li><li>Doença Trofoblástica Gestacional</li><li>Bronquiolite Viral Aguda</li><li>Pancreatite Aguda</li><li>Transtorno Bipolar</li></ul></div>
+          <div class="topics__row topics__row--rev"><ul class="topics__track"><li>Sensibilidade e Especificidade</li><li>Ética Médica e Prontuário</li><li>Rastreamento e Prevenção Quaternária</li><li>Febre sem Sinais Localizatórios</li><li>Puberdade e Adolescência</li><li>Massas Anexiais</li><li>Emergências Psiquiátricas</li><li>Artrites Inflamatórias</li><li>Hemorragias na Gestação</li><li>Afogamento na Infância</li></ul><ul class="topics__track" aria-hidden="true"><li>Sensibilidade e Especificidade</li><li>Ética Médica e Prontuário</li><li>Rastreamento e Prevenção Quaternária</li><li>Febre sem Sinais Localizatórios</li><li>Puberdade e Adolescência</li><li>Massas Anexiais</li><li>Emergências Psiquiátricas</li><li>Artrites Inflamatórias</li><li>Hemorragias na Gestação</li><li>Afogamento na Infância</li></ul></div>
         </div>
-
-        <p class="fineprint">As telas desta página são capturas reais do TRAUBE, feitas com uma conta de demonstração (sem dados de alunos). O Leco é um apoio de estudo e não substitui fontes oficiais nem a orientação de professores.</p>
       </div>
     </section>
 
-    <!-- ============ INSPIRAÇÃO ============ -->
-    <section class="section muse" id="inspiracao" aria-labelledby="muse-title">
-      <img class="muse__watermark sig sig--light" src="/assets/img/traube/ludwig-traube-assinatura.webp" alt="" aria-hidden="true" width="2000" height="660">
+    <!-- ============ RECURSOS ============ -->
+    <section class="section features" id="recursos" aria-labelledby="feat-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow">Recursos</p>
+          <h2 id="feat-title" class="words" data-split>Estudar sem atrito. E com um pouco de graça.</h2>
+        </header>
+
+        <div class="bento">
+          <article class="card card--xl" data-spot>
+            <p class="card__k">Sessão guiada</p>
+            <h3>“Tenho 30 minutos.” Pronto, já tem plano.</h3>
+            <p>No botão <b>Estudar agora</b>, escolha 15 min, 1 h, 2 h ou “completar o dia” — o Leco organiza a sessão por você.</p>
+            <div class="timepick" aria-hidden="true"><span>15 min</span><span class="on">30 min</span><span>1 hora</span><span>1h30</span><span>2 horas</span><span>Completar o dia</span></div>
+          </article>
+          <article class="card card--tall" data-spot>
+            <p class="card__k">Leco · tutor de IA</p>
+            <h3>Pergunte. Anexe. Entenda.</h3>
+            <p>Pergunte qualquer coisa e anexe o seu material. Um apoio de estudo — não substitui fontes oficiais nem professores.</p>
+            <figure class="card__shot"><img src="/assets/img/traube/tela-aprender-mobile.jpg" alt="Tela real do TRAUBE no celular: Aprender, com o Leco" width="520" height="1000" loading="lazy"></figure>
+          </article>
+          <article class="card" data-spot>
+            <p class="card__k">Caderno de erros</p>
+            <h3>Errou? Vira revisão.</h3>
+            <p>Com o <b>Pulo do Gato</b> do dia, para a pegadinha não se repetir.</p>
+          </article>
+          <article class="card" data-spot>
+            <p class="card__k">Study Rats</p>
+            <h3>Estudar com amigos vira corrida.</h3>
+            <p>Desafios de estudo com a galera, para ver quem está na frente.</p>
+          </article>
+          <article class="card" data-spot>
+            <p class="card__k">Desafio diário &amp; jogos</p>
+            <h3>Um empurrão por dia.</h3>
+            <p>Desafio diário, jogos e simulador de emergência — treino sem cara de aula.</p>
+          </article>
+          <article class="card" data-spot>
+            <p class="card__k">No celular</p>
+            <h3>Instala como app.</h3>
+            <p>Roda no navegador e pode ir para a tela inicial. Estude no busão, na fila, no intervalo.</p>
+          </article>
+          <article class="card card--wide" data-spot>
+            <p class="card__k">Estatísticas</p>
+            <h3>Veja sua evolução sem planilha.</h3>
+            <p>Tempo estudado, consistência, aproveitamento em questões, retenção dos flashcards, ofensiva — por 15, 30, 90 dias ou desde sempre.</p>
+            <figure class="card__shot card__shot--wide"><img src="/assets/img/traube/tela-estatisticas.jpg" alt="Tela real do TRAUBE: Estatísticas" width="1600" height="1000" loading="lazy"></figure>
+          </article>
+        </div>
+        <p class="fineprint reveal">As telas desta página são capturas reais do TRAUBE, feitas com uma conta de demonstração (sem dados de alunos); por isso aparecem vazias.</p>
+      </div>
+    </section>
+
+    <!-- ============ ANTES x DEPOIS ============ -->
+    <section class="section compare" aria-labelledby="cmp-title">
+      <div class="mesh mesh--soft" aria-hidden="true"><i></i><i></i></div>
+      <div class="wrap wrap--mid">
+        <header class="section__head section__head--dark reveal">
+          <p class="eyebrow eyebrow--dark">Antes e depois</p>
+          <h2 id="cmp-title" class="words" data-split>O mesmo estudo. Só que organizado.</h2>
+        </header>
+        <div class="cmp">
+          <div class="cmp__head" aria-hidden="true"><span>Como é hoje</span><span>Com o TRAUBE</span></div>
+          <div class="cmp__row reveal"><p>Material espalhado em PDFs e abas</p><p><i class="ok" aria-hidden="true"></i>Apostilas organizadas por área</p></div>
+          <div class="cmp__row reveal"><p>Cronograma numa planilha que ninguém atualiza</p><p><i class="ok" aria-hidden="true"></i>Cronograma com as revisões na hora certa</p></div>
+          <div class="cmp__row reveal"><p>Cards atrasados sem ordem nenhuma</p><p><i class="ok" aria-hidden="true"></i>Revisões do dia, no ritmo certo</p></div>
+          <div class="cmp__row reveal"><p>Os mesmos erros, prova após prova</p><p><i class="ok" aria-hidden="true"></i>Caderno de erros e Pulo do Gato</p></div>
+          <div class="cmp__row reveal"><p>Questões soltas, sem fio condutor</p><p><i class="ok" aria-hidden="true"></i>50 questões do dia e listas de até 100</p></div>
+          <div class="cmp__row reveal"><p>“Será que estou evoluindo?”</p><p><i class="ok" aria-hidden="true"></i>Métricas da semana e estatísticas</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAUBE ============ -->
+    <section class="section muse" id="traube" aria-labelledby="muse-title">
+      <div class="mesh" aria-hidden="true"><i></i><i></i><i></i></div>
+      <img class="muse__mark sig sig--dark" src="/assets/img/traube/ludwig-traube-assinatura.webp" alt="" aria-hidden="true" width="2000" height="660" data-parallax="-0.08">
       <div class="wrap muse__grid">
         <figure class="muse__portrait reveal">
-          <img src="/assets/img/traube/ludwig-traube-retrato.webp" alt="Retrato estilizado em tons de azul de Ludwig Traube, médico alemão do século XIX" width="1100" height="1430" loading="lazy">
-          <figcaption>
-            <img class="sig sig--light sig-write" src="/assets/img/traube/ludwig-traube-assinatura.webp" alt="Assinatura de Ludwig Traube" width="2000" height="660" loading="lazy">
-          </figcaption>
+          <div class="muse__ring" aria-hidden="true"></div>
+          <img src="/assets/img/traube/ludwig-traube-retrato.webp" alt="Retrato estilizado em tons de azul de Ludwig Traube, médico alemão do século XIX" width="1100" height="1430" loading="lazy" data-parallax="0.05">
+          <figcaption><img class="sig sig--dark sig-write" src="/assets/img/traube/ludwig-traube-assinatura.webp" alt="Assinatura de Ludwig Traube" width="2000" height="660" loading="lazy"></figcaption>
         </figure>
-
         <div class="muse__copy">
           <header class="reveal">
-            <p class="eyebrow">Nossa inspiração</p>
+            <p class="eyebrow eyebrow--dark">Nossa inspiração</p>
             <h2 id="muse-title">Por que o nome <span class="hl">TRAUBE</span>?</h2>
           </header>
           <p class="reveal">Ludwig Traube (1818–1876) foi um médico de Berlim e um dos pioneiros da patologia experimental na Alemanha. Levou o termômetro para a rotina da clínica e passou a registrar a febre dos pacientes em curvas, dia após dia.</p>
           <p class="reveal">Talvez você já o conheça sem saber: ele dá nome ao <strong>espaço de Traube</strong>, que todo estudante encontra no exame do abdome, e descreveu o <strong>pulso alternante</strong>.</p>
-          <blockquote class="muse__quote reveal">
-            <p>Observar. Medir. Registrar. Revisar.<br>Foi assim que ele fez medicina — e é assim que a gente quer que você estude.</p>
-          </blockquote>
+          <blockquote class="muse__quote reveal"><p>Observar. Medir. Registrar. Revisar.<br>Foi assim que ele fez medicina — e é assim que a gente quer que você estude.</p></blockquote>
           <ol class="timeline reveal" aria-label="Linha do tempo">
             <li><b>1818</b><span>nasce em Ratibor, na Silésia</span></li>
             <li><b>1850s</b><span>termometria entra na rotina da clínica</span></li>
@@ -280,31 +353,27 @@
       <div class="wrap">
         <header class="section__head reveal">
           <p class="eyebrow">Planos</p>
-          <h2 id="plans-title">Os planos estão <span class="hl">na prancheta</span>.</h2>
-          <p class="lead">Estamos desenhando formatos e valores com calma, pra caber no bolso de quem estuda. Crie sua conta e seja avisado primeiro.</p>
+          <h2 id="plans-title" class="words" data-split>Os planos estão na prancheta.</h2>
+          <p class="lead">Estamos desenhando formatos e valores com calma, para caber no bolso de quem estuda. Crie sua conta e seja avisado primeiro.</p>
         </header>
-
         <div class="plans__grid">
-          <article class="plan reveal">
-            <p class="plan__tag">Plano 1</p>
-            <h3>Em definição</h3>
+          <article class="plan reveal" data-spot>
+            <p class="plan__tag">Plano 1</p><h3>Em definição</h3>
             <p class="plan__price">R$ <span>—</span></p>
             <ul><li><i></i></li><li><i></i></li><li><i></i></li></ul>
           </article>
-          <article class="plan plan--feat reveal">
-            <p class="plan__tag">Plano 2</p>
-            <h3>Em definição</h3>
+          <article class="plan plan--feat reveal" data-spot>
+            <p class="plan__tag">Plano 2</p><h3>Em definição</h3>
             <p class="plan__price">R$ <span>—</span></p>
             <ul><li><i></i></li><li><i></i></li><li><i></i></li><li><i></i></li></ul>
           </article>
-          <article class="plan reveal">
-            <p class="plan__tag">Plano 3</p>
-            <h3>Em definição</h3>
+          <article class="plan reveal" data-spot>
+            <p class="plan__tag">Plano 3</p><h3>Em definição</h3>
             <p class="plan__price">R$ <span>—</span></p>
             <ul><li><i></i></li><li><i></i></li><li><i></i></li></ul>
           </article>
         </div>
-        <div class="plans__cta reveal"><a class="btn btn--primary" href="/login/">Criar minha conta</a></div>
+        <div class="plans__cta reveal"><a class="btn btn--primary btn--lg magnetic" href="/login/"><span>Criar minha conta</span><i class="arrow" aria-hidden="true"></i></a></div>
       </div>
     </section>
 
@@ -316,22 +385,23 @@
           <h2 id="faq-title">Perguntas que a gente sempre ouve</h2>
         </header>
         <div class="faq__list">
-          <details><summary>Serve para residência e ENAMED?</summary><p>Sim. O Modo Estudo foi pensado para quem está se preparando para residência médica e ENAMED, com acervo organizado nas grandes áreas cobradas.</p></details>
-          <details><summary>Já uso Anki. Perco meus decks?</summary><p>Não. Dá para importar decks do Anki ou arquivos externos direto na área de Flashcards.</p></details>
-          <details><summary>Funciona no celular?</summary><p>Funciona no navegador do celular e pode ser instalado na tela inicial como app.</p></details>
-          <details><summary>O Leco substitui professor ou livro?</summary><p>Não. O Leco é um tutor de IA para tirar dúvidas e organizar a sessão. Conteúdo clínico importante deve sempre ser conferido nas fontes oficiais.</p></details>
-          <details><summary>Quanto custa?</summary><p>Os planos ainda estão em definição. Crie sua conta para ser avisado assim que estiverem prontos.</p></details>
+          <details class="reveal"><summary>Serve para residência e ENAMED?</summary><p>Sim. O TRAUBE foi pensado para quem se prepara para residência médica e ENAMED, com acervo organizado nas grandes áreas cobradas.</p></details>
+          <details class="reveal"><summary>Já uso Anki. Perco meus decks?</summary><p>Não. Dá para importar decks do Anki ou arquivos externos direto na área de Flashcards.</p></details>
+          <details class="reveal"><summary>Funciona no celular?</summary><p>Funciona no navegador do celular e pode ser instalado na tela inicial como app.</p></details>
+          <details class="reveal"><summary>O Leco substitui professor ou livro?</summary><p>Não. O Leco é um tutor de IA para tirar dúvidas e organizar a sessão. Conteúdo clínico importante deve sempre ser conferido nas fontes oficiais.</p></details>
+          <details class="reveal"><summary>Quanto custa?</summary><p>Os planos ainda estão em definição. Crie sua conta para ser avisado assim que estiverem prontos.</p></details>
         </div>
       </div>
     </section>
 
     <!-- ============ CTA FINAL ============ -->
     <section class="final" aria-labelledby="final-title">
-      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="mesh" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="gridlines" aria-hidden="true"></div>
       <div class="wrap final__inner reveal">
-        <h2 id="final-title">Bora trocar o caos<br>por <span class="hl hl--dark">método</span>?</h2>
+        <h2 id="final-title">Bora trocar o caos<br>por <span class="hl">método</span>?</h2>
         <p>Abra o TRAUBE, escolha quanto tempo você tem hoje e comece.</p>
-        <a class="btn btn--primary btn--lg" href="/login/">Começar agora <span aria-hidden="true">→</span></a>
+        <a class="btn btn--primary btn--lg magnetic" href="/login/"><span>Começar agora</span><i class="arrow" aria-hidden="true"></i></a>
         <img class="sig sig--dark sig-write final__sig" src="/assets/img/traube/ludwig-traube-assinatura.webp" alt="" aria-hidden="true" width="2000" height="660" loading="lazy">
       </div>
     </section>
@@ -339,15 +409,15 @@
 
   <footer class="footer">
     <div class="wrap footer__inner">
-      <a class="brand brand--dark" href="#topo"><img src="/assets/img/logos/logo-principal.png?v=traube20261105brand1" alt="" width="28" height="28"><span>TRAUBE</span></a>
+      <a class="brand" href="#topo"><img src="/assets/img/logos/logo-principal.png?v=traube20261105brand1" alt="" width="28" height="28"><span>TRAUBE</span></a>
       <p>Aprenda. Conecte. Consolide.</p>
-      <p class="footer__small">© 2026 TRAUBE · <a href="/">Página inicial</a> · <a href="/login/">Entrar</a></p>
+      <p class="footer__small">© 2026 TRAUBE · <a href="/login/">Entrar</a></p>
     </div>
   </footer>
 
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
-  <script src="/assets/js/modo-estudo-landing.js?v=2" defer></script>
+  <script src="/assets/js/modo-estudo-landing.js?v=3" defer></script>
   <script defer src="/assets/js/pwa.js?v=20261105-brand-gradient1"></script>
 </body>
 </html>
