@@ -53,7 +53,7 @@ const server = http.createServer((request, response) => {
     await atlas.locator(".loading").waitFor({ state: "hidden", timeout: 120000 });
     await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-desktop.png") });
     await atlas.setViewportSize({ width: 390, height: 844 });
-    await atlas.getByRole("button", { name: "Open system layers" }).click();
+    await atlas.getByRole("button", { name: "Abrir sistemas" }).click();
     await atlas.locator(".system-row").first().waitFor({ state: "visible" });
     await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-mobile.png") });
     assert.equal(atlasErrors.length, 0, atlasErrors.join("\n"));

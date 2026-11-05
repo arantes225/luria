@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0A2342">
+<title>Corpo dissecável · TRAUBE</title>
+<meta name="description" content="Corpo humano dissecável em 3D no TRAUBE: 88 estruturas em 11 sistemas, cortes sagital, coronal e transversal, em português.">
+<link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+<link rel="canonical" href="/aprender/anatomia/corpo/">
+<link rel="stylesheet" href="/aprender/anatomia/corpo/corpus.css?v=1">
+<link rel="stylesheet" href="/aprender/anatomia/corpo/corpus-traube.css?v=1">
+</head>
+<body>
+<canvas id="gl" aria-label="Corpo humano 3D dissecável. Arraste para girar, role para aproximar e clique para identificar."></canvas>
+
+<div class="pane" id="head">
+  <a class="back-link" href="/aprender/anatomia/"><span aria-hidden="true">←</span> Sala de Anatomia</a>
+  <span class="kicker">TRAUBE · ANATOMIA INTERATIVA</span>
+  <h1>Corpo dissecável</h1>
+  <div class="sub">Corte, esmaeça e identifique cada sistema</div>
+  <button type="button" class="credits-trigger credits-mobile" aria-controls="credits-card">ⓘ Créditos</button>
+</div>
+
+<div class="pane" id="rail"><div class="rh">Sistemas</div></div>
+
+<div class="pane" id="tools">
+  <div class="tool"><label>Plano</label>
+    <button class="tbtn" data-pl="0" title="Sem corte">não</button>
+    <button class="tbtn" data-pl="1" title="Corte sagital">sag</button>
+    <button class="tbtn" data-pl="2" title="Corte coronal">cor</button>
+    <button class="tbtn" data-pl="3" title="Corte transversal">trans</button>
+  </div>
+  <div class="tool"><label for="cut">Corte</label><input type="range" id="cut" min="0" max="100" value="50"></div>
+  <div class="tool"><label for="ghost">Opacidade</label><input type="range" id="ghost" min="10" max="100" value="100"></div>
+  <div class="trow">
+    <button class="tbtn on" id="spin">Girar</button>
+    <button class="tbtn" id="reset">Frente</button>
+    <button class="tbtn" id="all">Todos</button>
+  </div>
+</div>
+
+<div class="pane" id="insp" role="dialog" aria-live="polite">
+  <button class="x" id="ix" aria-label="Fechar">✕</button>
+  <div class="sys" id="isys"></div>
+  <h2 id="iname"></h2>
+  <div class="lat" id="ilat"></div>
+  <p id="idesc"></p>
+  <dl class="kv" id="ikv"></dl>
+  <button class="iso" id="iiso">Isolar este sistema</button>
+</div>
+
+<div class="pane" id="foot">
+  <span><b>arraste</b> gira</span><span><b>role</b> aproxima no cursor</span>
+  <span><b>clique</b> identifica</span><span><b>1–9</b> sistemas</span>
+  <span class="grow"></span><span id="stat"></span>
+  <button type="button" class="credits-trigger" aria-expanded="false" aria-controls="credits-card">ⓘ Créditos</button>
+</div>
+
+<section class="credits-card" id="credits-card" hidden aria-label="Créditos">
+  <div class="credits-head"><strong>Créditos</strong><button type="button" id="credits-close" aria-label="Fechar créditos">✕</button></div>
+  <p>Todas as estruturas são geradas por código (sem modelos externos) por um motor WebGL2 de licença MIT, traduzido e adaptado pelo TRAUBE. Licença incluída em <a href="/aprender/anatomia/corpo/LICENSE-corpus.txt">LICENSE-corpus.txt</a>.</p>
+  <p>Representação esquemática para estudo; formas e proporções são aproximadas. Conteúdo sujeito a revisão anatômica.</p>
+</section>
+
+<div id="tip"></div>
+<div id="boot"><div>preparando o modelo</div><div class="bar"><i></i></div></div>
+<div id="err"></div>
+
+<script src="/aprender/anatomia/corpo/corpus-pt.js?v=1"></script>
+<script src="/aprender/anatomia/corpo/shaders.js?v=1"></script>
+<script src="/aprender/anatomia/corpo/corpus.js?v=1"></script>
+<script src="/aprender/anatomia/corpo/corpus-ui.js?v=1"></script>
+</body>
+</html>
