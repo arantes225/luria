@@ -31,13 +31,14 @@ const server = http.createServer((request, response) => {
     await page.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/", { waitUntil: "domcontentloaded" });
     await page.locator("[data-anatomy-viewer].is-ready").waitFor({ timeout: 45000 });
     assert.equal(await page.locator("[data-anatomy-viewer].is-static").count(), 0);
+    await page.locator(".anatomy-stage-card").screenshot({ path: path.resolve(__dirname, "../build/anatomy-exterior.png") });
     await page.locator("[data-anatomy-interior]").click();
     assert.equal(await page.locator("[data-anatomy-viewer]").getAttribute("data-anatomy-mode"), "interior");
     await page.locator("[data-anatomy-flow]").click();
     assert.equal(await page.locator("[data-anatomy-flow]").getAttribute("aria-pressed"), "true");
     await page.locator("[data-structure-id='pulmonary-trunk']").click();
     assert.equal(await page.locator(".anatomy-picked-card h3").textContent(), "Tronco pulmonar");
-    await page.screenshot({ path: path.resolve(__dirname, "../build/anatomy-desktop.png"), fullPage: true });
+    await page.locator(".anatomy-stage-card").screenshot({ path: path.resolve(__dirname, "../build/anatomy-desktop.png") });
     await page.setViewportSize({ width: 390, height: 844 });
     await page.locator("[data-anatomy-exterior]").click();
     assert.equal(await page.locator("[data-anatomy-viewer]").getAttribute("data-anatomy-mode"), "exterior");
