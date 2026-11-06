@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261106-scores-interpret-v2";
+const CACHE_VERSION = "traube-pwa-20261106-observacoes69-1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -74,7 +74,7 @@ const APP_SHELL = [
   "/assets/img/logos/pwa-icon-180.png?v=traube20261105brand1",
   "/assets/img/logos/logo-principal.png?v=traube20261105brand1",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/js/pwa.js?v=20261105-brand-gradient1",
+  "/assets/js/pwa.js?v=20261106-observacoes69-1",
   "/assets/css/style.css?v=20261103-clean1",
   "/assets/css/traube-brand-v5.css?v=20261103-logo70-final",
   "/assets/css/traube-logo.css?v=20261103-v1",
@@ -158,7 +158,7 @@ const INSTALL_PRECACHE = new Set([
   "/apostilas/",
   "/manifest.webmanifest?v=7",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/js/pwa.js?v=20261105-brand-gradient1",
+  "/assets/js/pwa.js?v=20261106-observacoes69-1",
   "/assets/css/style.css?v=20261103-clean1",
   "/assets/css/traube-brand-v5.css?v=20261103-logo70-final",
   "/assets/css/traube-logo.css?v=20261103-v1",
