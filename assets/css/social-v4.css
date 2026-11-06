@@ -369,3 +369,9 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3 {
  @media(prefers-reduced-motion:reduce) {:is(progress::-webkit-progress-value,.sv-toggle>span::before,.sr-carriage .sr-sprite) {transition:none;}}
 }
 }
+
+/* Progress and runner share the same SVG trajectory. */
+.sr-trajectory .sr-trail{fill:none;stroke:var(--lane-color,var(--color-primary));stroke-width:11;stroke-linecap:round;stroke-dasharray:100;vector-effect:non-scaling-stroke;transition:stroke-dashoffset 900ms ease}
+.sr-road .sr-carriage{inset:auto!important;width:0!important;height:0!important;transform:none!important;transition:none!important}
+.sr-road .sr-sprite{left:0!important;top:0!important;transform:translate(-50%,-50%)!important}
+.sr-road .sr-progress,.sr-road .sr-route{display:none!important}
