@@ -232,7 +232,7 @@
   });
 
   (async () => {
-    if (!sb) { status('O jogo online está indisponível neste momento. A demonstração continua disponível.', true); return; }
+    if (!sb) { status('O jogo está indisponível neste momento.', true); return; }
     try {
       const {data, error} = await sb.auth.getUser();
       if (error) throw error;
