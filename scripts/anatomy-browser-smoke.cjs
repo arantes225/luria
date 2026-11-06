@@ -22,7 +22,7 @@ const server = http.createServer((request, response) => {
 });
 (async () => {
   await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
-  const browser = await chromium.launch({ headless: true,
+  const browser = await chromium.launch({ ...(process.platform === "win32" ? { executablePath: "C:/Program Files/Google/Chrome/Application/chrome.exe" } : {}), headless: true,
     args: ["--enable-webgl", "--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"] });
   try {
     const page = await browser.newPage({ viewport: { width: 1365, height: 900 }, deviceScaleFactor: 1 });
@@ -38,7 +38,7 @@ const server = http.createServer((request, response) => {
     assert.equal(await page.locator("[data-anatomy-viewer]").getAttribute("data-anatomy-mode"), "interior");
     await page.locator("[data-anatomy-flow]").click();
     assert.equal(await page.locator("[data-anatomy-flow]").getAttribute("aria-pressed"), "true");
-    await page.locator("[data-structure-id='pulmonary-trunk']").click();
+    await page.locator("[data-structure-id='VH_F_pulmonary_trunk']").click();
     assert.equal(await page.locator(".anatomy-picked-card h3").textContent(), "Tronco pulmonar");
     await page.locator(".anatomy-stage-card").screenshot({ path: path.resolve(__dirname, "../build/anatomy-desktop.png") });
     await page.setViewportSize({ width: 390, height: 844 });
