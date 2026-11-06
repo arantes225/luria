@@ -1780,10 +1780,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${traubeIcon("chart")}</span><span>Estatísticas</span>
         </a>
 
-        <a class="nav-link ${page === "editais" ? "active" : ""}" href="/editais/">
-          <span class="nav-icon">${traubeIcon("calendar")}</span><span>Editais e provas</span>
-        </a>
-
         <a class="nav-link ${["jogos", "study-rats"].includes(page) ? "active" : ""}" href="/jogos/">
           <span class="nav-icon">${traubeIcon("games")}</span><span>Jogos</span>
         </a>
