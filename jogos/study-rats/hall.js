@@ -21,11 +21,7 @@
         <p>Entre na fila para encontrar outra pessoa que também escolheu uma corrida online.</p>
         <button class="sr-hall-button" id="sr-find-random" type="button">Encontrar partida</button>
       </section>
-      <section class="sr-hall-card" aria-labelledby="sr-demo-heading">
-        <span class="sr-hall-icon" aria-hidden="true">🐭</span><h3 id="sr-demo-heading">Demonstração</h3>
-        <p>Experimente o tabuleiro agora com três ratinhos controlados pelo jogo.</p>
-        <button class="sr-hall-button sr-hall-button--secondary" id="sr-play-demo" type="button">Jogar demonstração</button>
-      </section>
+
     </div>
     <section class="sr-hall-detail" id="sr-friends-panel" aria-labelledby="sr-friends-list-heading" hidden>
       <h3 id="sr-friends-list-heading">Escolha um amigo</h3>
@@ -197,7 +193,6 @@
   }
   $('sr-show-friends').addEventListener('click', showFriends);
   $('sr-find-random').addEventListener('click', () => startOnline('random'));
-  $('sr-play-demo').addEventListener('click', () => launchGame());
   $('sr-copy-link').addEventListener('click', async () => {
     if (!currentMatch) return;
     const link = `${location.origin}/jogos/study-rats/?match=${encodeURIComponent(currentMatch.id)}`;
