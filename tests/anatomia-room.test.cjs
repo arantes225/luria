@@ -16,6 +16,8 @@ test("Sala de Anatomia está ligada ao hub Aprender e à navegação móvel", ()
 test("Sala de Anatomia abre o atlas completo e preserva o coração detalhado", () => {
   assert.match(read("aprender/anatomia/index.html"), /aprender.anatomia.atlas/);
   assert.match(read("aprender/anatomia/coracao/index.html"), /data-anatomy-interior/);
+  assert.match(read("aprender/anatomia/orgaos/index.html"), /data-anatomy-organs/);
+  assert.match(read("aprender/anatomia/orgaos/index.html"), /data-organ="lungs"/);
 });
 
 test("modelo segmentado possui seleção real, interior e fluxo didático", () => {
@@ -39,4 +41,8 @@ test("publicação substitui o GLB do repositório pelo atlas verificado", () =>
   assert.match(workflow, /organui\/heart-3d\/c72ce6654ff8e282942f97750d3104f55ef4fc3d/);
   assert.match(workflow, /ANATOMY_MODEL_PATH=build\/pages\/assets\/models\/anatomia\/coracao\.glb node scripts\/build-anatomy-viewer\.cjs/);
   assert.match(read("assets/js/anatomy-loading-guard.js"), /anatomy-static-fallback/);
+  assert.match(read("scripts/prepare-anatomy-organs.cjs"), /ImliStack\/Body-Atlas-3D\/b0e04f6e058c767d51c1529369b7545315c5c6bd/);
+  assert.match(workflow, /prepare-anatomy-organs\.cjs/);
+  assert.match(read("scripts/prepare-anatomy-organs.cjs"), /ATTRIBUTION\.md/);
 });
+
