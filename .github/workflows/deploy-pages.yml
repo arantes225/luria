@@ -111,12 +111,13 @@ jobs:
         run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12 playwright@1.56.1
       - name: Prepare local site for browser smoke
         run: node scripts/build-pages.cjs
-      - name: Restore attributed BodyParts3D heart model
+      - name: Restore and verify detailed organ models
+        run: node scripts/prepare-anatomy-organs.cjs build/pages/assets/models/anatomia/orgaos
+      - name: Build detailed HRA models and organ viewers
         run: |
-          mkdir -p build/pages/assets/models/anatomia
-          curl --fail --location --retry 3 'https://raw.githubusercontent.com/organui/heart-3d/c72ce6654ff8e282942f97750d3104f55ef4fc3d/public/models/heart.glb' --output build/pages/assets/models/anatomia/coracao.glb
-      - name: Verify heart model and build browser module
-        run: ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
+          node scripts/export-hra-organs.cjs build/hra-organ-source build/pages/assets/models/anatomia --restore
+          ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
+          node scripts/build-anatomy-organs.cjs
       - name: Check anatomical room contracts
         run: node --test tests/anatomia-room.test.cjs
       - name: Fetch pinned Human Atlas source
@@ -162,10 +163,15 @@ jobs:
           node /tmp/luria-human-atlas/scripts/validate-interactions.mjs
           npm run build --prefix /tmp/luria-human-atlas -- --base=/aprender/anatomia/atlas/
           node scripts/build-human-atlas.cjs install /tmp/luria-human-atlas
-      - name: Install Chromium
-        run: npx playwright install chromium --with-deps
+      - name: Use the Chrome installed on the runner
+        run: |
+          chrome=$(command -v google-chrome)
+          "$chrome" --version
+          echo "TRAUBE_CHROME_EXECUTABLE=$chrome" >> "$GITHUB_ENV"
       - name: Exercise 3D anatomy in browser
         run: node scripts/anatomy-browser-smoke.cjs
+      - name: Exercise the detailed organ catalogue
+        run: node scripts/anatomy-organs-browser-smoke.cjs
       - name: Save visual verification
         if: always()
         uses: actions/upload-artifact@v4
@@ -177,6 +183,9 @@ jobs:
             build/anatomy-mobile.png
             build/anatomy-atlas-desktop.png
             build/anatomy-atlas-mobile.png
+            build/anatomy-female-body-desktop.png
+            build/anatomy-kidneys-interior.png
+            build/anatomy-breasts-interior.png
           if-no-files-found: ignore
 
   deploy:
@@ -197,12 +206,13 @@ jobs:
         run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12
       - name: Prepare public assets only
         run: node scripts/build-pages.cjs
-      - name: Restore attributed BodyParts3D heart model
+      - name: Restore and verify detailed organ models
+        run: node scripts/prepare-anatomy-organs.cjs build/pages/assets/models/anatomia/orgaos
+      - name: Build detailed HRA models and organ viewers
         run: |
-          mkdir -p build/pages/assets/models/anatomia
-          curl --fail --location --retry 3 'https://raw.githubusercontent.com/organui/heart-3d/c72ce6654ff8e282942f97750d3104f55ef4fc3d/public/models/heart.glb' --output build/pages/assets/models/anatomia/coracao.glb
-      - name: Replace visualizer with verified browser module
-        run: ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
+          node scripts/export-hra-organs.cjs build/hra-organ-source build/pages/assets/models/anatomia --restore
+          ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
+          node scripts/build-anatomy-organs.cjs
       - name: Fetch pinned Human Atlas source
         run: |
           git init /tmp/luria-human-atlas
@@ -263,3 +273,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify the published anatomy pages
+        env:
+          PUBLISHED_SITE: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          test -n "$PUBLISHED_SITE"
+          site="${PUBLISHED_SITE%/}"
+          work=$(mktemp -d)
+          curl --retry 5 --retry-delay 4 --retry-all-errors -fsSL "$site/aprender/anatomia/coracao/" -o "$work/heart"
+          curl --retry 5 --retry-delay 4 --retry-all-errors -fsSL "$site/aprender/anatomia/orgaos/" -o "$work/organs"
+          curl --retry 5 --retry-delay 4 --retry-all-errors -fsSL "$site/aprender/anatomia/atlas/models/atlas-female.json.gz?v=traube3" -o "$work/atlas"
+          grep -q 'data-anatomy-vessels' "$work/heart"
+          grep -q 'data-organ="brain"' "$work/organs"
+          node -e 'const b=require("node:fs").readFileSync(process.argv[1]); const a=JSON.parse((b[0]===31&&b[1]===139?require("node:zlib").gunzipSync(b):b).toString()); if(a.sex!=="female"||a.parts.length<1200)process.exit(1);' "$work/atlas"
+

@@ -4,6 +4,7 @@ import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 import {mergeGeometries} from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import {createExplosionLayout} from './explosion-layout';
 import {decodeModelResponse} from './model-download';
+import {fetchAtlasChunk} from './atlas-startup';
 import {PointerTap} from './pointer-tap';
 import {SYSTEMS,partAppearance,ptName,type Atlas,type SceneState} from './anatomy';
 interface Props {atlas:Atlas;state:SceneState;onSelect:(id:string)=>void;onProgress:(n:number)=>void;onError:(s:string)=>void}
@@ -125,16 +126,29 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?1300.0:kind<3.5?650.0:ki
    };materials.push(m);return m;
   };
   const mats=new Map(SYSTEMS.map(s=>[s.id,materialFor(s.id)]));
-  let loaded=0;
+  const complete=new Set<number>(),pending=new Set<number>(),failed=new Set<number>();
+  const chunksBySystem=new Map<string,Set<number>>(),chunkById=new Map<string,number>();
+  for(const part of atlas.parts){
+   chunkById.set(part.id,part.chunk);
+   const set=chunksBySystem.get(part.system)??new Set<number>();
+   set.add(part.chunk);chunksBySystem.set(part.system,set);
+  }
+  let demand=new Set<number>(),previousDemand:SceneState|null=null;
   // Progresso por bytes e download resiliente: cada parte tem timeout por inatividade e até 4 tentativas,
   // para o carregamento não ficar parado em 87% quando uma conexão trava.
-  const got=new Float64Array(atlas.chunks.length),totalBytes=atlas.chunks.reduce((n,c)=>n+(c.gzipBytes??c.bytes),0)||1;
-  const report=()=>{const b=got.reduce((n,x)=>n+x,0);onProgress(Math.min(99,Math.floor(b/totalBytes*96+loaded/atlas.chunks.length*3)));};
+  const got=new Float64Array(atlas.chunks.length);
+  const report=()=>{
+   if(disposed)return;
+   if([...demand].every(ci=>complete.has(ci))){onProgress(100);return;}
+   let bytes=0,total=0;
+   for(const ci of demand){const c=atlas.chunks[ci],n=c.gzipBytes??c.bytes;total+=n;bytes+=complete.has(ci)?n:got[ci];}
+   onProgress(Math.min(99,Math.floor(100*bytes/Math.max(1,total))));
+  };
   const fetchOnce=async(url:string,wire:number,expected:number,compressed:boolean,ci:number)=>{
    const ctl=new AbortController(),stop=()=>ctl.abort();abort.signal.addEventListener('abort',stop);
    let timer=0;const arm=()=>{clearTimeout(timer);timer=window.setTimeout(stop,20000);};arm();
    try{
-    const response=await fetch(url,{signal:ctl.signal,cache:'no-store'});
+    const response=await fetchAtlasChunk(url,ctl.signal);
     if(!response.ok||!response.body)return await decodeModelResponse(response,expected,compressed);
     const reader=response.body.getReader(),parts:Uint8Array[]=[];let n=0;
     for(;;){const {done,value}=await reader.read();if(done)break;arm();parts.push(value);n+=value.byteLength;got[ci]=Math.min(n,wire);report();}
@@ -163,9 +177,27 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?1300.0:kind<3.5?650.0:ki
     const list=groups.get(p.system)??[];list.push(g);groups.set(p.system,list);
    });
    groups.forEach((gs,system)=>{const geometry=mergeGeometries(gs,false);if(!geometry)throw new Error('Não foi possível montar a geometria anatômica.');geometries.push(geometry);const mesh=new T.Mesh(geometry,mats.get(system as never));mesh.frustumCulled=false;scene.add(mesh);});
-   lastState=null;loaded++;got[ci]=atlas.chunks[ci].gzipBytes??atlas.chunks[ci].bytes;if(loaded===atlas.chunks.length)onProgress(100);else report();dirty=true;
+   lastState=null;dirty=true;
   };
-  (async()=>{try{let cursor=0;await Promise.all(Array.from({length:3},async()=>{while(cursor<atlas.chunks.length){const i=cursor++;await loadChunk(i);}}));if(!disposed){ready=true;dirty=true;}}catch(e){if(!disposed)onError(e instanceof Error?e.message:'Não foi possível carregar a anatomia.');}})();
+  function loadDemand(s:SceneState){
+   if(disposed)return;
+   if(previousDemand?.visible!==s.visible||previousDemand?.selected!==s.selected||previousDemand?.isolate!==s.isolate){
+    demand=new Set<number>();
+    if(!s.isolate)for(const system of s.visible)for(const index of chunksBySystem.get(system)??[])demand.add(index);
+    for(const id of s.selected){const ci=chunkById.get(id);if(ci!==undefined)demand.add(ci);}
+    previousDemand=s;
+   }
+   report();
+   for(const ci of demand){
+    if(pending.size>=3)break;
+    if(complete.has(ci)||pending.has(ci)||failed.has(ci))continue;
+    pending.add(ci);
+    loadChunk(ci).then(()=>{if(!disposed){complete.add(ci);ready=true;}}).catch(e=>{
+     if(!disposed){failed.add(ci);onError(e instanceof Error?e.message:'Não foi possível carregar uma camada.');}
+    }).finally(()=>{pending.delete(ci);loadDemand(latest.current);});
+   }
+  }
+  loadDemand(latest.current);
   const fit=(view:string,extent=0)=>{
    const aspect=camera.aspect,mobile=el.clientWidth<768,normalDistance=Math.max(2.3,1.82/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))/Math.min(1,aspect*1.25));
    const reservedHeight=40;const availableAspect=Math.max(.35,(el.clientWidth-40)/Math.max(160,el.clientHeight-reservedHeight));const atlasDistance=Math.max(packingHeight,packingWidth/availableAspect)/(2*Math.tan(T.MathUtils.degToRad(camera.fov/2)))*(el.clientHeight/Math.max(160,el.clientHeight-reservedHeight))*1.08;
@@ -188,6 +220,7 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?1300.0:kind<3.5?650.0:ki
   const clock=new T.Clock();let lastExtent=-1;
   const animate=()=>{
    if(disposed)return;frame=requestAnimationFrame(animate);const dt=Math.min(clock.getDelta(),.05),s=latest.current;
+   if(previousDemand?.visible!==s.visible||previousDemand?.selected!==s.selected||previousDemand?.isolate!==s.isolate)loadDemand(s);
    const changed=lastState?.visible!==s.visible||lastState?.selected!==s.selected||lastState?.isolate!==s.isolate||lastState?.hidden!==s.hidden;
    const moving=Math.abs(amount-s.explode)>.0001;
    if(moving){amount=T.MathUtils.damp(amount,s.explode,8,dt);dirty=true;}

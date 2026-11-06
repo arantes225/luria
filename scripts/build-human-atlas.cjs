@@ -7,6 +7,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const crypto = require("node:crypto");
+const prepareAtlasLoading = require("./prepare-atlas-loading.cjs");
 const { execFileSync } = require("node:child_process");
 
 const root = path.resolve(__dirname, "..");
@@ -91,12 +92,20 @@ if (mode === "prepare") {
     fs.writeFileSync(file, JSON.stringify(manifest));
     console.log(`Atlas preparado (${path.basename(file)}): ${manifest.parts.length} peças selecionáveis, ${manifest.chunks.length} blocos`);
   }
+  prepareAtlasLoading(source);
 } else if (mode === "install") {
   const dist = path.join(source, "dist");
   for (const rel of ["index.html", "models/atlas.json", "models/atlas-female.json", "models/pt-names.json"]) {
     if (!fs.existsSync(path.join(dist, rel))) throw new Error("Build do atlas incompleto: falta " + rel);
   }
-  fs.cpSync(dist, output, { recursive: true, force: true });
+  const modelFiles = new Set(["atlas", "atlas-female"].flatMap(name => {
+    const catalog = JSON.parse(fs.readFileSync(path.join(dist, "models", name + ".json"), "utf8"));
+    return catalog.chunks.flatMap(chunk => [chunk.url, chunk.gzip].filter(Boolean).map(url => path.basename(url)));
+  }));
+  const modelsDir = path.join(dist, "models");
+  fs.cpSync(dist, output, { recursive: true, force: true, filter: filename =>
+    path.dirname(filename) !== modelsDir || !/\.bin(?:\.gz)?$/.test(filename) || modelFiles.has(path.basename(filename))
+  });
   fs.copyFileSync(path.join(source, "LICENSE"), path.join(output, "LICENSE-human-atlas.txt"));
   const femaleLicense = process.env.TRAUBE_ATLAS_FEMALE && path.join(process.env.TRAUBE_ATLAS_FEMALE, "../../LICENSE");
   if (femaleLicense && fs.existsSync(femaleLicense)) fs.copyFileSync(femaleLicense, path.join(output, "LICENSE-atlas-feminino.txt"));

@@ -22,21 +22,31 @@ const server = http.createServer((request, response) => {
 });
 (async () => {
   await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
-  const browser = await chromium.launch({ headless: true,
+  const browser = await chromium.launch({ ...(process.env.TRAUBE_CHROME_EXECUTABLE ? {executablePath:process.env.TRAUBE_CHROME_EXECUTABLE} : process.platform === "win32" ? {executablePath:"C:/Program Files/Google/Chrome/Application/chrome.exe"} : {}), headless: true,
     args: ["--enable-webgl", "--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"] });
   try {
     const page = await browser.newPage({ viewport: { width: 1365, height: 900 }, deviceScaleFactor: 1 });
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
+    page.on("console", message => { if (message.type() === "error" && /THREE.*(?:Shader|VALIDATE_STATUS)/i.test(message.text())) errors.push(message.text()); });
     await page.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/coracao/", { waitUntil: "domcontentloaded" });
     await page.locator("[data-anatomy-viewer].is-ready").waitFor({ timeout: 45000 });
     assert.equal(await page.locator("[data-anatomy-viewer].is-static").count(), 0);
     await page.locator(".anatomy-stage-card").screenshot({ path: path.resolve(__dirname, "../build/anatomy-exterior.png") });
+    const vessels = page.locator("[data-anatomy-vessels]");
+    await vessels.click();
+    assert.equal(await vessels.getAttribute("aria-pressed"), "true");
+    await page.locator("[data-structure-id='VH_F_ascending_aorta']").click();
+    assert.equal(await page.locator(".anatomy-picked-card h3").textContent(), "Aorta ascendente");
+    await page.locator("[data-structure-id='VH_F_left_coronary_artery']").click();
+    assert.equal(await page.locator(".anatomy-picked-card h3").textContent(), "Artéria coronária esquerda");
+    await vessels.click();
+    assert.equal(await vessels.getAttribute("aria-pressed"), "false");
     await page.locator("[data-anatomy-interior]").click();
     assert.equal(await page.locator("[data-anatomy-viewer]").getAttribute("data-anatomy-mode"), "interior");
     await page.locator("[data-anatomy-flow]").click();
     assert.equal(await page.locator("[data-anatomy-flow]").getAttribute("aria-pressed"), "true");
-    await page.locator("[data-structure-id='pulmonary-trunk']").click();
+    await page.locator("[data-structure-id='VH_F_pulmonary_trunk']").click();
     assert.equal(await page.locator(".anatomy-picked-card h3").textContent(), "Tronco pulmonar");
     await page.locator(".anatomy-stage-card").screenshot({ path: path.resolve(__dirname, "../build/anatomy-desktop.png") });
     await page.setViewportSize({ width: 390, height: 844 });
@@ -46,22 +56,39 @@ const server = http.createServer((request, response) => {
     const atlas = await browser.newPage({ viewport: { width: 1365, height: 900 }, deviceScaleFactor: 1 });
     const atlasErrors = [];
     atlas.on("pageerror", error => atlasErrors.push(error.message));
-    await atlas.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/atlas/", { waitUntil: "domcontentloaded" });
+    const atlasFiles = JSON.parse(fs.readFileSync(path.join(root, "aprender/anatomia/atlas/models/atlas.json"), "utf8")).chunks;
+    const byName = new Map(atlasFiles.map(file => [file.gzip, file]));
+    const fetched = new Set();
+    const startupRequests = [];
+    atlas.on("request", request => {
+      const pathname = new URL(request.url()).pathname;
+      if (byName.has(pathname) || pathname.endsWith("/models/atlas.json.gz")) startupRequests.push(pathname);
+    });
+    atlas.on("request", request => { const pathname = new URL(request.url()).pathname; if (byName.has(pathname)) fetched.add(pathname); });
+    await atlas.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/atlas/?corpo=masculino", { waitUntil: "domcontentloaded" });
     await atlas.locator(".atlas-system").first().waitFor({ timeout: 45000 });
-    assert.ok(await atlas.locator(".atlas-system").count() >= 15, "sistemas do corpo masculino");
+    assert.ok(await atlas.locator(".atlas-system").count() >= 15);
     await atlas.locator("canvas").first().waitFor({ timeout: 45000 });
     await atlas.locator(".atlas-loading").waitFor({ state: "hidden", timeout: 120000 });
-    await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-desktop.png"), timeout: 180000 });
-    await atlas.setViewportSize({ width: 390, height: 844 });
-    await atlas.getByRole("button", { name: "Sistemas" }).click();
-    await atlas.locator(".atlas-system").first().waitFor({ state: "visible" });
-    await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-mobile.png"), timeout: 180000 });
-    await atlas.getByRole("button", { name: "Feminino" }).click();
-    await atlas.locator(".atlas-caption", { hasText: /feminina/i }).waitFor({ timeout: 45000 });
+    assert.equal(fetched.size, atlasFiles.filter(file => file.system === "integumentary").length);
+    assert.ok([...fetched].every(url => byName.get(url).system === "integumentary"));
+    const compressedCatalogue = startupRequests.findIndex(pathname => pathname.endsWith("/models/atlas.json.gz"));
+    const exteriorRequest = startupRequests.findIndex(pathname => byName.get(pathname)?.system === "integumentary");
+    assert.ok(exteriorRequest >= 0 && compressedCatalogue >= 0);
+    console.log("Male atlas initial mesh transfer:", [...fetched].reduce((bytes, url) => bytes + byName.get(url).gzipBytes, 0), "bytes");
+    await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-desktop.png") });
+    await Promise.all([
+      atlas.waitForResponse(response => byName.get(new URL(response.url()).pathname)?.system === "skeletal" && response.ok()),
+      atlas.getByRole("button", { name: "Esqueleto", exact: true }).click()
+    ]);
     await atlas.locator(".atlas-loading").waitFor({ state: "hidden", timeout: 120000 });
-    await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-female.png"), timeout: 180000 });
+    assert.ok([...fetched].every(url => ["integumentary", "skeletal"].includes(byName.get(url).system)));
+    await atlas.setViewportSize({ width: 390, height: 844 });
+    await atlas.getByRole("button", { name: "Sistemas", exact: true }).click();
+    await atlas.locator(".atlas-system").first().waitFor({ state: "visible" });
+    await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-mobile.png") });
     assert.equal(atlasErrors.length, 0, atlasErrors.join("\n"));
-    assert.equal(errors.filter(message => message.includes("anatomy")).length, 0, errors.join("\n"));
+    assert.equal(errors.length, 0, errors.join("\n"));
     console.log("Anatomy browser smoke passed: model, interior, flow, card, mobile");
   } finally {
     await browser.close();

@@ -1,7 +1,7 @@
 // TRAUBE · Atlas anatômico — sobreposição do anatomy.ts do projeto MIT de origem
 // (licença preservada em LICENSE-human-atlas.txt). Sistemas, descrições e
 // paleta por tecido em português; nomes das estruturas vêm de pt-names.json.
-export type SystemId = 'skeletal'|'muscular'|'arterial'|'venous'|'nervous'|'digestive'|'respiratory'|'urinary'|'reproductive'|'lymphatic'|'endocrine'|'integumentary'|'connective'|'sensory'|'cardiac'|'brain'|'borrowed'|'donor-muscle'|'borrowed-muscle'|'pregnancy';
+export type SystemId = 'skeletal'|'muscular'|'arterial'|'venous'|'nervous'|'digestive'|'respiratory'|'urinary'|'reproductive'|'lymphatic'|'endocrine'|'integumentary'|'connective'|'sensory'|'cardiac'|'brain'|'borrowed'|'donor-muscle'|'borrowed-muscle'|'pregnancy'|'mammary';
 export const SYSTEMS: {id:SystemId;name:string;color:string;description:string}[] = [
  {id:'skeletal',name:'Esqueleto',color:'#ecdfc4',description:'Os ossos formam a estrutura de sustentação do corpo, protegem órgãos e servem de inserção para os músculos. A medula óssea armazena minerais e produz células do sangue.'},
  {id:'muscular',name:'Músculos',color:'#b84c42',description:'Os músculos esqueléticos produzem movimento ao tracionar suas inserções. Com os tendões, movem articulações, estabilizam a postura e produzem calor.'},
@@ -17,6 +17,7 @@ export const SYSTEMS: {id:SystemId;name:string;color:string;description:string}[
  {id:'lymphatic',name:'Linfático',color:'#8fae7a',description:'Os vasos linfáticos devolvem o excesso de líquido intersticial à circulação. Linfonodos e outros órgãos linfoides participam da vigilância e da resposta imune.'},
  {id:'endocrine',name:'Endócrino',color:'#c7894f',description:'Os órgãos endócrinos liberam hormônios no sangue para coordenar metabolismo, crescimento, resposta ao estresse e reprodução.'},
  {id:'reproductive',name:'Genital',color:'#c99583',description:'Os órgãos genitais produzem os gametas e os hormônios sexuais. No corpo masculino, testículos, vias espermáticas, próstata e pênis; no feminino, ovários, tubas uterinas, útero e vagina.'},
+ {id:'mammary',name:'Mamas',color:'#bf8088',description:'Glândulas mamárias e tecidos ao redor.'},
  {id:'integumentary',name:'Superfície corporal',color:'#c9a68a',description:'A superfície do corpo serve de referência anatômica externa. O sistema tegumentar forma uma barreira protetora e participa da sensibilidade e da termorregulação.'},
  {id:'borrowed',name:'Ossos complementares',color:'#b9c2c9',description:'O modelo feminino de referência não traz crânio, costelas, membros superiores nem pés. Esses ossos vêm do corpo masculino de referência, ajustados por escala e posição aos ossos que os dois corpos compartilham. Servem de referência de forma e posição, não como anatomia própria deste corpo.'},
  {id:'donor-muscle',name:'Músculos do membro inferior',color:'#a8776e',description:'Músculos do quadril, da coxa e da perna de uma segunda mulher de referência (Visible Human feminino), ajustados aos ossos deste corpo. O modelo feminino original quase não traz músculos.'},
@@ -214,6 +215,7 @@ const TISSUES:[RegExp,Tissue][]=[
  [/hair|eyebrow/, {color:'#3d2f28',rough:.7}],
 ];
 const BY_SYSTEM:Record<SystemId,Tissue>={
+ mammary:{color:'#bf8088',rough:.62},
  skeletal:{color:'#ecdfc4',rough:.62},muscular:{color:'#b84c42',rough:.55},cardiac:{color:'#a8423b',rough:.5},
  sensory:{color:'#b9cfd6',rough:.4},arterial:{color:'#cf3f36',rough:.32},venous:{color:'#3f6fd1',rough:.34},
  nervous:{color:'#e2bf5c',rough:.5},respiratory:{color:'#d79a9c',rough:.5},digestive:{color:'#d08f76',rough:.46},

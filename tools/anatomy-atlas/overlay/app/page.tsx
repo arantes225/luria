@@ -11,10 +11,12 @@ import {Slider} from '@/components/ui/slider';
 import {Switch} from '@/components/ui/switch';
 import {Combobox,ComboboxInput,ComboboxContent,ComboboxList,ComboboxItem,ComboboxEmpty} from '@/components/ui/combobox';
 import AnatomyScene from './scene';
+import {primeExterior,readAtlas} from './atlas-startup';
 import {parseCommand,TOURS,type Command,type Tour} from './study';
 import {DEFAULT_VISIBLE,SYSTEMS,explanation,hasExplanation,normalizeQuery,ptName,searchKey,setPtNames,type Atlas,type Concept,type CutAxis,type SceneState,type Sex,type SystemId,type View} from './anatomy';
 
-const initial:SceneState={ghost:0,explode:0,visible:DEFAULT_VISIBLE,selected:[],hidden:[],cutAxis:'none',cut:.5,isolate:false,view:'three-quarter',rotate:false,reset:0};
+const exterior:SystemId[]=['integumentary'];
+const initial:SceneState={ghost:0,explode:0,visible:exterior,selected:[],hidden:[],cutAxis:'none',cut:.5,isolate:false,view:'three-quarter',rotate:false,reset:0};
 const VIEWS:{id:View;short:string;label:string}[]=[
  {id:'three-quarter',short:'¾',label:'Vista três-quartos'},
  {id:'front',short:'Ant',label:'Vista anterior'},
@@ -35,7 +37,7 @@ const BODIES:{id:Sex;label:string;manifest:string;caption:string}[]=[
  {id:'male',label:'Masculino',manifest:'models/atlas.json',caption:'Adulto · referência masculina'},
  {id:'female',label:'Feminino',manifest:'models/atlas-female.json',caption:'Adulta · referência feminina'},
 ];
-const startBody=():Sex=>{try{return new URLSearchParams(location.search).get('corpo')==='feminino'||localStorage.getItem('traube-atlas-corpo')==='female'?'female':'male';}catch{return 'male';}};
+const startBody=():Sex=>{try{return ((query=>query.get('sexo')??query.get('corpo'))(new URLSearchParams(location.search))??(localStorage.getItem('traube-atlas-corpo')==='female'?'feminino':'masculino'))==='feminino'?'female':'male';}catch{return 'male';}};
 const ORGANS:SystemId[]=['cardiac','brain','respiratory','digestive','urinary','endocrine','reproductive'];
 // Variáveis de tema copiadas da página do site quando o atlas está embutido.
 const THEME_VARS=['--color-background','--color-surface','--color-surface-solid','--color-surface-elevated','--color-border','--color-border-interactive','--color-primary','--color-primary-text','--color-primary-subtle','--color-primary-hover','--color-text-primary','--color-text-secondary','--ui-pill-gradient','--ui-frame-bg','--ui-shadow','--ui-radius-card'];
@@ -65,7 +67,8 @@ export default function Home(){
  const searchBox=useRef<HTMLDivElement>(null);
  useEffect(()=>{
   const abort=new AbortController();
-  const json=(path:string)=>fetch(asset(path),{signal:abort.signal}).then(r=>{if(!r.ok)throw new Error('Não foi possível carregar o catálogo anatômico.');return r.json();});
+  const json=(path:string)=>readAtlas(new URL(asset(path+'?v=traube3')),abort.signal);
+  primeExterior(bodyKind,abort.signal);
   setAtlas(null);setProgress(0);setError('');setChosen(null);setTour(null);setRemovedStack([]);setState(s=>({...initial,reset:s.reset+1}));
   try{localStorage.setItem('traube-atlas-corpo',bodyKind);}catch{}
   Promise.all([json(BODIES.find(x=>x.id===bodyKind)!.manifest),json('models/pt-names.json').catch(()=>({}))])
@@ -90,7 +93,7 @@ export default function Home(){
  const choose=(c:Concept)=>{setChosen(c);setState(s=>({...s,flow:false,selected:c.elements,hidden:s.hidden.filter(id=>!c.elements.includes(id)),isolate:false,rotate:false}));setSearchOpen(false);setQuery('');};
  useEffect(()=>{if(!atlas)return;return registerAtlasTools(atlas,c=>flushSync(()=>choose(c)));},[atlas]);
  const choosePart=(id:string)=>{const p=parts.get(id);if(!p)return;setChosen({id:p.conceptId,name:p.name,elements:[id]});setState(s=>({...s,flow:false,selected:[id],isolate:false,rotate:false}));};
- const toggle=(id:SystemId)=>setState(s=>({...s,selected:[],isolate:false,visible:s.visible.includes(id)?s.visible.filter(x=>x!==id):[...s.visible,id]}));
+ const toggle=(id:SystemId)=>setState(s=>({...s,selected:[],isolate:false,visible:s.visible.includes(id)?s.visible.filter(x=>x!==id):id==='integumentary'?exterior:[...s.visible.filter(x=>x!=='integumentary'),id]}));
  const clearSelection=()=>{setState(s=>({...s,selected:[],isolate:false}));setChosen(null);};
  const reset=()=>{setState(s=>({...initial,reset:s.reset+1}));setChosen(null);setRemovedStack([]);setTour(null);};
  const flash=(text:string)=>{setNotice(text);window.setTimeout(()=>setNotice(n=>n===text?'':n),4200);};
@@ -143,6 +146,7 @@ export default function Home(){
    <div className="atlas-card-head"><div><span className="atlas-kicker">Camadas</span><h2>Sistemas</h2></div><Button variant="ghost" className="atlas-icon mobile-only" onClick={()=>setPanel(null)} aria-label="Fechar sistemas"><X size={18}/></Button></div>
    <div className="atlas-segment atlas-sex" role="group" aria-label="Corpo de referência">{BODIES.map(x=><button type="button" key={x.id} aria-pressed={bodyKind===x.id} onClick={()=>setBodyKind(x.id)}>{x.label}</button>)}</div>
    <div className="atlas-presets">
+    <button type="button" aria-pressed={state.visible.length===1&&state.visible[0]==='integumentary'} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:exterior}))}>Corpo</button>
     <button type="button" aria-pressed={activeSystems.every(x=>state.visible.includes(x.id))} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:activeSystems.map(x=>x.id)}))}>Tudo</button>
     <button type="button" aria-pressed={state.visible.length===1&&state.visible[0]==='skeletal'} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:['skeletal']}))}>Esqueleto</button>
     <button type="button" aria-pressed={state.visible.length===ORGANS.length&&ORGANS.every(id=>state.visible.includes(id))} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:ORGANS}))}>Órgãos</button>
@@ -230,6 +234,8 @@ export default function Home(){
      <li>Busque por nome ou comando, ou siga um <b>tour</b>.</li>
     </ul>
     {!embedded&&<a className="atlas-link" href="/aprender/anatomia/">← Voltar à Sala de Anatomia</a>}
+    <a className="atlas-link" href="/aprender/anatomia/orgaos/" target={embedded?'_parent':undefined}>Órgãos em detalhe</a>
+    <a className="atlas-link" href="/aprender/anatomia/coracao/" target={embedded?'_parent':undefined}>Coração em detalhe</a>
    </div>}
   </aside>
  </main>;
