@@ -57,7 +57,7 @@
   }
   function onlineReady() {
     if (sb && userId) return true;
-    status('Entre na sua conta TRAUBE para jogar com outras pessoas. ', true);
+    status('Entre na sua conta TRAUBE para jogar com outras pessoas.', true);
     return false;
   }
   async function rpc(name, args = {}) {
@@ -75,6 +75,19 @@
       ? 'A partida começa quando seu amigo abrir o Study Rats e aceitar o convite.'
       : 'Buscando outra pessoa online. Você pode cancelar a qualquer momento.';
     $('sr-copy-link').hidden = match.mode !== 'friends';
+    if (match.mode === 'random' && !randomFallbackTimer) {
+      const startedAt = Date.parse(match.created_at || '');
+      const remaining = Number.isFinite(startedAt) ? Math.max(0, 90000 - (Date.now() - startedAt)) : 90000;
+      randomFallbackTimer = setTimeout(async () => {
+        if (launching || currentMatch?.id !== match.id) return;
+        await refreshLobby();
+        if (launching || currentMatch?.id !== match.id) return;
+        try { await rpc('study_rats_board_leave', {p_match_id: match.id}); }
+        catch (error) { console.warn('Não foi possível encerrar a busca online.', error); }
+        currentMatch = null;
+        launchGame();
+      }, remaining);
+    }
   }
   function launchGame(match = null) {
     if (launching) return;
@@ -168,11 +181,7 @@
     try {
       const id = await rpc('study_rats_board_find', {p_mode: mode, p_friend_id: friendId});
       currentMatch = {id, mode};
-      if (mode === 'random') {
-        if (randomFallbackTimer) clearTimeout(randomFallbackTimer);
-        randomFallbackTimer = setTimeout(async () => {
-          if (launching || currentMatch?.id !== id) return;
-          await refreshLobby();
+      await refreshLobby();
           if (launching || currentMatch?.id !== id) return;
           try { await rpc('study_rats_board_leave', {p_match_id: id}); } catch (error) { console.warn('Não foi possível encerrar a busca online.', error); }
           currentMatch = null;
