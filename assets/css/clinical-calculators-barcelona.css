@@ -1,0 +1,37 @@
+/* TRAUBE | Calculadora Barcelona — tema claro/escuro/rosa sem estilos globais. */
+.barc-form{display:grid;gap:16px;font-size:14px;color:var(--text)}
+.barc-intro{background:var(--surface-2);border:1px solid var(--border);border-radius:15px;padding:14px 16px;margin-bottom:15px;color:var(--text)}
+.barc-intro strong{display:block;color:var(--text);margin-bottom:5px}
+.barc-intro p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+.barc-form fieldset{min-width:0;margin:0;padding:15px;border:1px solid var(--border);border-radius:15px;background:var(--surface)}
+.barc-form legend{max-width:100%;padding:0 6px;font-weight:800;color:var(--text);font-size:15px}
+.barc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 12px}
+.barc-field{min-width:0;display:flex;flex-direction:column;gap:6px}
+.barc-field span{font-size:12px;line-height:1.4;font-weight:750;color:var(--text)}
+.barc-field input,.barc-field select{width:100%;box-sizing:border-box;min-height:43px;padding:9px 11px;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:10px;font:inherit;font-size:14px}
+.barc-field input:focus-visible,.barc-field select:focus-visible{outline:2px solid #4b86c4;outline-offset:1px}
+.barc-field input::placeholder{color:var(--muted)}
+.barc-biometry{margin-top:12px;border:1px dashed var(--border);border-radius:12px;padding:12px}
+.barc-biometry summary{cursor:pointer;color:var(--text);font-weight:750}
+.barc-biometry p,.barc-small{font-size:12px;line-height:1.55;color:var(--muted);margin:9px 0}
+.barc-action{border:1px solid #184888;border-radius:11px;padding:11px 16px;min-height:43px;background:#184888;color:#fff;font:inherit;font-size:13px;font-weight:800;cursor:pointer}
+.barc-action.barc-secondary{background:var(--surface);color:var(--text);border-color:var(--border)}
+.barc-actions{display:flex;gap:10px;flex-wrap:wrap}
+.barc-actions .barc-action:first-child{flex:1}
+.barc-hadlock-output{display:block;color:var(--text);font-size:12px;margin-top:10px}
+.barc-measures{padding:11px;border-radius:10px;background:var(--surface-2);margin-top:12px;font-size:12px;line-height:1.6;color:var(--text)}
+.barc-error{color:#b73741;font-size:13px;font-weight:650;line-height:1.45}
+.barc-error:empty,.barc-result:empty{display:none}
+.barc-result{border:1px solid var(--border);border-radius:16px;padding:15px;background:var(--surface);line-height:1.5}
+.barc-result-head{border-bottom:1px solid var(--border);padding-bottom:9px;margin-bottom:12px}
+.barc-result-head>span{display:block;text-transform:uppercase;letter-spacing:.06em;font-size:10px;color:var(--muted);font-weight:800}
+.barc-result-head h4{margin:5px 0;font-size:21px;color:var(--text)}
+.barc-result-head p{margin:5px 0;font-size:12px;color:var(--muted)}
+.barc-result p{font-size:13px;margin:9px 0;color:var(--text)}
+.barc-result ul{padding-left:21px;margin:8px 0;color:var(--text)}
+.barc-result li{font-size:13px;margin:4px 0}
+.barc-result p.barc-warning{padding:9px 11px;border-radius:10px;background:var(--surface-2);border-left:3px solid #b97c29}
+.barc-result p.barc-followup{font-weight:700}
+.barc-note{border-top:1px solid var(--border);padding-top:11px;font-size:11px;line-height:1.7;color:var(--muted)}
+.barc-note a{color:var(--text);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:540px){.barc-grid{grid-template-columns:1fr}.barc-form fieldset{padding:11px}.barc-actions{flex-direction:column}.barc-action{width:100%}.barc-result-head h4{font-size:18px}}
