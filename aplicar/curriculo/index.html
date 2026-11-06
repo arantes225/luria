@@ -21,7 +21,13 @@
   <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/curriculo.css?v=20261028-r1curriculos">
   <link rel="stylesheet" href="/assets/css/traube-logo.css?v=20261103-v1">
-</head>
+<style>
+  body[data-page="curriculo"] .cv-hero{background:var(--color-surface-solid,#fff);border:1px solid var(--color-border,#d9e2ec);border-radius:18px;padding:clamp(20px,3vw,32px);box-shadow:0 10px 28px rgba(16,36,62,.08)}
+  body[data-page="curriculo"] .cv-hero h1{color:var(--color-text-primary,#10243e);font-size:clamp(24px,2.5vw,34px);line-height:1.2}
+  body[data-page="curriculo"] .cv-hero .cv-kicker{color:var(--color-primary,#184888);font-weight:800;letter-spacing:.08em}
+  body[data-page="curriculo"] .cv-hero p{color:var(--color-text-secondary,#53677e)}
+  body[data-page="curriculo"] .cv-add-curriculum{background:var(--ui-pill-gradient,linear-gradient(110deg,#174b91,#2388e7));color:#fff;border-color:transparent;min-height:42px}
+</style></head>
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="curriculo">
   <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
   <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
@@ -40,6 +46,7 @@
         </header>
 
         <section class="traube-page-spotlight" aria-label="Currículo & Lattes">
+          <a class="traube-back-button" href="/aplicar/" aria-label="Voltar para Aplicar">← Voltar para Aplicar</a>
           <div class="traube-page-spotlight-copy">
             <strong>Currículo & Lattes</strong>
             <small class="traube-page-spotlight-helper">Organize suas atividades, importe o Lattes e confira como seu currículo pontua nos critérios de cada edital.</small>
