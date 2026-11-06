@@ -54,9 +54,66 @@ function repack(directory, name) {
   console.log(name + ": initial exterior " + chunks.filter(c => c.system === "integumentary").reduce((sum, c) => sum + c.gzipBytes, 0) + " bytes gzip; " + atlas.parts.length + " meshes retained");
 }
 
+function writeStartupAssets(source, modelPath) {
+  const startup = {};
+  for (const sex of ["masculino", "feminino"]) {
+    const name = sex === "feminino" ? "atlas-female" : "atlas";
+    const file = path.join(modelPath, name + ".json");
+    const bytes = fs.readFileSync(file);
+    const packed = gzipSync(bytes, {level: 9});
+    fs.writeFileSync(file + ".gz", packed);
+    startup[sex] = JSON.parse(bytes.toString("utf8")).chunks.filter(chunk => chunk.system === "integumentary");
+    console.log(name + " catalogue: " + bytes.length + " bytes JSON, " + packed.length + " bytes gzip");
+  }
+  const helper = `
+type StartupChunk = {url: string; gzip?: string};
+type Reference = 'masculino' | 'feminino';
+const exterior: Record<Reference, StartupChunk[]> = ${JSON.stringify(startup)};
+const pending = new Map<string, Promise<Response | null>>();
+
+export function primeExterior(reference: Reference, signal: AbortSignal) {
+  pending.clear();
+  for (const chunk of exterior[reference]) {
+    const url = chunk.gzip && typeof DecompressionStream !== 'undefined' ? chunk.gzip : chunk.url;
+    pending.set(url, fetch(url, {signal}).then(response => response.ok ? response : null).catch(() => null));
+  }
+}
+
+export async function fetchAtlasChunk(url: string, signal: AbortSignal) {
+  const primed = pending.get(url);
+  pending.delete(url);
+  return (primed && await primed) || fetch(url, {signal});
+}
+
+export async function readAtlas(url: URL, signal: AbortSignal) {
+  if (typeof DecompressionStream !== 'undefined') {
+    const compressed = new URL(url);
+    compressed.pathname += '.gz';
+    try {
+      const response = await fetch(compressed, {signal});
+      if (response.ok) {
+        const bytes = new Uint8Array(await response.arrayBuffer());
+        // A CDN may already have applied HTTP decompression.
+        if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return await new Response(bytes).json();
+        const decoded = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+        return await new Response(decoded).json();
+      }
+    } catch (error) {
+      if (signal.aborted) throw error;
+    }
+  }
+  const response = await fetch(url, {signal});
+  if (!response.ok) throw new Error('Não foi possível carregar o catálogo do atlas.');
+  return response.json();
+}
+`;
+  fs.writeFileSync(path.join(source, "app/atlas-startup.ts"), helper);
+}
+
 module.exports = function prepareAtlasLoading(source) {
   const modelPath = path.join(source, "public/models");
   for (const name of ["atlas", "atlas-female"]) repack(modelPath, name);
+  writeStartupAssets(source, modelPath);
   const anatomyPath = path.join(source, "app/anatomy.ts");
   const anatomy = fs.readFileSync(anatomyPath, "utf8");
   if (!anatomy.includes("id:'mammary'")) {
@@ -104,6 +161,13 @@ module.exports = function prepareAtlasLoading(source) {
     scene = scene.replace("const changed=lastState?.visible", "if(previousDemand?.visible!==s.visible||previousDemand?.selected!==s.selected||previousDemand?.isolate!==s.isolate)loadVisibleChunks(s);\n   const changed=lastState?.visible");
     fs.writeFileSync(scenePath, scene);
   }
+  if (!scene.includes("import {fetchAtlasChunk}")) {
+    const originalFetch = "fetch(compressed?chunk.gzip!:chunk.url,{signal:abort.signal})";
+    if (!scene.includes(originalFetch)) throw Error("Upstream atlas chunk fetch changed");
+    scene = "import {fetchAtlasChunk} from './atlas-startup';\n" +
+      scene.replace(originalFetch, "fetchAtlasChunk(compressed?chunk.gzip!:chunk.url,abort.signal)");
+    fs.writeFileSync(scenePath, scene);
+  }
   const pagePath = path.join(source, "app/page.tsx");
   let page = fs.readFileSync(pagePath, "utf8");
   page = page
@@ -120,6 +184,13 @@ module.exports = function prepareAtlasLoading(source) {
       .replace("className=\"loading glass\" role=\"status\"", "className=\"loading glass atlas-layer-progress\" role=\"status\"")
       .replace(/Carregando \{atlas\?\.parts\.length\.toLocaleString\('pt-BR'\)\?\?[^}]+\} pieces/, "Carregando camadas selecionadas");
     fs.appendFileSync(path.join(source, "app/globals.css"), "\n.atlas-layer-progress{top:auto;bottom:225px;padding:8px 12px;min-width:0;max-width:80%;gap:8px;pointer-events:none}.atlas-layer-progress .loading-track{min-width:135px;margin-top:6px}.atlas-layer-progress span{margin-top:2px}\n");
+  }
+  if (!page.includes("import {primeExterior,readAtlas}")) {
+    const request = /fetch\((new URL\([^\n]+?,document\.baseURI\)),\{signal:abort\.signal\}\)\.then\(r=>\{[^\n]*?return r\.json\(\);\}\)/;
+    if (!request.test(page)) throw Error("Upstream atlas catalogue fetch changed");
+    page = "import {primeExterior,readAtlas} from './atlas-startup';\n" +
+      page.replace(request, "primeExterior(sex,abort.signal);readAtlas($1,abort.signal)")
+        .replace("Preparando a anatomia", "Carregando modelo 3D");
   }
   fs.writeFileSync(pagePath, page);
 };

@@ -61,6 +61,11 @@ const server = http.createServer((request, response) => {
     const atlasFiles = JSON.parse(fs.readFileSync(path.join(root, "aprender/anatomia/atlas/models/atlas.json"), "utf8")).chunks;
     const byName = new Map(atlasFiles.map(file => [file.gzip, file]));
     const fetched = new Set();
+    const startupRequests = [];
+    atlas.on("request", request => {
+      const pathname = new URL(request.url()).pathname;
+      if (byName.has(pathname) || pathname.endsWith("/models/atlas.json.gz")) startupRequests.push(pathname);
+    });
     atlas.on("request", request => { const pathname = new URL(request.url()).pathname; if (byName.has(pathname)) fetched.add(pathname); });
     await atlas.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/atlas/", { waitUntil: "domcontentloaded" });
     await atlas.locator(".system-row").first().waitFor({ timeout: 45000 });
@@ -69,6 +74,9 @@ const server = http.createServer((request, response) => {
     await atlas.locator(".loading").waitFor({ state: "hidden", timeout: 120000 });
     assert.equal(fetched.size, atlasFiles.filter(file => file.system === "integumentary").length);
     assert.ok([...fetched].every(url => byName.get(url).system === "integumentary"));
+    const compressedCatalogue = startupRequests.findIndex(pathname => pathname.endsWith("/models/atlas.json.gz"));
+    const exteriorRequest = startupRequests.findIndex(pathname => byName.get(pathname)?.system === "integumentary");
+    assert.ok(exteriorRequest >= 0 && compressedCatalogue >= 0);
     console.log("Male atlas initial mesh transfer:", [...fetched].reduce((bytes, url) => bytes + byName.get(url).gzipBytes, 0), "bytes");
     await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-desktop.png") });
     await Promise.all([

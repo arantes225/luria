@@ -154,7 +154,7 @@
         ["/apostilas/","Apostilas","book","/aprender/",null,categories[0]],
         ["/caderno/","Anotações","file","/aprender/",null,categories[0]],
         ["/professor-alex/","Leco","sparkles","/aprender/",null,categories[0]],
-        ["/aprender/anatomia/","Sala de Anatomia","stethoscope","/aprender/",null,categories[0]],
+        ["/aprender/anatomia/atlas/","Sala de Anatomia","stethoscope","/aprender/",null,categories[0]],
         ["/flashcards/","Flashcards","cards","/consolidar/","flashcards",categories[1]],
         ["/plantao/sala-emergencia/","Simulador de Emergência","stethoscope","/plantao/sala-emergencia/","plantao",categories[1]],
         ["/questoes-simulados/","Questões e Simulados","file","/consolidar/","questions",categories[1]],

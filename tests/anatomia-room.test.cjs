@@ -8,7 +8,7 @@ const read = file => fs.readFileSync(path.join(root, file), "utf8");
 const { isPublicFile } = require("../scripts/public-files.cjs");
 
 test("Sala de Anatomia está ligada ao hub Aprender e à navegação móvel", () => {
-  assert.match(read("aprender/index.html"), /href="\/aprender\/anatomia\/"/);
+  assert.match(read("aprender/index.html"), /href="\/aprender\/anatomia\/atlas\/"/);
   assert.match(read("assets/js/ui-navigation-v2.js"), /Sala de Anatomia/);
   assert.match(read("service-worker.js"), /\/aprender\/anatomia\//);
 });
