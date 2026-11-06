@@ -157,8 +157,7 @@
         ["/flashcards/","Flashcards","cards","/consolidar/","flashcards",categories[1]],
         ["/plantao/sala-emergencia/","Simulador de Emergência","stethoscope","/plantao/sala-emergencia/","plantao",categories[1]],
         ["/questoes-simulados/","Questões e Simulados","file","/consolidar/","questions",categories[1]],
-        ["/caderno-erros/","Caderno de Erros","clipboard","/consolidar/","error_notebook",categories[1]],
-        ["/plantao/traubezap/","TraubeZap","users","/aprender/","plantao",categories[1]]
+        ["/caderno-erros/","Caderno de Erros","clipboard","/consolidar/","error_notebook",categories[1]]
       ]) if (get(parent)) extra.push(entry(href,label,visual,group,get(parent),feature));
     }
     const settings = document.querySelector('#traube-profile-menu a[href="/configuracoes/"]');
