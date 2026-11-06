@@ -165,17 +165,6 @@
 
       root.innerHTML = `
         <div class="anamnese-app">
-          <div class="anamnese-header-bar">
-            <div>
-              <div class="anamnese-badge-ai">
-                <span class="dot"></span>
-                <span>${customUrl ? 'Conectado à IA Personalizada' : 'Motor Estruturador Local Ativo (IA Própria em Preparação)'}</span>
-              </div>
-            </div>
-            <div style="font-size: 0.85rem; color: var(--color-text-secondary, #64748b);">
-              Transforme anotações corridas, áudios transcritos ou dados soltos em anamnese padrão.
-            </div>
-          </div>
 
           <div class="anamnese-grid">
             <!-- Bloco de Entrada -->
