@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261106-barcelona-growth1";
+const CACHE_VERSION = "traube-pwa-20261106-barcelona-growth1-atlas3";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";

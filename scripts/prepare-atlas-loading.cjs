@@ -61,7 +61,7 @@ function writeStartupAssets(source, modelPath) {
     const bytes = fs.readFileSync(file);
     const packed = gzipSync(bytes, {level: 9});
     fs.writeFileSync(file + ".gz", packed);
-    startup[sex] = JSON.parse(bytes.toString("utf8")).chunks.filter(chunk => chunk.system === "integumentary");
+    startup[sex] = JSON.parse(bytes.toString("utf8")).chunks.filter(chunk => chunk.system === "integumentary").map(({url, gzip}) => ({url, gzip}));
     console.log(name + " catalogue: " + bytes.length + " bytes JSON, " + packed.length + " bytes gzip");
   }
   const names = path.join(modelPath, "pt-names.json");

@@ -215,6 +215,7 @@ const TISSUES:[RegExp,Tissue][]=[
  [/hair|eyebrow/, {color:'#3d2f28',rough:.7}],
 ];
 const BY_SYSTEM:Record<SystemId,Tissue>={
+ mammary:{color:'#bf8088',rough:.62},
  skeletal:{color:'#ecdfc4',rough:.62},muscular:{color:'#b84c42',rough:.55},cardiac:{color:'#a8423b',rough:.5},
  sensory:{color:'#b9cfd6',rough:.4},arterial:{color:'#cf3f36',rough:.32},venous:{color:'#3f6fd1',rough:.34},
  nervous:{color:'#e2bf5c',rough:.5},respiratory:{color:'#d79a9c',rough:.5},digestive:{color:'#d08f76',rough:.46},
