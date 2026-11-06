@@ -14,6 +14,10 @@ if (root) {
   const list = document.querySelector("[data-organ-structures]");
   const status = document.querySelector("[data-organs-status]");
   const catalog = {
+    breasts: { label: "Mamas", color: "#c57984", summary: "Glândulas mamárias: lobos, ductos, seios lactíferos, gordura, ligamentos, aréolas e mamilos. Use o corte didático para explorar as camadas.", structures: {
+      VH_F_mammary_lobes_L: "Lobos da mama esquerda", VH_F_main_lactiferous_ducts_L: "Ductos lactíferos esquerdos", VH_F_main_lactiferous_sinuses_L: "Seios lactíferos esquerdos", VH_F_suspensory_ligaments_L: "Ligamentos suspensores esquerdos", VH_F_fat_L: "Tecido adiposo interlobar esquerdo", VH_F_areola_L: "Aréola esquerda", VH_F_nipple_L: "Mamilo esquerdo", VH_F_areolar_tubercles_L: "Tubérculos areolares esquerdos",
+      VH_F_mammary_lobes_R: "Lobos da mama direita", VH_F_main_lactiferous_ducts_R: "Ductos lactíferos direitos", VH_F_main_lactiferous_sinuses_R: "Seios lactíferos direitos", VH_F_suspensory_ligaments_R: "Ligamentos suspensores direitos", VH_F_fat_R: "Tecido adiposo interlobar direito", VH_F_areola_R: "Aréola direita", VH_F_nipple_R: "Mamilo direito", VH_F_areolar_tubercles_R: "Tubérculos areolares direitos"
+    }},
     lungs: { label: "Pulmões", color: "#d77f86", summary: "Segmentos broncopulmonares, traqueia e árvores brônquicas.", structures: {
       FMA7338: "Segmento apical direito", FMA7339: "Segmento posterior direito", FMA7359: "Segmento anterior direito", FMA7361: "Segmento lateral direito", FMA7360: "Segmento medial direito", FMA7366: "Segmento superior direito", FMA7364: "Segmento basal anterior direito", FMA7363: "Segmento basal lateral direito", FMA7362: "Segmento basal posterior direito", FMA7372: "Segmento apicoposterior esquerdo", FMA7373: "Segmento anterior esquerdo", FMA7374: "Segmento lingular superior", FMA7375: "Segmento lingular inferior", FMA7376: "Segmento superior esquerdo", FMA7378: "Segmento basal anterior esquerdo", FMA7379: "Segmento basal lateral esquerdo", FMA7380: "Segmento basal posterior esquerdo", FMA7394: "Traqueia", FMA26661: "Árvore brônquica direita", FMA26662: "Árvore brônquica esquerda"
     }},
@@ -34,25 +38,36 @@ if (root) {
   const announce = message => { if (status) status.textContent = message; };
   const current = () => catalog[currentKey];
   const labelFor = id => current().structures[id] || id.replace(/[-_]/g, " ");
+  const breastDetails = {
+    mammary_lobes: "Conjunto glandular organizado em lobos, relacionado à produção de leite durante a lactação.",
+    main_lactiferous_ducts: "Ductos que conduzem a secreção glandular em direção ao mamilo.",
+    main_lactiferous_sinuses: "Dilatações dos ductos lactíferos representadas nesta referência anatômica.",
+    suspensory_ligaments: "Faixas de tecido conjuntivo que ajudam a sustentar a mama.",
+    fat: "Tecido adiposo interlobar que envolve e separa estruturas glandulares.",
+    areolar_tubercles: "Pequenas saliências da aréola associadas às glândulas areolares.",
+    areola: "Área pigmentada ao redor do mamilo.",
+    nipple: "Projeção central da mama por onde desembocam os ductos lactíferos."
+  };
   function materialFor(source) { const material = source.clone(); material.side = THREE.DoubleSide; material.roughness = Math.max(.58, material.roughness ?? .7); material.metalness = 0; material.emissive = new THREE.Color("#000000"); return material; }
   function select(id) {
     if (!objects.has(id)) return;
     selectedId = id;
     objects.forEach((meshes, key) => meshes.forEach(object => { if (key === id) object.visible = true; object.material.emissive?.set(key === id ? "#fff0b4" : "#000000"); object.material.emissiveIntensity = key === id ? .27 : 0; object.material.opacity = key === id ? 1 : .26; object.material.transparent = key !== id; object.material.depthWrite = key === id; }));
     const label = labelFor(id);
-    detailTitle.textContent = label; detailCopy.textContent = `${label}. Estrutura segmentada da referência ${currentKey === "reproductive" ? "feminina HuBMAP" : current().label.toLowerCase()}. Gire o modelo para observar suas relações.`;
+    const breastPart = currentKey === "breasts" ? Object.keys(breastDetails).find(part => id.includes(`_${part}_`) || id.includes(`_${part}`)) : null;
+    detailTitle.textContent = label; detailCopy.textContent = breastPart ? breastDetails[breastPart] : `${label}. Malha segmentada da referência ${currentKey === "reproductive" ? "feminina HuBMAP" : current().label.toLowerCase()}. Gire o modelo e use o corte didático para observar suas relações.`;
     announce(`${label}. Estrutura selecionada.`);
     list?.querySelectorAll("button").forEach(button => button.classList.toggle("is-active", button.dataset.structureId === id));
   }
   function fit() {
     if (!model) return;
     const box = new THREE.Box3().setFromObject(model), size = box.getSize(new THREE.Vector3()), center = box.getCenter(new THREE.Vector3());
-    model.position.sub(center); const distance = Math.max(size.x, size.y, size.z) * 2.25; camera.position.set(distance * .55, distance * .35, distance); controls.target.set(0, 0, 0); controls.minDistance = distance * .38; controls.maxDistance = distance * 7; controls.update();
+    model.position.sub(center); const distance = Math.max(size.x, size.y, size.z) * 2.25; camera.position.set(distance * .25, distance * .2, distance); controls.target.set(0, 0, 0); controls.minDistance = distance * .38; controls.maxDistance = distance * 7; controls.update();
   }
   function clearModel() { if (!model) return; scene.remove(model); model.traverse(object => { if (object.isMesh) { object.geometry.dispose(); object.material.dispose(); } }); model = null; objects.clear(); }
   function buildList() { if (!list) return; list.innerHTML = ""; for (const [id, label] of Object.entries(current().structures)) { if (model && !objects.has(id)) continue; const button = document.createElement("button"); button.type = "button"; button.dataset.structureId = id; button.textContent = label; button.addEventListener("click", () => select(id)); list.append(button); } }
   function load(key) {
-    currentKey = key; title.textContent = current().label; summary.textContent = current().summary; detailTitle.textContent = "Selecione uma estrutura"; detailCopy.textContent = "Clique na malha colorida ou escolha uma estrutura na lista."; selectedId = ""; clearModel(); buildList(); cut = false; renderer.localClippingEnabled = false; document.querySelector("[data-organ-cut]")?.setAttribute("aria-pressed", "false"); loading.hidden = false; loading.classList.remove("is-error"); progress.style.width = "0%";
+    currentKey = key; title.textContent = current().label; summary.textContent = current().summary; detailTitle.textContent = "Selecione uma estrutura"; detailCopy.textContent = "Clique na malha colorida ou escolha uma estrutura na lista."; selectedId = ""; clearModel(); buildList(); cut = false; renderer.localClippingEnabled = false; const cutButton = document.querySelector("[data-organ-cut]"); cutButton?.setAttribute("aria-pressed", "false"); if (cutButton) cutButton.textContent = key === "breasts" ? "Ver por dentro" : "Corte didático"; loading.hidden = false; loading.classList.remove("is-error"); progress.style.width = "0%";
     new GLTFLoader().load(`/assets/models/anatomia/orgaos/${key}.glb`, gltf => { if (key !== currentKey) return; model = gltf.scene; model.traverse(object => { if (!object.isMesh) return; const id = object.userData.structureId || object.name; object.material = materialFor(object.material); object.userData.structureId = id; if (key === "reproductive" && (id === "broad-ligament" || id === "bladder")) object.visible = false; if (!objects.has(id)) objects.set(id, []); objects.get(id).push(object); }); scene.add(model); fit(); buildList(); loading.hidden = true; announce(`${current().label} carregado. Selecione uma estrutura.`); }, event => { if (event.total) progress.style.width = `${Math.min(100, event.loaded / event.total * 100)}%`; }, error => { if (key !== currentKey) return; loading.hidden = false; loading.classList.add("is-error"); loading.querySelector("strong").textContent = "Modelo indisponível"; loading.querySelector("span").textContent = "Recarregue a página para tentar novamente."; announce(`Não foi possível carregar ${current().label}.`); console.error(error); });
   }
   try {
@@ -63,8 +78,25 @@ if (root) {
     const raycaster = new THREE.Raycaster(), pointer = new THREE.Vector2();
     canvas.addEventListener("pointerup", event => { const rect = canvas.getBoundingClientRect(); pointer.set((event.clientX - rect.left) / rect.width * 2 - 1, -(event.clientY - rect.top) / rect.height * 2 + 1); raycaster.setFromCamera(pointer, camera); const hit = raycaster.intersectObjects([...objects.values()].flat(), true)[0]; if (hit) select(hit.object.userData.structureId || hit.object.name); });
     document.querySelectorAll("[data-organ]").forEach(button => button.addEventListener("click", () => { document.querySelectorAll("[data-organ]").forEach(item => item.classList.toggle("is-active", item === button)); history.replaceState(null, "", `?orgao=${encodeURIComponent(button.dataset.organ)}`); load(button.dataset.organ); }));
-    document.querySelector("[data-organ-reset]")?.addEventListener("click", () => { objects.forEach(meshes => meshes.forEach(object => { object.material.opacity = 1; object.material.transparent = false; object.material.depthWrite = true; object.material.emissiveIntensity = 0; })); selectedId = ""; detailTitle.textContent = "Selecione uma estrutura"; detailCopy.textContent = "Clique na malha colorida ou escolha uma estrutura na lista."; list?.querySelectorAll("button").forEach(button => button.classList.remove("is-active")); fit(); }); document.querySelector("[data-organ-rotate]")?.addEventListener("click", event => { rotating = !rotating; controls.autoRotate = rotating; event.currentTarget.setAttribute("aria-pressed", String(rotating)); }); document.querySelector("[data-organ-cut]")?.addEventListener("click", event => { cut = !cut; event.currentTarget.setAttribute("aria-pressed", String(cut)); objects.forEach(meshes => meshes.forEach(object => { object.material.clippingPlanes = cut ? [new THREE.Plane(new THREE.Vector3(1, 0, 0), 0)] : []; object.material.needsUpdate = true; })); renderer.localClippingEnabled = cut; });
+    document.querySelector("[data-organ-reset]")?.addEventListener("click", () => { objects.forEach(meshes => meshes.forEach(object => { object.material.opacity = 1; object.material.transparent = false; object.material.depthWrite = true; object.material.emissiveIntensity = 0; })); selectedId = ""; detailTitle.textContent = "Selecione uma estrutura"; detailCopy.textContent = "Clique na malha colorida ou escolha uma estrutura na lista."; list?.querySelectorAll("button").forEach(button => button.classList.remove("is-active")); fit(); });
+    document.querySelector("[data-organ-rotate]")?.addEventListener("click", event => { rotating = !rotating; controls.autoRotate = rotating; event.currentTarget.setAttribute("aria-pressed", String(rotating)); });
+    document.querySelector("[data-organ-cut]")?.addEventListener("click", event => {
+      cut = !cut; event.currentTarget.setAttribute("aria-pressed", String(cut));
+      if (currentKey === "breasts") {
+        event.currentTarget.textContent = cut ? "Ver exterior" : "Ver por dentro";
+        objects.forEach((meshes, id) => meshes.forEach(object => {
+          const outer = /_(fat|areola|nipple|areolar_tubercles)_/.test(id);
+          object.material.clippingPlanes = [];
+          object.material.transparent = cut && outer;
+          object.material.opacity = cut && outer ? .19 : 1;
+          object.material.depthWrite = !cut || !outer;
+        }));
+        renderer.localClippingEnabled = false;
+      } else {
+        objects.forEach(meshes => meshes.forEach(object => { object.material.clippingPlanes = cut ? [new THREE.Plane(new THREE.Vector3(1, 0, 0), 0)] : []; object.material.needsUpdate = true; }));
+        renderer.localClippingEnabled = cut;
+      }
+    });
     const animate = () => { requestAnimationFrame(animate); controls.update(); renderer.render(scene, camera); }; animate(); document.querySelectorAll("[data-organ]").forEach(button => button.classList.toggle("is-active", button.dataset.organ === currentKey)); load(currentKey);
   } catch (error) { loading.classList.add("is-error"); loading.querySelector("strong").textContent = "3D indisponível"; loading.querySelector("span").textContent = "Este navegador não conseguiu iniciar o visualizador."; announce("Visualização 3D indisponível."); console.error(error); }
 }
-
