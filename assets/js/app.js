@@ -1476,7 +1476,6 @@ const PLUS_NAV_FEATURES = {
   "/registrar-questoes/": "questions",
   "/plantao/": "plantao",
   "/plantao/sala-emergencia/": "plantao",
-  "/plantao/traubezap/": "plantao",
   "/estatisticas/": "statistics_general"
 };
 
@@ -1643,7 +1642,6 @@ function updateTraubeProfileInitials(user = window.docmapUser, profile = window.
 }
 
 function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = null) {
-  const isTraubeZap = page === "plantao" && document.body.dataset.plantaoEntry === "phone";
   const sidebarPlan = String(entitlements?.plan || window.docmapPlan || "").trim().toLowerCase();
   const canAccessWork = isAdmin === true || ["plus", "pro", "betatester"].includes(sidebarPlan);
   const fallbackName = user.email
@@ -1774,7 +1772,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${traubeIcon("target")}</span><span>Desafio Diário</span>
         </a>
 
-        <a class="nav-link ${page === "plantao" && !isTraubeZap ? "active" : ""}" href="/plantao/sala-emergencia/">
+        <a class="nav-link ${page === "plantao" ? "active" : ""}" href="/plantao/sala-emergencia/">
           <span class="nav-icon">${traubeIcon("stethoscope")}</span><span>Simulador de Emergência</span>
         </a>
 
