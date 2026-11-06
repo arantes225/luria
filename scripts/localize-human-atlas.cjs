@@ -55,6 +55,8 @@ module.exports = function localizeHumanAtlas(source, lexiconPath) {
   page = page.replace("[query,setQuery]=useState(''),[chosen,setChosen]=useState<Concept|null>(null);", "[query,setQuery]=useState(''),[chosen,setChosen]=useState<Concept|null>(null),[sex,setSex]=useState<'masculino'|'feminino'>(()=>new URLSearchParams(location.search).get('sexo')==='feminino'?'feminino':'masculino');");
   page = page.replace("fetch(new URL('models/atlas.json',document.baseURI)", "fetch(new URL((sex==='feminino'?'models/atlas-female.json':'models/atlas.json'),document.baseURI)");
   page = page.replace("return()=>abort.abort();},[]);", "return()=>abort.abort();},[sex]);");
+  page = page.replace("setState({...initial,visible:DEFAULT_VISIBLE});fetch", "setState({...initial,visible:sex==='feminino'?['integumentary']:DEFAULT_VISIBLE});fetch");
+  page = page.replace("visible:DEFAULT_VISIBLE,reset:s.reset+1", "visible:sex==='feminino'?['integumentary']:DEFAULT_VISIBLE,reset:s.reset+1");
   page = page.replace("<div className=\"identity-meta\">{atlas?atlas.parts.length.toLocaleString('pt-BR'):'2,234'} estruturas em 3D <span>·</span> BodyParts3D</div>", "<div className=\"identity-meta\">{atlas?atlas.parts.length.toLocaleString('pt-BR'):(sex==='feminino'?'2.534':'2.234')} estruturas em 3D <span>·</span> {sex==='feminino'?'Human Reference Atlas · HuBMAP':'BodyParts3D'}</div><div className=\"sex-switch\" role=\"group\" aria-label=\"Referência corporal\"><button className={sex==='masculino'?'active':''} onClick={()=>{setSex('masculino');history.replaceState(null,'','?sexo=masculino')}}>Masculino</button><button className={sex==='feminino'?'active':''} onClick={()=>{setSex('feminino');history.replaceState(null,'','?sexo=feminino')}}>Feminino · HuBMAP</button></div>");
   page = page.replace("'CORPO ADULTO · MASCULINO'", "sex==='feminino'?'CORPO ADULTO · FEMININO':'CORPO ADULTO · MASCULINO'");
   page = page.replace("Explore a anatomia de referência masculina adulta do BodyParts3D.", "{sex==='feminino'?'Explore a referência corporal feminina do Human Reference Atlas / HuBMAP.':'Explore a anatomia de referência masculina adulta do BodyParts3D.'}");
@@ -77,7 +79,7 @@ module.exports = function localizeHumanAtlas(source, lexiconPath) {
     urinary:"Os rins filtram o sangue e regulam líquidos, eletrólitos e equilíbrio ácido-base. A urina segue pelos ureteres até a bexiga.",
     lymphatic:"Vasos linfáticos devolvem líquido intersticial à circulação. Linfonodos e outros órgãos linfoides participam da resposta imune.",
     endocrine:"Órgãos endócrinos liberam hormônios no sangue e ajudam a coordenar metabolismo, crescimento, estresse e reprodução.",
-    reproductive:"As estruturas reprodutoras masculinas representadas participam da produção, maturação e transporte dos espermatozoides e da produção hormonal.",
+    reproductive:"Útero, tubas uterinas, ovários e estruturas associadas aparecem na referência feminina; a referência masculina apresenta seus próprios órgãos reprodutores.",
     integumentary:"O revestimento corporal forma uma barreira protetora e contribui para a sensibilidade e a regulação da temperatura.",
     connective:"Cartilagens, ligamentos e outros tecidos conjuntivos sustentam, conectam e separam estruturas e estabilizam articulações."
   };
