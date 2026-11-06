@@ -1,4 +1,14 @@
 (()=>{
+  // ⚡ Bolt: Prevent main thread blocking on keystroke filtering
+  // Added debounce wrapper for search inputs to delay expensive rendering
+  function debounce(func, wait) {
+    let timeout;
+    return function (...args) {
+      const context = this;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+  }
   const search=document.getElementById('drug-search');
   const list=document.getElementById('drug-list');
   const detail=document.getElementById('drug-detail');
@@ -319,7 +329,7 @@
     });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
-  search.addEventListener('input',()=>{visibleCount=100;renderList();});
+  search.addEventListener('input',debounce(()=>{visibleCount=100;renderList();}, 300));
   // Canonical database: bulario_catalog is the public projection of bulario_drugs.
   // Show records as soon as each page arrives, independently from protocol loading.
   async function loadAll(table,fields,sortKey,onPage){
