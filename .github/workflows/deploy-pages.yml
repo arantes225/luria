@@ -159,6 +159,7 @@ jobs:
             build/anatomy-reproductive-desktop.png
             build/anatomy-reproductive-mobile.png
             build/anatomy-kidneys-desktop.png
+            build/anatomy-female-body-desktop.png
           if-no-files-found: ignore
 
   deploy:
