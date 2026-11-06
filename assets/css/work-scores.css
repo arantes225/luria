@@ -90,3 +90,9 @@
     min-height:90px!important;
   }
 }
+
+/* Scores 2026-11-06: interpretação sempre identificável e legível, também em celulares. */
+.score-result .score-interpret-label{display:block;margin-top:4px;color:var(--muted);font-size:10px;font-weight:850;letter-spacing:.055em;text-transform:uppercase}
+.score-result .score-result-text{font-size:13px;line-height:1.58;font-weight:650;color:var(--text);overflow-wrap:anywhere;white-space:normal}
+.score-result .score-result-note{font-size:11px;line-height:1.55}
+@media(max-width:760px){.score-result .score-result-text{font-size:14px;line-height:1.6}.score-result .score-result-note{font-size:12px}}

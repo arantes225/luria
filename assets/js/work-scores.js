@@ -1180,7 +1180,8 @@
         <form class="score-form" id="score-form"></form>
         <aside class="score-result">
           <span class="score-result-label">Resultado</span><div class="score-result-value" id="score-value">—</div>
-          <div class="score-result-text" id="score-text">Preencha os campos.</div>
+          <span class="score-interpret-label">Interpretação clínica</span>
+          <div class="score-result-text" id="score-text" role="status" aria-live="polite">Preencha os campos.</div>
           <div class="score-result-note" id="score-note">Use o resultado como apoio à decisão clínica.</div>
           <button class="score-copy" type="button" id="score-copy">Copiar interpretação</button>
           <button class="score-reset" type="button" id="score-reset">Limpar</button>
@@ -1211,7 +1212,7 @@
   }
 
   function calculateGeneric(s){
-    const vals=$("#score-form select").map(x=>x.value);
+    const vals=$$("#score-form select").map(x=>x.value);
     const phqRisk=s.id==="phq9" && vals[8]!=="" && Number(vals[8])>0;
     if(vals.some(v=>v==="")){
       setResult("—",phqRisk?"Item 9 positivo: avaliar risco de suicídio/autolesão imediatamente, mesmo antes da pontuação total.":"Preencha todos os campos.","");
@@ -1242,7 +1243,7 @@
     },
     ihs4(f){
       f.innerHTML=field('Nódulos inflamatórios','ih_n','number','min="0" step="1"')+field('Abscessos','ih_a','number','min="0" step="1"')+field('Túneis drenantes','ih_t','number','min="0" step="1"');
-      $("input",f).forEach(el=>el.oninput=calcIHS4);
+      $$("input",f).forEach(el=>el.oninput=calcIHS4);
       setResult('—','Preencha três contagens inteiras.','Ausência de lesão deve ser registrada como zero.');
     },
     hints(f){
