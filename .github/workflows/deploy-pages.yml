@@ -125,18 +125,18 @@ jobs:
         run: node --test tests/anatomia-room.test.cjs
       - name: Fetch pinned Human Atlas source
         run: |
-          git init /tmp/luria-human-atlas
-          git -C /tmp/luria-human-atlas fetch --depth 1 https://github.com/ashemag/human-atlas.git 1c38bf35c254a891200d3cedecfd57abebe83d8d
-          git -C /tmp/luria-human-atlas checkout --detach FETCH_HEAD
+          git init build/human-atlas-source
+          git -C build/human-atlas-source fetch --depth 1 https://github.com/ashemag/human-atlas.git 1c38bf35c254a891200d3cedecfd57abebe83d8d
+          git -C build/human-atlas-source checkout --detach FETCH_HEAD
       - name: Build attributed whole-body atlas
         run: |
-          npm ci --ignore-scripts --prefix /tmp/luria-human-atlas
-          curl --fail --location --retry 3 'https://raw.githubusercontent.com/Nurkan1/Anatria-3D/c830ea3a3b62030bf08e7353e8cb641bd38d2bfa/tools/asset-pipeline/vendor/TA2.csv' --output /tmp/luria-ta2.csv
-          ANATOMY_TA2_CSV=/tmp/luria-ta2.csv node scripts/build-human-atlas.cjs prepare
-          npm run check --prefix /tmp/luria-human-atlas
-          node /tmp/luria-human-atlas/scripts/validate-atlas.mjs
-          node /tmp/luria-human-atlas/scripts/validate-interactions.mjs
-          npm run build --prefix /tmp/luria-human-atlas -- --base=/aprender/anatomia/atlas/
+          npm ci --ignore-scripts --prefix build/human-atlas-source
+          curl --fail --location --retry 3 'https://raw.githubusercontent.com/Nurkan1/Anatria-3D/c830ea3a3b62030bf08e7353e8cb641bd38d2bfa/tools/asset-pipeline/vendor/TA2.csv' --output build/ta2.csv
+          ANATOMY_TA2_CSV=build/ta2.csv node scripts/build-human-atlas.cjs prepare
+          npm run check --prefix build/human-atlas-source
+          node build/human-atlas-source/scripts/validate-atlas.mjs
+          node build/human-atlas-source/scripts/validate-interactions.mjs
+          npm run build --prefix build/human-atlas-source -- --base=/aprender/anatomia/atlas/
           node scripts/build-human-atlas.cjs install
       - name: Install Chromium
         run: npx playwright install chromium --with-deps
@@ -185,18 +185,18 @@ jobs:
         run: node scripts/build-anatomy-organs.cjs
       - name: Fetch pinned Human Atlas source
         run: |
-          git init /tmp/luria-human-atlas
-          git -C /tmp/luria-human-atlas fetch --depth 1 https://github.com/ashemag/human-atlas.git 1c38bf35c254a891200d3cedecfd57abebe83d8d
-          git -C /tmp/luria-human-atlas checkout --detach FETCH_HEAD
+          git init build/human-atlas-source
+          git -C build/human-atlas-source fetch --depth 1 https://github.com/ashemag/human-atlas.git 1c38bf35c254a891200d3cedecfd57abebe83d8d
+          git -C build/human-atlas-source checkout --detach FETCH_HEAD
       - name: Build attributed whole-body atlas
         run: |
-          npm ci --ignore-scripts --prefix /tmp/luria-human-atlas
-          curl --fail --location --retry 3 'https://raw.githubusercontent.com/Nurkan1/Anatria-3D/c830ea3a3b62030bf08e7353e8cb641bd38d2bfa/tools/asset-pipeline/vendor/TA2.csv' --output /tmp/luria-ta2.csv
-          ANATOMY_TA2_CSV=/tmp/luria-ta2.csv node scripts/build-human-atlas.cjs prepare
-          npm run check --prefix /tmp/luria-human-atlas
-          node /tmp/luria-human-atlas/scripts/validate-atlas.mjs
-          node /tmp/luria-human-atlas/scripts/validate-interactions.mjs
-          npm run build --prefix /tmp/luria-human-atlas -- --base=/aprender/anatomia/atlas/
+          npm ci --ignore-scripts --prefix build/human-atlas-source
+          curl --fail --location --retry 3 'https://raw.githubusercontent.com/Nurkan1/Anatria-3D/c830ea3a3b62030bf08e7353e8cb641bd38d2bfa/tools/asset-pipeline/vendor/TA2.csv' --output build/ta2.csv
+          ANATOMY_TA2_CSV=build/ta2.csv node scripts/build-human-atlas.cjs prepare
+          npm run check --prefix build/human-atlas-source
+          node build/human-atlas-source/scripts/validate-atlas.mjs
+          node build/human-atlas-source/scripts/validate-interactions.mjs
+          npm run build --prefix build/human-atlas-source -- --base=/aprender/anatomia/atlas/
           node scripts/build-human-atlas.cjs install
       - name: Prepare optimized UI images
         uses: actions/setup-python@v5
