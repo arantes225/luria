@@ -21,10 +21,13 @@ const server = http.createServer((request, response) => {
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
     page.on("console", message => { if (message.type() === "error" && /THREE.*(?:Shader|VALIDATE_STATUS)/i.test(message.text())) errors.push(message.text()); });
-    for (const key of ["lungs","breasts","reproductive","kidneys"]) {
+    const expected = {"kidneys-bodyparts":6,"spleen":9,"eye":21,"brain":19,"breasts":16,"lungs":20,"kidneys":24,"stomach":9,"bladder":12,"reproductive":27,"intestines":11,"liver":7,"pancreas":15,"gallbladder":15,"esophagus":17,"larynx":20};
+    const featured = ["lungs", "breasts", "reproductive", "kidneys"];
+    for (const key of [...featured, ...Object.keys(expected).filter(key => !featured.includes(key))]) {
       await page.goto(`http://127.0.0.1:${server.address().port}/aprender/anatomia/orgaos/?orgao=${key}`,{waitUntil:"domcontentloaded"});
       await page.locator("[data-organs-loading]").waitFor({state:"hidden",timeout:45000});
-      await page.locator(".organs-stage-card").screenshot({path:path.join(root,`../anatomy-${key}-desktop.png`)});
+      assert.equal(await page.locator("[data-organ-structures] button").count(), expected[key], "Estruturas disponíveis: " + key);
+      if (featured.includes(key)) await page.locator(".organs-stage-card").screenshot({path:path.join(root,`../anatomy-${key}-desktop.png`)});
       if (key === "breasts") {
         await page.locator("[data-organ-cut]").click();
         await page.locator(".organs-stage-card").screenshot({path:path.join(root,"../anatomy-breasts-interior.png")});

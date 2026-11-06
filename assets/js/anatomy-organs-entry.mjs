@@ -15,6 +15,10 @@ if (root) {
   const list = document.querySelector("[data-organ-structures]");
   const status = document.querySelector("[data-organs-status]");
   const catalog = {
+    "kidneys-bodyparts": {"label":"Rins · BodyParts3D","summary":"Referência complementar com rins, ureteres e artérias renais. Para a cápsula, o córtex e o sistema coletor, abra Rins · HuBMAP.","structures":{"right-kidney":"Rim direito","left-kidney":"Rim esquerdo","right-ureter":"Ureter direito","left-ureter":"Ureter esquerdo","right-renal-artery":"Artéria renal direita","left-renal-artery":"Artéria renal esquerda"}},
+    spleen: {"label":"Baço e relações","summary":"Baço, vasos esplênicos e órgãos vizinhos, incluindo estômago, pâncreas, rim e suprarrenal esquerdos.","structures":{"spleen":"Baço","splenic-artery":"Artéria esplênica","splenic-vein":"Veia esplênica","celiac-trunk":"Tronco celíaco","superior-mesenteric-vein":"Veia mesentérica superior","stomach":"Estômago","pancreas":"Pâncreas","left-kidney":"Rim esquerdo","left-adrenal":"Glândula suprarrenal esquerda"}},
+    eye: {"label":"Olho","summary":"Túnicas do globo ocular, cristalino, corpo vítreo, nervo óptico, músculos extraoculares e estruturas palpebrais.","structures":{"cornea":"Córnea","sclera":"Esclera","choroid":"Coroide","retina":"Retina","iris":"Íris","anterior-chamber":"Câmara anterior","lens":"Cristalino","suspensory-ligament":"Zônula ciliar","vitreous-body":"Corpo vítreo","superior-rectus":"Músculo reto superior","inferior-rectus":"Músculo reto inferior","medial-rectus":"Músculo reto medial","lateral-rectus":"Músculo reto lateral","superior-oblique":"Músculo oblíquo superior","inferior-oblique":"Músculo oblíquo inferior","levator-palpebrae":"Músculo levantador da pálpebra superior","optic-nerve":"Nervo óptico","trochlea":"Tróclea","lacrimal-gland":"Glândula lacrimal","upper-tarsal-plate":"Tarso superior","lower-tarsal-plate":"Tarso inferior"}},
+    brain: {"label":"Encéfalo","summary":"Lobos cerebrais, hipocampos, cerebelo, tronco encefálico e sistema ventricular. Use o corte para expor as estruturas internas.","structures":{"left-frontal":"Lobo frontal esquerdo","right-frontal":"Lobo frontal direito","left-parietal":"Lobo parietal esquerdo","right-parietal":"Lobo parietal direito","left-temporal":"Lobo temporal esquerdo","right-temporal":"Lobo temporal direito","left-occipital":"Lobo occipital esquerdo","right-occipital":"Lobo occipital direito","left-hippocampus":"Hipocampo esquerdo","right-hippocampus":"Hipocampo direito","midbrain":"Mesencéfalo","pons":"Ponte","medulla":"Bulbo (medula oblonga)","cerebellum":"Cerebelo","left-lateral-ventricle":"Ventrículo lateral esquerdo","right-lateral-ventricle":"Ventrículo lateral direito","third-ventricle":"Terceiro ventrículo","cerebral-aqueduct":"Aqueduto cerebral","fourth-ventricle":"Quarto ventrículo"}},
     breasts: { label: "Mamas", color: "#c57984", summary: "Glândulas mamárias: lobos, ductos, seios lactíferos, gordura, ligamentos, aréolas e mamilos. Use o corte didático para explorar as camadas.", structures: {
       VH_F_mammary_lobes_L: "Lobos da mama esquerda", VH_F_main_lactiferous_ducts_L: "Ductos lactíferos esquerdos", VH_F_main_lactiferous_sinuses_L: "Seios lactíferos esquerdos", VH_F_suspensory_ligaments_L: "Ligamentos suspensores esquerdos", VH_F_fat_L: "Tecido adiposo interlobar esquerdo", VH_F_areola_L: "Aréola esquerda", VH_F_nipple_L: "Mamilo esquerdo", VH_F_areolar_tubercles_L: "Tubérculos areolares esquerdos",
       VH_F_mammary_lobes_R: "Lobos da mama direita", VH_F_main_lactiferous_ducts_R: "Ductos lactíferos direitos", VH_F_main_lactiferous_sinuses_R: "Seios lactíferos direitos", VH_F_suspensory_ligaments_R: "Ligamentos suspensores direitos", VH_F_fat_R: "Tecido adiposo interlobar direito", VH_F_areola_R: "Aréola direita", VH_F_nipple_R: "Mamilo direito", VH_F_areolar_tubercles_R: "Tubérculos areolares direitos"
@@ -22,7 +26,7 @@ if (root) {
     lungs: { label: "Pulmões", color: "#d77f86", summary: "Segmentos broncopulmonares, traqueia e árvores brônquicas.", structures: {
       FMA7338: "Segmento apical direito", FMA7339: "Segmento posterior direito", FMA7359: "Segmento anterior direito", FMA7361: "Segmento lateral direito", FMA7360: "Segmento medial direito", FMA7366: "Segmento superior direito", FMA7364: "Segmento basal anterior direito", FMA7363: "Segmento basal lateral direito", FMA7362: "Segmento basal posterior direito", FMA7372: "Segmento apicoposterior esquerdo", FMA7373: "Segmento anterior esquerdo", FMA7374: "Segmento lingular superior", FMA7375: "Segmento lingular inferior", FMA7376: "Segmento superior esquerdo", FMA7378: "Segmento basal anterior esquerdo", FMA7379: "Segmento basal lateral esquerdo", FMA7380: "Segmento basal posterior esquerdo", FMA7394: "Traqueia", FMA26661: "Árvore brônquica direita", FMA26662: "Árvore brônquica esquerda"
     }},
-    kidneys: { label: "Rins e sistema coletor", color: "#c88773", summary: "Cápsula, córtex, pirâmides, papilas, cálices e pelve renal dos dois lados, com ureteres e vasos renais. Abra a vista interna para estudar o sistema coletor.", structures: Object.fromEntries(
+    kidneys: { label: "Rins e sistema coletor · HuBMAP", color: "#c88773", summary: "Referência feminina. Cápsula, córtex, pirâmides, papilas, cálices e pelve renal dos dois lados, com ureteres e vasos renais. Abra a vista interna para estudar o sistema coletor.", structures: Object.fromEntries(
       [["R", "direito", "direita", "right"], ["L", "esquerdo", "esquerda", "left"]].flatMap(([side, masc, fem, en]) => [
         [`VH_F_kidney_capsule_${side}`, `Cápsula do rim ${masc}`], [`VH_F_outer_cortex_of_kidney_${side}`, `Córtex renal ${masc}`],
         [`VH_F_hilum_of_kidney_${side}`, `Hilo renal ${masc}`], [`VH_F_renal_column_${side}`, `Colunas do rim ${masc}`],
@@ -37,12 +41,13 @@ if (root) {
     reproductive: { label: "Pelve reprodutora feminina", color: "#bb7688", summary: "Útero, colo, vagina, tubas, ovários, ligamentos, vasos uterinos e bexiga de referência feminina HuBMAP.", structures: { fundus:"Fundo uterino",body:"Corpo do útero",cornua:"Corno uterino","tubal-ostia":"Óstio tubário","lower-segment":"Segmento uterino inferior",cervix:"Colo do útero","internal-os":"Óstio interno do colo","external-os":"Óstio externo do colo",vagina:"Vagina","cervicovaginal-junction":"Junção cervicovaginal",isthmus:"Istmo das tubas",ampulla:"Ampola das tubas",infundibulum:"Infundíbulo das tubas",fimbriae:"Fímbrias","left-ovary":"Ovário esquerdo","right-ovary":"Ovário direito","broad-ligament":"Ligamento largo",mesosalpinx:"Mesossalpinge",mesovarium:"Mesovário","ovarian-ligaments":"Ligamentos ovarianos","suspensory-ligaments":"Ligamentos suspensores dos ovários","round-ligaments":"Ligamentos redondos","cardinal-ligaments":"Ligamentos cardinais","uterosacral-ligaments":"Ligamentos uterossacros","uterine-arteries":"Artérias uterinas","uterine-veins":"Veias uterinas",bladder:"Bexiga urinária" }},
     intestines: { label: "Intestinos", color: "#d8a171", summary: "Duodeno, jejuno, íleo, cólon, apêndice e tênias do cólon.", structures: { duodenum: "Duodeno", jejunum: "Jejuno", ileum: "Íleo", appendix: "Apêndice", "ascending-colon": "Cólon ascendente", "transverse-colon": "Cólon transverso", "descending-colon": "Cólon descendente", rectum: "Reto", "mesocolic-taenia": "Tênia mesocólica", "omental-taenia": "Tênia omental", "free-taenia": "Tênia livre" }},
     liver: { label: "Fígado e vias biliares", color: "#9b694d", summary: "Fígado, vesícula, veias hepáticas, sistema porta e vias biliares.", structures: { liver: "Fígado", gallbladder: "Vesícula biliar", portal: "Veia porta hepática", "hepatic-veins": "Veias hepáticas", artery: "Artéria hepática", biliary: "Vias biliares", cystic: "Ducto cístico" }},
-    pancreas: { label: "Pâncreas e vasos", color: "#d2a06f", summary: "Pâncreas, ducto pancreático e vasos do tronco celíaco e mesentérico.", structures: { pancreas: "Pâncreas", "pancreatic-duct": "Ducto pancreático", duodenum: "Duodeno", spleen: "Baço", "celiac-trunk": "Tronco celíaco", "common-hepatic-artery": "Artéria hepática comum", "gastroduodenal-artery": "Artéria gastroduodenal", "pancreaticoduodenal-arteries": "Artérias pancreaticoduodenais", "splenic-artery": "Artéria esplênica", "pancreatic-arteries": "Artérias pancreáticas", "superior-mesenteric-artery": "Artéria mesentérica superior", "portal-vein": "Veia porta" }},
-    gallbladder: { label: "Vesícula e árvore biliar", color: "#8ca66d", summary: "Vesícula, ductos hepáticos, ducto colédoco, pâncreas e vasos porta-hepáticos.", structures: { gallbladder: "Vesícula biliar", "cystic-duct": "Ducto cístico", "common-hepatic-duct": "Ducto hepático comum", "right-hepatic-duct": "Ducto hepático direito", "left-hepatic-duct": "Ducto hepático esquerdo", "intrahepatic-ducts": "Ductos intra-hepáticos", "pancreatic-duct": "Ducto pancreático", liver: "Fígado", duodenum: "Duodeno", pancreas: "Pâncreas", "portal-vein": "Veia porta", "common-hepatic-artery": "Artéria hepática comum" }},
-    esophagus: { label: "Esôfago e mediastino", color: "#bd7e83", summary: "Esôfago, traqueia, brônquios, vasos e nervos relacionados ao mediastino.", structures: { esophagus: "Esôfago", stomach: "Estômago", trachea: "Traqueia", "main-bronchi": "Brônquios principais", "thyroid-gland": "Glândula tireoide", "left-atrium": "Átrio esquerdo", "aortic-arch": "Arco da aorta", "descending-aorta": "Aorta descendente", "esophageal-arteries": "Artérias esofágicas", "azygos-vein": "Veia ázigos", "left-vagus-nerve": "Nervo vago esquerdo", "recurrent-laryngeal-nerves": "Nervos laríngeos recorrentes" }},
-    larynx: { label: "Laringe", color: "#c7a16c", summary: "Cartilagens, ligamentos, músculos intrínsecos, pregas vocais e tireoide.", structures: { "hyoid-bone": "Osso hioide", "thyroid-cartilage": "Cartilagem tireóidea", "cricoid-cartilage": "Cartilagem cricoide", epiglottis: "Epiglote", "arytenoid-cartilages": "Cartilagens aritenoides", "vocal-ligaments": "Ligamentos vocais", "cricothyroid-ligament": "Ligamento cricotireóideo", "cricothyroid-muscle": "Músculo cricotireóideo", "posterior-crico-arytenoid": "Músculo cricoaritenóideo posterior", "lateral-crico-arytenoid": "Músculo cricoaritenóideo lateral", "thyro-arytenoid": "Músculo tireoaritenóideo", vocalis: "Músculo vocal", trachea: "Traqueia", "thyroid-gland": "Glândula tireoide" }}
+    pancreas: { label: "Pâncreas e vasos", color: "#d2a06f", summary: "Pâncreas, ducto pancreático e vasos do tronco celíaco e mesentérico.", structures: { pancreas: "Pâncreas", "pancreatic-duct": "Ducto pancreático", duodenum: "Duodeno", spleen: "Baço", "celiac-trunk": "Tronco celíaco", "common-hepatic-artery": "Artéria hepática comum", "gastroduodenal-artery": "Artéria gastroduodenal", "pancreaticoduodenal-arteries": "Artérias pancreaticoduodenais", "splenic-artery": "Artéria esplênica", "pancreatic-arteries": "Artérias pancreáticas", "superior-mesenteric-artery": "Artéria mesentérica superior", "portal-vein": "Veia porta", "splenic-vein":"Veia esplênica","superior-mesenteric-vein":"Veia mesentérica superior","pancreaticoduodenal-veins":"Veias pancreaticoduodenais" }},
+    gallbladder: { label: "Vesícula e árvore biliar", color: "#8ca66d", summary: "Vesícula, ductos hepáticos, ducto colédoco, pâncreas e vasos porta-hepáticos.", structures: { gallbladder: "Vesícula biliar", "cystic-duct": "Ducto cístico", "common-hepatic-duct": "Ducto hepático comum", "right-hepatic-duct": "Ducto hepático direito", "left-hepatic-duct": "Ducto hepático esquerdo", "intrahepatic-ducts": "Ductos intra-hepáticos", "pancreatic-duct": "Ducto pancreático", liver: "Fígado", duodenum: "Duodeno", pancreas: "Pâncreas", "portal-vein": "Veia porta", "common-hepatic-artery": "Artéria hepática comum", "hepatic-artery-proper":"Artéria hepática própria","right-hepatic-artery":"Artéria hepática direita","left-hepatic-artery":"Artéria hepática esquerda" }},
+    esophagus: { label: "Esôfago e mediastino", color: "#bd7e83", summary: "Esôfago, traqueia, brônquios, vasos e nervos relacionados ao mediastino.", structures: { esophagus: "Esôfago", stomach: "Estômago", trachea: "Traqueia", "main-bronchi": "Brônquios principais", "thyroid-gland": "Glândula tireoide", "left-atrium": "Átrio esquerdo", "aortic-arch": "Arco da aorta", "descending-aorta": "Aorta descendente", "esophageal-arteries": "Artérias esofágicas", "azygos-vein": "Veia ázigos", "left-vagus-nerve": "Nervo vago esquerdo", "recurrent-laryngeal-nerves": "Nervos laríngeos recorrentes", "inferior-thyroid-arteries":"Artérias tireóideas inferiores","left-gastric-artery":"Artéria gástrica esquerda","hemiazygos-veins":"Veias hemiázigos","left-gastric-vein":"Veia gástrica esquerda","right-vagus-nerve":"Nervo vago direito" }},
+    larynx: { label: "Laringe", color: "#c7a16c", summary: "Cartilagens, ligamentos, músculos intrínsecos, pregas vocais e tireoide.", structures: { "hyoid-bone": "Osso hioide", "thyroid-cartilage": "Cartilagem tireóidea", "cricoid-cartilage": "Cartilagem cricoide", epiglottis: "Epiglote", "arytenoid-cartilages": "Cartilagens aritenoides", "vocal-ligaments": "Ligamentos vocais", "cricothyroid-ligament": "Ligamento cricotireóideo", "cricothyroid-muscle": "Músculo cricotireóideo", "posterior-crico-arytenoid": "Músculo cricoaritenóideo posterior", "lateral-crico-arytenoid": "Músculo cricoaritenóideo lateral", "thyro-arytenoid": "Músculo tireoaritenóideo", vocalis: "Músculo vocal", trachea: "Traqueia", "thyroid-gland": "Glândula tireoide", "corniculate-cuneiform-cartilages":"Cartilagens corniculadas e cuneiformes","thyrohyoid-membrane":"Membrana tireo-hióidea","conus-elasticus":"Cone elástico","epiglottic-ligaments":"Ligamentos epiglóticos","arytenoid-muscles":"Músculos aritenóideos","aryepiglottic-muscle":"Músculo ariepiglótico" }}
   };
-  let renderer, controls, scene, camera, model, selectedId = "", currentKey = catalog[new URLSearchParams(location.search).get("orgao")] ? new URLSearchParams(location.search).get("orgao") : "lungs", rotating = false, cut = false;
+  const requestedOrgan = new URLSearchParams(location.search).get("orgao");
+  let renderer, controls, scene, camera, model, selectedId = "", currentKey = Object.hasOwn(catalog, requestedOrgan) ? requestedOrgan : "lungs", rotating = false, cut = false;
   const objects = new Map();
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const announce = message => { if (status) status.textContent = message; };
@@ -67,25 +72,43 @@ if (root) {
       const opacity = cut && hasLayers() ? (isOuter(id) ? (selected ? .42 : .16) : 1) : selectedId && !selected ? .26 : 1;
       object.material.emissive?.set(selected ? "#fff0b4" : "#000000");
       object.material.emissiveIntensity = selected ? .25 : 0;
-      object.material.opacity = opacity;
-      object.material.transparent = opacity < 1;
-      object.material.depthWrite = opacity === 1;
+      const base = object.material.userData.atlasAppearance;
+      object.material.opacity = base.opacity * opacity;
+      object.material.transparent = base.transparent || opacity < 1;
+      object.material.depthWrite = base.depthWrite && opacity === 1;
     }));
   }
+  // Use a finish only for verified tissue meshes without authored surface maps.
+  const softTissue = {
+    brain: [/^(left|right)-(frontal|parietal|temporal|occipital|hippocampus)$|^(cerebellum|midbrain|pons|medulla)$/, .30, .74],
+    lungs: [/^(?!FMA7394$|FMA266)/, .65, .83],
+    liver: [/^liver$/, .34, .65],
+    stomach: [/^(stomach|duodenum|esophagus)$/, .29, .60],
+    esophagus: [/^(esophagus|stomach)$/, .27, .62],
+    intestines: [/^(duodenum|jejunum|ileum|.*colon|rectum|appendix)$/, .27, .61],
+    pancreas: [/^pancreas$/, .38, .73],
+    spleen: [/^spleen$/, .25, .64],
+    kidneys: [/kidney_capsule|outer_cortex_of_kidney|renal_pyramid|renal_column/, .31, .67],
+    "kidneys-bodyparts": [/^(left|right)-kidney$/, .28, .67],
+    breasts: [/fat_|mammary_lobes|nipple|areola/, .29, .72],
+    reproductive: [/^(uterus|fundus|body|cervix|ovary|vagina)/, .26, .68],
+    bladder: [/^(urinary-bladder|prostate)$/, .25, .64],
+    gallbladder: [/^(gallbladder|liver|pancreas)$/, .26, .65],
+    larynx: [/cartilage|muscle/, .22, .73]
+  };
+
   function materialFor(source, id, key, modelSize) {
     const material = source.clone();
+    material.userData.atlasAppearance = {opacity: source.opacity, transparent: source.transparent, depthWrite: source.depthWrite};
     material.side = THREE.DoubleSide;
-    material.roughness = Math.max(.72, material.roughness ?? .7);
+    if (material.emissive) material.emissive.set("#000000");
+    const finish = softTissue[key];
+    const authoredSurface = source.map || source.normalMap || source.roughnessMap || source.bumpMap || source.alphaMap;
+    if (!finish || !finish[0].test(id) || authoredSurface || source.transparent || source.transmission > 0 || !material.isMeshStandardMaterial) return material;
+    if (key === "lungs") material.color.set("#b66c73");
+    material.roughness = finish[2];
     material.metalness = 0;
-    material.emissive = new THREE.Color("#000000");
-    if (key === "lungs") {
-      // The source assigns unrelated green/orange hues to individual lung segments.
-      // Keep each segment selectable while using a consistent parenchymal palette.
-      material.color.set(id === "FMA7394" ? "#b39b93" : id.startsWith("FMA266") ? "#bda598" : "#b66c73");
-      material.roughness = .87;
-    }
-    const tissue = !/arter|vein|duct|ureter|calyx|pelvis|ligament|FMA266|FMA7394/i.test(id);
-    return tissue && material.isMeshStandardMaterial ? addTissueFinish(material, modelSize, key === "lungs" ? 1.3 : .85) : material;
+    return addTissueFinish(material, modelSize, finish[1]);
   }
   function select(id) {
     if (!objects.has(id)) return;
@@ -121,7 +144,15 @@ if (root) {
       model.traverse(object => {
         if (!object.isMesh) return;
         const sourceId = object.userData.structureId || object.name;
-        const id = key === "kidneys" ? sourceId.replace(/((?:renal_papilla|renal_pyramid|minor_calyx|major_calyx)_[LR])_[a-z]$/, "$1") : sourceId;
+        let id = sourceId;
+        for (let node = object; node; node = node.parent) {
+          const raw = node.userData.structureId || node.name;
+          const candidate = key === "kidneys" ? raw.replace(/((?:renal_papilla|renal_pyramid|minor_calyx|major_calyx)_[LR])_[a-z]$/, "$1") : raw;
+          if (Object.hasOwn(catalog[key].structures, candidate)) {
+            id = candidate;
+            break;
+          }
+        }
         object.material = materialFor(object.material, id, key, Math.max(size.x, size.y, size.z));
         object.userData.structureId = id;
         if (key === "reproductive" && (id === "broad-ligament" || id === "bladder")) object.visible = false;
