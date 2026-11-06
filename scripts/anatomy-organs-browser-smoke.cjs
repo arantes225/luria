@@ -19,10 +19,14 @@ const server = http.createServer((request, response) => {
     const page = await browser.newPage({viewport:{width:1365,height:900}});
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
-    for (const key of ["lungs","reproductive","kidneys"]) {
+    for (const key of ["lungs","breasts","reproductive","kidneys"]) {
       await page.goto(`http://127.0.0.1:${server.address().port}/aprender/anatomia/orgaos/?orgao=${key}`,{waitUntil:"domcontentloaded"});
       await page.locator("[data-organs-loading]").waitFor({state:"hidden",timeout:45000});
-      await page.screenshot({path:path.join(root,`../anatomy-${key}-desktop.png`)});
+      await page.locator(".organs-stage-card").screenshot({path:path.join(root,`../anatomy-${key}-desktop.png`)});
+      if (key === "breasts") {
+        await page.locator("[data-organ-cut]").click();
+        await page.locator(".organs-stage-card").screenshot({path:path.join(root,"../anatomy-breasts-interior.png")});
+      }
       await page.locator("[data-organ-structures] button").first().click();
       console.log(key,await page.locator("[data-organ-title]").textContent(),await page.locator("[data-organ-structures] button").count(),await page.locator("[data-organ-detail-title]").textContent());
     }
@@ -37,4 +41,3 @@ const server = http.createServer((request, response) => {
     if(errors.length) throw Error(errors.join("\n"));
   } finally { await browser.close(); server.close(); }
 })().catch(error => { console.error(error); server.close(); process.exitCode=1; });
-
