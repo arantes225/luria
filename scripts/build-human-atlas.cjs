@@ -65,7 +65,7 @@ if (mode === "prepare") {
   const oldMaterial = "metalness:.08,roughness:.53";
   if (!scene.includes(oldMaterial)) throw new Error("Human Atlas material changed upstream");
   scene = scene.replace(oldMaterial, "metalness:0,roughness:system==='muscular'||system==='cardiac'?.78:system==='skeletal'?.86:.62");
-  scene = scene.replace("opacity:system==='integumentary'?.1:1", "opacity:system==='integumentary'?.94:1");
+  scene = scene.replace("transparent:system==='integumentary',opacity:system==='integumentary'?.1:1,depthWrite:system!=='integumentary'", "transparent:false,opacity:1,depthWrite:true");
   scene = scene.replace("renderer.setClearColor('#f2f3f3')", "renderer.setClearColor('#e9f0f8')");
   scene = scene.replace("renderer.toneMappingExposure=1.12", "renderer.toneMappingExposure=1.02");
   scene = scene.replace("This browser could not start the 3D viewer. Please try a browser with WebGL enabled.", "Este navegador não conseguiu iniciar o atlas 3D. Ative o WebGL ou tente outro navegador.");
