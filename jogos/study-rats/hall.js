@@ -182,14 +182,11 @@
       const id = await rpc('study_rats_board_find', {p_mode: mode, p_friend_id: friendId});
       currentMatch = {id, mode};
       await refreshLobby();
-          if (launching || currentMatch?.id !== id) return;
-          try { await rpc('study_rats_board_leave', {p_match_id: id}); } catch (error) { console.warn('Não foi possível encerrar a busca online.', error); }
-          currentMatch = null;
-          launchGame();
-        }, 90000);
+      if (!launching && currentMatch) {
+        const match = currentMatch.id === id ? currentMatch : {id, mode};
+        setWaiting(match);
+        status('Conexão preparada. Aguardando a outra pessoa.');
       }
-      await refreshLobby();
-      if (!launching && currentMatch) { setWaiting(currentMatch); status('Conexão preparada. Aguardando a outra pessoa.'); }
     } catch (error) { status(error.message || 'Não foi possível iniciar a partida online.', true); }
     finally { button.disabled = !!currentMatch; }
   }
