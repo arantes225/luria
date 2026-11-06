@@ -132,12 +132,12 @@ jobs:
         run: |
           npm ci --ignore-scripts --prefix build/human-atlas-source
           curl --fail --location --retry 3 'https://raw.githubusercontent.com/Nurkan1/Anatria-3D/c830ea3a3b62030bf08e7353e8cb641bd38d2bfa/tools/asset-pipeline/vendor/TA2.csv' --output build/ta2.csv
-          ANATOMY_TA2_CSV=build/ta2.csv node scripts/build-human-atlas.cjs prepare
+          ANATOMY_TA2_CSV=build/ta2.csv node scripts/build-human-atlas.cjs prepare build/human-atlas-source
           npm run check --prefix build/human-atlas-source
           node build/human-atlas-source/scripts/validate-atlas.mjs
           node build/human-atlas-source/scripts/validate-interactions.mjs
           npm run build --prefix build/human-atlas-source -- --base=/aprender/anatomia/atlas/
-          node scripts/build-human-atlas.cjs install
+          node scripts/build-human-atlas.cjs install build/human-atlas-source
       - name: Install Chromium
         run: npx playwright install chromium --with-deps
       - name: Exercise 3D anatomy in browser
@@ -192,12 +192,12 @@ jobs:
         run: |
           npm ci --ignore-scripts --prefix build/human-atlas-source
           curl --fail --location --retry 3 'https://raw.githubusercontent.com/Nurkan1/Anatria-3D/c830ea3a3b62030bf08e7353e8cb641bd38d2bfa/tools/asset-pipeline/vendor/TA2.csv' --output build/ta2.csv
-          ANATOMY_TA2_CSV=build/ta2.csv node scripts/build-human-atlas.cjs prepare
+          ANATOMY_TA2_CSV=build/ta2.csv node scripts/build-human-atlas.cjs prepare build/human-atlas-source
           npm run check --prefix build/human-atlas-source
           node build/human-atlas-source/scripts/validate-atlas.mjs
           node build/human-atlas-source/scripts/validate-interactions.mjs
           npm run build --prefix build/human-atlas-source -- --base=/aprender/anatomia/atlas/
-          node scripts/build-human-atlas.cjs install
+          node scripts/build-human-atlas.cjs install build/human-atlas-source
       - name: Prepare optimized UI images
         uses: actions/setup-python@v5
         with:
