@@ -112,7 +112,7 @@ test("Server proposes CEP -> sepse only for an actual STT result and validates m
 
 test("PWA and accessible styling have a consistent fresh release",()=>{
   const voiceRelease="20261102-leco-stt-server1";
-  const shellRelease="20261031-leco-actions-center1";
+  const shellRelease="20261106-observacoes69-1";
   assert.ok(page.includes("professor-alex-gemini.mjs?v="+voiceRelease));
   assert.ok(page.includes("pwa.js?v="+shellRelease));
   assert.ok(pwa.includes('const release = "'+shellRelease+'"'));
