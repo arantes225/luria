@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { addTissueFinish } from "./anatomy-tissue-material.mjs";
 
 const root = document.querySelector("[data-anatomy-organs]");
 if (root) {
@@ -21,7 +22,16 @@ if (root) {
     lungs: { label: "Pulmões", color: "#d77f86", summary: "Segmentos broncopulmonares, traqueia e árvores brônquicas.", structures: {
       FMA7338: "Segmento apical direito", FMA7339: "Segmento posterior direito", FMA7359: "Segmento anterior direito", FMA7361: "Segmento lateral direito", FMA7360: "Segmento medial direito", FMA7366: "Segmento superior direito", FMA7364: "Segmento basal anterior direito", FMA7363: "Segmento basal lateral direito", FMA7362: "Segmento basal posterior direito", FMA7372: "Segmento apicoposterior esquerdo", FMA7373: "Segmento anterior esquerdo", FMA7374: "Segmento lingular superior", FMA7375: "Segmento lingular inferior", FMA7376: "Segmento superior esquerdo", FMA7378: "Segmento basal anterior esquerdo", FMA7379: "Segmento basal lateral esquerdo", FMA7380: "Segmento basal posterior esquerdo", FMA7394: "Traqueia", FMA26661: "Árvore brônquica direita", FMA26662: "Árvore brônquica esquerda"
     }},
-    kidneys: { label: "Rins e vasos", color: "#c88773", summary: "Rins, ureteres e artérias renais. Esta malha não separa pelve e cálices renais.", structures: { "right-kidney": "Rim direito", "left-kidney": "Rim esquerdo", "right-ureter": "Ureter direito", "left-ureter": "Ureter esquerdo", "right-renal-artery": "Artéria renal direita", "left-renal-artery": "Artéria renal esquerda" }},
+    kidneys: { label: "Rins e sistema coletor", color: "#c88773", summary: "Cápsula, córtex, pirâmides, papilas, cálices e pelve renal dos dois lados, com ureteres e vasos renais. Abra a vista interna para estudar o sistema coletor.", structures: Object.fromEntries(
+      [["R", "direito", "direita", "right"], ["L", "esquerdo", "esquerda", "left"]].flatMap(([side, masc, fem, en]) => [
+        [`VH_F_kidney_capsule_${side}`, `Cápsula do rim ${masc}`], [`VH_F_outer_cortex_of_kidney_${side}`, `Córtex renal ${masc}`],
+        [`VH_F_hilum_of_kidney_${side}`, `Hilo renal ${masc}`], [`VH_F_renal_column_${side}`, `Colunas do rim ${masc}`],
+        [`VH_F_renal_pyramid_${side}`, `Pirâmides do rim ${masc}`], [`VH_F_renal_papilla_${side}`, `Papilas do rim ${masc}`],
+        [`VH_F_minor_calyx_${side}`, `Cálices menores do rim ${masc}`], [`VH_F_major_calyx_${side}`, `Cálices maiores do rim ${masc}`],
+        [`VH_F_renal_pelvis_${side}`, `Pelve renal ${fem}`], [`VH_F_${en}_ureter`, `Ureter ${masc}`],
+        [`VH_F_${en}_renal_artery`, `Artéria renal ${fem}`], [`VH_F_${en}_renal_vein`, `Veia renal ${fem}`]
+      ])
+    ) },
     stomach: { label: "Estômago e vasos", color: "#d5967c", summary: "Estômago, duodeno, baço, pâncreas e ramos do tronco celíaco.", structures: { stomach: "Estômago", esophagus: "Esôfago", duodenum: "Duodeno", "celiac-trunk": "Tronco celíaco", "left-gastric-artery": "Artéria gástrica esquerda", "splenic-artery": "Artéria esplênica", "common-hepatic-artery": "Artéria hepática comum", spleen: "Baço", pancreas: "Pâncreas" }},
     bladder: { label: "Bexiga e pelve masculina", color: "#d98f96", summary: "Referência pélvica masculina: bexiga, uretra, ureteres, próstata e assoalho pélvico.", structures: { "urinary-bladder": "Bexiga urinária", "right-ureter": "Ureter direito", "left-ureter": "Ureter esquerdo", urethra: "Uretra", prostate: "Próstata", "right-seminal-vesicle": "Vesícula seminal direita", "left-seminal-vesicle": "Vesícula seminal esquerda", "right-pubococcygeus": "Pubococcígeo direito", "left-pubococcygeus": "Pubococcígeo esquerdo", "right-puborectalis": "Puborretal direito", "left-puborectalis": "Puborretal esquerdo", rectum: "Reto" }},
     reproductive: { label: "Pelve reprodutora feminina", color: "#bb7688", summary: "Útero, colo, vagina, tubas, ovários, ligamentos, vasos uterinos e bexiga de referência feminina HuBMAP.", structures: { fundus:"Fundo uterino",body:"Corpo do útero",cornua:"Corno uterino","tubal-ostia":"Óstio tubário","lower-segment":"Segmento uterino inferior",cervix:"Colo do útero","internal-os":"Óstio interno do colo","external-os":"Óstio externo do colo",vagina:"Vagina","cervicovaginal-junction":"Junção cervicovaginal",isthmus:"Istmo das tubas",ampulla:"Ampola das tubas",infundibulum:"Infundíbulo das tubas",fimbriae:"Fímbrias","left-ovary":"Ovário esquerdo","right-ovary":"Ovário direito","broad-ligament":"Ligamento largo",mesosalpinx:"Mesossalpinge",mesovarium:"Mesovário","ovarian-ligaments":"Ligamentos ovarianos","suspensory-ligaments":"Ligamentos suspensores dos ovários","round-ligaments":"Ligamentos redondos","cardinal-ligaments":"Ligamentos cardinais","uterosacral-ligaments":"Ligamentos uterossacros","uterine-arteries":"Artérias uterinas","uterine-veins":"Veias uterinas",bladder:"Bexiga urinária" }},
@@ -48,14 +58,49 @@ if (root) {
     areola: "Área pigmentada ao redor do mamilo.",
     nipple: "Projeção central da mama por onde desembocam os ductos lactíferos."
   };
-  function materialFor(source) { const material = source.clone(); material.side = THREE.DoubleSide; material.roughness = Math.max(.58, material.roughness ?? .7); material.metalness = 0; material.emissive = new THREE.Color("#000000"); return material; }
+  const hasLayers = () => currentKey === "breasts" || currentKey === "kidneys";
+  const isOuter = id => currentKey === "breasts" ? /_(fat|areola|nipple|areolar_tubercles)_/.test(id) : /kidney_capsule|outer_cortex/.test(id);
+  function updateAppearance() {
+    objects.forEach((meshes, id) => meshes.forEach(object => {
+      const selected = selectedId === id;
+      if (selected) object.visible = true;
+      const opacity = cut && hasLayers() ? (isOuter(id) ? (selected ? .42 : .16) : 1) : selectedId && !selected ? .26 : 1;
+      object.material.emissive?.set(selected ? "#fff0b4" : "#000000");
+      object.material.emissiveIntensity = selected ? .25 : 0;
+      object.material.opacity = opacity;
+      object.material.transparent = opacity < 1;
+      object.material.depthWrite = opacity === 1;
+    }));
+  }
+  function materialFor(source, id, key, modelSize) {
+    const material = source.clone();
+    material.side = THREE.DoubleSide;
+    material.roughness = Math.max(.72, material.roughness ?? .7);
+    material.metalness = 0;
+    material.emissive = new THREE.Color("#000000");
+    if (key === "lungs") {
+      // The source assigns unrelated green/orange hues to individual lung segments.
+      // Keep each segment selectable while using a consistent parenchymal palette.
+      material.color.set(id === "FMA7394" ? "#b39b93" : id.startsWith("FMA266") ? "#bda598" : "#b66c73");
+      material.roughness = .87;
+    }
+    const tissue = !/arter|vein|duct|ureter|calyx|pelvis|ligament|FMA266|FMA7394/i.test(id);
+    return tissue && material.isMeshStandardMaterial ? addTissueFinish(material, modelSize, key === "lungs" ? 1.3 : .85) : material;
+  }
   function select(id) {
     if (!objects.has(id)) return;
     selectedId = id;
-    objects.forEach((meshes, key) => meshes.forEach(object => { if (key === id) object.visible = true; object.material.emissive?.set(key === id ? "#fff0b4" : "#000000"); object.material.emissiveIntensity = key === id ? .27 : 0; object.material.opacity = key === id ? 1 : .26; object.material.transparent = key !== id; object.material.depthWrite = key === id; }));
+    updateAppearance();
     const label = labelFor(id);
     const breastPart = currentKey === "breasts" ? Object.keys(breastDetails).find(part => id.includes(`_${part}_`) || id.includes(`_${part}`)) : null;
-    detailTitle.textContent = label; detailCopy.textContent = breastPart ? breastDetails[breastPart] : `${label}. Malha segmentada da referência ${currentKey === "reproductive" ? "feminina HuBMAP" : current().label.toLowerCase()}. Gire o modelo e use o corte didático para observar suas relações.`;
+    const renalDescription = currentKey === "kidneys" ? Object.entries({
+      renal_pelvis: "Recebe a urina dos cálices maiores e continua como ureter.",
+      minor_calyx: "Recebe a urina de uma papila renal e a conduz para um cálice maior.",
+      major_calyx: "Reúne a urina de cálices menores e a conduz para a pelve renal.",
+      renal_papilla: "Ápice da pirâmide renal, onde os ductos papilares desembocam no cálice menor.",
+      renal_pyramid: "Estrutura da medula renal cujo ápice forma a papila."
+    }).find(([part]) => id.includes(part))?.[1] : null;
+    detailTitle.textContent = label; detailCopy.textContent = breastPart ? breastDetails[breastPart] : renalDescription || `${label}. Gire o modelo para observar a relação com as estruturas ao redor.`;
     announce(`${label}. Estrutura selecionada.`);
     list?.querySelectorAll("button").forEach(button => button.classList.toggle("is-active", button.dataset.structureId === id));
   }
@@ -67,8 +112,25 @@ if (root) {
   function clearModel() { if (!model) return; scene.remove(model); model.traverse(object => { if (object.isMesh) { object.geometry.dispose(); object.material.dispose(); } }); model = null; objects.clear(); }
   function buildList() { if (!list) return; list.innerHTML = ""; for (const [id, label] of Object.entries(current().structures)) { if (model && !objects.has(id)) continue; const button = document.createElement("button"); button.type = "button"; button.dataset.structureId = id; button.textContent = label; button.addEventListener("click", () => select(id)); list.append(button); } }
   function load(key) {
-    currentKey = key; title.textContent = current().label; summary.textContent = current().summary; detailTitle.textContent = "Selecione uma estrutura"; detailCopy.textContent = "Clique na malha colorida ou escolha uma estrutura na lista."; selectedId = ""; clearModel(); buildList(); cut = false; renderer.localClippingEnabled = false; const cutButton = document.querySelector("[data-organ-cut]"); cutButton?.setAttribute("aria-pressed", "false"); if (cutButton) cutButton.textContent = key === "breasts" ? "Ver por dentro" : "Corte didático"; loading.hidden = false; loading.classList.remove("is-error"); progress.style.width = "0%";
-    new GLTFLoader().load(`/assets/models/anatomia/orgaos/${key}.glb`, gltf => { if (key !== currentKey) return; model = gltf.scene; model.traverse(object => { if (!object.isMesh) return; const id = object.userData.structureId || object.name; object.material = materialFor(object.material); object.userData.structureId = id; if (key === "reproductive" && (id === "broad-ligament" || id === "bladder")) object.visible = false; if (!objects.has(id)) objects.set(id, []); objects.get(id).push(object); }); scene.add(model); fit(); buildList(); loading.hidden = true; announce(`${current().label} carregado. Selecione uma estrutura.`); }, event => { if (event.total) progress.style.width = `${Math.min(100, event.loaded / event.total * 100)}%`; }, error => { if (key !== currentKey) return; loading.hidden = false; loading.classList.add("is-error"); loading.querySelector("strong").textContent = "Modelo indisponível"; loading.querySelector("span").textContent = "Recarregue a página para tentar novamente."; announce(`Não foi possível carregar ${current().label}.`); console.error(error); });
+    currentKey = key; title.textContent = current().label; summary.textContent = current().summary; detailTitle.textContent = "Selecione uma estrutura"; detailCopy.textContent = "Clique na malha colorida ou escolha uma estrutura na lista."; selectedId = ""; clearModel(); buildList(); cut = false; renderer.localClippingEnabled = false; const cutButton = document.querySelector("[data-organ-cut]"); cutButton?.setAttribute("aria-pressed", "false"); if (cutButton) cutButton.textContent = hasLayers() ? "Ver por dentro" : "Corte didático"; loading.hidden = false; loading.classList.remove("is-error"); progress.style.width = "0%";
+    const version = hasLayers() ? "?v=hra2" : "";
+    new GLTFLoader().load(`/assets/models/anatomia/orgaos/${key}.glb${version}`, gltf => {
+      if (key !== currentKey) return;
+      model = gltf.scene;
+      const size = new THREE.Box3().setFromObject(model).getSize(new THREE.Vector3());
+      model.traverse(object => {
+        if (!object.isMesh) return;
+        const sourceId = object.userData.structureId || object.name;
+        const id = key === "kidneys" ? sourceId.replace(/((?:renal_papilla|renal_pyramid|minor_calyx|major_calyx)_[LR])_[a-z]$/, "$1") : sourceId;
+        object.material = materialFor(object.material, id, key, Math.max(size.x, size.y, size.z));
+        object.userData.structureId = id;
+        if (key === "reproductive" && (id === "broad-ligament" || id === "bladder")) object.visible = false;
+        if (!objects.has(id)) objects.set(id, []);
+        objects.get(id).push(object);
+      });
+      scene.add(model); fit(); buildList(); updateAppearance(); loading.hidden = true;
+      announce(`${current().label} carregado. Selecione uma estrutura.`);
+    }, event => { if (event.total) progress.style.width = `${Math.min(100, event.loaded / event.total * 100)}%`; }, error => { if (key !== currentKey) return; loading.hidden = false; loading.classList.add("is-error"); loading.querySelector("strong").textContent = "Modelo indisponível"; loading.querySelector("span").textContent = "Recarregue a página para tentar novamente."; announce(`Não foi possível carregar ${current().label}.`); console.error(error); });
   }
   try {
     renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: "low-power" });
@@ -76,21 +138,15 @@ if (root) {
     scene = new THREE.Scene(); camera = new THREE.PerspectiveCamera(32, 1, .01, 100); controls = new OrbitControls(camera, canvas); controls.enableDamping = !reducedMotion; controls.enablePan = true; controls.autoRotateSpeed = .55; scene.add(new THREE.HemisphereLight(0xfff1e8, 0x55708d, 1.05)); const key = new THREE.DirectionalLight(0xffe4d5, 1.9); key.position.set(3, 5, 5); scene.add(key); const fill = new THREE.DirectionalLight(0xc9dcfa, .9); fill.position.set(-4, 2, 3); scene.add(fill);
     const resize = () => { const rect = root.getBoundingClientRect(); renderer.setSize(rect.width, rect.height, false); camera.aspect = rect.width / rect.height; camera.updateProjectionMatrix(); }; new ResizeObserver(resize).observe(root); resize();
     const raycaster = new THREE.Raycaster(), pointer = new THREE.Vector2();
-    canvas.addEventListener("pointerup", event => { const rect = canvas.getBoundingClientRect(); pointer.set((event.clientX - rect.left) / rect.width * 2 - 1, -(event.clientY - rect.top) / rect.height * 2 + 1); raycaster.setFromCamera(pointer, camera); const hit = raycaster.intersectObjects([...objects.values()].flat(), true)[0]; if (hit) select(hit.object.userData.structureId || hit.object.name); });
+    canvas.addEventListener("pointerup", event => { const rect = canvas.getBoundingClientRect(); pointer.set((event.clientX - rect.left) / rect.width * 2 - 1, -(event.clientY - rect.top) / rect.height * 2 + 1); raycaster.setFromCamera(pointer, camera); const hits = raycaster.intersectObjects([...objects.values()].flat().filter(mesh => mesh.visible), false).filter(hit => !renderer.localClippingEnabled || hit.point.x >= 0); const hit = (cut && hasLayers() ? hits.find(candidate => !isOuter(candidate.object.userData.structureId)) : null) || hits[0]; if (hit) select(hit.object.userData.structureId || hit.object.name); });
     document.querySelectorAll("[data-organ]").forEach(button => button.addEventListener("click", () => { document.querySelectorAll("[data-organ]").forEach(item => item.classList.toggle("is-active", item === button)); history.replaceState(null, "", `?orgao=${encodeURIComponent(button.dataset.organ)}`); load(button.dataset.organ); }));
-    document.querySelector("[data-organ-reset]")?.addEventListener("click", () => { objects.forEach(meshes => meshes.forEach(object => { object.material.opacity = 1; object.material.transparent = false; object.material.depthWrite = true; object.material.emissiveIntensity = 0; })); selectedId = ""; detailTitle.textContent = "Selecione uma estrutura"; detailCopy.textContent = "Clique na malha colorida ou escolha uma estrutura na lista."; list?.querySelectorAll("button").forEach(button => button.classList.remove("is-active")); fit(); });
+    document.querySelector("[data-organ-reset]")?.addEventListener("click", () => { selectedId = ""; updateAppearance(); detailTitle.textContent = "Selecione uma estrutura"; detailCopy.textContent = "Clique na malha colorida ou escolha uma estrutura na lista."; list?.querySelectorAll("button").forEach(button => button.classList.remove("is-active")); fit(); });
     document.querySelector("[data-organ-rotate]")?.addEventListener("click", event => { rotating = !rotating; controls.autoRotate = rotating; event.currentTarget.setAttribute("aria-pressed", String(rotating)); });
     document.querySelector("[data-organ-cut]")?.addEventListener("click", event => {
       cut = !cut; event.currentTarget.setAttribute("aria-pressed", String(cut));
-      if (currentKey === "breasts") {
+      if (hasLayers()) {
         event.currentTarget.textContent = cut ? "Ver exterior" : "Ver por dentro";
-        objects.forEach((meshes, id) => meshes.forEach(object => {
-          const outer = /_(fat|areola|nipple|areolar_tubercles)_/.test(id);
-          object.material.clippingPlanes = [];
-          object.material.transparent = cut && outer;
-          object.material.opacity = cut && outer ? .19 : 1;
-          object.material.depthWrite = !cut || !outer;
-        }));
+        updateAppearance();
         renderer.localClippingEnabled = false;
       } else {
         objects.forEach(meshes => meshes.forEach(object => { object.material.clippingPlanes = cut ? [new THREE.Plane(new THREE.Vector3(1, 0, 0), 0)] : []; object.material.needsUpdate = true; }));

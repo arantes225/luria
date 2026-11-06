@@ -14,7 +14,7 @@ const modelPath = process.env.ANATOMY_MODEL_PATH
   : path.join(root, "assets/models/anatomia/coracao.glb");
 const model = fs.readFileSync(modelPath);
 const modelSha = crypto.createHash("sha256").update(model).digest("hex");
-if (modelSha !== "70ec2937b3736b3dfe1ac3b1c3f97d6529d58c63018a891fe9ae93116612f560") {
+if (modelSha !== "bae17db2a15cc10471eed8232e0299264dae2650088fc340b872e4e3dc3bae50") {
   throw new Error("O modelo HRA do coração não corresponde à revisão verificada");
 }
 

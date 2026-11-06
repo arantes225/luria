@@ -32,7 +32,7 @@ test("modelo segmentado possui seleção real, interior e fluxo didático", () =
   assert.match(viewer, /raycaster\.intersectObject\(organ, true\)/);
   assert.match(viewer, /object\.userData\.structureId/);
   assert.match(viewer, /VH_F_ascending_aorta/);
-  assert.match(build, /70ec2937b3736b3dfe1ac3b1c3f97d6529d58c63018a891fe9ae93116612f560/);
+  assert.match(build, /bae17db2a15cc10471eed8232e0299264dae2650088fc340b872e4e3dc3bae50/);
   assert.match(build, /Estruturas do atlas ausentes/);
   assert.equal(isPublicFile("assets/models/anatomia/coracao.glb"), true);
 });

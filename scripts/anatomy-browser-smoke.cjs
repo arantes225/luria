@@ -28,6 +28,7 @@ const server = http.createServer((request, response) => {
     const page = await browser.newPage({ viewport: { width: 1365, height: 900 }, deviceScaleFactor: 1 });
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
+    page.on("console", message => { if (message.type() === "error" && /THREE.*(?:Shader|VALIDATE_STATUS)/i.test(message.text())) errors.push(message.text()); });
     await page.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/", { waitUntil: "domcontentloaded" });
     await page.waitForURL("**/aprender/anatomia/atlas/", { timeout: 15000 });
     await page.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/coracao/", { waitUntil: "domcontentloaded" });
@@ -48,18 +49,31 @@ const server = http.createServer((request, response) => {
     const atlas = await browser.newPage({ viewport: { width: 1365, height: 900 }, deviceScaleFactor: 1 });
     const atlasErrors = [];
     atlas.on("pageerror", error => atlasErrors.push(error.message));
+    const atlasFiles = JSON.parse(fs.readFileSync(path.join(root, "aprender/anatomia/atlas/models/atlas.json"), "utf8")).chunks;
+    const byName = new Map(atlasFiles.map(file => [file.gzip, file]));
+    const fetched = new Set();
+    atlas.on("request", request => { const pathname = new URL(request.url()).pathname; if (byName.has(pathname)) fetched.add(pathname); });
     await atlas.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/atlas/", { waitUntil: "domcontentloaded" });
     await atlas.locator(".system-row").first().waitFor({ timeout: 45000 });
     assert.equal(await atlas.locator(".system-row").count(), 15);
     await atlas.locator("canvas").first().waitFor({ timeout: 45000 });
     await atlas.locator(".loading").waitFor({ state: "hidden", timeout: 120000 });
+    assert.equal(fetched.size, atlasFiles.filter(file => file.system === "integumentary").length);
+    assert.ok([...fetched].every(url => byName.get(url).system === "integumentary"));
+    console.log("Male atlas initial mesh transfer:", [...fetched].reduce((bytes, url) => bytes + byName.get(url).gzipBytes, 0), "bytes");
     await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-desktop.png") });
+    await Promise.all([
+      atlas.waitForResponse(response => byName.get(new URL(response.url()).pathname)?.system === "skeletal" && response.ok()),
+      atlas.getByRole("button", { name: "Esqueleto", exact: true }).click()
+    ]);
+    await atlas.locator(".loading").waitFor({ state: "hidden", timeout: 120000 });
+    assert.ok([...fetched].every(url => ["integumentary", "skeletal"].includes(byName.get(url).system)));
     await atlas.setViewportSize({ width: 390, height: 844 });
     await atlas.getByRole("button", { name: "Abrir camadas de sistemas" }).click();
     await atlas.locator(".system-row").first().waitFor({ state: "visible" });
     await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-mobile.png") });
     assert.equal(atlasErrors.length, 0, atlasErrors.join("\n"));
-    assert.equal(errors.filter(message => message.includes("anatomy")).length, 0, errors.join("\n"));
+    assert.equal(errors.length, 0, errors.join("\n"));
     console.log("Anatomy browser smoke passed: model, interior, flow, card, mobile");
   } finally {
     await browser.close();

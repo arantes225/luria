@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { addTissueFinish } from "./anatomy-tissue-material.mjs";
 
 const root = document.querySelector("[data-anatomy-viewer]");
 if (root) {
@@ -142,51 +143,6 @@ if (root) {
     const rim = new THREE.DirectionalLight(0xffd2bf, 1.6);
     rim.position.set(-2, 3, -5);
     scene.add(rim);
-    // Subtle tissue variation is generated in object space, so the atlas geometry
-    // and its anatomical IDs remain untouched and selection still follows the mesh.
-    function tissueMaterial(color, vessel) {
-      const material = new THREE.MeshPhysicalMaterial({
-        color, roughness: vessel ? 0.66 : 0.83, metalness: 0,
-        clearcoat: vessel ? 0.18 : 0.08, clearcoatRoughness: 0.72,
-        side: THREE.DoubleSide
-      });
-      material.onBeforeCompile = shader => {
-        shader.vertexShader = shader.vertexShader.replace(
-          '#include <common>',
-          '#include <common>\nvarying vec3 vTissuePosition;'
-        ).replace(
-          '#include <begin_vertex>',
-          '#include <begin_vertex>\nvTissuePosition = position;'
-        );
-        shader.fragmentShader = shader.fragmentShader.replace(
-          '#include <common>',
-          `#include <common>
-          varying vec3 vTissuePosition;
-          float tissueHash(vec3 p) {
-            p = fract(p * 0.1031);
-            p += dot(p, p.yxz + 33.33);
-            return fract((p.x + p.y) * p.z);
-          }
-          float tissueNoise(vec3 p) {
-            vec3 i = floor(p), f = fract(p);
-            f = f * f * (3.0 - 2.0 * f);
-            return mix(mix(mix(tissueHash(i), tissueHash(i + vec3(1,0,0)), f.x),
-                           mix(tissueHash(i + vec3(0,1,0)), tissueHash(i + vec3(1,1,0)), f.x), f.y),
-                       mix(mix(tissueHash(i + vec3(0,0,1)), tissueHash(i + vec3(1,0,1)), f.x),
-                           mix(tissueHash(i + vec3(0,1,1)), tissueHash(i + vec3(1,1,1)), f.x), f.y), f.z);
-          }`
-        ).replace(
-          '#include <color_fragment>',
-          `#include <color_fragment>
-          float tissueBroad = tissueNoise(vTissuePosition * 9.0);
-          float tissueFine = tissueNoise(vTissuePosition * 47.0);
-          float tissueGrain = 0.78 + 0.31 * tissueBroad + 0.11 * tissueFine;
-          diffuseColor.rgb *= tissueGrain;`
-        );
-      };
-      material.customProgramCacheKey = () => 'anatomy-tissue-v1';
-      return material;
-    }
     let organ = null;
     let interior = false;
     let flowEnabled = false;
@@ -250,7 +206,7 @@ if (root) {
       flowButton.setAttribute("aria-pressed", String(flowEnabled));
       flowButton.textContent = flowEnabled ? "Pausar fluxo" : "Mostrar fluxo";
     });
-    new GLTFLoader().load("/assets/models/anatomia/coracao.glb", gltf => {
+    new GLTFLoader().load("/assets/models/anatomia/coracao.glb?v=hra2", gltf => {
       try {
         organ = gltf.scene;
         const box = new THREE.Box3().setFromObject(organ);
@@ -270,6 +226,9 @@ if (root) {
           object.material.side = THREE.DoubleSide;
           object.material.metalness = 0;
           object.material.roughness = structure.group === "Grandes vasos" || structure.group === "Coronárias" || structure.group === "Ramos da aorta" ? .68 : .82;
+          if (structure.group === "Câmaras e paredes" || id.includes("papillary_muscle")) {
+            addTissueFinish(object.material, Math.max(size.x, size.y, size.z), 1.55);
+          }
           object.userData.structureId = id;
           meshes.set(id, object);
         });

@@ -13,9 +13,9 @@ const color = (hex) => [1, 3, 5].map(start => {
   return srgb <= .04045 ? srgb / 12.92 : ((srgb + .055) / 1.055) ** 2.4;
 }).concat(1);
 const heartColor = part => {
-  if (/coronary|artery|aorta|aortic_arch|subclavian|carotid|brachiocephalic/.test(part.id)) return color("#b95150");
   if (/pulmonary_trunk|pulmonary_artery/.test(part.id)) return color("#577b9d");
   if (/vena_cava|cardiac_vein/.test(part.id)) return color("#5b7897");
+  if (/coronary|artery|aorta|aortic_arch|subclavian|carotid|brachiocephalic/.test(part.id)) return color("#b95150");
   if (/valve/.test(part.id)) return color("#e4c29c");
   if (/papillary/.test(part.id)) return color("#a8665e");
   return color("#a94d50");
@@ -30,7 +30,13 @@ const breastColor = part => {
 };
 const heart = manifest.parts.filter(p => p.system === "cardiac" || /^VH_F_(great_cardiac_vein|anterior_cardiac_vein|superior_vena_cava|inferior_vena_cava_)/.test(p.id));
 const breasts = manifest.parts.filter(p => /^VH_F_(fat_[LR]|areolar_tubercles_[LR]|nipple_[LR]|areola_[LR]|mammary_lobes_[LR]|main_lactiferous_(ducts|sinuses)_[LR]|suspensory_ligaments_[LR])$/.test(p.id));
-if (heart.length < 40 || breasts.length !== 16) throw new Error(`HRA inventory changed: heart ${heart.length}, breasts ${breasts.length}`);
+const kidneys = manifest.parts.filter(p => /^VH_F_((kidney_capsule|hilum_of_kidney|outer_cortex_of_kidney|renal_column|renal_pelvis)_[LR]|(renal_papilla|renal_pyramid|minor_calyx|major_calyx)_[LR]_[a-z]|(right|left)_(ureter|renal_artery|renal_vein))$/.test(p.id));
+if (heart.length < 40 || breasts.length !== 16 || kidneys.length < 75) throw new Error(`HRA inventory changed: heart ${heart.length}, breasts ${breasts.length}, kidneys ${kidneys.length}`);
+const renalColor = part => color(
+  /renal_artery/.test(part.id) ? "#a54145" : /renal_vein/.test(part.id) ? "#5b7897" :
+  /calyx|renal_pelvis|ureter/.test(part.id) ? "#d9af83" : /renal_papilla|renal_pyramid/.test(part.id) ? "#a86867" :
+  /capsule/.test(part.id) ? "#985455" : "#7f4648"
+);
 
 function exportGLB(parts, out, chooseColor) {
   const buffers = new Map();
@@ -54,7 +60,8 @@ function exportGLB(parts, out, chooseColor) {
     if (!buffers.has(part.chunk)) buffers.set(part.chunk, fs.readFileSync(path.join(source, path.basename(manifest.chunks[part.chunk].url))));
     const sourceBytes = buffers.get(part.chunk);
     const positionBytes = sourceBytes.subarray(part.positions, part.positions + part.vertexCount * 12);
-    const normalBytes = sourceBytes.subarray(part.normals, part.normals + part.vertexCount * 6);
+    const normalBytes = Buffer.alloc(part.vertexCount * 8);
+    for (let i = 0; i < part.vertexCount; i++) sourceBytes.copy(normalBytes, i * 8, part.normals + i * 6, part.normals + i * 6 + 6);
     const indexBytes = sourceBytes.subarray(part.indices, part.indices + part.indexCount * 4);
     const min = [Infinity, Infinity, Infinity], max = [-Infinity, -Infinity, -Infinity];
     for (let i = 0; i < part.vertexCount; i++) for (let a = 0; a < 3; a++) {
@@ -62,14 +69,16 @@ function exportGLB(parts, out, chooseColor) {
       min[a] = Math.min(min[a], value); max[a] = Math.max(max[a], value);
     }
     const position = accessor(append(positionBytes, 34962), 5126, part.vertexCount, "VEC3", min, max);
-    const normal = accessor(append(normalBytes, 34962), 5122, part.vertexCount, "VEC3", null, null, true);
+    const normalView = append(normalBytes, 34962);
+    bufferViews[normalView].byteStride = 8;
+    const normal = accessor(normalView, 5122, part.vertexCount, "VEC3", null, null, true);
     const indices = accessor(append(indexBytes, 34963), 5125, part.indexCount, "SCALAR");
     const rgba = chooseColor(part), key = rgba.join(",");
     if (!materialIds.has(key)) materialIds.set(key, materials.push({ name: key, pbrMetallicRoughness: { baseColorFactor: rgba, metallicFactor: 0, roughnessFactor: .86 }, doubleSided: true }) - 1);
     const meshIndex = meshes.push({ name: part.id, primitives: [{ attributes: { POSITION: position, NORMAL: normal }, indices, material: materialIds.get(key) }] }) - 1;
     nodes.push({ name: part.id, mesh: meshIndex, extras: { structureId: part.id } });
   }
-  const gltf = { asset: { version: "2.0", generator: "TRAUBE HRA named-mesh export" }, scene: 0, scenes: [{ nodes: nodes.map((_, i) => i) }], nodes, meshes, materials, accessors, bufferViews, buffers: [{ byteLength }] };
+  const gltf = { asset: { version: "2.0", generator: "TRAUBE HRA named-mesh export" }, extensionsUsed: ["KHR_mesh_quantization"], extensionsRequired: ["KHR_mesh_quantization"], scene: 0, scenes: [{ nodes: nodes.map((_, i) => i) }], nodes, meshes, materials, accessors, bufferViews, buffers: [{ byteLength }] };
   const json = Buffer.from(JSON.stringify(gltf));
   const jsonPadding = (4 - json.length % 4) % 4;
   const binPadding = (4 - byteLength % 4) % 4;
@@ -85,5 +94,6 @@ function exportGLB(parts, out, chooseColor) {
 }
 exportGLB(heart, path.join(destination, "coracao.glb"), heartColor);
 exportGLB(breasts, path.join(destination, "orgaos/breasts.glb"), breastColor);
-const attribution = "Malhas anatômicas de Human Reference Atlas / HuBMAP, referência feminina, CC BY 4.0. Extraídas sem alterar a geometria do conjunto ImliStack/Body-Atlas-3D, commit b0e04f6e058c767d51c1529369b7545315c5c6bd. Alterações: seleção de malhas por identificação HRA e materiais de visualização. https://humanatlas.io/3d-reference-library · https://creativecommons.org/licenses/by/4.0/\n";
+exportGLB(kidneys, path.join(destination, "orgaos/kidneys.glb"), renalColor);
+const attribution = "Kristen Browne e Heidi Schlehlein, Human Reference Atlas / HuBMAP, 3D Reference Organ Set for Female v1.5 (2023), CC BY 4.0. Malhas extraídas do conjunto ImliStack/Body-Atlas-3D, commit b0e04f6e058c767d51c1529369b7545315c5c6bd. Alterações: seleção de malhas por identificação HRA e materiais de visualização. https://doi.org/10.48539/HBM352.BTSQ.586 · https://creativecommons.org/licenses/by/4.0/\n";
 fs.writeFileSync(path.join(destination, "ATTRIBUTION-HRA.md"), attribution);
