@@ -567,8 +567,10 @@ function sharedStudyratsRender(){
       const total=path.getTotalLength();
       const place=function(pct){
         const point=path.getPointAtLength(total*Math.max(0,Math.min(100,pct))/100);
-        el.style.left=(svg.offsetLeft+point.x/1000*svg.clientWidth)+'px';
-        el.style.top=(svg.offsetTop+point.y/120*svg.clientHeight)+'px';
+        const svgBox=svg.getBoundingClientRect();
+        const roadBox=road.getBoundingClientRect();
+        el.style.left=(svgBox.left-roadBox.left+point.x/1000*svgBox.width)+'px';
+        el.style.top=(svgBox.top-roadBox.top+point.y/120*svgBox.height)+'px';
       };
       if(!Number.isFinite(from)||Math.abs(to-from)<.1||matchMedia('(prefers-reduced-motion: reduce)').matches){place(to);return;}
       const start=performance.now();
