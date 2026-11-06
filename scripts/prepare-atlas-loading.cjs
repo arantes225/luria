@@ -3,11 +3,17 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { gzipSync } = require("node:zlib");
 
+const mammaryPart = /^VH_F_(fat_[LR]|areolar_tubercles_[LR]|nipple_[LR]|areola_[LR]|mammary_lobes_[LR]|main_lactiferous_(ducts|sinuses)_[LR]|suspensory_ligaments_[LR])$/;
+
 // Keep every vertex and identifier, but isolate each system in independently loadable files.
 function repack(directory, name) {
   const file = path.join(directory, name + ".json");
   const atlas = JSON.parse(fs.readFileSync(file, "utf8"));
-  if (atlas.chunks.every(chunk => chunk.system)) return;
+  const female = name === "atlas-female";
+  const mammary = female ? atlas.parts.filter(part => mammaryPart.test(part.id)) : [];
+  if (female && mammary.length !== 16) throw Error("Female mammary catalogue changed");
+  if (atlas.chunks.every(chunk => chunk.system) && mammary.every(part => part.system === "mammary")) return;
+  for (const part of mammary) part.system = "mammary";
   const original = atlas.chunks.map(chunk => fs.readFileSync(path.join(directory, path.basename(chunk.url))));
   const prefix = atlas.chunks[0].url.replace(/[^/]+$/, "");
   const bySystem = new Map();
@@ -21,7 +27,7 @@ function repack(directory, name) {
     let buffers = [], offset = 0;
     const flush = () => {
       if (!offset) return;
-      const key = name + "-system-" + chunks.length + ".bin";
+      const key = name + (female ? "-surface-v2" : "") + "-system-" + chunks.length + ".bin";
       const bin = Buffer.concat(buffers, offset), gzip = gzipSync(bin);
       fs.writeFileSync(path.join(directory, key), bin);
       fs.writeFileSync(path.join(directory, key + ".gz"), gzip);
@@ -51,6 +57,17 @@ function repack(directory, name) {
 module.exports = function prepareAtlasLoading(source) {
   const modelPath = path.join(source, "public/models");
   for (const name of ["atlas", "atlas-female"]) repack(modelPath, name);
+  const anatomyPath = path.join(source, "app/anatomy.ts");
+  const anatomy = fs.readFileSync(anatomyPath, "utf8");
+  if (!anatomy.includes("id:'mammary'")) {
+    const surface = " {id:'integumentary',";
+    const systemType = /^(export type SystemId = [^;]+);/m;
+    if (!anatomy.includes(surface) || !systemType.test(anatomy)) throw Error("Upstream atlas system definitions changed");
+    const updated = anatomy
+      .replace(systemType, "$1|'mammary';")
+      .replace(surface, " {id:'mammary',name:'Mamas',color:'#bf8088',description:'Explore as glândulas mamárias e os tecidos ao redor.'},\n" + surface);
+    fs.writeFileSync(anatomyPath, updated);
+  }
   const scenePath = path.join(source, "app/scene.tsx");
   let scene = fs.readFileSync(scenePath, "utf8");
   if (!scene.includes("function loadVisibleChunks")) {
@@ -89,7 +106,9 @@ module.exports = function prepareAtlasLoading(source) {
   }
   const pagePath = path.join(source, "app/page.tsx");
   let page = fs.readFileSync(pagePath, "utf8");
-  page = page.replace(/'models\/(atlas(?:-female)?\.json)'/g, "'models/$1?v=camadas1'");
+  page = page
+    .replace(/'models\/(atlas(?:-female)?\.json)'/g, "'models/$1?v=camadas1'")
+    .replace(/atlas-female\.json\?v=camadas\d+/g, "atlas-female.json?v=camadas2");
   if (!page.includes("const exterior:")) {
     page = page.replace("const initial:SceneState", "const exterior: SystemId[] = ['integumentary'];\nconst initial:SceneState")
       .replace(/visible:sex==='feminino'\?\['integumentary'\]:DEFAULT_VISIBLE/g, "visible:exterior")

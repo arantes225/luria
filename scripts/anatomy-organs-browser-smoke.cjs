@@ -61,6 +61,13 @@ const server = http.createServer((request, response) => {
     assert.ok([...fetched].every(url => byName.get(url).system === "integumentary"));
     console.log("Female atlas initial mesh transfer:", [...fetched].reduce((bytes, url) => bytes + byName.get(url).gzipBytes, 0), "bytes");
     await atlas.screenshot({path:path.join(root,"../anatomy-female-body-desktop.png")});
+    const mammaryLayer = atlas.getByRole("switch", {name:"Mostrar mamas", exact:true});
+    const mammaryResponse = atlas.waitForResponse(response => byName.get(new URL(response.url()).pathname)?.system === "mammary" && response.ok());
+    await mammaryLayer.click();
+    await mammaryResponse;
+    await atlas.locator(".loading").waitFor({state:"hidden",timeout:120000});
+    assert.equal(await mammaryLayer.getAttribute("aria-checked"), "true");
+    assert.ok([...fetched].some(url => byName.get(url).system === "mammary"));
     console.log("female atlas",await atlas.locator(".identity-meta").textContent());
     if(errors.length) throw Error(errors.join("\n"));
   } finally { await browser.close(); server.close(); }

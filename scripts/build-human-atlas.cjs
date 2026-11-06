@@ -63,24 +63,33 @@ if (mode === "prepare") {
 
   const scenePath = path.join(source, "app/scene.tsx");
   let scene = fs.readFileSync(scenePath, "utf8");
+  const femaleReferenceAnchor = "  const abort=new AbortController();";
+  if (!scene.includes(femaleReferenceAnchor)) throw Error("Human Atlas scene initialization changed upstream");
+  scene = scene.replace(femaleReferenceAnchor, "  const femaleReference=atlas.parts.some(part=>part.system==='mammary');\n" + femaleReferenceAnchor);
   const oldMaterial = "metalness:.08,roughness:.53";
   if (!scene.includes(oldMaterial)) throw new Error("Human Atlas material changed upstream");
-  scene = scene.replace(oldMaterial, "metalness:0,roughness:system==='muscular'||system==='cardiac'?.78:system==='skeletal'?.86:.62");
+  scene = scene.replace(oldMaterial, "metalness:0,roughness:skinSurface?.85:system==='muscular'||system==='cardiac'?.78:system==='skeletal'?.86:.62");
+  scene = scene.replace("  const materialFor=(system:string)=>{", "  const materialFor=(system:string)=>{\n   const skinSurface=femaleReference&&system==='integumentary';");
+  scene = scene.replace("color:SYSTEMS.find(s=>s.id===system)?.color??'#aebbb8'", "color:skinSurface?'#bf9587':(SYSTEMS.find(s=>s.id===system)?.color??'#aebbb8')");
   scene = scene.replace("transparent:system==='integumentary',opacity:system==='integumentary'?.1:1,depthWrite:system!=='integumentary'", "transparent:false,opacity:1,depthWrite:true");
   scene = scene.replace("renderer.setClearColor('#f2f3f3')", "renderer.setClearColor('#e9f0f8')");
   scene = scene.replace("renderer.toneMappingExposure=1.12", "renderer.toneMappingExposure=1.02");
   scene = scene.replace("This browser could not start the 3D viewer. Please try a browser with WebGL enabled.", "Este navegador não conseguiu iniciar o atlas 3D. Ative o WebGL ou tente outro navegador.");
   scene = scene.replace("Interactive human anatomy. Drag to orbit, pinch or scroll to zoom, and tap a structure to inspect it.", "Anatomia humana interativa. Arraste para girar, aproxime com dois dedos ou a roda do mouse e toque em uma estrutura para identificá-la.");
-  scene = scene.replace("scene.add(new T.HemisphereLight(0xffffff,0xa7acb2,1.05));", "scene.add(new T.HemisphereLight(0xfff3e9,0x617184,1.18));");
-  scene = scene.replace("const key=new T.DirectionalLight(0xfffaf4,2.3)", "const key=new T.DirectionalLight(0xffeadc,2.8)");
-  scene = scene.replace("const rim=new T.DirectionalLight(0xe9f0ff,1.8)", "const rim=new T.DirectionalLight(0xc9ddfa,1.45)");
+  scene = scene.replace("scene.add(new T.HemisphereLight(0xffffff,0xa7acb2,1.05));", "scene.add(new T.HemisphereLight(femaleReference?0xfff7f3:0xfff3e9,femaleReference?0xb9a9aa:0x617184,femaleReference?1.5:1.18));");
+  scene = scene.replace("const key=new T.DirectionalLight(0xfffaf4,2.3)", "const key=new T.DirectionalLight(femaleReference?0xfff3ed:0xffeadc,femaleReference?1.9:2.8)");
+  scene = scene.replace("const rim=new T.DirectionalLight(0xe9f0ff,1.8)", "const rim=new T.DirectionalLight(0xc9ddfa,femaleReference?.65:1.45)");
   scene = scene.replace("shader.vertexShader='attribute float partIndex;", "shader.vertexShader='varying vec3 tissueCoord; attribute float partIndex;");
   scene = scene.replace("transformed += state.xyz; partVisible", "transformed += state.xyz; tissueCoord = position; partVisible");
   scene = scene.replace("shader.fragmentShader='varying float partVisible;", "shader.fragmentShader='varying vec3 tissueCoord; varying float partVisible;");
   const oldColor = "diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.42, 0.85, 0.78), partSelected * 0.75);";
   const newColor = "float tissueNoise = fract(sin(dot(floor(tissueCoord * 420.0), vec3(12.9898, 78.233, 37.719))) * 43758.5453); diffuseColor.rgb *= 0.94 + 0.12 * tissueNoise; diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.38, 0.72, 0.89), partSelected * 0.72);";
   if (!scene.includes(oldColor)) throw new Error("Human Atlas selection shader changed upstream");
-  scene = scene.replace(oldColor, newColor);
+  const smoothSurfaceColor = "diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.38, 0.72, 0.89), partSelected * 0.72);";
+  const colorHook = "'#include <color_fragment>\\n" + oldColor + "'";
+  if (!scene.includes(colorHook)) throw Error("Human Atlas color hook changed upstream");
+  scene = scene.replace(colorHook, "'#include <color_fragment>\\n'+(skinSurface?" + JSON.stringify(smoothSurfaceColor) + ":" + JSON.stringify(newColor) + ")");
+  scene = scene.replace("ground.visible=platform.visible=ring.visible=innerRing.visible=amount<.5&&!s.isolate;", "platform.visible=ring.visible=innerRing.visible=amount<.5&&!s.isolate;ground.visible=!femaleReference&&platform.visible;");
   fs.writeFileSync(scenePath, scene);
 
   const webPath = path.join(source, "web/index.html");
