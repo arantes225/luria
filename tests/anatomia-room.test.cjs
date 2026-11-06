@@ -18,6 +18,7 @@ test("Sala de Anatomia abre o atlas completo e preserva o coração detalhado", 
   assert.match(read("aprender/anatomia/coracao/index.html"), /data-anatomy-interior/);
   assert.match(read("aprender/anatomia/orgaos/index.html"), /data-anatomy-organs/);
   assert.match(read("aprender/anatomia/orgaos/index.html"), /data-organ="lungs"/);
+  assert.match(read("aprender/anatomia/orgaos/index.html"), /data-organ="breasts"/);
 });
 
 test("modelo segmentado possui seleção real, interior e fluxo didático", () => {
@@ -26,23 +27,22 @@ test("modelo segmentado possui seleção real, interior e fluxo didático", () =
   const build = read("scripts/build-anatomy-viewer.cjs");
   assert.match(page, /data-anatomy-interior/);
   assert.match(page, /data-anatomy-flow/);
-  assert.match(page, /BodyParts3D/);
-  assert.match(page, /cavidades representam espaços internos/);
+  assert.match(page, /Human Reference Atlas/);
+  assert.match(page, /veias pulmonares não têm malhas separadas/);
   assert.match(viewer, /raycaster\.intersectObject\(organ, true\)/);
   assert.match(viewer, /object\.userData\.structureId/);
-  assert.match(viewer, /ventricular-wall/);
-  assert.match(build, /b80a727d022a4ab07ccfcf15caccc228eaccb6d69ec0e72923324946ac35a946/);
+  assert.match(viewer, /VH_F_ascending_aorta/);
+  assert.match(build, /70ec2937b3736b3dfe1ac3b1c3f97d6529d58c63018a891fe9ae93116612f560/);
   assert.match(build, /Estruturas do atlas ausentes/);
   assert.equal(isPublicFile("assets/models/anatomia/coracao.glb"), true);
 });
 
 test("publicação substitui o GLB do repositório pelo atlas verificado", () => {
   const workflow = read(".github/workflows/deploy-pages.yml");
-  assert.match(workflow, /organui\/heart-3d\/c72ce6654ff8e282942f97750d3104f55ef4fc3d/);
+  assert.match(workflow, /export-hra-organs\.cjs/);
   assert.match(workflow, /ANATOMY_MODEL_PATH=build\/pages\/assets\/models\/anatomia\/coracao\.glb node scripts\/build-anatomy-viewer\.cjs/);
   assert.match(read("assets/js/anatomy-loading-guard.js"), /anatomy-static-fallback/);
   assert.match(read("scripts/prepare-anatomy-organs.cjs"), /ImliStack\/Body-Atlas-3D\/b0e04f6e058c767d51c1529369b7545315c5c6bd/);
   assert.match(workflow, /prepare-anatomy-organs\.cjs/);
   assert.match(read("scripts/prepare-anatomy-organs.cjs"), /ATTRIBUTION\.md/);
 });
-
