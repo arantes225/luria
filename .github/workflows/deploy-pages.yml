@@ -163,8 +163,11 @@ jobs:
           node /tmp/luria-human-atlas/scripts/validate-interactions.mjs
           npm run build --prefix /tmp/luria-human-atlas -- --base=/aprender/anatomia/atlas/
           node scripts/build-human-atlas.cjs install /tmp/luria-human-atlas
-      - name: Install Chromium
-        run: npx playwright install chromium --with-deps
+      - name: Use the Chrome installed on the runner
+        run: |
+          chrome=$(command -v google-chrome)
+          "$chrome" --version
+          echo "TRAUBE_CHROME_EXECUTABLE=$chrome" >> "$GITHUB_ENV"
       - name: Exercise 3D anatomy in browser
         run: node scripts/anatomy-browser-smoke.cjs
       - name: Exercise the detailed organ catalogue

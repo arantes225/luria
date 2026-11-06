@@ -22,7 +22,7 @@ const server = http.createServer((request, response) => {
 });
 (async () => {
   await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
-  const browser = await chromium.launch({ ...(process.platform === "win32" ? { executablePath: "C:/Program Files/Google/Chrome/Application/chrome.exe" } : {}), headless: true,
+  const browser = await chromium.launch({ ...(process.env.TRAUBE_CHROME_EXECUTABLE ? {executablePath:process.env.TRAUBE_CHROME_EXECUTABLE} : process.platform === "win32" ? {executablePath:"C:/Program Files/Google/Chrome/Application/chrome.exe"} : {}), headless: true,
     args: ["--enable-webgl", "--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"] });
   try {
     const page = await browser.newPage({ viewport: { width: 1365, height: 900 }, deviceScaleFactor: 1 });

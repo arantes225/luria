@@ -15,7 +15,7 @@ const server = http.createServer((request, response) => {
 });
 (async () => {
   await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
-  const browser = await chromium.launch({...(process.platform === "win32" ? {executablePath:"C:/Program Files/Google/Chrome/Application/chrome.exe"} : {}),headless:true,args:["--enable-webgl","--use-gl=angle","--use-angle=swiftshader","--enable-unsafe-swiftshader"]});
+  const browser = await chromium.launch({...(process.env.TRAUBE_CHROME_EXECUTABLE ? {executablePath:process.env.TRAUBE_CHROME_EXECUTABLE} : process.platform === "win32" ? {executablePath:"C:/Program Files/Google/Chrome/Application/chrome.exe"} : {}),headless:true,args:["--enable-webgl","--use-gl=angle","--use-angle=swiftshader","--enable-unsafe-swiftshader"]});
   try {
     const page = await browser.newPage({viewport:{width:1365,height:900}});
     const errors = [];
@@ -32,7 +32,7 @@ const server = http.createServer((request, response) => {
         await page.locator("[data-organ-cut]").click();
         await page.locator(".organs-stage-card").screenshot({path:path.join(root,"../anatomy-breasts-interior.png")});
       }
-      if (key === "lungs") assert.equal(await page.locator("[data-organ-vessels]").isHidden(), true);
+      if (key === "lungs") assert.equal(await page.locator("[data-organ-vessels]").count(), 0, "modelo pulmonar sem malhas de vasos");
       if (key === "kidneys") {
         const vessels = page.locator("[data-organ-vessels]");
         await vessels.click();

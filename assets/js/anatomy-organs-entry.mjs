@@ -50,6 +50,8 @@ if (root) {
   let renderer, controls, scene, camera, model, selectedId = "", currentKey = Object.hasOwn(catalog, requestedOrgan) ? requestedOrgan : "lungs", rotating = false, cut = false;
   const objects = new Map();
   const vascularButton = document.querySelector("[data-organ-vessels]");
+  const vascularControls = vascularButton?.parentElement;
+  const vascularAnchor = vascularButton?.nextElementSibling;
   let vascularFocus = false;
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const announce = message => { if (status) status.textContent = message; };
@@ -148,7 +150,7 @@ if (root) {
   function load(key) {
     vascularFocus = false;
     if (vascularButton) {
-      vascularButton.hidden = true;
+      vascularButton.remove();
       vascularButton.setAttribute("aria-pressed", "false");
     }
     currentKey = key; title.textContent = current().label; summary.textContent = current().summary; detailTitle.textContent = "Selecione uma estrutura"; detailCopy.textContent = "Clique na malha colorida ou escolha uma estrutura na lista."; selectedId = ""; clearModel(); buildList(); cut = false; renderer.localClippingEnabled = false; const cutButton = document.querySelector("[data-organ-cut]"); cutButton?.setAttribute("aria-pressed", "false"); if (cutButton) cutButton.textContent = hasLayers() ? "Ver por dentro" : "Corte didático"; loading.hidden = false; loading.classList.remove("is-error"); progress.style.width = "0%";
@@ -175,7 +177,10 @@ if (root) {
         if (!objects.has(id)) objects.set(id, []);
         objects.get(id).push(object);
       });
-      if (vascularButton) vascularButton.hidden = ![...objects.keys()].some(isVessel);
+      if (vascularButton && [...objects.keys()].some(isVessel)) {
+        vascularButton.hidden = false;
+        vascularControls?.insertBefore(vascularButton, vascularAnchor ?? null);
+      }
       scene.add(model); fit(); buildList(); updateAppearance(); loading.hidden = true;
       announce(`${current().label} carregado. Selecione uma estrutura.`);
     }, event => { if (event.total) progress.style.width = `${Math.min(100, event.loaded / event.total * 100)}%`; }, error => { if (key !== currentKey) return; loading.hidden = false; loading.classList.add("is-error"); loading.querySelector("strong").textContent = "Modelo indisponível"; loading.querySelector("span").textContent = "Recarregue a página para tentar novamente."; announce(`Não foi possível carregar ${current().label}.`); console.error(error); });
