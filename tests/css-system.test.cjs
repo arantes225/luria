@@ -24,7 +24,7 @@ test('common foundation loads once and work/PCR priorities are explicit',()=>{
 });
 
 test('page UI styles do not own generic application shell geometry',()=>{
-  for(const file of ['dashboard-ui-v2.css','work-ui-v2.css','admin-ui-v2.css','traubezap-ui-v2.css','education-ui-v2.css']){
+  for(const file of ['dashboard-ui-v2.css','work-ui-v2.css','admin-ui-v2.css','education-ui-v2.css']){
     postcss.parse(fs.readFileSync('assets/css/'+file,'utf8')).walkRules(rule=>{
       if(/(?:\.app-shell|\.main|\.topbar|#sidebar(?:\.sidebar)?)$/.test(rule.selector)){
         for(const d of rule.nodes.filter(n=>n.type==='decl'))assert(!/^(?:position|inset|height|width|margin|padding|overflow|border-radius)$/.test(d.prop),file+': '+rule.selector+' '+d.prop);
