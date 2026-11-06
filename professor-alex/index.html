@@ -57,16 +57,17 @@
     body[data-page="professor_alex"] .main,
     body[data-page="professor_alex"] .page { min-height: 0; height: 100%; }
     body[data-page="professor_alex"] .page { overflow: hidden; }
-    body[data-page="professor_alex"] .alex-page { height: 100%; min-height: 0; box-sizing: border-box; grid-template-rows: auto auto minmax(0, 1fr); overflow: hidden; padding-bottom: 0; }
-    body[data-page="professor_alex"] .alex-central-stage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; gap: 14px 18px; min-height: 0; height: 100%; }
+    body[data-page="professor_alex"] .alex-page { height: 100%; min-height: 0; box-sizing: border-box; grid-template-rows: auto minmax(0, 1fr); overflow: hidden; padding-bottom: 8px; }
+    body[data-page="professor_alex"] .alex-central-stage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); gap: 8px 18px; min-height: 0; height: 100%; }
     body[data-page="professor_alex"] .alex-mascot-card { grid-column: 1; grid-row: 1; min-height: 0; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; }
     body[data-page="professor_alex"] .alex-mode-card { grid-column: 1 / -1; grid-row: 2; flex-direction: row; align-items: center; gap: 16px; }
     body[data-page="professor_alex"] .alex-depth-toggle { order: -1; display: grid; grid-template-columns: 1fr 1fr; }
     body[data-page="professor_alex"] .alex-depth-toggle button { min-width: 0; padding-inline: 8px; }
     body[data-page="professor_alex"] .alex-mode-switch { align-self: flex-end; }
     body[data-page="professor_alex"] .alex-mode-description { margin: 0; color: var(--muted, #64748b); font-size: 11px; line-height: 1.45; }
-    body[data-page="professor_alex"] .alex-chat-container { grid-column: 2; grid-row: 1; display: grid; grid-template-rows: minmax(0, 1fr) auto; min-height: 0; gap: 12px; }
+    body[data-page="professor_alex"] .alex-chat-container { grid-column: 2; grid-row: 1; display: grid; grid-template-rows: minmax(0, 1fr) auto; min-height: 0; gap: 8px; }
     body[data-page="professor_alex"] .alex-chat-feed { min-height: 0; max-height: none; height: auto; }
+    body[data-page="professor_alex"] .alex-mode-card, body[data-page="professor_alex"] #alex-new-conversation { display: none !important; }
     body[data-page="professor_alex"] .alex-response-stream { display: none !important; }
     @media (max-width: 700px) {
       html, body { overflow: auto; }
@@ -146,7 +147,7 @@
                 <button type="button" class="is-active" data-alex-depth="rapida" aria-pressed="true">Dúvida rápida</button>
                 <button type="button" data-alex-depth="aula" aria-pressed="false">Aula completa</button>
               </div>
-              <label for="alex-natural-voice" style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text);cursor:pointer;grid-column:1/-1;">
+              <label hidden for="alex-natural-voice" style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text);cursor:pointer;grid-column:1/-1;">
                 <input type="checkbox" id="alex-natural-voice" style="accent-color:var(--accent);width:16px;height:16px;">
                 Voz natural em aulas ao vivo (pode demorar mais)
               </label>
@@ -200,7 +201,7 @@
                   <button type="button" id="alex-file-remove" aria-label="Remover anexo">×</button>
                 </div>
               </form>
-              <button id="alex-new-conversation" type="button" class="alex-action" style="margin:10px 0 0 auto;display:block;" aria-label="Iniciar nova conversa com o Leco">Nova conversa</button>
+              <button id="alex-new-conversation" type="button" hidden class="alex-action" style="display:none;" aria-label="Iniciar nova conversa com o Leco">Nova conversa</button>
             </div>
           </div>
         </section>
