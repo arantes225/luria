@@ -1,12 +1,20 @@
 "use strict";
 const fs = require("node:fs");
 const path = require("node:path");
+const { execFileSync } = require("node:child_process");
+const zlib = require("node:zlib");
 const localizeHumanAtlas = require("./localize-human-atlas.cjs");
 
 const source = path.resolve(process.argv[3] || "/tmp/luria-human-atlas");
 const output = path.resolve("build/pages/aprender/anatomia/atlas");
 const base = "/aprender/anatomia/atlas/";
 const mode = process.argv[2];
+const femaleSource = "https://raw.githubusercontent.com/ImliStack/Body-Atlas-3D/b0e04f6e058c767d51c1529369b7545315c5c6bd/public/models";
+
+function fetchPinned(url, target) {
+  fs.mkdirSync(path.dirname(target), { recursive: true });
+  execFileSync("curl", ["--fail", "--location", "--retry", "3", url, "--output", target], { stdio: "inherit" });
+}
 
 if (mode === "prepare") {
   const pagePath = path.join(source, "app/page.tsx");
@@ -26,6 +34,30 @@ if (mode === "prepare") {
     }
   }
   fs.writeFileSync(manifestPath, JSON.stringify(manifest));
+  const femaleManifestPath = path.join(source, "public/models/atlas-female.json");
+  fetchPinned(`${femaleSource}/atlas-female.json`, femaleManifestPath);
+  const femaleManifest = JSON.parse(fs.readFileSync(femaleManifestPath, "utf8"));
+  if (!Array.isArray(femaleManifest.chunks) || femaleManifest.chunks.length < 10 || !Array.isArray(femaleManifest.parts) || femaleManifest.parts.length < 2000) {
+    throw new Error("Female Human Reference Atlas catalogue coverage changed");
+  }
+  for (const chunk of femaleManifest.chunks) {
+    for (const key of ["url", "gzip"]) {
+      if (!chunk[key]) continue;
+      const filename = path.basename(chunk[key]);
+      chunk[key] = base + "models/" + filename;
+      const localChunk = path.join(source, "public/models", filename);
+      if (!fs.existsSync(localChunk)) {
+        if (filename.endsWith(".bin")) {
+          const compressed = `${localChunk}.gz`;
+          if (!fs.existsSync(compressed)) fetchPinned(`${femaleSource}/${filename}.gz`, compressed);
+          fs.writeFileSync(localChunk, zlib.gunzipSync(fs.readFileSync(compressed)));
+        } else {
+          fetchPinned(`${femaleSource}/${filename}`, localChunk);
+        }
+      }
+    }
+  }
+  fs.writeFileSync(femaleManifestPath, JSON.stringify(femaleManifest));
   localizeHumanAtlas(source, process.env.ANATOMY_TA2_CSV);
 
   const scenePath = path.join(source, "app/scene.tsx");
@@ -55,7 +87,7 @@ if (mode === "prepare") {
   web = web.replace('An interactive atlas of the human body. Explore named anatomical structures, reveal organ systems, and inspect individual parts in 3D.', 'Atlas interativo do corpo humano. Explore sistemas e identifique estruturas anatômicas em 3D.');
   fs.writeFileSync(webPath, web);
 
-  fs.appendFileSync(path.join(source, "app/globals.css"), `\n:root{--background:#e9f0f8;--foreground:#132b4a;--primary:#184888;--primary-foreground:#fff;--secondary:#e7eef7;--muted:#e7eef7;--accent:#dae8f7;--border:#18488822;--ring:#184888}\nbody{display:flex;flex-direction:column;background:#e9f0f8}#root{height:calc(100dvh - 60px);flex:1;min-height:0}.studio{height:100%;background:radial-gradient(ellipse at 52% 42%,#f5f8fc 0%,#e9f0f8 58%,#d9e5f3 100%)}.glass{background:#fffffff0;border:1px solid #18488820;box-shadow:0 16px 48px #102c5420}.identity h1{color:#132b4a;font-weight:800;letter-spacing:-.045em}.identity .eyebrow{color:#184888;font-weight:800}.layers-panel,.bottom-dock,.view-controls,.search-panel,.detail-sheet,.about-sheet{border-radius:18px}.system-row.enabled .system-name{color:#132b4a}.top-actions button,.view-controls button{border-radius:12px}.traube-atlas-header{height:60px;flex:0 0 60px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:0 22px;background:#143f79;color:#fff;box-shadow:0 4px 18px #0b265238;position:relative;z-index:30;font:700 14px system-ui,sans-serif}.traube-atlas-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}.traube-atlas-brand img{height:37px;width:37px;object-fit:contain}.traube-atlas-nav{display:flex;align-items:center;gap:12px}.traube-atlas-nav a{color:#fff;text-decoration:none;padding:8px 12px;border:1px solid #ffffff66;border-radius:999px}.traube-atlas-nav a:hover{background:#ffffff24}@media(max-width:767px){.traube-atlas-header{height:56px;flex-basis:56px;padding:0 12px;font-size:12px}#root{height:calc(100dvh - 56px)}.traube-atlas-brand img{height:30px;width:30px}.traube-atlas-nav{gap:5px}.traube-atlas-nav a{padding:7px 9px}.identity{top:17px}.top-actions{top:17px}}\n`);
+  fs.appendFileSync(path.join(source, "app/globals.css"), `\n:root{--background:#e9f0f8;--foreground:#132b4a;--primary:#184888;--primary-foreground:#fff;--secondary:#e7eef7;--muted:#e7eef7;--accent:#dae8f7;--border:#18488822;--ring:#184888}\nbody{display:flex;flex-direction:column;background:#e9f0f8}#root{height:calc(100dvh - 60px);flex:1;min-height:0}.studio{height:100%;background:radial-gradient(ellipse at 52% 42%,#f5f8fc 0%,#e9f0f8 58%,#d9e5f3 100%)}.glass{background:#fffffff0;border:1px solid #18488820;box-shadow:0 16px 48px #102c5420}.identity h1{color:#132b4a;font-weight:800;letter-spacing:-.045em}.identity .eyebrow{color:#184888;font-weight:800}.sex-switch{display:flex;gap:6px;margin-top:10px}.sex-switch button{border:1px solid #18488835;border-radius:999px;background:#ffffffd9;color:#315677;padding:6px 10px;font:700 11px system-ui;cursor:pointer}.sex-switch button.active,.sex-switch button:hover{background:#184888;color:#fff}.layers-panel,.bottom-dock,.view-controls,.search-panel,.detail-sheet,.about-sheet{border-radius:18px}.system-row.enabled .system-name{color:#132b4a}.top-actions button,.view-controls button{border-radius:12px}.traube-atlas-header{height:60px;flex:0 0 60px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:0 22px;background:#143f79;color:#fff;box-shadow:0 4px 18px #0b265238;position:relative;z-index:30;font:700 14px system-ui,sans-serif}.traube-atlas-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}.traube-atlas-brand img{height:37px;width:37px;object-fit:contain}.traube-atlas-nav{display:flex;align-items:center;gap:12px}.traube-atlas-nav a{color:#fff;text-decoration:none;padding:8px 12px;border:1px solid #ffffff66;border-radius:999px}.traube-atlas-nav a:hover{background:#ffffff24}@media(max-width:767px){.traube-atlas-header{height:56px;flex-basis:56px;padding:0 12px;font-size:12px}#root{height:calc(100dvh - 56px)}.traube-atlas-brand img{height:30px;width:30px}.traube-atlas-nav{gap:5px}.traube-atlas-nav a{padding:7px 9px}.identity{top:17px}.top-actions{top:17px}.sex-switch{flex-wrap:wrap;max-width:220px}}\n`);
   console.log(`Human Atlas prepared: ${manifest.parts.length} selectable meshes, ${manifest.chunks.length} chunks`);
 } else if (mode === "install") {
   const dist = path.join(source, "dist");
@@ -64,8 +96,9 @@ if (mode === "prepare") {
   }
   fs.cpSync(dist, output, { recursive: true, force: true });
   fs.copyFileSync(path.join(source, "LICENSE"), path.join(output, "LICENSE-human-atlas.txt"));
+  fs.writeFileSync(path.join(output, "ATTRIBUTION-FEMININO.md"), "Referência feminina: Kristen Browne e Heidi Schlehlein, Human Reference Atlas / HuBMAP, 3D Reference Organ Set for Female v1.5 (2023), CC BY 4.0. Geometria adaptada para este atlas a partir de ImliStack/Body-Atlas-3D, commit b0e04f6e058c767d51c1529369b7545315c5c6bd. Fonte: https://doi.org/10.48539/HBM352.BTSQ.586 e https://creativecommons.org/licenses/by/4.0/.\n");
   let html = fs.readFileSync(path.join(output, "index.html"), "utf8");
-  const navigation = '<header class="traube-atlas-header"><a class="traube-atlas-brand" href="/aprender/"><img src="/assets/img/logos/logo-icone-original.png" alt=""><span>TRAUBE <small>· Sala de Anatomia</small></span></a><nav class="traube-atlas-nav" aria-label="Navegação da anatomia"><a href="/aprender/anatomia/coracao/">Coração em detalhe</a><a href="/aprender/">Voltar</a></nav></header>';
+  const navigation = '<header class="traube-atlas-header"><a class="traube-atlas-brand" href="/aprender/"><img src="/assets/img/logos/logo-icone-original.png" alt=""><span>TRAUBE <small>· Sala de Anatomia</small></span></a><nav class="traube-atlas-nav" aria-label="Navegação da anatomia"><a href="/aprender/anatomia/coracao/">Coração em detalhe</a><a href="/aprender/anatomia/orgaos/">Órgãos em detalhe</a><a href="/aprender/">Voltar</a></nav></header>';
   if (!html.includes("</body>")) throw new Error("Human Atlas index changed upstream");
   html = html.replace('<html lang="en"', '<html lang="pt-BR"');
   html = html.replace('<div id="root"></div>', navigation + '<div id="root"></div>');
@@ -75,4 +108,5 @@ if (mode === "prepare") {
 } else {
   throw new Error("Use prepare or install");
 }
+
 
