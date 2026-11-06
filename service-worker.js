@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261106-scores-interpret-v2-atlas3";
+const CACHE_VERSION = "traube-pwa-20261106-observacoes69-1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";

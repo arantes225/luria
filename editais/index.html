@@ -48,7 +48,20 @@
   <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/aplicar.css?v=1">
   <link rel="stylesheet" href="/assets/css/traube-logo.css?v=20261103-v1">
-</head>
+<style>
+  .exam-filters select,#ed-sort,.exam-quick-status select{appearance:none;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23174888' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center;color:var(--text);border:1px solid var(--border);border-radius:10px;min-height:42px;padding:8px 38px 8px 12px;font:inherit}
+  .exam-filters select:focus-visible,#ed-sort:focus-visible,.exam-quick-status select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .exam-filters select option,#ed-sort option,.exam-quick-status select option{background:var(--surface);color:var(--text)}
+
+  .exam-theme-select{position:relative;min-width:0}
+  .exam-theme-select>select{display:none}
+  .exam-theme-select-trigger{width:100%;min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font:inherit;text-align:left;cursor:pointer}
+  .exam-theme-select-trigger::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-right:4px}
+  .exam-theme-select-trigger:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .exam-theme-select-menu{position:absolute;z-index:70;top:calc(100% + 5px);left:0;right:0;max-height:260px;overflow:auto;padding:5px;border:1px solid var(--border);border-radius:12px;background:var(--surface);box-shadow:0 14px 36px rgba(20,50,90,.2)}
+  .exam-theme-select-option{display:block;width:100%;padding:9px 11px;border:0;border-radius:8px;background:transparent;color:var(--text);font:inherit;text-align:left;cursor:pointer}
+  .exam-theme-select-option:hover,.exam-theme-select-option:focus-visible,.exam-theme-select-option[aria-selected="true"]{background:linear-gradient(110deg,#174b91,#2388e7);color:#fff}
+</style></head>
 
 <body data-ui-heading="provided" data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="editais">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -582,6 +595,7 @@
 <script src="assets/js/editais-provas-v16.js?v=16.4-dashboard"></script>
 
 <script src="/assets/js/editais-approved-20261006.js?v=1"></script>
+<script src="/assets/js/editais-theme-select.js?v=20261106-1"></script>
 <script defer src="/assets/js/pwa.js?v=20261101-bootstrap1"></script>
 </body>
 

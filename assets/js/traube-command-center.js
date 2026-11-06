@@ -267,7 +267,6 @@ async function liveSearch(input){
  const orFor=cols=>variants.flatMap(v=>cols.map(col=>col+".ilike.%"+v+"%")).join(",");
  try{const {data}=await sb.from("question_items").select("id,set_id,stem,topic,subtopic,area,materia").or(orFor(["stem","topic","subtopic","area","materia"])).limit(8);(data||[]).forEach(x=>rows.push({title:x.topic||x.materia||"Questão",desc:x.stem||x.subtopic||x.area||"",kind:"Questão",href:"/resolver-questoes/?set_id="+encodeURIComponent(x.set_id)}))}catch{}
  try{const {data}=await sb.from("clinical_cases").select("id,title,specialty,summary").eq("active",true).or(orFor(["title","summary","specialty"])).limit(4);(data||[]).forEach(x=>rows.push({title:x.title||"Caso clínico",desc:x.summary||x.specialty||"",kind:"Simulador",href:"/plantao/sala-emergencia/"}))}catch{}
- try{const {data}=await sb.from("interconsultation_cases").select("id,title,specialty,opening_message").or(orFor(["title","specialty","opening_message"])).limit(4);(data||[]).forEach(x=>rows.push({title:x.title||"TraubeZap",desc:x.specialty||x.opening_message||"",kind:"TraubeZap",href:"/plantao/traubezap/"}))}catch{}
  if(seq!==searchSeq||!rows.length)return;list.insertAdjacentHTML("beforeend",rows.map(x=>'<a class="traube-search-item traube-live-result" href="'+x.href+'"><span><strong>'+esc(x.title)+'</strong><small>'+esc(String(x.desc).slice(0,135))+'</small></span><span class="traube-search-kind">'+esc(x.kind)+'</span></a>').join(""));
 }
 d.addEventListener("input",e=>{if(e.target?.id!=="traube-search-input")return;clearTimeout(searchTimer);searchTimer=setTimeout(()=>liveSearch(e.target),220)},true);
@@ -281,19 +280,9 @@ function relatedQuestionLinks(){
 }
 const fb=d.getElementById("qr-feedback");if(fb)new MutationObserver(relatedQuestionLinks).observe(fb,{childList:true,subtree:true,attributes:true});relatedQuestionLinks();
 
-function installTraubeZapTrail(){
- if(!location.pathname.includes("/plantao/traubezap")||d.getElementById("traubezap-learning-trail"))return;
- const station=d.getElementById("plantao-phone-station");if(!station)return;
- const trail=d.createElement("div");trail.id="traubezap-learning-trail";trail.style.cssText="display:flex;gap:4px;padding:6px 8px;border-bottom:1px solid var(--border);background:var(--surface);overflow:auto";
- const names=["Aprender","Checagem","Caso clínico","Discussão","Fechamento"];
- trail.innerHTML=names.map((n,i)=>'<span data-lz-stage="'+i+'" style="white-space:nowrap;font-size:6.8px;font-weight:850;padding:4px 6px;border-radius:999px;background:var(--surface-2);color:var(--muted)">'+n+'</span>').join("");
- const head=station.querySelector(".plantao-phone-chat-head");if(head)head.after(trail);else station.prepend(trail);
- const update=()=>{const body=d.getElementById("plantao-phone-chat-body");const msgs=body?.querySelectorAll?.("*")?.length||0;const choices=d.getElementById("plantao-phone-choices");let stage=0;if(msgs>12)stage=1;if(msgs>25)stage=2;if(msgs>40)stage=3;if(choices?.textContent?.includes("Caso discutido"))stage=4;all("[data-lz-stage]",trail).forEach((el,i)=>{el.style.background=i<=stage?"var(--accent-soft)":"var(--surface-2)";el.style.color=i<=stage?"var(--accent)":"var(--muted)"})};
- const body=d.getElementById("plantao-phone-chat-body");if(body)new MutationObserver(update).observe(body,{childList:true,subtree:true});const choices=d.getElementById("plantao-phone-choices");if(choices)new MutationObserver(update).observe(choices,{childList:true,subtree:true});update()
-}
 function openTopicSearchFromQuery(){const p=new URLSearchParams(location.search),q=p.get("q");if(!q)return;setTimeout(()=>{const b=d.getElementById("traube-global-search");if(!b)return;b.click();setTimeout(()=>{const input=d.getElementById("traube-search-input");if(input){input.value=q;input.dispatchEvent(new Event("input",{bubbles:true}))}},60)},350)}
-function boot2(){installTraubeZapTrail();openTopicSearchFromQuery();relatedQuestionLinks()}
-if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot2);else boot2();new MutationObserver(()=>installTraubeZapTrail()).observe(d.documentElement,{childList:true,subtree:true});
+function boot2(){openTopicSearchFromQuery();relatedQuestionLinks()}
+if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot2);else boot2();
 })();
 
 

@@ -76,7 +76,7 @@ async function connectSettingsNotion() {
   if (button) button.disabled = true;
 
   try {
-    const redirectTo = window.location.origin + "/configuracoes/?section=perfil&notion=connected";
+    const redirectTo = window.location.origin + "/configuracoes/?section=personalizar&notion=connected";
     const result = await invokeSettingsNotionFunction("notion-auth", { redirect_to: redirectTo });
     if (!result?.url) throw new Error("Não foi possível iniciar a conexão.");
     window.location.assign(result.url);
@@ -239,7 +239,7 @@ async function loadProfileSettings() {
   if (!document.getElementById("profile-name")) return;
   const { data, error } = await settingsSb
     .from("profiles")
-    .select("display_name, username, gender, medical_school, is_graduated")
+    .select("display_name, username, gender, medical_school, specialty, is_graduated")
     .eq("user_id", settingsUser.id)
     .maybeSingle();
 
@@ -263,6 +263,8 @@ async function loadProfileSettings() {
 
   const schoolInput = document.getElementById("profile-medical-school");
   if (schoolInput) schoolInput.value = data?.medical_school || "";
+  const specialtyInput = document.getElementById("profile-specialty");
+  if (specialtyInput) specialtyInput.value = data?.specialty || "";
 
   document.querySelectorAll('input[name="profile-graduated"]').forEach((input) => {
     input.checked =
@@ -313,6 +315,8 @@ async function saveProfileSettings() {
 
   const medicalSchool =
     document.getElementById("profile-medical-school")?.value.trim() || "";
+
+  const intendedSpecialty = document.getElementById("profile-specialty")?.value.trim() || "";
 
   const graduationChoice =
     document.querySelector('input[name="profile-graduated"]:checked');
@@ -370,13 +374,14 @@ async function saveProfileSettings() {
         username: username || null,
         gender,
         medical_school: medicalSchool || null,
+        specialty: intendedSpecialty || null,
         is_graduated: isGraduated
       },
       {
         onConflict: "user_id"
       }
     )
-    .select("display_name, username, gender, medical_school, is_graduated")
+    .select("display_name, username, gender, medical_school, specialty, is_graduated")
     .single();
 
   button.disabled = false;

@@ -195,7 +195,7 @@ function sharedStudyratsUpdateLargePreview(){
     host.innerHTML=sharedStudyratComposite(
       sharedStudyratsMyVariant,
       sharedStudyratsMyAccessory,
-      'studyrats-rat-composite studyrats-preview-composite',
+      'studyrats-rat-composite studyrats-race-fitted studyrats-preview-composite',
       sharedStudyratsMyAccessoryX,
       sharedStudyratsMyAccessoryY
     );
@@ -522,8 +522,8 @@ function sharedStudyratsRender(){
           '<span class="sr-person-copy"><strong>'+fEsc(p.name)+'</strong><small>'+fEsc(score)+' '+fEsc(type.unit)+'</small></span>'+
         '</div>'+
         '<div class="sr-road" aria-label="Posição visual de '+fEsc(p.name)+'">'+
-          '<svg class="sr-trajectory" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true"><path class="sr-rail" d="M0 60C120 60 130 20 250 20S380 60 500 60S630 100 750 100S880 60 1000 60"/><path class="sr-center" d="M0 60C120 60 130 20 250 20S380 60 500 60S630 100 750 100S880 60 1000 60"/></svg><span class="sr-route" aria-hidden="true"></span><span class="sr-progress" style="transform:scaleX('+(pct/100)+')"></span>'+
-          '<span class="sr-carriage" data-runner-key="'+fEsc(key)+'" data-position="'+pct+'" style="--runner-y:'+(-Math.sin(pct/100*Math.PI*2)*8).toFixed(2)+'px;transform:translateX('+(Number.isFinite(from)&&previous.has(key)?from:pct)+'%)"><span class="sr-sprite">'+sharedStudyratComposite(p.variant,p.accessory,'studyrats-rat-composite studyrats-race-fitted',p.accessoryX,p.accessoryY)+'</span></span>'+
+          '<svg class="sr-trajectory" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true"><path class="sr-rail" d="M0 60C120 60 130 20 250 20S380 60 500 60S630 100 750 100S880 60 1000 60"/><path class="sr-center" d="M0 60C120 60 130 20 250 20S380 60 500 60S630 100 750 100S880 60 1000 60"/><path class="sr-trail" pathLength="100" style="stroke-dashoffset:'+(100-pct)+'" d="M0 60C120 60 130 20 250 20S380 60 500 60S630 100 750 100S880 60 1000 60"/></svg>'+
+          '<span class="sr-carriage" data-runner-key="'+fEsc(key)+'" data-position="'+pct+'" data-from="'+(Number.isFinite(from)&&previous.has(key)?from:pct)+'"><span class="sr-sprite">'+sharedStudyratComposite(p.variant,p.accessory,'studyrats-rat-composite studyrats-race-fitted',p.accessoryX,p.accessoryY)+'</span></span>'+
         '</div>'+
       '</div>';
     }).join('');
@@ -550,13 +550,34 @@ function sharedStudyratsRender(){
         '<div class="sr-lanes">'+lanes+'</div>'+
         '<div class="sr-circuit-scale" aria-hidden="true"><span>Largada</span><span>Cada passo conta</span><span>Chegada</span></div>'+
       '</div>'+
-      '<div class="sr-standings" aria-label="Classificação do desafio">'+ordered.slice(0,3).map(function(p,index){const value=Number(p.value)||0;return '<div class="sr-standing"><span class="sr-standing-place">'+(index+1)+'º</span>'+sharedStudyratComposite(p.variant,p.accessory,'studyrats-rat-composite sr-standing-rat',p.accessoryX,p.accessoryY)+'<span class="sr-standing-copy"><strong>'+fEsc(p.name)+'</strong><small>'+fEsc(Number.isInteger(value)?value:value.toFixed(1))+' '+fEsc(type.unit)+'</small></span></div>';}).join('')+'</div>'+
+      '<div class="sr-standings" aria-label="Classificação do desafio">'+ordered.slice(0,3).map(function(p,index){const value=Number(p.value)||0;return '<div class="sr-standing"><span class="sr-standing-place">'+(index+1)+'º</span>'+sharedStudyratComposite(p.variant,p.accessory,'studyrats-rat-composite studyrats-race-fitted sr-standing-rat',p.accessoryX,p.accessoryY)+'<span class="sr-standing-copy"><strong>'+fEsc(p.name)+'</strong><small>'+fEsc(Number.isInteger(value)?value:value.toFixed(1))+' '+fEsc(type.unit)+'</small></span></div>';}).join('')+'</div>'+
       '<div class="studyrats-race-footer"><span>Os ratinhos avançam com o tempo e com o desempenho relativo de cada participante.</span><strong>'+fEsc(type.title)+' · até '+formatStudyratsDate(ch.deadline)+'</strong></div>'+
     '</article>';
   }).join('');
 
   sharedStudyratsBindImageFallbacks(host);
-  requestAnimationFrame(function(){host.querySelectorAll('[data-runner-key]').forEach(function(el){el.style.transform='translateX('+el.dataset.position+'%)';});});
+  requestAnimationFrame(function(){
+    host.querySelectorAll('[data-runner-key]').forEach(function(el){
+      const road=el.closest('.sr-road');
+      const svg=road?.querySelector('.sr-trajectory');
+      const path=svg?.querySelector('.sr-rail');
+      if(!road||!svg||!path)return;
+      const from=Number(el.dataset.from);
+      const to=Number(el.dataset.position);
+      const total=path.getTotalLength();
+      const place=function(pct){
+        const point=path.getPointAtLength(total*Math.max(0,Math.min(100,pct))/100);
+        const svgBox=svg.getBoundingClientRect();
+        const roadBox=road.getBoundingClientRect();
+        el.style.left=(svgBox.left-roadBox.left+point.x/1000*svgBox.width)+'px';
+        el.style.top=(svgBox.top-roadBox.top+point.y/120*svgBox.height)+'px';
+      };
+      if(!Number.isFinite(from)||Math.abs(to-from)<.1||matchMedia('(prefers-reduced-motion: reduce)').matches){place(to);return;}
+      const start=performance.now();
+      const tick=function(now){const t=Math.min(1,(now-start)/900);const eased=1-Math.pow(1-t,3);place(from+(to-from)*eased);if(t<1&&el.isConnected)requestAnimationFrame(tick);};
+      requestAnimationFrame(tick);
+    });
+  });
 
   host.querySelectorAll('[data-delete-studyrat]').forEach(function(btn){
     btn.addEventListener('click',async function(){

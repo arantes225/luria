@@ -41,6 +41,7 @@
         </header>
 
         <section class="traube-page-spotlight" aria-label="Radar de Provas">
+          <a class="traube-back-button" href="/aplicar/" aria-label="Voltar para Aplicar">← Voltar para Aplicar</a>
           <div class="traube-page-spotlight-copy">
             <strong>Radar de Provas</strong>
             <small class="traube-page-spotlight-helper">Consulte os temas de maior incidência histórica por grande área e direcione seus estudos para o que mais cai.</small>
@@ -48,22 +49,8 @@
         </section>
 
         <div class="cv-page">
-          <nav class="cv-nav" aria-label="Navegação Aplicar">
-            <a href="/aplicar/">Início</a>
-            <a href="/editais/">Editais e provas</a>
-            <a href="/aplicar/curriculo/">Currículo & Lattes</a>
-            <a href="/aplicar/radar/" class="active" aria-current="page">Radar de provas</a>
-            <a href="/vocacao/">Mapa de interesses</a>
-          </nav>
 
-          <section class="cv-hero radar-hero">
-            <div>
-              <span class="cv-kicker">Estude com direção</span>
-              <h2>O que priorizar na sua prova</h2>
-              <p>Escolha sua prova e veja os temas relevantes de cada área. Vá direto ao assunto que você precisa revisar.</p>
-            </div>
-            <span class="cv-badge" id="radar-total">Carregando fontes…</span>
-          </section>
+          <span id="radar-total" hidden>Carregando fontes…</span>
 
           <section class="cv-card">
             <fieldset id="radar-controls" class="radar-controls" disabled>

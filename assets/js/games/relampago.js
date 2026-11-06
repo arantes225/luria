@@ -18,8 +18,7 @@
     selection = { specialty: "Misto", level: "1", duration: "90" };
   const mode = () =>
     [selection.specialty, selection.level, selection.duration].join("|");
-  const top = () =>
-    '<div class="g-top"><a class="g-back traube-back-button" href="/jogos/">← Central de jogos</a><span class="g-edition">01 / Agilidade clínica</span></div>';
+  const top = () => '';
   const art =
     '<div class="g-hero-art r-art" aria-hidden="true"><div class="r-orbit"><span class="r-orbit-label">FOCO · PRECISÃO · RITMO</span><svg viewBox="0 0 120 120"><path d="M68 8 27 65h29l-5 47 42-62H64z" fill="currentColor"/></svg><span class="r-seconds">90<span>segundos para desafiar seu raciocínio</span></span></div><span class="r-chip r-chip-one">+ rapidez</span><span class="r-chip r-chip-two">× combo</span></div>';
   function stop() {
@@ -32,7 +31,7 @@
     run = null;
     root.innerHTML =
       top() +
-      `<section class="g-hero"><div><span class="g-kicker">Plantão Relâmpago</span><h2>Uma decisão.<br>O relógio corre.</h2><p class="g-lead">Reconheça o essencial, responda e encontre seu ritmo. Precisão vem antes da pressa.</p><div class="g-tags"><span>4 alternativas</span><span>Combo de acertos</span><span>Revisão comentada</span></div></div>${art}</section><form class="g-panel g-setup">${G.filters()}${G.select(
+      `<form class="g-panel g-setup">${G.filters()}${G.select(
         "duration",
         "Tempo de partida",
         [

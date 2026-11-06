@@ -67,12 +67,12 @@
         <div class="google-calendar-row">
           <span class="google-calendar-mark" aria-hidden="true">G</span>
           <div class="google-calendar-copy">
-            <strong>Google Agenda</strong>
+            <strong>Google Calendar</strong>
             <small data-google-calendar-status>Verificando conexão...</small>
           </div>
         </div>
         <div class="google-calendar-actions">
-          <button class="google-calendar-primary" type="button" data-google-calendar-connect>Conectar Google Agenda</button>
+          <button class="google-calendar-primary" type="button" data-google-calendar-connect>Conectar ao Google Calendar</button>
           <button class="google-calendar-secondary" type="button" data-google-calendar-sync hidden>Sincronizar agora</button>
           <button class="google-calendar-secondary" type="button" data-google-calendar-disconnect hidden>Desconectar</button>
         </div>
@@ -106,20 +106,18 @@
   function mountSettings(){
     if (!document.body.matches('[data-page="configuracoes"]')) return;
     if (document.getElementById("settings-google-calendar-card")) return;
-    const notionCard = document.querySelector('[data-settings-view="perfil"] .settings-reference-card');
-    const grid = notionCard?.parentElement;
-    if (!grid) return;
+    const section = document.querySelector('[data-settings-view="personalizar"]');
+    if (!section) return;
     const card = document.createElement("article");
     card.id = "settings-google-calendar-card";
-    card.className = "settings-reference-card interface-card";
+    card.className = "setting-row settings-personalize-card settings-wide-card";
     card.innerHTML = `
-      <div class="settings-reference-head">
-        <span class="settings-reference-icon" aria-hidden="true">G</span>
-        <div><h2>Google Agenda</h2><p>Sincronize compromissos externos com o Cronograma da TRAUBE.</p></div>
-      </div>
+      <div><h2 data-settings-icon="G">Conectar ao Google Calendar</h2><p>Sincronize seus compromissos com o Cronograma da TRAUBE.</p></div>
       ${cardHtml()}
     `;
-    grid.appendChild(card);
+    const notionCard = document.getElementById("settings-notion-connect")?.closest("article");
+    if (notionCard?.parentElement === section) notionCard.after(card);
+    else section.prepend(card);
   }
 
   async function refreshStatus(){
@@ -137,7 +135,7 @@
 
   async function connect(){
     try{
-      const redirectTo = window.location.origin + (document.body.matches('[data-page="configuracoes"]') ? "/configuracoes/?section=perfil&google_calendar=connected" : "/cronograma/?google_calendar=connected");
+      const redirectTo = window.location.origin + (document.body.matches('[data-page="configuracoes"]') ? "/configuracoes/?section=personalizar&google_calendar=connected" : "/cronograma/?google_calendar=connected");
       const result = await invoke("google-calendar-auth",{ redirect_to:redirectTo });
       if (!result?.url) throw new Error("Não foi possível iniciar a conexão.");
       window.location.assign(result.url);
