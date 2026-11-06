@@ -10,19 +10,50 @@ if (root) {
   const status = document.querySelector("[data-anatomy-status]");
   const list = document.querySelector("[data-anatomy-structures]");
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const structures = [
-    { id: "right-atrium", label: "Parede do átrio direito", latin: "Paries atrii dextri", color: "#a96d70", group: "Câmaras e paredes", detail: "Parede da câmara que recebe o sangue venoso do corpo. A cavidade atrial não está representada separadamente neste modelo.", flow: "Corpo → átrio direito" },
-    { id: "left-atrium", label: "Parede do átrio esquerdo", latin: "Paries atrii sinistri", color: "#b77c76", group: "Câmaras e paredes", detail: "Parede da câmara que recebe o sangue oxigenado dos pulmões. Observe-a melhor pela face posterior.", flow: "Pulmões → átrio esquerdo" },
-    { id: "ventricular-wall", label: "Parede ventricular", latin: "Paries ventriculi", color: "#ab6159", group: "Câmaras e paredes", detail: "Parede muscular combinada dos ventrículos. O conjunto de dados não separa as paredes direita e esquerda; o modo interior a torna translúcida.", flow: "Contração ventricular → ejeção" },
-    { id: "right-ventricle", label: "Cavidade do ventrículo direito", latin: "Cavitas ventriculi dextri", color: "#668db7", group: "Cavidades", detail: "Superfície que representa o espaço dentro do ventrículo direito, e não seu tecido muscular. O ventrículo envia sangue ao tronco pulmonar.", flow: "Ventrículo direito → pulmões" },
-    { id: "left-ventricle", label: "Cavidade do ventrículo esquerdo", latin: "Cavitas ventriculi sinistri", color: "#d28b72", group: "Cavidades", detail: "Superfície que representa o espaço dentro do ventrículo esquerdo, e não sua parede. O ventrículo envia sangue à aorta.", flow: "Ventrículo esquerdo → aorta" },
-    { id: "ascending-aorta", label: "Aorta ascendente", latin: "Aorta ascendens", color: "#c37f6a", group: "Grandes vasos", detail: "Segmento inicial da aorta que recebe sangue do ventrículo esquerdo. Os ramos do arco não estão incluídos.", flow: "Ventrículo esquerdo → circulação sistêmica" },
-    { id: "aortic-arch", label: "Arco da aorta", latin: "Arcus aortae", color: "#ca8d78", group: "Grandes vasos", detail: "Curvatura da aorta após o segmento ascendente. Seus ramos e a aorta descendente foram omitidos desta seleção.", flow: "Aorta ascendente → corpo" },
-    { id: "pulmonary-trunk", label: "Tronco pulmonar", latin: "Truncus pulmonalis", color: "#789aab", group: "Grandes vasos", detail: "Recebe sangue do ventrículo direito e segue em direção às artérias pulmonares. As árvores arteriais pulmonares não integram o modelo.", flow: "Ventrículo direito → pulmões" },
-    { id: "superior-vena-cava", label: "Veia cava superior", latin: "Vena cava superior", color: "#8c9fab", group: "Grandes vasos", detail: "Retorna ao átrio direito o sangue venoso da parte superior do corpo. A veia cava inferior não está incluída.", flow: "Corpo → átrio direito" },
-    { id: "left-coronary", label: "Árvore coronária esquerda", latin: "Arteria coronaria sinistra", color: "#dfb58a", group: "Coronárias", detail: "Conjunto de ramos mapeados à coronária esquerda, que irrigam parte do miocárdio. Ramos finos estão simplificados.", flow: "Aorta → miocárdio" },
-    { id: "right-coronary", label: "Árvore coronária direita", latin: "Arteria coronaria dextra", color: "#d4a777", group: "Coronárias", detail: "Conjunto de ramos mapeados à coronária direita. A seleção corresponde à árvore do atlas, não a cada ramo individual.", flow: "Aorta → miocárdio" }
+  const heartParts = [
+    ["interventricular_septum", "Septo interventricular", "Câmaras e paredes", "Parede muscular que separa os ventrículos direito e esquerdo."],
+    ["left_cardiac_atrium", "Átrio esquerdo", "Câmaras e paredes", "Recebe o sangue oxigenado que retorna dos pulmões."],
+    ["left_ventricle", "Ventrículo esquerdo", "Câmaras e paredes", "Câmara muscular que ejeta sangue para a aorta."],
+    ["right_cardiac_atrium", "Átrio direito", "Câmaras e paredes", "Recebe o retorno venoso pelas veias cavas."],
+    ["right_ventricle", "Ventrículo direito", "Câmaras e paredes", "Câmara que ejeta sangue para o tronco pulmonar."],
+    ["papillary_muscle_of_heart_ant", "Músculo papilar anterior", "Interior e valvas", "Músculo ventricular ligado ao aparelho de sustentação da valva atrioventricular."],
+    ["papillary_muscle_of_heart_antlat", "Músculo papilar anterolateral", "Interior e valvas", "Componente do aparelho subvalvar do ventrículo esquerdo."],
+    ["papillary_muscle_of_heart_med", "Músculo papilar septal", "Interior e valvas", "Músculo papilar relacionado à parede septal ventricular."],
+    ["papillary_muscle_of_heart_pos", "Músculo papilar posterior", "Interior e valvas", "Componente posterior do aparelho subvalvar."],
+    ["papillary_muscle_of_heart_posmed", "Músculo papilar posteromedial", "Interior e valvas", "Componente do aparelho subvalvar do ventrículo esquerdo."],
+    ["aortic_valve", "Valva aórtica", "Interior e valvas", "Controla a saída do ventrículo esquerdo para a aorta."],
+    ["pulmonary_valve", "Valva pulmonar", "Interior e valvas", "Controla a saída do ventrículo direito para o tronco pulmonar."],
+    ["mitral_valve", "Valva mitral", "Interior e valvas", "Fica entre o átrio esquerdo e o ventrículo esquerdo."],
+    ["tricuspid_valve", "Valva tricúspide", "Interior e valvas", "Fica entre o átrio direito e o ventrículo direito."],
+    ["great_cardiac_vein", "Veia cardíaca magna", "Veias cardíacas", "Drena parte do miocárdio pela superfície do coração."],
+    ["anterior_cardiac_vein", "Veia cardíaca anterior", "Veias cardíacas", "Drena a região anterior do coração em direção ao átrio direito."],
+    ["superior_vena_cava", "Veia cava superior", "Grandes vasos", "Conduz o retorno venoso da parte superior do corpo ao átrio direito."],
+    ["inferior_vena_cava_a", "Veia cava inferior · segmento superior", "Grandes vasos", "Conduz o retorno venoso da parte inferior do corpo ao átrio direito."],
+    ["inferior_vena_cava_b", "Veia cava inferior · segmento inferior", "Grandes vasos", "Continuação inferior da veia cava que alcança o átrio direito."],
+    ["left_anterior_descending_artery", "Artéria interventricular anterior", "Coronárias", "Ramo da coronária esquerda que percorre o sulco interventricular anterior."],
+    ["left_circumflex_artery", "Artéria circunflexa", "Coronárias", "Ramo da coronária esquerda que percorre o sulco atrioventricular esquerdo."],
+    ["diagonal_branch_of_left_anterior_descending_artery", "Ramo diagonal", "Coronárias", "Ramo da artéria interventricular anterior na parede do ventrículo esquerdo."],
+    ["left_coronary_artery", "Artéria coronária esquerda", "Coronárias", "Nasce da raiz da aorta e se ramifica para irrigar parte do miocárdio."],
+    ["left_marginal_branch", "Ramo marginal esquerdo", "Coronárias", "Ramo que segue pela margem esquerda do coração."],
+    ["left_posterior_descending_branch_of_circumflex_branch_of_left_coronary_artery", "Ramo interventricular posterior esquerdo", "Coronárias", "Ramo posterior identificado na referência da coronária esquerda."],
+    ["posterior_left_ventricular_branch", "Ramo ventricular posterior esquerdo", "Coronárias", "Ramo que acompanha a face posterior do ventrículo esquerdo."],
+    ["right_coronary_artery", "Artéria coronária direita", "Coronárias", "Nasce da raiz da aorta e percorre o sulco atrioventricular direito."],
+    ["right_marginal_artery", "Ramo marginal direito", "Coronárias", "Ramo da coronária direita que segue pela margem direita do coração."],
+    ["pulmonary_artery_L", "Artéria pulmonar esquerda", "Grandes vasos", "Leva sangue do tronco pulmonar ao pulmão esquerdo."],
+    ["pulmonary_trunk", "Tronco pulmonar", "Grandes vasos", "Recebe sangue do ventrículo direito e se divide nas artérias pulmonares."],
+    ["pulmonary_artery_R", "Artéria pulmonar direita", "Grandes vasos", "Leva sangue do tronco pulmonar ao pulmão direito."],
+    ["aortic_arch", "Arco da aorta", "Grandes vasos", "Curva entre a aorta ascendente e a descendente; dele emergem os ramos para cabeça, pescoço e membro superior."],
+    ["ascending_aorta", "Aorta ascendente", "Grandes vasos", "Segmento inicial da aorta, que recebe o sangue ejetado pelo ventrículo esquerdo."],
+    ["descending_aorta_a", "Aorta descendente · segmento superior", "Grandes vasos", "Continuação do arco aórtico em direção ao tórax e abdome."],
+    ["descending_aorta_b", "Aorta descendente · segmento inferior", "Grandes vasos", "Continuação inferior da aorta descendente representada na referência."],
+    ["left_common_carotid_artery_a", "Carótida comum esquerda · ramo proximal", "Ramos da aorta", "Ramo do arco aórtico que segue em direção ao pescoço esquerdo."],
+    ["left_common_carotid_artery_b", "Carótida comum esquerda · continuação", "Ramos da aorta", "Continuação do ramo que irriga estruturas da cabeça e do pescoço."],
+    ["left_subclavian_artery_a", "Subclávia esquerda · ramo proximal", "Ramos da aorta", "Ramo do arco aórtico em direção ao membro superior esquerdo."],
+    ["left_subclavian_artery_b", "Subclávia esquerda · continuação", "Ramos da aorta", "Continuação da artéria subclávia esquerda."],
+    ["brachiocephalic_artery_a", "Tronco braquiocefálico · segmento proximal", "Ramos da aorta", "Primeiro grande ramo do arco aórtico; origina vasos para a direita da cabeça e do membro superior."],
+    ["brachiocephalic_artery_b", "Tronco braquiocefálico · continuação", "Ramos da aorta", "Continuação do tronco braquiocefálico na referência."],
   ];
+  const structures = heartParts.map(([suffix, label, group, detail]) => ({ id: `VH_F_${suffix}`, label, latin: "", group, detail, flow: group === "Coronárias" ? "Aorta → miocárdio" : group === "Grandes vasos" || group === "Ramos da aorta" ? "Circulação pulmonar ou sistêmica" : "Anatomia cardíaca" }));
   const byId = new Map(structures.map(item => [item.id, item]));
   const title = document.querySelector("[data-structure-title]");
   const latin = document.querySelector("[data-structure-latin]");
@@ -58,7 +89,7 @@ if (root) {
   }
   let quiz = null;
   list.innerHTML = "";
-  for (const group of ["Câmaras e paredes", "Cavidades", "Grandes vasos", "Coronárias"]) {
+  for (const group of ["Câmaras e paredes", "Interior e valvas", "Grandes vasos", "Ramos da aorta", "Coronárias", "Veias cardíacas"]) {
     const heading = document.createElement("h4");
     heading.className = "anatomy-list-group";
     heading.textContent = group;
@@ -176,8 +207,8 @@ if (root) {
       blood.clear();
       particles.length = 0;
       const paths = [
-        { ids: ["superior-vena-cava", "right-atrium", "right-ventricle", "pulmonary-trunk"], color: 0x82c8ff },
-        { ids: ["left-atrium", "left-ventricle", "ascending-aorta", "aortic-arch"], color: 0xffa091 }
+        { ids: ["VH_F_superior_vena_cava", "VH_F_right_cardiac_atrium", "VH_F_right_ventricle", "VH_F_pulmonary_trunk", "VH_F_pulmonary_artery_L"], color: 0x82c8ff },
+        { ids: ["VH_F_left_cardiac_atrium", "VH_F_left_ventricle", "VH_F_ascending_aorta", "VH_F_aortic_arch", "VH_F_descending_aorta_a"], color: 0xffa091 }
       ];
       for (const path of paths) {
         const points = path.ids.map(center).filter(Boolean).map(point => point.clone().add(new THREE.Vector3(0, 0, 0.1)));
@@ -197,8 +228,8 @@ if (root) {
       document.querySelector("[data-anatomy-interior]")?.setAttribute("aria-pressed", String(active));
       document.querySelector("[data-anatomy-exterior]")?.setAttribute("aria-pressed", String(!active));
       for (const [id, mesh] of meshes) {
-        mesh.visible = active || (id !== "right-ventricle" && id !== "left-ventricle");
-        if (id === "ventricular-wall") {
+        mesh.visible = true;
+        if (/^VH_F_(left_ventricle|right_ventricle|left_cardiac_atrium|right_cardiac_atrium|interventricular_septum)$/.test(id)) {
           mesh.material.clippingPlanes = active ? [ventricularCut] : [];
           mesh.material.transparent = false;
           mesh.material.opacity = 1;
@@ -207,7 +238,7 @@ if (root) {
         }
       }
       blood.visible = active && flowEnabled;
-      announce(active ? "Cavidades ventriculares expostas por um corte didático da parede." : "Vista externa do coração.");
+      announce(active ? "Corte didático das câmaras; valvas e músculos papilares identificáveis." : "Vista externa do coração.");
     }
     document.querySelector("[data-anatomy-interior]")?.addEventListener("click", () => setInterior(true));
     document.querySelector("[data-anatomy-exterior]")?.addEventListener("click", () => setInterior(false));
@@ -238,7 +269,7 @@ if (root) {
           object.material = object.material.clone();
           object.material.side = THREE.DoubleSide;
           object.material.metalness = 0;
-          object.material.roughness = structure.group === "Grandes vasos" || structure.group === "Coronárias" ? .62 : .79;
+          object.material.roughness = structure.group === "Grandes vasos" || structure.group === "Coronárias" || structure.group === "Ramos da aorta" ? .68 : .82;
           object.userData.structureId = id;
           meshes.set(id, object);
         });
@@ -292,7 +323,7 @@ if (root) {
     const quizFeedback = quizPanel?.querySelector("[data-quiz-feedback]");
     const quizScore = quizPanel?.querySelector("[data-quiz-score]");
     function nextQuestion() {
-      const choices = structures.filter(item => interior || !["right-ventricle", "left-ventricle"].includes(item.id));
+      const choices = structures.filter(item => interior || item.group !== "Interior e valvas");
       const target = choices[Math.floor(Math.random() * choices.length)];
       quiz.target = target.id;
       quizTarget.textContent = target.label;
@@ -337,5 +368,4 @@ if (root) {
   select("ascending-aorta");
   card.hidden = true;
 }
-
 
