@@ -406,7 +406,7 @@
       const back = document.createElement("a");
       back.className = "work-hub-return"; back.href = "/trabalho/";
       back.innerHTML = icon('<path d="m10 5-7 7 7 7M3 12h18"/>') + '<span>Central do Trabalho</span>';
-      back.hidden = body.dataset.page === "trabalho_dashboard";
+      back.hidden = body.dataset.page === "trabalho_dashboard" || body.dataset.page === "trabalho_paciente";
       links.append(back);
       bar.append(links);
     }
