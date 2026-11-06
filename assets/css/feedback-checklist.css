@@ -41,9 +41,23 @@
     body[data-page="cronograma"] .page > .schedule-top-spotlight {
       min-height:118px !important;
       height:118px !important;
-      padding:20px !important;
+      padding:16px 18px !important;
+      gap:12px !important;
+      flex-direction:row !important;
+      align-items:center !important;
     }
-    body[data-page="cronograma"] .schedule-top-spotlight-copy > strong { font-size:27px !important; }
+    body[data-page="cronograma"] .schedule-top-spotlight-copy > strong { font-size:24px !important; }
+    body[data-page="cronograma"] .schedule-top-spotlight #reference-new-activity {
+      min-height:40px !important;
+      padding:0 12px !important;
+      font-size:13px !important;
+      white-space:nowrap !important;
+      flex:0 0 auto !important;
+      width:auto !important;
+      max-width:none !important;
+      margin:0 !important;
+    }
+    body[data-page="cronograma"] .schedule-top-spotlight-copy { flex:1 1 auto !important; min-width:0 !important; }
   }
 
   body[data-page="aprender"] .tool-cta,

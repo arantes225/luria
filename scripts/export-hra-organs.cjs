@@ -3,11 +3,23 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const crypto = require("node:crypto");
+const zlib = require("node:zlib");
+const { execFileSync } = require("node:child_process");
 
 const root = path.resolve(__dirname, "..");
 const source = path.resolve(process.argv[2] || path.join(root, "build/human-atlas-source/public/models"));
 const destination = path.resolve(process.argv[3] || path.join(root, "build/pages/assets/models/anatomia"));
-const manifest = JSON.parse(fs.readFileSync(path.join(source, "atlas-female.json"), "utf8"));
+const reference = "https://raw.githubusercontent.com/ImliStack/Body-Atlas-3D/b0e04f6e058c767d51c1529369b7545315c5c6bd/public/models";
+const restore = process.argv.includes("--restore");
+function fetchPinned(name, output) {
+  execFileSync("curl", ["--fail", "--location", "--retry", "3", reference + "/" + name, "--output", output], {stdio:"inherit"});
+}
+const manifestPath = path.join(source, "atlas-female.json");
+if (restore) {
+  fs.mkdirSync(source, {recursive:true});
+  fetchPinned("atlas-female.json", manifestPath);
+}
+const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
 const color = (hex) => [1, 3, 5].map(start => {
   const srgb = parseInt(hex.slice(start, start + 2), 16) / 255;
   return srgb <= .04045 ? srgb / 12.92 : ((srgb + .055) / 1.055) ** 2.4;
@@ -32,6 +44,20 @@ const heart = manifest.parts.filter(p => p.system === "cardiac" || /^VH_F_(great
 const breasts = manifest.parts.filter(p => /^VH_F_(fat_[LR]|areolar_tubercles_[LR]|nipple_[LR]|areola_[LR]|mammary_lobes_[LR]|main_lactiferous_(ducts|sinuses)_[LR]|suspensory_ligaments_[LR])$/.test(p.id));
 const kidneys = manifest.parts.filter(p => /^VH_F_((kidney_capsule|hilum_of_kidney|outer_cortex_of_kidney|renal_column|renal_pelvis)_[LR]|(renal_papilla|renal_pyramid|minor_calyx|major_calyx)_[LR]_[a-z]|(right|left)_(ureter|renal_artery|renal_vein))$/.test(p.id));
 if (heart.length < 40 || breasts.length !== 16 || kidneys.length < 75) throw new Error(`HRA inventory changed: heart ${heart.length}, breasts ${breasts.length}, kidneys ${kidneys.length}`);
+if (restore) {
+  for (const index of new Set([...heart, ...breasts, ...kidneys].map(part => part.chunk))) {
+    const chunk = manifest.chunks[index], file = path.basename(chunk.url);
+    const target = path.join(source, file);
+    if (chunk.gzip) {
+      const compressed = path.basename(chunk.gzip), input = path.join(source, compressed);
+      fetchPinned(compressed, input);
+      fs.writeFileSync(target, zlib.gunzipSync(fs.readFileSync(input)));
+    } else {
+      fetchPinned(file, target);
+    }
+    if (fs.statSync(target).size !== chunk.bytes) throw Error("Bloco anatômico com tamanho inválido: " + file);
+  }
+}
 const renalColor = part => color(
   /renal_artery/.test(part.id) ? "#a54145" : /renal_vein/.test(part.id) ? "#5b7897" :
   /calyx|renal_pelvis|ureter/.test(part.id) ? "#d9af83" : /renal_papilla|renal_pyramid/.test(part.id) ? "#a86867" :

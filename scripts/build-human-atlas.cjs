@@ -1,111 +1,102 @@
 "use strict";
+// Monta o Atlas do corpo (/aprender/anatomia/atlas/) a partir do projeto MIT
+// fixado no deploy, aplicando a sobreposição TRAUBE de tools/anatomy-atlas:
+// interface em português, nomes PT de 5.090 estruturas, cores e microtextura
+// por tecido e tema visual do site. A licença MIT de origem vai junto no build
+// (LICENSE-human-atlas.txt) e os créditos dos dados ficam no botão "Fontes".
 const fs = require("node:fs");
 const path = require("node:path");
-const { execFileSync } = require("node:child_process");
-const zlib = require("node:zlib");
-const localizeHumanAtlas = require("./localize-human-atlas.cjs");
+const crypto = require("node:crypto");
 const prepareAtlasLoading = require("./prepare-atlas-loading.cjs");
+const { execFileSync } = require("node:child_process");
 
-const source = path.resolve(process.argv[3] || "build/human-atlas-source");
-const output = path.resolve("build/pages/aprender/anatomia/atlas");
+const root = path.resolve(__dirname, "..");
+// Pasta do projeto do atlas, sempre explícita (o workflow informa o caminho).
+if (!process.argv[3]) throw new Error("Informe a pasta do projeto do atlas: node scripts/build-human-atlas.cjs <prepare|install> <pasta>");
+const source = path.resolve(process.argv[3]);
+const output = path.resolve(root, "build/pages/aprender/anatomia/atlas");
+const overlay = path.join(root, "tools/anatomy-atlas/overlay");
 const base = "/aprender/anatomia/atlas/";
 const mode = process.argv[2];
-const femaleSource = "https://raw.githubusercontent.com/ImliStack/Body-Atlas-3D/b0e04f6e058c767d51c1529369b7545315c5c6bd/public/models";
 
-function fetchPinned(url, target) {
-  fs.mkdirSync(path.dirname(target), { recursive: true });
-  execFileSync("curl", ["--fail", "--location", "--retry", "3", url, "--output", target], { stdio: "inherit" });
-}
+// Arquivos de origem substituídos pela sobreposição. Se o projeto fixado mudar,
+// o hash muda e o build para, em vez de sobrescrever algo que não revisamos.
+const REPLACED = {
+  "app/page.tsx": "f62ddd7960bdbe99ef3da18e5f220ff8e2e1879a592fa74d6b97d7216d76e6d9",
+  "app/anatomy.ts": "092ebc28e6ea1e70a3c78bc6bb6f0651c6714f83960aa3be2ee57434f4b610f4",
+  "app/scene.tsx": "a90debd67d622543a7ede1fd07bc4cddd380a4977c7afcd21be08e70910cd2d8",
+  "app/globals.css": "efc2909fe2630a7abb6c3533e817185a8c60d495ff2e9e9d5ef577e0afa254c5",
+  "web/index.html": "0ac70a2c5f793183abec28f706a0dd1da6a90e68afb3bd840f341c04b8dfe8ea",
+};
+// Hash do texto com quebras de linha normalizadas (LF), igual em Windows e Linux.
+const sha = file => crypto.createHash("sha256").update(fs.readFileSync(file, "utf8").replace(/\r\n/g, "\n")).digest("hex");
 
 if (mode === "prepare") {
-  const pagePath = path.join(source, "app/page.tsx");
-  const original = fs.readFileSync(pagePath, "utf8");
-  const needle = "fetch('/models/atlas.json'";
-  if (!original.includes(needle)) throw new Error("Human Atlas model URL changed upstream");
-  fs.writeFileSync(pagePath, original.replace(needle, "fetch(new URL('models/atlas.json',document.baseURI)"));
+  for (const [rel, expected] of Object.entries(REPLACED)) {
+    const actual = sha(path.join(source, rel));
+    if (actual !== expected) throw new Error(`Arquivo de origem mudou (${rel}); revise a sobreposição antes de atualizar o hash`);
+  }
+  for (const rel of ["app/page.tsx", "app/anatomy.ts", "app/scene.tsx", "app/study.ts", "web/index.html"]) {
+    fs.copyFileSync(path.join(overlay, rel), path.join(source, rel));
+  }
+  fs.appendFileSync(path.join(source, "app/globals.css"), fs.readFileSync(path.join(overlay, "traube-theme.css")));
 
-  const manifestPath = path.join(source, "public/models/atlas.json");
-  const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-  if (!Array.isArray(manifest.chunks) || manifest.chunks.length < 10 || !Array.isArray(manifest.parts) || manifest.parts.length < 2000) {
-    throw new Error("Human Atlas catalogue coverage changed");
+  const models = path.join(source, "public/models");
+  const manifestPath = path.join(models, "atlas.json");
+  const first = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  if (!Array.isArray(first.chunks) || first.chunks.length < 10 || !Array.isArray(first.parts) || first.parts.length < 2000) {
+    throw new Error("Cobertura do catálogo do atlas mudou");
   }
-  for (const chunk of manifest.chunks) {
-    for (const key of ["url", "gzip"]) {
-      if (chunk[key]) chunk[key] = base + "models/" + path.basename(chunk[key]);
-    }
-  }
-  fs.writeFileSync(manifestPath, JSON.stringify(manifest));
-  const femaleManifestPath = path.join(source, "public/models/atlas-female.json");
-  fetchPinned(`${femaleSource}/atlas-female.json`, femaleManifestPath);
-  const femaleManifest = JSON.parse(fs.readFileSync(femaleManifestPath, "utf8"));
-  if (!Array.isArray(femaleManifest.chunks) || femaleManifest.chunks.length < 10 || !Array.isArray(femaleManifest.parts) || femaleManifest.parts.length < 2000) {
-    throw new Error("Female Human Reference Atlas catalogue coverage changed");
-  }
+
+  // Acréscimos do corpo masculino (Z-Anatomy + HRA), gerados aqui a partir das
+  // fontes fixadas e conferidas por sha256 no workflow. Sem eles o build para:
+  // o atlas publicado precisa ter pulmões, tireoide, parede abdominal etc.
+  const extras = process.env.TRAUBE_ATLAS_SOURCES;
+  if (!extras) throw new Error("Defina TRAUBE_ATLAS_SOURCES (pasta com za-muscles.fbx, za-visceral.fbx e hra-male.glb)");
+  execFileSync(process.execPath, [
+    "--max-old-space-size=8000",
+    path.join(root, "tools/anatomy-atlas/build-atlas-extras.mjs"),
+    source,
+    path.join(extras, "za-muscles.fbx"),
+    path.join(extras, "za-visceral.fbx"),
+    path.join(extras, "hra-male.glb"),
+  ], { stdio: "inherit" });
+
+  // Corpo feminino de referência (HRA feminino v1.10, já convertido no projeto MIT
+  // slorksmo/Human-Atlas, fixado no workflow).
+  const female = process.env.TRAUBE_ATLAS_FEMALE;
+  if (!female) throw new Error("Defina TRAUBE_ATLAS_FEMALE (pasta public/models do atlas feminino)");
+  const femaleManifest = JSON.parse(fs.readFileSync(path.join(female, "atlas-female.json"), "utf8"));
+  if (femaleManifest.sex !== "female" || femaleManifest.parts.length < 1000) throw new Error("Atlas feminino inesperado");
   for (const chunk of femaleManifest.chunks) {
-    for (const key of ["url", "gzip"]) {
-      if (!chunk[key]) continue;
-      const filename = path.basename(chunk[key]);
-      chunk[key] = base + "models/" + filename;
-      const localChunk = path.join(source, "public/models", filename);
-      if (!fs.existsSync(localChunk)) {
-        if (filename.endsWith(".bin")) {
-          const compressed = `${localChunk}.gz`;
-          if (!fs.existsSync(compressed)) fetchPinned(`${femaleSource}/${filename}.gz`, compressed);
-          fs.writeFileSync(localChunk, zlib.gunzipSync(fs.readFileSync(compressed)));
-        } else {
-          fetchPinned(`${femaleSource}/${filename}`, localChunk);
-        }
+    for (const key of ["url", "gzip"]) if (chunk[key]) fs.copyFileSync(path.join(female, path.basename(chunk[key])), path.join(models, path.basename(chunk[key])));
+  }
+  const femalePath = path.join(models, "atlas-female.json");
+  fs.writeFileSync(femalePath, JSON.stringify(femaleManifest));
+  // Músculos complementares e vasos do coração no corpo feminino (ver o script).
+  execFileSync(process.execPath, ["--max-old-space-size=8000", path.join(root, "tools/anatomy-atlas/build-female-extras.mjs"), models], { stdio: "inherit" });
+
+  execFileSync(process.execPath, [
+    path.join(root, "tools/anatomy-atlas/build-pt-names.cjs"),
+    manifestPath,
+    path.join(models, "pt-names.json"),
+    femalePath,
+  ], { stdio: "inherit" });
+  for (const file of [manifestPath, femalePath]) {
+    const manifest = JSON.parse(fs.readFileSync(file, "utf8"));
+    for (const chunk of manifest.chunks) {
+      for (const key of ["url", "gzip"]) {
+        if (chunk[key]) chunk[key] = base + "models/" + path.basename(chunk[key]);
       }
     }
+    fs.writeFileSync(file, JSON.stringify(manifest));
+    console.log(`Atlas preparado (${path.basename(file)}): ${manifest.parts.length} peças selecionáveis, ${manifest.chunks.length} blocos`);
   }
-  fs.writeFileSync(femaleManifestPath, JSON.stringify(femaleManifest));
-  localizeHumanAtlas(source, process.env.ANATOMY_TA2_CSV);
-
-  const scenePath = path.join(source, "app/scene.tsx");
-  let scene = fs.readFileSync(scenePath, "utf8");
-  const femaleReferenceAnchor = "  const abort=new AbortController();";
-  if (!scene.includes(femaleReferenceAnchor)) throw Error("Human Atlas scene initialization changed upstream");
-  scene = scene.replace(femaleReferenceAnchor, "  const femaleReference=atlas.parts.some(part=>part.system==='mammary');\n" + femaleReferenceAnchor);
-  const oldMaterial = "metalness:.08,roughness:.53";
-  if (!scene.includes(oldMaterial)) throw new Error("Human Atlas material changed upstream");
-  scene = scene.replace(oldMaterial, "metalness:0,roughness:skinSurface?.85:system==='muscular'||system==='cardiac'?.78:system==='skeletal'?.86:.62");
-  scene = scene.replace("  const materialFor=(system:string)=>{", "  const materialFor=(system:string)=>{\n   const skinSurface=femaleReference&&system==='integumentary';");
-  scene = scene.replace("color:SYSTEMS.find(s=>s.id===system)?.color??'#aebbb8'", "color:skinSurface?'#bf9587':(SYSTEMS.find(s=>s.id===system)?.color??'#aebbb8')");
-  scene = scene.replace("transparent:system==='integumentary',opacity:system==='integumentary'?.1:1,depthWrite:system!=='integumentary'", "transparent:false,opacity:1,depthWrite:true");
-  scene = scene.replace("renderer.setClearColor('#f2f3f3')", "renderer.setClearColor('#e9f0f8')");
-  scene = scene.replace("renderer.toneMappingExposure=1.12", "renderer.toneMappingExposure=1.02");
-  scene = scene.replace("This browser could not start the 3D viewer. Please try a browser with WebGL enabled.", "Este navegador não conseguiu iniciar o atlas 3D. Ative o WebGL ou tente outro navegador.");
-  scene = scene.replace("Interactive human anatomy. Drag to orbit, pinch or scroll to zoom, and tap a structure to inspect it.", "Anatomia humana interativa. Arraste para girar, aproxime com dois dedos ou a roda do mouse e toque em uma estrutura para identificá-la.");
-  scene = scene.replace("scene.add(new T.HemisphereLight(0xffffff,0xa7acb2,1.05));", "scene.add(new T.HemisphereLight(femaleReference?0xfff7f3:0xfff3e9,femaleReference?0xb9a9aa:0x617184,femaleReference?1.5:1.18));");
-  scene = scene.replace("const key=new T.DirectionalLight(0xfffaf4,2.3)", "const key=new T.DirectionalLight(femaleReference?0xfff3ed:0xffeadc,femaleReference?1.9:2.8)");
-  scene = scene.replace("const rim=new T.DirectionalLight(0xe9f0ff,1.8)", "const rim=new T.DirectionalLight(0xc9ddfa,femaleReference?.65:1.45)");
-  scene = scene.replace("shader.vertexShader='attribute float partIndex;", "shader.vertexShader='varying vec3 tissueCoord; attribute float partIndex;");
-  scene = scene.replace("transformed += state.xyz; partVisible", "transformed += state.xyz; tissueCoord = position; partVisible");
-  scene = scene.replace("shader.fragmentShader='varying float partVisible;", "shader.fragmentShader='varying vec3 tissueCoord; varying float partVisible;");
-  const oldColor = "diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.42, 0.85, 0.78), partSelected * 0.75);";
-  const newColor = "float tissueNoise = fract(sin(dot(floor(tissueCoord * 420.0), vec3(12.9898, 78.233, 37.719))) * 43758.5453); diffuseColor.rgb *= 0.94 + 0.12 * tissueNoise; diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.38, 0.72, 0.89), partSelected * 0.72);";
-  if (!scene.includes(oldColor)) throw new Error("Human Atlas selection shader changed upstream");
-  const smoothSurfaceColor = "diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.38, 0.72, 0.89), partSelected * 0.72);";
-  const colorHook = "'#include <color_fragment>\\n" + oldColor + "'";
-  if (!scene.includes(colorHook)) throw Error("Human Atlas color hook changed upstream");
-  scene = scene.replace(colorHook, "'#include <color_fragment>\\n'+(skinSurface?" + JSON.stringify(smoothSurfaceColor) + ":" + JSON.stringify(newColor) + ")");
-  scene = scene.replace("ground.visible=platform.visible=ring.visible=innerRing.visible=amount<.5&&!s.isolate;", "platform.visible=ring.visible=innerRing.visible=amount<.5&&!s.isolate;ground.visible=!femaleReference&&platform.visible;");
-  fs.writeFileSync(scenePath, scene);
-
-  const webPath = path.join(source, "web/index.html");
-  let web = fs.readFileSync(webPath, "utf8");
-  web = web.replace('lang="en"', 'lang="pt-BR"').replace('<title>Human Atlas</title>', '<title>Sala de Anatomia · TRAUBE</title>');
-  web = web.replace('An interactive atlas of the human body. Explore named anatomical structures, reveal organ systems, and inspect individual parts in 3D.', 'Atlas interativo do corpo humano. Explore sistemas e identifique estruturas anatômicas em 3D.');
-  fs.writeFileSync(webPath, web);
-
-  fs.appendFileSync(path.join(source, "app/globals.css"), `\n:root{--background:#e9f0f8;--foreground:#132b4a;--primary:#184888;--primary-foreground:#fff;--secondary:#e7eef7;--muted:#e7eef7;--accent:#dae8f7;--border:#18488822;--ring:#184888}\nbody{display:flex;flex-direction:column;background:#e9f0f8}#root{height:calc(100dvh - 60px);flex:1;min-height:0}.studio{height:100%;background:radial-gradient(ellipse at 52% 42%,#f5f8fc 0%,#e9f0f8 58%,#d9e5f3 100%)}.glass{background:#fffffff0;border:1px solid #18488820;box-shadow:0 16px 48px #102c5420}.identity h1{color:#132b4a;font-weight:800;letter-spacing:-.045em}.identity .eyebrow{color:#184888;font-weight:800}.sex-switch{display:flex;gap:6px;margin-top:10px}.sex-switch button{border:1px solid #18488835;border-radius:999px;background:#ffffffd9;color:#315677;padding:6px 10px;font:700 11px system-ui;cursor:pointer}.sex-switch button.active,.sex-switch button:hover{background:#184888;color:#fff}.layers-panel,.bottom-dock,.view-controls,.search-panel,.detail-sheet,.about-sheet{border-radius:18px}.system-row.enabled .system-name{color:#132b4a}.top-actions button,.view-controls button{border-radius:12px}.traube-atlas-header{height:60px;flex:0 0 60px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:0 22px;background:#143f79;color:#fff;box-shadow:0 4px 18px #0b265238;position:relative;z-index:30;font:700 14px system-ui,sans-serif}.traube-atlas-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}.traube-atlas-brand img{height:37px;width:37px;object-fit:contain}.traube-atlas-nav{display:flex;align-items:center;gap:12px}.traube-atlas-nav a{color:#fff;text-decoration:none;padding:8px 12px;border:1px solid #ffffff66;border-radius:999px}.traube-atlas-nav a:hover{background:#ffffff24}@media(max-width:767px){.traube-atlas-header{height:56px;flex-basis:56px;padding:0 12px;font-size:12px}#root{height:calc(100dvh - 56px)}.traube-atlas-brand img{height:30px;width:30px}.traube-atlas-nav{gap:5px}.traube-atlas-nav a{padding:7px 9px}.identity{top:17px}.top-actions{top:17px}.sex-switch{flex-wrap:wrap;max-width:220px}}\n`);
-  fs.appendFileSync(path.join(source, "app/globals.css"), "\n.traube-atlas-nav{overflow-x:auto;white-space:nowrap;min-width:0}.traube-atlas-brand{flex-shrink:0}@media(max-width:767px){.traube-atlas-nav{max-width:64vw}.traube-atlas-nav a{flex-shrink:0}}\n");
   prepareAtlasLoading(source);
-  console.log(`Human Atlas prepared: ${manifest.parts.length} selectable meshes, ${manifest.chunks.length} chunks`);
 } else if (mode === "install") {
   const dist = path.join(source, "dist");
-  if (!fs.existsSync(path.join(dist, "index.html")) || !fs.existsSync(path.join(dist, "models/atlas.json"))) {
-    throw new Error("Human Atlas build is incomplete");
+  for (const rel of ["index.html", "models/atlas.json", "models/atlas-female.json", "models/pt-names.json"]) {
+    if (!fs.existsSync(path.join(dist, rel))) throw new Error("Build do atlas incompleto: falta " + rel);
   }
   const modelFiles = new Set(["atlas", "atlas-female"].flatMap(name => {
     const catalog = JSON.parse(fs.readFileSync(path.join(dist, "models", name + ".json"), "utf8"));
@@ -116,16 +107,12 @@ if (mode === "prepare") {
     path.dirname(filename) !== modelsDir || !/\.bin(?:\.gz)?$/.test(filename) || modelFiles.has(path.basename(filename))
   });
   fs.copyFileSync(path.join(source, "LICENSE"), path.join(output, "LICENSE-human-atlas.txt"));
-  fs.writeFileSync(path.join(output, "ATTRIBUTION-FEMININO.md"), "Referência feminina: Kristen Browne e Heidi Schlehlein, Human Reference Atlas / HuBMAP, 3D Reference Organ Set for Female v1.5 (2023), CC BY 4.0. Geometria adaptada para este atlas a partir de ImliStack/Body-Atlas-3D, commit b0e04f6e058c767d51c1529369b7545315c5c6bd. Fonte: https://doi.org/10.48539/HBM352.BTSQ.586 e https://creativecommons.org/licenses/by/4.0/.\n");
-  let html = fs.readFileSync(path.join(output, "index.html"), "utf8");
-   const navigation = '<header class="traube-atlas-header"><a class="traube-atlas-brand" href="/aprender/"><img src="/assets/img/logos/logo-icone-original.png" alt=""><span>TRAUBE <small>· Sala de Anatomia</small></span></a><nav class="traube-atlas-nav" aria-label="Navegação da anatomia"><a href="/aprender/anatomia/coracao/">Coração em detalhe</a><a href="/aprender/anatomia/orgaos/?orgao=breasts">Mamas por dentro</a><a href="/aprender/anatomia/orgaos/?orgao=reproductive">Útero e ovários</a><a href="/aprender/anatomia/orgaos/">Órgãos em detalhe</a><a href="/aprender/">Voltar</a></nav></header>';
-  if (!html.includes("</body>")) throw new Error("Human Atlas index changed upstream");
-  html = html.replace('<html lang="en"', '<html lang="pt-BR"');
-  html = html.replace('<div id="root"></div>', navigation + '<div id="root"></div>');
-  fs.writeFileSync(path.join(output, "index.html"), html);
-  fs.writeFileSync(path.join(output, "TRADUCOES.md"), "Traduções de termos anatômicos por correspondência exata com TA2.csv do Z-Anatomy, © contribuidores do Z-Anatomy, CC BY-SA 4.0. Termos sem correspondência permanecem no idioma original para evitar traduções anatômicas especulativas. Fonte: https://github.com/LluisV/Z-Anatomy .\n");
-  console.log(`Human Atlas installed at ${output}`);
+  const femaleLicense = process.env.TRAUBE_ATLAS_FEMALE && path.join(process.env.TRAUBE_ATLAS_FEMALE, "../../LICENSE");
+  if (femaleLicense && fs.existsSync(femaleLicense)) fs.copyFileSync(femaleLicense, path.join(output, "LICENSE-atlas-feminino.txt"));
+  fs.copyFileSync(path.join(root, "tools/anatomy-atlas/CREDITOS-MODELOS.txt"), path.join(output, "models/CREDITOS-MODELOS.txt"));
+  const html = fs.readFileSync(path.join(output, "index.html"), "utf8");
+  if (/Human Atlas|LURIA/.test(html)) throw new Error("Marca de terceiros ou nome antigo no index do atlas");
+  console.log(`Atlas instalado em ${path.relative(root, output)}`);
 } else {
-  throw new Error("Use prepare or install");
+  throw new Error("Use prepare ou install");
 }
-

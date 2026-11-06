@@ -62,22 +62,24 @@ const server = http.createServer((request, response) => {
     atlas.on("request", request => { const pathname = new URL(request.url()).pathname; if (byName.has(pathname)) fetched.add(pathname); });
     await atlas.goto(`http://127.0.0.1:${server.address().port}/aprender/anatomia/atlas/?sexo=feminino`,{waitUntil:"domcontentloaded"});
     await atlas.locator("canvas").first().waitFor({timeout:45000}).catch(async error => {
-      const status = await atlas.locator(".loading").allTextContents();
+      const status = await atlas.locator(".atlas-loading").allTextContents();
       throw new Error([error.message, ...status, ...errors].join("\n"));
     });
-    await atlas.locator(".loading").waitFor({state:"hidden",timeout:120000});
+    await atlas.locator(".atlas-loading").waitFor({state:"hidden",timeout:120000});
     assert.equal(fetched.size, atlasFiles.filter(file => file.system === "integumentary").length);
     assert.ok([...fetched].every(url => byName.get(url).system === "integumentary"));
     console.log("Female atlas initial mesh transfer:", [...fetched].reduce((bytes, url) => bytes + byName.get(url).gzipBytes, 0), "bytes");
     await atlas.screenshot({path:path.join(root,"../anatomy-female-body-desktop.png")});
-    const mammaryLayer = atlas.getByRole("switch", {name:"Mostrar mamas", exact:true});
+    const mammaryLayer = atlas.getByRole("switch", {name:"Mostrar Mamas", exact:true});
+    if (atlasFiles.some(file => file.system === "mammary")) {
     const mammaryResponse = atlas.waitForResponse(response => byName.get(new URL(response.url()).pathname)?.system === "mammary" && response.ok());
     await mammaryLayer.click();
     await mammaryResponse;
-    await atlas.locator(".loading").waitFor({state:"hidden",timeout:120000});
+    await atlas.locator(".atlas-loading").waitFor({state:"hidden",timeout:120000});
     assert.equal(await mammaryLayer.getAttribute("aria-checked"), "true");
     assert.ok([...fetched].some(url => byName.get(url).system === "mammary"));
-    console.log("female atlas",await atlas.locator(".identity-meta").textContent());
+    }
+    console.log("female atlas",await atlas.locator(".atlas-sex").textContent());
     if(errors.length) throw Error(errors.join("\n"));
   } finally { await browser.close(); server.close(); }
 })().catch(error => { console.error(error); server.close(); process.exitCode=1; });

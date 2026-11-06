@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261105-diabetes-runtime1-anatomia-atlas-ptbr1";
+const CACHE_VERSION = "traube-pwa-20261106-barcelona-growth1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -27,6 +27,8 @@ const APP_SHELL = [
   "/questoes-simulados/",
   "/aprender/",
   "/aprender/anatomia/",
+  "/aprender/anatomia/atlas/",
+  "/aprender/anatomia/orgaos/",
   "/aprender/anatomia/coracao/",
   "/assets/css/anatomia.css?v=1",
   "/assets/vendor/traube-anatomy-viewer.mjs?v=1",
@@ -47,9 +49,9 @@ const APP_SHELL = [
   "/assets/js/apostilas-app.js?v=20261028-area-flow1",
   "/trabalho/",
   "/trabalho/diabetes/",
-  "/assets/css/work-diabetes.css?v=20261104-diabetes-runtime1",
+  "/assets/css/work-diabetes.css?v=20261105-diabetes-ux1",
   "/assets/js/work-diabetes-data.js?v=20261104-diabetes-runtime1",
-  "/assets/js/work-diabetes.js?v=20261104-diabetes-runtime1",
+  "/assets/js/work-diabetes.js?v=20261105-diabetes-ux1",
   "/assets/js/work-diabetes-paper.js?v=20261104-diabetes-runtime1",
   "/trabalho/paciente/",
   "/trabalho/calculadora/",
@@ -58,7 +60,9 @@ const APP_SHELL = [
   "/assets/js/clinical-calculators-audit-batch1.js?v=20261024-batch1",
   "/assets/js/clinical-calculators-audit-batch2.js?v=20261024-batch2",
   "/assets/js/clinical-calculators-audit-batch3.js?v=20261024-batch3",
-  "/manifest.webmanifest?v=5",
+  "/assets/js/clinical-calculators-barcelona.js?v=20261106-1",
+  "/assets/css/clinical-calculators-barcelona.css?v=20261106-1",
+  "/manifest.webmanifest?v=7",
   "/mini-osce/",
   "/jogos/",
   "/jogos/study-rats/",
@@ -68,10 +72,10 @@ const APP_SHELL = [
   "/jogos/plantao-relampago/",
   "/jogos/sequencia-salvadora/",
   "/jogos/escapando-do-plantao/",
-  "/assets/img/logos/pwa-icon-180.png?v=traube20261104v2",
-  "/assets/img/logos/logo-principal.png?v=traube20261104v2",
+  "/assets/img/logos/pwa-icon-180.png?v=traube20261105brand1",
+  "/assets/img/logos/logo-principal.png?v=traube20261105brand1",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/js/pwa.js?v=20261101-bootstrap1",
+  "/assets/js/pwa.js?v=20261105-brand-gradient1",
   "/assets/css/style.css?v=20261103-clean1",
   "/assets/css/traube-brand-v5.css?v=20261103-logo70-final",
   "/assets/css/traube-logo.css?v=20261103-v1",
@@ -130,7 +134,7 @@ const APP_SHELL = [
   "/assets/css/calculadora-pwa-fix.css?v=20261012-pwa-calcs-2",
   "/assets/js/calculadora-pwa-dates.js?v=20261012-pwa-calcs-2",
   "/assets/js/weekly-content.js?v=1",
-  "/assets/img/logos/pwa-icon-180.png?v=traube20261104v2",
+  "/assets/img/logos/pwa-icon-180.png?v=traube20261105brand1",
   "/assets/js/supabase.js",
   "/assets/css/education-pages-v2.css?v=1",
   "/assets/css/style.css?v=20261103-clean1",
@@ -138,8 +142,9 @@ const APP_SHELL = [
   "/assets/js/dashboard.js?v=20261006-css-owned-height",
   "/assets/js/study-mode.js?v=12.1",
   "/assets/js/traube-brand-v5.js?v=20261031-leco-actions-center1",
-  "/assets/img/logos/pwa-icon-192.png?v=traube20261104v2",
-  "/assets/img/logos/pwa-icon-512.png?v=traube20261104v2"
+  "/assets/img/logos/pwa-icon-192.png?v=traube20261105brand1",
+  "/assets/img/logos/pwa-icon-512.png?v=traube20261105brand1",
+  "/assets/img/logos/pwa-icon-maskable-512.png?v=traube20261105brand1"
 ];
 
 // APP_SHELL permanece como lista de rotas públicas reconhecidas pelo service worker.
@@ -152,9 +157,9 @@ const INSTALL_PRECACHE = new Set([
   "/dashboard/",
   "/vocacao/",
   "/apostilas/",
-  "/manifest.webmanifest?v=5",
+  "/manifest.webmanifest?v=7",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/js/pwa.js?v=20261101-bootstrap1",
+  "/assets/js/pwa.js?v=20261105-brand-gradient1",
   "/assets/css/style.css?v=20261103-clean1",
   "/assets/css/traube-brand-v5.css?v=20261103-logo70-final",
   "/assets/css/traube-logo.css?v=20261103-v1",

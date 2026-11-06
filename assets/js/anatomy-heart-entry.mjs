@@ -129,6 +129,7 @@ if (root) {
     renderer.localClippingEnabled = true;
     const controls = new OrbitControls(camera, canvas);
     controls.enableDamping = !reducedMotion;
+    controls.zoomToCursor = true;
     controls.enablePan = false;
     controls.minDistance = 4;
     controls.maxDistance = 12;

@@ -24,8 +24,8 @@ test("Traube bust theme assets are transparent 256px PNGs", () => {
   });
   assert.deepEqual(buffers[0], buffers[1], "landing and light logo should match");
   assert.deepEqual(buffers[1], buffers[4], "favicon and light logo should match");
-  assert.notDeepEqual(buffers[1], buffers[2], "dark logo must differ from light");
-  assert.notDeepEqual(buffers[1], buffers[3], "rose logo must differ from light");
+  assert.deepEqual(buffers[1], buffers[2], "dark theme uses the same transparent bust");
+  assert.deepEqual(buffers[1], buffers[3], "pink theme uses the same transparent bust");
 });
 
 test("Traube frontend selects each bust logo by theme", () => {
@@ -34,7 +34,7 @@ test("Traube frontend selects each bust logo by theme", () => {
     for (const name of ["logo-icone-original.png", "logo-icone-azul-claro.png", "logo-icone-rosa-escuro.png"]) {
       assert.match(source, new RegExp(name.replaceAll(".", "\\.")), file + " " + name);
     }
-    assert.match(source, /traube20261104v2/, file);
+    assert.match(source, /traube20261105brand1/, file);
   }
 });
 
@@ -43,6 +43,7 @@ test("PWA icon PNGs and manifest declare 180, 192 and 512 icons", () => {
   const icons = manifest.icons || [];
   assert.ok(icons.some(icon => icon.sizes === "192x192"));
   assert.ok(icons.some(icon => icon.sizes === "512x512"));
+  assert.ok(icons.some(icon => icon.purpose === "maskable" && icon.src.includes("pwa-icon-maskable-512.png")));
   for (const size of [180, 192, 512]) {
     const bytes = fs.readFileSync(path.join(logoDir, `pwa-icon-${size}.png`));
     assert.equal(bytes.subarray(0, 8).toString("hex"), "89504e470d0a1a0a");

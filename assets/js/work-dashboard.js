@@ -27,7 +27,8 @@
     ['Consulta e prescrição', [
       ['protocol', 'Anamnese IA', 'Organize relatos soltos em anamnese formal.', 'anamnese/', 'indigo'],
       ['rx', 'Bulário', 'Consulte medicamentos e apresentações.', 'bulario/', 'blue'],
-      ['file', 'Prescrição', 'Organize suas prescrições.', 'prescricao/', 'green'],
+      ['protocol', 'Protocolos e tratamentos', 'Fluxos clínicos, condutas e receitas prontas.', 'protocolos/', 'green'],
+      ['shield', 'Antimicrobianos', 'Espectro, cobertura e escolha por foco infeccioso.', 'antimicrobianos/', 'teal'],
       ['protocol', 'Cola rápida', 'Anotações com acesso temporário.', 'prontuario-rapido/', 'violet']
     ]],
     ['Avaliação e apoio clínico', [

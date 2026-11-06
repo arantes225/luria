@@ -1404,6 +1404,7 @@ const sb = window.supabaseClient;
 
 const PAGE_INFO = {
   dashboard: { title: "Dashboard", eyebrow: "Visão geral", helper: "Seu dia de estudos em um só lugar." },
+  anatomia: { title: "Sala de Anatomia", eyebrow: "Aprender", helper: "Atlas 3D do corpo humano: selecione, corte, remova estruturas e estude por sistemas." },
   vocacao: { title: "Mapa de interesses", eyebrow: "Orientação de carreira", helper: "Explore interesses profissionais e áreas de acesso direto." },
   sessao_estudo: { title: "Sessão de estudo do dia", eyebrow: "Estudar agora", helper: "Complete as etapas planejadas para hoje no seu ritmo." },
   cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos", helper: "Organize o que estudar e quando revisar." },
@@ -1709,8 +1710,16 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">▧</span><span>Cola rápida</span>
         </a>
 
-        <a class="nav-link ${["trabalho_prescricao","trabalho_bulario","trabalho_protocolos","trabalho_receitas","trabalho_antimicrobianos"].includes(page) ? "active" : ""}" href="/trabalho/prescricao/">
-          <span class="nav-icon">✎</span><span>Prescrição</span>
+        <a class="nav-link ${page === "trabalho_bulario" ? "active" : ""}" href="/trabalho/bulario/">
+          <span class="nav-icon">℞</span><span>Bulário</span>
+        </a>
+
+        <a class="nav-link ${["trabalho_protocolos","trabalho_receitas"].includes(page) ? "active" : ""}" href="/trabalho/protocolos/">
+          <span class="nav-icon">☷</span><span>Protocolos e tratamentos</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_antimicrobianos" ? "active" : ""}" href="/trabalho/antimicrobianos/">
+          <span class="nav-icon">⊕</span><span>Antimicrobianos</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_diabetes" ? "active" : ""}" href="/trabalho/diabetes/">
@@ -1869,14 +1878,14 @@ async function carregarPerfil(userId) {
 
 function traubeLogoSourceForTheme(theme) {
   if (theme === "dark") {
-    return "/assets/img/logos/logo-icone-azul-claro.png?v=traube20261104v2";
+    return "/assets/img/logos/logo-icone-azul-claro.png?v=traube20261105brand1";
   }
 
   if (theme === "leila-mood" || theme === "pink" || theme === "rosa") {
-    return "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261104v2";
+    return "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261105brand1";
   }
 
-  return "/assets/img/logos/logo-icone-original.png?v=traube20261104v2";
+  return "/assets/img/logos/logo-icone-original.png?v=traube20261105brand1";
 }
 
 
@@ -5690,7 +5699,7 @@ function ensureTraubeDialog() {
   dialog.innerHTML = `
     <form method="dialog" class="traube-global-dialog-card">
       <div class="traube-global-dialog-icon" aria-hidden="true">
-        <img class="traube-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=traube20261104v2" alt="">
+        <img class="traube-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=traube20261105brand1" alt="">
       </div>
       <div class="traube-global-dialog-copy">
         <span class="traube-global-dialog-eyebrow">TRAUBE</span>
@@ -5786,10 +5795,10 @@ function openTraubeDialog({
 
     logo.src =
       theme === "dark"
-        ? "/assets/img/logos/logo-icone-azul-claro.png?v=traube20261104v2"
+        ? "/assets/img/logos/logo-icone-azul-claro.png?v=traube20261105brand1"
         : theme === "leila-mood"
-          ? "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261104v2"
-          : "/assets/img/logos/logo-icone-original.png?v=traube20261104v2";
+          ? "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261105brand1"
+          : "/assets/img/logos/logo-icone-original.png?v=traube20261105brand1";
   }
 
   copy.textContent =

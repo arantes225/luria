@@ -1,14 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; worker-src 'self'; media-src 'self'; frame-src 'none'; upgrade-insecure-requests">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0;url=/aprender/anatomia/atlas/">
-  <link rel="canonical" href="/aprender/anatomia/atlas/">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self'; upgrade-insecure-requests">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Sala de Anatomia · TRAUBE</title>
+  <meta name="description" content="Atlas 3D dos corpos masculino e feminino em português no TRAUBE: mais de 2.600 estruturas, órgãos por dentro, fluxo sanguíneo no coração, cortes, remoção de peças, tours, microscopia e desafio de questões.">
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <meta name="theme-color" content="#0A2342">
+  <script src="/assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=10">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20261103-clean1">
+  <link rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261103-logo70-final">
+  <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/traube-logo.css?v=20261103-v1">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-learning-hubs">
+  <link rel="stylesheet" href="/assets/css/anatomia.css?v=6">
+  <link rel="stylesheet" href="/aprender/anatomia/laboratorio/lab.css?v=2">
+  <script defer src="/assets/js/traube-brand-v5.js?v=20261025-review-fixes3"></script>
+  <link rel="canonical" href="/aprender/anatomia/">
 </head>
-<body>
-  <p>Abrindo o <a href="/aprender/anatomia/atlas/">atlas do corpo humano</a>…</p>
+<body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="anatomia">
+<script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+<script defer src="/assets/js/ui-navigation-v2.js?v=20261105-anatomia1"></script>
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"><span class="eyebrow">APRENDER</span><h1>Sala de Anatomia</h1></div>
+        </header>
+
+        <section class="anatomy-room" aria-label="Sala de Anatomia">
+          <section class="traube-page-spotlight" aria-label="Sala de Anatomia">
+            <div class="traube-page-spotlight-copy">
+              <strong>Sala de Anatomia</strong>
+              <small class="traube-page-spotlight-helper">Atlas 3D do corpo humano: selecione, corte, remova estruturas e estude por sistemas.</small>
+            </div>
+          </section>
+
+          <div class="anatomy-room-bar">
+            <div class="anatomy-room-tabs" role="tablist" aria-label="Modos da Sala de Anatomia">
+              <button type="button" role="tab" id="tab-atlas" aria-controls="panel-atlas" aria-selected="true" data-room-tab="atlas">Atlas 3D</button>
+              <button type="button" role="tab" id="tab-micro" aria-controls="panel-micro" aria-selected="false" data-room-tab="micro" tabindex="-1">Microscopia</button>
+              <button type="button" role="tab" id="tab-quiz" aria-controls="panel-quiz" aria-selected="false" data-room-tab="quiz" tabindex="-1">Desafio</button>
+              <a class="anatomy-room-link" href="/aprender/anatomia/coracao/">Coração em detalhe</a>
+            </div>
+            <div class="anatomy-room-actions">
+              <button type="button" class="anatomy-room-ghost" data-room-fullscreen>Tela cheia</button>
+              <button type="button" class="anatomy-room-ghost" data-credits-open aria-expanded="false" aria-controls="creditos">Créditos</button>
+            </div>
+          </div>
+
+          <section class="anatomy-room-stage" id="panel-atlas" role="tabpanel" aria-labelledby="tab-atlas" data-room-panel="atlas">
+            <iframe class="anatomy-room-frame" src="/aprender/anatomia/atlas/?embed=1" title="Atlas 3D do corpo humano" allow="fullscreen" loading="eager"></iframe>
+          </section>
+
+          <section class="lab-card" id="panel-micro" role="tabpanel" aria-labelledby="tab-micro" data-room-panel="micro" hidden>
+            <div class="lab-card-head">
+              <div><span class="lab-kicker">Microscopia 3D</span><h2 data-micro-title>Troca gasosa no alvéolo</h2></div>
+              <button type="button" class="lab-ghost" data-micro-play aria-pressed="true">Pausar</button>
+            </div>
+            <div class="micro-tabs" data-micro-tabs role="group" aria-label="Escolha a cena"></div>
+            <div class="micro-layout">
+              <div class="micro-stage" data-micro-stage>
+                <div class="micro-labels" data-micro-labels aria-hidden="true"></div>
+                <p class="lab-muted" data-micro-fallback hidden>Seu navegador não ativou o WebGL; os textos ao lado continuam disponíveis.</p>
+                <span class="micro-hint">Arraste para girar · role para aproximar</span>
+              </div>
+              <div class="micro-info">
+                <ul class="micro-facts" data-micro-facts></ul>
+                <p class="lab-muted">Representação esquemática, fora de escala.</p>
+                <a class="micro-source" data-micro-source href="#" target="_blank" rel="noopener noreferrer"></a>
+              </div>
+            </div>
+          </section>
+
+          <section class="lab-card" id="panel-quiz" role="tabpanel" aria-labelledby="tab-quiz" data-room-panel="quiz" hidden>
+            <div class="lab-card-head">
+              <div><span class="lab-kicker">Desafio</span><h2>Rodadas de 5 questões</h2></div>
+            </div>
+            <div class="lab-chips" data-quiz-themes role="group" aria-label="Tema das questões"></div>
+            <div class="quiz-root" data-quiz-root aria-live="polite"><p class="lab-muted">Carregando questões…</p></div>
+          </section>
+
+          <section class="anatomy-credits-card" id="creditos" hidden aria-label="Créditos da Sala de Anatomia">
+            <div class="anatomy-credits-head"><strong>Créditos</strong><button type="button" data-credits-close aria-label="Fechar créditos">✕</button></div>
+            <ul>
+              <li>Modelos do corpo e do coração: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html" target="_blank" rel="noopener noreferrer">BodyParts3D</a>, © The Database Center for Life Science, CC BY 4.0. Coração preparado por <a href="https://github.com/organui/heart-3d" target="_blank" rel="noopener noreferrer">OrganUI</a>; geometria simplificada e recolorida.</li>
+              <li>Músculos e vísceras complementares (parede abdominal, mímica, pulmões por lobo, tireoide, segmentos do fígado): <a href="https://www.z-anatomy.com/" target="_blank" rel="noopener noreferrer">Z-Anatomy</a>, derivado do BodyParts3D, CC BY-SA 4.0. A geometria adaptada (reposicionada e simplificada) segue sob <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
+              <li>Encéfalo por regiões, rins, bexiga, próstata, ceco e o corpo feminino: Kristen Browne e Heidi Schlehlein, <a href="https://humanatlas.io/3d-reference-library" target="_blank" rel="noopener noreferrer">Human Reference Atlas / HuBMAP</a>, órgãos de referência v1.10, CC BY 4.0. Conversão do corpo feminino adaptada de software MIT. Músculos do membro inferior feminino: Andreassen et al., <i>Scientific Data</i> 10:34 (2023), CC BY 4.0. Os demais músculos do corpo feminino são os do corpo masculino ajustados osso a osso.</li>
+              <li>Visualizador do atlas e cenas microscópicas adaptados de software MIT; licenças publicadas junto de cada módulo.</li>
+              <li>Parte das questões foi traduzida e revisada a partir de um banco Apache-2.0 (<a href="/aprender/anatomia/laboratorio/LICENSE-questoes-apache.txt">licença</a>).</li>
+              <li>Fisiologia: <a href="https://openstax.org/books/anatomy-and-physiology-2e" target="_blank" rel="noopener noreferrer">OpenStax</a> e <a href="https://www.nhlbi.nih.gov/health/heart/blood-flow" target="_blank" rel="noopener noreferrer">NHLBI</a>.</li>
+            </ul>
+            <p>Conteúdo educacional, sujeito a revisão anatômica especializada.</p>
+          </section>
+        </section>
+      </div>
+    </main>
+  </div>
+
+<script src="/assets/vendor/supabase-2.110.6.js"></script>
+<script src="/assets/js/supabase.js?v=auth4"></script>
+<script src="/assets/js/app.js?v=20261101-traube-bootstrap1"></script>
+<script defer src="/assets/js/anatomy-credits.js?v=2"></script>
+<script type="module" src="/assets/js/anatomy-room.mjs?v=2"></script>
+<script defer src="/assets/js/pwa.js?v=20261101-bootstrap1"></script>
 </body>
 </html>

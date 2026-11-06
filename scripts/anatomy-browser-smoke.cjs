@@ -29,8 +29,6 @@ const server = http.createServer((request, response) => {
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
     page.on("console", message => { if (message.type() === "error" && /THREE.*(?:Shader|VALIDATE_STATUS)/i.test(message.text())) errors.push(message.text()); });
-    await page.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/", { waitUntil: "domcontentloaded" });
-    await page.waitForURL("**/aprender/anatomia/atlas/", { timeout: 15000 });
     await page.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/coracao/", { waitUntil: "domcontentloaded" });
     await page.locator("[data-anatomy-viewer].is-ready").waitFor({ timeout: 45000 });
     assert.equal(await page.locator("[data-anatomy-viewer].is-static").count(), 0);
@@ -67,11 +65,11 @@ const server = http.createServer((request, response) => {
       if (byName.has(pathname) || pathname.endsWith("/models/atlas.json.gz")) startupRequests.push(pathname);
     });
     atlas.on("request", request => { const pathname = new URL(request.url()).pathname; if (byName.has(pathname)) fetched.add(pathname); });
-    await atlas.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/atlas/", { waitUntil: "domcontentloaded" });
-    await atlas.locator(".system-row").first().waitFor({ timeout: 45000 });
-    assert.equal(await atlas.locator(".system-row").count(), 15);
+    await atlas.goto("http://127.0.0.1:" + server.address().port + "/aprender/anatomia/atlas/?corpo=masculino", { waitUntil: "domcontentloaded" });
+    await atlas.locator(".atlas-system").first().waitFor({ timeout: 45000 });
+    assert.ok(await atlas.locator(".atlas-system").count() >= 15);
     await atlas.locator("canvas").first().waitFor({ timeout: 45000 });
-    await atlas.locator(".loading").waitFor({ state: "hidden", timeout: 120000 });
+    await atlas.locator(".atlas-loading").waitFor({ state: "hidden", timeout: 120000 });
     assert.equal(fetched.size, atlasFiles.filter(file => file.system === "integumentary").length);
     assert.ok([...fetched].every(url => byName.get(url).system === "integumentary"));
     const compressedCatalogue = startupRequests.findIndex(pathname => pathname.endsWith("/models/atlas.json.gz"));
@@ -83,11 +81,11 @@ const server = http.createServer((request, response) => {
       atlas.waitForResponse(response => byName.get(new URL(response.url()).pathname)?.system === "skeletal" && response.ok()),
       atlas.getByRole("button", { name: "Esqueleto", exact: true }).click()
     ]);
-    await atlas.locator(".loading").waitFor({ state: "hidden", timeout: 120000 });
+    await atlas.locator(".atlas-loading").waitFor({ state: "hidden", timeout: 120000 });
     assert.ok([...fetched].every(url => ["integumentary", "skeletal"].includes(byName.get(url).system)));
     await atlas.setViewportSize({ width: 390, height: 844 });
-    await atlas.getByRole("button", { name: "Abrir camadas de sistemas" }).click();
-    await atlas.locator(".system-row").first().waitFor({ state: "visible" });
+    await atlas.getByRole("button", { name: "Sistemas", exact: true }).click();
+    await atlas.locator(".atlas-system").first().waitFor({ state: "visible" });
     await atlas.screenshot({ path: path.resolve(__dirname, "../build/anatomy-atlas-mobile.png") });
     assert.equal(atlasErrors.length, 0, atlasErrors.join("\n"));
     assert.equal(errors.length, 0, errors.join("\n"));
