@@ -206,7 +206,14 @@
   }
 
   function cat(data, compact = false) {
-    return `<section class="dl-card dl-cat ${compact ? "dl-cat-compact" : ""}">${heading(icon("cat"), "Pulo do Gato do dia")}<div class="dl-cat-content"><span class="dashboard-cat-symbol" role="img" aria-label="Pulo do Gato"><img class="cat-symbol-light" src="/assets/img/pulo%20do%20gato/traube_gato_tema_claro.webp?v=20260924d" alt=""><img class="cat-symbol-dark" src="/assets/img/pulo%20do%20gato/traube_gato_tema_escuro.webp?v=20260924d" alt=""><img class="cat-symbol-pink" src="/assets/img/pulo%20do%20gato/traube_gato_tema_rosa.webp?v=20260924d" alt=""></span><div><p>${escape(data.ccq)}</p>${data.ccqArea ? `<small>${escape(data.ccqArea)}</small>` : ""}</div></div></section>`;
+    return `<section class="dl-card dl-cat ${compact ? "dl-cat-compact" : ""}">
+      <a class="dl-daily-challenge" href="/desafio-diario/" style="display:flex;min-height:100%;height:100%;box-sizing:border-box;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px;padding:24px;text-decoration:none;color:inherit;border-radius:inherit">
+        <span class="dl-heading-icon" aria-hidden="true">${icon("target")}</span>
+        <strong style="font-size:clamp(20px,2vw,30px);line-height:1.2">Desafio Diário</strong>
+        <span>Um caso por dia para treinar seu raciocínio clínico.</span>
+        <span class="dl-daily-cta" style="display:inline-flex;min-height:42px;align-items:center;padding:8px 16px;border-radius:10px;background:var(--ui-pill-gradient,linear-gradient(110deg,#174b91,#2388e7));color:#fff;font-weight:700">Resolver desafio →</span>
+      </a>
+    </section>`;
   }
 
   function studyNowPanel(compact = false) {
