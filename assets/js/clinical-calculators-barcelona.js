@@ -124,6 +124,10 @@
     return '<label class="barc-field"><span>'+text(label)+'</span><select name="'+name+'">'+options.map(o=>'<option value="'+o[0]+'">'+text(o[1])+'</option>').join("")+'</select></label>';
   }
   function show() {
+    // Evita reaproveitar o estado de auditoria de uma calculadora anterior.
+    delete modal.dataset.clinicalAuditId;
+    delete modal.dataset.clinicalAudit2Id;
+    delete modal.dataset.clinicalAudit3Id;
     addRecent(id);
     document.querySelector("#calc-modal-code").textContent="BARC";
     document.querySelector("#calc-modal-heading").textContent="Crescimento Fetal — Barcelona";
