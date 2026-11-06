@@ -739,6 +739,11 @@
     }
 
 
+    .settings-integration-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
+    .settings-integration-row>div:first-child{display:grid;gap:3px}
+    .settings-integration-row small{color:var(--muted)}
+    .settings-integration-actions{display:flex;gap:8px;flex-wrap:wrap}
+    @media(max-width:600px){.settings-integration-row{align-items:stretch;flex-direction:column}.settings-integration-actions .button{width:100%}}
     .profile-field small{color:var(--muted);font-size:10px;line-height:1.4}
     .account-change-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}
     .account-change-row input,.account-pin-grid input{
@@ -833,15 +838,19 @@
           <button type="button" class="settings-tab" data-settings-tab="perfil">Perfil e Conta</button>
           <button type="button" class="settings-tab active" data-settings-tab="personalizar" aria-current="page">Personalizar</button>
           <a class="settings-tab" href="/configuracoes/cronograma/">Cronograma</a>
-          <a class="settings-tab" href="/configuracoes/flashcards/">Flashcards</a>
-          <button type="button" class="settings-tab" data-settings-tab="pomodoro">Pomodoro e Cronômetro</button>
-          <button type="button" class="settings-tab" data-settings-tab="revisoes">Revisões</button>
-          <button type="button" class="settings-tab" data-settings-tab="notificacoes">Notificações</button>
-          <button type="button" class="settings-tab" data-settings-tab="aparencia">Aparência</button>
-          <button type="button" class="settings-tab" data-settings-tab="privacidade">Privacidade</button>
         </nav>
 
         <section class="settings-section settings-personalize-grid" data-settings-view="personalizar">
+          <article class="setting-row settings-personalize-card settings-wide-card">
+            <div><h2 data-settings-icon="N">Conectar ao Notion</h2><p>Use suas páginas do Notion nas Anotações da TRAUBE.</p></div>
+            <div class="settings-integration-row">
+              <div><strong id="settings-notion-title">Notion</strong><small id="settings-notion-status">Verificando conexão...</small></div>
+              <div class="settings-integration-actions">
+                <button id="settings-notion-connect" class="button primary" type="button" hidden>Conectar ao Notion</button>
+                <button id="settings-notion-disconnect" class="button secondary" type="button" hidden>Desconectar</button>
+              </div>
+            </div>
+          </article>
 
           <article class="setting-row onboarding-settings-block">
             <div>
@@ -903,6 +912,11 @@
                   placeholder="Ex.: CEUB"
                   autocomplete="organization"
                 >
+              </label>
+
+              <label class="profile-field">
+                <span>Especialidade pretendida</span>
+                <input id="profile-specialty" type="text" maxlength="120" placeholder="Ex.: Clínica Médica" autocomplete="off">
               </label>
 
               <div class="profile-field">
