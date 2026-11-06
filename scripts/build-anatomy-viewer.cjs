@@ -14,8 +14,8 @@ const modelPath = process.env.ANATOMY_MODEL_PATH
   : path.join(root, "assets/models/anatomia/coracao.glb");
 const model = fs.readFileSync(modelPath);
 const modelSha = crypto.createHash("sha256").update(model).digest("hex");
-if (modelSha !== "b80a727d022a4ab07ccfcf15caccc228eaccb6d69ec0e72923324946ac35a946") {
-  throw new Error("O modelo BodyParts3D não corresponde à revisão verificada");
+if (modelSha !== "70ec2937b3736b3dfe1ac3b1c3f97d6529d58c63018a891fe9ae93116612f560") {
+  throw new Error("O modelo HRA do coração não corresponde à revisão verificada");
 }
 
 if (model.toString("ascii", 0, 4) !== "glTF" || model.readUInt32LE(8) !== model.length) {
@@ -27,9 +27,9 @@ if (model.readUInt32LE(16) !== 0x4e4f534a) {
 const jsonLength = model.readUInt32LE(12);
 const gltf = JSON.parse(model.toString("utf8", 20, 20 + jsonLength));
 const ids = new Set((gltf.nodes || []).map(node => node.extras?.structureId || node.name));
-const required = ["right-atrium", "left-atrium", "ventricular-wall", "right-ventricle",
-  "left-ventricle", "ascending-aorta", "aortic-arch", "pulmonary-trunk",
-  "superior-vena-cava", "left-coronary", "right-coronary"];
+const required = ["VH_F_left_cardiac_atrium", "VH_F_right_cardiac_atrium", "VH_F_left_ventricle", "VH_F_right_ventricle",
+  "VH_F_ascending_aorta", "VH_F_aortic_arch", "VH_F_descending_aorta_a", "VH_F_pulmonary_trunk", "VH_F_pulmonary_artery_L", "VH_F_pulmonary_artery_R",
+  "VH_F_superior_vena_cava", "VH_F_inferior_vena_cava_a", "VH_F_left_coronary_artery", "VH_F_right_coronary_artery", "VH_F_aortic_valve"];
 const missing = required.filter(id => !ids.has(id));
 if (missing.length) throw new Error("Estruturas do atlas ausentes: " + missing.join(", "));
 
