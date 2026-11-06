@@ -1476,7 +1476,6 @@ const PLUS_NAV_FEATURES = {
   "/registrar-questoes/": "questions",
   "/plantao/": "plantao",
   "/plantao/sala-emergencia/": "plantao",
-  "/plantao/traubezap/": "plantao",
   "/estatisticas/": "statistics_general"
 };
 
@@ -1643,7 +1642,6 @@ function updateTraubeProfileInitials(user = window.docmapUser, profile = window.
 }
 
 function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = null) {
-  const isTraubeZap = page === "plantao" && document.body.dataset.plantaoEntry === "phone";
   const sidebarPlan = String(entitlements?.plan || window.docmapPlan || "").trim().toLowerCase();
   const canAccessWork = isAdmin === true || ["plus", "pro", "betatester"].includes(sidebarPlan);
   const fallbackName = user.email
@@ -1758,6 +1756,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${traubeIcon("calendar")}</span><span>Cronograma</span>
         </a>
 
+        <a class="nav-link ${page === "desafio" ? "active" : ""}" href="/desafio-diario/">
+          <span class="nav-icon">${traubeIcon("target")}</span><span>Desafio Diário</span>
+        </a>
+
         <a class="nav-link ${["aprender", "anatomia"].includes(page) ? "active" : ""}" href="/aprender/">
           <span class="nav-icon">${traubeIcon("book")}</span><span>Aprender</span>
         </a>
@@ -1766,30 +1768,25 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${traubeIcon("cards")}</span><span>Consolidar</span>
         </a>
 
-        <a class="nav-link ${["jogos", "study-rats"].includes(page) ? "active" : ""}" href="/jogos/">
-          <span class="nav-icon">${traubeIcon("games")}</span><span>Jogos</span>
-        </a>
-
-        <a class="nav-link ${page === "desafio" ? "active" : ""}" href="/desafio-diario/">
-          <span class="nav-icon">${traubeIcon("target")}</span><span>Desafio Diário</span>
-        </a>
-
-        <a class="nav-link ${page === "plantao" && !isTraubeZap ? "active" : ""}" href="/plantao/sala-emergencia/">
+        <a class="nav-link ${page === "plantao" ? "active" : ""}" href="/plantao/sala-emergencia/">
           <span class="nav-icon">${traubeIcon("stethoscope")}</span><span>Simulador de Emergência</span>
-        </a>
-
-        <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
-          <span class="nav-icon">${traubeIcon("chart")}</span><span>Estatísticas</span>
         </a>
 
         <a class="nav-link ${["aplicar", "curriculo", "radar"].includes(page) ? "active" : ""}" href="/aplicar/">
           <span class="nav-icon">${traubeIcon("compass")}</span><span>Aplicar</span>
         </a>
 
+        <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
+          <span class="nav-icon">${traubeIcon("chart")}</span><span>Estatísticas</span>
+        </a>
+
+        <a class="nav-link ${["jogos", "study-rats"].includes(page) ? "active" : ""}" href="/jogos/">
+          <span class="nav-icon">${traubeIcon("games")}</span><span>Jogos</span>
+        </a>
+
         <a class="nav-link ${page === "amigos" ? "active" : ""}" href="/amigos/">
           <span class="nav-icon">${traubeIcon("users")}</span><span>Amigos</span>
         </a>
-
         <span id="admin-nav-slot"></span>
       `}
     </nav>
