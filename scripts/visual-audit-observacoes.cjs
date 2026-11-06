@@ -1,4 +1,5 @@
 'use strict';
+// Visual verification pass 3: page styles in the earliest UI layer.
 const fs=require('node:fs'),path=require('node:path');
 const {chromium}=require('playwright');
 const root=path.resolve(__dirname,'..');
