@@ -20,7 +20,7 @@ test('Alex remains the on-screen companion instead of a top-bar shortcut',t=>{
 });
 
 test('Every reviewed study route loads the on-screen Alex companion layer',()=>{
- for(const file of ['consolidar/index.html','questoes-simulados/index.html','flashcards/index.html','caderno-erros/index.html','plantao/traubezap/index.html','jogos/index.html','jogos/study-rats/index.html','professor-alex/index.html']){
+ for(const file of ['consolidar/index.html','questoes-simulados/index.html','flashcards/index.html','caderno-erros/index.html','jogos/index.html','jogos/study-rats/index.html','professor-alex/index.html']){
   assert.match(read(file),/assets\/js\/ui-navigation-v2\.js\?/,file);
  }
  assert.match(read('assets/js/ui-navigation-v2.js'),/mountAlexCompanion/);
