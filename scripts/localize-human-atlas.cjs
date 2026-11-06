@@ -52,6 +52,13 @@ module.exports = function localizeHumanAtlas(source, lexiconPath) {
   page = page.replace("name:p.name,elements:[id]", "name:p.name,originalName:p.originalName,elements:[id]");
   page = page.replace("explanation(chosen.name,selected.system)", "explanation(chosen.originalName??chosen.name,selected.system)");
   page = page.replace("EXPLANATIONS[chosen.name.toLowerCase()]", "EXPLANATIONS[(chosen.originalName??chosen.name).toLowerCase()]");
+  page = page.replace("[query,setQuery]=useState(''),[chosen,setChosen]=useState<Concept|null>(null);", "[query,setQuery]=useState(''),[chosen,setChosen]=useState<Concept|null>(null),[sex,setSex]=useState<'masculino'|'feminino'>(()=>new URLSearchParams(location.search).get('sexo')==='feminino'?'feminino':'masculino');");
+  page = page.replace("fetch(new URL('models/atlas.json',document.baseURI)", "fetch(new URL((sex==='feminino'?'models/atlas-female.json':'models/atlas.json'),document.baseURI)");
+  page = page.replace("return()=>abort.abort();},[]);", "return()=>abort.abort();},[sex]);");
+  page = page.replace("<div className=\"identity-meta\">{atlas?atlas.parts.length.toLocaleString('pt-BR'):'2,234'} estruturas em 3D <span>·</span> BodyParts3D</div>", "<div className=\"identity-meta\">{atlas?atlas.parts.length.toLocaleString('pt-BR'):(sex==='feminino'?'2.534':'2.234')} estruturas em 3D <span>·</span> {sex==='feminino'?'Human Reference Atlas · HuBMAP':'BodyParts3D'}</div><div className=\"sex-switch\" role=\"group\" aria-label=\"Referência corporal\"><button className={sex==='masculino'?'active':''} onClick={()=>{setSex('masculino');history.replaceState(null,'','?sexo=masculino')}}>Masculino</button><button className={sex==='feminino'?'active':''} onClick={()=>{setSex('feminino');history.replaceState(null,'','?sexo=feminino')}}>Feminino · HuBMAP</button></div>");
+  page = page.replace("'CORPO ADULTO · MASCULINO'", "sex==='feminino'?'CORPO ADULTO · FEMININO':'CORPO ADULTO · MASCULINO'");
+  page = page.replace("Explore a anatomia de referência masculina adulta do BodyParts3D.", "{sex==='feminino'?'Explore a referência corporal feminina do Human Reference Atlas / HuBMAP.':'Explore a anatomia de referência masculina adulta do BodyParts3D.'}");
+  page = page.replace("<p><strong>Masculino · BodyParts3D</strong>", "<p><strong>{sex==='feminino'?'Feminino · Human Reference Atlas / HuBMAP':'Masculino · BodyParts3D'}</strong>");
   fs.writeFileSync(pagePath, page);
 
   const anatomyPath = path.join(source, "app/anatomy.ts");
@@ -103,18 +110,23 @@ module.exports = function localizeHumanAtlas(source, lexiconPath) {
       else terms.set(english, portuguese);
     }
     for (const key of ambiguous) terms.delete(key);
-    const manifestPath = path.join(source, "public/models/atlas.json");
-    const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-    for (const part of manifest.parts) {
-      const translated = terms.get(part.name.toLowerCase());
-      if (translated && translated.toLowerCase() !== part.name.toLowerCase()) { part.originalName = part.name; part.name = translated; translatedParts++; }
+    for (const filename of ["atlas.json", "atlas-female.json"]) {
+      const manifestPath = path.join(source, "public/models", filename);
+      if (!fs.existsSync(manifestPath)) continue;
+      const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+      for (const part of manifest.parts) {
+        const translated = terms.get(part.name.toLowerCase());
+        if (translated && translated.toLowerCase() !== part.name.toLowerCase()) { part.originalName = part.name; part.name = translated; translatedParts++; }
+      }
+      for (const concept of manifest.concepts) {
+        const translated = terms.get(concept.name.toLowerCase());
+        if (translated && translated.toLowerCase() !== concept.name.toLowerCase()) { concept.originalName = concept.name; concept.name = translated; translatedConcepts++; }
+      }
+      fs.writeFileSync(manifestPath, JSON.stringify(manifest));
+      console.log(`Terminologia PT (${filename}): ${manifest.parts.filter(part => part.originalName).length}/${manifest.parts.length} malhas e ${manifest.concepts.filter(concept => concept.originalName).length}/${manifest.concepts.length} conceitos com correspondência exata`);
     }
-    for (const concept of manifest.concepts) {
-      const translated = terms.get(concept.name.toLowerCase());
-      if (translated && translated.toLowerCase() !== concept.name.toLowerCase()) { concept.originalName = concept.name; concept.name = translated; translatedConcepts++; }
-    }
-    fs.writeFileSync(manifestPath, JSON.stringify(manifest));
-    console.log(`Terminologia PT: ${translatedParts}/${manifest.parts.length} malhas e ${translatedConcepts}/${manifest.concepts.length} conceitos com correspondência exata`);
+    console.log(`Terminologia PT total: ${translatedParts} malhas e ${translatedConcepts} conceitos traduzidos`);
   }
 };
+
 
