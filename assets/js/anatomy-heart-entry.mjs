@@ -234,7 +234,11 @@ if (root) {
           const id = object.userData.structureId || object.name;
           const structure = byId.get(id);
           if (!structure) return;
-          object.material = tissueMaterial(structure.color, structure.group === "Grandes vasos" || structure.group === "Coronárias");
+          // The verified GLB already carries distinct tissue and vascular colors.
+          object.material = object.material.clone();
+          object.material.side = THREE.DoubleSide;
+          object.material.metalness = 0;
+          object.material.roughness = structure.group === "Grandes vasos" || structure.group === "Coronárias" ? .62 : .79;
           object.userData.structureId = id;
           meshes.set(id, object);
         });
@@ -333,4 +337,5 @@ if (root) {
   select("ascending-aorta");
   card.hidden = true;
 }
+
 
