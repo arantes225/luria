@@ -31,7 +31,7 @@
   if (new URL(document.baseURI).pathname !== "/") return;
 
 
-  const release = "20261106-scores-interpret-v2-atlas3";
+  const release = "20261106-observacoes69-1";
 
   
 
