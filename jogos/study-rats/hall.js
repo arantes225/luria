@@ -163,7 +163,7 @@
       if (currentMatch) {
         const next = rows.find(match => match.id === currentMatch.id);
         if (next?.status === 'playing') return launchGame(next);
-        if (!next || next.status !== 'waiting') { currentMatch = null; $('sr-waiting').hidden = true; $('sr-find-random').disabled = false; $('sr-show-friends').disabled = false; }
+        if (!next || next.status !== 'waiting') { if (randomFallbackTimer) clearTimeout(randomFallbackTimer); randomFallbackTimer = null; currentMatch = null; $('sr-waiting').hidden = true; $('sr-find-random').disabled = false; $('sr-show-friends').disabled = false; }
       }
       if (requestedMatch) {
         const invited = rows.find(match => match.id === requestedMatch && match.invited_id === userId);
