@@ -1109,7 +1109,7 @@
     const group=(label,items)=>`<section class="work-filter-group"><h3>${label}</h3><div class="work-filter-options">${items.map(c=>`<button type="button" class="score-tab ${c===activeCat?"active":""}" aria-pressed="${c===activeCat}" data-cat="${esc(c)}">${esc(c)}</button>`).join("")}</div></section>`;
     box.innerHTML=group("Biblioteca",["Todos","Favoritos"])+group("Contextos",["Plantão"])+group("Áreas",categories.filter(c=>!["Todos","Favoritos","Plantão"].includes(c)));
     $("#score-filter-current").textContent=activeCat;
-    $(".score-tab",box).forEach(b=>b.onclick=()=>{activeCat=b.dataset.cat;renderTabs();renderCards();$("#score-filter").open=false;});
+    $$(".score-tab",box).forEach(b=>b.onclick=()=>{activeCat=b.dataset.cat;renderTabs();renderCards();$("#score-filter").open=false;});
   }
 
   function filtered(){
