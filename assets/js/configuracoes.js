@@ -76,7 +76,7 @@ async function connectSettingsNotion() {
   if (button) button.disabled = true;
 
   try {
-    const redirectTo = window.location.origin + "/configuracoes/?section=perfil&notion=connected";
+    const redirectTo = window.location.origin + "/configuracoes/?section=personalizar&notion=connected";
     const result = await invokeSettingsNotionFunction("notion-auth", { redirect_to: redirectTo });
     if (!result?.url) throw new Error("Não foi possível iniciar a conexão.");
     window.location.assign(result.url);
