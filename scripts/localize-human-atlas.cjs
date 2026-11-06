@@ -61,6 +61,8 @@ module.exports = function localizeHumanAtlas(source, lexiconPath) {
   page = page.replace("'CORPO ADULTO · MASCULINO'", "sex==='feminino'?'CORPO ADULTO · FEMININO':'CORPO ADULTO · MASCULINO'");
   page = page.replace("Explore a anatomia de referência masculina adulta do BodyParts3D.", "{sex==='feminino'?'Explore a referência corporal feminina do Human Reference Atlas / HuBMAP.':'Explore a anatomia de referência masculina adulta do BodyParts3D.'}");
   page = page.replace("<p><strong>Masculino · BodyParts3D</strong>", "<p><strong>{sex==='feminino'?'Feminino · Human Reference Atlas / HuBMAP':'Masculino · BodyParts3D'}</strong>");
+  page = page.replace("2.234 malhas individuais e 3.432 conceitos nomeados de uma referência anatômica masculina adulta.", "{sex==='feminino'?'2.534 malhas e 3.739 conceitos na referência feminina, com partes adaptadas de BodyParts3D.':'2.234 malhas e 3.432 conceitos na referência masculina BodyParts3D.'}");
+  page = page.replace("<p>BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.</p>", "<p>{sex==='feminino'?'Referência feminina HuBMAP/Human Reference Atlas, CC BY 4.0, com partes adaptadas de BodyParts3D. Consulte ATTRIBUTION-FEMININO.md.':'BodyParts3D, © The Database Center for Life Science, CC BY 4.0.'}</p>");
   fs.writeFileSync(pagePath, page);
 
   const anatomyPath = path.join(source, "app/anatomy.ts");
