@@ -31,7 +31,14 @@
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
   <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/traube-logo.css?v=20261103-v1">
-</head>
+<style>
+  .stats-controls-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:10px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 6px 20px rgba(18,59,117,.08)}
+  .stats-tabs,.stats-range{display:flex;flex-wrap:wrap;gap:6px}
+  .stats-tabs button,.stats-range button{min-height:38px;padding:8px 13px;border-radius:10px;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-weight:700}
+  .stats-tabs button.active,.stats-range button.active{background:var(--ui-pill-gradient,linear-gradient(110deg,#174b91,#2388e7));color:#fff;border-color:transparent;box-shadow:0 4px 12px rgba(23,75,145,.22)}
+  .stats-status{display:inline-flex;align-items:center;gap:8px;margin:12px 0;padding:8px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--border);color:var(--muted);font-size:12px;font-weight:700}
+  .stats-status::before{content:"";width:7px;height:7px;border-radius:50%;background:#2dab92}
+</style></head>
 
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="estatisticas">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
