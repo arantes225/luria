@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261106-barcelona-growth1-atlas3";
+const CACHE_VERSION = "traube-pwa-20261106-scores-interpret-v2-atlas3";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -56,6 +56,8 @@ const APP_SHELL = [
   "/trabalho/paciente/",
   "/trabalho/calculadora/",
   "/trabalho/scores/",
+  "/assets/js/work-scores.js?v=20261106-interpret-v2",
+  "/assets/css/work-scores.css?v=20261106-interpret-v2",
   "/assets/js/clinical-calculators-expansion.js?v=20261024",
   "/assets/js/clinical-calculators-audit-batch1.js?v=20261024-batch1",
   "/assets/js/clinical-calculators-audit-batch2.js?v=20261024-batch2",
