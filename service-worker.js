@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261105-brand-gradient1";
+const CACHE_VERSION = "traube-pwa-20261106-barcelona-growth1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -57,6 +57,8 @@ const APP_SHELL = [
   "/assets/js/clinical-calculators-audit-batch1.js?v=20261024-batch1",
   "/assets/js/clinical-calculators-audit-batch2.js?v=20261024-batch2",
   "/assets/js/clinical-calculators-audit-batch3.js?v=20261024-batch3",
+  "/assets/js/clinical-calculators-barcelona.js?v=20261106-1",
+  "/assets/css/clinical-calculators-barcelona.css?v=20261106-1",
   "/manifest.webmanifest?v=7",
   "/mini-osce/",
   "/jogos/",
