@@ -58,5 +58,5 @@ test('Leco mascot card keeps every voice action centered on desktop and mobile',
   const page=fs.readFileSync('professor-alex/index.html','utf8');
   assert.match(brand,/20261031-leco-actions-center1/);
   assert.match(page,/traube-brand-v5\.js\?v=20261031-leco-actions-center1/);
-  assert.match(page,/pwa\.js\?v=20261101-bootstrap1/);
+  assert.match(page,/pwa\.js\?v=20261106-observacoes69-1/);
 });
