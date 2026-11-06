@@ -278,13 +278,7 @@
 
     // A navegação do Plantão não pode depender de uma RPC opcional: se a checagem
     // de acesso falhar, a Sala de emergência deve continuar abrindo normalmente.
-    let phoneAllowed = true;
-    try {
-      const accessRes = await sb.rpc("has_interconsultation_access");
-      if (!accessRes.error && typeof accessRes.data === "boolean") phoneAllowed = accessRes.data;
-    } catch (error) {
-      console.warn("Plantão: checagem do Telefone indisponível; mantendo a navegação funcional.", error);
-    }
+    const phoneAllowed = false;
     const phoneModeCard = $("plantao-phone-mode-card");
     const phoneSection = $("plantao-telefone");
     if (phoneModeCard) phoneModeCard.hidden = !phoneAllowed;
