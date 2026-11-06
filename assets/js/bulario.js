@@ -35,7 +35,7 @@
     return `<div class="rx-clinical-list">${items.map(item=>`<div class="rx-clinical-item">${esc(item)}</div>`).join('')}</div>`;
   };
   const classRules=[
-    ["anti-inflamatorios",/anti-inflamat|\\baine\\b/],
+    ["anti-inflamatorios",/anti-inflamat|aine/],
     ["antibioticos",/antibiot|antibacter|penicil|cefalospor|quinolon|macrolid|aminoglicos|sulfonamida|lincosamida|glicopept|beta-lact|carbapen|tetracic/],
     ["antifungicos",/antifung|antimicot|polieno/],
     ["antidiabeticos",/antidiabet|diabet|sglt2|dpp-4|glp-1|biguanida|insulina/],
