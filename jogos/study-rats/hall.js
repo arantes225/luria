@@ -80,7 +80,9 @@
       const remaining = Number.isFinite(startedAt) ? Math.max(0, 90000 - (Date.now() - startedAt)) : 90000;
       randomFallbackTimer = setTimeout(async () => {
         if (launching || currentMatch?.id !== match.id) return;
-        await refreshLobby();
+        const latest = await rpc('study_rats_board_lobby').catch(() => []);
+        const ready = Array.isArray(latest) && latest.find(row => row.id === match.id && row.status === 'playing');
+        if (ready) return launchGame(ready);
         if (launching || currentMatch?.id !== match.id) return;
         try { await rpc('study_rats_board_leave', {p_match_id: match.id}); }
         catch (error) { console.warn('Não foi possível encerrar a busca online.', error); }
@@ -163,6 +165,7 @@
       if (currentMatch) {
         const next = rows.find(match => match.id === currentMatch.id);
         if (next?.status === 'playing') return launchGame(next);
+        if (next?.status === 'waiting') currentMatch = next;
         if (!next || next.status !== 'waiting') { if (randomFallbackTimer) clearTimeout(randomFallbackTimer); randomFallbackTimer = null; currentMatch = null; $('sr-waiting').hidden = true; $('sr-find-random').disabled = false; $('sr-show-friends').disabled = false; }
       }
       if (requestedMatch) {
