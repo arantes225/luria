@@ -173,7 +173,7 @@ function drawTrack(){
   textSvg(g,s.x+9+dx,s.y+dy+4,label,{'font-size':15,'font-weight':900,'text-anchor':'middle',fill:'#fff'});
  }
 }
-const participants=onlineSession ? [{name:onlineSession.localName||'Você',sub:'Você · online',house:onlineSession.localHouse||0,color:'#3189ff',avatar:RAT_AVATARS[0]},{name:onlineSession.remoteName||'Oponente',sub:'Jogador online',house:onlineSession.remoteHouse||0,color:'#b37bec',avatar:RAT_AVATARS[1]}] : [{name:'Você',sub:'Jogador',house:0,color:'#3189ff',avatar:RAT_AVATARS[0]},{name:'Dra. Ratazana',sub:'Bot · médio',house:0,color:'#b37bec',avatar:RAT_AVATARS[1]},{name:'Prof. Roedor',sub:'Bot · difícil',house:0,color:'#f3a33b',avatar:RAT_AVATARS[2]},{name:'Dr. Ratinho',sub:'Bot · fácil',house:0,color:'#39c3a2',avatar:RAT_AVATARS[3]}];
+const participants=onlineSession ? [{name:onlineSession.localName||'Você',sub:'Você · online',house:onlineSession.localHouse||0,color:'#3189ff',avatar:RAT_AVATARS[0]},{name:onlineSession.remoteName||'Oponente',sub:'Jogador online',house:onlineSession.remoteHouse||0,color:'#b37bec',avatar:RAT_AVATARS[1]}] : [{name:'Você',sub:'Jogador',house:0,color:'#3189ff',avatar:RAT_AVATARS[0]},{name:'Dra. Ratazana',sub:'Jogador',house:0,color:'#b37bec',avatar:RAT_AVATARS[1]},{name:'Prof. Roedor',sub:'Jogador',house:0,color:'#f3a33b',avatar:RAT_AVATARS[2]},{name:'Dr. Ratinho',sub:'Jogador',house:0,color:'#39c3a2',avatar:RAT_AVATARS[3]}];
 const tokenEls=[];
 function makeTokens(){participants.forEach((p,i)=>{const g=make('g',{filter:'url(#tokenShadow)'},tokens);make('ellipse',{cx:0,cy:18,rx:24,ry:11,fill:'#1f4d7b',opacity:.16},g);make('ellipse',{cx:0,cy:16,rx:22,ry:10,fill:p.color,stroke:'#fff','stroke-width':3},g);make('circle',{cx:0,cy:-14,r:25,fill:'#fff',stroke:p.color,'stroke-width':4},g);make('circle',{cx:0,cy:-14,r:19,fill:'#f8fbff',opacity:.9},g);make('image',{x:-20,y:-34,width:40,height:40,href:p.avatar},g);make('circle',{cx:20,cy:-31,r:8,fill:p.color,stroke:'white','stroke-width':2},g);textSvg(g,20,-28,String(i+1),{'font-size':8,'font-weight':900,'text-anchor':'middle',fill:'#fff'});tokenEls.push(g)});renderTokens()}
 const offsets=[[-13,-9],[13,-9],[-13,14],[13,14]];
@@ -284,8 +284,8 @@ async function refreshOnlineBoard(){
  }catch{ $('#hudStatus').textContent='Sem conexão com a partida. Reconectando…' }
 }
 $('#submit').addEventListener('click',()=>{if(!onlineSession&&answered&&participants[0].house===59)resetGame();else onSubmit()});
-$('#showMove').addEventListener('click',async()=>{if(lock||onlineSession)return;lock=true;$('#showMove').disabled=true;const steps=await animateDie(randomDie());const result=await moveWithSpecial(0,steps);$('#showMove').disabled=false;lock=false;if(!result)showToast('Ratinho avançou '+steps+' casas · demonstração')});
-function resetGame(){participants.forEach(p=>p.house=0);qn=0;round=1;renderTokens();renderQuestion();showToast('Nova partida de demonstração iniciada!')}
+$('#showMove').addEventListener('click',async()=>{if(lock||onlineSession)return;lock=true;$('#showMove').disabled=true;const steps=await animateDie(randomDie());const result=await moveWithSpecial(0,steps);$('#showMove').disabled=false;lock=false;if(!result)showToast('Ratinho avançou '+steps+' casas')});
+function resetGame(){participants.forEach(p=>p.house=0);qn=0;round=1;renderTokens();renderQuestion();showToast('Nova partida iniciada!')}
 $('#resetBtn').addEventListener('click',resetGame);
 $('#newGameBtn').addEventListener('click',()=>location.assign('/jogos/study-rats/'));
 $('#inviteBtn').addEventListener('click',()=>location.assign('/jogos/study-rats/'));
@@ -300,7 +300,7 @@ if(onlineSession){
   $('#inviteBtn').hidden=true;
   $('#newGameBtn').textContent='← Voltar ao hall';
 }else{
-  $('.room').textContent='DEMONSTRAÇÃO';
+  $('.room').textContent='PARTIDA RÁPIDA';
   $('#inviteBtn').textContent='♟ Jogar com amigos';
   $('#newGameBtn').textContent='← Voltar ao hall';
   $('#showMove').textContent='▶ Testar movimento';
