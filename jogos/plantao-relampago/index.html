@@ -57,6 +57,11 @@
   body[data-page="jogos"] .ui-page-heading {background:var(--ui-hero-gradient,linear-gradient(110deg,#153966,#2463df));color:#fff;border-radius:14px;padding:16px 20px}
   body[data-page="jogos"] .ui-page-heading h1,body[data-page="jogos"] .ui-page-heading .eyebrow{color:#fff}
   body[data-page="jogos"] .traube-back-button{display:inline-flex;align-items:center;min-height:42px;margin:8px 0 14px;padding:8px 14px;border-radius:10px;background:var(--ui-pill-gradient,linear-gradient(110deg,#174b91,#2388e7));color:#fff;text-decoration:none;font-weight:700}
+  body[data-page="jogos"] main#game-main .page .page-heading.ui-page-heading{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:16px!important;background:linear-gradient(110deg,#153966,#2463df)!important;color:#fff!important;border-radius:14px!important;padding:16px 20px!important}
+  body[data-page="jogos"] main#game-main .page .page-heading.ui-page-heading h1,
+  body[data-page="jogos"] main#game-main .page .page-heading.ui-page-heading .eyebrow{color:#fff!important}
+  body[data-page="jogos"] main#game-main .page .page-heading.ui-page-heading .traube-back-button{display:inline-flex!important;align-items:center!important;min-height:40px!important;margin:0!important;background:#fff!important;color:#153966!important;border:1px solid rgba(255,255,255,.6)!important;border-radius:10px!important;padding:8px 14px!important;white-space:nowrap!important}
+  @media(max-width:600px){body[data-page="jogos"] main#game-main .page .page-heading.ui-page-heading{flex-wrap:wrap!important}}
 </style></head>
   <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="jogos">
     <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -82,9 +87,9 @@
             <div class="page-heading ui-page-heading">
               <span class="eyebrow" data-page-eyebrow></span>
               <h1 data-page-title></h1>
+              <a class="traube-back-button" href="/jogos/">← Central de jogos</a>
             </div>
           </header>
-          <a class="traube-back-button" href="/jogos/">← Central de jogos</a>
           <div class="traube-game" data-game="relampago">
             <section class="g-panel">
               <h2>Preparando o jogo…</h2>
