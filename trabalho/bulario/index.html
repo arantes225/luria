@@ -340,16 +340,24 @@
             <input id="drug-search" class="bulario-search" type="search" placeholder="Buscar medicamento, classe ou princípio ativo" autocomplete="off">
             <span id="drug-count" class="bulario-count"></span>
           </div>
-          <div id="drug-class-chips" class="bulario-chips" role="toolbar" aria-label="Filtrar por classe terapêutica">
-            <button type="button" class="bulario-chip is-active" data-class-chip="">Todos</button>
-            <button type="button" class="bulario-chip" data-class-chip="vasoativos">Vasoativos & Choque</button>
-            <button type="button" class="bulario-chip" data-class-chip="sri">SRI, Sedação & Analgesia</button>
-            <button type="button" class="bulario-chip" data-class-chip="cardiologia">Cardiologia & Arritmias</button>
-            <button type="button" class="bulario-chip" data-class-chip="antitromboticos">Antitrombóticos & Trombólise</button>
-            <button type="button" class="bulario-chip" data-class-chip="antimicrobianos">Antimicrobianos</button>
-            <button type="button" class="bulario-chip" data-class-chip="eletrolitos">Eletrólitos & Obstetrícia</button>
-            <button type="button" class="bulario-chip" data-class-chip="antidotos">Antídotos & Toxicologia</button>
-          </div>
+          <details class="work-filter" id="drug-filter">
+            <summary aria-label="Abrir filtros por classe farmacológica">☷ <span>Filtrar por classe</span> <span id="drug-filter-current">Todos</span></summary>
+            <div id="drug-class-chips" class="bulario-chips" role="group" aria-label="Classes farmacológicas">
+              <p>As classes usam apenas metadados registrados no catálogo. Medicamentos ainda não classificados permanecem na busca e em “Sem classificação”.</p>
+              <div class="work-filter-options">
+                <button type="button" class="bulario-chip is-active" data-class-chip="todos" aria-pressed="true">Todos</button>
+                <button type="button" class="bulario-chip" data-class-chip="anti-inflamatorios" aria-pressed="false">Anti-inflamatórios</button>
+                <button type="button" class="bulario-chip" data-class-chip="antibioticos" aria-pressed="false">Antibióticos</button>
+                <button type="button" class="bulario-chip" data-class-chip="antifungicos" aria-pressed="false">Antifúngicos</button>
+                <button type="button" class="bulario-chip" data-class-chip="antidiabeticos" aria-pressed="false">Antidiabéticos</button>
+                <button type="button" class="bulario-chip" data-class-chip="cardiovasculares" aria-pressed="false">Cardiovasculares</button>
+                <button type="button" class="bulario-chip" data-class-chip="antitromboticos" aria-pressed="false">Antitrombóticos</button>
+                <button type="button" class="bulario-chip" data-class-chip="neurologia-psiquiatria" aria-pressed="false">Neurologia e psiquiatria</button>
+                <button type="button" class="bulario-chip" data-class-chip="outras" aria-pressed="false">Outras classes</button>
+                <button type="button" class="bulario-chip" data-class-chip="sem-classificacao" aria-pressed="false">Sem classificação</button>
+              </div>
+            </div>
+          </details>
           <div class="bulario-layout"><div id="drug-list" class="drug-list"><div class="empty">Carregando medicamentos…</div></div><article id="drug-detail" class="drug-detail"><div class="empty">Selecione um medicamento.</div></article></div>
         </section>
       </div>
