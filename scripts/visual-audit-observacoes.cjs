@@ -7,7 +7,7 @@ const fixture=fs.readFileSync(path.join(root,'tests/fixtures/supabase-browser.js
 const mime={'.html':'text/html','.css':'text/css','.js':'application/javascript','.mjs':'application/javascript','.woff2':'font/woff2','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.json':'application/json','.webmanifest':'application/manifest+json'};
 const routes=['dashboard','configuracoes','aprender','professor-alex','consolidar','questoes-simulados','flashcards','caderno-erros','jogos/study-rats','jogos/plantao-relampago','jogos/sequencia-salvadora','jogos/escapando-do-plantao','desafio-diario','estatisticas','editais','aplicar/curriculo','aplicar/radar','vocacao','amigos','agencia'];
 (async()=>{
- const browser=await chromium.launch({headless:true});
+ const browser=await chromium.launch({headless:true,executablePath:process.env.TRAUBE_CHROME_EXECUTABLE});
  try{
   const context=await browser.newContext({viewport:{width:1915,height:873},deviceScaleFactor:1,serviceWorkers:'block'});
   const base='https://traube.test';
