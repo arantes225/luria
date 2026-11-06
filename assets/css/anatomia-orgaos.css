@@ -3,4 +3,4 @@
 .organs-viewer{height:min(45vh,460px);min-height:320px}
 .organs-hero{margin-bottom:12px}.organs-hero h2{font-size:clamp(1.7rem,3vw,2.5rem)}
 @media(max-width:560px){.organs-viewer{height:46vh;min-height:310px}.organs-hero p{font-size:.9rem}.organs-structure-list{max-height:32vh}}
-
+.organs-tools [data-organ-vessels][hidden]{display:none!important}

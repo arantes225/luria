@@ -70,20 +70,28 @@ function writeStartupAssets(source, modelPath) {
 type StartupChunk = {url: string; gzip?: string};
 type Reference = 'male' | 'female';
 const exterior: Record<Reference, StartupChunk[]> = ${JSON.stringify(startup)};
-const pending = new Map<string, Promise<Response | null>>();
+const pending = new Map<string, {response: Promise<Response | null>; controller: AbortController}>();
 
 export function primeExterior(reference: Reference, signal: AbortSignal) {
+  for (const entry of pending.values()) entry.controller.abort();
   pending.clear();
+  if (signal.aborted) return;
   for (const chunk of exterior[reference]) {
     const url = chunk.gzip && typeof DecompressionStream !== 'undefined' ? chunk.gzip : chunk.url;
-    pending.set(url, fetch(url, {signal}).then(response => response.ok ? response : null).catch(() => null));
+    const controller = new AbortController();
+    signal.addEventListener('abort', () => controller.abort(), {once: true});
+    const response = fetch(url, {signal: controller.signal}).then(result => result.ok ? result : null).catch(() => null);
+    pending.set(url, {response, controller});
   }
 }
 
 export async function fetchAtlasChunk(url: string, signal: AbortSignal) {
   const primed = pending.get(url);
   pending.delete(url);
-  return (primed && await primed) || fetch(url, {signal});
+  if (!primed) return fetch(url, {signal});
+  if (signal.aborted) primed.controller.abort();
+  else signal.addEventListener('abort', () => primed.controller.abort(), {once: true});
+  return (await primed.response) || fetch(url, {signal});
 }
 
 export async function readAtlas(url: URL, signal: AbortSignal) {
