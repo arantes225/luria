@@ -3,7 +3,9 @@ const fs=require('node:fs'),path=require('node:path');
 const {chromium}=require('playwright');
 const root=path.resolve(__dirname,'..');
 const fixture=fs.readFileSync(path.join(root,'tests/fixtures/supabase-browser.js'),'utf8')
- .replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{if(name==="luria_bootstrap")return{data:null,error:null};if(name==="admin_pin_status")return{data:{has_pin:true},error:null};');
+ .replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{if(name==="luria_bootstrap")return{data:null,error:null};if(name==="admin_pin_status")return{data:{has_pin:true},error:null};')
+ .replace('if(name==="is_admin")return{data:false,error:null};','if(name==="is_admin")return{data:true,error:null};')
+ .replace('storage:{from:()=>','functions:{invoke:async()=>({data:{connected:false,configured:true},error:null})},storage:{from:()=>');
 const mime={'.html':'text/html','.css':'text/css','.js':'application/javascript','.mjs':'application/javascript','.woff2':'font/woff2','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.json':'application/json','.webmanifest':'application/manifest+json'};
 const routes=['dashboard','configuracoes','aprender','professor-alex','consolidar','questoes-simulados','flashcards','caderno-erros','jogos/study-rats','jogos/plantao-relampago','jogos/sequencia-salvadora','jogos/escapando-do-plantao','desafio-diario','estatisticas','editais','aplicar/curriculo','aplicar/radar','vocacao','amigos','agencia'];
 (async()=>{
@@ -20,6 +22,7 @@ const routes=['dashboard','configuracoes','aprender','professor-alex','consolida
    if(!fs.existsSync(file))return route.fulfill({status:404,body:''});
    return route.fulfill({contentType:mime[path.extname(file)]||'application/octet-stream',body:fs.readFileSync(file)});
   });
+  await context.addInitScript(()=>localStorage.setItem('traube-admin-pin-unlocked-until:11111111-1111-4111-8111-111111111111',String(Date.now()+300000)));
   await context.route('**/assets/js/supabase.js*',route=>route.fulfill({contentType:'application/javascript',body:fixture}));
   await context.route('**/assets/js/onboarding.js*',route=>route.fulfill({contentType:'application/javascript',body:''}));
   const page=await context.newPage();
@@ -30,11 +33,13 @@ const routes=['dashboard','configuracoes','aprender','professor-alex','consolida
     await page.waitForTimeout(400);
     const metrics=await page.evaluate(()=>{
       const rect=selector=>{const e=document.querySelector(selector);if(!e)return null;const r=e.getBoundingClientRect();return {x:Math.round(r.x),y:Math.round(r.y),w:Math.round(r.width),h:Math.round(r.height)}};
-      return {title:document.title,path:location.pathname,body:document.body.className,scrollWidth:document.documentElement.scrollWidth,viewport:innerWidth,leco:{page:rect('.alex-page'),mascot:rect('#alex-mascot-card'),composer:rect('.alex-input-bar'),main:rect('main.main')},question:{list:rect('.qs-home-my-lists'),week:rect('.qs-home-week')},tabs:[...document.querySelectorAll('[data-settings-tab]')].map(x=>x.textContent.trim()).filter(Boolean)};
+      return {title:document.title,path:location.pathname,body:document.body.className,scrollWidth:document.documentElement.scrollWidth,viewport:innerWidth,leco:{page:rect('.alex-page'),mascot:rect('#alex-mascot-card'),composer:rect('.alex-input-bar'),main:rect('main.main')},question:{list:rect('.qs-home-my-lists'),week:rect('.qs-home-week')},tabs:[...document.querySelectorAll('[data-settings-tab]')].map(x=>x.textContent.trim()).filter(Boolean),styles:(()=>{const out={};for(const q of ['.learn-cta','#start-review-session','.review-launcher-action','.qs-home-week .error-metric-summary-grid','.qs-home-my-lists','.sr-hall-hero h2','.sr-hall-button','.ui-page-heading','.traube-back-button']){const e=document.querySelector(q);if(e){const c=getComputedStyle(e);out[q]={display:c.display,background:c.backgroundImage,color:c.color,grid:c.gridTemplateColumns,flexDirection:c.flexDirection,height:Math.round(e.getBoundingClientRect().height)}}}return out})()};
     });
     console.log('AUDIT_METRIC|'+name+'|'+JSON.stringify(metrics));
     const shot=await page.screenshot({type:'jpeg',quality:58,fullPage:false});
     console.log('AUDIT_IMAGE|'+name+'|'+shot.toString('base64'));
+    if(name==='configuracoes'){const tab=page.locator('[data-settings-tab="perfil"]');if(await tab.count()){await tab.click();await page.waitForTimeout(250);console.log('AUDIT_IMAGE|configuracoes-perfil|'+(await page.screenshot({type:'jpeg',quality:58})).toString('base64'));}}
+    if(name==='amigos'){for(const [label,selector]of [['groups','[href="#community-groups"]'],['rooms','[href="#community-rooms"]']]){const tab=page.locator(selector).first();if(await tab.count()){await tab.click().catch(()=>{});await page.waitForTimeout(300);console.log('AUDIT_IMAGE|amigos-'+label+'|'+(await page.screenshot({type:'jpeg',quality:58})).toString('base64'));}}}
    }catch(error){console.log('AUDIT_ERROR|'+name+'|'+error.message.replaceAll('\n',' '));}
   }
   await page.setViewportSize({width:390,height:844});
