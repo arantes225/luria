@@ -609,3 +609,11 @@
     font-size: 12px;
   }
 }
+
+/* Give the walk between rooms a clearer sense of motion. */
+.traube-game .e-journey-running .e-journey-doctor svg{animation:e-doctor-bounce .28s ease-in-out infinite alternate}
+.traube-game .e-journey-running .e-journey-floor{background:repeating-linear-gradient(90deg,var(--color-surface-elevated) 0 48px,color-mix(in srgb,var(--color-primary) 10%,var(--color-surface-elevated)) 48px 52px);animation:e-floor-scroll .55s linear infinite}
+.traube-game .e-journey-running .e-journey-route::after{box-shadow:36px -14px 0 -6px #fff,80px 5px 0 -9px #fff,125px -18px 0 -11px #fff,170px 4px 0 -10px #fff}
+@keyframes e-doctor-bounce{from{transform:translateY(0)}to{transform:translateY(-5px)}}
+@keyframes e-floor-scroll{to{background-position:-52px 0}}
+@media(prefers-reduced-motion:reduce){.traube-game .e-journey-running .e-journey-doctor svg,.traube-game .e-journey-running .e-journey-floor{animation:none}}
