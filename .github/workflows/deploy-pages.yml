@@ -111,18 +111,8 @@ jobs:
         run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12 playwright@1.56.1
       - name: Prepare local site for browser smoke
         run: node scripts/build-pages.cjs
-      - name: Restore attributed BodyParts3D heart model
-        run: |
-          mkdir -p build/pages/assets/models/anatomia
-          curl --fail --location --retry 3 'https://raw.githubusercontent.com/organui/heart-3d/c72ce6654ff8e282942f97750d3104f55ef4fc3d/public/models/heart.glb' --output build/pages/assets/models/anatomia/coracao.glb
       - name: Restore attributed detailed organ models
         run: node scripts/prepare-anatomy-organs.cjs build/pages/assets/models/anatomia/orgaos
-      - name: Verify heart model and build browser module
-        run: ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
-      - name: Build detailed organ browser module
-        run: node scripts/build-anatomy-organs.cjs
-      - name: Check anatomical room contracts
-        run: node --test tests/anatomia-room.test.cjs
       - name: Fetch pinned Human Atlas source
         run: |
           git init build/human-atlas-source
@@ -138,6 +128,14 @@ jobs:
           node build/human-atlas-source/scripts/validate-interactions.mjs
           npm run build --prefix build/human-atlas-source -- --base=/aprender/anatomia/atlas/
           node scripts/build-human-atlas.cjs install build/human-atlas-source
+      - name: Export detailed HRA heart and mammary glands
+        run: node scripts/export-hra-organs.cjs build/human-atlas-source/public/models build/pages/assets/models/anatomia
+      - name: Verify heart model and build browser module
+        run: ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
+      - name: Build detailed organ browser module
+        run: node scripts/build-anatomy-organs.cjs
+      - name: Check anatomical room contracts
+        run: node --test tests/anatomia-room.test.cjs
       - name: Install Chromium
         run: npx playwright install chromium --with-deps
       - name: Exercise 3D anatomy in browser
@@ -156,6 +154,8 @@ jobs:
             build/anatomy-atlas-desktop.png
             build/anatomy-atlas-mobile.png
             build/anatomy-lungs-desktop.png
+            build/anatomy-breasts-desktop.png
+            build/anatomy-breasts-interior.png
             build/anatomy-reproductive-desktop.png
             build/anatomy-reproductive-mobile.png
             build/anatomy-kidneys-desktop.png
@@ -180,16 +180,8 @@ jobs:
         run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12
       - name: Prepare public assets only
         run: node scripts/build-pages.cjs
-      - name: Restore attributed BodyParts3D heart model
-        run: |
-          mkdir -p build/pages/assets/models/anatomia
-          curl --fail --location --retry 3 'https://raw.githubusercontent.com/organui/heart-3d/c72ce6654ff8e282942f97750d3104f55ef4fc3d/public/models/heart.glb' --output build/pages/assets/models/anatomia/coracao.glb
       - name: Restore attributed detailed organ models
         run: node scripts/prepare-anatomy-organs.cjs build/pages/assets/models/anatomia/orgaos
-      - name: Replace visualizer with verified browser module
-        run: ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
-      - name: Build detailed organ browser module
-        run: node scripts/build-anatomy-organs.cjs
       - name: Fetch pinned Human Atlas source
         run: |
           git init build/human-atlas-source
@@ -205,6 +197,12 @@ jobs:
           node build/human-atlas-source/scripts/validate-interactions.mjs
           npm run build --prefix build/human-atlas-source -- --base=/aprender/anatomia/atlas/
           node scripts/build-human-atlas.cjs install build/human-atlas-source
+      - name: Export detailed HRA heart and mammary glands
+        run: node scripts/export-hra-organs.cjs build/human-atlas-source/public/models build/pages/assets/models/anatomia
+      - name: Replace visualizer with verified browser module
+        run: ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
+      - name: Build detailed organ browser module
+        run: node scripts/build-anatomy-organs.cjs
       - name: Prepare optimized UI images
         uses: actions/setup-python@v5
         with:
@@ -222,4 +220,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
