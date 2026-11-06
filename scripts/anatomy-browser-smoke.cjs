@@ -35,6 +35,15 @@ const server = http.createServer((request, response) => {
     await page.locator("[data-anatomy-viewer].is-ready").waitFor({ timeout: 45000 });
     assert.equal(await page.locator("[data-anatomy-viewer].is-static").count(), 0);
     await page.locator(".anatomy-stage-card").screenshot({ path: path.resolve(__dirname, "../build/anatomy-exterior.png") });
+    const vessels = page.locator("[data-anatomy-vessels]");
+    await vessels.click();
+    assert.equal(await vessels.getAttribute("aria-pressed"), "true");
+    await page.locator("[data-structure-id='VH_F_ascending_aorta']").click();
+    assert.equal(await page.locator(".anatomy-picked-card h3").textContent(), "Aorta ascendente");
+    await page.locator("[data-structure-id='VH_F_left_coronary_artery']").click();
+    assert.equal(await page.locator(".anatomy-picked-card h3").textContent(), "Artéria coronária esquerda");
+    await vessels.click();
+    assert.equal(await vessels.getAttribute("aria-pressed"), "false");
     await page.locator("[data-anatomy-interior]").click();
     assert.equal(await page.locator("[data-anatomy-viewer]").getAttribute("data-anatomy-mode"), "interior");
     await page.locator("[data-anatomy-flow]").click();

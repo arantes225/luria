@@ -49,6 +49,8 @@ if (root) {
   const requestedOrgan = new URLSearchParams(location.search).get("orgao");
   let renderer, controls, scene, camera, model, selectedId = "", currentKey = Object.hasOwn(catalog, requestedOrgan) ? requestedOrgan : "lungs", rotating = false, cut = false;
   const objects = new Map();
+  const vascularButton = document.querySelector("[data-organ-vessels]");
+  let vascularFocus = false;
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const announce = message => { if (status) status.textContent = message; };
   const current = () => catalog[currentKey];
@@ -65,11 +67,20 @@ if (root) {
   };
   const hasLayers = () => currentKey === "breasts" || currentKey === "kidneys";
   const isOuter = id => currentKey === "breasts" ? /_(fat|areola|nipple|areolar_tubercles)_/.test(id) : /kidney_capsule|outer_cortex/.test(id);
+  function isVessel(id) {
+    return /^(?:artérias?|veias?|aorta|arco da aorta|tronco celíaco)\b/i.test(current().structures[id] || "");
+  }
+
   function updateAppearance() {
     objects.forEach((meshes, id) => meshes.forEach(object => {
       const selected = selectedId === id;
       if (selected) object.visible = true;
-      const opacity = cut && hasLayers() ? (isOuter(id) ? (selected ? .42 : .16) : 1) : selectedId && !selected ? .26 : 1;
+      let opacity = 1;
+      if (!isVessel(id)) {
+        if (cut && hasLayers() && isOuter(id)) opacity = selected ? .42 : .16;
+        else if (vascularFocus) opacity = selected ? .50 : .19;
+        else if (!(cut && hasLayers()) && selectedId && !selected) opacity = .26;
+      }
       object.material.emissive?.set(selected ? "#fff0b4" : "#000000");
       object.material.emissiveIntensity = selected ? .25 : 0;
       const base = object.material.userData.atlasAppearance;
@@ -135,6 +146,11 @@ if (root) {
   function clearModel() { if (!model) return; scene.remove(model); model.traverse(object => { if (object.isMesh) { object.geometry.dispose(); object.material.dispose(); } }); model = null; objects.clear(); }
   function buildList() { if (!list) return; list.innerHTML = ""; for (const [id, label] of Object.entries(current().structures)) { if (model && !objects.has(id)) continue; const button = document.createElement("button"); button.type = "button"; button.dataset.structureId = id; button.textContent = label; button.addEventListener("click", () => select(id)); list.append(button); } }
   function load(key) {
+    vascularFocus = false;
+    if (vascularButton) {
+      vascularButton.hidden = true;
+      vascularButton.setAttribute("aria-pressed", "false");
+    }
     currentKey = key; title.textContent = current().label; summary.textContent = current().summary; detailTitle.textContent = "Selecione uma estrutura"; detailCopy.textContent = "Clique na malha colorida ou escolha uma estrutura na lista."; selectedId = ""; clearModel(); buildList(); cut = false; renderer.localClippingEnabled = false; const cutButton = document.querySelector("[data-organ-cut]"); cutButton?.setAttribute("aria-pressed", "false"); if (cutButton) cutButton.textContent = hasLayers() ? "Ver por dentro" : "Corte didático"; loading.hidden = false; loading.classList.remove("is-error"); progress.style.width = "0%";
     const version = hasLayers() ? "?v=hra2" : "";
     new GLTFLoader().load(`/assets/models/anatomia/orgaos/${key}.glb${version}`, gltf => {
@@ -159,6 +175,7 @@ if (root) {
         if (!objects.has(id)) objects.set(id, []);
         objects.get(id).push(object);
       });
+      if (vascularButton) vascularButton.hidden = ![...objects.keys()].some(isVessel);
       scene.add(model); fit(); buildList(); updateAppearance(); loading.hidden = true;
       announce(`${current().label} carregado. Selecione uma estrutura.`);
     }, event => { if (event.total) progress.style.width = `${Math.min(100, event.loaded / event.total * 100)}%`; }, error => { if (key !== currentKey) return; loading.hidden = false; loading.classList.add("is-error"); loading.querySelector("strong").textContent = "Modelo indisponível"; loading.querySelector("span").textContent = "Recarregue a página para tentar novamente."; announce(`Não foi possível carregar ${current().label}.`); console.error(error); });
@@ -169,10 +186,16 @@ if (root) {
     scene = new THREE.Scene(); camera = new THREE.PerspectiveCamera(32, 1, .01, 100); controls = new OrbitControls(camera, canvas); controls.enableDamping = !reducedMotion; controls.enablePan = true; controls.autoRotateSpeed = .55; scene.add(new THREE.HemisphereLight(0xfff1e8, 0x55708d, 1.05)); const key = new THREE.DirectionalLight(0xffe4d5, 1.9); key.position.set(3, 5, 5); scene.add(key); const fill = new THREE.DirectionalLight(0xc9dcfa, .9); fill.position.set(-4, 2, 3); scene.add(fill);
     const resize = () => { const rect = root.getBoundingClientRect(); renderer.setSize(rect.width, rect.height, false); camera.aspect = rect.width / rect.height; camera.updateProjectionMatrix(); }; new ResizeObserver(resize).observe(root); resize();
     const raycaster = new THREE.Raycaster(), pointer = new THREE.Vector2();
-    canvas.addEventListener("pointerup", event => { const rect = canvas.getBoundingClientRect(); pointer.set((event.clientX - rect.left) / rect.width * 2 - 1, -(event.clientY - rect.top) / rect.height * 2 + 1); raycaster.setFromCamera(pointer, camera); const hits = raycaster.intersectObjects([...objects.values()].flat().filter(mesh => mesh.visible), false).filter(hit => !renderer.localClippingEnabled || hit.point.x >= 0); const hit = (cut && hasLayers() ? hits.find(candidate => !isOuter(candidate.object.userData.structureId)) : null) || hits[0]; if (hit) select(hit.object.userData.structureId || hit.object.name); });
+    canvas.addEventListener("pointerup", event => { const rect = canvas.getBoundingClientRect(); pointer.set((event.clientX - rect.left) / rect.width * 2 - 1, -(event.clientY - rect.top) / rect.height * 2 + 1); raycaster.setFromCamera(pointer, camera); const hits = raycaster.intersectObjects([...objects.values()].flat().filter(mesh => mesh.visible), false).filter(hit => !renderer.localClippingEnabled || isVessel(hit.object.userData.structureId) || hit.point.x >= 0); const hit = (vascularFocus ? hits.find(candidate => isVessel(candidate.object.userData.structureId)) : null) || (cut && hasLayers() ? hits.find(candidate => !isOuter(candidate.object.userData.structureId)) : null) || hits[0]; if (hit) select(hit.object.userData.structureId || hit.object.name); });
     document.querySelectorAll("[data-organ]").forEach(button => button.addEventListener("click", () => { document.querySelectorAll("[data-organ]").forEach(item => item.classList.toggle("is-active", item === button)); history.replaceState(null, "", `?orgao=${encodeURIComponent(button.dataset.organ)}`); load(button.dataset.organ); }));
     document.querySelector("[data-organ-reset]")?.addEventListener("click", () => { selectedId = ""; updateAppearance(); detailTitle.textContent = "Selecione uma estrutura"; detailCopy.textContent = "Clique na malha colorida ou escolha uma estrutura na lista."; list?.querySelectorAll("button").forEach(button => button.classList.remove("is-active")); fit(); });
     document.querySelector("[data-organ-rotate]")?.addEventListener("click", event => { rotating = !rotating; controls.autoRotate = rotating; event.currentTarget.setAttribute("aria-pressed", String(rotating)); });
+    vascularButton?.addEventListener("click", () => {
+      vascularFocus = !vascularFocus;
+      vascularButton.setAttribute("aria-pressed", String(vascularFocus));
+      updateAppearance();
+      announce(vascularFocus ? "Vasos da região em destaque." : "Visão geral do órgão.");
+    });
     document.querySelector("[data-organ-cut]")?.addEventListener("click", event => {
       cut = !cut; event.currentTarget.setAttribute("aria-pressed", String(cut));
       if (hasLayers()) {
@@ -180,7 +203,7 @@ if (root) {
         updateAppearance();
         renderer.localClippingEnabled = false;
       } else {
-        objects.forEach(meshes => meshes.forEach(object => { object.material.clippingPlanes = cut ? [new THREE.Plane(new THREE.Vector3(1, 0, 0), 0)] : []; object.material.needsUpdate = true; }));
+        objects.forEach((meshes, id) => meshes.forEach(object => { object.material.clippingPlanes = cut && !isVessel(id) ? [new THREE.Plane(new THREE.Vector3(1, 0, 0), 0)] : []; object.material.needsUpdate = true; }));
         renderer.localClippingEnabled = cut;
       }
     });

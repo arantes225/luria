@@ -145,6 +145,9 @@ if (root) {
     scene.add(rim);
     let organ = null;
     let interior = false;
+    let vascularFocus = false;
+    const vascularButton = document.querySelector("[data-anatomy-vessels]");
+    const vesselGroups = new Set(["Grandes vasos", "Ramos da aorta", "Coronárias", "Veias cardíacas"]);
     let flowEnabled = false;
     const meshes = new Map();
     const raycaster = new THREE.Raycaster();
@@ -178,6 +181,22 @@ if (root) {
         }
       }
     }
+    function updateVascularFocus() {
+      for (const [id, mesh] of meshes) {
+        const vessel = vesselGroups.has(byId.get(id)?.group);
+        mesh.material.transparent = vascularFocus && !vessel;
+        mesh.material.opacity = mesh.material.transparent ? .16 : 1;
+        mesh.material.depthWrite = !mesh.material.transparent;
+      }
+    }
+
+    vascularButton?.addEventListener("click", () => {
+      vascularFocus = !vascularFocus;
+      vascularButton.setAttribute("aria-pressed", String(vascularFocus));
+      updateVascularFocus();
+      announce(vascularFocus ? "Aorta, coronárias e demais vasos cardíacos em destaque." : "Coração e vasos em vista geral.");
+    });
+
     function setInterior(active) {
       interior = active;
       root.dataset.anatomyMode = active ? "interior" : "exterior";
@@ -187,12 +206,10 @@ if (root) {
         mesh.visible = true;
         if (/^VH_F_(left_ventricle|right_ventricle|left_cardiac_atrium|right_cardiac_atrium|interventricular_septum)$/.test(id)) {
           mesh.material.clippingPlanes = active ? [ventricularCut] : [];
-          mesh.material.transparent = false;
-          mesh.material.opacity = 1;
-          mesh.material.depthWrite = true;
           mesh.material.needsUpdate = true;
         }
       }
+      updateVascularFocus();
       blood.visible = active && flowEnabled;
       announce(active ? "Corte didático das câmaras; valvas e músculos papilares identificáveis." : "Vista externa do coração.");
     }

@@ -32,7 +32,13 @@ const server = http.createServer((request, response) => {
         await page.locator("[data-organ-cut]").click();
         await page.locator(".organs-stage-card").screenshot({path:path.join(root,"../anatomy-breasts-interior.png")});
       }
+      if (key === "lungs") assert.equal(await page.locator("[data-organ-vessels]").isHidden(), true);
       if (key === "kidneys") {
+        const vessels = page.locator("[data-organ-vessels]");
+        await vessels.click();
+        assert.equal(await vessels.getAttribute("aria-pressed"), "true");
+        await page.locator("[data-structure-id='VH_F_right_renal_artery']").click();
+        assert.equal(await page.locator("[data-organ-detail-title]").textContent(), "Artéria renal direita");
         await page.locator("[data-organ-cut]").click();
         await page.locator("[data-structure-id='VH_F_renal_pelvis_R']").click();
         assert.equal(await page.locator("[data-organ-detail-title]").textContent(), "Pelve renal direita");
