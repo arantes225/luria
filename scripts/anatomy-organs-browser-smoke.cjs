@@ -28,6 +28,12 @@ const server = http.createServer((request, response) => {
     }
     await page.setViewportSize({width:390,height:844});
     await page.screenshot({path:path.join(root,"../anatomy-reproductive-mobile.png"),fullPage:true});
+    const atlas = await browser.newPage({viewport:{width:1365,height:900}});
+    atlas.on("pageerror", error => errors.push(error.message));
+    await atlas.goto(`http://127.0.0.1:${server.address().port}/aprender/anatomia/atlas/?sexo=feminino`,{waitUntil:"domcontentloaded"});
+    await atlas.locator(".loading").waitFor({state:"hidden",timeout:120000});
+    await atlas.screenshot({path:path.join(root,"../anatomy-female-body-desktop.png")});
+    console.log("female atlas",await atlas.locator(".identity-meta").textContent());
     if(errors.length) throw Error(errors.join("\n"));
   } finally { await browser.close(); server.close(); }
 })().catch(error => { console.error(error); server.close(); process.exitCode=1; });
