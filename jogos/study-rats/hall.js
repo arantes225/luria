@@ -46,6 +46,7 @@
   let refreshing = false;
   let launching = false;
   let poller = null;
+  let randomFallbackTimer = null;
   const queryMatch = new URLSearchParams(location.search).get('match');
   const requestedMatch = /^[0-9a-f]{8}-[0-9a-f-]{27,36}$/i.test(queryMatch || '') ? queryMatch : null;
 
@@ -56,7 +57,7 @@
   }
   function onlineReady() {
     if (sb && userId) return true;
-    status('Entre na sua conta TRAUBE para jogar com outras pessoas. A demonstração continua disponível.', true);
+    status('Entre na sua conta TRAUBE para jogar com outras pessoas. ', true);
     return false;
   }
   async function rpc(name, args = {}) {
@@ -79,6 +80,9 @@
     if (launching) return;
     launching = true;
     if (poller) clearInterval(poller);
+    if (randomFallbackTimer) clearTimeout(randomFallbackTimer);
+    randomFallbackTimer = null;
+    window.StudyRatsBotMatch = !match;
     window.StudyRatsSession = match ? {
       matchId: match.id, mode: match.mode, userId,
       hostId: match.host_id, guestId: match.guest_id,
@@ -164,6 +168,17 @@
     try {
       const id = await rpc('study_rats_board_find', {p_mode: mode, p_friend_id: friendId});
       currentMatch = {id, mode};
+      if (mode === 'random') {
+        if (randomFallbackTimer) clearTimeout(randomFallbackTimer);
+        randomFallbackTimer = setTimeout(async () => {
+          if (launching || currentMatch?.id !== id) return;
+          await refreshLobby();
+          if (launching || currentMatch?.id !== id) return;
+          try { await rpc('study_rats_board_leave', {p_match_id: id}); } catch (error) { console.warn('Não foi possível encerrar a busca online.', error); }
+          currentMatch = null;
+          launchGame();
+        }, 90000);
+      }
       await refreshLobby();
       if (!launching && currentMatch) { setWaiting(currentMatch); status('Conexão preparada. Aguardando a outra pessoa.'); }
     } catch (error) { status(error.message || 'Não foi possível iniciar a partida online.', true); }
@@ -201,6 +216,8 @@
   });
   $('sr-cancel').addEventListener('click', async () => {
     if (!currentMatch) return;
+    if (randomFallbackTimer) clearTimeout(randomFallbackTimer);
+    randomFallbackTimer = null;
     try { await rpc('study_rats_board_leave', {p_match_id: currentMatch.id}); currentMatch = null; $('sr-waiting').hidden = true; $('sr-find-random').disabled = false; $('sr-show-friends').disabled = false; status('Busca cancelada.'); await refreshLobby(); }
     catch (error) { status(error.message || 'Não foi possível cancelar a busca.', true); }
   });
