@@ -5,7 +5,7 @@ const { execFileSync } = require("node:child_process");
 const zlib = require("node:zlib");
 const localizeHumanAtlas = require("./localize-human-atlas.cjs");
 
-const source = path.resolve(process.argv[3] || "/tmp/luria-human-atlas");
+const source = path.resolve(process.argv[3] || "build/human-atlas-source");
 const output = path.resolve("build/pages/aprender/anatomia/atlas");
 const base = "/aprender/anatomia/atlas/";
 const mode = process.argv[2];
