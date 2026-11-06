@@ -1180,7 +1180,8 @@
         <form class="score-form" id="score-form"></form>
         <aside class="score-result">
           <span class="score-result-label">Resultado</span><div class="score-result-value" id="score-value">—</div>
-          <div class="score-result-text" id="score-text">Preencha os campos.</div>
+          <span class="score-interpret-label">Interpretação clínica</span>
+          <div class="score-result-text" id="score-text" role="status" aria-live="polite">Preencha os campos.</div>
           <div class="score-result-note" id="score-note">Use o resultado como apoio à decisão clínica.</div>
           <button class="score-copy" type="button" id="score-copy">Copiar interpretação</button>
           <button class="score-reset" type="button" id="score-reset">Limpar</button>
