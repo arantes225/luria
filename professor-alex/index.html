@@ -78,6 +78,10 @@
       body[data-page="professor_alex"] .alex-mode-card { grid-row: 1; }
       body[data-page="professor_alex"] .alex-chat-container { grid-row: 3; }
     }
+  @layer traube-ui-startup {
+    body[data-page="professor_alex"] .alex-page{padding-bottom:0!important;gap:18px!important;grid-template-rows:auto minmax(0,1fr)!important}
+    body[data-page="professor_alex"] .alex-central-stage{padding-bottom:0!important;align-self:stretch!important}
+  }
   </style>
   <link rel="stylesheet" href="/assets/css/traube-logo.css?v=20261103-v1">
 </head>
