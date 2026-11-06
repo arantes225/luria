@@ -145,7 +145,7 @@ test("Zero or stale speech recognition confidence cannot block voice answers", (
 });
 
 test("Installed PWA references updated voice script and cache release", () => {
-  const shellRelease = "20261031-leco-actions-center1";
+  const shellRelease = "20261106-observacoes69-1";
   const voiceModuleRelease = "20261102-leco-stt-server1";
   assert.ok(worker.includes("traube-pwa-" + shellRelease));
   assert.ok(pwa.includes('const release = "' + shellRelease + '"'));
