@@ -1092,7 +1092,7 @@
         <label class="score-search"><span class="score-search-icon">⌕</span><input id="score-search" type="search" placeholder="Buscar score, ex.: TEP, AVC, dor torácica..." autocomplete="off"><button id="score-search-clear" class="score-search-clear" type="button" aria-label="Limpar busca" hidden>×</button></label>
         <div class="score-toolbar-count"><span id="score-total"></span></div>
       </section>
-      <div class="score-tabs" id="score-tabs"></div>
+      <details class="work-filter" id="score-filter"><summary aria-label="Abrir filtros de scores">☷ <span>Filtros</span> <span id="score-filter-current">Todos</span></summary><div class="score-tabs" id="score-tabs" aria-label="Filtros de scores"></div></details>
       <section class="score-shelf" id="score-favorites-shelf" hidden><div class="score-shelf-head"><div><h3>Favoritos</h3><p>Acesso rápido aos scores que você marcou.</p></div><span class="score-count" id="score-favorites-count">0</span></div><div class="score-grid" id="score-favorites-grid"></div></section>
       <section class="score-shelf" id="score-recent-shelf" hidden><div class="score-shelf-head"><div><h3>Recentes</h3><p>Os últimos scores que você abriu.</p></div><span class="score-count" id="score-recent-count">0</span></div><div class="score-grid" id="score-recent-grid"></div></section>
       <section class="score-section"><div class="score-section-title"><div><h3 id="score-list-title">Todos os scores</h3><p id="score-list-helper">Biblioteca clínica organizada por contexto.</p></div><span class="score-count" id="score-count"></span></div><div class="score-grid" id="score-grid"></div></section>
@@ -1106,8 +1106,10 @@
   }
   function renderTabs(){
     const box=$("#score-tabs");
-    box.innerHTML=categories.map(c=>`<button class="score-tab ${c===activeCat?"active":""}" data-cat="${esc(c)}">${esc(c)}</button>`).join("");
-    $$(".score-tab",box).forEach(b=>b.onclick=()=>{activeCat=b.dataset.cat;renderTabs();renderCards();});
+    const group=(label,items)=>`<section class="work-filter-group"><h3>${label}</h3><div class="work-filter-options">${items.map(c=>`<button type="button" class="score-tab ${c===activeCat?"active":""}" aria-pressed="${c===activeCat}" data-cat="${esc(c)}">${esc(c)}</button>`).join("")}</div></section>`;
+    box.innerHTML=group("Biblioteca",["Todos","Favoritos"])+group("Contextos",["Plantão"])+group("Áreas",categories.filter(c=>!["Todos","Favoritos","Plantão"].includes(c)));
+    $("#score-filter-current").textContent=activeCat;
+    $(".score-tab",box).forEach(b=>b.onclick=()=>{activeCat=b.dataset.cat;renderTabs();renderCards();$("#score-filter").open=false;});
   }
 
   function filtered(){
