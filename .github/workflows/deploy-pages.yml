@@ -142,6 +142,8 @@ jobs:
         run: npx playwright install chromium --with-deps
       - name: Exercise 3D anatomy in browser
         run: node scripts/anatomy-browser-smoke.cjs
+      - name: Exercise detailed organs and female pelvis in browser
+        run: node scripts/anatomy-organs-browser-smoke.cjs
       - name: Save visual verification
         if: always()
         uses: actions/upload-artifact@v4
@@ -153,6 +155,10 @@ jobs:
             build/anatomy-mobile.png
             build/anatomy-atlas-desktop.png
             build/anatomy-atlas-mobile.png
+            build/anatomy-lungs-desktop.png
+            build/anatomy-reproductive-desktop.png
+            build/anatomy-reproductive-mobile.png
+            build/anatomy-kidneys-desktop.png
           if-no-files-found: ignore
 
   deploy:
