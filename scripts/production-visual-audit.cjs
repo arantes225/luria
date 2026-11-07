@@ -24,7 +24,7 @@ const routes=['dashboard','configuracoes','aprender','professor-alex','consolida
   const page=await context.newPage();
   for(const name of routes){
    try{
-    const response=await page.goto(base+'/'+name+'/',{waitUntil:'domcontentloaded',timeout:30000});
+    const response=await page.goto(base+'/'+name+'/?audit=6f71e476',{waitUntil:'domcontentloaded',timeout:30000});
     console.log('AUDIT_HTTP|'+name+'|'+(response?.status()||0)+'|'+page.url());
     await page.locator('body.app-ready').waitFor({timeout:5000}).catch(()=>{});
     await page.waitForTimeout(400);
