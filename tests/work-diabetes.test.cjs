@@ -19,8 +19,8 @@ test('Diabetes has a dedicated route and loads the data before the UI', () => {
   assert.match(html, /data-page="trabalho_diabetes"/);
   assert.ok(html.indexOf('work-diabetes-data.js') < html.indexOf('work-diabetes.js'));
   assert.match(html, /ui-navigation-v2\.js/);
-  assert.match(hub, /'Diabetes'.*'diabetes\/'/);
-  assert.match(read('trabalho/index.html'), /href="\/trabalho\/diabetes\/"/);
+  assert.doesNotMatch(hub, /'Diabetes'.*'diabetes\/'/);
+  assert.doesNotMatch(read('trabalho/index.html'), /href="\/trabalho\/diabetes\/"/);
   assert.match(read('trabalho/diabetes/index.html'), /traube-lazy-vendors\.js/);
 });
 test('Clinical case module is not part of the hub', () => {
@@ -100,23 +100,19 @@ test('Generated Traube PDF uses the existing official logo, including 5% waterma
 });
 
 
-test('Diabetes is discoverable in sidebar, mobile tools and first dashboard screen', () => {
+test('Diabetes keeps its dedicated route and navigation without a dashboard card', () => {
   const app = read('assets/js/app.js');
   const mobile = read('assets/js/ui-navigation-v2.js');
   const index = read('trabalho/index.html');
-  const css = read('assets/css/work-dashboard.css');
   const sw = read('service-worker.js');
   assert.match(app, /page === "trabalho_diabetes"[^]*?href="\/trabalho\/diabetes\/"/);
   assert.match(mobile, /\/diabetes\|calculadora\|scores/);
-  assert.match(hub, /work-hub-diabetes-featured/);
-  assert.match(index, /class="work-hub-diabetes-featured" href="\/trabalho\/diabetes\/"/);
-  assert.ok(index.indexOf('work-hub-diabetes-featured') < index.indexOf('work-hub-patient'));
-  assert.match(css, /work-hub-diabetes-featured/);
+  assert.doesNotMatch(hub, /work-hub-diabetes-featured|'Diabetes'.*'diabetes\/'/);
+  assert.doesNotMatch(index, /href="\/trabalho\/diabetes\/"/);
   assert.match(sw, /"\/trabalho\/diabetes\/"/);
   assert.match(index, /work-dashboard\.js\?v=20261105-prescricao1/);
   assert.match(html, /ui-navigation-v2\.js\?v=20261102-diabetes-visible/);
 });
-
 
 test('Diabetes fully initializes and the ten real tabs, medications and paper grid work', () => {
   const { JSDOM } = require('jsdom');

@@ -1342,3 +1342,22 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.traube-page-spotlight) :is(.
 
  body[data-ui-work="v2"] :is(.pcr-history-actions,.pcr-patient-card,.pcr-history-dialog) .secondary {background:var(--traube-work-btn-bg,linear-gradient(135deg,#184888,#2563EB))!important;color:#ffffff!important;border-color:var(--traube-work-btn-border,rgba(37,99,235,0.45))!important;}
 }
+
+/* Trabalho: filtros compactos de Bulário e Scores */
+body[data-ui-work="v2"] .work-filter {position:relative;margin:12px 0 18px;max-width:100%;}
+body[data-ui-work="v2"] .work-filter > summary {display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:8px 14px;border:1px solid #8bb9ed;border-radius:12px;background:linear-gradient(135deg,#184888,#2563eb);color:#fff;cursor:pointer;font-weight:750;list-style:none;}
+body[data-ui-work="v2"] .work-filter > summary::-webkit-details-marker {display:none;}
+body[data-ui-work="v2"] .work-filter > summary > span:last-child {font-size:12px;opacity:.9;border-left:1px solid #ffffff66;padding-left:10px;}
+body[data-ui-work="v2"] .work-filter > summary:focus-visible {outline:3px solid #60a5fa;outline-offset:3px;}
+body[data-ui-work="v2"] .work-filter[open] > summary {border-radius:12px 12px 0 0;}
+body[data-ui-work="v2"] :is(.bulario-chips,.score-tabs) {display:block;position:absolute;z-index:35;top:100%;left:0;width:min(520px,calc(100vw - 32px));max-height:min(60vh,480px);overflow:auto;box-sizing:border-box;padding:16px;border:1px solid #8bb9ed;border-radius:0 14px 14px 14px;background:var(--color-surface,#fff);box-shadow:0 18px 38px #102c5733;}
+body[data-ui-work="v2"] .work-filter-options {display:flex;flex-wrap:wrap;gap:8px;}
+body[data-ui-work="v2"] .work-filter-group + .work-filter-group {margin-top:16px;border-top:1px solid var(--color-border,#dbe5f0);padding-top:14px;}
+body[data-ui-work="v2"] .work-filter-group h3 {font-size:13px;margin:0 0 10px;color:var(--color-text-secondary,#42566f);}
+body[data-ui-work="v2"] .work-filter p {font-size:13px;line-height:1.45;margin:0 0 14px;color:var(--color-text-secondary,#42566f);}
+body[data-page="trabalho_paciente"] .traube-page-spotlight {display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+body[data-page="trabalho_paciente"] .work-patient-return {display:inline-flex;align-items:center;min-height:44px;padding:9px 14px;border-radius:12px;background:linear-gradient(135deg,#184888,#2563eb);color:#fff;text-decoration:none;font-weight:700;}
+body[data-page="trabalho_paciente"] .work-patient-return:focus-visible {outline:3px solid #60a5fa;outline-offset:3px;}
+body[data-ui-work="v2"] .work-filter:not([open]) > :is(.bulario-chips,.score-tabs) {display:none!important;}
+body[data-ui-work="v2"] :is(.bulario-chip,.score-tab)[aria-pressed="true"] {outline:2px solid #93c5fd;outline-offset:2px;}
+@media (max-width:600px) {body[data-ui-work="v2"] :is(.bulario-chips,.score-tabs) {width:100%;max-width:calc(100vw - 24px);}body[data-page="trabalho_paciente"] .work-patient-return {width:100%;justify-content:center;}}
