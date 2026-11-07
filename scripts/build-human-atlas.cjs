@@ -75,6 +75,7 @@ if (mode === "prepare") {
   fs.writeFileSync(femalePath, JSON.stringify(femaleManifest));
   // Músculos complementares e vasos do coração no corpo feminino (ver o script).
   execFileSync(process.execPath, ["--max-old-space-size=8000", path.join(root, "tools/anatomy-atlas/build-female-extras.mjs"), models], { stdio: "inherit" });
+  execFileSync(process.execPath, [path.join(root, "tools/anatomy-atlas/prepare-muscle-candidate.mjs"), models], { stdio: "inherit" });
 
   execFileSync(process.execPath, [
     path.join(root, "tools/anatomy-atlas/build-pt-names.cjs"),

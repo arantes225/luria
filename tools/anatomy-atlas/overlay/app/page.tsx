@@ -159,7 +159,7 @@ export default function Home(){
     <Switch checked={state.visible.includes(s.id)} onCheckedChange={()=>toggle(s.id)} aria-label={`Mostrar ${s.name}`}/>
    </div>)}</div>
    <div className="atlas-side-foot"><span>{fmt(visibleCount)} peças visíveis</span><button type="button" onClick={()=>setState(s=>({...s,visible:[],selected:[],isolate:false}))}>Ocultar tudo</button></div>
-    {bodyKind==='female'&&<p className="atlas-source-note">Útero, ovários e tubas estão na pelve. A camada muscular feminina tem cobertura parcial na fonte anatômica.</p>}
+    {bodyKind==='female'&&<p className="atlas-source-note">Útero, ovários e tubas estão na pelve. A camada “Músculos adaptados” complementa a referência feminina com malhas BodyParts3D ajustadas por região óssea.</p>}
    {removedCount>0&&<div className="atlas-removed"><div><strong>{fmt(removedCount)}</strong> peça{removedCount===1?'':'s'} removida{removedCount===1?'':'s'}</div><div className="atlas-removed-actions"><button type="button" onClick={undoRemove} disabled={!removedStack.length}><Undo2 size={14}/>Desfazer</button><button type="button" onClick={restoreAll}><Eye size={14}/>Restaurar</button></div></div>}
   </aside>
 
