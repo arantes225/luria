@@ -54,3 +54,8 @@ body[data-page="study-rats"] #study-rats-host[hidden] { display: none !important
 .sr-hall-hero{background:var(--ui-hero-gradient,linear-gradient(110deg,#153966,#2463df));color:#fff;border-color:transparent}
 .sr-hall-hero h2,.sr-hall-hero p,.sr-hall-eyebrow{color:#fff}
 .sr-hall-button{color:#fff;background:var(--ui-pill-gradient,linear-gradient(110deg,#174b91,#2388e7));border-color:transparent}
+
+body[data-page="study-rats"] #study-rats-hall .sr-hall-hero h2,
+body[data-page="study-rats"] #study-rats-hall .sr-hall-hero p,
+body[data-page="study-rats"] #study-rats-hall .sr-hall-eyebrow{color:#fff!important}
+body[data-page="study-rats"] #study-rats-hall .sr-hall-button{color:#fff!important;background:linear-gradient(110deg,#174b91,#2388e7)!important;border-color:transparent!important}
