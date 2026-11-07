@@ -5,11 +5,19 @@ on:
       - scripts/production-visual-audit.cjs
       - .github/workflows/production-visual-audit.yml
   workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
 jobs:
   render:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Inspect main Pages runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          curl -fsSL -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/arantes225/luria/actions/workflows/deploy-pages.yml/runs?branch=main&per_page=8" | jq -r '.workflow_runs[] | "PAGES_RUN|\(.id)|\(.head_sha)|\(.status)|\(.conclusion)"'
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
