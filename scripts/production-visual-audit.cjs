@@ -1,5 +1,5 @@
 'use strict';
-// Read-only visual audit of the published website after community layout release.
+// Read-only final visual audit after successful Pages deployment.
 const fs=require('node:fs'),path=require('node:path');
 const {chromium}=require('playwright');
 const root=path.resolve(__dirname,'..');
