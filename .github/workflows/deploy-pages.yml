@@ -273,6 +273,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: '1200000'
       - name: Verify the published anatomy pages
         env:
           PUBLISHED_SITE: ${{ steps.deployment.outputs.page_url }}
