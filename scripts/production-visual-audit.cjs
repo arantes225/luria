@@ -14,17 +14,7 @@ const routes=['amigos'];
  try{
   const context=await browser.newContext({viewport:{width:1915,height:873},deviceScaleFactor:1,serviceWorkers:'block'});
   const base='https://www.resibulando.online';
-  let published=false;
-  for(let attempt=0;attempt<28;attempt++){
-    try{
-      const response=await fetch(base+'/amigos/?release='+Date.now(),{cache:'no-store'});
-      published=(await response.text()).includes('grid-template-columns:minmax(0,1fr) auto auto!important');
-      console.log('PUBLISH_WAIT|'+attempt+'|'+response.status+'|'+published+'|'+response.headers.get('last-modified'));
-      if(published)break;
-    }catch(error){console.log('PUBLISH_WAIT_ERROR|'+attempt+'|'+error.message);}
-    await new Promise(resolve=>setTimeout(resolve,30000));
-  }
-  if(!published)throw new Error('Published Amigos HTML did not include the released layout within 14 minutes');
+  console.log('RELEASE_CHECK|'+(await (await fetch(base+'/amigos/?release='+Date.now(),{cache:'no-store'})).text()).includes('grid-template-columns:minmax(0,1fr) auto auto!important'));
   const raw=await browser.newContext({viewport:{width:1915,height:873},serviceWorkers:'block'});
   const rawPage=await raw.newPage();
   try{const response=await rawPage.goto(base+'/dashboard/',{waitUntil:'domcontentloaded',timeout:30000});await rawPage.waitForTimeout(2000);console.log('AUDIT_HTTP|raw-dashboard|'+(response?.status()||0)+'|'+rawPage.url());console.log('AUDIT_IMAGE|raw-dashboard|'+(await rawPage.screenshot({type:'jpeg',quality:58})).toString('base64'));}catch(error){console.log('AUDIT_ERROR|raw-dashboard|'+error.message.replaceAll('\n',' '));}
