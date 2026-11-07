@@ -1,8 +1,9 @@
 // TRAUBE · Atlas anatômico — sobreposição do anatomy.ts do projeto MIT de origem
 // (licença preservada em LICENSE-human-atlas.txt). Sistemas, descrições e
 // paleta por tecido em português; nomes das estruturas vêm de pt-names.json.
-export type SystemId = 'skeletal'|'muscular'|'arterial'|'venous'|'nervous'|'digestive'|'respiratory'|'urinary'|'reproductive'|'lymphatic'|'endocrine'|'integumentary'|'connective'|'sensory'|'cardiac'|'brain'|'borrowed'|'donor-muscle'|'mammary';
+export type SystemId = 'skeletal'|'muscular'|'arterial'|'venous'|'nervous'|'digestive'|'respiratory'|'urinary'|'reproductive'|'lymphatic'|'endocrine'|'integumentary'|'connective'|'sensory'|'cardiac'|'brain'|'borrowed'|'donor-muscle'|'mammary'|'adapted-muscle';
 export const SYSTEMS: {id:SystemId;name:string;color:string;description:string}[] = [
+ {id:'adapted-muscle',name:'Músculos adaptados',color:'#b84c42',description:'Malhas BodyParts3D da referência masculina, ajustadas individualmente aos ossos do corpo feminino por rotação, translação e escala uniforme. Representação adaptada com limites de encaixe; não é uma segmentação muscular feminina.'},
  {id:'skeletal',name:'Esqueleto',color:'#ecdfc4',description:'Os ossos formam a estrutura de sustentação do corpo, protegem órgãos e servem de inserção para os músculos. A medula óssea armazena minerais e produz células do sangue.'},
  {id:'muscular',name:'Músculos',color:'#b84c42',description:'Os músculos esqueléticos produzem movimento ao tracionar suas inserções. Com os tendões, movem articulações, estabilizam a postura e produzem calor.'},
  {id:'cardiac',name:'Coração',color:'#a63f3a',description:'O coração é uma bomba muscular de quatro câmaras. Suas valvas mantêm o sangue em sentido único pelas circulações pulmonar e sistêmica.'},
@@ -212,6 +213,7 @@ const TISSUES:[RegExp,Tissue][]=[
  [/hair|eyebrow/, {color:'#3d2f28',rough:.7}],
 ];
 const BY_SYSTEM:Record<SystemId,Tissue>={
+ 'adapted-muscle':{color:'#b84c42',rough:.55},
  mammary:{color:'#bf8088',rough:.62},
  skeletal:{color:'#ecdfc4',rough:.62},muscular:{color:'#b84c42',rough:.55},cardiac:{color:'#a8423b',rough:.5},
  sensory:{color:'#b9cfd6',rough:.4},arterial:{color:'#cf3f36',rough:.32},venous:{color:'#3f6fd1',rough:.34},
@@ -229,7 +231,7 @@ function detailKind(part:Pick<Part,'name'|'system'>,t:Tissue|undefined):number{
  const n=part.name.toLowerCase();
  if(/tooth|incisor|canine|molar|lens|cornea|vitreous|cartilage|disk|valve|leaflet|cusp|ventricular system|aqueduct|third ventricle|fourth ventricle|lateral ventricle|interventricular foramen/.test(n))return DETAIL.smooth;
  if(!t&&(part.system==='skeletal'||part.system==='borrowed'))return DETAIL.bone;
- if(part.system==='donor-muscle')return DETAIL.muscle;
+ if(part.system==='donor-muscle'||part.system==='adapted-muscle')return DETAIL.muscle;
  if(part.system==='brain')return /white matter|corpus callosum|fornix|commissure|tract|radiation|ventricle|aqueduct|canal/.test(n)?DETAIL.smooth:DETAIL.brain;
  if((!t&&part.system==='muscular')||t===MUSCLE)return DETAIL.muscle;
  if(/tendon|ligament|fascia|aponeuro|retinaculum|raphe|membrane|tract|linea|tendinous|tarsal plate/.test(n))return DETAIL.fibrous;

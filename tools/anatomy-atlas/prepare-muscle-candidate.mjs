@@ -8,6 +8,7 @@ import path from 'node:path';
 const dir=path.resolve(process.argv[2]||'build/human-atlas-source/public/models');
 const read=n=>JSON.parse(fs.readFileSync(path.join(dir,n),'utf8'));
 const male=read('atlas.json'),female=read('atlas-female.json');
+if(female.parts.some(p=>p.system==='adapted-muscle'))throw Error('Musculatura já integrada');
 const buffers=a=>a.chunks.map(c=>fs.readFileSync(path.join(dir,path.basename(c.url))));
 const mb=buffers(male),fb=buffers(female);
 const center=p=>p.bounds[0].map((v,i)=>(v+p.bounds[1][i])/2);
@@ -33,11 +34,12 @@ for(const f of female.parts.filter(p=>p.system==='borrowed'&&p.conceptId.startsW
  if(scale<.7||scale>1.3)continue;
  anchors.push({m,f,A,B,scale,center:center(m)});
 }
-if(anchors.length<100)throw Error('Correspondências ósseas insuficientes');
+if(anchors.length<60)throw Error('Correspondências ósseas insuficientes');
 const excluded=/gluteus|piriformis|gemellus|obturator|quadratus femoris|tensor fasciae|sartorius|gracilis|adductor|pectineus|vastus|rectus femoris|biceps femoris|semitendinosus|semimembranosus|gastrocnemius|soleus|plantaris|popliteus|tibialis|fibularis|peroneus|hallucis|iliacus|psoas|iliopsoas|extraocular/i;
 const records=[],segments=[];let bytes=0;
 const put=a=>{const pad=(4-bytes%4)%4;if(pad){segments.push(Buffer.alloc(pad));bytes+=pad;}const o=bytes,b=Buffer.from(a.buffer,a.byteOffset,a.byteLength);segments.push(b);bytes+=b.length;return o;};
-for(const p of male.parts.filter(p=>p.system==='muscular'&&!excluded.test(p.name))){
+const nativeNames=new Set(female.parts.map(p=>p.name.toLowerCase()));
+for(const p of male.parts.filter(p=>p.system==='muscular'&&!excluded.test(p.name)&&center(p)[1]>.9&&!nativeNames.has(p.name.toLowerCase())&&!/(?:medial|lateral|superior|inferior) rectus|(?:superior|inferior) oblique|ocular/i.test(p.name))){
  const c=center(p),side=/^Left /i.test(p.name)?1:/^Right /i.test(p.name)?-1:0;
  const options=anchors.filter(a=>!side||Math.sign(a.center[0])===side);
  const anchor=options.sort((a,b)=>norm(sub(c,a.center))-norm(sub(c,b.center)))[0];if(!anchor)continue;
@@ -50,6 +52,17 @@ for(const p of male.parts.filter(p=>p.system==='muscular'&&!excluded.test(p.name
  records.push({...p,id:'TRAUBE-ADAPTED:'+p.id,positions:put(out),normals:put(packed),indices:put(indices),chunk:0,bounds:[mn,mx],anchor:anchor.f.id,sourceSex:'male',registration:'one rigid similarity per mesh',scale:anchor.scale});
 }
 const outDir=path.join(dir,'muscle-candidate');fs.mkdirSync(outDir,{recursive:true});
+if(records.length<100)throw Error('Cobertura muscular insuficiente: '+records.length);
 fs.writeFileSync(path.join(outDir,'candidate.bin'),Buffer.concat(segments));
 fs.writeFileSync(path.join(outDir,'candidate.json'),JSON.stringify({status:'requires visual and anatomical review',parts:records,chunks:[{url:'candidate.bin',bytes}],sources:['BodyParts3D CC BY 4.0','Z-Anatomy CC BY-SA 4.0']},null,2));
 console.log(records.length+' músculos candidatos; atlas publicado preservado');
+
+const integrated=records.map(p=>({...p,conceptId:p.id,system:'adapted-muscle',chunk:female.chunks.length}));
+const candidateFile='female-regional-muscles.bin';
+fs.writeFileSync(path.join(dir,candidateFile),Buffer.concat(segments));
+female.chunks.push({url:'/models/'+candidateFile,bytes});
+female.parts.push(...integrated);
+for(const p of integrated)female.concepts.push({id:p.id,name:p.name,elements:[p.id]});
+female.triangles=female.parts.reduce((sum,p)=>sum+p.indexCount/3,0);
+female.muscleRegistration={method:'similaridade rígida única por músculo',sourceSex:'male',anchors:anchors.length,muscles:records.length};
+fs.writeFileSync(path.join(dir,'atlas-female.json'),JSON.stringify(female));

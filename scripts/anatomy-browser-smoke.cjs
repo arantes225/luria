@@ -102,6 +102,10 @@ const server = http.createServer((request, response) => {
     await femalePage.locator(".atlas-loading").waitFor({ state: "hidden", timeout: 120000 });
     assert.equal(await femalePage.getByRole("button", { name: "Pelve feminina" }).getAttribute("aria-pressed"), "true");
     await femalePage.screenshot({ path: path.resolve(__dirname, "../build/anatomy-female-pelvis.png") });
+    await femalePage.locator('button[title="Mostrar apenas: Músculos adaptados"]').click();
+    await femalePage.locator(".atlas-loading").waitFor({ state: "hidden", timeout: 120000 });
+    await femalePage.screenshot({ path: path.resolve(__dirname, "../build/anatomy-female-body-desktop.png") });
+
     assert.equal(femaleErrors.length, 0, femaleErrors.join("\n"));
     assert.equal(atlasErrors.length, 0, atlasErrors.join("\n"));
     assert.equal(errors.length, 0, errors.join("\n"));

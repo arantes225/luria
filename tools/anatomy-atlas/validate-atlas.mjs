@@ -37,6 +37,11 @@ for (const [file, required] of Object.entries(REQUIRED)) {
   for (const c of atlas.concepts) { assert.ok(c.elements.length, `${c.id}: vazio`); for (const id of c.elements) assert.ok(ids.has(id), `${c.id}: falta ${id}`); }
   assert.equal(Math.round(tris), Math.round(atlas.triangles), `${file}: contagem de triângulos`);
   if (file === 'atlas-female.json') {
+    assert.ok(atlas.parts.filter(p=>p.system==='adapted-muscle').length>=100, 'musculatura adaptada ausente');
+    for(const p of atlas.parts.filter(p=>p.system==='adapted-muscle')) {
+      assert.ok(p.sourceSex==='male' && p.registration==='one rigid similarity per mesh', 'procedência muscular ausente');
+      assert.ok(p.bounds[0][0]>-.8 && p.bounds[1][0]<.8 && p.bounds[0][1]>.65 && p.bounds[1][1]<2, 'músculo fora da região corporal: '+p.name);
+    }
     assert.ok(!atlas.parts.some(p => p.system === 'pregnancy' || p.system === 'borrowed-muscle'), 'o corpo feminino contém gestação ou músculos masculinos deformados');
     for (const name of ['Uterus', 'Ovary', 'Female pelvic organs']) {
       const concept = atlas.concepts.find(c => c.name === name);
