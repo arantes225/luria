@@ -1,4 +1,17 @@
 (()=>{
+  // ⚡ Bolt Performance Optimization
+  // What: Add a debounce wrapper to the search input.
+  // Why: Prevents expensive `renderList` and synchronous DOM manipulations on every single keystroke.
+  // Impact: Improves UI responsiveness and reduces main thread blocking when searching large datasets.
+  function debounce(func, wait) {
+    let timeout;
+    return function() {
+      const context = this, args = arguments;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+  }
+
   const search=document.getElementById('drug-search');
   const list=document.getElementById('drug-list');
   const detail=document.getElementById('drug-detail');
@@ -334,7 +347,7 @@
     });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
-  search.addEventListener('input',()=>{visibleCount=100;renderList();});
+  search.addEventListener('input', debounce(()=>{visibleCount=100;renderList();}, 250));
   // Canonical database: bulario_catalog is the public projection of bulario_drugs.
   // Show records as soon as each page arrives, independently from protocol loading.
   async function loadAll(table,fields,sortKey,onPage){

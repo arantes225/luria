@@ -267,6 +267,7 @@ test('Bulario list separates labels, supports active-ingredient search and prese
   w.document.body.classList.add('bulario-detail-open');back.click();
   assert.equal(w.document.body.classList.contains('bulario-detail-open'),false);
   const search=w.document.getElementById('drug-search');search.value='ciclopirox';search.dispatchEvent(new w.Event('input'));
+  await new Promise(r => setTimeout(r, 260));
   assert.equal(list.querySelectorAll('[data-id]').length,1);
   assert.equal(list.querySelector('[data-id]').dataset.id,'2');
   assert.deepEqual(errors,[]);
