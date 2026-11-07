@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'none'; upgrade-insecure-requests">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Órgãos em detalhe · Sala de Anatomia · TRAUBE</title>
+  <meta name="description" content="Modelos tridimensionais detalhados de órgãos, vasos e estruturas ocas para estudo de anatomia.">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png">
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=10">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20261103-clean1">
+  <link rel="stylesheet" href="/assets/css/traube-brand-v5.css?v=20261103-logo70-final">
+  <link rel="stylesheet" href="/assets/css/anatomia-orgaos.css?v=2">
+</head>
+<body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="anatomia">
+  <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
+  <script defer src="/assets/js/ui-navigation-v2.js?v=20261105-anatomia1"></script>
+  <div class="app-shell"><aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div><main class="main"><div class="page">
+    <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">APRENDER</span><h1>Sala de Anatomia</h1></div></header>
+    <section class="organs-page" aria-labelledby="organs-title">
+      <header class="organs-hero"><div><span class="anatomy-kicker">Laboratório interativo</span><h2 id="organs-title">Órgãos em detalhe</h2><p>Explore modelos segmentados de mamas, pulmões, vasos, rins, órgãos ocos e sistema reprodutor feminino. Clique numa estrutura para identificá-la e use o corte didático para observar relações internas.</p></div><a class="organs-back" href="/aprender/anatomia/atlas/">← Atlas do corpo inteiro</a></header>
+      <nav class="organs-catalog" aria-label="Selecionar órgão">
+        <button type="button" data-organ="lungs" class="is-active">Pulmões</button><button type="button" data-organ="breasts">Mamas</button><button type="button" data-organ="reproductive">Útero e ovários</button><button type="button" data-organ="kidneys">Rins · HuBMAP</button><button type="button" data-organ="kidneys-bodyparts">Rins · BodyParts3D</button><button type="button" data-organ="brain">Encéfalo</button><button type="button" data-organ="eye">Olho</button><button type="button" data-organ="spleen">Baço</button><button type="button" data-organ="stomach">Estômago</button><button type="button" data-organ="bladder">Pelve masculina</button><button type="button" data-organ="intestines">Intestinos</button><button type="button" data-organ="liver">Fígado</button><button type="button" data-organ="pancreas">Pâncreas</button><button type="button" data-organ="gallbladder">Vias biliares</button><button type="button" data-organ="esophagus">Esôfago</button><button type="button" data-organ="larynx">Laringe</button>
+      </nav>
+      <div class="organs-layout"><section class="organs-stage-card"><div class="organs-stage-head"><div><strong data-organ-title>Pulmões</strong><span data-organ-summary>Segmentos broncopulmonares, traqueia e árvores brônquicas.</span></div><div class="organs-tools"><button type="button" data-organ-cut aria-pressed="false">Corte didático</button><button type="button" data-organ-vessels aria-pressed="false" hidden>Destacar vasos</button><button type="button" data-organ-rotate aria-pressed="false" aria-label="Rotação automática">Girar</button><button type="button" data-organ-reset aria-label="Restaurar câmera">Restaurar</button></div></div><div class="organs-viewer" data-anatomy-organs><canvas aria-label="Modelo tridimensional do órgão selecionado"></canvas><div class="organs-loading" data-organs-loading><strong>Preparando o modelo</strong><span>Carregando malha segmentada…</span><div class="organs-progress"><i data-organs-progress></i></div></div></div><p class="organs-hint">Arraste para girar · botão direito para deslocar · role para aproximar · clique numa estrutura</p></section><aside class="organs-card"><small>ESTRUTURA IDENTIFICADA</small><h3 data-organ-detail-title>Selecione uma estrutura</h3><p data-organ-detail-copy>Clique na malha colorida ou escolha uma estrutura na lista.</p><div class="organs-structure-list" data-organ-structures aria-label="Estruturas do órgão"></div></aside></div>
+      <p class="organs-status" role="status" aria-live="polite" data-organs-status></p>
+      <p class="organs-attribution">Modelos detalhados: OrganUI/BodyParts3D e referência feminina HuBMAP. Licenças e créditos: <a href="/assets/models/anatomia/orgaos/ATTRIBUTION.md">órgãos gerais</a> · <a href="/assets/models/anatomia/orgaos/ATTRIBUTION-FEMALE.md">pelve feminina</a> · <a href="/assets/models/anatomia/ATTRIBUTION-HRA.md">mamas e rins</a>. Uso educacional; não é ferramenta clínica.</p>
+    </section>
+  </div></main></div>
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=20261101-traube-bootstrap1"></script>
+  <script src="/assets/vendor/traube-anatomy-organs.mjs?v=6" type="module"></script>
+  <script defer src="/assets/js/pwa.js?v=20261101-bootstrap1"></script>
+</body>
+</html>

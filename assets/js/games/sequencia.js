@@ -6,15 +6,14 @@
   if (root?.dataset.game !== "sequencia") return;
   let selection = { specialty: "Misto", level: "1" },
     run = null;
-  const top = () =>
-    '<div class="g-top"><a class="g-back traube-back-button" href="/jogos/">← Central de jogos</a><span class="g-edition">02 / Raciocínio em ordem</span></div>';
+  const top = () => '';
   const art =
     '<div class="g-hero-art s-art" aria-hidden="true"><div class="s-connection"></div><div class="s-art-card"><b>01</b><span>Reconhecer o contexto</span><i>✓</i></div><div class="s-art-card"><b>02</b><span>Conectar as decisões</span><i>✓</i></div><div class="s-art-card"><b>03</b><span>Reavaliar a resposta</span><i>↗</i></div><span class="s-art-note">CADA ETAPA TEM UM PORQUÊ</span></div>';
   function setup() {
     run = null;
     root.innerHTML =
       top() +
-      `<section class="g-hero"><div><span class="g-kicker">Sequência Salvadora</span><h2>A ordem muda<br>o desfecho.</h2><p class="g-lead">Conecte etapas de cuidado. Entenda o que precisa acontecer antes de dar o próximo passo.</p><div class="g-tags"><span>4 a 7 etapas</span><span>Arraste ou use as setas</span><span>Ordens equivalentes aceitas</span></div></div>${art}</section><form class="g-panel g-setup s-setup">${G.filters()}<div id="s-count" class="g-subtle"></div><button class="g-button" type="submit">Iniciar desafio →</button></form>${G.note}<p class="g-note">Básico: 4 etapas · Intermediário: 5–6 · Avançado: 6–7. Nem todas as áreas possuem sequência segura no acervo inicial; recortes vazios são informados.</p>`;
+      `<form class="g-panel g-setup s-setup">${G.filters()}<div id="s-count" class="g-subtle"></div><button class="g-button" type="submit">Iniciar desafio →</button></form>${G.note}<p class="g-note">Básico: 4 etapas · Intermediário: 5–6 · Avançado: 6–7. Nem todas as áreas possuem sequência segura no acervo inicial; recortes vazios são informados.</p>`;
     const form = root.querySelector("form");
     Object.entries(selection).forEach(([k, v]) => (form.elements[k].value = v));
     const update = () => {

@@ -42,7 +42,7 @@ try{
  // handlers run against an isolated synthetic account, with no production writes.
  for(const viewport of [{width:1920,height:900},{width:390,height:844},{width:320,height:700}]){
   await page.setViewportSize(viewport);
-  for(const url of ['/dashboard/','/cronograma/','/flashcards/','/caderno/','/plantao/traubezap/','/plantao/sala-emergencia/','/trabalho/','/trabalho/pcr/']){
+  for(const url of ['/dashboard/','/cronograma/','/flashcards/','/caderno/','/plantao/sala-emergencia/','/trabalho/','/trabalho/pcr/']){
    try{await visit(url);await bounds(url+' '+viewport.width);
     for(const [appearance,identity]of [['light','blue'],['dark','blue'],['light','pink'],['dark','pink']]){
      await page.evaluate(({appearance,identity})=>{document.body.dataset.uiAppearance=appearance;document.body.dataset.uiIdentity=identity},{appearance,identity});await bounds(url+' '+appearance+' '+identity);

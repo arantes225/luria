@@ -61,7 +61,29 @@
 <link rel="stylesheet" href="/assets/css/room-native-embed.css?v=1"><script src="/assets/js/room-native-embed.js?v=1"></script>  <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=20261016-v5">
   <link rel="stylesheet" href="/assets/css/questoes-lumina-v2.css?v=20261016-v5">
   <link rel="stylesheet" href="/assets/css/traube-logo.css?v=20261103-v1">
-</head>
+<style>
+  body[data-page="flashcards"] .review-launcher-action{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:8px!important}
+  body[data-page="flashcards"] #review-launcher-count{text-align:center!important}
+  body[data-page="flashcards"] #start-review-session{color:#fff!important;background:var(--ui-pill-gradient,linear-gradient(110deg,#174b91,#2388e7))!important;border-color:transparent!important}
+  body[data-page="flashcards"] #flash-home-decks-list{display:flex!important;flex-direction:row!important;overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:thin}
+  body[data-page="flashcards"] .flash-review-hub .flash-deck-cards{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important}
+  body[data-page="flashcards"] .error-metric-summary-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+  body[data-page="flashcards"] .error-metric-summary-grid>div{min-width:0!important;text-align:center!important}
+  body[data-page="flashcards"] .flash-review-panel .qs-home-daily-action.review-launcher-action{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:10px!important}
+  body[data-page="flashcards"] .flash-review-panel #review-launcher-count{display:block!important;order:1!important;width:auto!important;text-align:center!important}
+  body[data-page="flashcards"] .flash-review-panel #start-review-session.button.primary{display:inline-flex!important;order:2!important;align-self:center!important;color:#fff!important;background:linear-gradient(110deg,#174b91,#2388e7)!important;border-color:transparent!important}
+  body[data-page="flashcards"] .qs-home-week .error-quick-metrics-body .error-metric-summary-grid.qs-metric-4col{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  body[data-page="flashcards"] .qs-home-week .error-quick-metrics-body .error-metric-summary-grid.qs-metric-4col>div{grid-column:auto!important;grid-row:auto!important;min-width:0!important}
+@layer traube-ui-startup{
+body[data-page="flashcards"] .flash-review-panel .qs-home-daily-action.review-launcher-action{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:10px!important}
+body[data-page="flashcards"] .flash-review-panel #review-launcher-count{display:block!important;order:1!important;width:auto!important;text-align:center!important}
+body[data-page="flashcards"] .flash-review-panel #start-review-session.button.primary{display:inline-flex!important;order:2!important;align-self:center!important;color:#fff!important;background:linear-gradient(110deg,#174b91,#2388e7)!important;border-color:transparent!important}
+body[data-page="flashcards"] .qs-home-week .error-quick-metrics-body .error-metric-summary-grid.qs-metric-4col{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+body[data-page="flashcards"] .qs-home-week .error-quick-metrics-body .error-metric-summary-grid.qs-metric-4col>div{grid-column:auto!important;grid-row:auto!important;min-width:0!important}
+body[data-page="flashcards"] #flash-home-decks-list{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;overflow-x:auto!important;overflow-y:hidden!important}
+body[data-page="flashcards"] #flash-home-decks-list>*{flex:0 0 min(300px,85vw)!important}
+}
+</style></head>
 
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="flashcards" class="flash-v21-booting">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>

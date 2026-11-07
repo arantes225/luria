@@ -96,9 +96,102 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Run outstanding editorial and external PIN tests
         run: node --test --test-isolation=none tests/apostilas-batch.test.cjs tests/quick-chart-daily-code.test.cjs tests/quick-chart-pairing.test.cjs tests/notes-independent.test.cjs
+  anatomy-bundle:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pinned 3D build dependencies
+        run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12 playwright@1.56.1
+      - name: Prepare local site for browser smoke
+        run: node scripts/build-pages.cjs
+      - name: Restore and verify detailed organ models
+        run: node scripts/prepare-anatomy-organs.cjs build/pages/assets/models/anatomia/orgaos
+      - name: Build detailed HRA models and organ viewers
+        run: |
+          node scripts/export-hra-organs.cjs build/hra-organ-source build/pages/assets/models/anatomia --restore
+          ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
+          node scripts/build-anatomy-organs.cjs
+      - name: Check anatomical room contracts
+        run: node --test tests/anatomia-room.test.cjs
+      - name: Fetch pinned Human Atlas source
+        run: |
+          git init /tmp/luria-human-atlas
+          git -C /tmp/luria-human-atlas fetch --depth 1 https://github.com/ashemag/human-atlas.git 1c38bf35c254a891200d3cedecfd57abebe83d8d
+          git -C /tmp/luria-human-atlas checkout --detach FETCH_HEAD
+      - name: Restore pinned anatomy sources
+        id: anatomy-sources
+        uses: actions/cache@v4
+        with:
+          path: /tmp/traube-atlas-sources
+          key: traube-atlas-sources-za6c7f9016-hra110-v1
+      - name: Fetch pinned anatomy sources (Z-Anatomy CC BY-SA 4.0, HRA CC BY 4.0)
+        if: steps.anatomy-sources.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p /tmp/traube-atlas-sources
+          cd /tmp/traube-atlas-sources
+          curl --fail --location --retry 3 -o za-muscles.fbx 'https://github.com/LluisV/Z-Anatomy/raw/6c7f9016bd5899ac8edafd31b9900c151df42ed6/Resources/Models/FBX/MuscularSystem100.fbx'
+          curl --fail --location --retry 3 -o za-visceral.fbx 'https://github.com/LluisV/Z-Anatomy/raw/6c7f9016bd5899ac8edafd31b9900c151df42ed6/Resources/Models/FBX/VisceralSystem100.fbx'
+          curl --fail --location --retry 3 -o hra-male.glb 'https://cdn.humanatlas.io/digital-objects/ref-organ/united-male/v1.10/assets/3d-vh-m-united.glb'
+      - name: Verify anatomy sources
+        run: |
+          cd /tmp/traube-atlas-sources
+          printf '%s\n' \
+            '4c19df534d5d84aabbce08604306aa0485b43e8a2483c72a95b569e1dfea2279  za-muscles.fbx' \
+            '22b301c93327929c9a14ee582d1848b550a950376e221a6d1078c7256bb83d0e  za-visceral.fbx' \
+            'fae3ac193835e9e24cd13a0d0f11e6788183b290b0691b9b83ec81d907d94581  hra-male.glb' | sha256sum --check
+      - name: Fetch pinned female reference atlas
+        run: |
+          git init /tmp/traube-atlas-female
+          git -C /tmp/traube-atlas-female fetch --depth 1 https://github.com/slorksmo/Human-Atlas.git 5bb5713aab18d7fe9380c3339eb09f173491ea06
+          git -C /tmp/traube-atlas-female checkout --detach FETCH_HEAD
+      - name: Build attributed whole-body atlas
+        env:
+          TRAUBE_ATLAS_SOURCES: /tmp/traube-atlas-sources
+          TRAUBE_ATLAS_FEMALE: /tmp/traube-atlas-female/public/models
+        run: |
+          npm ci --ignore-scripts --prefix /tmp/luria-human-atlas
+          node scripts/build-human-atlas.cjs prepare /tmp/luria-human-atlas
+          npm run check --prefix /tmp/luria-human-atlas
+          node tools/anatomy-atlas/validate-atlas.mjs /tmp/luria-human-atlas
+          node /tmp/luria-human-atlas/scripts/validate-interactions.mjs
+          npm run build --prefix /tmp/luria-human-atlas -- --base=/aprender/anatomia/atlas/
+          node scripts/build-human-atlas.cjs install /tmp/luria-human-atlas
+      - name: Use the Chrome installed on the runner
+        run: |
+          chrome=$(command -v google-chrome)
+          "$chrome" --version
+          echo "TRAUBE_CHROME_EXECUTABLE=$chrome" >> "$GITHUB_ENV"
+      - name: Exercise 3D anatomy in browser
+        run: node scripts/anatomy-browser-smoke.cjs
+      - name: Exercise the detailed organ catalogue
+        run: node scripts/anatomy-organs-browser-smoke.cjs
+      - name: Save visual verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: anatomy-visual-check
+          path: |
+            build/anatomy-exterior.png
+            build/anatomy-desktop.png
+            build/anatomy-mobile.png
+            build/anatomy-atlas-desktop.png
+            build/anatomy-atlas-mobile.png
+            build/anatomy-female-body-desktop.png
+            build/anatomy-female-pelvis.png
+            build/anatomy-kidneys-interior.png
+            build/anatomy-breasts-interior.png
+          if-no-files-found: ignore
+
   deploy:
     if: github.event_name != 'pull_request'
-    needs: [quality, historical-regressions]
+    needs: [quality, historical-regressions, anatomy-bundle]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -110,8 +203,60 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24'
+      - name: Install pinned 3D build dependencies
+        run: npm install --no-save --package-lock=false --ignore-scripts three@0.181.2 esbuild@0.25.12
       - name: Prepare public assets only
         run: node scripts/build-pages.cjs
+      - name: Restore and verify detailed organ models
+        run: node scripts/prepare-anatomy-organs.cjs build/pages/assets/models/anatomia/orgaos
+      - name: Build detailed HRA models and organ viewers
+        run: |
+          node scripts/export-hra-organs.cjs build/hra-organ-source build/pages/assets/models/anatomia --restore
+          ANATOMY_MODEL_PATH=build/pages/assets/models/anatomia/coracao.glb node scripts/build-anatomy-viewer.cjs
+          node scripts/build-anatomy-organs.cjs
+      - name: Fetch pinned Human Atlas source
+        run: |
+          git init /tmp/luria-human-atlas
+          git -C /tmp/luria-human-atlas fetch --depth 1 https://github.com/ashemag/human-atlas.git 1c38bf35c254a891200d3cedecfd57abebe83d8d
+          git -C /tmp/luria-human-atlas checkout --detach FETCH_HEAD
+      - name: Restore pinned anatomy sources
+        id: anatomy-sources
+        uses: actions/cache@v4
+        with:
+          path: /tmp/traube-atlas-sources
+          key: traube-atlas-sources-za6c7f9016-hra110-v1
+      - name: Fetch pinned anatomy sources (Z-Anatomy CC BY-SA 4.0, HRA CC BY 4.0)
+        if: steps.anatomy-sources.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p /tmp/traube-atlas-sources
+          cd /tmp/traube-atlas-sources
+          curl --fail --location --retry 3 -o za-muscles.fbx 'https://github.com/LluisV/Z-Anatomy/raw/6c7f9016bd5899ac8edafd31b9900c151df42ed6/Resources/Models/FBX/MuscularSystem100.fbx'
+          curl --fail --location --retry 3 -o za-visceral.fbx 'https://github.com/LluisV/Z-Anatomy/raw/6c7f9016bd5899ac8edafd31b9900c151df42ed6/Resources/Models/FBX/VisceralSystem100.fbx'
+          curl --fail --location --retry 3 -o hra-male.glb 'https://cdn.humanatlas.io/digital-objects/ref-organ/united-male/v1.10/assets/3d-vh-m-united.glb'
+      - name: Verify anatomy sources
+        run: |
+          cd /tmp/traube-atlas-sources
+          printf '%s\n' \
+            '4c19df534d5d84aabbce08604306aa0485b43e8a2483c72a95b569e1dfea2279  za-muscles.fbx' \
+            '22b301c93327929c9a14ee582d1848b550a950376e221a6d1078c7256bb83d0e  za-visceral.fbx' \
+            'fae3ac193835e9e24cd13a0d0f11e6788183b290b0691b9b83ec81d907d94581  hra-male.glb' | sha256sum --check
+      - name: Fetch pinned female reference atlas
+        run: |
+          git init /tmp/traube-atlas-female
+          git -C /tmp/traube-atlas-female fetch --depth 1 https://github.com/slorksmo/Human-Atlas.git 5bb5713aab18d7fe9380c3339eb09f173491ea06
+          git -C /tmp/traube-atlas-female checkout --detach FETCH_HEAD
+      - name: Build attributed whole-body atlas
+        env:
+          TRAUBE_ATLAS_SOURCES: /tmp/traube-atlas-sources
+          TRAUBE_ATLAS_FEMALE: /tmp/traube-atlas-female/public/models
+        run: |
+          npm ci --ignore-scripts --prefix /tmp/luria-human-atlas
+          node scripts/build-human-atlas.cjs prepare /tmp/luria-human-atlas
+          npm run check --prefix /tmp/luria-human-atlas
+          node tools/anatomy-atlas/validate-atlas.mjs /tmp/luria-human-atlas
+          node /tmp/luria-human-atlas/scripts/validate-interactions.mjs
+          npm run build --prefix /tmp/luria-human-atlas -- --base=/aprender/anatomia/atlas/
+          node scripts/build-human-atlas.cjs install /tmp/luria-human-atlas
       - name: Prepare optimized UI images
         uses: actions/setup-python@v5
         with:
@@ -129,3 +274,19 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: '1200000'
+      - name: Verify the published anatomy pages
+        env:
+          PUBLISHED_SITE: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          test -n "$PUBLISHED_SITE"
+          site="${PUBLISHED_SITE%/}"
+          work=$(mktemp -d)
+          curl --retry 5 --retry-delay 4 --retry-all-errors -fsSL "$site/aprender/anatomia/coracao/" -o "$work/heart"
+          curl --retry 5 --retry-delay 4 --retry-all-errors -fsSL "$site/aprender/anatomia/orgaos/" -o "$work/organs"
+          curl --retry 5 --retry-delay 4 --retry-all-errors -fsSL "$site/aprender/anatomia/atlas/models/atlas-female.json.gz?v=traube3" -o "$work/atlas"
+          grep -q 'data-anatomy-vessels' "$work/heart"
+          grep -q 'data-organ="brain"' "$work/organs"
+          node -e 'const b=require("node:fs").readFileSync(process.argv[1]); const a=JSON.parse((b[0]===31&&b[1]===139?require("node:zlib").gunzipSync(b):b).toString()); if(a.sex!=="female"||a.parts.length<1200)process.exit(1);' "$work/atlas"
+

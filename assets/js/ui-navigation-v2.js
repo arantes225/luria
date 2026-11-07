@@ -129,7 +129,7 @@
       entry("/trabalho/","Início","dashboard","",get("/trabalho/")),
       entry("/trabalho/paciente/","Paciente","users","",get("/trabalho/paciente/")),
       {label:"Ferramentas",visual:"clipboard",tools:true},
-      entry("/trabalho/prescricao/","Prescrição","file","",get("/trabalho/prescricao/")),
+      entry("/trabalho/bulario/","Bulário","book","",get("/trabalho/bulario/")),
       entry("/trabalho/pcr/","PCR","stethoscope","",get("/trabalho/pcr/"))
     ] : [
       entry("/dashboard/","Dashboard","dashboard","",get("/dashboard/")),
@@ -141,24 +141,23 @@
       ? ["Ferramentas médicas","Rotina e acompanhamento","Conta e gestão"]
       : ["Estudar e revisar","Praticar e consolidar","Planejamento e desempenho","Comunidade","Conta e gestão"];
     const groupFor = href => work
-      ? (/diabetes|calculadora|scores|diagnostico|fluidos|prontuario|prescricao|paciente/.test(href) ? categories[0] : /admin|editorial|agencia|beta/.test(href) ? categories[2] : categories[1])
+      ? (/diabetes|calculadora|scores|diagnostico|fluidos|prontuario|bulario|protocolos|antimicrobianos|paciente/.test(href) ? categories[0] : /admin|editorial|agencia|beta/.test(href) ? categories[2] : categories[1])
       : (/aprender/.test(href) ? categories[0] : /consolidar|jogos|desafio|plantao/.test(href) ? categories[1] : /cronograma|estatisticas|aplicar/.test(href) ? categories[2] : /amigos/.test(href) ? categories[3] : categories[4]);
     const extra = sources.filter(source => !main.some(item => item.href === source.getAttribute("href"))).map(source => {
       const href = source.getAttribute("href");
       return entry(href,(source.querySelector(":scope > span:not(.nav-icon):not(.nav-plan-badge)")?.textContent || source.dataset.uiNavLabel || source.textContent).replace(/PLUS|◆/g,"").trim(),"file",groupFor(href),source);
     });
-    if (work && get("/trabalho/prescricao/")) extra.push(entry("/trabalho/bulario/","Bulário","book",categories[0],get("/trabalho/prescricao/")));
     if (!work) {
       // Existing learning/consolidation hub links and their existing entitlement keys.
       for (const [href,label,visual,parent,feature,group] of [
         ["/apostilas/","Apostilas","book","/aprender/",null,categories[0]],
         ["/caderno/","Anotações","file","/aprender/",null,categories[0]],
         ["/professor-alex/","Leco","sparkles","/aprender/",null,categories[0]],
+        ["/aprender/anatomia/atlas/","Sala de Anatomia","stethoscope","/aprender/",null,categories[0]],
         ["/flashcards/","Flashcards","cards","/consolidar/","flashcards",categories[1]],
         ["/plantao/sala-emergencia/","Simulador de Emergência","stethoscope","/plantao/sala-emergencia/","plantao",categories[1]],
         ["/questoes-simulados/","Questões e Simulados","file","/consolidar/","questions",categories[1]],
-        ["/caderno-erros/","Caderno de Erros","clipboard","/consolidar/","error_notebook",categories[1]],
-        ["/plantao/traubezap/","TraubeZap","users","/aprender/","plantao",categories[1]]
+        ["/caderno-erros/","Caderno de Erros","clipboard","/consolidar/","error_notebook",categories[1]]
       ]) if (get(parent)) extra.push(entry(href,label,visual,group,get(parent),feature));
     }
     const settings = document.querySelector('#traube-profile-menu a[href="/configuracoes/"]');
@@ -170,9 +169,9 @@
     const path = location.pathname;
     const activeSource = sidebar.querySelector('nav a[aria-current="page"],nav a.active')?.getAttribute("href");
     let active = main.findIndex(item => item.href && (item.href === path || item.href !== (work?"/trabalho/":"/dashboard/") && path.startsWith(item.href)));
-    if (active < 0 && !work && ["aprender","caderno","apostilas","professor_alex","feynman"].includes(body.dataset.page)) active = 1;
+    if (active < 0 && !work && ["aprender","anatomia","caderno","apostilas","professor_alex","feynman"].includes(body.dataset.page)) active = 1;
     if (active < 0 && !work && ["consolidar","flashcards","questoes","erros"].includes(body.dataset.page)) active = 2;
-    if (active < 0 && work) active = activeSource === "/trabalho/prescricao/" ? 3 : /paciente/.test(path) ? 1 : /calculadora|scores|diagnostico|fluidos|prontuario/.test(path) ? 2 : -1;
+    if (active < 0 && work) active = activeSource === "/trabalho/bulario/" ? 3 : /paciente/.test(path) ? 1 : /calculadora|scores|diagnostico|fluidos|prontuario/.test(path) ? 2 : -1;
     const signature = JSON.stringify([main.map(item=>[item.href,item.label,item.disabled]),unique.map(item=>[item.href,item.label,item.group,item.disabled]),active]);
     if (signature === mobileSignature && railBefore) return;
     mobileSignature = signature;
@@ -407,7 +406,7 @@
       const back = document.createElement("a");
       back.className = "work-hub-return"; back.href = "/trabalho/";
       back.innerHTML = icon('<path d="m10 5-7 7 7 7M3 12h18"/>') + '<span>Central do Trabalho</span>';
-      back.hidden = body.dataset.page === "trabalho_dashboard";
+      back.hidden = body.dataset.page === "trabalho_dashboard" || body.dataset.page === "trabalho_paciente";
       links.append(back);
       bar.append(links);
     }

@@ -5,505 +5,334 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-
   <title>TRAUBE · Aprenda. Conecte. Consolide.</title>
-  <meta
-    name="description"
-    content="Organize cronograma, revisões, caderno, flashcards, questões e desempenho em um único sistema de estudos para residência médica."
-  >
-  <meta name="theme-color" content="#f7f9fc">
-  <link rel="manifest" href="/manifest.webmanifest?v=5">
-  <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=busto20261102">
+  <meta name="description" content="Simulador de emergência realista, anatomia 3D, salas de estudo ao vivo, cronograma personalizado, tutor de IA, jogos e ECG. O TRAUBE organiza sua preparação para residência e ENAMED.">
+  <meta name="theme-color" content="#07142e">
+  <link rel="manifest" href="/manifest.webmanifest?v=7">
+  <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=traube20261105brand1">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="TRAUBE">
   <meta name="mobile-web-app-capable" content="yes">
-
-  <link rel="icon" type="image/png" href="/assets/img/logos/logo-principal.png?v=busto20261102">
-  <link rel="stylesheet" href="assets/css/landing.css?v=traube-palette-8">
-  <link rel="stylesheet" href="/assets/css/traube-logo.css?v=20261103-v1">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-principal.png?v=traube20261105brand1">
+  <link rel="preload" href="/assets/fonts/inter/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/modo-estudo-landing.css?v=4">
+  <noscript><style>.reveal,.hero-in{opacity:1!important;transform:none!important}.sig--draw{clip-path:none!important}</style></noscript>
 </head>
-
 <body>
-  <header class="landing-header" id="top">
-    <div class="landing-container header-inner">
-      <a class="landing-brand" href="#top" aria-label="TRAUBE - início">
-        <img src="assets/img/logos/logo-principal.png?v=busto20261102" alt="" aria-hidden="true">
-        <div>
-          <strong>TRAUBE</strong>
-          <small>Aprenda. Conecte. Consolide.</small>
-        </div>
-      </a>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <span class="sentinel" aria-hidden="true"></span>
+  <div class="progress" aria-hidden="true"></div>
 
-      <nav class="landing-nav" id="landing-nav" aria-label="Navegação principal">
-        <a href="#recursos">Recursos</a>
-        <a href="#como-funciona">Como funciona</a>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="topo">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#topo" aria-label="TRAUBE — início">
+        <img src="/assets/img/logos/logo-principal.png?v=traube20261105brand1" alt="" width="32" height="32">
+        <span>TRAUBE</span>
+      </a>
+      <nav class="nav__links" aria-label="Seções">
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#ciclo">Método</a>
+        <a href="#numeros">Números</a>
+        <a href="#traube">Inspiração</a>
         <a href="#planos">Planos</a>
       </nav>
-
-      <div class="header-actions">
-        <a class="text-link" id="login-link" href="/login/">Entrar</a>
-        <a class="landing-button small primary" id="header-cta" href="/login/">
-          Criar conta
-        </a>
-
-        <button
-          class="mobile-nav-toggle"
-          id="mobile-nav-toggle"
-          type="button"
-          aria-label="Abrir menu"
-          aria-expanded="false"
-          aria-controls="mobile-nav"
-        >
-          <span></span><span></span><span></span>
-        </button>
+      <div class="nav__cta">
+        <a class="link" href="/login/">Entrar</a>
+        <a class="btn btn--white btn--sm" href="/login/">Criar conta</a>
       </div>
-    </div>
-
-    <div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Navegação principal mobile" hidden>
-      <a href="#recursos">Recursos</a>
-      <a href="#como-funciona">Como funciona</a>
-      <a href="#planos">Planos</a>
-      <a href="/login/">Entrar</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero-section">
-      <div class="landing-container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow-pill">
-            <span></span>
-            Feito para transformar conteúdo em revisão
+  <main id="conteudo">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <span class="sigmark sigmark--water" aria-hidden="true"></span>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="kicker hero-in" style="--d:0">Residência médica e ENAMED</p>
+          <h1 id="hero-title" class="hero__title hero-in" style="--d:1">Seu estudo de residência, finalmente organizado.</h1>
+          <p class="hero__sub hero-in" style="--d:2">Cronograma, apostilas, questões e flashcards — e o que ninguém mais junta: simulador de emergência realista, anatomia 3D, salas de estudo ao vivo, tutor de IA e ECG.</p>
+          <div class="hero__actions hero-in" style="--d:3">
+            <a class="btn btn--blue btn--lg" href="/login/"><span>Começar agora</span><i class="arrow" aria-hidden="true"></i></a>
+            <a class="btn btn--line btn--lg" href="#diferenciais">Ver o que tem dentro</a>
           </div>
-
-          <h1>
-            Seu estudo para residência,
-            <em>organizado em um só lugar.</em>
-          </h1>
-
-          <p class="hero-description">
-            Planeje o que estudar, registre o que importa, revise no momento certo
-            e acompanhe seu desempenho sem depender de várias ferramentas diferentes.
-          </p>
-
-          <div class="hero-actions">
-            <a class="landing-button primary" id="hero-cta" href="/login/">
-              Começar agora
-              <span aria-hidden="true">→</span>
-            </a>
-            <a class="landing-button ghost" href="#como-funciona">
-              Ver como funciona
-            </a>
-          </div>
-
-          <div class="hero-proof">
-            <div>
-              <strong>1 sistema</strong>
-              <span>para organizar sua rotina</span>
-            </div>
-            <div>
-              <strong>Revisões</strong>
-              <span>conectadas ao estudo</span>
-            </div>
-            <div>
-              <strong>Progresso</strong>
-              <span>visível de verdade</span>
-            </div>
+          <div class="hero__sig hero-in" style="--d:4">
+            <span>Inspirado por Ludwig Traube</span>
+            <span class="sigmark sigmark--draw sig--draw" role="img" aria-label="Assinatura de Ludwig Traube"></span>
           </div>
         </div>
 
-        <div class="product-preview" role="img" aria-label="Prévia ilustrativa do painel do TRAUBE, com agenda, revisões e indicadores de estudo">
-          <div class="preview-window">
-            <div class="preview-topbar">
-              <div class="preview-dots"><span></span><span></span><span></span></div>
-              <div class="preview-address">resibulando.online</div>
-              <div class="preview-user">LF</div>
-            </div>
-
-            <div class="preview-app">
-              <aside class="preview-sidebar" role="presentation">
-                <div class="preview-brand-row">
-                  <img src="assets/img/logos/logo-principal.png?v=busto20261102" alt="">
-                  <strong>TRAUBE</strong>
-                </div>
-                <span class="preview-nav active">◫ Dashboard</span>
-                <span class="preview-nav">▦ Cronograma</span>
-                <span class="preview-nav">◉ Estudar</span>
-                <span class="preview-nav sub">Caderno</span>
-                <span class="preview-nav sub">Flashcards</span>
-                <span class="preview-nav sub">Questões</span>
-                <span class="preview-nav">▥ Estatísticas</span>
-              </aside>
-
-              <div class="preview-content">
-                <div class="preview-heading">
-                  <div>
-                    <small>VISÃO GERAL</small>
-                    <strong>Bom estudo, Luiz.</strong>
-                  </div>
-                  <span class="preview-streak">🔥 12 dias</span>
-                </div>
-
-                <div class="preview-metrics">
-                  <article>
-                    <small>Hoje</small>
-                    <strong>3</strong>
-                    <span>atividades</span>
-                  </article>
-                  <article>
-                    <small>Revisões</small>
-                    <strong>18</strong>
-                    <span>pendentes</span>
-                  </article>
-                  <article>
-                    <small>Questões</small>
-                    <strong>78%</strong>
-                    <span>acerto</span>
-                  </article>
-                </div>
-
-                <div class="preview-panels">
-                  <article class="preview-panel schedule">
-                    <div class="panel-mini-head">
-                      <strong>Próximos estudos</strong>
-                      <span>Hoje</span>
-                    </div>
-                    <div class="study-row">
-                      <span class="study-time">08:00</span>
-                      <div><strong>Pediatria</strong><small>Crescimento e desenvolvimento</small></div>
-                    </div>
-                    <div class="study-row">
-                      <span class="study-time">14:00</span>
-                      <div><strong>Caderno de erros</strong><small>12 CCQs para revisar</small></div>
-                    </div>
-                    <div class="study-row">
-                      <span class="study-time">19:00</span>
-                      <div><strong>Flashcards</strong><small>Clínica médica</small></div>
-                    </div>
-                  </article>
-
-                  <article class="preview-panel chart-card">
-                    <div class="panel-mini-head">
-                      <strong>Consistência</strong>
-                      <span>7 dias</span>
-                    </div>
-                    <div class="mini-chart" aria-hidden="true">
-                      <i style="height:42%"></i>
-                      <i style="height:66%"></i>
-                      <i style="height:52%"></i>
-                      <i style="height:84%"></i>
-                      <i style="height:72%"></i>
-                      <i style="height:92%"></i>
-                      <i style="height:78%"></i>
-                    </div>
-                    <small class="chart-caption">Rotina de estudo mais visível, decisão mais simples.</small>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="floating-card floating-review">
-            <span>✓</span>
-            <div>
-              <strong>Revisão concluída</strong>
-              <small>Próxima em 21 dias</small>
-            </div>
-          </div>
-
-          <div class="floating-card floating-ccq">
-            <span>CCQ</span>
-            <div>
-              <strong>Aprenda com os erros</strong>
-              <small>Transforme questão em revisão</small>
-            </div>
-          </div>
+        <div class="hero__art" aria-hidden="false">
+          <figure class="shot shot--main hero-in" style="--d:2">
+            <img src="/assets/img/traube/dif-simulador.jpg" alt="Tela real do Simulador de Emergência do TRAUBE: paciente no leito e monitor com frequência cardíaca, saturação e pressão" width="1400" height="726" fetchpriority="high">
+          </figure>
+          <figure class="shot shot--second hero-in" style="--d:4">
+            <img src="/assets/img/traube/tela-dashboard.jpg" alt="Tela real do Dashboard do TRAUBE com a sessão guiada Estudar agora" width="1600" height="941">
+          </figure>
+          <figure class="shot shot--phone hero-in" style="--d:6">
+            <img src="/assets/img/traube/tela-flashcards-mobile.jpg" alt="Tela real do TRAUBE no celular: Flashcards" width="520" height="1000">
+          </figure>
         </div>
       </div>
     </section>
 
-    <section class="problem-section">
-      <div class="landing-container problem-grid">
+    <!-- ============ FAIXA ============ -->
+    <section class="band" aria-label="Grandes áreas cobertas">
+      <div class="band__row"><ul class="band__track"><li>Clínica Médica</li><li>Cirurgia</li><li>Pediatria</li><li>Ginecologia e Obstetrícia</li><li>Medicina Preventiva</li><li>Psiquiatria</li></ul><ul class="band__track" aria-hidden="true"><li>Clínica Médica</li><li>Cirurgia</li><li>Pediatria</li><li>Ginecologia e Obstetrícia</li><li>Medicina Preventiva</li><li>Psiquiatria</li></ul><ul class="band__track" aria-hidden="true"><li>Clínica Médica</li><li>Cirurgia</li><li>Pediatria</li><li>Ginecologia e Obstetrícia</li><li>Medicina Preventiva</li><li>Psiquiatria</li></ul></div>
+    </section>
+
+    <!-- ============ PROBLEMA ============ -->
+    <section class="statement" aria-labelledby="problem-title">
+      <div class="wrap statement__grid">
+        <p class="index reveal">00</p>
         <div>
-          <span class="section-kicker">Menos fragmentação</span>
-          <h2>Estudar já é difícil. Organizar o estudo não deveria ser.</h2>
-        </div>
-        <p>
-          Cronograma em um lugar, anotações em outro, flashcards em outro e desempenho
-          perdido em planilhas. O TRAUBE conecta essas partes para que cada estudo
-          gere o próximo passo.
-        </p>
-      </div>
-    </section>
-
-    <section class="features-section" id="recursos">
-      <div class="landing-container">
-        <div class="section-heading centered">
-          <span class="section-kicker">Tudo conectado</span>
-          <h2>Da aula à revisão, sem perder o fio.</h2>
-          <p>
-            Cada ferramenta foi pensada para fazer parte do mesmo fluxo de estudo.
-          </p>
-        </div>
-
-        <div class="feature-bento">
-          <article class="landing-feature feature-wide">
-            <div class="feature-icon">▦</div>
-            <div>
-              <span class="feature-label">Planejamento</span>
-              <h3>Cronograma que vira rotina</h3>
-              <p>
-                Organize temas, datas e revisões em um calendário que acompanha o que
-                você realmente precisa estudar.
-              </p>
-            </div>
-            <div class="calendar-visual" aria-hidden="true">
-              <span>SEG</span><span>TER</span><span>QUA</span><span>QUI</span><span>SEX</span>
-              <i></i><i class="filled"></i><i></i><i class="filled strong"></i><i></i>
-              <i class="filled"></i><i></i><i class="filled"></i><i></i><i class="filled strong"></i>
-            </div>
-          </article>
-
-          <article class="landing-feature">
-            <div class="feature-icon">✎</div>
-            <span class="feature-label">Caderno</span>
-            <h3>Registre o que importa</h3>
-            <p>
-              Um caderno estruturado para manter seus temas clínicos organizados e fáceis de revisar.
-            </p>
-          </article>
-
-          <article class="landing-feature">
-            <div class="feature-icon">◎</div>
-            <span class="feature-label">Caderno de erros</span>
-            <h3>Errou? Isso vira revisão.</h3>
-            <p>
-              Transforme erros em CCQs e mantenha o conteúdo difícil voltando no momento certo.
-            </p>
-          </article>
-
-          <article class="landing-feature">
-            <div class="feature-icon">◇</div>
-            <span class="feature-label">Flashcards</span>
-            <h3>Memória ativa integrada</h3>
-            <p>
-              Crie e revise flashcards sem tirar o estudo do contexto do seu cronograma.
-            </p>
-          </article>
-
-          <article class="landing-feature">
-            <div class="feature-icon">✓</div>
-            <span class="feature-label">Questões</span>
-            <h3>Questões que alimentam seu sistema</h3>
-            <p>
-              Registre desempenho e leve os erros importantes direto para o caderno de erros.
-            </p>
-          </article>
-
-          <article class="landing-feature feature-wide analytics-feature">
-            <div>
-              <div class="feature-icon">▥</div>
-              <span class="feature-label">Estatísticas</span>
-              <h3>Veja onde seu estudo está funcionando.</h3>
-              <p>
-                Acompanhe consistência, revisões e desempenho para decidir onde investir seu tempo.
-              </p>
-            </div>
-            <div class="analytics-visual" aria-hidden="true">
-              <div class="analytics-line">
-                <svg viewBox="0 0 320 120" preserveAspectRatio="none">
-                  <path d="M0,94 C35,88 45,62 78,70 C110,78 125,38 160,52 C196,66 205,26 242,38 C270,46 286,19 320,22"></path>
-                </svg>
-              </div>
-              <div class="analytics-tags">
-                <span>Clínica <strong>82%</strong></span>
-                <span>Cirurgia <strong>76%</strong></span>
-                <span>Pediatria <strong>88%</strong></span>
-              </div>
-            </div>
-          </article>
+          <h2 id="problem-title" class="statement__title reveal">Você não tem um problema de esforço. Tem um problema de bagunça.</h2>
+          <ol class="pains">
+            <li class="reveal"><b>Material espalhado.</b> PDF num lugar, Anki no outro, resumo no celular, aula em 23 abas.</li>
+            <li class="reveal"><b>Revisão sem ordem.</b> Cartas atrasadas, cronograma numa planilha abandonada em março.</li>
+            <li class="reveal"><b>Erro que volta.</b> A mesma pegadinha caindo prova após prova, sem ninguém para te lembrar.</li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <section class="workflow-section" id="como-funciona">
-      <div class="landing-container">
-        <div class="section-heading">
-          <span class="section-kicker">Como funciona</span>
-          <h2>Um ciclo simples para estudar melhor.</h2>
+    <!-- ============ DIFERENCIAIS ============ -->
+    <section id="diferenciais" aria-labelledby="dif-title">
+      <header class="dif-head">
+        <div class="wrap">
+          <p class="kicker kicker--dark reveal">O que só o TRAUBE junta</p>
+          <h2 id="dif-title" class="dif-head__title reveal">Sete razões para você abrir o app todo dia.</h2>
         </div>
+      </header>
 
-        <div class="workflow-grid">
-          <article>
-            <span class="workflow-number">01</span>
-            <div class="workflow-icon">▦</div>
-            <h3>Planeje</h3>
-            <p>Defina o que estudar e distribua os temas ao longo da sua rotina.</p>
-          </article>
-          <article>
-            <span class="workflow-number">02</span>
-            <div class="workflow-icon">◉</div>
-            <h3>Estude</h3>
-            <p>Use caderno, flashcards, questões e ambientação sem sair do mesmo sistema.</p>
-          </article>
-          <article>
-            <span class="workflow-number">03</span>
-            <div class="workflow-icon">↻</div>
-            <h3>Revise</h3>
-            <p>O que precisa voltar reaparece na agenda para consolidar o aprendizado.</p>
-          </article>
-          <article>
-            <span class="workflow-number">04</span>
-            <div class="workflow-icon">▥</div>
-            <h3>Ajuste</h3>
-            <p>Use suas estatísticas para entender dificuldades e adaptar o próximo ciclo.</p>
-          </article>
+      <!-- 01 Simulador -->
+      <article class="chap chap--navy" aria-labelledby="c1">
+        <div class="wrap chap__grid">
+          <div class="chap__text">
+            <p class="chap__n reveal">01 <span>Simulador de emergência</span></p>
+            <h3 id="c1" class="reveal">Treine o plantão antes de viver o plantão.</h3>
+            <p class="reveal">Cenários realistas de urgência e emergência, com paciente no leito, prontuário em tempo real e monitor multiparamétrico ao vivo: frequência cardíaca, saturação, pressão e ECG reagindo às suas condutas.</p>
+            <ul class="ticks reveal"><li>Anamnese, exame físico e exames</li><li>Procedimentos iniciais e intervenções</li><li>Do monitor ligado à cardioversão, passo a passo</li></ul>
+            <a class="more reveal" href="/login/">Experimentar o simulador <i class="arrow" aria-hidden="true"></i></a>
+          </div>
+          <div class="chap__media reveal"><figure class="shot"><img src="/assets/img/traube/dif-simulador.jpg" alt="Tela real do Simulador de Emergência do TRAUBE com o monitor ligado" width="1400" height="726" loading="lazy" decoding="async"></figure><p class="cap">Caso de exemplo: fibrilação atrial instável, com monitor ao vivo.</p></div>
+        </div>
+      </article>
+
+      <!-- 02 Anatomia -->
+      <article class="chap chap--sky chap--flip" aria-labelledby="c2">
+        <div class="wrap chap__grid">
+          <div class="chap__text">
+            <p class="chap__n reveal">02 <span>Sala de anatomia</span></p>
+            <h3 id="c2" class="reveal">O corpo humano na ponta do dedo. Em 3D.</h3>
+            <p class="reveal">Um atlas 3D para selecionar, cortar, remover estruturas e estudar por sistemas. Toque numa estrutura e veja nome, função e o caminho do sangue.</p>
+            <ul class="ticks reveal"><li>Atlas 3D, microscopia e desafio de identificação</li><li>Coração em detalhe, por dentro e com fluxo</li><li>Nomes em português e função de cada estrutura</li></ul>
+            <a class="more reveal" href="/login/">Explorar a anatomia <i class="arrow" aria-hidden="true"></i></a>
+          </div>
+          <div class="chap__media anat reveal">
+            <figure class="anat__heart"><img src="/assets/img/anatomia/coracao-estatico.webp" alt="Ilustração do coração humano usada no atlas de anatomia do TRAUBE" width="900" height="900" loading="lazy" decoding="async"></figure>
+            <figure class="anat__panel shot"><img src="/assets/img/traube/dif-anatomia-painel.jpg" alt="Painel real do atlas: estrutura selecionada, Aorta, com função e fluxo do sangue" width="800" height="710" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 Amigos ao vivo -->
+      <article class="chap chap--navy" aria-labelledby="c3">
+        <div class="wrap chap__grid">
+          <div class="chap__text">
+            <p class="chap__n reveal">03 <span>Estudo ao vivo</span></p>
+            <h3 id="c3" class="reveal">Estudar acompanhado muda o jogo.</h3>
+            <p class="reveal">Crie uma sala, chame os amigos e estudem juntos em tempo real: cronômetro compartilhado, checklist coletivo, materiais e questões respondidas em grupo.</p>
+            <ul class="ticks reveal"><li>Modos: estudo livre, foco, questões em grupo e revisão compartilhada</li><li>Salas dos amigos, dos grupos ou abertas</li><li>Progresso individual e da turma na mesma tela</li></ul>
+            <a class="more reveal" href="/login/">Montar minha sala <i class="arrow" aria-hidden="true"></i></a>
+          </div>
+          <div class="chap__media reveal"><figure class="shot"><img src="/assets/img/traube/dif-amigos.jpg" alt="Tela real do TRAUBE: lista de amigos com o botão Estudar junto" width="1400" height="716" loading="lazy" decoding="async"></figure><p class="cap">Conta de demonstração, com amigos fictícios.</p></div>
+        </div>
+      </article>
+
+      <!-- 04 Cronograma -->
+      <article class="chap chap--paper chap--flip" aria-labelledby="c4">
+        <div class="wrap chap__grid">
+          <div class="chap__text">
+            <p class="chap__n reveal">04 <span>Cronograma personalizado</span></p>
+            <h3 id="c4" class="reveal">Um plano que cabe na sua semana.</h3>
+            <p class="reveal">Monte o que estudar e quando revisar. Veja em mês, semana ou lista, filtre por área, tema e tipo — e, quando faltar tempo, use o Estudar agora: você escolhe de 15 minutos a 2 horas e o Leco organiza a sessão.</p>
+            <ul class="ticks reveal"><li>Visão por mês, semana e lista</li><li>Filtros por área, tema e tipo de atividade</li><li>Tempo de estudo acompanhado na própria tela</li></ul>
+            <a class="more reveal" href="/login/">Montar meu cronograma <i class="arrow" aria-hidden="true"></i></a>
+          </div>
+          <figure class="chap__media shot reveal">
+            <img src="/assets/img/traube/tela-cronograma.jpg" alt="Tela real do Cronograma do TRAUBE em visão mensal" width="1600" height="1000" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </article>
+
+      <!-- 05 Leco -->
+      <article class="chap chap--navy" aria-labelledby="c5">
+        <div class="wrap chap__grid">
+          <div class="chap__text">
+            <p class="chap__n reveal">05 <span>Leco, o tutor de IA</span></p>
+            <h3 id="c5" class="reveal">“O que você quer entender hoje?”</h3>
+            <p class="reveal">Pergunte o que travou, anexe o seu material e peça para o Leco montar a sua sessão. Um apoio para estudar mais rápido — que não substitui fontes oficiais nem professores.</p>
+            <ul class="ticks reveal"><li>Pergunte qualquer coisa, a qualquer hora</li><li>Anexe seus próprios resumos e PDFs</li><li>Sessão guiada no tempo que você tem</li></ul>
+            <a class="more reveal" href="/login/">Conversar com o Leco <i class="arrow" aria-hidden="true"></i></a>
+          </div>
+          <div class="chap__media duo reveal">
+            <figure class="shot"><img src="/assets/img/traube/tela-aprender.jpg" alt="Tela real do TRAUBE: Aprender, com o tutor Leco" width="1600" height="815" loading="lazy" decoding="async"></figure>
+            <figure class="shot duo__phone"><img src="/assets/img/traube/tela-aprender-mobile.jpg" alt="Tela real do Leco no celular" width="520" height="1000" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 Jogos -->
+      <article class="chap chap--sky chap--flip" aria-labelledby="c6">
+        <div class="wrap chap__grid">
+          <div class="chap__text">
+            <p class="chap__n reveal">06 <span>Jogos</span></p>
+            <h3 id="c6" class="reveal">Treinar raciocínio clínico sem cara de aula.</h3>
+            <p class="reveal">Quatro jogos para estudar medicina de um jeito diferente — do tabuleiro com ratinhos virtuais ao plantão relâmpago em que cada segundo conta.</p>
+            <ul class="ticks reveal"><li>Study Rats: corrida em tabuleiro médico (beta)</li><li>Plantão Relâmpago e Escapando do Plantão</li><li>Sequência Salvadora: condutas na ordem certa</li></ul>
+            <div class="rats reveal" aria-hidden="true">
+              <img src="/assets/img/studyrats/ratinhos/ratinho_azul.webp" alt="" width="64" height="64" loading="lazy">
+              <img src="/assets/img/studyrats/ratinhos/ratinho_rosa_choque.webp" alt="" width="64" height="64" loading="lazy">
+              <img src="/assets/img/studyrats/ratinhos/ratinho_laranja.webp" alt="" width="64" height="64" loading="lazy">
+              <img src="/assets/img/studyrats/ratinhos/ratinho_verde_radioativo.webp" alt="" width="64" height="64" loading="lazy">
+            </div>
+            <a class="more reveal" href="/login/">Jogar agora <i class="arrow" aria-hidden="true"></i></a>
+          </div>
+          <figure class="chap__media shot reveal">
+            <img src="/assets/img/traube/dif-jogos.jpg" alt="Tela real do TRAUBE com os jogos Study Rats, Plantão Relâmpago, Sequência Salvadora e Escapando do Plantão" width="1400" height="782" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </article>
+
+      <!-- 07 ECG -->
+      <article class="chap chap--navy chap--ecg" aria-labelledby="c7">
+        <div class="wrap chap__grid">
+          <div class="chap__text">
+            <p class="chap__n reveal">07 <span>Estudar ECG</span></p>
+            <h3 id="c7" class="reveal">Aprenda a ler ECG lendo ECG de verdade.</h3>
+            <p class="reveal">Treine frequência, ritmo, eixo, intervalos e alterações com traçados reais da base pública PTB-XL. Preencha a leitura estruturada e confira a hipótese — uma sugestão para revisão, nunca um laudo.</p>
+            <ul class="ticks reveal"><li>Traçados reais de uma base científica aberta</li><li>Leitura estruturada, achado por achado</li><li>Hipótese final como apoio ao estudo</li></ul>
+            <a class="more reveal" href="/login/">Estudar ECG <i class="arrow" aria-hidden="true"></i></a>
+          </div>
+          <div class="chap__media ecg reveal" role="img" aria-label="Ilustração de um traçado de ECG, com os campos da leitura estruturada">
+            <svg class="ecg__svg" viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+              <defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#38bdf8" stroke-opacity=".16" stroke-width="1"/></pattern></defs>
+              <rect width="600" height="200" fill="url(#g)"/>
+              <path class="ecg__line" pathLength="1" d="M0 110 H60 l8-6 8 6 H120 l6 10 10-70 10 100 8-40 H200 l10-8 14 0 10 8 H290 l6 10 10-70 10 100 8-40 H370 l10-8 14 0 10 8 H460 l6 10 10-70 10 100 8-40 H540 l10-8 14 0 10 8 H600"/>
+            </svg>
+            <ul class="ecg__tags" aria-hidden="true"><li>Frequência</li><li>Ritmo</li><li>Eixo</li><li>Intervalo PR</li><li>QRS</li><li>ST e T</li></ul>
+            <p class="ecg__note">Ilustração do traçado. Leitura estruturada disponível no app.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ CICLO + NÚMEROS ============ -->
+    <section class="cycle" id="ciclo" aria-labelledby="cycle-title">
+      <div class="wrap">
+        <header class="cycle__head">
+          <p class="kicker kicker--dark reveal">O método</p>
+          <h2 id="cycle-title" class="reveal">E por baixo de tudo, um ciclo simples.</h2>
+        </header>
+        <ol class="cycle__list">
+          <li class="reveal"><span>01</span><h3>Aprender</h3><p>Apostilas por área, suas anotações e o Leco para destravar o que não entra.</p></li>
+          <li class="reveal"><span>02</span><h3>Consolidar</h3><p>Flashcards com revisão do dia, importação do Anki e Caderno de Erros com o Pulo do Gato.</p></li>
+          <li class="reveal"><span>03</span><h3>Aplicar</h3><p>50 questões do dia, listas de até 100 e métricas para ver sua evolução na semana.</p></li>
+        </ol>
+
+        <dl class="stats" id="numeros" aria-label="Números do acervo">
+          <div class="stat reveal"><dd><span data-count="275">275</span></dd><dt>apostilas no acervo</dt></div>
+          <div class="stat reveal"><dd><span data-count="6">6</span></dd><dt>grandes áreas</dt></div>
+          <div class="stat reveal"><dd><span data-count="50">50</span></dd><dt>questões do dia</dt></div>
+          <div class="stat reveal"><dd><small>até</small> <span data-count="100">100</span></dd><dt>questões por lista</dt></div>
+        </dl>
+        <p class="fineprint reveal">Números conferidos no acervo do TRAUBE. As telas desta página são capturas reais feitas com uma conta de demonstração, sem dados de alunos.</p>
+      </div>
+    </section>
+
+    <!-- ============ TRAUBE ============ -->
+    <section class="muse" id="traube" aria-labelledby="muse-title">
+      <span class="sigmark sigmark--water sigmark--water-r" aria-hidden="true"></span>
+      <div class="wrap muse__grid">
+        <figure class="muse__portrait reveal">
+          <img src="/assets/img/traube/ludwig-traube-retrato.webp" alt="Retrato estilizado em tons de azul de Ludwig Traube, médico alemão do século XIX" width="1100" height="1430" loading="lazy" decoding="async">
+          <span class="sigmark sigmark--sheen sig--draw" role="img" aria-label="Assinatura de Ludwig Traube"></span>
+        </figure>
+        <div class="muse__copy">
+          <p class="kicker kicker--dark reveal">Nossa inspiração</p>
+          <h2 id="muse-title" class="reveal">Por que o nome TRAUBE?</h2>
+          <p class="reveal">Ludwig Traube (1818–1876) foi um médico de Berlim e um dos pioneiros da patologia experimental na Alemanha. Levou o termômetro para a rotina da clínica e passou a registrar a febre dos pacientes em curvas, dia após dia.</p>
+          <p class="reveal">Talvez você já o conheça sem saber: ele dá nome ao <strong>espaço de Traube</strong>, que todo estudante encontra no exame do abdome, e descreveu o <strong>pulso alternante</strong>.</p>
+          <blockquote class="muse__quote reveal"><p>Observar. Medir. Registrar. Revisar.</p><footer>Foi assim que ele fez medicina — e é assim que a gente quer que você estude.</footer></blockquote>
+          <ol class="timeline reveal" aria-label="Linha do tempo">
+            <li><b>1818</b><span>nasce em Ratibor, na Silésia</span></li>
+            <li><b>1850s</b><span>termometria entra na rotina da clínica</span></li>
+            <li><b>1872</b><span>descreve o pulso alternante</span></li>
+            <li><b>1876</b><span>morre em Berlim</span></li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <section class="plans-section" id="planos">
-      <div class="landing-container">
-        <div class="section-heading centered">
-          <span class="section-kicker">Planos</span>
-          <h2>Comece com o que você precisa agora.</h2>
-          <p>A estrutura de planos já está sendo preparada para o lançamento.</p>
-        </div>
-
-        <div class="plans-grid">
-          <article class="plan-card">
-            <div class="plan-head">
-              <span>Essencial</span>
-              <h3>O sistema de estudo.</h3>
-              <p>Para quem quer organizar rotina, conteúdo e revisões.</p>
-            </div>
-            <ul>
-              <li>Dashboard e agenda</li>
-              <li>Cronograma</li>
-              <li>Ambientação de estudo</li>
-              <li>Caderno</li>
-              <li>Caderno de erros e CCQs</li>
-            </ul>
-            <a class="landing-button plan-button ghost" href="/login/">Começar</a>
-          </article>
-
-          <article class="plan-card featured">
-            <div class="popular-badge">Mais completo</div>
-            <div class="plan-head">
-              <span>Plus</span>
-              <h3>Automação e escala.</h3>
-              <p>Para quem quer estudar mais conteúdo com menos trabalho operacional.</p>
-            </div>
-            <ul>
-              <li>Tudo do Essencial</li>
-              <li>Flashcards</li>
-              <li>Questões e simulados</li>
-              <li>Importações automatizadas</li>
-              <li>Estatísticas completas</li>
-            </ul>
-            <a class="landing-button plan-button primary" href="/login/">Quero conhecer</a>
-          </article>
-
-          <article class="plan-card future">
-            <div class="plan-head">
-              <span>Pro</span>
-              <h3>Inteligência aplicada.</h3>
-              <p>Recursos de IA integrados ao seu próprio material de estudo.</p>
-            </div>
-            <ul>
-              <li>Tudo do Plus</li>
-              <li>Geração assistida de flashcards</li>
-              <li>CCQs com IA</li>
-              <li>Explicação de questões</li>
-              <li>Análise inteligente de desempenho</li>
-            </ul>
-            <div class="coming-soon">Em desenvolvimento</div>
-          </article>
+    <!-- ============ PLANOS ============ -->
+    <!-- LUIZ: planos e valores em aberto. Substitua os cards abaixo quando definir. -->
+    <section class="plans" id="planos" aria-labelledby="plans-title">
+      <div class="wrap">
+        <header class="plans__head">
+          <p class="kicker reveal">Planos</p>
+          <h2 id="plans-title" class="reveal">Os planos estão na prancheta.</h2>
+          <p class="lead reveal">Estamos desenhando formatos e valores com calma, para caber no bolso de quem estuda. Crie sua conta e seja avisado primeiro.</p>
+        </header>
+        <div class="plans__grid">
+          <article class="plan reveal"><p class="plan__tag">Plano 1</p><h3>Em definição</h3><p class="plan__price">R$ <span>—</span></p><ul><li><i></i></li><li><i></i></li><li><i></i></li></ul><span class="sigmark sigmark--seal" aria-hidden="true"></span></article>
+          <article class="plan plan--feat reveal"><p class="plan__tag">Plano 2</p><h3>Em definição</h3><p class="plan__price">R$ <span>—</span></p><ul><li><i></i></li><li><i></i></li><li><i></i></li><li><i></i></li></ul><span class="sigmark sigmark--seal" aria-hidden="true"></span></article>
+          <article class="plan reveal"><p class="plan__tag">Plano 3</p><h3>Em definição</h3><p class="plan__price">R$ <span>—</span></p><ul><li><i></i></li><li><i></i></li><li><i></i></li></ul><span class="sigmark sigmark--seal" aria-hidden="true"></span></article>
         </div>
       </div>
     </section>
 
-    <section class="faq-section">
-      <div class="landing-container faq-grid">
-        <div class="section-heading">
-          <span class="section-kicker">Perguntas frequentes</span>
-          <h2>Antes de começar.</h2>
-        </div>
-
-        <div class="faq-list">
-          <details>
-            <summary>O TRAUBE substitui meu material de estudo?</summary>
-            <p>
-              Não. Ele é uma plataforma de organização e estudo. Você pode usar o conteúdo
-              do seu curso e centralizar no TRAUBE sua rotina, revisões e desempenho.
-            </p>
-          </details>
-
-          <details>
-            <summary>Preciso abandonar meus materiais atuais?</summary>
-            <p>
-              Não. A proposta é organizar seu método e conectar as etapas do estudo,
-              não obrigar você a reconstruir tudo do zero.
-            </p>
-          </details>
-
-          <details>
-            <summary>Já existe integração com inteligência artificial?</summary>
-            <p>
-              Os recursos de IA estão em desenvolvimento e serão testados antes de fazer
-              parte de um plano comercial.
-            </p>
-          </details>
-
-          <details>
-            <summary>Os planos já estão disponíveis para pagamento?</summary>
-            <p>
-              A infraestrutura de planos e pagamentos está sendo preparada. Durante esta
-              fase, o acesso segue o modelo atual de testes da plataforma.
-            </p>
-          </details>
+    <!-- ============ FAQ ============ -->
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="wrap wrap--narrow">
+        <h2 id="faq-title" class="reveal">Perguntas que a gente sempre ouve</h2>
+        <div class="faq__list">
+          <details class="reveal"><summary>Serve para residência e ENAMED?</summary><p>Sim. O TRAUBE foi pensado para quem se prepara para residência médica e ENAMED, com acervo organizado nas grandes áreas cobradas.</p></details>
+          <details class="reveal"><summary>Já uso Anki. Perco meus decks?</summary><p>Não. Dá para importar decks do Anki ou arquivos externos direto na área de Flashcards.</p></details>
+          <details class="reveal"><summary>Funciona no celular?</summary><p>Funciona no navegador do celular e pode ser instalado na tela inicial como app.</p></details>
+          <details class="reveal"><summary>O Leco substitui professor ou livro?</summary><p>Não. O Leco é um tutor de IA para tirar dúvidas e organizar a sessão. Conteúdo clínico importante deve sempre ser conferido nas fontes oficiais.</p></details>
+          <details class="reveal"><summary>Quanto custa?</summary><p>Os planos ainda estão em definição. Crie sua conta para ser avisado assim que estiverem prontos.</p></details>
         </div>
       </div>
     </section>
 
-    <section class="final-cta-section">
-      <div class="landing-container final-cta">
-        <div>
-          <span class="section-kicker light">Seu próximo estudo começa aqui</span>
-          <h2>Menos tempo organizando. Mais clareza para estudar.</h2>
-          <p>
-            Transforme cronograma, conteúdo, erros e revisões em um único fluxo.
-          </p>
-        </div>
-        <a class="landing-button light" id="bottom-cta" href="/login/">
-          Entrar no TRAUBE
-          <span aria-hidden="true">→</span>
-        </a>
+    <!-- ============ CTA FINAL ============ -->
+    <section class="final" aria-labelledby="final-title">
+      <div class="wrap final__inner">
+        <h2 id="final-title" class="reveal">Comece hoje. O resto a gente organiza.</h2>
+        <p class="reveal">Abra o TRAUBE, escolha quanto tempo você tem e estude.</p>
+        <a class="btn btn--white btn--lg reveal" href="/login/"><span>Criar minha conta</span><i class="arrow" aria-hidden="true"></i></a>
+        <span class="sigmark sigmark--draw sig--draw final__sig" role="img" aria-label="Assinatura de Ludwig Traube"></span>
       </div>
     </section>
   </main>
 
-  <footer class="landing-footer">
-    <div class="landing-container footer-inner">
-      <a class="landing-brand footer-brand" href="#top">
-        <img src="assets/img/logos/logo-principal.png?v=busto20261102" alt="">
-        <div>
-          <strong>TRAUBE</strong>
-          <small>Aprenda. Conecte. Consolide.</small>
-        </div>
-      </a>
-
-      <div class="footer-copy">
-        <span>© <span id="footer-year"></span> TRAUBE.</span>
-        <span>Plataforma em desenvolvimento.</span>
-      </div>
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a class="brand" href="#topo"><img src="/assets/img/logos/logo-principal.png?v=traube20261105brand1" alt="" width="28" height="28"><span>TRAUBE</span></a>
+      <p>Aprenda. Conecte. Consolide.</p>
+      <p class="footer__small">© 2026 TRAUBE · <a href="/login/">Entrar</a></p>
     </div>
   </footer>
 
+  <a class="dock" href="/login/" aria-label="Criar conta no TRAUBE">Criar minha conta <i class="arrow" aria-hidden="true"></i></a>
+
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
-  <script src="assets/js/supabase.js"></script>
-  <script src="assets/js/landing.js?v=1.3"></script>
-  <script defer src="/assets/js/pwa.js?v=20261101-bootstrap1"></script>
+  <script src="/assets/js/supabase.js"></script>
+  <script src="/assets/js/modo-estudo-landing.js?v=4" defer></script>
+  <script defer src="/assets/js/pwa.js?v=20261105-brand-gradient1"></script>
 </body>
 </html>

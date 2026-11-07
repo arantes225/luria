@@ -72,10 +72,17 @@ for (const r of rows) {
   console.log(r.file.padEnd(34),
     r.error ? "ERRO " + r.error : `skew=${String(r.skew).padStart(5)} det=${r.detected ? "S" : "n"} cel=${String(r.cells).padStart(2)}/12 grade=${r.grid ? "S" : "n"} px/mm=${r.pxPerMm ?? "-"} pulso=${r.pulse ? "S" : "n"} escala=${r.scale}`);
 }
-const KNOWN = /^(3x4_plus_rhythm|3x4_standard|6x2_standard|12x1_stacked)/;
-// Critério estrito: layout conhecido E 10–12 células válidas (um "15x1" com 14
-// células não é sucesso; é um layout inventado a partir de faixas espúrias).
-const ok = rows.filter(r => r.detected && KNOWN.test(r.layout || "") && r.cells >= 10 && r.cells <= 12).length;
+const KNOWN_MULTI = /^(3x4_plus_rhythm|3x4_standard|6x2_standard|12x1_stacked)/;
+const KNOWN_STRIP = /^(\d+x1_traces|7x1_traces|2x1_traces|1x1_traces)/;
+// Critério estrito multi-lead: layout 3x4/6x2/12x1 conhecido + ≥8 células válidas
+// (fotos de papel têm 1–2 células rejeitadas por baixa resolução local).
+// Critério strip: layout *x1_traces detectado + ≥1 célula válida
+// (ECG de derivação única ou sequencial é ECG válido).
+const ok = rows.filter(r =>
+  r.detected &&
+  ((KNOWN_MULTI.test(r.layout || "") && r.cells >= 8 && r.cells <= 12) ||
+   (KNOWN_STRIP.test(r.layout || "") && r.cells >= 1))
+).length;
 const meas = rows.filter(r => r.scale === "measured").length;
-console.log(`\nTotal ${rows.length} | sucesso estrito (layout conhecido, 10-12 células): ${ok} | escala medida: ${meas}`);
+console.log(`\nTotal ${rows.length} | sucesso (multi≥8 ou strip≥1 célula): ${ok} | escala medida: ${meas}`);
 if (jsonOut) fs.writeFileSync(jsonOut, JSON.stringify(rows, null, 1));

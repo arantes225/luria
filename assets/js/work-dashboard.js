@@ -27,11 +27,11 @@
     ['Consulta e prescrição', [
       ['protocol', 'Anamnese IA', 'Organize relatos soltos em anamnese formal.', 'anamnese/', 'indigo'],
       ['rx', 'Bulário', 'Consulte medicamentos e apresentações.', 'bulario/', 'blue'],
-      ['file', 'Prescrição', 'Organize suas prescrições.', 'prescricao/', 'green'],
+      ['protocol', 'Protocolos e tratamentos', 'Fluxos clínicos, condutas e receitas prontas.', 'protocolos/', 'green'],
+      ['shield', 'Antimicrobianos', 'Espectro, cobertura e escolha por foco infeccioso.', 'antimicrobianos/', 'teal'],
       ['protocol', 'Cola rápida', 'Anotações com acesso temporário.', 'prontuario-rapido/', 'violet']
     ]],
     ['Avaliação e apoio clínico', [
-      ['droplet', 'Diabetes', 'Diretrizes, diário glicêmico de 7 dias e simulador educacional.', 'diabetes/', 'blue'],
       ['calc', 'Calculadoras', 'Acesse as calculadoras clínicas.', 'calculadora/', 'orange'],
       ['shield', 'Scores', 'Consulte escores e classificações.', 'scores/', 'cyan'],
       ['steth', 'Diagnóstico por Sintomas', 'Explore o apoio ao raciocínio clínico.', 'diagnostico/', 'teal'],
@@ -59,8 +59,6 @@
     groups[1][1].push(['ecg', 'ECG', 'Digitalização experimental e ferramentas de apoio — acesso administrativo.', 'ecg/', 'rose']);
   }
 
-  root.innerHTML = '<a class="work-hub-diabetes-featured" href="/trabalho/diabetes/" aria-label="Abrir central de Diabetes"><span class="work-hub-diabetes-icon" aria-hidden="true">◉</span><span class="work-hub-diabetes-copy"><strong>Diabetes</strong><span>Central clínica, medicamentos, monitorização e diário glicêmico em PDF de 7 dias.</span></span><span class="work-hub-diabetes-action">Abrir Diabetes <span aria-hidden="true">→</span></span></a>'
-    + '<a class="work-hub-patient" href="/trabalho/paciente/"><span class="work-hub-patient-icon" aria-hidden="true">' + icon('users') + '</span><span class="work-hub-patient-copy"><strong>Paciente</strong><span>Centralize um contexto temporário e use as ferramentas sem repetir dados.</span></span><span class="work-hub-patient-action">Iniciar ou abrir <span aria-hidden="true">→</span></span></a>'
-    + '<a class="work-hub-emergency" href="/trabalho/pcr/"><span class="work-hub-emergency-icon" aria-hidden="true">' + icon('ecg') + '</span><span class="work-hub-emergency-copy"><strong>Parada Cardiorrespiratória</strong><span>Acesso rápido à ferramenta de PCR.</span></span><span class="work-hub-emergency-action">Abrir PCR <span aria-hidden="true">→</span></span></a>'
+  root.innerHTML = '<a class="work-hub-emergency" href="/trabalho/pcr/"><span class="work-hub-emergency-icon" aria-hidden="true">' + icon('ecg') + '</span><span class="work-hub-emergency-copy"><strong>Parada Cardiorrespiratória</strong><span>Acesso rápido à ferramenta de PCR.</span></span><span class="work-hub-emergency-action">Abrir PCR <span aria-hidden="true">→</span></span></a>'
     + groups.map(([title, tools], i) => '<section class="work-hub-category" aria-labelledby="work-category-' + i + '"><h2 id="work-category-' + i + '">' + title + '</h2><div class="work-hub-grid">' + tools.map(([visual, name, description, route, color]) => '<a class="work-hub-card" href="/trabalho/' + route + '"><span class="work-hub-icon" data-work-color="' + color + '">' + icon(visual) + '</span><span class="work-hub-copy"><strong>' + name + '</strong><span>' + description + '</span></span><span class="work-hub-arrow" aria-hidden="true">→</span></a>').join('') + '</div></section>').join('');
 })();

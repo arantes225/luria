@@ -31,6 +31,8 @@ for (const page of ['caderno-erros.html', 'caderno-erros/index.html']) {
 }
 // OCR local na Cola Rápida (câmera e galeria); sem upload da imagem.
 module.exports.resources['trabalho/prontuario-rapido/index.html'] = {scriptSrc: ocrScripts, connectSrc: ocrConnect, wasm: true};
+// O decodificador Meshopt do modelo tridimensional do coração usa WebAssembly local.
+module.exports.resources['aprender/anatomia/coracao/index.html'] = {wasm: true};
 for (const page of ['questoes-simulados.html', 'questoes-simulados/index.html']) {
   module.exports.resources[page] = {scriptSrc: [...pdfScripts, ...ocrScripts], connectSrc: ocrConnect, wasm: true};
 }

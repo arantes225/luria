@@ -58,7 +58,7 @@ test('Work Dashboard groups thirteen real routes, provides PCR, and ignores reti
  w.localStorage.setItem('traube:work-dashboard-layout:guest','simple');w.eval(hub);await settle(w);
  assert.equal(d.querySelectorAll('.work-hub-category').length,3);
  assert.equal(d.querySelectorAll('.work-hub-card').length,13);
- assert.equal(d.querySelector('.work-hub-card[href="/trabalho/diabetes/"]')?.textContent.includes('Diabetes'), true);
+ assert.equal(d.querySelector('.work-hub-card[href="/trabalho/diabetes/"]'),null);
  const links=[...d.querySelectorAll('.work-hub-card,.work-hub-emergency')];
  for(const link of links) {
   const route=decodeURIComponent(link.getAttribute('href')).replace(/^\//,'');
@@ -66,14 +66,14 @@ test('Work Dashboard groups thirteen real routes, provides PCR, and ignores reti
   assert.ok(link.querySelector('svg[aria-hidden="true"]'));
  }
  assert.equal(new Set(links.map(l=>l.href)).size,14);
- assert.equal(d.querySelector('.work-hub-patient').getAttribute('href'),'/trabalho/paciente/');
+ assert.equal(d.querySelector('.work-hub-patient'),null);
  assert.equal(d.querySelector('.work-hub-return').hidden,true);
  assert.equal(d.querySelector('.work-hub-emergency').getAttribute('href'),'/trabalho/pcr/');
 });
 test('all authenticated Work pages share the hub adapter and preserve the public access page',()=>{
  const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(dir+'/'+e.name):[dir+'/'+e.name]);
  const paths=walk('trabalho').filter(p=>p.endsWith('.html')&&fs.readFileSync(p,'utf8').includes('data-ui-work="v2"'));
- assert.equal(paths.length,26);
+ assert.equal(paths.length,25);
  for(const path of paths) {
   const html=fs.readFileSync(path,'utf8');
   assert.match(html,/data-ui-work-navigation="hub"/);

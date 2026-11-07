@@ -1404,6 +1404,7 @@ const sb = window.supabaseClient;
 
 const PAGE_INFO = {
   dashboard: { title: "Dashboard", eyebrow: "Visão geral", helper: "Seu dia de estudos em um só lugar." },
+  anatomia: { title: "Sala de Anatomia", eyebrow: "Aprender", helper: "Atlas 3D do corpo humano: selecione, corte, remova estruturas e estude por sistemas." },
   vocacao: { title: "Mapa de interesses", eyebrow: "Orientação de carreira", helper: "Explore interesses profissionais e áreas de acesso direto." },
   sessao_estudo: { title: "Sessão de estudo do dia", eyebrow: "Estudar agora", helper: "Complete as etapas planejadas para hoje no seu ritmo." },
   cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos", helper: "Organize o que estudar e quando revisar." },
@@ -1475,7 +1476,6 @@ const PLUS_NAV_FEATURES = {
   "/registrar-questoes/": "questions",
   "/plantao/": "plantao",
   "/plantao/sala-emergencia/": "plantao",
-  "/plantao/traubezap/": "plantao",
   "/estatisticas/": "statistics_general"
 };
 
@@ -1642,7 +1642,6 @@ function updateTraubeProfileInitials(user = window.docmapUser, profile = window.
 }
 
 function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = null) {
-  const isTraubeZap = page === "plantao" && document.body.dataset.plantaoEntry === "phone";
   const sidebarPlan = String(entitlements?.plan || window.docmapPlan || "").trim().toLowerCase();
   const canAccessWork = isAdmin === true || ["plus", "pro", "betatester"].includes(sidebarPlan);
   const fallbackName = user.email
@@ -1709,8 +1708,16 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">▧</span><span>Cola rápida</span>
         </a>
 
-        <a class="nav-link ${["trabalho_prescricao","trabalho_bulario","trabalho_protocolos","trabalho_receitas","trabalho_antimicrobianos"].includes(page) ? "active" : ""}" href="/trabalho/prescricao/">
-          <span class="nav-icon">✎</span><span>Prescrição</span>
+        <a class="nav-link ${page === "trabalho_bulario" ? "active" : ""}" href="/trabalho/bulario/">
+          <span class="nav-icon">℞</span><span>Bulário</span>
+        </a>
+
+        <a class="nav-link ${["trabalho_protocolos","trabalho_receitas"].includes(page) ? "active" : ""}" href="/trabalho/protocolos/">
+          <span class="nav-icon">☷</span><span>Protocolos e tratamentos</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_antimicrobianos" ? "active" : ""}" href="/trabalho/antimicrobianos/">
+          <span class="nav-icon">⊕</span><span>Antimicrobianos</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_diabetes" ? "active" : ""}" href="/trabalho/diabetes/">
@@ -1749,7 +1756,11 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${traubeIcon("calendar")}</span><span>Cronograma</span>
         </a>
 
-        <a class="nav-link ${page === "aprender" ? "active" : ""}" href="/aprender/">
+        <a class="nav-link ${page === "desafio" ? "active" : ""}" href="/desafio-diario/">
+          <span class="nav-icon">${traubeIcon("target")}</span><span>Desafio Diário</span>
+        </a>
+
+        <a class="nav-link ${["aprender", "anatomia"].includes(page) ? "active" : ""}" href="/aprender/">
           <span class="nav-icon">${traubeIcon("book")}</span><span>Aprender</span>
         </a>
 
@@ -1757,30 +1768,25 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${traubeIcon("cards")}</span><span>Consolidar</span>
         </a>
 
-        <a class="nav-link ${["jogos", "study-rats"].includes(page) ? "active" : ""}" href="/jogos/">
-          <span class="nav-icon">${traubeIcon("games")}</span><span>Jogos</span>
-        </a>
-
-        <a class="nav-link ${page === "desafio" ? "active" : ""}" href="/desafio-diario/">
-          <span class="nav-icon">${traubeIcon("target")}</span><span>Desafio Diário</span>
-        </a>
-
-        <a class="nav-link ${page === "plantao" && !isTraubeZap ? "active" : ""}" href="/plantao/sala-emergencia/">
+        <a class="nav-link ${page === "plantao" ? "active" : ""}" href="/plantao/sala-emergencia/">
           <span class="nav-icon">${traubeIcon("stethoscope")}</span><span>Simulador de Emergência</span>
-        </a>
-
-        <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
-          <span class="nav-icon">${traubeIcon("chart")}</span><span>Estatísticas</span>
         </a>
 
         <a class="nav-link ${["aplicar", "curriculo", "radar"].includes(page) ? "active" : ""}" href="/aplicar/">
           <span class="nav-icon">${traubeIcon("compass")}</span><span>Aplicar</span>
         </a>
 
+        <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
+          <span class="nav-icon">${traubeIcon("chart")}</span><span>Estatísticas</span>
+        </a>
+
+        <a class="nav-link ${["jogos", "study-rats"].includes(page) ? "active" : ""}" href="/jogos/">
+          <span class="nav-icon">${traubeIcon("games")}</span><span>Jogos</span>
+        </a>
+
         <a class="nav-link ${page === "amigos" ? "active" : ""}" href="/amigos/">
           <span class="nav-icon">${traubeIcon("users")}</span><span>Amigos</span>
         </a>
-
         <span id="admin-nav-slot"></span>
       `}
     </nav>
@@ -1869,14 +1875,14 @@ async function carregarPerfil(userId) {
 
 function traubeLogoSourceForTheme(theme) {
   if (theme === "dark") {
-    return "/assets/img/logos/logo-icone-azul-claro.png?v=busto20261102";
+    return "/assets/img/logos/logo-icone-azul-claro.png?v=traube20261105brand1";
   }
 
   if (theme === "leila-mood" || theme === "pink" || theme === "rosa") {
-    return "/assets/img/logos/logo-icone-rosa-escuro.png?v=busto20261102";
+    return "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261105brand1";
   }
 
-  return "/assets/img/logos/logo-icone-original.png?v=busto20261102";
+  return "/assets/img/logos/logo-icone-original.png?v=traube20261105brand1";
 }
 
 
@@ -5690,7 +5696,7 @@ function ensureTraubeDialog() {
   dialog.innerHTML = `
     <form method="dialog" class="traube-global-dialog-card">
       <div class="traube-global-dialog-icon" aria-hidden="true">
-        <img class="traube-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=busto20261102" alt="">
+        <img class="traube-global-dialog-logo" src="/assets/img/logos/logo-icone-original.png?v=traube20261105brand1" alt="">
       </div>
       <div class="traube-global-dialog-copy">
         <span class="traube-global-dialog-eyebrow">TRAUBE</span>
@@ -5786,10 +5792,10 @@ function openTraubeDialog({
 
     logo.src =
       theme === "dark"
-        ? "/assets/img/logos/logo-icone-azul-claro.png?v=busto20261102"
+        ? "/assets/img/logos/logo-icone-azul-claro.png?v=traube20261105brand1"
         : theme === "leila-mood"
-          ? "/assets/img/logos/logo-icone-rosa-escuro.png?v=busto20261102"
-          : "/assets/img/logos/logo-icone-original.png?v=busto20261102";
+          ? "/assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261105brand1"
+          : "/assets/img/logos/logo-icone-original.png?v=traube20261105brand1";
   }
 
   copy.textContent =
@@ -6439,11 +6445,6 @@ async function prepararAdminNavigation(acessoAdmin = null) {
   slot.replaceChildren(betaLink);
   const isAdmin = typeof acessoAdmin === "boolean" ? acessoAdmin : await verificarAcessoAdmin();
   if (!isAdmin) return false;
-  const editorialLink = document.createElement("a");
-  editorialLink.id = "editorial-nav-link";
-  editorialLink.className = `nav-link ${page === "editorial" ? "active" : ""}`;
-  editorialLink.href = "/editorial/";
-  editorialLink.innerHTML = `<span class="nav-icon">${traubeIcon("calendar")}</span><span>Editorial</span>`;
   const link = document.createElement("a");
   link.id = "admin-nav-link";
   link.className = `nav-link ${page === "admin" ? "active" : ""}`;
@@ -6455,7 +6456,6 @@ async function prepararAdminNavigation(acessoAdmin = null) {
   agenciaLink.href = "/agencia/";
   agenciaLink.innerHTML = `<span class="nav-icon">${traubeIcon("calendar")}</span><span>Agência</span>`;
   slot.prepend(agenciaLink);
-  slot.prepend(editorialLink);
   slot.prepend(link);
   return true;
 }

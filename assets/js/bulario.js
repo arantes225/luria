@@ -3,7 +3,7 @@
   const list=document.getElementById('drug-list');
   const detail=document.getElementById('drug-detail');
   const count=document.getElementById('drug-count');
-  let rows=[], protocols=[], selected=null, activeChip="", visibleCount=100, loading=true; const normStr=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+  let rows=[], protocols=[], selected=null, activeChip="todos", visibleCount=100, loading=true; const normStr=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
   const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const number=value=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(value);
   const status=row=>row.data?.status==='posology_verified'?2:row.data?.status==='verified'?1:0;
@@ -34,13 +34,26 @@
     if(!items.length)return `<p class="rx-note">${esc(emptyText)}</p>`;
     return `<div class="rx-clinical-list">${items.map(item=>`<div class="rx-clinical-item">${esc(item)}</div>`).join('')}</div>`;
   };
+  const classRules=[
+    ["anti-inflamatorios",/anti-inflamat|aine/],
+    ["antibioticos",/antibiot|antibacter|penicil|cefalospor|quinolon|macrolid|aminoglicos|sulfonamida|lincosamida|glicopept|beta-lact|carbapen|tetracic/],
+    ["antifungicos",/antifung|antimicot|polieno/],
+    ["antidiabeticos",/antidiabet|diabet|sglt2|dpp-4|glp-1|biguanida|insulina/],
+    ["cardiovasculares",/cardiovasc|cardiolog|anti-hipertens|antiarr|vasoativ|choque/],
+    ["antitromboticos",/antitrombot|anticoagul|trombol|antiagreg/],
+    ["neurologia-psiquiatria",/sistema nervoso|neurolog|psiquiatr|antidepress|antiepilep|ansiolit/]
+  ];
+  const classText=row=>[row.therapeutic_class,row.pharmacological_class,row.data?.therapeutic_class,row.data?.pharmacological_class].map(normStr).filter(v=>v&&!/^(nao classificado|uso clinico geral)$/.test(v)).join(' ');
+  const categoriesFor=row=>{
+    const value=classText(row);
+    if(!value)return ["sem-classificacao"];
+    const found=classRules.filter(([,re])=>re.test(value)).map(([key])=>key);
+    return found.length?found:["outras"];
+  };
   function renderList(){
     const term=normStr(search.value.trim());
     const matches=rows.filter(row=>{
-      if(activeChip){
-        const hay=normStr([row.therapeutic_class,row.pharmacological_class,row.data?.therapeutic_class,...(row.data?.diseases||[])].join(' '));
-        if(!hay.includes(activeChip)) return false;
-      }
+      if(activeChip!=="todos"&&!categoriesFor(row).includes(activeChip)) return false;
       if(!term) return true;
       const aliases=row.data?.commercial_names;
       const commercial=Array.isArray(aliases)?aliases:aliases?[aliases]:[];
@@ -312,9 +325,11 @@
   });
   document.querySelectorAll('[data-class-chip]').forEach(chip=>{
     chip.addEventListener('click',()=>{
-      activeChip=normStr(chip.dataset.classChip||'');
+      activeChip=chip.dataset.classChip||'todos';
       visibleCount=100;
-      document.querySelectorAll('[data-class-chip]').forEach(c=>c.classList.toggle('is-active',c===chip));
+      document.querySelectorAll('[data-class-chip]').forEach(c=>{c.classList.toggle('is-active',c===chip);c.setAttribute('aria-pressed',String(c===chip));});
+      document.getElementById('drug-filter-current').textContent=chip.textContent.trim();
+      document.getElementById('drug-filter').open=false;
       renderList();
     });
   });

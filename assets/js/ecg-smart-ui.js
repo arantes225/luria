@@ -321,7 +321,7 @@
         resolve(result);
       };
       img.onerror = () => finish({ ok: false, reason: "Não foi possível decodificar a imagem escolhida." });
-      img.onload = () => {
+      img.onload = async () => {
         try {
           stage = "preparação da imagem";
           const originalW = img.naturalWidth || img.width;
@@ -371,7 +371,37 @@
           const selectedPaper = manualSelection
             ? perspective.rectifyCanvas(orientedCanvas, chosenCorners, maxSide)
             : null;
-          const snapCanvas = selectedPaper?.canvas || orientedCanvas;
+          let snapCanvas = selectedPaper?.canvas || orientedCanvas;
+
+          stage = "análise de layout via visão";
+          // ── Vision AI: identifica layout antes do motor CV ──────────────
+          const visionReview = global.TraubeEcgVisionReview;
+          const visionWorkerUrl = global.TRAUBE_ECG_VISION_WORKER_URL || null;
+          let resolvedLayoutHint = photoOptions.layoutHint || "auto";
+          if (visionReview && visionWorkerUrl) {
+            let authToken = null;
+            try {
+              const { data: { session } } = await window.supabaseClient.auth.getSession();
+              authToken = session?.access_token || null;
+            } catch {}
+            const reviewResult = await visionReview.review(snapCanvas, {
+              authToken,
+              workerUrl: visionWorkerUrl
+            });
+            if (!reviewResult.confirmed) {
+              // Usuário pediu para refazer a foto — aborta sem erro
+              finish({ ok: false, reason: "Revise a foto e tente novamente." });
+              return;
+            }
+            if (reviewResult.visionLayout) {
+              resolvedLayoutHint = visionReview.visionLayoutToHint(reviewResult.visionLayout);
+            }
+            // Canvas padronizado PhysioNet gerado localmente (sem custo de API)
+            if (reviewResult.cleanCanvas) {
+              snapCanvas = reviewResult.cleanCanvas;
+            }
+          }
+          // ────────────────────────────────────────────────────────────────
 
           stage = "reconhecimento dos traçados";
           cameraController.stopCamera();
@@ -381,7 +411,7 @@
 
           const result = cameraController.processPhotographCanvas(snapCanvas, {
             source: manualSelection ? "normal_photo_manual_four_corners" : source,
-            layoutHint: photoOptions.layoutHint,
+            layoutHint: resolvedLayoutHint,
             manualPaperCornersApplied: manualSelection,
             userCalibration: {
               paperSpeedMmPerSec: Number(calSpeedSelect?.value) || 25,

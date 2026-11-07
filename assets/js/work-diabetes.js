@@ -2,6 +2,7 @@
 (() => {
   'use strict';
   const root = document.getElementById('diabetes-app');
+  try {
   const data = window.TraubeDiabetesData;
   if (!root || !data) {
     if (root) root.textContent = 'O catálogo de Diabetes não pôde ser carregado.';
@@ -27,7 +28,7 @@
     ['gestacao','✧','Gestação','Diabetes gestacional, pré-gestacional e puerpério.']
   ];
   const source = data.source;
-  const card = (title, desc, icon, destination) => '<button class="dm-card dm-card-click" type="button" data-go="' + esc(destination) + '"><span class="dm-card-icon" aria-hidden="true">' + icon + '</span><h4>' + esc(title) + '</h4><p>' + esc(desc) + '</p><span class="dm-tag">Abrir seção</span></button>';
+  const card = (title, desc, icon, destination) => '<a class="dm-card dm-card-click" href="/trabalho/diabetes/#diabetes-' + esc(destination) + '" data-go="' + esc(destination) + '"><span class="dm-card-head"><span class="dm-card-icon" aria-hidden="true">' + icon + '</span><h4>' + esc(title) + '</h4></span><p>' + esc(desc) + '</p><span class="dm-card-cta">Abrir seção <span aria-hidden="true">›</span></span></a>';
   const notice = (body, attention=false) => '<div class="dm-notice' + (attention ? ' attention' : '') + '"><span aria-hidden="true">' + (attention?'⚠':'ⓘ') + '</span><div>' + body + '</div></div>';
   const head = (title, description) => '<div class="dm-section-head"><div><h3>' + title + '</h3><p>' + description + '</p></div></div>';
   const linkbar = (items) => '<div class="dm-quick-links">' + items.map(item => '<a href="' + item[1] + '">' + esc(item[0]) + '</a>').join('') + '</div>';
@@ -117,8 +118,8 @@
   const sources = head('Referências e rastreabilidade','Prioridade às fontes brasileiras. Conteúdos de biblioteca demandam revisão periódica, sem inferir revisão automática.') +
     '<div class="dm-grid two">' + data.sources.map(s=>'<article class="dm-card dm-source"><div class="dm-tag">Fonte</div><h4>'+esc(s.title)+'</h4><p>'+esc(s.detail)+'</p><p>'+link(s.url,'Abrir fonte oficial',true)+'</p></article>').join('')+'</div>' +
     '<div class="dm-panel"><h4>Limites de evidência</h4><p class="dm-muted">Versão editorial: '+esc(data.version)+'. Faixas extraídas do apêndice de classes farmacológicas da SBD 2026. Não foram construídos modelos farmacodinâmicos de dose–resposta, combinações ou previsão individual. Fontes nacionais e bulas devem ser confrontadas antes de adoção clínica. Não há armazenamento de informações inseridas nesta página.</p></div>';
-  const views = {inicio:start,simulador,farmacos:pharm,protocolos,insulina:ins,monitor:monitoring,complicacoes:comp,emergencias,gestacao:pregnancy,fontes:sources};
-  root.innerHTML = '<div class="dm-hero"><div><span class="dm-eyebrow">Modo Trabalho • Central clínica</span><h2>Diabetes</h2><p>Diretrizes brasileiras, farmacologia, protocolos, insulinoterapia, monitorização e complicações — reunidos em uma página independente.</p></div><div class="dm-hero-actions"><button class="dm-btn primary" type="button" data-go="simulador">Simular HbA1c</button><button class="dm-btn" type="button" data-go="monitor">Diário glicêmico (PDF)</button><a class="dm-link-btn" href="/trabalho/">Central do Trabalho</a></div></div>' +
+  const views = {inicio:start,simulador:simulator,farmacos:pharm,protocolos:protocols,insulina:ins,monitor:monitoring,complicacoes:comp,emergencias:emergencies,gestacao:pregnancy,fontes:sources};
+  root.innerHTML = '<div class="dm-hero dm-hero-compact"><p>Diretrizes brasileiras, farmacologia, protocolos, insulinoterapia, monitorização e complicações em um só lugar.</p><div class="dm-hero-actions"><button class="dm-btn primary" type="button" data-go="simulador">Simular HbA1c</button><button class="dm-btn" type="button" data-go="monitor">Diário glicêmico (PDF)</button></div></div>' +
     '<nav class="dm-nav" role="tablist" aria-label="Seções da central Diabetes">' + tabs.map(t=>'<button type="button" role="tab" id="dm-tab-'+t[0]+'" aria-controls="dm-view-'+t[0]+'" aria-selected="false" tabindex="-1" data-tab="'+t[0]+'">'+esc(t[1])+'</button>').join('')+'</nav>' +
     tabs.map(t=>section(t[0],views[t[0]])).join('');
   const one = id => root.querySelector('#'+id);
@@ -128,12 +129,13 @@
       const yes=t[0]===id, tab=one('dm-tab-'+t[0]), view=one('dm-view-'+t[0]);
       tab.setAttribute('aria-selected',String(yes)); tab.tabIndex=yes?0:-1; view.hidden=!yes;
     });
-    if (location.hash !== '#diabetes-'+id && history.replaceState) history.replaceState(null,'','#diabetes-'+id);
+    if (location.hash !== '#diabetes-'+id && history.replaceState) history.replaceState(null,'',location.pathname+location.search+'#diabetes-'+id);
   };
   root.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));
   root.addEventListener('click',event=>{
     const btn=event.target.closest('[data-go]');
     if (!btn) return;
+    event.preventDefault();
     setTab(btn.dataset.go);
     one('dm-tab-'+btn.dataset.go).focus();
   });
@@ -258,4 +260,17 @@
     renderHistory();
   });
   renderHistory();
+
+  } catch (error) {
+    // A visible, accessible failure is safer than an indefinitely spinning loader.
+    console.error('Traube Diabetes: falha ao iniciar a central', error);
+    if (root) {
+      root.innerHTML = '<section class="dm-panel" role="alert">' +
+        '<h2>Não foi possível carregar a central Diabetes</h2>' +
+        '<p>Houve um erro ao iniciar esta página. Recarregue para tentar novamente.</p>' +
+        '<button type="button" id="dm-reload" class="dm-btn primary">Recarregar página</button>' +
+        '</section>';
+      root.querySelector('#dm-reload')?.addEventListener('click', () => window.location.reload());
+    }
+  }
 })();
