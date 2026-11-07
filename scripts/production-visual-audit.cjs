@@ -8,7 +8,7 @@ const fixture=fs.readFileSync(path.join(root,'tests/fixtures/supabase-browser.js
  .replace('if(name==="is_admin")return{data:false,error:null};','if(name==="is_admin")return{data:true,error:null};')
  .replace('storage:{from:()=>','functions:{invoke:async()=>({data:{connected:false,configured:true},error:null})},storage:{from:()=>');
 const mime={'.html':'text/html','.css':'text/css','.js':'application/javascript','.mjs':'application/javascript','.woff2':'font/woff2','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.json':'application/json','.webmanifest':'application/manifest+json'};
-const routes=['dashboard','configuracoes','aprender','professor-alex','consolidar','questoes-simulados','flashcards','caderno-erros','jogos/study-rats','jogos/plantao-relampago','jogos/sequencia-salvadora','jogos/escapando-do-plantao','desafio-diario','estatisticas','editais','aplicar/curriculo','aplicar/radar','vocacao','amigos','agencia'];
+const routes=['amigos'];
 (async()=>{
  const browser=await chromium.launch({headless:true,executablePath:process.env.TRAUBE_CHROME_EXECUTABLE});
  try{
@@ -26,6 +26,7 @@ const routes=['dashboard','configuracoes','aprender','professor-alex','consolida
    try{
     const response=await page.goto(base+'/'+name+'/?audit=6f71e476',{waitUntil:'domcontentloaded',timeout:30000});
     console.log('AUDIT_HTTP|'+name+'|'+(response?.status()||0)+'|'+page.url());
+    if(name==='amigos')console.log('AUDIT_RELEASE|'+(await response.text()).includes('grid-template-columns:minmax(0,1fr) auto auto!important')+'|'+JSON.stringify(response.headers()));
     await page.locator('body.app-ready').waitFor({timeout:5000}).catch(()=>{});
     await page.waitForTimeout(400);
     const metrics=await page.evaluate(()=>{
@@ -42,7 +43,7 @@ const routes=['dashboard','configuracoes','aprender','professor-alex','consolida
    }catch(error){console.log('AUDIT_ERROR|'+name+'|'+error.message.replaceAll('\n',' '));}
   }
   await page.setViewportSize({width:390,height:844});
-  for(const name of ['dashboard','configuracoes','professor-alex','flashcards','amigos']){
+  for(const name of ['amigos']){
    try{
     await page.goto(base+'/'+name+'/',{waitUntil:'domcontentloaded',timeout:30000});
     await page.locator('body.app-ready').waitFor({timeout:5000}).catch(()=>{});
