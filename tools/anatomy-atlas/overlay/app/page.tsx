@@ -93,6 +93,7 @@ export default function Home(){
  const choose=(c:Concept)=>{setChosen(c);setState(s=>({...s,flow:false,selected:c.elements,hidden:s.hidden.filter(id=>!c.elements.includes(id)),isolate:false,rotate:false}));setSearchOpen(false);setQuery('');};
  useEffect(()=>{if(!atlas)return;return registerAtlasTools(atlas,c=>flushSync(()=>choose(c)));},[atlas]);
  const choosePart=(id:string)=>{const p=parts.get(id);if(!p)return;setChosen({id:p.conceptId,name:p.name,elements:[id]});setState(s=>({...s,flow:false,selected:[id],isolate:false,rotate:false}));};
+ const showFemalePelvis=()=>{if(!atlas||bodyKind!=='female')return;const pelvis=atlas.concepts.find(c=>c.name==='Female pelvic organs');if(!pelvis){flash('Os órgãos pélvicos não foram encontrados neste modelo.');return;}setChosen(pelvis);setState(s=>({...s,visible:['reproductive','urinary'],selected:pelvis.elements,hidden:s.hidden.filter(id=>!pelvis.elements.includes(id)),isolate:false,explode:0,cutAxis:'none',view:'front',rotate:false,reset:s.reset+1}));};
  const toggle=(id:SystemId)=>setState(s=>({...s,selected:[],isolate:false,visible:s.visible.includes(id)?s.visible.filter(x=>x!==id):id==='integumentary'?exterior:[...s.visible.filter(x=>x!=='integumentary'),id]}));
  const clearSelection=()=>{setState(s=>({...s,selected:[],isolate:false}));setChosen(null);};
  const reset=()=>{setState(s=>({...initial,reset:s.reset+1}));setChosen(null);setRemovedStack([]);setTour(null);};
@@ -151,12 +152,14 @@ export default function Home(){
     <button type="button" aria-pressed={state.visible.length===1&&state.visible[0]==='skeletal'} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:['skeletal']}))}>Esqueleto</button>
     <button type="button" aria-pressed={state.visible.length===ORGANS.length&&ORGANS.every(id=>state.visible.includes(id))} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:ORGANS}))}>Órgãos</button>
     <button type="button" aria-pressed={state.visible.length===3&&['cardiac','arterial','venous'].every(id=>state.visible.includes(id as SystemId))} onClick={()=>setState(s=>({...s,selected:[],isolate:false,visible:['cardiac','arterial','venous']}))}>Circulação</button>
+     {bodyKind==='female'&&<button type="button" aria-pressed={chosen?.name==='Female pelvic organs'} onClick={showFemalePelvis}>Pelve feminina</button>}
    </div>
    <div className="atlas-systems">{activeSystems.map(s=><div className={`atlas-system ${state.visible.includes(s.id)?'is-on':''}`} key={s.id}>
     <button type="button" className="atlas-system-name" title={`Mostrar apenas: ${s.name}`} onClick={()=>setState(v=>({...v,visible:[s.id],isolate:false,selected:[]}))}><span className="atlas-dot" style={{background:s.color}}/><span>{s.name}</span><small>{counts[s.id]}</small></button>
     <Switch checked={state.visible.includes(s.id)} onCheckedChange={()=>toggle(s.id)} aria-label={`Mostrar ${s.name}`}/>
    </div>)}</div>
    <div className="atlas-side-foot"><span>{fmt(visibleCount)} peças visíveis</span><button type="button" onClick={()=>setState(s=>({...s,visible:[],selected:[],isolate:false}))}>Ocultar tudo</button></div>
+    {bodyKind==='female'&&<p className="atlas-source-note">Útero, ovários e tubas estão na pelve. A camada muscular feminina tem cobertura parcial na fonte anatômica.</p>}
    {removedCount>0&&<div className="atlas-removed"><div><strong>{fmt(removedCount)}</strong> peça{removedCount===1?'':'s'} removida{removedCount===1?'':'s'}</div><div className="atlas-removed-actions"><button type="button" onClick={undoRemove} disabled={!removedStack.length}><Undo2 size={14}/>Desfazer</button><button type="button" onClick={restoreAll}><Eye size={14}/>Restaurar</button></div></div>}
   </aside>
 
