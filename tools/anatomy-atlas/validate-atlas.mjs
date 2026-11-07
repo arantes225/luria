@@ -14,7 +14,7 @@ const REQUIRED = {
     /^Wall of ventricle$/, /leaflet of mitral valve/, /papillary muscle/, /coronary artery/, /renal pyramid/, /calyx/, /trigone of urinary bladder/i,
     /zone of prostate/, /^Thalamus/, /hippocampus/, /gyrus/, /cerebell/i, /^(Left|Right) latissimus dorsi$/, /zygomaticus major/, /circumflex branch of left coronary/,
   ],
-  'atlas-female.json': [/^Body of uterus$/, /^(left|right) ovary$/, /uterine tube/, /^Vagina$/, /^mammary lobes/, /^Thalamus/, /renal pyramid/, /bronchopulmonary segment/, /papillary muscle of heart/, /rectus abdominis/, /transversus abdominis/, /circumflex/],
+  'atlas-female.json': [/^Body of uterus$/, /^(left|right) ovary$/, /uterine tube/, /^Vagina$/, /^mammary lobes/, /^Thalamus/, /renal pyramid/, /bronchopulmonary segment/, /papillary muscle of heart/, /circumflex/],
 };
 for (const [file, required] of Object.entries(REQUIRED)) {
   const atlas = JSON.parse(fs.readFileSync(path.join(models, file), 'utf8'));
@@ -36,6 +36,13 @@ for (const [file, required] of Object.entries(REQUIRED)) {
   }
   for (const c of atlas.concepts) { assert.ok(c.elements.length, `${c.id}: vazio`); for (const id of c.elements) assert.ok(ids.has(id), `${c.id}: falta ${id}`); }
   assert.equal(Math.round(tris), Math.round(atlas.triangles), `${file}: contagem de triângulos`);
+  if (file === 'atlas-female.json') {
+    assert.ok(!atlas.parts.some(p => p.system === 'pregnancy' || p.system === 'borrowed-muscle'), 'o corpo feminino contém gestação ou músculos masculinos deformados');
+    for (const name of ['Uterus', 'Ovary', 'Female pelvic organs']) {
+      const concept = atlas.concepts.find(c => c.name === name);
+      assert.ok(concept && concept.elements.length, 'órgão pélvico ausente: ' + name);
+    }
+  }
   const names = atlas.parts.map(p => p.name);
   for (const re of required) assert.ok(names.some(n => new RegExp(re.source, 'i').test(n)), `${file}: falta estrutura ${re}`);
   console.log(`${file}: ${ids.size} malhas, ${atlas.concepts.length} conceitos, ${Math.round(tris).toLocaleString('pt-BR')} triângulos, ${required.length} estruturas obrigatórias presentes`);

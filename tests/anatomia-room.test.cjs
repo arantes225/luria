@@ -105,10 +105,11 @@ test("atlas ampliado: fontes fixadas, corpo feminino, interior dos órgãos e ca
   assert.match(credits, /CC BY-SA 4\.0/);
   assert.match(credits, /HuBMAP/);
   const page = read("tools/anatomy-atlas/overlay/app/page.tsx");
-  assert.ok(page.includes("atlas-female.json"), "seletor do corpo feminino");
+  assert.ok(page.includes("atlas-female.json") && page.includes("Pelve feminina"), "seletor e foco pélvico do corpo feminino");
   assert.ok(page.includes("seeInside") && page.includes("toggleFlow") && page.includes("cutCenter"), "ver por dentro, cortes centrados e fluxo sanguíneo");
   const femaleExtras = read("tools/anatomy-atlas/build-female-extras.mjs");
-  assert.ok(femaleExtras.includes("borrowed-muscle") && femaleExtras.includes("ABDOMINAL_WALL"), "músculos complementares no corpo feminino");
+  assert.ok(femaleExtras.includes("p.system === 'pregnancy'") && femaleExtras.includes("Female pelvic organs"), "gestação removida e pelve feminina acessível");
+  assert.ok(femaleExtras.includes("borrowedMuscles: 0"), "não deformar músculos masculinos para o corpo feminino");
   assert.ok(femaleExtras.includes("Coronary arteries"), "coronárias no coração feminino");
   assert.ok(read("tools/anatomy-atlas/build-atlas-extras.mjs").includes("Left circumflex artery"), "grupos coronários no masculino");
   assert.ok(read("scripts/build-human-atlas.cjs").includes("build-female-extras.mjs"), "acréscimos femininos no build");

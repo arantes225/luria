@@ -1,7 +1,7 @@
 // TRAUBE · Atlas anatômico — sobreposição do anatomy.ts do projeto MIT de origem
 // (licença preservada em LICENSE-human-atlas.txt). Sistemas, descrições e
 // paleta por tecido em português; nomes das estruturas vêm de pt-names.json.
-export type SystemId = 'skeletal'|'muscular'|'arterial'|'venous'|'nervous'|'digestive'|'respiratory'|'urinary'|'reproductive'|'lymphatic'|'endocrine'|'integumentary'|'connective'|'sensory'|'cardiac'|'brain'|'borrowed'|'donor-muscle'|'borrowed-muscle'|'pregnancy'|'mammary';
+export type SystemId = 'skeletal'|'muscular'|'arterial'|'venous'|'nervous'|'digestive'|'respiratory'|'urinary'|'reproductive'|'lymphatic'|'endocrine'|'integumentary'|'connective'|'sensory'|'cardiac'|'brain'|'borrowed'|'donor-muscle'|'mammary';
 export const SYSTEMS: {id:SystemId;name:string;color:string;description:string}[] = [
  {id:'skeletal',name:'Esqueleto',color:'#ecdfc4',description:'Os ossos formam a estrutura de sustentação do corpo, protegem órgãos e servem de inserção para os músculos. A medula óssea armazena minerais e produz células do sangue.'},
  {id:'muscular',name:'Músculos',color:'#b84c42',description:'Os músculos esqueléticos produzem movimento ao tracionar suas inserções. Com os tendões, movem articulações, estabilizam a postura e produzem calor.'},
@@ -21,8 +21,6 @@ export const SYSTEMS: {id:SystemId;name:string;color:string;description:string}[
  {id:'integumentary',name:'Superfície corporal',color:'#c9a68a',description:'A superfície do corpo serve de referência anatômica externa. O sistema tegumentar forma uma barreira protetora e participa da sensibilidade e da termorregulação.'},
  {id:'borrowed',name:'Ossos complementares',color:'#b9c2c9',description:'O modelo feminino de referência não traz crânio, costelas, membros superiores nem pés. Esses ossos vêm do corpo masculino de referência, ajustados por escala e posição aos ossos que os dois corpos compartilham. Servem de referência de forma e posição, não como anatomia própria deste corpo.'},
  {id:'donor-muscle',name:'Músculos do membro inferior',color:'#a8776e',description:'Músculos do quadril, da coxa e da perna de uma segunda mulher de referência (Visible Human feminino), ajustados aos ossos deste corpo. O modelo feminino original quase não traz músculos.'},
- {id:'borrowed-muscle',name:'Músculos complementares',color:'#b05a50',description:'Músculos do tronco, da parede abdominal, do dorso, do pescoço, da face e dos membros superiores trazidos do corpo masculino de referência e ajustados osso a osso a este corpo. O modelo feminino original quase não traz músculos; estes servem de referência de forma e posição, não como anatomia própria desta pessoa.'},
- {id:'pregnancy',name:'Gestação',color:'#c8a6ae',description:'Placenta, membranas e cordão umbilical de uma referência de gestação. Não fazem parte do corpo não gestante e começam ocultos.'},
  {id:'connective',name:'Tecido conjuntivo',color:'#c3d1cc',description:'Cartilagens, ligamentos e outros tecidos conjuntivos sustentam, unem e separam estruturas, estabilizando articulações e distribuindo cargas mecânicas.'},
 ];
 export interface Part {id:string;name:string;conceptId:string;system:SystemId;chunk:number;positions:number;normals:number;indices:number;vertexCount:number;indexCount:number;bounds:[number[],number[]]}
@@ -32,7 +30,7 @@ export interface Atlas {version:string;sex?:Sex;source?:string;scope?:string;par
 export type View = 'three-quarter'|'front'|'back'|'side';
 export type CutAxis='none'|'sagittal'|'coronal'|'transverse';
 export interface SceneState {inspectorOpen?:boolean;flow?:boolean;ghost?:number;hidden:string[];cutAxis:CutAxis;cut:number;explode:number;visible:SystemId[];selected:string[];isolate:boolean;view:View;rotate:boolean;reset:number}
-export const DEFAULT_VISIBLE:SystemId[] = ['cardiac','sensory','skeletal','muscular','arterial','venous','nervous','brain','borrowed','donor-muscle','borrowed-muscle','respiratory','digestive','urinary','lymphatic','endocrine','reproductive','connective'];
+export const DEFAULT_VISIBLE:SystemId[] = ['cardiac','sensory','skeletal','muscular','arterial','venous','nervous','brain','borrowed','donor-muscle','respiratory','digestive','urinary','lymphatic','endocrine','reproductive','connective'];
 
 // ---- Nomes em português -------------------------------------------------
 let PT_NAMES:Record<string,string> = {};
@@ -176,7 +174,6 @@ const TISSUES:[RegExp,Tissue][]=[
  [/ovary/, {color:'#e3b8a8',rough:.5}],
  [/uterine tube|fallopian|fimbriae|ampulla of uterine/, {color:'#d99a8e',rough:.44}],
  [/vagina/, {color:'#cf8a84',rough:.46}],
- [/placenta|umbilical|amnion|chorionic/, {color:'#8e3a4a',rough:.45}],
  [/mammary|lactiferous|areola|nipple/, {color:'#efc9ae',rough:.55}],
  [/nerve|ganglion|chiasm|optic tract/, {color:'#f0cf5a',rough:.5}],
  [/white matter|corpus callosum|internal capsule|fornix|commissure/, {color:'#f2e4d8',rough:.55}],
@@ -220,7 +217,7 @@ const BY_SYSTEM:Record<SystemId,Tissue>={
  sensory:{color:'#b9cfd6',rough:.4},arterial:{color:'#cf3f36',rough:.32},venous:{color:'#3f6fd1',rough:.34},
  nervous:{color:'#e2bf5c',rough:.5},respiratory:{color:'#d79a9c',rough:.5},digestive:{color:'#d08f76',rough:.46},
  urinary:{color:'#9a4334',rough:.44},lymphatic:{color:'#8fae7a',rough:.48},endocrine:{color:'#c7894f',rough:.48},
- reproductive:{color:'#c99583',rough:.46},brain:{color:'#d9b3a6',rough:.6},borrowed:{color:'#ecdfc4',rough:.62},'donor-muscle':{color:'#b84c42',rough:.55},'borrowed-muscle':{color:'#b84c42',rough:.55},pregnancy:{color:'#8e3a4a',rough:.45},integumentary:{color:'#c9a68a',rough:.6},connective:{color:'#c3d1cc',rough:.42},
+ reproductive:{color:'#c99583',rough:.46},brain:{color:'#d9b3a6',rough:.6},borrowed:{color:'#ecdfc4',rough:.62},'donor-muscle':{color:'#b84c42',rough:.55},integumentary:{color:'#c9a68a',rough:.6},connective:{color:'#c3d1cc',rough:.42},
 };
 function hash(s:string){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}return (h>>>0)/4294967295;}
 const MUSCLE_RE=/fibularis|tibialis|subscapularis|teres|deltoid|biceps|triceps|gluteus|rectus|oblique|obliquus|transversus|intercostal|flexor|extensor|abductor|adductor|soleus|gastrocnemius|psoas|iliacus|pectoralis|latissimus|trapezius|serratus|rhomboid|levator|sartorius|gracilis|vastus|pectineus|piriformis|gemellus|obturator (?:internus|externus)|quadratus|popliteus|plantaris|supinator|pronator|brachialis|brachioradialis|anconeus|coracobrachialis|scalenus|sternocleidomastoid|platysma|digastric|mylohyoid|masseter|temporalis|splenius|semispinalis|longissimus|iliocostalis|multifidus|rotator|interspinal|intertransvers|lumbrical|interosseous of|interossei|opponens|palmaris|tensor|infraspinatus|supraspinatus|diaphragm|constrictor|genioglossus|geniohyoid|hyoglossus|stylohyoid|stylopharyngeus|omohyoid|sternohyoid|sternothyroid|thyrohyoid$|cricothyroid|crico-arytenoid|aryepiglotticus|thyro-arytenoid|transverse arytenoid|oblique arytenoid|vocalis|uvular muscle|palatopharyngeus|salpingopharyngeus|coccygeus|iliococcygeus|pubococcygeus|puborectalis|subclavius|longus colli|longus capitis|semimembranosus|semitendinosus|biceps femoris|quadriceps|hamstring|muscle/;
@@ -232,7 +229,7 @@ function detailKind(part:Pick<Part,'name'|'system'>,t:Tissue|undefined):number{
  const n=part.name.toLowerCase();
  if(/tooth|incisor|canine|molar|lens|cornea|vitreous|cartilage|disk|valve|leaflet|cusp|ventricular system|aqueduct|third ventricle|fourth ventricle|lateral ventricle|interventricular foramen/.test(n))return DETAIL.smooth;
  if(!t&&(part.system==='skeletal'||part.system==='borrowed'))return DETAIL.bone;
- if(part.system==='donor-muscle'||part.system==='borrowed-muscle')return DETAIL.muscle;
+ if(part.system==='donor-muscle')return DETAIL.muscle;
  if(part.system==='brain')return /white matter|corpus callosum|fornix|commissure|tract|radiation|ventricle|aqueduct|canal/.test(n)?DETAIL.smooth:DETAIL.brain;
  if((!t&&part.system==='muscular')||t===MUSCLE)return DETAIL.muscle;
  if(/tendon|ligament|fascia|aponeuro|retinaculum|raphe|membrane|tract|linea|tendinous|tarsal plate/.test(n))return DETAIL.fibrous;
@@ -255,7 +252,7 @@ export function partAppearance(part:Pick<Part,'id'|'name'|'system'>):{rgb:[numbe
  if(MUSCLE_RE.test(n)&&!NOT_MUSCLE_RE.test(n))tissue=MUSCLE;
  else for(const [re,t] of TISSUES){if(re.test(n)){tissue=t;break;}}
  // Nos músculos, só tecido fibroso (tendão, fáscia…) muda de cor.
- if((part.system==='muscular'||part.system==='borrowed-muscle')&&tissue&&!/tendon|fascia|aponeuro|retinaculum|ligament|raphe|tract|linea|tendinous/.test(n))tissue=undefined;
+ if((part.system==='muscular')&&tissue&&!/tendon|fascia|aponeuro|retinaculum|ligament|raphe|tract|linea|tendinous/.test(n))tissue=undefined;
  const t=tissue??BY_SYSTEM[part.system]??{color:'#aebbb8',rough:.5};
  const hex=parseInt(t.color.slice(1),16);
  // Variação sutil (±5%) para separar peças vizinhas do mesmo tecido.

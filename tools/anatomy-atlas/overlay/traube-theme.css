@@ -187,3 +187,5 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 [data-slot=slider] [data-slot=slider-track]{background:var(--color-primary-subtle)!important;height:5px!important;border-radius:5px}
 [data-slot=slider] [data-slot=slider-thumb]{width:16px!important;height:16px!important;box-shadow:0 2px 6px rgba(15,35,66,.25)}
 .atlas-systems{overflow-x:hidden}
+
+.atlas-source-note{margin:4px 18px 12px;color:var(--color-text-secondary);font-size:12px;line-height:1.45}

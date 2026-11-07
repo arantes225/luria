@@ -205,7 +205,8 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?1300.0:kind<3.5?650.0:ki
    const direction=view==='front'?new T.Vector3(0,.02,1):view==='back'?new T.Vector3(0,.02,-1):view==='side'?new T.Vector3(1,.02,0):new T.Vector3(.35,.06,1).normalize();
    controls.target.set(0,.86,0);camera.position.copy(controls.target).addScaledVector(direction,distance);controls.update();dirty=true;
   };
-  const resize=()=>{layoutKey='';lastState=null;renderer.setPixelRatio(Math.min(devicePixelRatio,el.clientWidth<768||el.clientHeight<600?1.5:2));camera.aspect=el.clientWidth/el.clientHeight;camera.updateProjectionMatrix();renderer.setSize(el.clientWidth,el.clientHeight);fit(latest.current.view,amount);};const observer=new ResizeObserver(resize);observer.observe(el);
+  const focusSelection=(ids:string[],view:string)=>{const box=new T.Box3();let count=0;for(const id of ids){const i=atlas.parts.findIndex(p=>p.id===id);if(i<0)continue;box.union(bounds[i]);count++;}if(!count||box.isEmpty())return;const size=box.getSize(new T.Vector3()),target=box.getCenter(new T.Vector3());const halfFov=Math.tan(T.MathUtils.degToRad(camera.fov/2));const distance=Math.max(.24,Math.min(6,Math.max(size.y,size.x/Math.max(.55,camera.aspect),size.z)*1.7/(2*halfFov)));const direction=view==='side'?new T.Vector3(1,.04,0):view==='back'?new T.Vector3(0,.04,-1):new T.Vector3(0,.04,1);controls.target.copy(target);camera.position.copy(target).addScaledVector(direction,distance);controls.update();dirty=true;};
+  const resize=()=>{layoutKey='';lastState=null;renderer.setPixelRatio(Math.min(devicePixelRatio,el.clientWidth<768||el.clientHeight<600?1.5:2));camera.aspect=el.clientWidth/el.clientHeight;camera.updateProjectionMatrix();renderer.setSize(el.clientWidth,el.clientHeight);fit(latest.current.view,amount);if(latest.current.selected.length)focusSelection(latest.current.selected,latest.current.view);};const observer=new ResizeObserver(resize);observer.observe(el);
   const raycaster=new T.Raycaster(),pointer=new T.Vector2(),tap=new PointerTap(),worldBox=new T.Box3(),hitPoint=new T.Vector3();
   const down=(e:PointerEvent)=>{hover.hidden=true;tap.down(e.pointerId,e.clientX,e.clientY,e.pointerType==='touch'?12:5);};
   const move=(e:PointerEvent)=>{tap.move(e.pointerId,e.clientX,e.clientY);if(e.buttons||amount<.5||e.pointerType==='touch'){hover.hidden=true;return;}const rect=el.getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top,index=findTarget(x,y,12);hover.hidden=index<0;renderer.domElement.style.cursor=index<0?'grab':'pointer';if(index>=0){hover.textContent=ptName(atlas.parts[index].name);hover.style.left=`${Math.max(8,Math.min(x+14,el.clientWidth-260))}px`;hover.style.top=`${Math.max(8,Math.min(y+18,el.clientHeight-55))}px`;}};
@@ -217,7 +218,7 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?1300.0:kind<3.5?650.0:ki
    if(found<0&&amount>.45)found=findTarget(e.clientX-rect.left,e.clientY-rect.top,e.pointerType==='touch'?24:16);if(found>=0){hover.hidden=true;select.current(atlas.parts[found].id);}
   };
   renderer.domElement.addEventListener('pointerdown',down);renderer.domElement.addEventListener('pointermove',move);renderer.domElement.addEventListener('pointerup',up);renderer.domElement.addEventListener('pointercancel',cancel);
-  const clock=new T.Clock();let lastExtent=-1;
+  const clock=new T.Clock();let lastExtent=-1,lastFocus='';
   const animate=()=>{
    if(disposed)return;frame=requestAnimationFrame(animate);const dt=Math.min(clock.getDelta(),.05),s=latest.current;
    if(previousDemand?.visible!==s.visible||previousDemand?.selected!==s.selected||previousDemand?.isolate!==s.isolate)loadDemand(s);
@@ -252,6 +253,7 @@ float dFreq(float kind){return kind<1.5?1100.0:kind<2.5?1300.0:kind<3.5?650.0:ki
    const ghost=s.selected.length&&!s.isolate?(s.ghost??0):0;
    if(ghost!==lastGhost){const on=ghost>0;materials.forEach(m=>{if(m.userData.skin===undefined)m.userData.skin=m.transparent;if(m.userData.skin)return;if(m.transparent!==on){m.transparent=on;m.depthWrite=!on;m.needsUpdate=true;}});ghostUniform.value=ghost;lastGhost=ghost;dirty=true;}
    if(s.view!==lastView||s.reset!==lastReset){fit(s.view,amount);lastView=s.view;lastReset=s.reset;}
+   const focusKey=s.selected.join('|')+':'+s.reset;if(focusKey!==lastFocus){lastFocus=focusKey;if(s.selected.length&&amount<.05)focusSelection(s.selected,s.view);}
    if(moving&&!s.isolate)fit(amount>.5?'front':s.view,Math.max(0,(amount-.3)/.7));
    const isolateKey=s.isolate?s.selected.join(',')+':'+s.reset+':'+s.inspectorOpen+':'+camera.aspect+':'+s.cutAxis:'';
    if(isolateKey!==lastIsolate||(s.isolate&&moving)){
