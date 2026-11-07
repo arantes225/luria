@@ -110,6 +110,9 @@
   .ag-chip.alerta, .ag-cena.captura .ag-selo, .ag-aviso { color: #f0c168; }
   .ag-chip.erro, .ag-aviso.erro { color: #f29a93; }
 }
+.ag-midia { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+.ag-midia-item { display: grid; gap: 6px; justify-items: start; width: 96px; }
+.ag-midia-item img { width: 96px; height: 120px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border, #cbd5e1); }
 
 /* Agência: composição alinhada aos demais painéis TRAUBE. */
 .editorial-page{max-width:1680px;gap:18px;padding:20px clamp(16px,2.5vw,36px) 42px}

@@ -37,7 +37,21 @@
     ajuste: false,
     ocupado: false,
     carregou: false,
-    erro: ""
+    erro: "",
+    aviso: "",
+    ig: { carregado: false },
+    appId: "",
+    msgMidia: ""
+  };
+  const MIDIA_BUCKET = "marketing_videos_temp";
+  const ESCOPOS_IG = "instagram_business_basic,instagram_business_content_publish";
+  const AVISOS_IG = {
+    conectado: "Instagram conectado.",
+    negado: "A conexão com o Instagram foi cancelada.",
+    "estado-invalido": "O link de conexão expirou ou já foi usado. Clique em Conectar Instagram de novo.",
+    "erro-config": "O servidor ainda não tem as chaves do app da Meta.",
+    erro: "Não foi possível conectar o Instagram. Tente de novo.",
+    invalido: "Não foi possível conectar o Instagram. Tente de novo."
   };
 
   function sbClient() { return window.supabaseClient || window.sb; }
@@ -217,6 +231,7 @@
       state.log = a.error || !Array.isArray(a.data) ? [] : a.data;
       state.config = c.error ? null : c.data;
       state.erro = "";
+      await carregarInstagram(sb);
     } catch (e) {
       console.error("[Agência] erro ao carregar", e);
       state.erro = "Não foi possível carregar os posts. Tente recarregar a página.";
@@ -224,6 +239,154 @@
     clearTimeout(limite);
     state.carregou = true;
     renderAll();
+  }
+
+  async function carregarInstagram(sb) {
+    try {
+      const st = await sb.rpc("agencia_instagram_status");
+      state.ig = st.error || !st.data ? { carregado: true, erro: true } : Object.assign({ carregado: true }, st.data);
+    } catch (_) { state.ig = { carregado: true, erro: true }; }
+    try {
+      const c = await sb.from("agencia_config").select("observacao").eq("id", "instagram_app_id").maybeSingle();
+      state.appId = ((c && c.data && c.data.observacao) || "").trim();
+    } catch (_) { state.appId = ""; }
+  }
+  function lerAvisoInstagram() {
+    try {
+      const q = new URLSearchParams(window.location.search).get("instagram");
+      if (!q) return;
+      state.aviso = AVISOS_IG[q] || AVISOS_IG.erro;
+      window.history.replaceState(null, "", window.location.pathname);
+    } catch (_) {}
+  }
+  async function conectarInstagram() {
+    const sb = sbClient();
+    if (!sb || !state.appId || state.ocupado) return;
+    state.ocupado = true; renderInstagram();
+    try {
+      const r = await sb.rpc("agencia_instagram_iniciar");
+      if (r.error || !r.data) throw (r.error || new Error("sem state"));
+      const base = String(sb.supabaseUrl || "").replace(/\/+$/, "");
+      const q = new URLSearchParams({
+        client_id: state.appId,
+        redirect_uri: base + "/functions/v1/agencia-instagram-callback",
+        response_type: "code",
+        scope: ESCOPOS_IG,
+        state: r.data
+      });
+      window.location.assign("https://www.instagram.com/oauth/authorize?" + q.toString());
+      return;
+    } catch (e) {
+      console.error("[Agência] erro ao iniciar a conexão", e);
+      state.aviso = "Não foi possível iniciar a conexão com o Instagram.";
+    }
+    state.ocupado = false; renderAll();
+  }
+  async function desconectarInstagram() {
+    const sb = sbClient();
+    if (!sb || state.ocupado) return;
+    if (!window.confirm("Desconectar o Instagram? Posts agendados vão falhar até você conectar de novo.")) return;
+    state.ocupado = true; renderInstagram();
+    try {
+      const r = await sb.rpc("agencia_instagram_desconectar");
+      if (r.error) throw r.error;
+      state.aviso = "Instagram desconectado.";
+    } catch (e) {
+      console.error("[Agência] erro ao desconectar", e);
+      state.aviso = "Não foi possível desconectar.";
+    }
+    state.ocupado = false;
+    await carregarAgencia();
+  }
+  function renderInstagram() {
+    const box = $("ag-instagram");
+    if (!box) return;
+    box.textContent = "";
+    const ig = state.ig || {};
+    if (!ig.carregado) { box.appendChild(el("p", { class: "ag-nota", text: "Verificando a conexão…" })); return; }
+    if (ig.erro) { box.appendChild(el("p", { class: "ag-nota", text: "Não foi possível verificar a conexão com o Instagram." })); return; }
+    if (ig.conectado) {
+      box.appendChild(el("p", { class: "ag-nota", text: "Conectado" + (ig.username ? " como @" + ig.username : "") + "." }));
+      box.appendChild(el("p", { class: "ag-nota", text: "A conexão é renovada sozinha. Válida até " + fmtHora(ig.expira_em) + "." }));
+      box.appendChild(el("button", { class: "ag-btn", type: "button", disabled: state.ocupado, onclick: desconectarInstagram, text: "Desconectar" }));
+      return;
+    }
+    box.appendChild(el("p", { class: "ag-nota", text: ig.expirado ? "A conexão expirou. Conecte de novo para publicar." : "Não conectado. Sem a conexão, nada é publicado." }));
+    if (!state.appId) box.appendChild(el("p", { class: "ag-nota", text: "Falta o ID do app da Meta (configuração única)." }));
+    box.appendChild(el("button", { class: "ag-btn primario", type: "button", disabled: state.ocupado || !state.appId, onclick: conectarInstagram, text: "Conectar Instagram" }));
+  }
+
+  async function paraJpeg(arquivo) {
+    if (arquivo.type === "image/jpeg" && arquivo.size <= 8 * 1024 * 1024) return arquivo;
+    const bmp = await createImageBitmap(arquivo);
+    const esc = Math.min(1, 1440 / bmp.width);
+    const c = document.createElement("canvas");
+    c.width = Math.round(bmp.width * esc); c.height = Math.round(bmp.height * esc);
+    const ctx = c.getContext("2d");
+    ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, c.width, c.height);
+    ctx.drawImage(bmp, 0, 0, c.width, c.height);
+    return await new Promise((ok, no) => c.toBlob((b) => (b ? ok(b) : no(new Error("Falha ao converter a imagem."))), "image/jpeg", 0.92));
+  }
+  async function anexarMidia(p, lista) {
+    const sb = sbClient();
+    const arquivos = Array.from(lista || []);
+    if (!sb || !arquivos.length || state.ocupado) return;
+    arquivos.sort((a, b) => a.name.localeCompare(b.name, "pt-BR", { numeric: true }));
+    state.ocupado = true; state.msgMidia = "Enviando…"; renderPainel();
+    try {
+      const novas = [];
+      for (const f of arquivos) {
+        let blob, ext, tipo;
+        if (f.type === "video/mp4") {
+          if (f.size > 100 * 1024 * 1024) throw new Error("O vídeo passa de 100 MB.");
+          blob = f; ext = "mp4"; tipo = "video/mp4";
+        } else if ((f.type || "").indexOf("image/") === 0) {
+          blob = await paraJpeg(f); ext = "jpg"; tipo = "image/jpeg";
+          if (blob.size > 8 * 1024 * 1024) throw new Error("Uma imagem passa de 8 MB.");
+        } else throw new Error("Formato não suportado: " + f.name);
+        const caminho = "agencia/" + p.id + "/" + Date.now() + "-" + novas.length + "." + ext;
+        const up = await sb.storage.from(MIDIA_BUCKET).upload(caminho, blob, { contentType: tipo, upsert: false });
+        if (up.error) throw up.error;
+        novas.push(sb.storage.from(MIDIA_BUCKET).getPublicUrl(caminho).data.publicUrl);
+      }
+      const midia = (Array.isArray(p.midia) ? p.midia : []).concat(novas);
+      const r = await sb.from("agencia_posts").update({ midia, atualizado_em: new Date().toISOString() }).eq("id", p.id);
+      if (r.error) throw r.error;
+      state.msgMidia = "";
+    } catch (e) {
+      console.error("[Agência] erro ao anexar mídia", e);
+      state.msgMidia = "Não foi possível anexar: " + ((e && e.message) || "erro desconhecido");
+    }
+    state.ocupado = false;
+    await carregarAgencia();
+  }
+  async function removerMidia(p, i) {
+    const sb = sbClient();
+    if (!sb || state.ocupado) return;
+    const atuais = Array.isArray(p.midia) ? p.midia.slice() : [];
+    const url = atuais.splice(i, 1)[0];
+    state.ocupado = true; renderPainel();
+    try {
+      const r = await sb.from("agencia_posts").update({ midia: atuais, atualizado_em: new Date().toISOString() }).eq("id", p.id);
+      if (r.error) throw r.error;
+      const marca = "/" + MIDIA_BUCKET + "/";
+      const pos = String(url || "").indexOf(marca);
+      if (pos >= 0) { try { await sb.storage.from(MIDIA_BUCKET).remove([decodeURIComponent(url.slice(pos + marca.length).split("?")[0])]); } catch (_) {} }
+      state.msgMidia = "";
+    } catch (e) {
+      console.error("[Agência] erro ao remover mídia", e);
+      state.msgMidia = "Não foi possível remover a mídia.";
+    }
+    state.ocupado = false;
+    await carregarAgencia();
+  }
+  function problemaMidia(p) {
+    const m = Array.isArray(p.midia) ? p.midia : [];
+    if (!m.length) return "Anexe a mídia antes de agendar.";
+    if (p.formato === "carrossel" && (m.length < 2 || m.length > 10)) return "Carrossel precisa de 2 a 10 imagens.";
+    if (p.formato === "feed" && m.length !== 1) return "Post de imagem única precisa de exatamente 1 imagem.";
+    if ((p.formato === "reel" || p.formato === "video") && !(m.length === 1 && /\.mp4(\?|$)/i.test(m[0]))) return "Reel precisa de exatamente 1 vídeo MP4.";
+    return "";
   }
 
   function visiveis() {
@@ -263,6 +426,7 @@
       box.appendChild(el("span", null, [el("b", { text: String(n) }), c.nome]));
     });
     if (state.erro) av.appendChild(el("p", { class: "ag-aviso erro", text: state.erro }));
+    if (state.aviso) av.appendChild(el("p", { class: "ag-aviso", text: state.aviso }));
     const espera = v.filter((p) => p.coluna === "revisao").length;
     if (espera) av.appendChild(el("p", { class: "ag-aviso", text: espera + (espera === 1 ? " post espera" : " posts esperam") + " a sua decisão na coluna Revisão." }));
   }
@@ -544,15 +708,25 @@
       acoes.appendChild(el("button", { class: "ag-btn", type: "button", disabled: !pode, onclick: () => { state.ajuste = !state.ajuste; renderPainel(); }, text: "Pedir ajustes" }));
     }
     if (p.coluna === "aprovado") {
-      const nMidia = Array.isArray(p.midia) ? p.midia.length : 0;
+      const midia = Array.isArray(p.midia) ? p.midia : [];
+      const probMidia = problemaMidia(p);
+      corpo.push(secao("Mídia para publicar", el("div", null, [
+        el("div", { class: "ag-midia" }, midia.map((u, i) => el("div", { class: "ag-midia-item" }, [
+          /\.mp4(\?|$)/i.test(u) ? el("span", { class: "ag-chip", text: "Vídeo MP4" }) : el("img", { src: u, alt: "Imagem " + (i + 1), loading: "lazy" }),
+          el("button", { class: "ag-btn", type: "button", disabled: !pode, onclick: () => removerMidia(p, i), text: "Remover" })
+        ]))),
+        el("label", { for: "ag-arquivos", class: "ag-nota", text: midia.length ? "Adicionar mais arquivos" : "Anexar imagens (PNG, JPG ou WebP, convertidas para JPEG) ou 1 vídeo MP4" }),
+        el("input", { id: "ag-arquivos", type: "file", multiple: true, accept: "image/*,video/mp4", disabled: !pode, onchange: (ev) => anexarMidia(p, ev.target.files) }),
+        state.msgMidia ? el("p", { class: "ag-nota", text: state.msgMidia }) : null
+      ])));
       const sugestao = new Date(Date.now() + 24 * 3600 * 1000); sugestao.setMinutes(0, 0, 0);
       const valorInicial = sugestao.getFullYear() + "-" + pad(sugestao.getMonth() + 1) + "-" + pad(sugestao.getDate()) + "T" + pad(sugestao.getHours()) + ":00";
       corpo.push(secao("Agendar publicação", el("div", null, [
         el("label", { for: "ag-publicar-em", class: "ag-nota", text: "Data e hora (horário de Brasília)" }),
         el("input", { id: "ag-publicar-em", type: "datetime-local", value: valorInicial }),
-        el("p", { class: "ag-nota", text: nMidia ? nMidia + " arquivo(s) de mídia anexado(s)." : "Sem mídia anexada: a publicação vai falhar até as imagens ou o vídeo serem anexados." })
+        probMidia ? el("p", { class: "ag-nota", text: probMidia }) : null
       ])));
-      acoes.appendChild(btn("Agendar publicação", "agendar", true));
+      acoes.appendChild(btn("Agendar publicação", "agendar", true, probMidia, probMidia));
     }
     if (p.coluna === "redacao") acoes.appendChild(el("p", { class: "ag-nota", text: "O redator está trabalhando neste post." }));
     if (p.coluna === "agendado") {
@@ -577,7 +751,7 @@
     ]);
     camada.appendChild(fundo);
   }
-  function renderAll() { renderResumo(); renderPrincipal(); renderLateral(); renderPainel(); }
+  function renderAll() { renderResumo(); renderPrincipal(); renderLateral(); renderInstagram(); renderPainel(); }
 
   function ligarControles() {
     const vq = $("ag-v-quadro");
@@ -595,6 +769,7 @@
   }
 
   async function init() {
+    lerAvisoInstagram();
     ligarControles();
     $("admin-pin-form")?.addEventListener("submit", submitEditorialPin);
 
