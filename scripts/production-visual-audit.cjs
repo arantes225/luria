@@ -1,5 +1,5 @@
 'use strict';
-// Read-only visual audit of the published website with isolated synthetic account data.
+// Read-only visual audit of the published website after community layout release.
 const fs=require('node:fs'),path=require('node:path');
 const {chromium}=require('playwright');
 const root=path.resolve(__dirname,'..');
