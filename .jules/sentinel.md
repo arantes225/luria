@@ -1,0 +1,4 @@
+## 2026-10-19 - [Search Path Hijacking Vulnerability in SECURITY DEFINER function]
+**Vulnerability:** A `SECURITY DEFINER` function (`public.register_marketing_lead`) was defined without explicitly setting a `search_path`.
+**Learning:** This exposes the application to Search Path Hijacking (CVE-2018-1058), allowing malicious actors to override standard PostgreSQL functions/types with malicious versions if they manipulate their `search_path`.
+**Prevention:** Always explicitly set `search_path = ''` (or a known safe path like `search_path = public, pg_temp`) on all `SECURITY DEFINER` functions to enforce a consistent environment and prevent users from shadowing built-in or schema objects.
