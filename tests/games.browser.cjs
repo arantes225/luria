@@ -215,11 +215,9 @@ let browser;
     await page.locator('[name="specialty"]').selectOption("Pediatria");
     await page.locator('button[type="submit"]').click();
     check(
-      "empty sequence filter is recoverable",
-      await page.getByText("Sem desafios neste recorte").isVisible(),
+      "pediatrics now has sequence scenarios",
+      Number((await page.locator("#s-count").textContent()).match(/\d+/)?.[0]) >= 2,
     );
-    await page.locator('[data-action="setup"]').click();
-    await page.locator('[name="specialty"]').selectOption("Misto");
     await page.locator('button[type="submit"]').click();
     const before = await page
       .locator(".g-sort li")
@@ -257,7 +255,7 @@ let browser;
           .evaluateAll((els) => els.map((el) => el.dataset.id).join(","))),
     );
     await screenshot("sequencia-in-play");
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
       await solve();
       await page.locator('[data-action="confirm"]').click();
       check(
@@ -282,7 +280,7 @@ let browser;
       (await page.locator('[data-action="next"]').count()) === 0,
     );
     await screenshot("escape-first-room");
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 27; i++) {
       const s = await page.evaluate((i) => TraubeGameContent.adventure[i], i);
       if (s.type === "sort") await solve();
       else if (s.type === "select")
@@ -295,7 +293,7 @@ let browser;
       await page.locator('[data-action="next"]').click();
     }
     check(
-      "adventure concludes nine scenes",
+      "adventure concludes 27 scenes",
       await page.getByText("Turno entregue", { exact: false }).isVisible(),
     );
     await screenshot("escape-result");
