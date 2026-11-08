@@ -1,30 +1,18 @@
 // Geometry helpers shared by registration and its spatial regression tests.
-export function surfaceField(positions,indices,step=.015){
- const cells=new Map(),put=(xi,yi,z)=>{const k=xi+':'+yi,c=cells.get(k);if(c){if(z<c[0])c[0]=z;if(z>c[1])c[1]=z;}else cells.set(k,[z,z]);};
- const add=(x,y,z)=>put(Math.round(x/step),Math.round(y/step),z);
- for(let i=0;i<indices.length;i+=3){
-  const a=indices[i]*3,b=indices[i+1]*3,c=indices[i+2]*3;
-  const ax=positions[a],ay=positions[a+1],az=positions[a+2],bx=positions[b],by=positions[b+1],bz=positions[b+2],cx=positions[c],cy=positions[c+1],cz=positions[c+2];
-  const span=Math.max(Math.hypot(bx-ax,by-ay),Math.hypot(cx-ax,cy-ay),Math.hypot(cx-bx,cy-by));
-  const n=Math.max(1,Math.ceil(span/(step*.6)));
-  for(let u=0;u<=n;u++)for(let v=0;u+v<=n;v++){
-   const w=n-u-v,p=u/n,q=v/n,r=w/n;
-   add(ax*p+bx*q+cx*r,ay*p+by*q+cy*r,az*p+bz*q+cz*r);
+export function surfaceField(positions, indices, step=.008) {
+  const cells=new Map(), key=(x,y)=>x+','+y;
+  for(let i=0;i<indices.length;i+=3){
+    const a=indices[i]*3,b=indices[i+1]*3,c=indices[i+2]*3;
+    const ax=positions[a],ay=positions[a+1],bx=positions[b],by=positions[b+1],cx=positions[c],cy=positions[c+1];
+    const d=(by-cy)*(ax-cx)+(cx-bx)*(ay-cy);if(Math.abs(d)<1e-12)continue;
+    for(let ix=Math.ceil(Math.min(ax,bx,cx)/step);ix<=Math.floor(Math.max(ax,bx,cx)/step);ix++)for(let iy=Math.ceil(Math.min(ay,by,cy)/step);iy<=Math.floor(Math.max(ay,by,cy)/step);iy++){
+      const x=ix*step,y=iy*step,u=((by-cy)*(x-cx)+(cx-bx)*(y-cy))/d,v=((cy-ay)*(x-cx)+(ax-cx)*(y-cy))/d,w=1-u-v;
+      if(Math.min(u,v,w)<-1e-6)continue;const z=u*positions[a+2]+v*positions[b+2]+w*positions[c+2],k=key(ix,iy),old=cells.get(k)||[Infinity,-Infinity];old[0]=Math.min(old[0],z);old[1]=Math.max(old[1],z);cells.set(k,old);
+    }
   }
- }
- return(x,y)=>{
-  const xi=Math.round(x/step),yi=Math.round(y/step);
-  for(let r=0;r<=8;r++){
-   let z0=Infinity,z1=-Infinity,found=false;
-   for(let dx=-r;dx<=r;dx++)for(let dy=-r;dy<=r;dy++){
-    const c=cells.get((xi+dx)+':'+(yi+dy));
-    if(c){found=true;if(c[0]<z0)z0=c[0];if(c[1]>z1)z1=c[1];}
-   }
-   if(found)return[z0,z1];
-  }
-  return[-.12,.08];
- };
+  return (x,y)=>{let total=0,back=0,front=0;const ix=Math.round(x/step),iy=Math.round(y/step);for(let r=1;r<=5;r++){for(let dx=-r;dx<=r;dx++)for(let dy=-r;dy<=r;dy++){const c=cells.get(key(ix+dx,iy+dy));if(!c)continue;const d=(x-(ix+dx)*step)**2+(y-(iy+dy)*step)**2,k=1/(d+step*step*.1);total+=k;back+=c[0]*k;front+=c[1]*k;}if(total)return [back/total,front/total];}throw Error('Skin envelope unavailable at '+x+','+y);};
 }
+export const smooth=(a,b,x)=>{const t=Math.max(0,Math.min(1,(x-a)/(b-a)));return t*t*(3-2*t);};
 
 const sub=(a,b)=>[a[0]-b[0],a[1]-b[1],a[2]-b[2]];
 const add=(a,b)=>[a[0]+b[0],a[1]+b[1],a[2]+b[2]];
@@ -68,7 +56,7 @@ export function classifyMuscleRegion(name,center){
  if(/deltoid|deltoideus|supraspinatus|infraspinatus|teres major|teres minor|subscapularis/.test(n))return `girdle-${s}`;
  if(/orbicularis|zygomaticus|masseter|temporalis|pterygoid|buccinator|risorius|nasalis|procerus|corrugator|depressor|levator labii|levator anguli|mentalis|occipitofrontalis|frontalis|auricularis|tensor veli|levator veli|uvulae|palatoglossus|palatopharyngeus|genioglossus|hyoglossus|styloglossus|rectus.*eye|obliquus.*eye|levator palpebrae|stapedius|tensor tympani/.test(n)&&!/scapulae|ani|prostatae|costarum/.test(n))return 'head';
  if(/sternohyoid|omohyoid|sternothyroid|thyrohyoid|mylohyoid|geniohyoid|digastric|stylohyoid|stylopharyngeus|constrictor of pharynx|salpingopharyngeus|cricothyroid|arytenoid|thyro-arytenoid|crico-arytenoid|vocalis|aryepiglottic|sternocleidomastoid|scalenus|longus colli|longus capitis|rectus capitis|obliquus capitis|splenius|semispinalis|longissimus capitis|cervicis|platysma|trapezius|levator scapulae/.test(n))return 'neck';
- if(/pectoralis|subclavius|serratus|intercostal|subcostal|transversus thoracis|diaphragm|latissimus dorsi|rhomboid|levator.*costarum|erector spinae|iliocostalis|longissimus|spinalis|multifidus|rotatores|semispinalis|interspinales|intertransversarii|quadratus lumborum|psoas|iliacus/.test(n))return 'thorax';
+ if(/pectoralis|subclavius|serratus|intercostal|subcostal|transversus thoracis|diaphragm|latissimus dorsi|rhomboid|levator.*costarum|erector spinae|iliocostalis|longissimus|spinalis|multifidus|rotatores|interspinales|intertransversarii|quadratus lumborum|psoas|iliacus/.test(n))return 'thorax';
  if(center[1]>1.50)return 'head';
  if(center[1]>1.37&&Math.abs(center[0])<0.10)return 'neck';
  return 'thorax';
@@ -109,7 +97,6 @@ export function buildFemaleBoneTransforms(){
    const u=transforms[`upper-arm-${side}`](p);
    const f=transforms[`forearm-${side}`](p);
    const h=transforms[`hand-${side}`](p);
-   // 3D shoulder separation plane between scapula/clavicle origin and humerus shaft
    const dShoulder=(Math.abs(p[0])-0.156)*0.68+(1.368-p[1])*0.73;
    const wArm=smoothstep((dShoulder+0.032)/0.064);
    const gu=lerp(g,u,wArm);
@@ -212,7 +199,6 @@ export function skinCrossSectionClamp(positions,indices,step=.008){
    return {x0,x1,z0,z1,cx:(x0+x1)/2,cz:(z0+z1)/2};
   }));
  }
- // Helper to get closest interval at slice yi for x
  const getIntervalAt=(yi,x)=>{
   for(let dy=0;dy<=6;dy++){
    for(const s of dy===0?[0]:[-dy,dy]){
@@ -228,7 +214,6 @@ export function skinCrossSectionClamp(positions,indices,step=.008){
   }
   return null;
  };
- // Smooth interval lookup across [yi-2..yi+2] with continuous Y interpolation
  const sampleSmoothInterval=(x,y)=>{
   const yf=y/step,yi0=Math.floor(yf),ty=yf-yi0;
   const smoothedAt=yi=>{
@@ -268,34 +253,13 @@ export function skinCrossSectionClamp(positions,indices,step=.008){
  };
 }
 
-export function pelvicBowelPosition(x,y,z,name){
- const d=/^Descending colon$/i.test(name),s=/^Sigmoid colon$/i.test(name),r=/^Rectum$/i.test(name);
- if(!d&&!s&&!r&&!(y<1.06&&x>-0.03&&z>-0.13))return[x,y,z];
- const w=Math.max(0,Math.min(1,(1.055-y)/.065)),u=w*w*(3-2*w);
- const Lat=Math.exp(-Math.pow((y-.955)/.065,2));
- const R=r?1:s?Math.max(0,Math.min(1,(.92-y)/.05)):0;
- const tx=.058*(1-R)+.004*R,tz=-.094*(1-R)-.104*R;
- const nx=x+u*((tx-x)*(.58*Lat+.78*R)+.038*Lat*(1-R));
- const nz=z+u*((tz-z)*(.72*Lat+.88*R)-.028*Lat);
- const ny=y-.006*u*Lat*(1-R);
- return[nx,ny,nz];
+// Shared coordinate field for the connected colorectal meshes. The upper colon
+// remains fixed. The inferior loop moves laterally/posteriorly; the same field
+// is used at colorectal joins to avoid gaps.
+export function pelvicBowelPosition(x,y,z,name=''){
+ const w=smooth(-.160,-.030,z)*(1-smooth(.855,.980,y))*smooth(.775,.815,y);
+ const lateral=1-smooth(.025,.140,Math.abs(x));
+ return [x+.060*w*lateral,y,z-.030*w];
 }
 
-export function quantizedNormals(positions,indices){
- const n=new Float32Array(positions.length);
- for(let i=0;i<indices.length;i+=3){
-  const a=indices[i]*3,b=indices[i+1]*3,c=indices[i+2]*3;
-  const ux=positions[b]-positions[a],uy=positions[b+1]-positions[a+1],uz=positions[b+2]-positions[a+2];
-  const vx=positions[c]-positions[a],vy=positions[c+1]-positions[a+1],vz=positions[c+2]-positions[a+2];
-  const nx=uy*vz-uz*vy,ny=uz*vx-ux*vz,nz=ux*vy-uy*vx;
-  for(const j of [a,b,c]){n[j]+=nx;n[j+1]+=ny;n[j+2]+=nz;}
- }
- const out=new Int16Array(positions.length);
- for(let i=0;i<n.length;i+=3){
-  const l=Math.hypot(n[i],n[i+1],n[i+2])||1;
-  out[i]=Math.round(Math.max(-1,Math.min(1,n[i]/l))*32767);
-  out[i+1]=Math.round(Math.max(-1,Math.min(1,n[i+1]/l))*32767);
-  out[i+2]=Math.round(Math.max(-1,Math.min(1,n[i+2]/l))*32767);
- }
- return out;
-}
+export function quantizedNormals(pos,idx){const sum=new Float64Array(pos.length);for(let i=0;i<idx.length;i+=3){const a=idx[i]*3,b=idx[i+1]*3,c=idx[i+2]*3,ux=pos[b]-pos[a],uy=pos[b+1]-pos[a+1],uz=pos[b+2]-pos[a+2],vx=pos[c]-pos[a],vy=pos[c+1]-pos[a+1],vz=pos[c+2]-pos[a+2],n=[uy*vz-uz*vy,uz*vx-ux*vz,ux*vy-uy*vx];for(const o of [a,b,c])for(let k=0;k<3;k++)sum[o+k]+=n[k];}const out=new Int16Array(pos.length);for(let i=0;i<pos.length;i+=3){const d=Math.hypot(sum[i],sum[i+1],sum[i+2])||1;for(let k=0;k<3;k++)out[i+k]=Math.round(sum[i+k]/d*32767);}return out;}
