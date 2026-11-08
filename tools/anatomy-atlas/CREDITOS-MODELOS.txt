@@ -45,3 +45,5 @@ atlas-female.json + female-*.bin (corpo feminino)
   Conversão: slorksmo/Human-Atlas (licença MIT em LICENSE-atlas-feminino.txt).
 
 Conteúdo educacional, sujeito a revisão anatômica especializada.
+
+Correção espacial TRAUBE (2026-11): parede abdominal adaptada ao envelope cutâneo e aos marcos pélvicos/esterno da referência feminina. Campo contínuo lateral e posterior aplicado aos segmentos colorretais inferiores para eliminar interseções com útero, ovários e vagina; órgãos reprodutivos preservados. Normais recalculadas. Mantidas as licenças dos dados de origem. Correção geométrica para estudo, sem revisão anatômica especializada.
