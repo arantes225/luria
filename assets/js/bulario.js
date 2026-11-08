@@ -1,4 +1,19 @@
 (()=>{
+  // ⚡ Bolt: Prevent main thread blocking on keystroke filtering
+  // Delay the expensive execution of `renderList` until the user stops typing
+  // Expected Impact: Reduces unnecessary UI re-renders on every keystroke, improving app responsiveness
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func.apply(this, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
   const search=document.getElementById('drug-search');
   const list=document.getElementById('drug-list');
   const detail=document.getElementById('drug-detail');
@@ -334,7 +349,10 @@
     });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
-  search.addEventListener('input',()=>{visibleCount=100;renderList();});
+  search.addEventListener('input', debounce(() => {
+    visibleCount=100;
+    renderList();
+  }, 300));
   // Canonical database: bulario_catalog is the public projection of bulario_drugs.
   // Show records as soon as each page arrives, independently from protocol loading.
   async function loadAll(table,fields,sortKey,onPage){
