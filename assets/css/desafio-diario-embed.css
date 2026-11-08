@@ -39,6 +39,7 @@ body[data-daily-embed="dashboard"] .daily-content{
   display:block!important;
   margin:0!important;
 }
+body[data-daily-embed="dashboard"] .daily-content[hidden]{display:none!important;}
 body[data-daily-embed="dashboard"] .daily-main-col{
   display:grid!important;
   gap:12px!important;
