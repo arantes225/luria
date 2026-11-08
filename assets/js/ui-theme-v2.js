@@ -42,7 +42,7 @@
     const source = `/assets/img/logos/${logoName}?v=traube20261108brand2`;
     if (logo && logo.getAttribute("src") !== source) logo.setAttribute("src", source);
     const favicon = document.querySelector('link[rel~="icon"]');
-    const faviconSource = "/assets/img/logos/favicon.png?v=traube20261108brand2";
+    const faviconSource = "/assets/img/logos/favicon.png?v=traube20261108transparent1";
     if (favicon && favicon.getAttribute("href") !== faviconSource) favicon.setAttribute("href", faviconSource);
     document.querySelectorAll("[data-ui-theme-control]").forEach(button => {
       const dimension = button.dataset.uiThemeControl;

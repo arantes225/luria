@@ -267,7 +267,7 @@
       "any";
 
     const source =
-      "/assets/img/logos/favicon.png?v=traube20261108brand2";
+      "/assets/img/logos/favicon.png?v=traube20261108transparent1";
 
     if (
       favicon.getAttribute("href")
