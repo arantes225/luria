@@ -17,12 +17,13 @@ const mY1=male.parts.find(p=>p.name==='Body of sternum').bounds[0][1],fY1=female
 const mWidth=Math.max(...male.parts.filter(p=>/hip bone/i.test(p.name)).map(p=>Math.max(Math.abs(p.bounds[0][0]),Math.abs(p.bounds[1][0]))));
 const fWidth=Math.max(...female.parts.filter(p=>/Ilium compact bone/i.test(p.name)).map(p=>Math.max(Math.abs(p.bounds[0][0]),Math.abs(p.bounds[1][0]))));
 const sx=fWidth/mWidth,sy=(fY1-fY0)/(mY1-mY0);
-const segments=[];let bytes=0,abdominal=0,bowel=0;
+const segments=[];let bytes=0,abdominal=0,bowel=0,vessels=0;
 const put=a=>{const pad=(4-bytes%4)%4;if(pad){segments.push(Buffer.alloc(pad));bytes+=pad;}const o=bytes,b=Buffer.from(a.buffer,a.byteOffset,a.byteLength);segments.push(b);bytes+=b.length;return o;};
 for(const p of female.parts){
  const wall=p.system==='adapted-muscle'&&/rectus abdominis|abdominal oblique|external oblique|transversus abdominis|pyramidalis/i.test(p.name);
  const colon=p.system==='digestive'&&/^(Descending colon|Sigmoid colon|Rectum)$/i.test(p.name);
- if(!wall&&!colon)continue;
+ const vessel=['arterial','venous'].includes(p.system)&&/^(?:Left colic|Inferior mesenteric|(?:Superior|Middle|Inferior) rectal|Sigmoid) (?:artery|vein)/i.test(p.name);
+ if(!wall&&!colon&&!vessel)continue;
  const source=wall?byId.get(p.id.replace('TRAUBE-ADAPTED:','')):p;if(!source)throw Error('Missing source '+p.id);
  const {pos,idx}=arrays(source,wall?mb:fb),out=new Float32Array(pos.length),mn=[Infinity,Infinity,Infinity],mx=[-Infinity,-Infinity,-Infinity];
  for(let i=0;i<pos.length;i+=3){let x=pos[i],y=pos[i+1],z=pos[i+2];
@@ -32,9 +33,10 @@ for(const p of female.parts){
  }
  p.positions=put(out);p.normals=put(quantizedNormals(out,idx));p.indices=put(idx);p.chunk=female.chunks.length;p.bounds=[mn,mx];
  p.registration=wall?'abdominal wall surface registration':'continuous pelvic colorectal registration';
- if(wall)abdominal++;else bowel++;
+ if(wall)abdominal++;else if(colon)bowel++;else vessels++;
 }
 if(abdominal<8||bowel!==3)throw Error('Missing spatial coverage '+abdominal+'/'+bowel);
 const file='female-spatial-registration.bin';fs.writeFileSync(path.join(dir,file),Buffer.concat(segments));female.chunks.push({url:'/models/'+file,bytes});
-female.spatialRegistration={version:1,abdominal,bowel,abdominalLandmarks:{mY0,fY0,mY1,fY1,sx,sy},notes:'Preserve reproductive meshes and upper colon. Shared continuous registration for connected pelvic colorectal parts.'};
+female.spatialRegistration={version:1,abdominal,bowel,vessels,abdominalLandmarks:{mY0,fY0,mY1,fY1,sx,sy},notes:'Preserve reproductive meshes and upper colon. Shared continuous registration for connected pelvic colorectal parts and their regional vessels.'};
+female.muscleRegistration.abdominalMethod='skin envelope and pubis/sternum landmark registration';
 fs.writeFileSync(path.join(dir,'atlas-female.json'),JSON.stringify(female));console.log('Spatial registration: '+abdominal+' abdominal muscles; '+bowel+' colorectal parts');
