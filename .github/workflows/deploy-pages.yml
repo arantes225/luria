@@ -185,6 +185,7 @@ jobs:
             build/anatomy-atlas-mobile.png
             build/anatomy-female-body-desktop.png
             build/anatomy-female-pelvis.png
+            build/anatomy-female-muscles.png
             build/anatomy-kidneys-interior.png
             build/anatomy-breasts-interior.png
           if-no-files-found: ignore
