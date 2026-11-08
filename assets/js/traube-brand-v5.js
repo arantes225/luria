@@ -35,13 +35,13 @@
   }
 
   const LOGOS = {
-    light: "assets/img/logos/logo-icone-original.png?v=traube20261105brand1",
-    dark: "assets/img/logos/logo-icone-azul-claro.png?v=traube20261105brand1",
-    "leila-mood": "assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261105brand1"
+    light: "assets/img/logos/logo-icone-original.png?v=traube20261108brand2",
+    dark: "assets/img/logos/logo-icone-azul-claro.png?v=traube20261108brand2",
+    "leila-mood": "assets/img/logos/logo-icone-rosa-escuro.png?v=traube20261108brand2"
   };
 
   function getTheme() {
-    if (document.body?.dataset.uiIdentity === "pink" && document.body?.dataset.uiAppearance !== "dark") return "leila-mood";
+    if (document.body?.dataset.uiIdentity === "pink") return "leila-mood";
     if (document.body?.dataset.uiAppearance === "dark") return "dark";
     const theme =
       document.documentElement.dataset.theme
@@ -267,7 +267,7 @@
       "any";
 
     const source =
-      "/assets/img/logos/logo-icone-original.png?v=traube20261105brand1";
+      "/assets/img/logos/favicon.png?v=traube20261108brand2";
 
     if (
       favicon.getAttribute("href")

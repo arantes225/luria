@@ -36,10 +36,14 @@
     body.dataset.uiAppearance = preference?.appearance || (theme === "dark" ? "dark" : "light");
     body.dataset.uiIdentity = preference?.identity || (["leila-mood", "pink", "rosa"].includes(theme) ? "pink" : "blue");
     const logo = document.getElementById("traube-brand-logo");
-    const logoName = body.dataset.uiAppearance === "dark" ? "logo-icone-azul-claro.png"
-      : body.dataset.uiIdentity === "pink" ? "logo-icone-rosa-escuro.png" : "logo-icone-original.png";
-    const source = `/assets/img/logos/${logoName}?v=traube20261105brand1`;
+    // Cor da identidade primeiro: pink/dark nao pode voltar a usar a marca azul.
+    const logoName = body.dataset.uiIdentity === "pink" ? "logo-icone-rosa-escuro.png"
+      : body.dataset.uiAppearance === "dark" ? "logo-icone-azul-claro.png" : "logo-icone-original.png";
+    const source = `/assets/img/logos/${logoName}?v=traube20261108brand2`;
     if (logo && logo.getAttribute("src") !== source) logo.setAttribute("src", source);
+    const favicon = document.querySelector('link[rel~="icon"]');
+    const faviconSource = "/assets/img/logos/favicon.png?v=traube20261108brand2";
+    if (favicon && favicon.getAttribute("href") !== faviconSource) favicon.setAttribute("href", faviconSource);
     document.querySelectorAll("[data-ui-theme-control]").forEach(button => {
       const dimension = button.dataset.uiThemeControl;
       button.setAttribute("aria-pressed", String(body.dataset[dimension === "appearance" ? "uiAppearance" : "uiIdentity"] === button.value));
