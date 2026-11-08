@@ -131,8 +131,12 @@ export async function tratarCallback(req, d) {
   if ((d.env("IG_LOGIN") || "unificado") === "unificado") {
     try {
       const t = await trocarCodigoUnificado({ fetchFn: d.fetchFn, appId, appSecret, redirectUri, code, versao });
-      const contas = await contasDoToken({ fetchFn: d.fetchFn, appId, appSecret, token: t.token, versao });
-      if (!contas.length) return volta("sem-conta");
+      let info = "";
+      const contas = await contasDoToken({ fetchFn: d.fetchFn, appId, appSecret, token: t.token, versao, diag: (m) => { info = m; } });
+      if (!contas.length) {
+        await d.db.logar("_conexao", "erro", "Login sem conta do Instagram liberada. " + info);
+        return volta("sem-conta");
+      }
       const igUserId = contas[0];
       const p = await perfilConta({ fetchFn: d.fetchFn, token: t.token, igUserId, versao });
       await d.db.salvarConexao({
