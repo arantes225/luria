@@ -29,6 +29,7 @@ const mSkin=surfaceField(mSkinArrays.pos,mSkinArrays.idx);
 const byId=new Map(male.parts.map(p=>[p.id,p]));
 const boneTx=buildFemaleBoneTransforms();
 const center=p=>p.bounds[0].map((v,i)=>(v+p.bounds[1][i])/2);
+const smoothstep=t=>{const c=Math.max(0,Math.min(1,t));return c*c*(3-2*c);};
 
 const recti=male.parts.filter(p=>/rectus abdominis/i.test(p.name)),mY0=Math.min(...recti.map(p=>p.bounds[0][1]));
 const fY0=Math.max(...female.parts.filter(p=>/^Pubis compact bone/i.test(p.name)).map(p=>p.bounds[1][1]));
@@ -73,14 +74,49 @@ for(const p of female.parts){
   const mSource=byId.get(p.id.replace('TRAUBE-ADAPTED:',''));
   if(!mSource)continue;
   const mReg=classifyMuscleRegion(mSource.name,center(mSource));
-  const useChain=mReg.startsWith('forearm-')||mReg.startsWith('upper-arm-')||mReg.startsWith('hand-');
-  const side=mReg.endsWith('-left')?'left':mReg.endsWith('-right')?'right':null;
-  const {pos,idx}=arrays(useChain?mSource:p,useChain?mb:fb),out=new Float32Array(pos.length),mn=[Infinity,Infinity,Infinity],mx=[-Infinity,-Infinity,-Infinity];
-  const chainFn=useChain&&side?boneTx[`limb-chain-${side}`]:null;
-  let changed=useChain;
-  for(let i=0;i<pos.length;i+=3){
-   let x=pos[i],y=pos[i+1],z=pos[i+2];
-   if(chainFn)[x,y,z]=chainFn([x,y,z]);
+  const isLimb=mReg.startsWith('girdle-')||mReg.startsWith('upper-arm-')||mReg.startsWith('forearm-')||mReg.startsWith('hand-');
+  const isHead=mReg==='head';
+  const isNeck=mReg==='neck';
+  const isThorax=mReg==='thorax';
+  const side=mReg.endsWith('-left')?'left':mReg.endsWith('-right')?'right':(center(mSource)[0]>=0?'left':'right');
+  const {pos:mPos,idx}=arrays(mSource,mb);
+  const {pos:fPos}=arrays(p,fb);
+  const out=new Float32Array(mPos.length),mn=[Infinity,Infinity,Infinity],mx=[-Infinity,-Infinity,-Infinity];
+  const chainFn=boneTx[`limb-chain-${side}`];
+  let changed=isLimb||isHead||isNeck||isThorax;
+  for(let i=0;i<mPos.length;i+=3){
+   let x,y,z;
+   const mp=[mPos[i],mPos[i+1],mPos[i+2]];
+   if(isLimb)[x,y,z]=chainFn(mp);
+   else if(isHead)[x,y,z]=boneTx.maleSkull(mp);
+   else if(isNeck){
+    const [nx,ny,nz]=boneTx.neckMuscle(mp);
+    // Below C7/T1 (mp[1]<1.38), blend smoothly into the bone-anchored thoracic field fPos
+    const wThorax=smoothstep((1.38-mp[1])/0.08);
+    x=nx+(fPos[i]-nx)*wThorax;
+    y=ny+(fPos[i+1]-ny)*wThorax;
+    z=nz+(fPos[i+2]-nz)*wThorax;
+   }else if(isThorax){
+    let bx=fPos[i],by=fPos[i+1],bz=fPos[i+2];
+    if(/pectoralis|latissimus dorsi|subclavius/i.test(mSource.name)){
+     const wArm=smoothstep((Math.abs(mp[0])-0.125)/0.045)*smoothstep((mp[1]-1.20)/0.06);
+     if(wArm>0){
+      const [cx,cy,cz]=chainFn(mp);
+      bx=bx+(cx-bx)*wArm;by=by+(cy-by)*wArm;bz=bz+(cz-bz)*wArm;
+     }
+    }
+    if(/latissimus dorsi/i.test(mSource.name)&&mp[1]<1.14&&mp[2]<-0.05){
+     const wLumbar=smoothstep((1.14-mp[1])/0.12)*smoothstep((-0.05-mp[2])/0.05);
+     bz+=0.018*wLumbar;
+    }
+    const wNeck=smoothstep((mp[1]-1.34)/0.07);
+    if(wNeck>0){
+     const [nx,ny,nz]=boneTx.neckMuscle(mp);
+     x=bx+(nx-bx)*wNeck;y=by+(ny-by)*wNeck;z=bz+(nz-bz)*wNeck;
+    }else{x=bx;y=by;z=bz;}
+   }else{
+    x=fPos[i];y=fPos[i+1];z=fPos[i+2];
+   }
    const [cx,cy,cz]=clampToSkin(x,y,z,.002);
    if(Math.abs(cx-x)+Math.abs(cz-z)>1e-4)changed=true;
    for(const [k,v] of [cx,cy,cz].entries()){out[i+k]=v;mn[k]=Math.min(mn[k],v);mx[k]=Math.max(mx[k],v);}
@@ -109,7 +145,31 @@ for(const p of female.parts){
  const source=wall?byId.get(p.id.replace('TRAUBE-ADAPTED:','')):p;if(!source)throw Error('Missing source '+p.id);
  const {pos,idx}=arrays(source,wall?mb:fb),out=new Float32Array(pos.length),mn=[Infinity,Infinity,Infinity],mx=[-Infinity,-Infinity,-Infinity];
  for(let i=0;i<pos.length;i+=3){let x=pos[i],y=pos[i+1],z=pos[i+2];
-  if(wall){const m=mSkin(x,y);x*=sx;y=fY0+(y-mY0)*sy;const f=fSkin(x,y),t=Math.max(.02,Math.min(.98,(z-m[0])/Math.max(.01,m[1]-m[0])));z=f[0]+t*(f[1]-f[0])-.004*(2*t-1);}
+  if(wall){
+   const m=mSkin(x,y);
+   y=fY0+(y-mY0)*sy;
+   // Taper width scale from pelvic iliac width (y<=1.02) to thoracic ribcage width (y>=1.16)
+   // and keep the medial linea alba border tight so left/right rectus abdominis meet cleanly
+   const wRib=smoothstep((y-1.02)/0.14);
+   const sxLat=sx*(1-wRib)+0.88*wRib;
+   const wMed=smoothstep((Math.abs(x)-0.008)/0.035);
+   const sEff=0.72*(1-wMed)+sxLat*wMed;
+   x=x*sEff-0.001;
+   const f=fSkin(x,y);
+   // Exclude breast protrusion above inframammary fold (y>1.10) so upper abdominal wall stays on ribcage
+   let zFront=f[1];
+   if(y>1.09){
+    const wBreast=smoothstep((y-1.09)/0.06);
+    const zRibWall=fSkin(0,y)[1]-0.005-1.9*x*x;
+    zFront=zFront*(1-wBreast)+Math.min(zFront,zRibWall)*wBreast;
+   }
+   // Anchor lower pubic attachment (y near fY0) toward pubic symphysis/crest so pyramidalis/rectus attach to bone
+   const wPubis=smoothstep((0.94-y)/0.055);
+   zFront=zFront*(1-wPubis)+(-0.022)*wPubis;
+   const t=Math.max(.02,Math.min(.98,(z-m[0])/Math.max(.01,m[1]-m[0])));
+   z=f[0]+t*(zFront-f[0])-.004*(2*t-1);
+   [x,y,z]=clampToSkin(x,y,z,.0025);
+  }
   else [x,y,z]=pelvicBowelPosition(x,y,z,p.name);
   for(const [k,v] of [x,y,z].entries()){out[i+k]=v;mn[k]=Math.min(mn[k],v);mx[k]=Math.max(mx[k],v);}
  }

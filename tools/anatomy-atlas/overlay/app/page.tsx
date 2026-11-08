@@ -67,7 +67,7 @@ export default function Home(){
  const searchBox=useRef<HTMLDivElement>(null);
  useEffect(()=>{
   const abort=new AbortController();
-  const json=(path:string)=>readAtlas(new URL(asset(path+'?v=traube5spatial')),abort.signal);
+  const json=(path:string)=>readAtlas(new URL(asset(path+'?v=traube6spatial')),abort.signal);
   primeExterior(bodyKind,abort.signal);
   setAtlas(null);setProgress(0);setError('');setChosen(null);setTour(null);setRemovedStack([]);setState(s=>({...initial,reset:s.reset+1}));
   try{localStorage.setItem('traube-atlas-corpo',bodyKind);}catch{}
