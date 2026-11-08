@@ -206,13 +206,19 @@
   }
 
   function cat(data, compact = false) {
-    return `<section class="dl-card dl-cat ${compact ? "dl-cat-compact" : ""}">
-      <a class="dl-daily-challenge" href="/desafio-diario/" style="display:flex;min-height:100%;height:100%;box-sizing:border-box;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px;padding:24px;text-decoration:none;color:inherit;border-radius:inherit">
-        <span class="dl-heading-icon" aria-hidden="true">${icon("target")}</span>
-        <strong style="font-size:clamp(20px,2vw,30px);line-height:1.2">Desafio Diário</strong>
-        <span>Um caso por dia para treinar seu raciocínio clínico.</span>
-        <span class="dl-daily-cta" style="display:inline-flex;min-height:42px;align-items:center;padding:8px 16px;border-radius:10px;background:var(--ui-pill-gradient,linear-gradient(110deg,#174b91,#2388e7));color:#fff;font-weight:700">Resolver desafio →</span>
-      </a>
+    return `<section class="dl-card dl-cat dl-cat-playable ${compact ? "dl-cat-compact" : ""}" aria-label="Desafio Diário">
+      <div class="dl-daily-minihead">
+        <div class="dl-daily-miniheading">
+          <span class="dl-heading-icon" aria-hidden="true">${icon("target")}</span>
+          <div><small>CASO CLÍNICO DO DIA</small><h3>Desafio Diário</h3></div>
+        </div>
+        <a href="/desafio-diario/" class="dl-daily-open-full">Ver página completa</a>
+      </div>
+      <p class="dl-daily-minidesc">Analise as pistas, digite seu diagnóstico e acompanhe o resultado sem sair do Dashboard.</p>
+      <iframe class="dl-daily-frame" data-daily-frame
+        title="Jogar o Desafio Diário diretamente no Dashboard"
+        src="/desafio-diario/?embed=dashboard"
+        loading="lazy"></iframe>
     </section>`;
   }
 
@@ -280,7 +286,28 @@
       const data = snap();
       const bodyHtml = layout1(data);
       const html = bodyHtml;
-      if (html && root.innerHTML !== html) root.innerHTML = html;
+      if (html && root.innerHTML !== html) {
+        // Re-renderize apenas os outros cards: substituir o iframe durante a
+        // tentativa reiniciaria a interface e apagaria a resposta digitada.
+        const existingGrid = root.querySelector(".dl-layout-1");
+        const existingFrame = existingGrid?.querySelector("[data-daily-frame]");
+        if (!existingFrame) {
+          root.innerHTML = html;
+        } else {
+          const staging = document.createElement("div");
+          staging.innerHTML = html;
+          const nextGrid = staging.querySelector(".dl-layout-1");
+          if (!nextGrid || nextGrid.children.length !== existingGrid.children.length) {
+            root.innerHTML = html;
+          } else {
+            Array.from(existingGrid.children).forEach((child, index) => {
+              if (child.classList.contains("dl-cat")) return;
+              const next = nextGrid.children[index];
+              if (next && child.outerHTML !== next.outerHTML) child.replaceWith(next);
+            });
+          }
+        }
+      }
       syncDashboardHeading();
       root.hidden = false;
       root.dataset.rendered = "true";
@@ -371,6 +398,15 @@
       }
     });
   }
+  window.addEventListener("message", (event) => {
+    if (event.origin !== window.location.origin || event.data?.type !== "traube:daily-challenge:resize") return;
+    const dailyFrame = root.querySelector("[data-daily-frame]");
+    if (!dailyFrame || event.source !== dailyFrame.contentWindow) return;
+    const desiredHeight = Number(event.data.height);
+    if (!Number.isFinite(desiredHeight)) return;
+    dailyFrame.style.height = Math.min(2400, Math.max(260, Math.ceil(desiredHeight))) + "px";
+  });
+
   root.addEventListener("click", (event) => {
     const button = event.target.closest("[data-dl-day]");
     if (!button) return;

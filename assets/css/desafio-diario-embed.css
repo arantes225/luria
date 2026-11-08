@@ -1,0 +1,84 @@
+/* Apenas /desafio-diario/?embed=dashboard; não afeta a página completa. */
+html:has(body[data-daily-embed="dashboard"]),
+body[data-daily-embed="dashboard"]{
+  overflow-x:hidden!important;
+  overflow-y:hidden!important;
+  min-height:0!important;
+  background:transparent!important;
+}
+body[data-daily-embed="dashboard"] .sidebar,
+body[data-daily-embed="dashboard"] #sidebar-backdrop,
+body[data-daily-embed="dashboard"] .topbar,
+body[data-daily-embed="dashboard"] .traube-page-spotlight,
+body[data-daily-embed="dashboard"] .daily-side,
+body[data-daily-embed="dashboard"] .daily-hero{
+  display:none!important;
+}
+body[data-daily-embed="dashboard"] .app-shell,
+body[data-daily-embed="dashboard"] .main,
+body[data-daily-embed="dashboard"] .page.daily-page{
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  min-height:0!important;
+  height:auto!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+body[data-daily-embed="dashboard"] .daily-shell{
+  display:block!important;
+  margin:0!important;
+  padding:0!important;
+  min-height:0!important;
+}
+body[data-daily-embed="dashboard"] .daily-content{
+  display:block!important;
+  margin:0!important;
+}
+body[data-daily-embed="dashboard"] .daily-content[hidden]{display:none!important;}
+body[data-daily-embed="dashboard"] .daily-main-col{
+  display:grid!important;
+  gap:12px!important;
+  min-width:0!important;
+}
+body[data-daily-embed="dashboard"] .daily-card,
+body[data-daily-embed="dashboard"] .daily-answer-card,
+body[data-daily-embed="dashboard"] .daily-result,
+body[data-daily-embed="dashboard"] .daily-state-card{
+  padding:14px!important;
+  border-radius:12px!important;
+  box-shadow:none!important;
+}
+body[data-daily-embed="dashboard"] .daily-state-card{min-height:240px!important}
+body[data-daily-embed="dashboard"] .daily-card-titlebar{flex-wrap:wrap}
+body[data-daily-embed="dashboard"] .daily-clue-inner{padding:11px!important}
+body[data-daily-embed="dashboard"] .daily-clue-copy p{font-size:13px!important}
+body[data-daily-embed="dashboard"] .daily-answer-row input{min-width:0}
+@media(max-width:520px){
+  body[data-daily-embed="dashboard"] .daily-clue-row{
+    grid-template-columns:76px minmax(0,1fr)!important;
+    gap:8px!important;
+  }
+  body[data-daily-embed="dashboard"] .daily-track-step{
+    grid-template-columns:30px minmax(0,1fr)!important;
+    gap:5px!important;
+  }
+  body[data-daily-embed="dashboard"] .daily-track-step span{
+    width:28px!important;
+    height:28px!important;
+  }
+  body[data-daily-embed="dashboard"] .daily-track-step::before,
+  body[data-daily-embed="dashboard"] .daily-track-step::after{left:13px!important}
+  body[data-daily-embed="dashboard"] .daily-track-step small{font-size:11px!important}
+  body[data-daily-embed="dashboard"] .daily-answer-row{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+  }
+  body[data-daily-embed="dashboard"] .daily-answer-row button{width:100%!important}
+  body[data-daily-embed="dashboard"] .daily-result{grid-template-columns:32px minmax(0,1fr)!important}
+  body[data-daily-embed="dashboard"] .daily-result-icon{width:32px!important;height:32px!important}
+}
