@@ -306,7 +306,8 @@
       if (progress.status === "won" || progress.status === "lost") {
         await loadTerminalResult();
       } else {
-        setTimeout(() => els.answer?.focus(), 80);
+        // Em uma minipágina, não roubar o foco do Dashboard ao carregar.
+        if (document.body.dataset.dailyEmbed !== "dashboard") setTimeout(() => els.answer?.focus(), 80);
       }
     } catch (error) {
       console.error("Desafio Diário:", error);
