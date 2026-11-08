@@ -264,6 +264,22 @@ test('login unificado: sem conta liberada ou com token inválido não grava nada
   assert.equal(r2.headers.get('Location'), 'https://site.exemplo/agencia/?instagram=erro'); assert.equal(db2.salvas.length, 0);
 });
 
+test('login unificado: sem granular_scopes usa o ID configurado e confirma com o Meta', async () => {
+  const { tratarCallback } = await carregar('agencia-handlers.mjs');
+  const mk = (perfilResp) => criarFetch({
+    'GET /v26.0/oauth/access_token': resp({ access_token: 'T' }),
+    'GET /v26.0/debug_token': resp({ data: { is_valid: true, granular_scopes: [{ scope: 'instagram_basic', target_ids: [] }] } }),
+    'GET /v26.0/178999': perfilResp,
+  });
+  const db1 = criarDbFalso(); db1.configValor = async () => '178999';
+  const r1 = await tratarCallback(reqCb('?code=a&state=ok'), { env: envCb, db: db1, fetchFn: mk(resp({ username: 'traube.med' })), agora: agoraFixo });
+  assert.equal(r1.headers.get('Location'), 'https://site.exemplo/agencia/?instagram=conectado');
+  assert.equal(db1.salvas[0].ig_user_id, '178999'); assert.equal(db1.salvas[0].username, 'traube.med');
+  const db2 = criarDbFalso(); db2.configValor = async () => '178999';
+  const r2 = await tratarCallback(reqCb('?code=a&state=ok'), { env: envCb, db: db2, fetchFn: mk(resp({ error: { message: 'sem acesso' } }, 400)), agora: agoraFixo });
+  assert.equal(r2.headers.get('Location'), 'https://site.exemplo/agencia/?instagram=sem-conta'); assert.equal(db2.salvas.length, 0);
+});
+
 test('publicação com conexão unificada usa graph.facebook.com e nunca tenta renovar', async () => {
   const { tratarPublicar } = await carregar('agencia-handlers.mjs');
   const f = fetchPublica(); const db = criarDbFalso({ posts: [postOk], conexao: conUnif });
