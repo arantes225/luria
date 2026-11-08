@@ -3,6 +3,9 @@
 
 export const IG_HOST = "https://graph.instagram.com";
 export const IG_OAUTH_HOST = "https://api.instagram.com";
+// Login unificado (apps novos da Meta): Login do Facebook para Empresas, token de usuário do sistema que não expira.
+export const FB_HOST = "https://graph.facebook.com";
+export const ESCOPOS_UNIFICADO = "instagram_basic,instagram_content_publish";
 export const VERSAO_PADRAO = "v26.0";
 export const ESCOPOS = "instagram_business_basic,instagram_business_content_publish";
 
@@ -56,6 +59,48 @@ export async function perfil({ fetchFn, token, versao = VERSAO_PADRAO }) {
   return { userId: j.user_id ? String(j.user_id) : null, username: j.username ? String(j.username) : null };
 }
 
+// Conexões antigas (login do Instagram) guardam escopos instagram_business_*; as do login unificado, instagram_*.
+export function ehUnificada(con) {
+  return !!con && !String(con.escopos || "").includes("instagram_business_");
+}
+export function hostDaConexao(con) { return ehUnificada(con) ? FB_HOST : IG_HOST; }
+
+// Login unificado: troca o código pelo token de usuário do sistema (sem expiração, sem renovação).
+export async function trocarCodigoUnificado({ fetchFn, appId, appSecret, redirectUri, code, versao = VERSAO_PADRAO }) {
+  const u = new URL(FB_HOST + "/" + versao + "/oauth/access_token");
+  u.searchParams.set("client_id", appId);
+  u.searchParams.set("client_secret", appSecret);
+  u.searchParams.set("redirect_uri", redirectUri);
+  u.searchParams.set("code", code);
+  const j = await lerJson(await fetchFn(u.toString()));
+  if (!j.access_token) throw new ErroInstagram("Resposta de autorização sem token.");
+  return { token: String(j.access_token) };
+}
+
+// Descobre a(s) conta(s) do Instagram liberadas para o token (granular_scopes do debug_token).
+export async function contasDoToken({ fetchFn, appId, appSecret, token, versao = VERSAO_PADRAO }) {
+  const u = new URL(FB_HOST + "/" + versao + "/debug_token");
+  u.searchParams.set("input_token", token);
+  u.searchParams.set("access_token", appId + "|" + appSecret);
+  const j = await lerJson(await fetchFn(u.toString()));
+  const d = (j && j.data) || {};
+  if (d.is_valid === false) throw new ErroInstagram("O token recebido não é válido.");
+  const ids = new Set();
+  for (const g of Array.isArray(d.granular_scopes) ? d.granular_scopes : []) {
+    if ((g.scope === "instagram_basic" || g.scope === "instagram_content_publish") && Array.isArray(g.target_ids)) {
+      for (const id of g.target_ids) ids.add(String(id));
+    }
+  }
+  return [...ids];
+}
+
+export async function perfilConta({ fetchFn, token, igUserId, versao = VERSAO_PADRAO }) {
+  const u = new URL(FB_HOST + "/" + versao + "/" + igUserId);
+  u.searchParams.set("fields", "username");
+  const j = await lerJson(await fetchFn(u.toString(), { headers: { Authorization: "Bearer " + token } }));
+  return { username: j.username ? String(j.username) : null };
+}
+
 export function urlsDaMidia(post) {
   return Array.isArray(post.midia) ? post.midia.filter((u) => typeof u === "string") : [];
 }
@@ -78,8 +123,8 @@ export function validarMidia(post) {
   return "";
 }
 
-async function criarContainer({ fetchFn, token, igUserId, versao, corpo }) {
-  const j = await lerJson(await fetchFn(IG_HOST + "/" + versao + "/" + igUserId + "/media", {
+async function criarContainer({ fetchFn, token, igUserId, versao, corpo, host = IG_HOST }) {
+  const j = await lerJson(await fetchFn(host + "/" + versao + "/" + igUserId + "/media", {
     method: "POST",
     headers: { Authorization: "Bearer " + token, "Content-Type": "application/json" },
     body: JSON.stringify(corpo),
@@ -88,9 +133,9 @@ async function criarContainer({ fetchFn, token, igUserId, versao, corpo }) {
   return String(j.id);
 }
 
-async function esperarContainer({ fetchFn, token, versao, id, tentativas, esperaMs, dormir }) {
+async function esperarContainer({ fetchFn, token, versao, id, tentativas, esperaMs, dormir, host = IG_HOST }) {
   for (let i = 0; i < tentativas; i++) {
-    const u = new URL(IG_HOST + "/" + versao + "/" + id);
+    const u = new URL(host + "/" + versao + "/" + id);
     u.searchParams.set("fields", "status_code");
     const j = await lerJson(await fetchFn(u.toString(), { headers: { Authorization: "Bearer " + token } }));
     if (j.status_code === "FINISHED") return;
@@ -101,13 +146,13 @@ async function esperarContainer({ fetchFn, token, versao, id, tentativas, espera
 }
 
 // Publica um post. Lança ErroInstagram em qualquer falha. Nunca repete sozinho.
-export async function publicarPost({ fetchFn, token, igUserId, versao = VERSAO_PADRAO, post, tentativas = 20, esperaMs = 4000, dormir = dormirPadrao }) {
+export async function publicarPost({ fetchFn, token, igUserId, versao = VERSAO_PADRAO, host = IG_HOST, post, tentativas = 20, esperaMs = 4000, dormir = dormirPadrao }) {
   const problema = validarMidia(post);
   if (problema) throw new ErroInstagram(problema);
   const urls = urlsDaMidia(post);
   const legenda = typeof post.legenda === "string" ? post.legenda : "";
-  const base = { fetchFn, token, igUserId, versao };
-  const espera = { fetchFn, token, versao, tentativas, esperaMs, dormir };
+  const base = { fetchFn, token, igUserId, versao, host };
+  const espera = { fetchFn, token, versao, tentativas, esperaMs, dormir, host };
   let container;
   if (post.formato === "reel" || post.formato === "video") {
     container = await criarContainer({ ...base, corpo: { media_type: "REELS", video_url: urls[0], caption: legenda } });
@@ -125,7 +170,7 @@ export async function publicarPost({ fetchFn, token, igUserId, versao = VERSAO_P
     container = await criarContainer({ ...base, corpo: { image_url: urls[0], caption: legenda } });
     await esperarContainer({ ...espera, id: container });
   }
-  const pub = await lerJson(await fetchFn(IG_HOST + "/" + versao + "/" + igUserId + "/media_publish", {
+  const pub = await lerJson(await fetchFn(host + "/" + versao + "/" + igUserId + "/media_publish", {
     method: "POST",
     headers: { Authorization: "Bearer " + token, "Content-Type": "application/json" },
     body: JSON.stringify({ creation_id: container }),
@@ -133,7 +178,7 @@ export async function publicarPost({ fetchFn, token, igUserId, versao = VERSAO_P
   if (!pub.id) throw new ErroInstagram("O Instagram não confirmou a publicação.");
   let permalink = null;
   try {
-    const u = new URL(IG_HOST + "/" + versao + "/" + pub.id);
+    const u = new URL(host + "/" + versao + "/" + pub.id);
     u.searchParams.set("fields", "permalink");
     const info = await lerJson(await fetchFn(u.toString(), { headers: { Authorization: "Bearer " + token } }));
     if (typeof info.permalink === "string" && info.permalink.startsWith("https://")) permalink = info.permalink;

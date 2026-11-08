@@ -41,6 +41,7 @@
     aviso: "",
     ig: { carregado: false },
     appId: "",
+    configId: "",
     msgMidia: ""
   };
   const MIDIA_BUCKET = "marketing_videos_temp";
@@ -51,7 +52,8 @@
     "estado-invalido": "O link de conexão expirou ou já foi usado. Clique em Conectar Instagram de novo.",
     "erro-config": "O servidor ainda não tem as chaves do app da Meta.",
     erro: "Não foi possível conectar o Instagram. Tente de novo.",
-    invalido: "Não foi possível conectar o Instagram. Tente de novo."
+    invalido: "Não foi possível conectar o Instagram. Tente de novo.",
+    "sem-conta": "O login funcionou, mas nenhuma conta do Instagram foi liberada. Conecte de novo e marque a conta de estudo."
   };
 
   function sbClient() { return window.supabaseClient || window.sb; }
@@ -247,9 +249,12 @@
       state.ig = st.error || !st.data ? { carregado: true, erro: true } : Object.assign({ carregado: true }, st.data);
     } catch (_) { state.ig = { carregado: true, erro: true }; }
     try {
-      const c = await sb.from("agencia_config").select("observacao").eq("id", "instagram_app_id").maybeSingle();
-      state.appId = ((c && c.data && c.data.observacao) || "").trim();
-    } catch (_) { state.appId = ""; }
+      const c = await sb.from("agencia_config").select("id,observacao").in("id", ["instagram_app_id", "instagram_config_id"]);
+      const v = {};
+      ((c && c.data) || []).forEach((l) => { v[l.id] = String(l.observacao || "").trim(); });
+      state.appId = v.instagram_app_id || "";
+      state.configId = v.instagram_config_id || "";
+    } catch (_) { state.appId = ""; state.configId = ""; }
   }
   function lerAvisoInstagram() {
     try {
@@ -267,12 +272,18 @@
       const r = await sb.rpc("agencia_instagram_iniciar");
       if (r.error || !r.data) throw (r.error || new Error("sem state"));
       const base = String(sb.supabaseUrl || "").replace(/\/+$/, "");
+      const redirect = base + "/functions/v1/agencia-instagram-callback";
+      if (state.configId) {
+        // Login unificado (apps novos da Meta): Login do Facebook para Empresas com config_id.
+        const q = new URLSearchParams({
+          client_id: state.appId, config_id: state.configId, redirect_uri: redirect,
+          response_type: "code", override_default_response_type: "true", state: r.data, prompt: "login"
+        });
+        window.location.assign("https://www.facebook.com/dialog/oauth?" + q.toString());
+        return;
+      }
       const q = new URLSearchParams({
-        client_id: state.appId,
-        redirect_uri: base + "/functions/v1/agencia-instagram-callback",
-        response_type: "code",
-        scope: ESCOPOS_IG,
-        state: r.data
+        client_id: state.appId, redirect_uri: redirect, response_type: "code", scope: ESCOPOS_IG, state: r.data
       });
       window.location.assign("https://www.instagram.com/oauth/authorize?" + q.toString());
       return;
@@ -307,12 +318,14 @@
     if (ig.erro) { box.appendChild(el("p", { class: "ag-nota", text: "Não foi possível verificar a conexão com o Instagram." })); return; }
     if (ig.conectado) {
       box.appendChild(el("p", { class: "ag-nota", text: "Conectado" + (ig.username ? " como @" + ig.username : "") + "." }));
-      box.appendChild(el("p", { class: "ag-nota", text: "A conexão é renovada sozinha. Válida até " + fmtHora(ig.expira_em) + "." }));
+      const permanente = ig.expira_em && new Date(ig.expira_em).getUTCFullYear() >= 9000;
+      box.appendChild(el("p", { class: "ag-nota", text: permanente ? "Conexão permanente: não expira e não precisa renovar." : "A conexão é renovada sozinha. Válida até " + fmtHora(ig.expira_em) + "." }));
       box.appendChild(el("button", { class: "ag-btn", type: "button", disabled: state.ocupado, onclick: desconectarInstagram, text: "Desconectar" }));
       return;
     }
     box.appendChild(el("p", { class: "ag-nota", text: ig.expirado ? "A conexão expirou. Conecte de novo para publicar." : "Não conectado. Sem a conexão, nada é publicado." }));
     if (!state.appId) box.appendChild(el("p", { class: "ag-nota", text: "Falta o ID do app da Meta (configuração única)." }));
+    if (state.appId && !state.configId) box.appendChild(el("p", { class: "ag-nota", text: "Falta o ID da configuração do login (configuração única)." }));
     box.appendChild(el("button", { class: "ag-btn primario", type: "button", disabled: state.ocupado || !state.appId, onclick: conectarInstagram, text: "Conectar Instagram" }));
   }
 

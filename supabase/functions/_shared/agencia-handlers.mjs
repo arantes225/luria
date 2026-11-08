@@ -1,6 +1,7 @@
 // Manipuladores das Edge Functions da Agência TRAUBE. Sem imports de Deno: recebem as dependências (db, fetch, env, relógio).
 import {
-  ESCOPOS, ErroInstagram, VERSAO_PADRAO, perfil, publicarPost, renovarToken, tokenLongo, trocarCodigo, validarMidia,
+  ESCOPOS, ESCOPOS_UNIFICADO, ErroInstagram, VERSAO_PADRAO, contasDoToken, ehUnificada, hostDaConexao, perfil, perfilConta, publicarPost,
+  renovarToken, tokenLongo, trocarCodigo, trocarCodigoUnificado, validarMidia,
 } from "./agencia-instagram.mjs";
 
 const json = (corpo, status = 200) =>
@@ -62,7 +63,7 @@ export async function tratarPublicar(req, d) {
       const agora = d.agora().getTime();
       const resta = new Date(con.expira_em).getTime() - agora;
       const idade = agora - new Date(con.atualizado_em || con.conectado_em).getTime();
-      if (resta > 0 && resta < 14 * DIA && idade > DIA) {
+      if (!ehUnificada(con) && resta > 0 && resta < 14 * DIA && idade > DIA) {
         try {
           const r = await renovarToken({ fetchFn: d.fetchFn, token: con.access_token });
           con = { ...con, access_token: r.token, expira_em: new Date(agora + r.expiraEmSeg * 1000).toISOString() };
@@ -99,7 +100,7 @@ export async function tratarPublicar(req, d) {
     if (!con) { await falhar("O Instagram não está conectado. Conecte no painel da Agência."); continue; }
     if (new Date(con.expira_em).getTime() <= d.agora().getTime()) { await falhar("O token do Instagram expirou. Reconecte no painel da Agência."); continue; }
     try {
-      const r = await publicarPost({ fetchFn: d.fetchFn, token: con.access_token, igUserId: con.ig_user_id, versao, post: p, dormir: d.dormir });
+      const r = await publicarPost({ fetchFn: d.fetchFn, token: con.access_token, igUserId: con.ig_user_id, versao, host: hostDaConexao(con), post: p, dormir: d.dormir });
       const agora = d.agora().toISOString();
       await d.db.atualizarPost(p.id, { status_publicacao: "publicado", publicacao_id: r.id, publicacao_url: r.permalink, publicacao_erro: null, publicado_em: agora, atualizado_em: agora });
       await d.db.logar(p.id, "info", "Publicado no Instagram (id " + r.id + ").");
@@ -126,6 +127,25 @@ export async function tratarCallback(req, d) {
   const appId = d.env("META_APP_ID"), appSecret = d.env("META_APP_SECRET"), base = d.env("SUPABASE_URL");
   if (!appId || !appSecret || !base) return volta("erro-config");
   const redirectUri = base.replace(/\/+$/, "") + "/functions/v1/agencia-instagram-callback";
+  const versao = d.env("IG_API_VERSION") || VERSAO_PADRAO;
+  if ((d.env("IG_LOGIN") || "unificado") === "unificado") {
+    try {
+      const t = await trocarCodigoUnificado({ fetchFn: d.fetchFn, appId, appSecret, redirectUri, code, versao });
+      const contas = await contasDoToken({ fetchFn: d.fetchFn, appId, appSecret, token: t.token, versao });
+      if (!contas.length) return volta("sem-conta");
+      const igUserId = contas[0];
+      const p = await perfilConta({ fetchFn: d.fetchFn, token: t.token, igUserId, versao });
+      await d.db.salvarConexao({
+        ig_user_id: igUserId, username: p.username, access_token: t.token, escopos: ESCOPOS_UNIFICADO,
+        expira_em: "9999-12-31T00:00:00.000Z", conectado_em: d.agora().toISOString(),
+      });
+      await d.db.atividade("conectou o Instagram" + (p.username ? " (@" + p.username + ")" : ""), "");
+      return volta("conectado");
+    } catch (e) {
+      await d.db.logar("_conexao", "erro", "Falha ao conectar o Instagram: " + msgSegura(e));
+      return volta("erro");
+    }
+  }
   try {
     const curto = await trocarCodigo({ fetchFn: d.fetchFn, appId, appSecret, redirectUri, code });
     const longo = await tokenLongo({ fetchFn: d.fetchFn, appSecret, tokenCurto: curto.tokenCurto });
