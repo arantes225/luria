@@ -19,8 +19,8 @@
   <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/traube-logo.css?v=20261103-v1">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-learning-hubs">
-  <link rel="stylesheet" href="/assets/css/anatomia.css?v=6">
-  <link rel="stylesheet" href="/aprender/anatomia/laboratorio/lab.css?v=2">
+  <link rel="stylesheet" href="/assets/css/anatomia.css?v=7">
+  <link rel="stylesheet" href="/aprender/anatomia/laboratorio/lab.css?v=3">
   <script defer src="/assets/js/traube-brand-v5.js?v=20261025-review-fixes3"></script>
   <link rel="canonical" href="/aprender/anatomia/">
 </head>
@@ -34,23 +34,26 @@
       <div class="page">
         <header class="topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
-          <div class="page-heading"><span class="eyebrow">APRENDER</span><h1>Sala de Anatomia</h1></div>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow>APRENDER</span><h1 data-page-title>Sala de Anatomia</h1></div>
         </header>
 
-        <section class="anatomy-room" aria-label="Sala de Anatomia">
-          <section class="traube-page-spotlight" aria-label="Sala de Anatomia">
-            <div class="traube-page-spotlight-copy">
-              <strong>Sala de Anatomia</strong>
-              <small class="traube-page-spotlight-helper">Atlas 3D do corpo humano: selecione, corte, remova estruturas e estude por sistemas.</small>
-            </div>
-          </section>
+        <section class="traube-page-spotlight" aria-label="Sala de Anatomia">
+          <div class="traube-page-spotlight-copy">
+            <strong>Sala de Anatomia</strong>
+            <small class="traube-page-spotlight-helper">Atlas 3D do corpo humano: selecione, corte, remova estruturas e estude por sistemas.</small>
+          </div>
+        </section>
 
+        <a href="/aprender/" class="traube-back-button" aria-label="Voltar para Aprender"><span>← Voltar para Aprender</span></a>
+
+        <section class="anatomy-room" aria-label="Sala de Anatomia">
           <div class="anatomy-room-bar">
             <div class="anatomy-room-tabs" role="tablist" aria-label="Modos da Sala de Anatomia">
               <button type="button" role="tab" id="tab-atlas" aria-controls="panel-atlas" aria-selected="true" data-room-tab="atlas">Atlas 3D</button>
               <button type="button" role="tab" id="tab-micro" aria-controls="panel-micro" aria-selected="false" data-room-tab="micro" tabindex="-1">Microscopia</button>
               <button type="button" role="tab" id="tab-quiz" aria-controls="panel-quiz" aria-selected="false" data-room-tab="quiz" tabindex="-1">Desafio</button>
               <a class="anatomy-room-link" href="/aprender/anatomia/coracao/">Coração em detalhe</a>
+              <a class="anatomy-room-link" href="/aprender/anatomia/orgaos/">Órgãos em detalhe</a>
             </div>
             <div class="anatomy-room-actions">
               <button type="button" class="anatomy-room-ghost" data-room-fullscreen>Tela cheia</button>
