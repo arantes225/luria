@@ -14,7 +14,7 @@ function criarFetch(rotas) {
   const chamadas = [];
   const fn = async (url, init = {}) => {
     const u = new URL(url); const metodo = (init.method || 'GET').toUpperCase();
-    chamadas.push({ metodo, caminho: u.pathname, query: u.search, corpo: init.body, auth: init.headers && init.headers.Authorization });
+    chamadas.push({ metodo, host: u.host, caminho: u.pathname, query: u.search, corpo: init.body, auth: init.headers && init.headers.Authorization });
     for (const [chave, h] of Object.entries(rotas)) {
       const [m, ...resto] = chave.split(' '); const frag = resto.join(' ');
       if (m === metodo && (u.pathname + u.search).includes(frag)) return typeof h === 'function' ? h(url, init) : h;
@@ -111,7 +111,8 @@ function criarDbFalso({ posts = [], conexao = null, estadoOk = true } = {}) {
 const reqPublicar = (segredo = 'seg') => new Request('https://x/f', { method: 'POST', headers: segredo ? { 'x-agencia-secret': segredo } : {} });
 const agoraFixo = () => new Date('2026-11-10T12:00:00Z');
 const postOk = { id: 'p1', titulo: 'T', rede: 'instagram', formato: 'feed', legenda: 'L', midia: [jpg(1)] };
-const conOk = { ig_user_id: 'IG1', access_token: TOKEN, expira_em: '2027-01-01T00:00:00Z', atualizado_em: '2026-11-09T00:00:00Z', conectado_em: '2026-11-01T00:00:00Z' };
+const conOk = { ig_user_id: 'IG1', access_token: TOKEN, escopos: 'instagram_business_basic,instagram_business_content_publish', expira_em: '2027-01-01T00:00:00Z', atualizado_em: '2026-11-09T00:00:00Z', conectado_em: '2026-11-01T00:00:00Z' };
+const conUnif = { ig_user_id: 'IG1', access_token: TOKEN, escopos: 'instagram_basic,instagram_content_publish', expira_em: '9999-12-31T00:00:00.000Z', atualizado_em: '2026-09-01T00:00:00Z', conectado_em: '2026-09-01T00:00:00Z' };
 const fetchPublica = () => criarFetch({
   'POST /v26.0/IG1/media_publish': resp({ id: 'M1' }), 'POST /v26.0/IG1/media': resp({ id: 'C1' }),
   'GET /v26.0/C1': resp({ status_code: 'FINISHED' }), 'GET /v26.0/M1': resp({ permalink: 'https://www.instagram.com/p/z/' }),
@@ -186,6 +187,7 @@ test('token perto de vencer é renovado sozinho; renovação com falha não derr
 
 const reqCb = (qs) => new Request('https://x.supabase.co/functions/v1/agencia-instagram-callback' + qs);
 const envCb = (k) => ({ META_APP_ID: 'APP', META_APP_SECRET: 'SEGREDO', SUPABASE_URL: 'https://x.supabase.co', SITE_URL: 'https://site.exemplo' })[k];
+const envCbLegado = (k) => (k === 'IG_LOGIN' ? 'instagram' : envCb(k));
 
 test('callback recusa state inexistente, repetido ou pedido negado', async () => {
   const { tratarCallback } = await carregar('agencia-handlers.mjs');
@@ -207,7 +209,7 @@ test('callback guarda a conexão sem expor o token e o state só vale uma vez', 
     'GET /v26.0/me': resp({ user_id: '77', username: 'traube.med' }),
   });
   const db = criarDbFalso();
-  const dep = { env: envCb, db, fetchFn: f, agora: agoraFixo };
+  const dep = { env: envCbLegado, db, fetchFn: f, agora: agoraFixo };
   const r = await tratarCallback(reqCb('?code=abc%23_&state=ok'), dep);
   const loc = r.headers.get('Location');
   assert.equal(loc, 'https://site.exemplo/agencia/?instagram=conectado');
@@ -224,8 +226,51 @@ test('callback com falha da Meta redireciona com erro e não grava nada', async 
   const { tratarCallback } = await carregar('agencia-handlers.mjs');
   const f = criarFetch({ 'POST /oauth/access_token': resp({ error: { message: 'Invalid verification code' } }, 400) });
   const db = criarDbFalso();
-  const r = await tratarCallback(reqCb('?code=abc&state=ok'), { env: envCb, db, fetchFn: f, agora: agoraFixo });
+  const r = await tratarCallback(reqCb('?code=abc&state=ok'), { env: envCbLegado, db, fetchFn: f, agora: agoraFixo });
   assert.equal(r.headers.get('Location'), 'https://site.exemplo/agencia/?instagram=erro');
   assert.equal(db.salvas.length, 0); assert.equal(db.logs[0].nivel, 'erro');
   assert.ok(!JSON.stringify(db.logs).includes('SEGREDO'));
+});
+
+// ---- login unificado (apps novos da Meta) ----
+test('login unificado: troca o código, descobre a conta, guarda token sem expiração e não vaza segredo', async () => {
+  const { tratarCallback } = await carregar('agencia-handlers.mjs');
+  const f = criarFetch({
+    'GET /v26.0/oauth/access_token': resp({ access_token: 'SUAT-SECRETO' }),
+    'GET /v26.0/debug_token': resp({ data: { is_valid: true, granular_scopes: [{ scope: 'instagram_basic', target_ids: ['178414'] }, { scope: 'instagram_content_publish', target_ids: ['178414'] }] } }),
+    'GET /v26.0/178414': resp({ username: 'traube.med' }),
+  });
+  const db = criarDbFalso();
+  const r = await tratarCallback(reqCb('?code=abc%23_&state=ok'), { env: envCb, db, fetchFn: f, agora: agoraFixo });
+  assert.equal(r.headers.get('Location'), 'https://site.exemplo/agencia/?instagram=conectado');
+  assert.ok(f.chamadas.every((c) => c.host === 'graph.facebook.com'));
+  assert.match(f.chamadas[0].query, /client_id=APP/); assert.match(f.chamadas[0].query, /code=abc(&|$)/);
+  assert.match(f.chamadas[1].query, /input_token=SUAT-SECRETO/); assert.match(f.chamadas[1].query, /access_token=APP%7CSEGREDO/);
+  const c = db.salvas[0];
+  assert.equal(c.ig_user_id, '178414'); assert.equal(c.username, 'traube.med'); assert.equal(c.access_token, 'SUAT-SECRETO');
+  assert.equal(c.escopos, 'instagram_basic,instagram_content_publish'); assert.equal(c.expira_em, '9999-12-31T00:00:00.000Z');
+  assert.ok(!r.headers.get('Location').includes('SUAT') && !JSON.stringify(db.atividades).includes('SUAT'));
+});
+
+test('login unificado: sem conta liberada ou com token inválido não grava nada', async () => {
+  const { tratarCallback } = await carregar('agencia-handlers.mjs');
+  const semConta = criarFetch({ 'GET /v26.0/oauth/access_token': resp({ access_token: 'T' }), 'GET /v26.0/debug_token': resp({ data: { is_valid: true, granular_scopes: [] } }) });
+  const db1 = criarDbFalso();
+  const r1 = await tratarCallback(reqCb('?code=a&state=ok'), { env: envCb, db: db1, fetchFn: semConta, agora: agoraFixo });
+  assert.equal(r1.headers.get('Location'), 'https://site.exemplo/agencia/?instagram=sem-conta'); assert.equal(db1.salvas.length, 0);
+  const invalido = criarFetch({ 'GET /v26.0/oauth/access_token': resp({ error: { message: 'Invalid code' } }, 400) });
+  const db2 = criarDbFalso();
+  const r2 = await tratarCallback(reqCb('?code=a&state=ok'), { env: envCb, db: db2, fetchFn: invalido, agora: agoraFixo });
+  assert.equal(r2.headers.get('Location'), 'https://site.exemplo/agencia/?instagram=erro'); assert.equal(db2.salvas.length, 0);
+});
+
+test('publicação com conexão unificada usa graph.facebook.com e nunca tenta renovar', async () => {
+  const { tratarPublicar } = await carregar('agencia-handlers.mjs');
+  const f = fetchPublica(); const db = criarDbFalso({ posts: [postOk], conexao: conUnif });
+  const dep = { env: (k) => ({ AGENCIA_CRON_SECRET: 'seg', AGENCIA_MODO: 'real' })[k], db, fetchFn: f, agora: agoraFixo, dormir: semEspera };
+  const j = await (await tratarPublicar(reqPublicar(), dep)).json();
+  assert.equal(j.resultado[0].status, 'publicado');
+  assert.ok(f.chamadas.length > 0 && f.chamadas.every((c) => c.host === 'graph.facebook.com'));
+  assert.ok(f.chamadas.every((c) => !c.caminho.includes('refresh_access_token')));
+  assert.equal(db.salvas.length, 0);
 });
