@@ -3,7 +3,7 @@
 // paleta por tecido em português; nomes das estruturas vêm de pt-names.json.
 export type SystemId = 'skeletal'|'muscular'|'arterial'|'venous'|'nervous'|'digestive'|'respiratory'|'urinary'|'reproductive'|'lymphatic'|'endocrine'|'integumentary'|'connective'|'sensory'|'cardiac'|'brain'|'borrowed'|'donor-muscle'|'mammary'|'adapted-muscle';
 export const SYSTEMS: {id:SystemId;name:string;color:string;description:string}[] = [
- {id:'adapted-muscle',name:'Músculos adaptados',color:'#b84c42',description:'Malhas BodyParts3D da referência masculina, ajustadas individualmente aos ossos do corpo feminino por rotação, translação e escala uniforme. Representação adaptada com limites de encaixe; não é uma segmentação muscular feminina.'},
+ {id:'adapted-muscle',name:'Músculos adaptados',color:'#b84c42',description:'Malhas BodyParts3D da referência masculina, ajustadas aos ossos do corpo feminino. A parede abdominal acompanha o envelope da pele e os marcos do púbis e esterno. Representação adaptada com limites de encaixe; não é uma segmentação muscular feminina.'},
  {id:'skeletal',name:'Esqueleto',color:'#ecdfc4',description:'Os ossos formam a estrutura de sustentação do corpo, protegem órgãos e servem de inserção para os músculos. A medula óssea armazena minerais e produz células do sangue.'},
  {id:'muscular',name:'Músculos',color:'#b84c42',description:'Os músculos esqueléticos produzem movimento ao tracionar suas inserções. Com os tendões, movem articulações, estabilizam a postura e produzem calor.'},
  {id:'cardiac',name:'Coração',color:'#a63f3a',description:'O coração é uma bomba muscular de quatro câmaras. Suas valvas mantêm o sangue em sentido único pelas circulações pulmonar e sistêmica.'},

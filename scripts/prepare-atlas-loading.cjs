@@ -26,7 +26,7 @@ function repack(directory, name) {
     let buffers = [], offset = 0;
     const flush = () => {
       if (!offset) return;
-      const key = name + "-traube3" + "-system-" + chunks.length + ".bin";
+      const key = name + "-traube4spatial" + "-system-" + chunks.length + ".bin";
       const bin = Buffer.concat(buffers, offset), gzip = gzipSync(bin);
       fs.writeFileSync(path.join(directory, key), bin);
       fs.writeFileSync(path.join(directory, key + ".gz"), gzip);
