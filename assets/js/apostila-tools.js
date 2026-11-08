@@ -43,126 +43,144 @@
    Compartilhado entre o leitor JSON e as apostilas HTML tradicionais. */
 body[data-page="aprender"] .book-main {
   gap: clamp(18px, 2.8vw, 30px) !important;
+  background: #ffffff !important;
 }
 body[data-page="aprender"] .book-main :is(.book-section,.mindmap-section) {
+  border: 1px solid #e2e8f0 !important;
   border-top: 3px solid color-mix(in srgb, var(--accent) 45%, var(--border)) !important;
-  background: linear-gradient(155deg,
-    color-mix(in srgb, var(--accent) 3%, var(--surface)) 0%,
-    var(--surface) 34%) !important;
+  background: #ffffff !important;
+  color: #1a202c !important;
+  box-shadow: 0 4px 16px rgba(15, 35, 66, 0.05) !important;
 }
 body[data-page="aprender"] .book-main .book-section {
   padding: clamp(26px, 2.8vw, 36px) clamp(21px, 3vw, 42px) !important;
+  background: #ffffff !important;
 }
 body[data-page="aprender"] .book-main .book-section > h2 {
-  margin: 0 0 25px !important;
+  margin: 0 0 26px !important;
   padding: 10px 14px !important;
   border: 0 !important;
   border-left: 4px solid var(--accent) !important;
   border-radius: 0 12px 12px 0;
   background: linear-gradient(90deg,
-    color-mix(in srgb, var(--accent) 11%, var(--surface)),
+    color-mix(in srgb, var(--accent) 10%, #ffffff),
     transparent 96%) !important;
   color: var(--accent-strong, var(--accent)) !important;
-  font-size: clamp(22px, 2.2vw, 25px) !important;
+  font-size: clamp(23px, 2.3vw, 26px) !important;
   line-height: 1.3 !important;
 }
 body[data-page="aprender"] .book-main .book-section > h3 {
-  margin: 30px 0 14px !important;
+  margin: 32px 0 16px !important;
   color: var(--accent-strong, var(--accent)) !important;
-  font-size: 18px !important;
+  font-size: 19.5px !important;
   line-height: 1.38 !important;
 }
 body[data-page="aprender"] .book-main .book-section > h4 {
-  margin: 23px 0 12px !important;
+  margin: 24px 0 14px !important;
   color: var(--accent) !important;
-  font-size: 16px !important;
+  font-size: 17px !important;
 }
 body[data-page="aprender"] .book-main :is(.book-section,.mindmap-section) :is(p,li,blockquote,dd) {
-  font-size: 15.6px !important;
-  line-height: 1.82 !important;
-  letter-spacing: 0 !important;
+  font-size: 17.5px !important;
+  line-height: 1.95 !important;
+  letter-spacing: 0.015em !important;
+  color: #1a202c !important;
+  text-align: justify !important;
+  text-align-last: auto !important;
 }
 body[data-page="aprender"] .book-main .book-section p {
-  margin-bottom: 22px !important;
+  margin-bottom: 28px !important;
 }
 body[data-page="aprender"] .book-main .book-section p + p {
-  margin-top: 4px !important;
+  margin-top: 6px !important;
 }
 body[data-page="aprender"] .book-main .book-section :is(ul,ol):not(.reference-list) {
-  margin-top: 15px !important;
-  margin-bottom: 24px !important;
+  margin-top: 16px !important;
+  margin-bottom: 26px !important;
 }
 body[data-page="aprender"] .book-main .book-section li {
-  margin-bottom: 10px !important;
-}
-body[data-page="aprender"] .book-main .book-section li + li {
-  margin-top: 5px !important;
-}
-body[data-page="aprender"] .book-main .book-section blockquote {
-  margin: 22px 0 !important;
-  padding: 12px 18px;
-  border-left: 3px solid var(--accent);
-  border-radius: 0 10px 10px 0;
-  background: color-mix(in srgb, var(--accent) 5%, var(--surface));
-}
-/* Os destaques ganham identidade sem transformar a página em um mosaico. */
-body[data-page="aprender"] .book-main :is(.book-mini,.drive-block,.clinical-card) {
-  border-left: 4px solid color-mix(in srgb, var(--success, #158064) 72%, var(--accent)) !important;
-  background: color-mix(in srgb, var(--success, #158064) 6%, var(--surface)) !important;
-}
-body[data-page="aprender"] .book-main .clinical-case {
-  border-left: 4px solid var(--accent) !important;
-  background: color-mix(in srgb, var(--accent) 6%, var(--surface)) !important;
-}
-body[data-page="aprender"] .book-main .book-callout:not(.book-alert) {
-  border-color: color-mix(in srgb, var(--gold, #d6a34a) 38%, var(--border)) !important;
-  background: color-mix(in srgb, var(--gold, #d6a34a) 9%, var(--surface)) !important;
-}
-body[data-page="aprender"] .book-main .book-cai-na-prova {
-  border-left: 4px solid var(--accent) !important;
-  background: color-mix(in srgb, var(--accent) 8%, var(--surface)) !important;
-}
-body[data-page="aprender"] .book-main .book-section :is(.book-mini,.flow-step,.mechanism-step,.reference-list,table,figure,.book-toc-block) :is(p,li,blockquote,dd) {
-  font-size: 13.5px !important;
-  line-height: 1.65 !important;
-  margin-bottom: 9px !important;
-}
-body[data-page="aprender"] .book-main .book-section :is(.book-callout,.drive-block,.clinical-card,.clinical-case) :is(p,li) {
-  font-size: 14.5px !important;
-  line-height: 1.72 !important;
   margin-bottom: 12px !important;
 }
+body[data-page="aprender"] .book-main .book-section li + li {
+  margin-top: 6px !important;
+}
+body[data-page="aprender"] .book-main .book-section blockquote {
+  margin: 24px 0 !important;
+  padding: 14px 20px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  background: color-mix(in srgb, var(--accent) 5%, #ffffff) !important;
+  color: #1a202c !important;
+}
+/* Os destaques ganham identidade e legibilidade com fundo branco garantido sem depender de var(--surface). */
+body[data-page="aprender"] .book-main :is(.book-mini,.drive-block,.clinical-card) {
+  border: 1px solid #e2e8f0 !important;
+  border-left: 4px solid color-mix(in srgb, var(--success, #158064) 72%, var(--accent)) !important;
+  background: color-mix(in srgb, var(--success, #158064) 5%, #ffffff) !important;
+  color: #1a202c !important;
+}
+body[data-page="aprender"] .book-main .clinical-case {
+  border: 1px solid #dbeafe !important;
+  border-left: 4px solid var(--accent) !important;
+  background: color-mix(in srgb, var(--accent) 6%, #ffffff) !important;
+  color: #1a202c !important;
+}
+body[data-page="aprender"] .book-main .book-callout:not(.book-alert) {
+  border: 1px solid color-mix(in srgb, var(--gold, #d6a34a) 38%, #e2e8f0) !important;
+  background: color-mix(in srgb, var(--gold, #d6a34a) 8%, #ffffff) !important;
+  color: #1a202c !important;
+}
+body[data-page="aprender"] .book-main .book-cai-na-prova {
+  border: 1px solid #dbeafe !important;
+  border-left: 4px solid var(--accent) !important;
+  background: color-mix(in srgb, var(--accent) 7%, #ffffff) !important;
+  color: #1a202c !important;
+}
+body[data-page="aprender"] .book-main .book-section :is(.book-mini,.flow-step,.mechanism-step,.reference-list,table,figure,.book-toc-block) :is(p,li,blockquote,dd) {
+  font-size: 14.8px !important;
+  line-height: 1.78 !important;
+  margin-bottom: 11px !important;
+  color: #1a202c !important;
+}
+body[data-page="aprender"] .book-main .book-section :is(.book-callout,.drive-block,.clinical-card,.clinical-case) :is(p,li) {
+  font-size: 16px !important;
+  line-height: 1.84 !important;
+  margin-bottom: 14px !important;
+  color: #1a202c !important;
+}
 body[data-page="aprender"] .book-main .book-section .clinical-list li {
-  font-size: 15px !important;
-  line-height: 1.75 !important;
+  font-size: 16.5px !important;
+  line-height: 1.84 !important;
+  color: #1a202c !important;
 }
 body[data-page="aprender"] .book-main .book-section .reference-list li {
   margin: 0 0 8px !important;
+  color: #1a202c !important;
 }
 @media (max-width: 640px) {
   body[data-page="aprender"] .book-main .book-section {
     padding: 24px 18px !important;
   }
   body[data-page="aprender"] .book-main .book-section > h2 {
-    font-size: 21px !important;
+    font-size: 22px !important;
     padding: 9px 11px !important;
   }
   body[data-page="aprender"] .book-main :is(.book-section,.mindmap-section) :is(p,li,blockquote,dd) {
-    font-size: 15px !important;
-    line-height: 1.76 !important;
+    font-size: 16.2px !important;
+    line-height: 1.88 !important;
   }
   body[data-page="aprender"] .book-main .book-section p {
-    margin-bottom: 20px !important;
+    margin-bottom: 24px !important;
   }
   body[data-page="aprender"] .book-main .book-section :is(.book-mini,.flow-step,.mechanism-step,.reference-list,table,figure,.book-toc-block) :is(p,li,blockquote,dd) {
-    font-size: 13.3px !important;
-    line-height: 1.64 !important;
-    margin-bottom: 8px !important;
+    font-size: 14.2px !important;
+    line-height: 1.72 !important;
+    margin-bottom: 9px !important;
   }
   body[data-page="aprender"] .book-main .book-section :is(.book-callout,.drive-block,.clinical-card,.clinical-case) :is(p,li) {
-    font-size: 14.1px !important;
-    line-height: 1.68 !important;
-    margin-bottom: 10px !important;
+    font-size: 15.2px !important;
+    line-height: 1.78 !important;
+    margin-bottom: 11px !important;
   }
 }
 
