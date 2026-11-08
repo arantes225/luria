@@ -78,7 +78,7 @@ export async function trocarCodigoUnificado({ fetchFn, appId, appSecret, redirec
 }
 
 // Descobre a(s) conta(s) do Instagram liberadas para o token (granular_scopes do debug_token).
-export async function contasDoToken({ fetchFn, appId, appSecret, token, versao = VERSAO_PADRAO }) {
+export async function contasDoToken({ fetchFn, appId, appSecret, token, versao = VERSAO_PADRAO, diag }) {
   const u = new URL(FB_HOST + "/" + versao + "/debug_token");
   u.searchParams.set("input_token", token);
   u.searchParams.set("access_token", appId + "|" + appSecret);
@@ -86,8 +86,13 @@ export async function contasDoToken({ fetchFn, appId, appSecret, token, versao =
   const d = (j && j.data) || {};
   if (d.is_valid === false) throw new ErroInstagram("O token recebido não é válido.");
   const ids = new Set();
+  // Diagnóstico seguro: só nomes de permissões e quantidades, nunca o token.
+  if (typeof diag === "function") {
+    diag("type=" + d.type + "; scopes=" + (Array.isArray(d.scopes) ? d.scopes.join(",") : "-") +
+      "; granular=" + (Array.isArray(d.granular_scopes) ? d.granular_scopes.map((g) => g.scope + ":" + (Array.isArray(g.target_ids) ? g.target_ids.length : 0)).join(",") : "-"));
+  }
   for (const g of Array.isArray(d.granular_scopes) ? d.granular_scopes : []) {
-    if ((g.scope === "instagram_basic" || g.scope === "instagram_content_publish") && Array.isArray(g.target_ids)) {
+    if (/^instagram_/.test(String(g.scope)) && Array.isArray(g.target_ids)) {
       for (const id of g.target_ids) ids.add(String(id));
     }
   }

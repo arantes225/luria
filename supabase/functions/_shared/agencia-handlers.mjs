@@ -36,6 +36,10 @@ export function criarDb(sb) {
       const { error } = await sb.from("agencia_instagram_conexao").upsert({ ...c, id: "principal", atualizado_em: new Date().toISOString() });
       if (error) throw new Error(error.message);
     },
+    async configValor(id) {
+      const { data } = await sb.from("agencia_config").select("observacao").eq("id", id).maybeSingle();
+      return data && data.observacao ? String(data.observacao).trim() : "";
+    },
     async consumirEstado(state) {
       const desde = new Date(Date.now() - 10 * 60 * 1000).toISOString();
       const { data } = await sb.from("agencia_instagram_estado").update({ usado: true }).eq("state", state).eq("usado", false).gt("criado_em", desde).select("state");
@@ -131,10 +135,23 @@ export async function tratarCallback(req, d) {
   if ((d.env("IG_LOGIN") || "unificado") === "unificado") {
     try {
       const t = await trocarCodigoUnificado({ fetchFn: d.fetchFn, appId, appSecret, redirectUri, code, versao });
-      const contas = await contasDoToken({ fetchFn: d.fetchFn, appId, appSecret, token: t.token, versao });
-      if (!contas.length) return volta("sem-conta");
+      let info = "";
+      let contas = await contasDoToken({ fetchFn: d.fetchFn, appId, appSecret, token: t.token, versao, diag: (m) => { info = m; } });
+      let p = null;
+      if (!contas.length && d.db.configValor) {
+        // Tokens de usuário do sistema nem sempre listam as contas no debug_token: usa o ID configurado e confirma com o Meta.
+        const candidato = await d.db.configValor("instagram_user_id");
+        if (/^\d+$/.test(candidato)) {
+          try { p = await perfilConta({ fetchFn: d.fetchFn, token: t.token, igUserId: candidato, versao }); contas = [candidato]; }
+          catch (_) { info += "; id configurado não acessível pelo token"; }
+        }
+      }
+      if (!contas.length) {
+        await d.db.logar("_conexao", "erro", "Login sem conta do Instagram liberada. " + info);
+        return volta("sem-conta");
+      }
       const igUserId = contas[0];
-      const p = await perfilConta({ fetchFn: d.fetchFn, token: t.token, igUserId, versao });
+      if (!p) p = await perfilConta({ fetchFn: d.fetchFn, token: t.token, igUserId, versao });
       await d.db.salvarConexao({
         ig_user_id: igUserId, username: p.username, access_token: t.token, escopos: ESCOPOS_UNIFICADO,
         expira_em: "9999-12-31T00:00:00.000Z", conectado_em: d.agora().toISOString(),
