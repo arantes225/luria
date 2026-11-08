@@ -213,6 +213,18 @@ const sharedQuestions=window.TraubeGameContent?.questions||[];
 questions.push(...sharedQuestions.map(item=>({
   a:item.specialty,q:item.prompt,opts:[...item.options],correct:item.answer,note:item.explanation
 })));
+// Variar as cartas entre partidas. No modo online, matchId produz a MESMA
+// permutação em ambos os clientes e preserva host/guest_question no reload.
+const deckSeed=onlineSession?.matchId ? String(onlineSession.matchId) : Math.random().toString(36);
+let deckState=2166136261;
+for(let i=0;i<deckSeed.length;i++) {
+  deckState=Math.imul(deckState^deckSeed.charCodeAt(i),16777619)>>>0;
+}
+for(let i=questions.length-1;i>0;i--) {
+  deckState^=deckState<<13;deckState^=deckState>>>17;deckState^=deckState<<5;
+  const j=(deckState>>>0)%(i+1);
+  [questions[i],questions[j]]=[questions[j],questions[i]];
+}
 let qn=onlineSession?.localQuestion||0,selected=-1,answered=false,lock=false,round=qn+1,roundDice=1;
 const diceFaces=['⚀','⚁','⚂','⚃','⚄','⚅'];
 const randomDie=()=>Math.floor(Math.random()*6)+1;
