@@ -20,7 +20,7 @@ test("TRAUBE theme images are valid 256px RGBA PNGs and preserve identity colors
   assert.deepEqual(images["logo-principal.png"], images["logo-icone-original.png"]);
   assert.deepEqual(images["logo-icone-original.png"], images["logo-icone-azul-claro.png"]);
   assert.notDeepEqual(images["logo-icone-original.png"], images["logo-icone-rosa-escuro.png"]);
-  assert.notDeepEqual(images["logo-icone-original.png"], images["favicon.png"]);
+  // A aba usa exatamente a marca azul com fundo transparente.\n  assert.deepEqual(images["logo-icone-original.png"], images["favicon.png"]);
 });
 test("Both appearances retain the blue or pink TRAUBE identity", () => {
   for (const file of ["assets/js/traube-brand-v5.js", "assets/js/app.js", "assets/js/ui-theme-v2.js"]) {
