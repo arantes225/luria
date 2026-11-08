@@ -30,7 +30,7 @@
     choice("v2e04",0,"Sala de acolhimento","19h40 · Uma fraqueza súbita","Adulto aguarda em cadeira quando passa a apresentar assimetria facial e dificuldade para falar.","Qual prioridade?",[
       "Pedir que volte após o descanso","Acionar imediatamente a avaliação de AVC","Orientar exercícios de fala no corredor","Aguardar a triagem do dia seguinte"
     ],1,"Déficit neurológico focal súbito exige avaliação urgente.",["stroke"]),
-    select("v2e05",0,"Posto de comunicação","19h50 · Passagem da triagem","A equipe de emergência assume o paciente com déficit focal súbito. Quais informações permitem dar continuidade?",[
+    select("v2e05",0,"Posto de comunicação","19h50 · Passagem da triagem","A equipe de emergência assume o paciente com déficit focal súbito. Quais informações permitem dar continuidade?","Selecione DUAS informações prioritárias.",[
       "Qual é a cor da cadeira","Último momento conhecido sem sintomas","Sinais neurológicos observados e evolução","A marca do relógio do acompanhante"
     ],[1,2],"A cronologia e o déficit neurológico são informações críticas para o fluxo de AVC.",["stroke"]),
     sort("v2e06",0,"Equipe de emergência","20h · Risco comunicado","Um encaminhamento urgente foi indicado. A avaliação e o cuidado imediato ocorrem com a equipe; ordene a comunicação.","Qual sequência registra a decisão?",[
