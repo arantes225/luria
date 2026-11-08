@@ -13,7 +13,7 @@
     run = null;
     root.innerHTML =
       top() +
-      `<form class="g-panel g-setup s-setup">${G.filters()}<div id="s-count" class="g-subtle"></div><button class="g-button" type="submit">Iniciar desafio →</button></form>${G.note}<p class="g-note">Básico: 4 etapas · Intermediário: 5–6 · Avançado: 6–7. Nem todas as áreas possuem sequência segura no acervo inicial; recortes vazios são informados.</p>`;
+      `<form class="g-panel g-setup s-setup">${G.filters()}<div id="s-count" class="g-subtle"></div><button class="g-button" type="submit">Iniciar desafio →</button></form>${G.note}<p class="g-note">Básico: 4 etapas · Intermediário: 5–6 · Avançado: 6–7. Todas as cinco áreas contam com desafios nos três níveis. Os passos agrupam ações simultâneas quando cabível.</p>`;
     const form = root.querySelector("form");
     Object.entries(selection).forEach(([k, v]) => (form.elements[k].value = v));
     const update = () => {
