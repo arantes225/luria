@@ -208,6 +208,11 @@ const questions=[
  {a:'Terapia Intensiva',q:'Em choque séptico com necessidade de vasopressor, qual é o agente de primeira escolha?',opts:['Dobutamina isolada','Noradrenalina','Nitroglicerina','Atenolol'],correct:1,note:'A noradrenalina é o vasopressor de primeira escolha para choque séptico.'},
  {a:'Pediatria',q:'Qual achado em criança doente exige atenção imediata por possível comprometimento da perfusão?',opts:['Brincar normalmente','Perfusão periférica reduzida e letargia','Apetite preservado','Cor normal e atividade habitual'],correct:1,note:'Letargia e alteração da perfusão periférica são sinais de gravidade que exigem avaliação urgente.'}
 ];
+// Mantém 10 cartas originais e reaproveita 75 questões públicas dos demais jogos.
+const sharedQuestions=window.TraubeGameContent?.questions||[];
+questions.push(...sharedQuestions.map(item=>({
+  a:item.specialty,q:item.prompt,opts:[...item.options],correct:item.answer,note:item.explanation
+})));
 let qn=onlineSession?.localQuestion||0,selected=-1,answered=false,lock=false,round=qn+1,roundDice=1;
 const diceFaces=['⚀','⚁','⚂','⚃','⚄','⚅'];
 const randomDie=()=>Math.floor(Math.random()*6)+1;
