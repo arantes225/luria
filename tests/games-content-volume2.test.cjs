@@ -61,7 +61,7 @@ test("ordering sequences encode valid permutations and explicit dependencies",()
     assert.ok(expected.includes(s.steps.length),s.id);
     assert.ok(s.context.length>=30,s.id);
     assert.ok(s.variants.length,s.id);
-    const baseOrder=s.steps.map((_,i)=>i);
+    const baseOrder=Array.from(s.steps,(_,i)=>i);
     for(const variant of s.variants)assert.deepEqual([...variant].sort((a,b)=>a-b),baseOrder,s.id);
   }
 });
