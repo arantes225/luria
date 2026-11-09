@@ -334,7 +334,17 @@
     });
   });
   window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
-  search.addEventListener('input',()=>{visibleCount=100;renderList();});
+
+  // ⚡ Bolt: Debounce search input to prevent main thread blocking on keystrokes
+  function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+  }
+
+  search.addEventListener('input', debounce(()=>{visibleCount=100;renderList();}, 250));
   // Canonical database: bulario_catalog is the public projection of bulario_drugs.
   // Show records as soon as each page arrives, independently from protocol loading.
   async function loadAll(table,fields,sortKey,onPage){
