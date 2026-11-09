@@ -312,6 +312,12 @@ if (form) {
       display(ERROR_MESSAGES.empty_prompt, "Faltou a pergunta", true);
       return;
     }
+    if (window.LuriaLecoAutonomy?.handleLecoCommand && await window.LuriaLecoAutonomy.handleLecoCommand(prompt || topic)) {
+      const autonomyPrompt = document.getElementById("alex-prompt");
+      if (autonomyPrompt?.value.trim() === prompt) autonomyPrompt.value = "";
+      event.preventDefault();
+      return;
+    }
 
     const modeToggle = document.getElementById("alex-mode-toggle");
     const isEstourado = (modeToggle?.getAttribute("aria-checked") === "true") ||
