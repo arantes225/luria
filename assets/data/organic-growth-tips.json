@@ -1,5 +1,23 @@
 [
   {
+    "id": "semana-47-2026",
+    "semana": "Semana Agendada (09/11/2026)",
+    "foco": "Otimização de Engajamento Orgânico & Eficiência de R$ 20",
+    "pilares": [
+      {
+        "titulo": "Hack de Carrossel Salvável",
+        "dica": "Carrosséis técnicos de 7 a 9 lâminas com infográfico resumo na penúltima lâmina geram 3.5x mais salvamentos entre residentes e internos.",
+        "acao": "Certifique-se de que a lâmina 7 tenha o 'Resumo de 30 Segundos' para leitura rápida durante a correria do internato."
+      },
+      {
+        "titulo": "Análise de Métricas da Semana Anterior",
+        "dica": "Avalie métricas de engajamento verdadeiro: taxa de salvamento > 3% e retenção média de reels > 45%.",
+        "acao": "Arquive ou pause posts que tiveram retenção abaixo de 20% e replique o modelo visual do mais salvo."
+      }
+    ],
+    "atualizado_em": "2026-11-09T14:51:15.057Z"
+  },
+  {
     "id": "semana-46-2026",
     "semana": "Semana Agendada (02/11/2026)",
     "foco": "Otimização de Engajamento Orgânico & Eficiência de R$ 20",
