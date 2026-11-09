@@ -694,4 +694,109 @@ body[data-ui-nav="v2"] #topbar {
   box-shadow: none !important;
 }
 
+/* ==========================================================================
+   ALINHAMENTO MODO TRABALHO: CARDS DE TÍTULO IDÊNTICOS AO MODO ESTUDO
+   - Fundo gradiente oficial
+   - Escritas em branco puro
+   - Botões neutros (translúcidos/brancos com borda sutil e texto branco)
+   ========================================================================== */
+body:is([data-ui-work="v2"], [data-page^="trabalho_"], [data-ui-context="work"]) :is(.traube-page-spotlight, .traube-work-page-spotlight) {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+  width: 100% !important;
+  min-height: 110px !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+  margin: 0 0 14px 0 !important;
+  padding: 20px 24px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 15px !important;
+  background: var(--ui-frame-bg, linear-gradient(135deg, #102C57 0%, #184888 50%, #2563EB 100%)) !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(17, 65, 130, 0.12) !important;
+}
+
+body:is([data-ui-work="v2"], [data-page^="trabalho_"], [data-ui-context="work"]) :is(.traube-page-spotlight, .traube-work-page-spotlight) :is(h1, h2, h3, strong, small, p, span, label, b, em, i, .traube-page-spotlight-helper, [data-page-title]) {
+  color: #ffffff !important;
+}
+
+body:is([data-ui-work="v2"], [data-page^="trabalho_"], [data-ui-context="work"]) :is(.traube-page-spotlight, .traube-work-page-spotlight) .traube-page-spotlight-copy > :is(strong, h1, h2, [data-page-title]) {
+  display: block !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+  font-size: var(--traube-page-card-title, 26px) !important;
+  font-weight: 850 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.025em !important;
+}
+
+body:is([data-ui-work="v2"], [data-page^="trabalho_"], [data-ui-context="work"]) :is(.traube-page-spotlight, .traube-work-page-spotlight) .traube-page-spotlight-copy :is(small, .traube-page-spotlight-helper, p) {
+  display: block !important;
+  margin: 6px 0 0 0 !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Botões neutros em cards de título no Modo Trabalho (ex.: voltar, retornar, links no card) */
+body:is([data-ui-work="v2"], [data-page^="trabalho_"], [data-ui-context="work"]) :is(.traube-page-spotlight, .traube-work-page-spotlight) :is(.traube-back-button, .ex-back-link, .work-patient-return, .review-back-in-spotlight, a.button, button, a:not(.library-book-link)) {
+  background: rgba(255, 255, 255, 0.14) !important;
+  background-image: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+  min-height: 38px !important;
+  padding: 8px 16px !important;
+  box-sizing: border-box !important;
+  transition: all 0.15s ease !important;
+  cursor: pointer !important;
+}
+
+body:is([data-ui-work="v2"], [data-page^="trabalho_"], [data-ui-context="work"]) :is(.traube-page-spotlight, .traube-work-page-spotlight) :is(.traube-back-button, .ex-back-link, .work-patient-return, .review-back-in-spotlight, a.button, button, a:not(.library-book-link)):hover {
+  background: rgba(255, 255, 255, 0.24) !important;
+  background-image: none !important;
+  border-color: rgba(255, 255, 255, 0.55) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14) !important;
+}
+
+body:is([data-ui-work="v2"], [data-page^="trabalho_"], [data-ui-context="work"]) :is(.traube-page-spotlight, .traube-work-page-spotlight) :is(.traube-back-button, .ex-back-link, .work-patient-return, .review-back-in-spotlight, a.button, button, a:not(.library-book-link)) :is(span, strong, b, small, svg, svg *) {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* Botões de voltar posicionados fora/acima de páginas no Modo Trabalho */
+body:is([data-ui-work="v2"], [data-page^="trabalho_"], [data-ui-context="work"]) .page > .traube-back-button {
+  background: var(--color-surface, var(--surface, #ffffff)) !important;
+  border: 1px solid var(--color-border-interactive, var(--border, #cbd5e1)) !important;
+  color: var(--color-text-primary, var(--text, #1e293b)) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  text-shadow: none !important;
+}
+
+body:is([data-ui-work="v2"], [data-page^="trabalho_"], [data-ui-context="work"]) .page > .traube-back-button:hover {
+  background: var(--color-surface-elevated, var(--surface-2, #f8fafc)) !important;
+  border-color: var(--color-primary, var(--accent, #0284c7)) !important;
+  color: var(--color-primary, var(--accent, #0284c7)) !important;
+}
+
+body:is([data-ui-work="v2"], [data-page^="trabalho_"], [data-ui-context="work"]) .page > .traube-back-button :is(span, strong, b, small) {
+  color: inherit !important;
+}
+
+body:is([data-ui-work="v2"], [data-page^="trabalho_"], [data-ui-context="work"]) .page > .traube-back-button svg {
+  stroke: currentColor !important;
+}
+
+
 
