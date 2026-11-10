@@ -5,7 +5,9 @@
   'use strict';
 
   var DONE_KEY = 'traube_prelista_inscrito';
-  var EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+  var EMAIL_RE = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,24}$/i;
+  var NAME_RE = /^[A-Za-zÀ-ÖØ-öø-ÿ][A-Za-zÀ-ÖØ-öø-ÿ .'-]*$/;
+  var startedAt = Date.now();
   var dialog = document.getElementById('prelista-dialog');
   var fab = document.querySelector('[data-prelista-fab]');
 
@@ -47,11 +49,13 @@
     var button = form.querySelector('[type="submit"]');
 
     if (nome.length < 2) { feedback(form, 'Escreva seu nome para a gente te chamar direito.', 'error'); form.elements.nome.focus(); return; }
+    if (nome.length > 120 || !NAME_RE.test(nome)) { feedback(form, 'Use só letras no nome (acentos, espaço, hífen e apóstrofo valem).', 'error'); form.elements.nome.focus(); return; }
     if (!EMAIL_RE.test(email) || email.length > 254) { feedback(form, 'Confira o e-mail: parece que falta alguma parte.', 'error'); form.elements.email.focus(); return; }
     if (!consent) { feedback(form, 'Marque a caixa para autorizar o aviso por e-mail.', 'error'); return; }
 
     var firstName = nome.split(' ')[0];
-    if (trap) { markDone(); showSuccess(form, firstName); return; } // robô: finge sucesso
+    // Robô: campo invisível preenchido ou formulário enviado rápido demais => finge sucesso
+    if (trap || Date.now() - startedAt < 1500) { markDone(); showSuccess(form, firstName); return; }
 
     var sb = window.supabaseClient;
     if (!sb || typeof sb.rpc !== 'function') {
@@ -75,7 +79,11 @@
       showSuccess(form, firstName);
     }).catch(function (err) {
       var msg = String((err && err.message) || '');
-      if (msg.indexOf('muitas_tentativas') !== -1) {
+      if (msg.indexOf('ip_ja_inscrito') !== -1) {
+        feedback(form, 'Já recebemos uma inscrição desta rede. Se você é outra pessoa, tente pelo 4G do celular.', 'error');
+      } else if (msg.indexOf('nome_invalido') !== -1) {
+        feedback(form, 'Use só letras no nome (acentos, espaço, hífen e apóstrofo valem).', 'error');
+      } else if (msg.indexOf('muitas_tentativas') !== -1) {
         feedback(form, 'Muita gente entrando ao mesmo tempo. Tente de novo em um minuto.', 'error');
       } else if (msg.indexOf('email_invalido') !== -1) {
         feedback(form, 'Confira o e-mail: parece que falta alguma parte.', 'error');

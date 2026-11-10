@@ -955,3 +955,4 @@ h1 em,h2 em,h3 em{font-family:var(--serif);font-style:italic;font-weight:400;col
   .nav__cta .btn--ghost{display:none}
   .nav__cta .btn{padding:9px 14px;font-size:.82rem}
 }
+.prelista__consent a{color:var(--accent-light);text-decoration:underline;text-underline-offset:2px}
