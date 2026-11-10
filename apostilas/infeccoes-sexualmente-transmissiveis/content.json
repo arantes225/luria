@@ -162,7 +162,7 @@
             "Gonorreia e clamídia podem existir em uretra, colo, reto e faringe. O sítio a testar deve acompanhar o <strong>sítio exposto</strong>.",
             "Sífilis: teste treponêmico demonstra infecção atual ou passada; VDRL/RPR fornece título útil para atividade e seguimento. História de tratamento muda a interpretação.",
             "Gestante com sífilis deve receber <strong>penicilina benzatina</strong> imediatamente quando indicada; é o tratamento com eficácia estabelecida para prevenir sífilis congênita. Entre doses semanais, o ideal é 7 dias e o limite atual aceito é 9 dias.",
-            "No Brasil, o PCDT vigente ainda recomenda para gonorreia não complicada <strong>Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO, ambas em dose única</strong>.",
+            "No Brasil, o PCDT vigente ainda recomenda para gonorreia não complicada <strong>Ceftriaxona 500 mg IM + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO, ambas em dose única</strong>.",
             "Primeiro episódio de herpes genital: aciclovir sistêmico reduz duração e intensidade, mas não erradica o HSV.",
             "Verruga por HPV é diagnóstico predominantemente clínico; tratar a lesão não significa eliminar a infecção viral.",
             "PEP para HIV é urgência: exposição recente deve ser avaliada com agilidade. Em 2026, o SUS incorporou também a <strong>DoxiPEP</strong> para prevenção de sífilis e clamídia em população elegível; não deve ser generalizada como automedicação após qualquer relação.",
@@ -914,7 +914,7 @@
           [
             [
               "Gonorreia não complicada: uretra, colo, reto ou faringe",
-              "Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) 500 mg IM, dose única + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO, dose única",
+              "Ceftriaxona 500 mg IM, dose única + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias) 1 g VO, dose única",
               "o PCDT nacional vigente ainda utiliza terapia combinada"
             ],
             [
@@ -1723,7 +1723,7 @@
           ],
           [
             [
-              "Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana)",
+              "Ceftriaxona (gonorreia não complicada)",
               "500 mg IM",
               "dose única"
             ],
@@ -2101,8 +2101,8 @@
               "cancro pode cicatrizar sem tratamento enquanto a infecção progride"
             ],
             [
-              "“No Brasil já se trata gonorreia só com Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana)”",
-              "em 2026 o PCDT brasileiro ainda recomenda Ceftriaxona (1g a 2g EV a cada 24 horas, ou 2g EV 12/12h em meningite bacteriana) + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias)"
+              "“No Brasil já se trata gonorreia só com Ceftriaxona”",
+              "o PCDT brasileiro recomenda Ceftriaxona 500 mg IM + Azitromicina (500 mg VO no D1 seguido de 250 mg/dia do D2 ao D5, ou 500 mg VO 1x/dia por 3 a 5 dias)"
             ],
             [
               "“Tratar a verruga elimina o HPV”",
