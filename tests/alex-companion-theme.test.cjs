@@ -9,7 +9,7 @@ test('floating Alex stays above mobile navigation and recovers space when it dis
  Object.defineProperty(w.HTMLElement.prototype,'offsetWidth',{get(){return this.tagName==='TRAUBE-ALEX-COMPANION'?96:0;}});
  const nav=d.createElement('nav');nav.id='ui-mobile-navigation';let height=76;nav.getBoundingClientRect=()=>({height});d.body.append(nav);
  const source=read('assets/js/professor-alex-companion.mjs').replace(/^import .*;\r?\n/gm,'').replace(/^export /gm,'').replaceAll('import.meta.url',JSON.stringify('https://fixture.invalid/assets/js/professor-alex-companion.mjs'));
- w.eval('const bindAlex=()=>({react(){},destroy(){}});\n'+source);
+ w.eval('const bindAlex=()=>({react(){},destroy(){}}),getAlexConversation=()=>[],rememberAlexTurn=()=>{},clearAlexConversation=()=>{};\n'+source);
  const mounted=w.mountAlexCompanion({userId:'test-position-user'});
  assert.equal(mounted.host.style.top,'648px');
  height=0;w.dispatchEvent(new w.Event('traube:mobile-navigation-change'));assert.equal(mounted.host.style.top,'724px');
@@ -21,7 +21,7 @@ test('companion theme changes survive minimize and restore without a stale legac
  const {w,d,errors}=page(t,'amigos/index.html');
  w.customElements.define('professor-alex-mascot',class extends w.HTMLElement {setDragMotion(){} _resize(){} _schedule(){}});
  const source=read('assets/js/professor-alex-companion.mjs').replace(/^import .*;\r?\n/gm,'').replace(/^export /gm,'').replaceAll('import.meta.url',JSON.stringify('https://fixture.invalid/assets/js/professor-alex-companion.mjs'));
- w.eval('const bindAlex=()=>({react(){},destroy(){}});\n'+source);
+ w.eval('const bindAlex=()=>({react(){},destroy(){}}),getAlexConversation=()=>[],rememberAlexTurn=()=>{},clearAlexConversation=()=>{};\n'+source);
  d.documentElement.dataset.theme='dark';d.body.dataset.uiAppearance='light';d.body.dataset.uiIdentity='pink';
  const mounted=w.mountAlexCompanion({userId:'test-theme-user'}),shadow=mounted.host.shadowRoot;
  assert.equal(mounted.host.hasAttribute('data-theme'),false,'current light appearance overrides legacy dark');
