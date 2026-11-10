@@ -86,3 +86,51 @@ test('all sensitive tables in supabase/migrations enforce explicit Row Level Sec
     }
   }
 });
+
+test('all SECURITY DEFINER functions in supabase/migrations enforce explicit search_path (CVE-2018-1058)', () => {
+  const migrationsDir = path.join(__dirname, '..', 'supabase', 'migrations');
+  const files = fs.readdirSync(migrationsDir).filter(f => f.endsWith('.sql')).sort();
+
+  const securityDefinerFns = new Map();
+
+  for (const file of files) {
+    const content = fs.readFileSync(path.join(migrationsDir, file), 'utf8');
+
+    // Function definitions
+    const fnBlocks = content.split(/(?=CREATE(?:\s+OR\s+REPLACE)?\s+FUNCTION)/i);
+    for (const block of fnBlocks) {
+      if (!/^CREATE(?:\s+OR\s+REPLACE)?\s+FUNCTION/i.test(block.trim())) continue;
+      const m = block.match(/FUNCTION\s+([a-zA-Z0-9_.]+)/i);
+      if (!m) continue;
+      const name = m[1].toLowerCase().replace(/^public\./, '');
+      const isSecDef = /SECURITY\s+DEFINER/i.test(block);
+      const hasSearchPath = /SET\s+search_path/i.test(block);
+
+      if (isSecDef) {
+        securityDefinerFns.set(name, hasSearchPath);
+      }
+    }
+
+    // ALTER FUNCTION ... SET search_path hardening
+    const alterMatches = content.matchAll(/ALTER\s+FUNCTION\s+([a-zA-Z0-9_.]+)\s*(?:\([^)]*\))?\s+SET\s+search_path/gi);
+    for (const m of alterMatches) {
+      const name = m[1].toLowerCase().replace(/^public\./, '');
+      securityDefinerFns.set(name, true);
+    }
+  }
+
+  assert.ok(securityDefinerFns.size > 0, 'Must have audited SECURITY DEFINER functions');
+
+  const unhardened = [];
+  for (const [fn, hardened] of securityDefinerFns.entries()) {
+    if (!hardened) {
+      unhardened.push(fn);
+    }
+  }
+
+  assert.deepEqual(
+    unhardened,
+    [],
+    `The following SECURITY DEFINER functions are missing explicit search_path (CVE-2018-1058): ${unhardened.join(', ')}`
+  );
+});
