@@ -20,6 +20,17 @@
       if (parsed.protocol !== 'https:') {
         return { success: false, error: 'Por motivos de segurança e sigilo médico, o endpoint deve obrigatoriamente utilizar protocolo seguro HTTPS.' };
       }
+      const hostname = parsed.hostname.toLowerCase();
+      if (
+        hostname === 'localhost' ||
+        hostname === '127.0.0.1' ||
+        hostname === '::1' ||
+        hostname.endsWith('.internal') ||
+        hostname.endsWith('.local') ||
+        /^(10\.|192\.168\.|172\.(1[6-9]|2[0-9]|3[01])\.|169\.254\.)/.test(hostname)
+      ) {
+        return { success: false, error: 'Endpoints direcionados a endereços locais ou redes internas privadas não são permitidos por motivos de segurança.' };
+      }
       localStorage.setItem(ENDPOINT_KEY, trimmed);
       return { success: true };
     } catch {
@@ -155,7 +166,7 @@
       if (existing) existing.remove();
       const toast = document.createElement('div');
       toast.className = 'toast-feedback';
-      toast.innerHTML = `<span>✓</span><span>${msg}</span>`;
+      const check = document.createElement('span'); check.textContent = '✓'; const text = document.createElement('span'); text.textContent = String(msg || ''); toast.append(check, text);
       document.body.appendChild(toast);
       setTimeout(() => toast.remove(), 2500);
     };
@@ -210,7 +221,7 @@
                   Insira o webhook ou URL da sua API (ex: <code>https://sua-ia.com/v1/anamnese</code>). Quando preenchido, os dados serão enviados para seu modelo.
                 </p>
                 <div class="endpoint-input-row">
-                  <input type="url" id="custom-endpoint-url" placeholder="https://api.seuservidor.com/organizar-anamnese" value="${customUrl}">
+                  <input type="url" id="custom-endpoint-url" placeholder="https://api.seuservidor.com/organizar-anamnese" value="${escapeHtml(customUrl)}">
                   <button type="button" id="btn-save-endpoint">Salvar URL</button>
                 </div>
               </details>
@@ -319,7 +330,7 @@
           outputContainer.innerHTML = `
             <div class="anamnese-placeholder" style="color: #dc2626; border-color: #fca5a5;">
               <strong>Erro ao processar anotações</strong>
-              <p>${error.message || 'Ocorreu um erro no processamento com a IA.'}</p>
+              <p>${escapeHtml(error.message || 'Ocorreu um erro no processamento com a IA.')}</p>
             </div>
           `;
         } finally {
@@ -391,7 +402,7 @@
       return lines.join('\n');
     };
 
-    const escapeHtml = (str) => {
+    function escapeHtml(str) {
       return String(str || '')
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')

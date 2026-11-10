@@ -7,6 +7,6 @@
     "deploy:staging": "wrangler deploy --config wrangler.staging.toml"
   },
   "devDependencies": {
-    "wrangler": "^3"
+    "wrangler": "^4.157.0"
   }
 }

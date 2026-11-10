@@ -12,11 +12,16 @@ function trackObservers(w) {
 }
 
 test('installed study navigation reuses permitted routes, highlights sections and opens More',async()=>{
- const dom=new JSDOM(`<html data-pwa="standalone"><body data-ui-nav="v2" data-ui-context="study" data-page="flashcards"><div class="app-shell"><aside id="sidebar" class="sidebar"><div class="sidebar-top"></div><button id="sidebar-close">Fechar</button><nav><a href="/dashboard/">Início</a><a href="/aprender/">Aprender</a><a href="/consolidar/">Consolidar</a></nav></aside><div id="sidebar-backdrop"></div><main class="main"><header class="topbar"><button id="menu-open">Menu</button></header><div id="traube-search-overlay" hidden></div></main></div></body>`,{url:'https://example.test/flashcards/',runScripts:'outside-only',pretendToBeVisual:true});
- const w=dom.window;const close=trackObservers(w);w.matchMedia=()=>({matches:true,addEventListener(){}});w.eval(navigation);w.document.dispatchEvent(new w.Event('DOMContentLoaded'));await settle();
+ const dom=new JSDOM(`<html data-pwa="standalone"><body data-ui-nav="v2" data-ui-context="study" data-page="flashcards" class="app-ready"><div class="app-shell"><aside id="sidebar" class="sidebar"><div class="sidebar-top"></div><button id="sidebar-close">Fechar</button><nav><a href="/dashboard/">Início</a><a href="/aprender/">Aprender</a><a href="/consolidar/">Consolidar</a></nav></aside><div id="sidebar-backdrop"></div><main class="main"><header class="topbar"><button id="menu-open">Menu</button></header><div id="traube-search-overlay" hidden></div></main></div></body>`,{url:'https://example.test/flashcards/',runScripts:'outside-only',pretendToBeVisual:true});
+ const w=dom.window;const close=trackObservers(w);w.matchMedia=()=>({matches:true,addEventListener(){}});
+ w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};
+ w.HTMLDialogElement.prototype.close=function(){this.open=false;};
+ w.docmapUser={id:'u1'};
+ w.eval(navigation);w.document.dispatchEvent(new w.Event('DOMContentLoaded'));await settle();
  const rail=w.document.getElementById('ui-mobile-navigation');assert.ok(rail);assert.equal(rail.querySelectorAll('a').length,3);assert.equal(rail.querySelector('[aria-current="page"]').getAttribute('href'),'/consolidar/');
- rail.querySelector('button').click();assert.equal(w.document.body.classList.contains('sidebar-open'),true);
- w.document.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));assert.equal(w.document.body.classList.contains('sidebar-open'),false);assert.equal(rail.querySelector('button').getAttribute('aria-expanded'),'false');
+ const sheet=w.document.getElementById('ui-mobile-tools');
+ rail.querySelector('button').click();assert.equal(rail.querySelector('button').getAttribute('aria-expanded'),'true');assert.equal(sheet.open,true);
+ sheet.querySelector('[data-mobile-close]').click();assert.equal(rail.querySelector('button').getAttribute('aria-expanded'),'false');assert.equal(sheet.open,false);
  w.document.getElementById('sidebar').classList.add('updated');await settle();assert.equal(w.document.querySelectorAll('#ui-mobile-navigation').length,1);close();
 });
 

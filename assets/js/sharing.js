@@ -43,8 +43,8 @@
         <div class="traube-share-head">
           <div>
             <small>Compartilhar</small>
-            <h2>${esc(title)}</h2>
-            <p>${count ? `${count} item${count === 1 ? "" : "s"} selecionado${count === 1 ? "" : "s"}` : ""}</p>
+            <h2 id="traube-share-heading"></h2>
+            <p id="traube-share-subheading"></p>
           </div>
           <button value="cancel" class="traube-share-close" aria-label="Fechar">×</button>
         </div>
@@ -116,6 +116,11 @@
         <div class="traube-share-status" aria-live="polite"></div>
       </form>
     `;
+
+    const headingEl = dialog.querySelector("#traube-share-heading");
+    if (headingEl) headingEl.textContent = String(title || "Compartilhar");
+    const subEl = dialog.querySelector("#traube-share-subheading");
+    if (subEl) subEl.textContent = count ? `${count} item${count === 1 ? "" : "s"} selecionado${count === 1 ? "" : "s"}` : "";
 
     if (!document.getElementById("traube-share-style")) {
       const style = document.createElement("style");

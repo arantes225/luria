@@ -434,7 +434,7 @@ Deno.serve(async (req: Request) => {
   // Chamamos a API remota de countTokens somente se houver arquivo anexado (ex: PDF).
   try {
     let count = 0;
-    if (file !== undefined && file !== null) {
+    if (file !== undefined && file !== null || Deno.env.get("ALEX_COUNT_TOKENS") === "true") {
       const counted = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + modelToUse + ":countTokens", {
         method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
         body: JSON.stringify({ generateContentRequest: { model: "models/" + modelToUse, ...providerRequest } }),
@@ -630,9 +630,11 @@ Deno.serve(async (req: Request) => {
   // reservation already protects the token budget; settlement can finish without
   // delaying the learner's answer. In runtimes without waitUntil, preserve the
   // original synchronous accounting path.
-  const edgeRuntime = (globalThis as typeof globalThis & {
-    EdgeRuntime?: { waitUntil(promise: Promise<unknown>): void };
-  }).EdgeRuntime;
+  const edgeRuntime = typeof (globalThis as any).EdgeRuntime !== "undefined"
+    ? (globalThis as any).EdgeRuntime
+    : typeof EdgeRuntime !== "undefined"
+      ? (EdgeRuntime as { waitUntil(promise: Promise<unknown>): void })
+      : undefined;
   if (typeof edgeRuntime?.waitUntil === "function") {
     try {
       edgeRuntime.waitUntil(

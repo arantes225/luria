@@ -16,4 +16,5 @@ tmp/
 !.env.example
 
 # Logs locais
-logs/*.log
+logs/
+*.log

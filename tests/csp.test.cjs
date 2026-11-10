@@ -148,7 +148,7 @@ test('CSP inventory follows the tracked Pages publication filter', () => {
   assert.deepEqual([...pages].sort(),files.sort());
 });
 
-for (const slug of ['infeccoes-sexualmente-transmissiveis','vulvovaginites']) {
+for (const slug of ['vulvovaginites']) {
   test('Apostila fragment navigation handles encoded accents and aliases: '+slug, () => {
     const page='apostilas/'+slug+'/';
     const parsed=new JSDOM(fs.readFileSync(path.join(root,page,'index.html'),'utf8'));

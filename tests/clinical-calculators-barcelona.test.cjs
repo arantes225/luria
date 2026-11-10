@@ -31,7 +31,7 @@ test('Hadlock BPD HC AC FL e variante AC FL: g com entradas em mm',()=>{
   assert.throws(()=>hadlock(800,290,270,60));
 });
 test('Doppler: RCP e uterinas são médias aritméticas, sem estimar percentis',()=>{
-  const r=result({uaPi:'1.2',mcaPi:'1.8',utaR:'0.8',utaL:'1.0'});
+  const r=result({uaPi:'1.2',mcaPi:'1.8',utaR:'0.8',utaL:'1.0',cprPct:'',utaPct:''});
   assert.ok(Math.abs(r.cpr-1.5)<1e-10);
   assert.ok(Math.abs(r.utaMean-0.9)<1e-10);
   assert.ok(r.warnings.some(w=>w.includes('percentil NÃO')));

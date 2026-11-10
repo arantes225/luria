@@ -387,3 +387,21 @@ test('Saved personal exams render safe URLs while keeping selection controls',t=
   const select=w.document.querySelector('[data-select-exam]');select.checked=true;select.dispatchEvent(new w.Event('change'));assert.equal(w.selectedExamIds.has(row.id),true);
   assert.ok(w.document.getElementById('exam-list').textContent.includes(row.institution));
 });
+
+
+test('Sharing dialog and Anamnese organizer resist DOM XSS injection from untrusted inputs', async t => {
+  const {w} = fixture(t, '<div id="anamnese-app-root"></div>');
+  w.HTMLDialogElement.prototype.showModal = function() { this.open = true; };
+  w.HTMLDialogElement.prototype.close = function() { this.open = false; };
+  const sharingSource = read('assets/js/sharing.js');
+  w.supabaseClient = null;
+  w.eval(sharingSource);
+  assert.ok(w.TraubeSharing);
+  await w.TraubeSharing.open({ title: 'Deck <img src=x onerror=window.auditExecuted=1>', count: 1 });
+  const dialog = w.document.getElementById('traube-share-dialog');
+  assert.ok(dialog);
+  const heading = dialog.querySelector('#traube-share-heading');
+  assert.equal(heading.textContent, 'Deck <img src=x onerror=window.auditExecuted=1>');
+  assertSafe(dialog);
+  assert.equal(w.auditExecuted, undefined);
+});

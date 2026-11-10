@@ -17,7 +17,7 @@ function extract(start, end) {
 test("renderiza todas as imagens distintas aprovadas na mesma seção sem limite artificial", () => {
   const code = extract("  function renderApproved() {", "  function ensureLightbox() {");
   const placed = [];
-  const section = { querySelectorAll: () => [] };
+  const section = { id: "clinica", querySelectorAll: () => [] };
   const doc = {
     querySelectorAll: () => [],
     getElementById: id => id === "clinica" ? section : null
@@ -35,12 +35,13 @@ test("renderiza todas as imagens distintas aprovadas na mesma seção sem limite
   ];
   const render = new Function(
     "document", "rows", "removedUnlicensed", "getAsset", "normalizedImageIdentity",
-    "figureKind", "imageNoveltyScore", "placeApprovedImage",
+    "figureKind", "imageNoveltyScore", "placeApprovedImage", "resolveApprovedTargetSection",
     code + "\nreturn renderApproved;"
   )(
     doc, rows, new Set([6]), r => r.proposed_asset,
     src => String(src || ""), () => "clinical", () => 10,
-    r => placed.push(r.id)
+    r => placed.push(r.id),
+    row => doc.getElementById(row.target_section)
   );
   render();
   assert.deepEqual(placed, [1, 2, 3], "preserva as imagens aprovadas, exclui repetidas, pendentes e bloqueadas");

@@ -753,13 +753,13 @@ body[data-page="aprender"] .book-main .book-section .reference-list li {
     rows.filter(row => row.review_status === "approved" && !removedUnlicensed.has(Number(row.id))).forEach(row => {
       const target = resolveApprovedTargetSection(row);
       if (!target) return;
-      const key = target.id;
+      const key = target.id || "section";
       if (!grouped.has(key)) grouped.set(key, []);
       grouped.get(key).push(row);
     });
 
     grouped.forEach((candidates, sectionId) => {
-      const section = document.getElementById(sectionId.replace(/^#/, ""));
+      const section = document.getElementById(String(sectionId || "").replace(/^#/, ""));
       if (!section) return;
       const authoredImages = [...section.querySelectorAll("img")];
       const used = new Set(authoredImages.map(img => normalizedImageIdentity(img.getAttribute("src"))).filter(Boolean));

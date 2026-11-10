@@ -68,7 +68,7 @@ function edge({failure, count=100, total=120, accountingFailure=false, paidGate,
   const code=stripTypeScriptTypes(fs.readFileSync(path.join(root,'supabase/functions/professor-alex-gemini/index.ts'),'utf8').replace(/^import .*createClient.*;\r?\n/m,'').replace(/^export /gm,''));
   const context={Request,Response,Headers,AbortSignal,DOMException,TextEncoder,crypto,console:{warn(){},error(){}},
     ...(backgroundAccounting ? {EdgeRuntime:{waitUntil(promise){backgroundTasks.push(promise)}}} : {}),
-    Deno:{env:{get:(key)=>({SUPABASE_URL:'https://db.invalid',SUPABASE_ANON_KEY:'anon',SUPABASE_SERVICE_ROLE_KEY:'service',CLIENT_GEMINI:'fake-key'})[key]},serve:fn=>handler=fn},
+    Deno:{env:{get:(key)=>({SUPABASE_URL:'https://db.invalid',SUPABASE_ANON_KEY:'anon',SUPABASE_SERVICE_ROLE_KEY:'service',CLIENT_GEMINI:'fake-key',ALEX_COUNT_TOKENS:'true'})[key]},serve:fn=>handler=fn},
     createClient:()=>({auth:{getUser:async()=>({data:{user:{id:user}}})},rpc:async(name,args)=>{
       if(accountingFailure&&name==='settle_alex_budget') return {error:true};
       if(name==='settle_alex_budget'&&settleGate) await settleGate;
@@ -87,7 +87,10 @@ function edge({failure, count=100, total=120, accountingFailure=false, paidGate,
       return Response.json({candidates:[{content:{parts:[{text:'Resposta'}]}}],usageMetadata:{promptTokenCount:100,candidatesTokenCount:20,totalTokenCount:total}});
     }};
   vm.runInNewContext(code,context);
-  const call=(n=1,prompt='pergunta',extra={})=>handler(new Request('https://edge.invalid',{method:'POST',headers:{authorization:'Bearer fake'},body:JSON.stringify({request_id:id(n),prompt,model:'expensive/arbitrary',...extra})}));
+  const call=(n=1,prompt='pergunta',extra={})=>{
+    if (backgroundAccounting) globalThis.EdgeRuntime = { waitUntil(promise){ backgroundTasks.push(promise); } };
+    return handler(new Request('https://edge.invalid',{method:'POST',headers:{authorization:'Bearer fake'},body:JSON.stringify({request_id:id(n),prompt,model:'expensive/arbitrary',...extra})}));
+  };
   return {call,stats:()=>({paid,counted}),backgroundTasks};
 }
 test('Edge: waitUntil serves text before background settlement and preserves the budget', async()=>{
@@ -99,7 +102,7 @@ test('Edge: waitUntil serves text before background settlement and preserves the
       f.call(),
       new Promise((_,reject)=>setTimeout(()=>reject(new Error('Alex fast-response timeout')), 10_000))
     ]);
-    const body = await response.json();
+    const body = await response.json(); 
     assert.equal(response.status, 200);
     assert.equal(body.answer, 'Resposta');
     assert.equal(body.accounting_pending, true);

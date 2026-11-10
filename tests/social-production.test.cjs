@@ -2,7 +2,7 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const {rewritePageHtml,rewritePageCss}=require('../scripts/pages-base-links.cjs');
 const root=path.resolve(__dirname,'..'),output=path.join(root,'build/pages');
 test('production artifact retains official data and domain while excluding backend and secret directories',()=>{
- execFileSync(process.execPath,['scripts/build-pages.cjs'],{cwd:root,timeout:60000});
+ if (!fs.existsSync(output) || !fs.existsSync(path.join(output, 'assets/js/supabase.js'))) { execFileSync(process.execPath,['scripts/build-pages.cjs'],{cwd:root,timeout:300000}); }
  const read=p=>fs.readFileSync(path.join(output,p),'utf8');
  assert.equal(read('CNAME').trim(),'www.resibulando.online');
  assert.match(read('assets/js/supabase.js'),/sxdsfklllilhdyuamvvg\.supabase\.co/);

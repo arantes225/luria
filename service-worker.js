@@ -139,7 +139,6 @@ const APP_SHELL = [
   "/assets/img/logos/pwa-icon-180.png?v=traube20261108brand2",
   "/assets/js/supabase.js",
   "/assets/css/education-pages-v2.css?v=1",
-  "/assets/css/style.css?v=20261103-clean1",
   "/assets/fonts/inter/InterVariable.woff2",
   "/assets/js/dashboard.js?v=20261006-css-owned-height",
   "/assets/js/study-mode.js?v=12.1",
@@ -211,7 +210,7 @@ function publicResource(request) {
     || path === "/manifest.webmanifest"
     || path === "/content/weekly/manifest.json"
     || /^\/jogos\/study-rats\/(?:hall|game)\.(?:css|js)$/.test(path)
-  || /^\/assets\/(?:js|css|vendor|fonts|img)\/[a-zA-Z0-9/_%. -]+\.(?:m?js|css|wasm|woff2?|ttf|otf|png|jpe?g|svg|webp|gif|ico)$/.test(path);
+  || /^\/assets\/(?:js|css|vendor|fonts|img|models)\/[a-zA-Z0-9/_%. -]+\.(?:m?js|css|wasm|woff2?|ttf|otf|png|jpe?g|svg|webp|gif|ico|glb)$/.test(path);
 }
 
 function cacheableResponse(request, response) {
@@ -233,6 +232,7 @@ function cacheableResponse(request, response) {
   if (/\.(?:png|jpe?g|svg|webp|gif|ico)$/.test(path)) return type.startsWith("image/");
   if (/\.(?:woff2?|ttf|otf)$/.test(path)) return type.startsWith("font/") || type === "application/octet-stream";
   if (path.endsWith(".wasm")) return type === "application/wasm";
+  if (path.endsWith(".glb")) return ["model/gltf-binary", "application/octet-stream"].includes(type);
   return type === "text/html";
 }
 

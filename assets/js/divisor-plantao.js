@@ -32,7 +32,8 @@
 
   let currentSlots = [];
 
-  function calculateSplit() {
+    function esc(s) { return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;"); }
+function calculateSplit() {
     const startStr = q("#div-start")?.value || "19:00";
     const totalHours = Number.parseFloat(q("#div-hours")?.value) || 12;
     const docs = Math.max(1, Math.min(12, Number.parseInt(q("#div-docs")?.value, 10) || 2));
@@ -118,7 +119,7 @@
       block.style.color = slot.color.text;
       block.title = `${slot.name}: ${fmtTime(slot.startMin)} - ${fmtTime(slot.endMin)}`;
       block.innerHTML = `
-        <span class="div-timeline-label">${slot.name}</span>
+        <span class="div-timeline-label">${esc(slot.name)}</span>
         <span class="div-timeline-sub">${fmtTime(slot.startMin)} - ${fmtTime(slot.endMin)}</span>
       `;
       timelineEl.appendChild(block);
@@ -157,7 +158,7 @@
         nowBanner.hidden = false;
         nowBanner.innerHTML = `
           <span class="div-now-pulse"></span>
-          <span><strong>Momento Atual (${fmtTime(nowMin)}):</strong> Repouso de <strong>${activeSlot.name}</strong> até às ${fmtTime(activeSlot.endMin)}</span>
+          <span><strong>Momento Atual (${fmtTime(nowMin)}):</strong> Repouso de <strong>${esc(activeSlot.name)}</strong> até às ${fmtTime(activeSlot.endMin)}</span>
         `;
       }
     } else {
@@ -174,7 +175,7 @@
       return `
         <div class="div-slot-card" style="border-left: 4px solid ${s.color.bg}">
           <div class="div-slot-head">
-            <strong>${s.name}</strong>
+            <strong>${esc(s.name)}</strong>
             <span class="div-slot-badge">${fmtDur(s.durMin)}</span>
           </div>
           <div class="div-slot-time">

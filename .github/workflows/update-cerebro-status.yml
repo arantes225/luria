@@ -17,45 +17,15 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Gerar CEREBRO-STATUS.md
-        run: |
-          DATE=$(date -u +"%Y-%m-%d %H:%M UTC")
-          COMMIT=$(git log -1 --format="%h — %s")
-          BRANCH=$(git branch -r --list 'origin/*' | grep -v HEAD | sed 's|origin/||' | sort | tr '\n' ', ' | sed 's/, $//')
-          PRS=$(gh pr list --state open --json number,title,headRefName 2>/dev/null | jq -r '.[] | "- PR #\(.number) `\(.headRefName)` — \(.title)"' 2>/dev/null || echo "- (sem PRs abertas)")
-          MIGRATIONS=$(ls supabase/migrations/*.sql 2>/dev/null | tail -5 | xargs -I{} basename {} | sort -r | sed 's/^/- /' || echo "- (nenhuma)")
-          MODULOS=$(ls trabalho/ 2>/dev/null | sed 's/^/- /' || echo "- (nenhum)")
-          APOSTILAS=$(ls apostilas/ 2>/dev/null | wc -l | tr -d ' ')
-          WORKFLOWS=$(ls .github/workflows/*.yml 2>/dev/null | xargs -I{} basename {} | sed 's/^/- /')
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
 
-          cat > docs/CEREBRO-STATUS.md << EOF
-          ---
-          gerado: $DATE
-          fonte: GitHub Actions (push na main)
-          ---
-          # Status do Repositório — $DATE
-
-          ## Último commit
-          $COMMIT
-
-          ## Branches ativas
-          $BRANCH
-
-          ## PRs abertas
-          $PRS
-
-          ## Módulos Modo Trabalho (pasta \`trabalho/\`)
-          $MODULOS
-
-          ## Últimas migrações Supabase
-          $MIGRATIONS
-
-          ## Apostilas (total de pastas)
-          $APOSTILAS pastas em \`apostilas/\`
-
-          ## Workflows ativos
-          $WORKFLOWS
-          EOF
+      - name: Gerar CEREBRO-STATUS.md com segurança
+        run: node scripts/generate-cerebro-status.cjs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commitar status
         run: |

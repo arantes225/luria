@@ -428,18 +428,34 @@ function renderPhoneticCorrection(correction) {
   });
 }
 
+const WEEKDAY_NAMES = { 1: "Segunda", 2: "Terça", 3: "Quarta", 4: "Quinta", 5: "Sexta", 6: "Sábado", 7: "Domingo" };
+
 function renderStudyAction(plan) {
   const feed = document.getElementById("alex-chat-feed");
-  if (!feed || !plan || !["schedule_focus", "topic_bundle"].includes(plan.type)) return;
+  if (!feed || !plan || !["schedule_focus", "topic_bundle", "add_event"].includes(plan.type)) return;
   const card = document.createElement("section");
   card.className = "alex-message alex-message--assistant alex-study-action";
   const title = document.createElement("strong");
-  title.textContent = plan.type === "schedule_focus" ? "Alteração de cronograma" : "Pacote de estudo";
+  if (plan.type === "schedule_focus") {
+    title.textContent = "Alteração de cronograma";
+  } else if (plan.type === "add_event") {
+    title.textContent = "Adicionar evento";
+  } else {
+    title.textContent = "Pacote de estudo";
+  }
   const summary = document.createElement("p");
-  const count = Number(plan.preview?.planned_count || 0);
-  summary.textContent = plan.type === "schedule_focus"
-    ? `${plan.topic}: ${count} aula${count === 1 ? "" : "s"} entre ${plan.start_date} e ${plan.end_date}, ${plan.lessons_per_day || 1} por dia de estudo. ${Number(plan.preview?.displaced_count || 0)} aula(s) atualmente agendada(s) poderão mudar de data.`
-    : `${plan.topic}: ${plan.question_count || 0} questões e ${plan.flashcard_count || 0} flashcards selecionados do acervo existente, além de uma apostila compatível quando disponível.`;
+  if (plan.type === "schedule_focus") {
+    const count = Number(plan.preview?.planned_count || 0);
+    const daysStr = Array.isArray(plan.weekdays) && plan.weekdays.length > 0
+      ? " às " + plan.weekdays.map(d => WEEKDAY_NAMES[d] || d).join(", ")
+      : "";
+    summary.textContent = `${plan.topic}: ${count} aula${count === 1 ? "" : "s"} entre ${plan.start_date} e ${plan.end_date}, ${plan.lessons_per_day || 1} por dia de estudo${daysStr}. ${Number(plan.preview?.displaced_count || 0)} aula(s) atualmente agendada(s) poderão mudar de data.`;
+  } else if (plan.type === "add_event") {
+    const timeStr = plan.event_time ? ` às ${plan.event_time}` : "";
+    summary.textContent = `Evento: "${plan.topic}" (${plan.event_type || "evento"}) agendado para o dia ${plan.event_date}${timeStr}.`;
+  } else {
+    summary.textContent = `${plan.topic}: ${plan.question_count || 0} questões e ${plan.flashcard_count || 0} flashcards selecionados do acervo existente, além de uma apostila compatível quando disponível.`;
+  }
   const actions = document.createElement("div");
   actions.className = "alex-study-action-buttons";
   const apply = document.createElement("button");

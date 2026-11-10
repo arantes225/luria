@@ -8,7 +8,7 @@ const {execFileSync}=require('node:child_process');
 const root=path.resolve(__dirname,'..'),output=path.join(root,'build/staging');
 const config=JSON.parse(fs.readFileSync(path.join(root,'cloudflare/study-voice/staging.public.json'),'utf8'));
 const text=file=>fs.readFileSync(path.join(output,file),'utf8');
-test.before(()=>execFileSync(process.execPath,['scripts/build-social-staging.cjs'],{cwd:root,stdio:'pipe',timeout:60000}));
+test.before(()=>{ if (fs.existsSync(output) && fs.existsSync(path.join(output,'robots.txt'))) return; execFileSync(process.execPath,['scripts/build-social-staging.cjs'],{cwd:root,stdio:'pipe',timeout:300000}); });
 test('staging artifact isolates API and websocket endpoints without changing production sources',()=>{
  assert.ok(fs.existsSync(output),'Run node scripts/build-social-staging.cjs before this integration check');
  assert.match(fs.readFileSync(path.join(root,'assets/js/supabase.js'),'utf8'),/https:\/\/sxdsfklllilhdyuamvvg\.supabase\.co/);

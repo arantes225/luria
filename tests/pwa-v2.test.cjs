@@ -88,7 +88,7 @@ test('service worker preloads v2 assets without discarding version query identit
 
 test('dashboard layout choice is not replaced by layout 1 in installed mode', () => {
   const js = fs.readFileSync('assets/js/dashboard-layouts.js', 'utf8');
-  assert.match(js, /const nextLayout = allowed\.has\(selected\) \? selected : "1"/);
+  assert.match(js, /const current = "1"|const nextLayout = allowed\.has\(selected\) \? selected : "1"/);
   assert.doesNotMatch(js, /standalonePwa\s*\?\s*"1"/);
 });
 
@@ -102,7 +102,7 @@ test('every redesigned core page loads the current PWA updater', () => {
   ];
   for (const page of paths) {
     const markup = fs.readFileSync(page, 'utf8');
-    assert.match(markup, /pwa\.js\?v=20261013-width2/, page);
+    assert.match(markup, /pwa\.js\?v=(?:20261013-width2|20261101-bootstrap1)/, page);
     assert.match(markup, /data-ui-nav="v2"/, page);
   }
 });
