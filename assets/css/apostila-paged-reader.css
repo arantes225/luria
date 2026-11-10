@@ -141,14 +141,17 @@ body[data-page="aprender"].traube-reader-paged .book-main .book-section > :is(h2
   break-after: avoid-column;
   break-inside: avoid-column;
 }
-body[data-page="aprender"].traube-reader-paged .book-main .book-section > h2 {
-  margin-top: 6px !important;
+body[data-page="aprender"].traube-reader-paged .book-main :is(.book-section,.mindmap-section) > h2 {
+  break-before: column !important;
+  margin-top: 0 !important;
+  padding-top: 2px !important;
 }
 body[data-page="aprender"].traube-reader-paged .book-main .book-section p {
-  max-width: 64ch !important;
+  max-width: 100% !important;
+  margin-top: 6px !important;
   margin-bottom: 28px !important;
   text-align: justify !important;
-  text-align-last: left !important;
+  text-align-last: auto !important;
   hyphens: auto;
   -webkit-hyphens: auto;
   word-break: normal;
@@ -166,7 +169,7 @@ body[data-page="aprender"].traube-reader-paged .book-main .book-section :is(p,li
   font-weight: 650 !important;
 }
 body[data-page="aprender"].traube-reader-paged .book-main .book-section li {
-  break-inside: auto;
+  break-inside: avoid-column !important;
   padding-left: 3px;
 }
 body[data-page="aprender"].traube-reader-paged .book-main .book-section li::marker {
