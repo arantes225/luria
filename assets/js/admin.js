@@ -2131,7 +2131,7 @@
 
   function setAdminView(view) {
     const next =
-      ["metrics", "factory", "editais", "plans", "alex", "plantao", "images", "beta"].includes(view)
+      ["metrics", "factory", "editais", "plans", "alex", "plantao", "images", "beta", "prelista"].includes(view)
         ? view
         : "metrics";
 
@@ -2160,6 +2160,12 @@
           error
         )
       );
+    }
+
+    if (next === "prelista" && window.TraubeAdminPrelista?.load) {
+      window.TraubeAdminPrelista.load().catch(error => {
+        console.warn("Não foi possível carregar a pré-lista:", error);
+      });
     }
 
     if (next === "beta") {
@@ -2231,7 +2237,7 @@
     let initial = location.hash === "#beta" ? "beta" : "metrics";
     try {
       const saved = sessionStorage.getItem("traube-admin-view");
-      if (location.hash !== "#beta" && ["metrics", "factory", "editais", "plans", "alex", "plantao", "images"].includes(saved)) {
+      if (location.hash !== "#beta" && ["metrics", "factory", "editais", "plans", "alex", "plantao", "images", "prelista"].includes(saved)) {
         initial = saved;
       }
     } catch (_) {}

@@ -28,6 +28,7 @@
 <script src="/assets/js/medical-icons.js?v=2.0"></script>
 
   <link rel="stylesheet" href="/assets/css/admin-ui-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/admin-prelista.css?v=1">
   <link rel="stylesheet" href="/assets/css/traube-logo.css?v=20261103-v1">
 </head>
 
@@ -144,7 +145,36 @@
             Imagens
             <span id="admin-images-pending-badge" class="admin-tab-badge" hidden>0</span>
           </button>
+          <button class="admin-view-tab" type="button" data-admin-view-tab="prelista" aria-selected="false">
+            Pré-lista
+            <span id="admin-prelista-badge" class="admin-tab-badge" hidden>0</span>
+          </button>
         </nav>
+
+        <section class="admin-section admin-prelista-section" data-admin-view="prelista" hidden aria-labelledby="admin-prelista-title">
+          <div class="admin-prelista-head">
+            <div>
+              <h2 id="admin-prelista-title">Pré-lista da landing</h2>
+              <p>Quem pediu para ser avisado do lançamento em resibulando.online. São dados pessoais: use só para o aviso de lançamento.</p>
+            </div>
+            <div class="admin-prelista-actions">
+              <button id="admin-prelista-refresh" class="button secondary" type="button">Atualizar</button>
+              <button id="admin-prelista-export" class="button primary" type="button" disabled>Exportar CSV</button>
+            </div>
+          </div>
+          <div class="admin-prelista-summary" id="admin-prelista-summary" aria-live="polite"></div>
+          <label class="admin-prelista-search">
+            <span>Buscar</span>
+            <input id="admin-prelista-search" type="search" maxlength="120" placeholder="Nome ou e-mail" autocomplete="off">
+          </label>
+          <div id="admin-prelista-status" class="admin-status" aria-live="polite">Abra esta aba para carregar a pré-lista.</div>
+          <div class="admin-prelista-table-wrap">
+            <table class="admin-prelista-table">
+              <thead><tr><th scope="col">Nome</th><th scope="col">E-mail</th><th scope="col">Momento</th><th scope="col">Origem</th><th scope="col">Entrou em</th><th scope="col">Ações</th></tr></thead>
+              <tbody id="admin-prelista-rows"></tbody>
+            </table>
+          </div>
+        </section>
 
         <section class="admin-section admin-image-review-section" data-admin-view="images" hidden>
           <div class="admin-section-head">
@@ -1890,6 +1920,7 @@ Após as três aprovações da versão atual, aguardar aprovação humana final 
   <script src="assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261101-traube-bootstrap1"></script>
   <script src="assets/js/admin-editais.js?v=3"></script>
+  <script src="/assets/js/admin-prelista.js?v=1"></script>
   <script src="assets/js/question-factory-prompts.js?v=4.1-fast-gt86-clinical"></script>
   <script src="assets/js/admin.js?v=20261102-image-review-fix-v1"></script>
   <script src="assets/js/question-factory-initial-package-fix.js?v=1"></script>

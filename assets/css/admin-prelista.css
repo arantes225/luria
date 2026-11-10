@@ -1,0 +1,17 @@
+/* Admin · Pré-lista */
+.admin-prelista-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.admin-prelista-head h2{margin:0 0 4px}
+.admin-prelista-head p{margin:0;color:var(--color-text-muted,#5b6b82);max-width:60ch}
+.admin-prelista-actions{display:flex;gap:8px;flex-wrap:wrap}
+.admin-prelista-summary{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-bottom:16px}
+.admin-prelista-card{padding:14px 16px;border-radius:14px;border:1px solid var(--color-border,rgba(15,30,60,.12));background:var(--color-surface,#fff)}
+.admin-prelista-card strong{display:block;font-size:1.6rem;line-height:1.1}
+.admin-prelista-card span{font-size:.85rem;color:var(--color-text-muted,#5b6b82)}
+.admin-prelista-search{display:flex;flex-direction:column;gap:4px;max-width:360px;margin-bottom:10px;font-size:.85rem}
+.admin-prelista-search input{padding:10px 12px;border-radius:10px;border:1px solid var(--color-border,rgba(15,30,60,.18));font:inherit}
+.admin-prelista-table-wrap{overflow-x:auto;border:1px solid var(--color-border,rgba(15,30,60,.12));border-radius:14px;margin-top:10px}
+.admin-prelista-table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:720px}
+.admin-prelista-table th,.admin-prelista-table td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--color-border,rgba(15,30,60,.08));vertical-align:middle}
+.admin-prelista-table th{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--color-text-muted,#5b6b82)}
+.admin-prelista-table tbody tr:last-child td{border-bottom:0}
+.admin-prelista-remove{padding:6px 12px;font-size:.8rem}

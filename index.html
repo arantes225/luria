@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>TRAUBE · Estudo, Revisão e Prática Clínica em um Único Lugar</title>
-  <meta name="description" content="A plataforma médica que conecta apostilas, questões, flashcards, caderno de erros, simulador de emergência, anatomia 3D e 42.990 ECGs reais em um único fluxo diário.">
+  <meta name="description" content="Apostilas, questões, flashcards, caderno de erros, simulador de emergência, anatomia 3D e ECG num único fluxo de estudo. Entre na pré-lista da TRAUBE.">
   <meta name="theme-color" content="#060B14">
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-azul-claro.png?v=favicon2">
   <link rel="apple-touch-icon" href="/assets/img/logos/logo-icone-azul-claro.png?v=pwa4">
   <link rel="preload" href="/assets/img/traube/tela-dashboard-escuro.jpg?v=20261108-dark3" as="image" fetchpriority="high">
-  <link rel="stylesheet" href="/assets/css/modo-estudo-landing.css?v=20261108-dark3">
+  <link rel="stylesheet" href="/assets/css/modo-estudo-landing.css?v=20261110-prelista1">
 </head>
 <body>
   <div id="scroll-progress" aria-hidden="true"></div>
@@ -29,13 +29,13 @@
         <a href="#problema">O Problema</a>
         <a href="#solucao">A Solução</a>
         <a href="#diferenciais">Diferenciais</a>
-        <a href="#planos">Planos</a>
+        <a href="#comparativo">Comparativo</a>
         <a href="#traube">Origem</a>
         <a href="#faq">Dúvidas</a>
       </nav>
       <div class="nav__cta">
         <a class="btn btn--ghost" href="/login/">Entrar</a>
-        <a class="btn btn--primary magnetic" href="/cadastro/">Criar conta gratuita</a>
+        <a class="btn btn--primary" href="#prelista" data-prelista-open data-origem="nav">Entrar na pré-lista</a>
       </div>
     </div>
   </header>
@@ -44,61 +44,48 @@
     <!-- BLOCO 1: ABERTURA + PRODUTO REAL EM ESCALA TOTAL (COM AS 4 MOLDURAS COLORIDAS) -->
     <section class="hero">
       <div class="wrap">
-        <!-- Logo de abertura destacada -->
-        <div class="hero-brand-top" data-reveal>
-          <div class="hero-brand-badge">
-            <img src="/assets/img/logos/logo-principal.png" alt="TRAUBE" class="hero-brand-logo" width="44" height="44">
-            <div class="hero-brand-text">
-              <span class="hero-brand-title">TRAUBE</span>
-              <span class="hero-brand-tag">Plataforma Médica Integrada</span>
-            </div>
-          </div>
-          <span class="hero-brand-pill">Edição 2026 · Ciclo Clínico, Internato e R1</span>
-        </div>
-
         <div class="hero__header" data-reveal>
           <div>
-            <span class="kicker"><i class="kicker-dot"></i> Plataforma de estudos médicos · Ciclo clínico, internato e R1</span>
-            <h1>
-              Estudar medicina já exige demais para você perder tempo
-              <span class="swap" data-word-swap>
-                <span class="swap__word is-on">organizando cinco abas.</span>
-                <span class="swap__word">refazendo planilha atrasada.</span>
-                <span class="swap__word">esquecendo o que já leu.</span>
-                <span class="swap__word">estudando sem direção.</span>
-              </span>
-            </h1>
+            <span class="kicker">Ciclo clínico · Internato · Residência</span>
+            <h1>Estudar medicina já exige demais. <em>Organizar o estudo não deveria.</em></h1>
           </div>
           <div class="hero__right">
             <p class="hero__lead">
-              A <strong>Traube</strong> reúne o que antes ficava espalhado: seu cronograma inteligente, mais de 100 mil questões comentadas, 12 mil flashcards FSRS, 275 apostilas próprias e simulador de emergência na mesma sessão diária.
+              A <strong>TRAUBE</strong> junta o que hoje fica espalhado em cinco lugares: cronograma, 275 apostilas próprias, questões comentadas, flashcards com repetição espaçada, caderno de erros e um simulador de emergência, todos na mesma sessão de estudo.
             </p>
 
-            <!-- Captura de nome na lista prioritária -->
-            <div class="hero-waitlist" id="lista-espera">
-              <span class="hero-waitlist__label">Coloque seu nome na lista prioritária de acesso:</span>
-              <form class="hero-waitlist__form" action="/cadastro/">
-                <div class="hero-waitlist__input-group">
-                  <span class="hero-waitlist__icon" aria-hidden="true">👤</span>
-                  <input type="text" class="hero-waitlist__input" id="waitlist-name" name="nome" placeholder="Digite seu nome completo" required autocomplete="name">
+            <!-- Pré-lista (vai para Admin > Pré-lista) -->
+            <div class="hero-prelista" id="prelista">
+            <div class="prelista" data-prelista>
+              <form class="prelista__form" data-prelista-form data-origem="hero" novalidate>
+                <p class="prelista__title">Estamos abrindo aos poucos. <strong>Entre na pré-lista</strong> e seja avisado(a) primeiro.</p>
+                <div class="prelista__row">
+                  <label class="prelista__field"><span>Seu nome</span><input type="text" id="pl-nome" name="nome" required minlength="2" maxlength="120" autocomplete="name" placeholder="Como podemos te chamar"></label>
+                  <label class="prelista__field"><span>Seu e-mail</span><input type="email" id="pl-email" name="email" required maxlength="254" autocomplete="email" inputmode="email" placeholder="voce@email.com"></label>
                 </div>
-                <div class="hero-waitlist__input-group">
-                  <span class="hero-waitlist__icon" aria-hidden="true">✉️</span>
-                  <input type="email" class="hero-waitlist__input" id="waitlist-email" name="email" placeholder="Seu melhor e-mail médico" required autocomplete="email">
-                </div>
-                <button type="submit" class="btn btn--pink btn--hero-submit magnetic" id="waitlist-submit">
-                  <span>Garantir vaga na lista →</span>
-                </button>
+                <label class="prelista__field"><span>Em que momento você está? <small>(opcional)</small></span>
+                  <select id="pl-fase" name="fase">
+                    <option value="">Prefiro não dizer</option>
+                    <option value="ciclo_basico">Ciclo básico</option>
+                    <option value="ciclo_clinico">Ciclo clínico</option>
+                    <option value="internato">Internato</option>
+                    <option value="formado">Já formado(a), indo para a residência</option>
+                  </select>
+                </label>
+                <label class="prelista__trap" aria-hidden="true">Site<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                <label class="prelista__consent"><input type="checkbox" id="pl-consent" name="consentimento" required><span>Quero receber por e-mail o aviso de abertura da TRAUBE. Meus dados são usados só para isso e posso pedir para sair quando quiser.</span></label>
+                <button type="submit" class="btn btn--primary btn--lg prelista__submit">Entrar na pré-lista</button>
+                <p class="prelista__feedback" data-prelista-feedback aria-live="polite"></p>
               </form>
-              <div class="hero-waitlist__feedback" id="waitlist-feedback" aria-live="polite"></div>
+              <div class="prelista__success" data-prelista-success hidden tabindex="-1">
+                <strong>Pronto, <span data-prelista-name></span>. Você está na pré-lista.</strong>
+                <p>Quando abrirmos as vagas, você é das primeiras pessoas a saber, pelo e-mail que acabou de deixar.</p>
+              </div>
+            </div>
             </div>
 
-            <div class="hero__actions">
-              <a class="btn btn--primary btn--lg magnetic" href="/cadastro/">Criar conta gratuita</a>
-              <a class="btn btn--blue btn--lg magnetic" href="#problema">Ver diferenciais na prática ↓</a>
-            </div>
             <div class="hero__meta">
-              <span class="meta-pill"><i class="pulse-dot"></i> Importação nativa de decks do Anki (.apkg) &amp; FSRS</span>
+              <a class="hero__more" href="#problema">Ver como funciona ↓</a>
               <span class="sigmark sigmark--hero sig--draw" role="img" aria-label="Assinatura de Ludwig Traube"></span>
             </div>
           </div>
@@ -109,7 +96,7 @@
           <div class="hero-showcase__bar">
             <div class="hero-showcase__title">
               <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <span>Ambiente de Estudos Traube · Moldura colorida contínua nos 4 lados</span>
+              <span>Seu painel na TRAUBE · escolha o tema que cansa menos a vista</span>
             </div>
             <div class="theme-tabs" role="tablist" aria-label="Alternar moldura colorida da plataforma">
               <button class="theme-tab is-active" type="button" role="tab" aria-selected="true" data-theme-target="dark-blue" data-theme-desc="Azul Noturno · Fundo escuro de baixo contraste para sessões noturnas pós-plantão.">
@@ -127,7 +114,7 @@
             </div>
           </div>
 
-          <div class="stage3d" data-tilt="3">
+          <div class="stage3d">
             <div class="theme-frame is-active" data-theme-frame="dark-blue">
               <figure class="shot">
                 <img src="/assets/img/traube/tela-dashboard-escuro.jpg?v=20261110-dark4" alt="Dashboard real da Traube no tema Azul Noturno exibindo a moldura colorida nos quatro lados, atividades do dia, sessão guiada de 30 minutos e progresso por área" width="1440" height="900" fetchpriority="high">
@@ -152,7 +139,7 @@
 
           <div class="hero-showcase__foot">
             <strong data-theme-label>Azul Noturno · Fundo escuro de baixo contraste para sessões noturnas pós-plantão.</strong>
-            <span>Clique nos 4 temas acima para testar a moldura real da plataforma</span>
+            <span>Toque nos temas para ver a tela real em cada um.</span>
           </div>
         </div>
 
@@ -237,7 +224,6 @@
                 <span class="problem-stage__tag">Ato 01</span>
                 <span class="problem-stage__status">Semana normal</span>
               </div>
-              <span class="problem-stage__icon-badge" aria-hidden="true">🗂️</span>
             </div>
             <div class="problem-stage__body">
               <span class="problem-stage__sublabel">Fragmentação extrema</span>
@@ -248,7 +234,7 @@
             </div>
             <div class="problem-stage__consequence">
               <div class="consequence-label">Impacto no aprendizado:</div>
-              <div class="consequence-desc">Perda diária de 45 a 60 minutos apenas trocando de ferramenta e formatando anotações.</div>
+              <div class="consequence-desc">Tempo de estudo que vai embora trocando de ferramenta e reorganizando anotação.</div>
             </div>
           </article>
 
@@ -258,7 +244,6 @@
                 <span class="problem-stage__tag">Ato 02</span>
                 <span class="problem-stage__status">Primeiro imprevisto</span>
               </div>
-              <span class="problem-stage__icon-badge" aria-hidden="true">⏱️</span>
             </div>
             <div class="problem-stage__body">
               <span class="problem-stage__sublabel">Efeito bola de neve</span>
@@ -279,7 +264,6 @@
                 <span class="problem-stage__tag">Ato 03</span>
                 <span class="problem-stage__status">Dia do simulado</span>
               </div>
-              <span class="problem-stage__icon-badge" aria-hidden="true">🎯</span>
             </div>
             <div class="problem-stage__body">
               <span class="problem-stage__sublabel">Repetição do erro</span>
@@ -290,15 +274,15 @@
             </div>
             <div class="problem-stage__consequence">
               <div class="consequence-label">Impacto no aprendizado:</div>
-              <div class="consequence-desc">Estagnação crônica na faixa dos 65–70% de acerto nas provas de residência.</div>
+              <div class="consequence-desc">A nota para de subir, porque o erro nunca virou revisão.</div>
             </div>
           </article>
         </div>
 
         <!-- Frase de transição que conecta o Problema à Solução -->
         <div class="bridge-quote" data-reveal>
-          <p data-scrolltext data-accent="conectados,automaticamente,memória,aprovação">
-            Para sair desse ciclo, você não precisa de mais uma planilha. Você precisa que leitura, questões, erros e revisões estejam conectados automaticamente em um único fluxo de memória e aprovação.
+          <p data-scrolltext data-accent="conectados,fluxo,revisão">
+            Para sair desse ciclo, você não precisa de mais uma planilha. Você precisa que leitura, questões, erros e revisões estejam conectados num único fluxo, em que cada erro vira revisão.
           </p>
         </div>
 
@@ -436,6 +420,14 @@
       </div>
     </section>
 
+    <!-- Ponte: problema -> solução, com chamada para a pré-lista -->
+    <div class="cta-band">
+      <div class="wrap cta-band__row" data-reveal>
+        <p><strong>Se isso soou familiar, a TRAUBE foi feita para você.</strong> Veja abaixo como é um dia de estudo lá dentro, ou garanta seu lugar agora.</p>
+        <a class="btn btn--primary" href="#prelista" data-prelista-open data-origem="ponte-problema">Entrar na pré-lista</a>
+      </div>
+    </div>
+
     <!-- BLOCO 3: NOSSA SOLUÇÃO NO DIA A DIA (Fluxo linear de 5 etapas) -->
     <section class="sec sec--alt" id="solucao" data-story>
       <div class="wrap">
@@ -558,7 +550,7 @@
           <!-- Diferencial 01: Simulador de Emergência -->
           <article class="chap" data-reveal>
             <div class="chap__media">
-              <figure class="shot" data-tilt="3">
+              <figure class="shot">
                 <img src="/assets/img/traube/dif-simulador.jpg?v=20261108-dark3" alt="Simulador de Emergência da Traube com paciente na sala vermelha, monitor cardíaco marcando 178 bpm, PA 72/44 mmHg e prontuário em tempo real" width="1440" height="900" loading="lazy">
                 <figcaption class="shot__caption">
                   <span>/plantao/sala-emergencia · Simulador de Sala Vermelha</span>
@@ -577,14 +569,14 @@
                 <li><strong>Fluxo completo de atendimento:</strong> Faça anamnese dirigida, exame físico, procedimentos iniciais, peça exames laboratoriais e prescreva drogas vasoativas.</li>
                 <li><strong>Prontuário cronológico:</strong> Cada minuto conta; ao final do caso, você recebe a análise detalhada dos acertos e das condutas críticas esquecidas.</li>
               </ul>
-              <a class="chap__link" href="/cadastro/">Treinar casos de sala vermelha →</a>
+              <a class="chap__link" href="#prelista" data-prelista-open>Treinar casos de sala vermelha →</a>
             </div>
           </article>
 
           <!-- Diferencial 02: Sala de Anatomia 3D -->
           <article class="chap chap--rev" data-reveal>
             <div class="chap__media">
-              <figure class="shot" data-tilt="3">
+              <figure class="shot">
                 <img src="/assets/img/traube/dif-anatomia-painel.jpg?v=20261110-atlas" alt="Sala de Anatomia 3D da Traube exibindo o atlas corporal masculino completo com visualização dos sistemas esquelético, muscular e viscerais em perspectiva 3D" width="1440" height="900" loading="eager">
                 <figcaption class="shot__caption">
                   <span>/aprender/anatomia/atlas/?corpo=masculino · Sala de Anatomia 3D</span>
@@ -603,18 +595,18 @@
                 <li><strong>Coração e órgãos em detalhe:</strong> Alterne entre vista externa, corte de câmaras ventriculares, vasos da base e dinâmica de fluxo sanguíneo.</li>
                 <li><strong>Modo de teste ativo:</strong> Oculte os nomes das estruturas e teste sua identificação anatômica antes das provas práticas e plantões.</li>
               </ul>
-              <a class="chap__link" href="/cadastro/">Explorar a Sala de Anatomia 3D →</a>
+              <a class="chap__link" href="#prelista" data-prelista-open>Explorar a Sala de Anatomia 3D →</a>
             </div>
           </article>
 
           <!-- Diferencial 03: Amigos & Estudo Ao Vivo -->
           <article class="chap" data-reveal>
             <div class="chap__media">
-              <figure class="shot" data-tilt="3">
-                <img src="/assets/img/traube/dif-amigos.jpg?v=20261110-amigos" alt="Página de Amigos e Estudo Ao Vivo da Traube exibindo cards alinhados, colegas online e salas de estudo por vídeo" width="1440" height="900" loading="eager">
+              <figure class="shot">
+                <img src="/assets/img/traube/dif-amigos.jpg?v=20261110-amigos" alt="Página de Amigos e Estudo Ao Vivo da Traube com colegas e salas de estudo" width="1440" height="900" loading="eager">
                 <figcaption class="shot__caption">
                   <span>/amigos · Salas de Estudo Ao Vivo &amp; Colegas</span>
-                  <span>Presença, áudio, vídeo e grupos em tempo real</span>
+                  <span>Salas ao vivo, voz e grupos</span>
                 </figcaption>
               </figure>
             </div>
@@ -625,18 +617,18 @@
                 A preparação para a residência costuma ser solitária e cansativa. Na Traube, você estuda junto com sua dupla de internato ou grupo de faculdade sem precisar sair da plataforma.
               </p>
               <ul class="chap__points">
-                <li><strong>Salas de Estudo Ao Vivo:</strong> Abra uma sala com áudio e vídeo em um clique para discutir casos clínicos, corrigir simulados ou manter o foco em conjunto.</li>
+                <li><strong>Salas de Estudo Ao Vivo:</strong> abra uma sala, chame a turma e estudem juntos com cronômetro compartilhado, checklist coletivo, questões em grupo e conversa por voz.</li>
                 <li><strong>Status de estudo em tempo real:</strong> Veja quem está estudando agora, qual matéria está revisando e mantenha a constância mútua ao longo do ano.</li>
                 <li><strong>Compartilhamento nativo:</strong> Envie decks de flashcards, listas de questões e anotações diretamente pelo código Traube de cada colega.</li>
               </ul>
-              <a class="chap__link" href="/cadastro/">Conectar com colegas de turma →</a>
+              <a class="chap__link" href="#prelista" data-prelista-open>Conectar com colegas de turma →</a>
             </div>
           </article>
 
           <!-- Diferencial 04: Cronograma Inteligente -->
           <article class="chap chap--rev" data-reveal>
             <div class="chap__media">
-              <figure class="shot" data-tilt="3">
+              <figure class="shot">
                 <img src="/assets/img/traube/tela-cronograma.jpg?v=20261108-dark3" alt="Tela de Cronograma da Traube com calendário mensal preenchido, métricas de aulas concluídas e integração com Google Calendar" width="1440" height="900" loading="lazy">
                 <figcaption class="shot__caption">
                   <span>/cronograma · Planejamento Semanal, Mensal e Diário</span>
@@ -655,14 +647,14 @@
                 <li><strong>Visão clara de pendências:</strong> Saiba exatamente quantas aulas estão agendadas, quantas já foram concluídas e seu ritmo semanal de horas líquidas.</li>
                 <li><strong>Integração com a Sessão Guiada:</strong> O que está previsto para hoje no calendário alimenta automaticamente o botão <em>Estudar agora</em> do seu Dashboard.</li>
               </ul>
-              <a class="chap__link" href="/cadastro/">Montar meu cronograma na Traube →</a>
+              <a class="chap__link" href="#prelista" data-prelista-open>Montar meu cronograma na Traube →</a>
             </div>
           </article>
 
           <!-- Diferencial 05: Central Tutoria Leco -->
           <article class="chap" data-reveal>
             <div class="chap__media">
-              <div class="pair-media" data-tilt="3">
+              <div class="pair-media">
                 <figure class="shot">
                   <img src="/assets/img/traube/tela-aprender.jpg?v=20261110-leco" alt="Sala de Tutoria do Professor Leco na Traube com chat médico interativo, avatar 3D e resolução de casos clínicos" width="1440" height="900" loading="eager">
                   <figcaption class="shot__caption">
@@ -686,15 +678,15 @@
                 <li><strong>Análise de materiais e questões:</strong> Peça para o Leco explicar os distratores das questões mais difíceis da USP, ENARE ou UNICAMP e montar mapas mentais imediatos.</li>
                 <li><strong>Multiplataforma contínua:</strong> Acesse a tutoria do Leco tanto no computador durante a sessão de estudos quanto no smartphone no intervalo do plantão.</li>
               </ul>
-              <a class="chap__link" href="/cadastro/">Entrar na sala de tutoria do Leco →</a>
+              <a class="chap__link" href="#prelista" data-prelista-open>Entrar na sala de tutoria do Leco →</a>
             </div>
           </article>
 
           <!-- Diferencial 06: Jogos Clínicos -->
           <article class="chap chap--rev" data-reveal>
             <div class="chap__media">
-              <figure class="shot" data-tilt="3">
-                <img src="/assets/img/traube/dif-jogos.jpg?v=20261108-dark3" alt="Tela de Jogos Clínicos da Traube com Termo Médico, Plantão Rápido, Corrida Clínica e Desafio Diário" width="1440" height="900" loading="lazy">
+              <figure class="shot">
+                <img src="/assets/img/traube/dif-jogos.jpg?v=20261108-dark3" alt="Tela de Jogos da Traube com Study Rats, Plantão Relâmpago, Sequência Salvadora e Escapando do Plantão" width="1440" height="900" loading="lazy">
                 <figcaption class="shot__caption">
                   <span>/jogos · Treino Rápido de Raciocínio</span>
                   <span>4 modalidades clínicas</span>
@@ -708,11 +700,11 @@
                 Quando você sai de um plantão exaustivo sem energia para ler um capítulo longo, os Jogos Clínicos mantêm sua mente afiada e preservam sua ofensiva diária em partidas de 3 a 5 minutos.
               </p>
               <ul class="chap__points">
-                <li><strong>Plantão Rápido &amp; Desafio Diário:</strong> Vinhetas clínicas curtas contra o relógio para treinar reconhecimento imediato de síndromes e condutas.</li>
-                <li><strong>Termo Médico:</strong> Descubra diariamente o termo semiológico, farmacológico ou patológico em até seis tentativas.</li>
-                <li><strong>Corrida Clínica:</strong> Disputa de velocidade diagnóstica para revisar conceitos-chave com leveza.</li>
+                <li><strong>Plantão Relâmpago:</strong> raciocínio e conduta em poucos segundos, com sequência de acertos contra o relógio.</li>
+                <li><strong>Sequência Salvadora:</strong> coloque as etapas de protocolos de emergência e terapia intensiva na ordem certa.</li>
+                <li><strong>Escapando do Plantão e Study Rats:</strong> minicasos em salas temáticas e uma corrida em tabuleiro médico para jogar com colegas (em beta).</li>
               </ul>
-              <a class="chap__link" href="/cadastro/">Conhecer os Jogos Clínicos →</a>
+              <a class="chap__link" href="#prelista" data-prelista-open>Conhecer os Jogos Clínicos →</a>
             </div>
           </article>
 
@@ -747,95 +739,24 @@
                 <li><strong>Do básico às emergências:</strong> De bloqueios de ramo e sobrecargas cavitárias a infarto agudo com supra, hipercalemia e taquiarritmias graves.</li>
                 <li><strong>Feedback imediato no traçado:</strong> Compare sua hipótese com o laudo cardiológico validado de cada exame.</li>
               </ul>
-              <a class="chap__link" href="/cadastro/">Treinar interpretação de ECG →</a>
+              <a class="chap__link" href="#prelista" data-prelista-open>Treinar interpretação de ECG →</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- BLOCO 5: PLANOS & ACESSO (#planos) — Posicionado logo após apresentar o problema e a solução completa -->
-    <section class="sec sec--alt" id="planos">
-      <span class="sigmark sigmark--corner" aria-hidden="true"></span>
+    <!-- BLOCO 4: COMPARATIVO -->
+    <section class="sec sec--alt" id="comparativo">
       <div class="wrap">
         <div class="flow-step-marker" data-reveal>
-          <span>Parte 04 · Planos &amp; Acesso</span>
-          Escolha como começar sua preparação na Traube
+          <span>Parte 04 · Comparativo</span>
+          O que muda na prática, lado a lado
         </div>
-
         <div class="sec-intro" data-reveal>
-          <h2>Tudo em uma única assinatura, <em>sem precisar somar quatro serviços diferentes.</em></h2>
-          <p>
-            Enquanto estudantes costumam pagar separadamente por banco de questões, cursinho, atlas 3D e aplicativos de revisão, a Traube reúne todo o fluxo em um só lugar. Crie sua conta gratuita agora para acessar o ambiente e garantir prioridade na abertura dos planos:
-          </p>
+          <h2>Tudo isso num lugar só, <em>em vez de quatro serviços que não se falam.</em></h2>
+          <p>Veja como a mesma rotina funciona com apps soltos, com o cursinho tradicional e dentro da TRAUBE:</p>
         </div>
-
-        <div class="plans-grid" data-reveal>
-          <article class="plan">
-            <div>
-              <span class="plan__tag">Plano 01 · Base Acadêmica</span>
-              <h3>Essencial</h3>
-              <p class="plan__desc">Para organizar sua rotina desde o ciclo clínico, estudar pelas apostilas e manter constância diária.</p>
-              <div class="plan__price">
-                <span>R$ —</span>
-                <small>Em definição · Acesso inicial</small>
-              </div>
-              <ul class="plan__list">
-                <li><strong>Dashboard &amp; Sessão Guiada</strong> com meta diária</li>
-                <li><strong>Cronograma adaptativo</strong> semanal e mensal</li>
-                <li><strong>Acesso às 275 Apostilas</strong> das 6 grandes áreas</li>
-                <li><strong>Caderno de Anotações</strong> e Caderno de Erros</li>
-                <li><strong>Sala de Anatomia 3D</strong> (coração e atlas corporal)</li>
-                <li><strong>Rede de Amigos</strong> e grupos de estudo</li>
-              </ul>
-            </div>
-            <a class="btn btn--ghost btn--full" href="/cadastro/">Criar conta gratuita</a>
-          </article>
-
-          <article class="plan plan--featured">
-            <div>
-              <span class="plan__tag">Plano 02 · Ciclo Completo de Residência</span>
-              <h3>Plus</h3>
-              <p class="plan__desc">A estrutura completa de questões, repetição espaçada e simulação de emergência para provas de R1 e ENAMED.</p>
-              <div class="plan__price">
-                <span>R$ —</span>
-                <small>Em definição · Lista prioritária</small>
-              </div>
-              <ul class="plan__list">
-                <li><strong>Tudo do plano Essencial</strong> incluso</li>
-                <li><strong>Flashcards com algoritmo FSRS</strong> e importação Anki (.apkg)</li>
-                <li><strong>Banco de Questões e Simulados</strong> com filtros por área</li>
-                <li><strong>Simulador de Emergência</strong> com monitor ao vivo</li>
-                <li><strong>Treinamento nos 42.990 ECGs</strong> reais da base PTB-XL</li>
-                <li><strong>Salas de Estudo Ao Vivo</strong>, Jogos Clínicos e Estatísticas</li>
-              </ul>
-            </div>
-            <a class="btn btn--blue btn--full magnetic" href="/cadastro/">Entrar na lista prioritária Plus →</a>
-          </article>
-
-          <article class="plan">
-            <div>
-              <span class="plan__tag">Plano 03 · Inteligência &amp; Plantão</span>
-              <h3>Pro</h3>
-              <p class="plan__desc">Para internos, candidatos de alta concorrência e médicos que querem o tutor de IA Leco e automação completa.</p>
-              <div class="plan__price">
-                <span>R$ —</span>
-                <small>Em definição · Lista prioritária</small>
-              </div>
-              <ul class="plan__list">
-                <li><strong>Tudo do plano Plus</strong> com limites expandidos</li>
-                <li><strong>Tutor de IA Leco</strong> para dúvidas, tabelas e resumos</li>
-                <li><strong>Geração automática</strong> de cronogramas e listas</li>
-                <li><strong>Upload de imagens</strong> em flashcards e no Caderno de Erros</li>
-                <li><strong>Acesso ao Modo Trabalho</strong> (Protocolos, PCR e Bulário)</li>
-                <li><strong>Personalização completa</strong> do perfil e companheiro de estudo</li>
-              </ul>
-            </div>
-            <a class="btn btn--ghost btn--full" href="/cadastro/">Reservar vaga no Pro</a>
-          </article>
-        </div>
-
-        <!-- Comparativo direto -->
         <div class="compare-wrap" data-reveal>
           <table class="compare-table" aria-label="Comparativo entre estudo espalhado, cursinhos tradicionais e a plataforma Traube">
             <thead>
@@ -874,6 +795,94 @@
             </tbody>
           </table>
         </div>
+        <div class="cmp-cta" data-reveal>
+          <p>Os planos ainda estão sendo fechados. Quem está na pré-lista fica sabendo antes de todo mundo.</p>
+          <a class="btn btn--primary btn--lg" href="#prelista" data-prelista-open data-origem="comparativo">Entrar na pré-lista</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LUIZ: PLANOS OCULTOS a pedido (2026-11-10). Para reexibir, remova o atributo hidden e volte o link "Planos" do menu. -->
+    <section class="sec sec--alt" id="planos" hidden>
+      <span class="sigmark sigmark--corner" aria-hidden="true"></span>
+      <div class="wrap">
+        <div class="flow-step-marker" data-reveal>
+          <span>Parte 04 · Planos &amp; Acesso</span>
+          Escolha como começar sua preparação na Traube
+        </div>
+
+        <div class="sec-intro" data-reveal>
+          <h2>Tudo em uma única assinatura, <em>sem precisar somar quatro serviços diferentes.</em></h2>
+          <p>
+            Enquanto estudantes costumam pagar separadamente por banco de questões, cursinho, atlas 3D e aplicativos de revisão, a Traube reúne todo o fluxo em um só lugar. Crie sua conta gratuita agora para acessar o ambiente e garantir prioridade na abertura dos planos:
+          </p>
+        </div>
+
+        <div class="plans-grid" data-reveal>
+          <article class="plan">
+            <div>
+              <span class="plan__tag">Plano 01 · Base Acadêmica</span>
+              <h3>Essencial</h3>
+              <p class="plan__desc">Para organizar sua rotina desde o ciclo clínico, estudar pelas apostilas e manter constância diária.</p>
+              <div class="plan__price">
+                <span>R$ —</span>
+                <small>Em definição · Acesso inicial</small>
+              </div>
+              <ul class="plan__list">
+                <li><strong>Dashboard &amp; Sessão Guiada</strong> com meta diária</li>
+                <li><strong>Cronograma adaptativo</strong> semanal e mensal</li>
+                <li><strong>Acesso às 275 Apostilas</strong> das 6 grandes áreas</li>
+                <li><strong>Caderno de Anotações</strong> e Caderno de Erros</li>
+                <li><strong>Sala de Anatomia 3D</strong> (coração e atlas corporal)</li>
+                <li><strong>Rede de Amigos</strong> e grupos de estudo</li>
+              </ul>
+            </div>
+            <a class="btn btn--ghost btn--full" href="#prelista" data-prelista-open>Criar conta gratuita</a>
+          </article>
+
+          <article class="plan plan--featured">
+            <div>
+              <span class="plan__tag">Plano 02 · Ciclo Completo de Residência</span>
+              <h3>Plus</h3>
+              <p class="plan__desc">A estrutura completa de questões, repetição espaçada e simulação de emergência para provas de R1 e ENAMED.</p>
+              <div class="plan__price">
+                <span>R$ —</span>
+                <small>Em definição · Lista prioritária</small>
+              </div>
+              <ul class="plan__list">
+                <li><strong>Tudo do plano Essencial</strong> incluso</li>
+                <li><strong>Flashcards com algoritmo FSRS</strong> e importação Anki (.apkg)</li>
+                <li><strong>Banco de Questões e Simulados</strong> com filtros por área</li>
+                <li><strong>Simulador de Emergência</strong> com monitor ao vivo</li>
+                <li><strong>Treinamento nos 42.990 ECGs</strong> reais da base PTB-XL</li>
+                <li><strong>Salas de Estudo Ao Vivo</strong>, Jogos Clínicos e Estatísticas</li>
+              </ul>
+            </div>
+            <a class="btn btn--blue btn--full" href="#prelista" data-prelista-open>Entrar na lista prioritária Plus →</a>
+          </article>
+
+          <article class="plan">
+            <div>
+              <span class="plan__tag">Plano 03 · Inteligência &amp; Plantão</span>
+              <h3>Pro</h3>
+              <p class="plan__desc">Para internos, candidatos de alta concorrência e médicos que querem o tutor de IA Leco e automação completa.</p>
+              <div class="plan__price">
+                <span>R$ —</span>
+                <small>Em definição · Lista prioritária</small>
+              </div>
+              <ul class="plan__list">
+                <li><strong>Tudo do plano Plus</strong> com limites expandidos</li>
+                <li><strong>Tutor de IA Leco</strong> para dúvidas, tabelas e resumos</li>
+                <li><strong>Geração automática</strong> de cronogramas e listas</li>
+                <li><strong>Upload de imagens</strong> em flashcards e no Caderno de Erros</li>
+                <li><strong>Acesso ao Modo Trabalho</strong> (Protocolos, PCR e Bulário)</li>
+                <li><strong>Personalização completa</strong> do perfil e companheiro de estudo</li>
+              </ul>
+            </div>
+            <a class="btn btn--ghost btn--full" href="#prelista" data-prelista-open>Reservar vaga no Pro</a>
+          </article>
+        </div>
+
       </div>
     </section>
 
@@ -893,7 +902,7 @@
         </div>
 
         <div class="areas-grid" data-reveal>
-          <article class="area-cell" data-spot>
+          <article class="area-cell">
             <div class="area-cell__head">
               <strong>Clínica Médica</strong>
               <span>72 apostilas</span>
@@ -902,7 +911,7 @@
             <div class="area-bar"><i style="width:100%"></i></div>
           </article>
 
-          <article class="area-cell" data-spot>
+          <article class="area-cell">
             <div class="area-cell__head">
               <strong>Ginecologia e Obstetrícia</strong>
               <span>57 apostilas</span>
@@ -911,7 +920,7 @@
             <div class="area-bar"><i style="width:82%"></i></div>
           </article>
 
-          <article class="area-cell" data-spot>
+          <article class="area-cell">
             <div class="area-cell__head">
               <strong>Cirurgia Geral &amp; Trauma</strong>
               <span>50 apostilas</span>
@@ -920,7 +929,7 @@
             <div class="area-bar"><i style="width:74%"></i></div>
           </article>
 
-          <article class="area-cell" data-spot>
+          <article class="area-cell">
             <div class="area-cell__head">
               <strong>Pediatria &amp; Neonatologia</strong>
               <span>48 apostilas</span>
@@ -929,7 +938,7 @@
             <div class="area-bar"><i style="width:70%"></i></div>
           </article>
 
-          <article class="area-cell" data-spot>
+          <article class="area-cell">
             <div class="area-cell__head">
               <strong>Medicina Preventiva &amp; SUS</strong>
               <span>35 apostilas</span>
@@ -938,7 +947,7 @@
             <div class="area-bar"><i style="width:56%"></i></div>
           </article>
 
-          <article class="area-cell" data-spot>
+          <article class="area-cell">
             <div class="area-cell__head">
               <strong>Psiquiatria</strong>
               <span>13 apostilas</span>
@@ -974,10 +983,11 @@
               No século XIX, no Hospital Charité de Berlim, <strong>Ludwig Traube (1818–1876)</strong> mudou os rumos da medicina ao substituir suposições subjetivas pela medição rigorosa à beira do leito: introduziu os gráficos sistemáticos de temperatura, pulso e frequência respiratória na rotina hospitalar e descreveu o célebre <strong>Espaço Semilunar de Traube</strong> na propedêutica abdominal.
             </p>
             <blockquote class="traube-quote-clean">
-              “Na medicina e na preparação para as provas mais exigentes do país, a intuição sem método falha. O registro diário e a observação sistemática vencem.”
+              Intuição sem método falha. Registro diário e observação sistemática vencem.
+              <cite>O princípio que trouxemos dele para o estudo</cite>
             </blockquote>
             <p>
-              Trouxemos exatamente esse princípio para o estudo médico contemporâneo: eliminar o estudo às cegas, medir a retenção real de cada especialidade e transformar cada erro cometido em aprovação consolidada.
+              Trouxemos exatamente esse princípio para o estudo médico contemporâneo: eliminar o estudo às cegas, medir a retenção real de cada especialidade e transformar cada erro em conhecimento que fica.
             </p>
           </div>
         </div>
@@ -989,7 +999,7 @@
       <div class="wrap">
         <div class="sec-intro" data-reveal>
           <span class="kicker">Dúvidas frequentes</span>
-          <h2>Respostas diretas antes de você <em>criar sua conta.</em></h2>
+          <h2>Respostas diretas antes de você <em>entrar na pré-lista.</em></h2>
         </div>
 
         <div class="faq-list" data-reveal>
@@ -1010,8 +1020,12 @@
             <p>Sim. Tanto o Simulador de Emergência quanto os modelos tridimensionais da Sala de Anatomia rodam direto no navegador, sem exigir instalação de programas externos.</p>
           </details>
           <details class="faq-item">
-            <summary>Como funciona o cadastro gratuito neste momento?</summary>
-            <p>Você cria sua conta gratuitamente em menos de um minuto, acessa imediatamente o ambiente de estudos e garante prioridade nas condições de lançamento dos planos Essencial, Plus e Pro.</p>
+            <summary>Como funciona a pré-lista?</summary>
+            <p>Você deixa nome e e-mail e a gente avisa por e-mail quando abrirmos as vagas e os planos. Seus dados ficam só com a equipe TRAUBE, são usados só para esse aviso e você pode pedir para sair quando quiser.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Já tenho conta. Preciso entrar na pré-lista?</summary>
+            <p>Não. É só clicar em <a href="/login/">Entrar</a> e continuar estudando.</p>
           </details>
         </div>
       </div>
@@ -1021,12 +1035,12 @@
     <section class="final-cta">
       <div class="wrap" data-reveal>
         <span class="sigmark sigmark--section sig--draw" style="margin-inline:auto" role="img" aria-label="Assinatura de Ludwig Traube"></span>
-        <h2>Substitua cinco abas soltas por um único fluxo de <em>estudo e aprovação.</em></h2>
+        <h2>Troque cinco abas soltas por um único fluxo de <em>estudo e revisão.</em></h2>
         <p>
-          Crie sua conta gratuita agora, escolha sua moldura favorita e comece sua primeira sessão guiada na Traube.
+          A TRAUBE está abrindo aos poucos. Entre na pré-lista e seja das primeiras pessoas a estudar com ela.
         </p>
         <div class="final-cta__actions">
-          <a class="btn btn--primary btn--lg magnetic" href="/cadastro/">Criar minha conta gratuita →</a>
+          <a class="btn btn--primary btn--lg" href="#prelista" data-prelista-open data-origem="final">Entrar na pré-lista</a>
           <a class="btn btn--ghost btn--lg" href="/login/">Já tenho conta · Entrar</a>
         </div>
       </div>
@@ -1044,16 +1058,51 @@
         <a href="#problema">O Problema</a>
         <a href="#solucao">A Solução</a>
         <a href="#diferenciais">Diferenciais</a>
-        <a href="#planos">Planos</a>
+        <a href="#comparativo">Comparativo</a>
         <a href="#traube">Ludwig Traube</a>
         <a href="/login/">Entrar</a>
-        <a href="/cadastro/">Criar conta</a>
+        <a href="#prelista" data-prelista-open data-origem="rodape">Pré-lista</a>
       </div>
     </div>
   </footer>
 
+  <dialog class="prelista-dialog" id="prelista-dialog" aria-labelledby="prelista-dialog-title">
+    <button class="prelista-dialog__close" type="button" data-prelista-close aria-label="Fechar">×</button>
+    <h2 id="prelista-dialog-title">Entre na pré-lista da TRAUBE</h2>
+    <p class="prelista-dialog__lead">Deixe nome e e-mail. Avisamos você assim que abrirmos, sem spam, e você sai quando quiser.</p>
+    <div class="prelista" data-prelista>
+              <form class="prelista__form" data-prelista-form data-origem="janela" novalidate>
+                
+                <div class="prelista__row">
+                  <label class="prelista__field"><span>Seu nome</span><input type="text" id="pld-nome" name="nome" required minlength="2" maxlength="120" autocomplete="name" placeholder="Como podemos te chamar"></label>
+                  <label class="prelista__field"><span>Seu e-mail</span><input type="email" id="pld-email" name="email" required maxlength="254" autocomplete="email" inputmode="email" placeholder="voce@email.com"></label>
+                </div>
+                <label class="prelista__field"><span>Em que momento você está? <small>(opcional)</small></span>
+                  <select id="pld-fase" name="fase">
+                    <option value="">Prefiro não dizer</option>
+                    <option value="ciclo_basico">Ciclo básico</option>
+                    <option value="ciclo_clinico">Ciclo clínico</option>
+                    <option value="internato">Internato</option>
+                    <option value="formado">Já formado(a), indo para a residência</option>
+                  </select>
+                </label>
+                <label class="prelista__trap" aria-hidden="true">Site<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                <label class="prelista__consent"><input type="checkbox" id="pld-consent" name="consentimento" required><span>Quero receber por e-mail o aviso de abertura da TRAUBE. Meus dados são usados só para isso e posso pedir para sair quando quiser.</span></label>
+                <button type="submit" class="btn btn--primary btn--lg prelista__submit">Entrar na pré-lista</button>
+                <p class="prelista__feedback" data-prelista-feedback aria-live="polite"></p>
+              </form>
+              <div class="prelista__success" data-prelista-success hidden tabindex="-1">
+                <strong>Pronto, <span data-prelista-name></span>. Você está na pré-lista.</strong>
+                <p>Quando abrirmos as vagas, você é das primeiras pessoas a saber, pelo e-mail que acabou de deixar.</p>
+              </div>
+            </div>
+  </dialog>
+
+  <a class="prelista-fab" href="#prelista" data-prelista-open data-prelista-fab data-origem="flutuante">Entrar na pré-lista</a>
+
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js?v=auth4"></script>
-  <script src="/assets/js/modo-estudo-landing.js?v=20261108-dark3"></script>
+  <script src="/assets/js/modo-estudo-landing.js?v=20261110-prelista1"></script>
+  <script src="/assets/js/prelista.js?v=1"></script>
 </body>
 </html>

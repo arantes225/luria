@@ -15,7 +15,6 @@
   }
 
   var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
 
   // 1. Barra de progresso de leitura no topo + elevação da navbar
   var bar = document.getElementById('scroll-progress');
@@ -111,46 +110,6 @@
       window.setTimeout(function () { prev.classList.remove('is-out'); }, 560);
     }, 2700);
   });
-
-  // 5. Palco 3D interativo no Hero ([data-tilt])
-  if (!reduced && !coarse) {
-    document.querySelectorAll('[data-tilt]').forEach(function (stage) {
-      var max = parseFloat(stage.getAttribute('data-tilt')) || 5;
-      stage.addEventListener('pointermove', function (e) {
-        var r = stage.getBoundingClientRect();
-        var x = (e.clientX - r.left) / r.width - 0.5;
-        var y = (e.clientY - r.top) / r.height - 0.5;
-        stage.style.setProperty('--ry', (x * max * 1.6).toFixed(2) + 'deg');
-        stage.style.setProperty('--rx', (-y * max * 1.3).toFixed(2) + 'deg');
-      });
-      stage.addEventListener('pointerleave', function () {
-        stage.style.setProperty('--ry', '0deg');
-        stage.style.setProperty('--rx', '0deg');
-      });
-    });
-
-    // Botões magnéticos (.magnetic)
-    document.querySelectorAll('.magnetic').forEach(function (btn) {
-      btn.addEventListener('pointermove', function (e) {
-        var r = btn.getBoundingClientRect();
-        var dx = (e.clientX - (r.left + r.width / 2)) * 0.16;
-        var dy = (e.clientY - (r.top + r.height / 2)) * 0.22;
-        btn.style.transform = 'translate(' + dx.toFixed(1) + 'px, ' + dy.toFixed(1) + 'px)';
-      });
-      btn.addEventListener('pointerleave', function () {
-        btn.style.transform = '';
-      });
-    });
-
-    // Cards com spotlight no cursor ([data-spot])
-    document.querySelectorAll('[data-spot]').forEach(function (card) {
-      card.addEventListener('pointermove', function (e) {
-        var r = card.getBoundingClientRect();
-        card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-        card.style.setProperty('--my', (e.clientY - r.top) + 'px');
-      });
-    });
-  }
 
   // 6. Widget Interativo Caos Fragmentado -> Fluxo Unificado TRAUBE ([data-chaos])
   document.querySelectorAll('[data-chaos-box]').forEach(function (box) {
@@ -299,41 +258,4 @@
   }, { threshold: 0.14 });
 
   targets.forEach(function (el) { io.observe(el); });
-
-  // 10. Manipulador do Formulário de Lista de Espera no Hero
-  var waitlistForm = document.querySelector('.hero-waitlist__form');
-  if (waitlistForm) {
-    waitlistForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var nameInput = document.getElementById('waitlist-name');
-      var emailInput = document.getElementById('waitlist-email');
-      var feedback = document.getElementById('waitlist-feedback');
-      var btn = document.getElementById('waitlist-submit');
-      if (!nameInput || !emailInput || !feedback) return;
-
-      var nameVal = (nameInput.value || '').trim();
-      var emailVal = (emailInput.value || '').trim();
-
-      if (!nameVal || !emailVal) {
-        feedback.className = 'hero-waitlist__feedback error';
-        feedback.textContent = 'Por favor, preencha seu nome e e-mail.';
-        return;
-      }
-
-      // Persiste no localStorage do usuário para preenchimento posterior no cadastro
-      try {
-        localStorage.setItem('traube_waitlist_name', nameVal);
-        localStorage.setItem('traube_waitlist_email', emailVal);
-        localStorage.setItem('traube_waitlist_ts', String(Date.now()));
-      } catch (err) {}
-
-      if (btn) btn.disabled = true;
-      feedback.className = 'hero-waitlist__feedback success';
-      feedback.textContent = '✓ ' + nameVal.split(' ')[0] + ', seu nome foi adicionado à lista prioritária! Redirecionando...';
-
-      window.setTimeout(function () {
-        window.location.href = path('/cadastro/?nome=' + encodeURIComponent(nameVal) + '&email=' + encodeURIComponent(emailVal));
-      }, 900);
-    });
-  }
 })();
