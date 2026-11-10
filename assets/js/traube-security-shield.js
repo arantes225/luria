@@ -147,8 +147,13 @@
   // DEFESA: Delimitadores estruturais estritos e isolamento de entrada médica
   // =========================================================================
   function formatSafeAIPrompt(systemContext, userMedicalQuery) {
-    const safeUserText = sanitizeUserInput(userMedicalQuery, 8000)
-      .replace(/<\/?(?:system|instruction|prompt|context|script)[^>]*>/gi, "");
+    let safeUserText = sanitizeUserInput(userMedicalQuery, 8000);
+    const tagPattern = /<\/?(?:system|instruction|prompt|context|script)[^>]*>/gi;
+    let prev;
+    do {
+      prev = safeUserText;
+      safeUserText = safeUserText.replace(tagPattern, '');
+    } while (safeUserText !== prev);
     
     return [
       "<context_boundary>",

@@ -366,20 +366,14 @@
 
     const savedView=readPlantaoView();
 
-    if(ENTRY_MODE==="phone"){
-      if(phoneAllowed){
+    if(phoneAllowed){
+      if(ENTRY_MODE==="phone" || (ENTRY_MODE!=="emergency" && savedView.mode==="phone")){
         setPlantaoMode("phone");
         if(getPhoneDraft()) restorePhoneDraft();
         return;
       }
-      setPlantaoMode("emergency");
-    }else if(ENTRY_MODE!=="emergency" && savedView.mode==="phone" && phoneAllowed){
-      setPlantaoMode("phone");
-      if(getPhoneDraft()) restorePhoneDraft();
-      return;
-    }else{
-      setPlantaoMode("emergency");
     }
+    setPlantaoMode("emergency");
     // Opening the activity inside its admitted room is an explicit case selection.
     if(await openRoomCase())return;
     // Nunca reabrir um atendimento automaticamente ao acessar a Sala de Emergência.

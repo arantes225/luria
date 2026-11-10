@@ -42,6 +42,12 @@ test('TraubeSecurityShield initializes and defends against core attack vectors',
   assert.ok(prompt.includes('<user_query_untrusted>'));
   assert.ok(!prompt.includes('<instruction>'));
 
+  // Defesa contra sanitizacao incompleta de multiplos caracteres (CWE-020 / CodeQL #353)
+  const nestedHostile = '<<script>script>alert(1)</<script>script><<instruction>instruction>bypass</instruction>';
+  const sanitizedPrompt = shield.formatSafeAIPrompt('Contexto', nestedHostile);
+  assert.ok(!sanitizedPrompt.includes('<script>'), 'Nested <script> tags must be completely stripped');
+  assert.ok(!sanitizedPrompt.includes('<instruction>'), 'Nested <instruction> tags must be completely stripped');
+
   // 5. Defesa contra Tabnabbing (target="_blank" -> rel="noopener noreferrer")
   const link = dom.window.document.getElementById('ext-link');
   link.dispatchEvent(new dom.window.MouseEvent('click', { bubbles: true }));

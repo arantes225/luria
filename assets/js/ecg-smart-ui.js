@@ -881,7 +881,7 @@
 
         ctx.lineJoin = "round";
         ctx.lineCap = "round";
-        let prevPx = null, prevPy = null;
+        let prevPx = null;
         for (let i = 0; i < coords.length; i++) {
           const pt = coords[i];
           if (pt && pt.y !== null && !isNaN(pt.y)) {
@@ -893,11 +893,9 @@
               ctx.lineTo(px, py);
             }
             prevPx = px;
-            prevPy = py;
           } else {
             if (prevPx !== null) {
               prevPx = null;
-              prevPy = null;
             }
           }
         }
@@ -982,13 +980,12 @@
     ctx.lineJoin = "round";
     ctx.lineCap = "round";
 
-    let prevX = null, prevY = null;
+    let prevX = null;
     for (let i = 0; i < signal.length; i++) {
       const val = signal[i];
       if (val === null || isNaN(val)) {
         if (prevX !== null) {
           prevX = null;
-          prevY = null;
         }
         continue;
       }
@@ -1000,7 +997,6 @@
         ctx.lineTo(x, y);
       }
       prevX = x;
-      prevY = y;
     }
     ctx.stroke();
   }
