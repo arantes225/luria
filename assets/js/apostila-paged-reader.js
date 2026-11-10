@@ -7,12 +7,22 @@
   if (!main || !bookPage || !document.querySelector(".book-hero, .book-section")) return;
   window.TraubePagedReader = true;
 
-  const stylesheet = document.createElement("link");
-  stylesheet.rel = "stylesheet";
-  stylesheet.href = "/assets/css/apostila-paged-reader.css?v=20261028-reader1";
-  stylesheet.addEventListener("load", init, {once:true});
-  stylesheet.addEventListener("error", () => { window.TraubePagedReader = false; }, {once:true});
-  document.head.appendChild(stylesheet);
+  const existingSheet = document.querySelector('link[href*="apostila-paged-reader.css"]');
+  if (existingSheet && existingSheet.sheet) {
+    init();
+  } else {
+    const stylesheet = existingSheet || document.createElement("link");
+    if (!existingSheet) {
+      stylesheet.rel = "stylesheet";
+      stylesheet.href = "/assets/css/apostila-paged-reader.css?v=20261028-reader1";
+    }
+    stylesheet.addEventListener("load", init, {once:true});
+    stylesheet.addEventListener("error", init, {once:true});
+    if (!existingSheet) {
+      document.head.appendChild(stylesheet);
+    }
+    setTimeout(init, 60);
+  }
 
   function init() {
     if (!main.isConnected || main.closest(".traube-reader-shell")) return;
@@ -61,7 +71,7 @@
     } catch {}
     if (new URLSearchParams(location.search).get("embedded") === "1") mode = "continuous";
 
-    const isPaged = () => mode === "paged" && !document.body.classList.contains("traube-dual-active");
+    const isPaged = () => mode === "paged" && !document?.body?.classList?.contains("traube-dual-active");
     function updateControls() {
       const active = isPaged();
       nav.hidden = !active;
@@ -85,7 +95,7 @@
       step = column + gap;
       main.style.setProperty("--traube-column-width", column + "px");
       main.style.setProperty("--traube-column-gap", gap + "px");
-      const pageHeight = Math.max(430, Math.min(920, window.innerHeight - (window.innerWidth <= 640 ? 220 : 250)));
+      const pageHeight = Math.max(430, Math.min(580, window.innerHeight - (window.innerWidth <= 640 ? 190 : 250)));
       main.style.setProperty("--traube-reader-height", pageHeight + "px");
     }
 
@@ -217,10 +227,10 @@
     }
     if (typeof MutationObserver !== "undefined") {
       const observer = new MutationObserver(() => {
-        if (!document.body.classList.contains("traube-dual-active")) requestMeasure();
+        if (document?.body && !document.body.classList.contains("traube-dual-active")) requestMeasure();
         updateControls();
       });
-      observer.observe(document.body, {attributes:true, attributeFilter:["class"]});
+      if (document?.body) observer.observe(document.body, {attributes:true, attributeFilter:["class"]});
     }
 
     setMode(mode, false);
