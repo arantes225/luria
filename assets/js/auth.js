@@ -9,6 +9,7 @@ const eyeOffIcon = document.getElementById("eye-off-icon");
 const entrarButton = document.getElementById("entrar");
 const criarButton = document.getElementById("criar-conta");
 const passkeyButton = document.getElementById("passkey-login");
+const googleButton = document.getElementById("entrar-google");
 const mensagem = document.getElementById("mensagem");
 const lembrarInput = document.getElementById("lembrar");
 
@@ -26,6 +27,7 @@ function setCarregando(ativo) {
   }
   if (criarButton) criarButton.disabled = ativo;
   if (passkeyButton) passkeyButton.disabled = ativo;
+  if (googleButton) googleButton.disabled = ativo;
 }
 
 function isNetworkError(error) {
@@ -261,7 +263,6 @@ if (togglePasswordButton && senhaInput) {
   });
 }
 
-const googleButton = document.getElementById("entrar-google");
 if (googleButton) {
   googleButton.addEventListener("click", entrarComGoogle);
 }
