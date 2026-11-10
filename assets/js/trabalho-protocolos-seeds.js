@@ -8,7 +8,7 @@
     "title": "Sepse e Choque Séptico (Pacote de 1 Hora - SSC 2021)",
     "category": "Emergência e UTI",
     "setting": "Pronto-Socorro / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-sepse-hora-1"
     ],
@@ -131,7 +131,7 @@
     "title": "Síndrome Coronariana Aguda: IAM com Supra de ST (IAMCSST)",
     "category": "Cardiologia",
     "setting": "Emergência / Sala Vermelha / Hemodinâmica",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-iam-com-supra"
     ],
@@ -256,7 +256,7 @@
     "title": "AVC Isquêmico Agudo e Trombólise Endovenosa",
     "category": "Neurologia",
     "setting": "Emergência / Unidade de AVC",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Código AVC: avaliação neurológica rápida (NIHSS), neuroimagem imediata e recanalização com Alteplase / Tenecteplase na janela terapêutica.",
     "suspicion": [
       {
@@ -376,7 +376,7 @@
     "title": "Cetoacidose Diabética (CAD) e Estado Hiperglicêmico Hiperosmolar (EHH)",
     "category": "Endocrinologia e Metabologia",
     "setting": "Emergência / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Protocolo dos 3 Pilares (Volume, Potássio e Insulina Regular IV) para manejo seguro das emergências hiperglicêmicas agudas (Consenso ADA / EASD / SBD 2024).",
     "suspicion": [
       {
@@ -493,7 +493,7 @@
     "title": "Anafilaxia e Choque Anafilático",
     "category": "Emergência e UTI",
     "setting": "Pronto-Socorro / Enfermaria / Ambulatório",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Reconhecimento clínico imediato e administração precoce de Epinefrina Intramuscular como única intervenção modificadora de mortalidade (WAO / EAACI).",
     "suspicion": [
       {
@@ -612,7 +612,7 @@
     "title": "Estado de Mal Epiléptico (EME) Convulsivo",
     "category": "Neurologia",
     "setting": "Emergência / Sala Vermelha / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Manejo escalonado cronometrado (0–5 min, 5–20 min, 20–40 min e > 40 min) para crises convulsivas >= 5 minutos ou crises subentrantes sem recuperação de consciência (AES / Neurocritical Care Society).",
     "suspicion": [
       {
@@ -725,7 +725,7 @@
     "title": "Dengue: Classificação de Risco (Grupos A, B, C e D) e Hidratação",
     "category": "Infectologia",
     "setting": "Atenção Primária / UPA / Hospital",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-dengue-ambulatorial-grupos-ab"
     ],
@@ -842,7 +842,7 @@
     "title": "Pré-Eclâmpsia com Sinais de Gravidade e Eclâmpsia",
     "category": "Ginecologia e Obstetrícia",
     "setting": "Maternidade / Emergência Obstétrica",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Prevenção e controle de convulsões com Sulfato de Magnésio e manejo imediato da crise hipertensiva gestacional (PAS >= 160 ou PAD >= 110 mmHg) segundo RBEHG / FEBRASGO / ACOG.",
     "suspicion": [
       {
@@ -961,7 +961,7 @@
     "title": "Exacerbação Aguda de Asma (Crise Asmática - GINA 2024)",
     "category": "Pneumologia",
     "setting": "Pronto-Socorro / Emergência",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-asma-alta-gina"
     ],
@@ -1079,7 +1079,7 @@
     "title": "Hemorragia Digestiva Alta (HDA Não-Varicosa e Varicosa)",
     "category": "Gastroenterologia",
     "setting": "Emergência / Endoscopia / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Ressuscitação hemodinâmica, transfusão restritiva (Hb alvo 7–9 g/dL), terapia farmacológica pré-endoscópica (IBP vs. Terlipressina/Octreotide + Ceftriaxona) e EDA em até 12–24h (ESGE / Baveno VII).",
     "suspicion": [
       {
@@ -1195,7 +1195,7 @@
     "title": "Tromboembolismo Pulmonar Agudo (TEP)",
     "category": "Pneumologia",
     "setting": "Emergência / Enfermaria / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Probabilidade pré-teste (Wells / Genebra / PERC), uso racional do D-dímero ajustado pela idade, Angio-TC de tórax, classificação de risco (sPESI) e anticoagulação ou trombólise (ESC).",
     "suspicion": [
       {
@@ -1310,7 +1310,7 @@
     "title": "Intubação em Sequência Rápida (SRI) — Os 7 Ps, Drogas e Doses",
     "category": "Emergência e UTI",
     "setting": "Sala Vermelha / UTI / SAMU",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-sri-intubacao"
     ],
@@ -1429,7 +1429,7 @@
     "title": "Emergências Hipertensivas e Dissecção Aguda de Aorta",
     "category": "Cardiologia",
     "setting": "Emergência / Sala Vermelha / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-emergencia-hipertensiva"
     ],
@@ -1545,7 +1545,7 @@
     "title": "Edema Agudo de Pulmão (EAP) e Insuficiência Cardíaca Descompensada",
     "category": "Cardiologia",
     "setting": "Emergência / Sala Vermelha / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-edema-agudo-pulmao"
     ],
@@ -1665,7 +1665,7 @@
     "title": "Fibrilação Atrial (FA) de Alta Resposta Ventricular na Emergência",
     "category": "Cardiologia",
     "setting": "Pronto-Socorro / Sala de Emergência",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-fa-aguda"
     ],
@@ -1781,7 +1781,7 @@
     "title": "Pancreatite Aguda (Critérios de Atlanta, Hidratação e Analgesia)",
     "category": "Gastroenterologia",
     "setting": "Emergência / Enfermaria / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Diagnóstico pelos Critérios de Atlanta Revisados, ressuscitação volêmica moderada com Ringer Lactato (estudo WATERFALL), analgesia multimodal, nutrição oral precoce e abordagem da etiologia biliar.",
     "suspicion": [
       {
@@ -1898,7 +1898,7 @@
     "title": "Meningite Bacteriana Aguda (Antibioticoterapia Empírica e Dexametasona)",
     "category": "Infectologia",
     "setting": "Emergência / Sala de Isolamento / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-meningite-bacteriana"
     ],
@@ -2018,7 +2018,7 @@
     "title": "Pneumonia Adquirida na Comunidade (PAC — Ambulatório, Enfermaria e UTI)",
     "category": "Pneumologia",
     "setting": "Ambulatório / Pronto-Socorro / Enfermaria / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-pac-ambulatorial",
       "prescricao-pac-hospitalar"
@@ -2142,7 +2142,7 @@
     "title": "Exacerbação Aguda de DPOC (GOLD 2024)",
     "category": "Pneumologia",
     "setting": "Pronto-Socorro / Enfermaria / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-dpoc-exacerbado"
     ],
@@ -2256,7 +2256,7 @@
     "title": "Infecção do Trato Urinário (Cistite, Pielonefrite Aguda e ITU na Gestante)",
     "category": "Nefrologia e Urologia",
     "setting": "Ambulatório / Pronto-Socorro / Enfermaria",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-cistite-aguda",
       "prescricao-pielonefrite-aguda"
@@ -2378,7 +2378,7 @@
     "title": "Infecções de Pele e Partes Moles (Erisipela, Celulite, Abscesso e Fasciíte Necrosante)",
     "category": "Infectologia",
     "setting": "Ambulatório / Pronto-Socorro / Centro Cirúrgico",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Diferenciação entre infecções não-purulentas (Erisipela/Celulite estreptocócica) e purulentas (Abscesso/Furúnculo estafilocócico), indicação de drenagem e reconhecimento imediato da Fasciíte Necrosante (Gangrena de Fournier).",
     "suspicion": [
       {
@@ -2497,7 +2497,7 @@
     "title": "Síndrome Coronariana Aguda Sem Supra de ST (IAMSSST e Angina Instável)",
     "category": "Cardiologia",
     "setting": "Sala de Emergência / Unidade Coronariana / Hemodinâmica",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Algoritmo 0h/1h de Troponina de Alta Sensibilidade, estratificação pelos escores HEART e GRACE, terapia antitrombótica (AAS + Inibidor P2Y12 + Enoxaparina/Fondaparinux) e definição do tempo para cinecoronariografia (Imediata < 2h vs. Precoce < 24h).",
     "suspicion": [
       {
@@ -2619,7 +2619,7 @@
     "title": "Cólica Nefrítica Aguda e Ureterolitíase (Manejo da Dor, Terapia Expulsiva e Urologia)",
     "category": "Nefrologia e Urologia",
     "setting": "Pronto-Socorro / Ambulatório",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-colica-nefritica-alta"
     ],
@@ -2732,7 +2732,7 @@
     "title": "Intoxicações Exógenas Agudas (Toxíndromes, Descontaminação e Antídotos)",
     "category": "Emergências e Trauma",
     "setting": "Sala Vermelha / Pronto-Socorro / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Reconhecimento rápido das 5 grandes Síndromes Toxicológicas (Anticolinérgica, Colinérgica, Simpaticomimética, Opioide e Sedativo-Hipnótica), indicação de Carvão Ativado (até 1–2h) e tabela de Antídotos de Emergência.",
     "suspicion": [
       {
@@ -2857,7 +2857,7 @@
     "title": "Síndrome de Abstinência Alcoólica, Crises de Abstinência e Delirium Tremens",
     "category": "Psiquiatria e Saúde Mental",
     "setting": "Pronto-Socorro / Enfermaria / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-abstinencia-alcoolica"
     ],
@@ -2968,7 +2968,7 @@
     "title": "Hemorragia Pós-Parto (HPP — Regra dos 4 Ts, Ocitocina, Tranexâmico e Balão)",
     "category": "Ginecologia e Obstetrícia",
     "setting": "Centro Obstétrico / Maternidade / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Hora de Ouro da HPP (perda > 500 mL no parto vaginal ou > 1.000 mL na cesárea, ou Índice de Choque >= 0,9), massagem uterina bimanual, uterotônicos escalonados, Ácido Tranexâmico 1 g IV precoce e revisão sistemática dos 4 Ts.",
     "suspicion": [
       {
@@ -3080,7 +3080,7 @@
     "title": "Insuficiência Adrenal Aguda (Crise Adrenal / Crise Addisoniana)",
     "category": "Endocrinologia e Metabolismo",
     "setting": "Sala Vermelha / Pronto-Socorro / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "summary": "Suspeita clínica no choque refratário a catecolaminas com hiponatremia/hipercalemia/hipoglicemia, administração imediata de Hidrocortisona 100 mg IV em bolus + 200 mg/24h e ressuscitação volêmica com SF 0,9% + Glicose.",
     "suspicion": [
       {
@@ -3185,7 +3185,7 @@
     "title": "Hipercalemia Grave e Alterações Eletrocardiográficas",
     "category": "Nefrologia e Urologia",
     "setting": "Pronto-Socorro / Emergência / UTI",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-hipercalemia-emergencia"
     ],
@@ -3323,7 +3323,7 @@
     "title": "Hipoglicemia Grave no Adulto (Tríade de Whipple e Manejo Agudo)",
     "category": "Endocrinologia e Metabologia",
     "setting": "Pronto-Socorro / Enfermaria / Domiciliar",
-    "status": "verified",
+    "status": "review_needed",
     "linked_recipe_slugs": [
       "prescricao-hipoglicemia-grave"
     ],
