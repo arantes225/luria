@@ -271,7 +271,9 @@ async function initFriends(){
   friendsUser=window.docmapUser;
   if(!friendsUser)return;
   document.getElementById("add-friend")?.addEventListener("click",addFriend);
-  document.getElementById('friends-search')?.addEventListener('input',renderFriendsList);
+  // ⚡ Bolt: Debounce search input to avoid expensive lookups firing continuously
+  const debounce = (fn, ms) => { let timer; return function(...args) { clearTimeout(timer); timer = setTimeout(() => fn.apply(this, args), ms); }; };
+  document.getElementById('friends-search')?.addEventListener('input',debounce(renderFriendsList, 250));
   const friendInput=document.getElementById("friend-id-input");
   friendInput?.addEventListener("input",e=>{e.target.value=e.target.value.toUpperCase();scheduleFriendLookup(e.target.value);});
   friendInput?.addEventListener("keydown",e=>{if(e.key==="Enter")addFriend();});

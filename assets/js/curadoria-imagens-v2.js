@@ -48,6 +48,9 @@
       if (label && row.status === 'kept') { label.textContent = 'Substituída para revisão'; label.classList.remove('is-kept'); label.classList.add('is-substituted'); }
     }, {once:true}));
   }
-  [query, block, status].forEach(control => control.addEventListener('input', render));
+  // ⚡ Bolt: Debounce filter inputs to delay heavy rendering until typing pauses
+  const debounce = (fn, ms) => { let timer; return function(...args) { clearTimeout(timer); timer = setTimeout(() => fn.apply(this, args), ms); }; };
+  const debouncedRender = debounce(render, 250);
+  [query, block, status].forEach(control => control.addEventListener('input', debouncedRender));
   fetch('/apostilas/curadoria-imagens-v2/data.json').then(response => { if (!response.ok) throw new Error('Falha ao carregar curadoria'); return response.json(); }).then(data => { rows = Array.isArray(data) ? data : []; render(); }).catch(() => { summary.textContent = 'Curadoria indisponível'; grid.innerHTML = '<p>Não foi possível carregar a fila de imagens.</p>'; });
 })();

@@ -66,7 +66,9 @@
       });
       $('radar-bank').addEventListener('change', selectBank);
       ['radar-profile', 'radar-source'].forEach(id => $(id).addEventListener('change', render));
-      $('radar-search').addEventListener('input', render);
+      // ⚡ Bolt: Debounce search input to reduce unnecessary UI re-renders on keystrokes
+      const debounce = (fn, ms) => { let timer; return function(...args) { clearTimeout(timer); timer = setTimeout(() => fn.apply(this, args), ms); }; };
+      $('radar-search').addEventListener('input', debounce(render, 250));
       $('radar-total').textContent = `${data.provas.length} provas`;
       $('radar-controls').disabled = false; selectBank();
     } catch {
