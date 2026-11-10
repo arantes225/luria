@@ -156,6 +156,8 @@
   document.querySelectorAll('[data-chaos-box]').forEach(function (box) {
     var stage = box.querySelector('[data-chaos]');
     var btns = Array.prototype.slice.call(box.querySelectorAll('[data-chaos-mode]'));
+    var statusMess = box.querySelector('.chaos-status--mess');
+    var statusOrder = box.querySelector('.chaos-status--order');
     if (!stage) return;
     function setMode(mode) {
       var ordered = mode === 'order';
@@ -165,6 +167,8 @@
         b.classList.toggle('is-active', active);
         b.setAttribute('aria-pressed', active ? 'true' : 'false');
       });
+      if (statusMess) statusMess.classList.toggle('is-active', !ordered);
+      if (statusOrder) statusOrder.classList.toggle('is-active', ordered);
     }
     btns.forEach(function (b) {
       b.addEventListener('click', function () {
@@ -280,7 +284,12 @@
             box.querySelectorAll('[data-chaos-mode]').forEach(function (b) {
               var on = b.getAttribute('data-chaos-mode') === 'order';
               b.classList.toggle('is-active', on);
+              b.setAttribute('aria-pressed', on ? 'true' : 'false');
             });
+            var sm = box.querySelector('.chaos-status--mess');
+            var so = box.querySelector('.chaos-status--order');
+            if (sm) sm.classList.remove('is-active');
+            if (so) so.classList.add('is-active');
           }
         }, 380);
       }
@@ -290,4 +299,41 @@
   }, { threshold: 0.14 });
 
   targets.forEach(function (el) { io.observe(el); });
+
+  // 10. Manipulador do Formulário de Lista de Espera no Hero
+  var waitlistForm = document.querySelector('.hero-waitlist__form');
+  if (waitlistForm) {
+    waitlistForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var nameInput = document.getElementById('waitlist-name');
+      var emailInput = document.getElementById('waitlist-email');
+      var feedback = document.getElementById('waitlist-feedback');
+      var btn = document.getElementById('waitlist-submit');
+      if (!nameInput || !emailInput || !feedback) return;
+
+      var nameVal = (nameInput.value || '').trim();
+      var emailVal = (emailInput.value || '').trim();
+
+      if (!nameVal || !emailVal) {
+        feedback.className = 'hero-waitlist__feedback error';
+        feedback.textContent = 'Por favor, preencha seu nome e e-mail.';
+        return;
+      }
+
+      // Persiste no localStorage do usuário para preenchimento posterior no cadastro
+      try {
+        localStorage.setItem('traube_waitlist_name', nameVal);
+        localStorage.setItem('traube_waitlist_email', emailVal);
+        localStorage.setItem('traube_waitlist_ts', String(Date.now()));
+      } catch (err) {}
+
+      if (btn) btn.disabled = true;
+      feedback.className = 'hero-waitlist__feedback success';
+      feedback.textContent = '✓ ' + nameVal.split(' ')[0] + ', seu nome foi adicionado à lista prioritária! Redirecionando...';
+
+      window.setTimeout(function () {
+        window.location.href = path('/cadastro/?nome=' + encodeURIComponent(nameVal) + '&email=' + encodeURIComponent(emailVal));
+      }, 900);
+    });
+  }
 })();

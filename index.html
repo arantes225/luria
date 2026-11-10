@@ -44,9 +44,21 @@
     <!-- BLOCO 1: ABERTURA + PRODUTO REAL EM ESCALA TOTAL (COM AS 4 MOLDURAS COLORIDAS) -->
     <section class="hero">
       <div class="wrap">
+        <!-- Logo de abertura destacada -->
+        <div class="hero-brand-top" data-reveal>
+          <div class="hero-brand-badge">
+            <img src="/assets/img/logos/logo-principal.png" alt="TRAUBE" class="hero-brand-logo" width="44" height="44">
+            <div class="hero-brand-text">
+              <span class="hero-brand-title">TRAUBE</span>
+              <span class="hero-brand-tag">Plataforma Médica Integrada</span>
+            </div>
+          </div>
+          <span class="hero-brand-pill">Edição 2026 · Ciclo Clínico, Internato e R1</span>
+        </div>
+
         <div class="hero__header" data-reveal>
           <div>
-            <span class="kicker">Plataforma de estudo médico · R1, ENARE, USP e Internato</span>
+            <span class="kicker"><i class="kicker-dot"></i> Plataforma de estudos médicos · Ciclo clínico, internato e R1</span>
             <h1>
               Estudar medicina já exige demais para você perder tempo
               <span class="swap" data-word-swap>
@@ -59,14 +71,34 @@
           </div>
           <div class="hero__right">
             <p class="hero__lead">
-              A <strong>Traube</strong> reúne o que antes ficava espalhado: seu cronograma, as 275 apostilas das seis grandes áreas, banco de questões, flashcards, caderno de erros e simulador de sala vermelha trabalhando juntos na mesma sessão.
+              A <strong>Traube</strong> reúne o que antes ficava espalhado: seu cronograma inteligente, mais de 100 mil questões comentadas, 12 mil flashcards FSRS, 275 apostilas próprias e simulador de emergência na mesma sessão diária.
             </p>
+
+            <!-- Captura de nome na lista prioritária -->
+            <div class="hero-waitlist" id="lista-espera">
+              <span class="hero-waitlist__label">Coloque seu nome na lista prioritária de acesso:</span>
+              <form class="hero-waitlist__form" action="/cadastro/">
+                <div class="hero-waitlist__input-group">
+                  <span class="hero-waitlist__icon" aria-hidden="true">👤</span>
+                  <input type="text" class="hero-waitlist__input" id="waitlist-name" name="nome" placeholder="Digite seu nome completo" required autocomplete="name">
+                </div>
+                <div class="hero-waitlist__input-group">
+                  <span class="hero-waitlist__icon" aria-hidden="true">✉️</span>
+                  <input type="email" class="hero-waitlist__input" id="waitlist-email" name="email" placeholder="Seu melhor e-mail médico" required autocomplete="email">
+                </div>
+                <button type="submit" class="btn btn--pink btn--hero-submit magnetic" id="waitlist-submit">
+                  <span>Garantir vaga na lista →</span>
+                </button>
+              </form>
+              <div class="hero-waitlist__feedback" id="waitlist-feedback" aria-live="polite"></div>
+            </div>
+
             <div class="hero__actions">
-              <a class="btn btn--primary btn--lg magnetic" href="/cadastro/">Começar gratuitamente →</a>
-              <a class="btn btn--ghost btn--lg" href="#problema">Entender como funciona</a>
+              <a class="btn btn--primary btn--lg magnetic" href="/cadastro/">Criar conta gratuita</a>
+              <a class="btn btn--blue btn--lg magnetic" href="#problema">Ver diferenciais na prática ↓</a>
             </div>
             <div class="hero__meta">
-              <span>Acesso imediato · Importa seus decks do Anki (.apkg)</span>
+              <span class="meta-pill"><i class="pulse-dot"></i> Importação nativa de decks do Anki (.apkg) &amp; FSRS</span>
               <span class="sigmark sigmark--hero sig--draw" role="img" aria-label="Assinatura de Ludwig Traube"></span>
             </div>
           </div>
@@ -98,22 +130,22 @@
           <div class="stage3d" data-tilt="3">
             <div class="theme-frame is-active" data-theme-frame="dark-blue">
               <figure class="shot">
-                <img src="/assets/img/traube/tela-dashboard-escuro.jpg?v=20261108-dark3" alt="Dashboard real da Traube no tema Azul Noturno exibindo a moldura colorida nos quatro lados, atividades do dia, sessão guiada de 30 minutos e progresso por área" width="1440" height="900" fetchpriority="high">
+                <img src="/assets/img/traube/tela-dashboard-escuro.jpg?v=20261110-dark4" alt="Dashboard real da Traube no tema Azul Noturno exibindo a moldura colorida nos quatro lados, atividades do dia, sessão guiada de 30 minutos e progresso por área" width="1440" height="900" fetchpriority="high">
               </figure>
             </div>
             <div class="theme-frame" data-theme-frame="light-blue">
               <figure class="shot">
-                <img src="/assets/img/traube/tela-dashboard.jpg?v=20261108-dark3" alt="Dashboard real da Traube no tema Azul Clássico com moldura azul visível nos quatro lados" width="1440" height="900" loading="lazy">
+                <img src="/assets/img/traube/tela-dashboard.jpg?v=20261110-dark4" alt="Dashboard real da Traube no tema Azul Clássico com moldura azul visível nos quatro lados" width="1440" height="900" loading="eager">
               </figure>
             </div>
             <div class="theme-frame" data-theme-frame="dark-pink">
               <figure class="shot">
-                <img src="/assets/img/traube/tela-dashboard-rosa-escuro.jpg?v=20261108-dark3" alt="Dashboard real da Traube no tema Rosa Noturno com moldura ameixa visível nos quatro lados" width="1440" height="900" loading="lazy">
+                <img src="/assets/img/traube/tela-dashboard-rosa-escuro.jpg?v=20261110-dark4" alt="Dashboard real da Traube no tema Rosa Noturno com moldura ameixa visível nos quatro lados" width="1440" height="900" loading="eager">
               </figure>
             </div>
             <div class="theme-frame" data-theme-frame="light-pink">
               <figure class="shot">
-                <img src="/assets/img/traube/tela-dashboard-rosa.jpg?v=20261108-dark3" alt="Dashboard real da Traube no tema Rosa Clássico com moldura rosa visível nos quatro lados" width="1440" height="900" loading="lazy">
+                <img src="/assets/img/traube/tela-dashboard-rosa.jpg?v=20261110-dark4" alt="Dashboard real da Traube no tema Rosa Clássico com moldura rosa visível nos quatro lados" width="1440" height="900" loading="eager">
               </figure>
             </div>
           </div>
@@ -124,8 +156,23 @@
           </div>
         </div>
 
-        <!-- Números reais e auditáveis da plataforma -->
+        <!-- Números reais e auditáveis da plataforma expandidos -->
         <div class="metrics-strip" data-reveal style="--d:.16s">
+          <div class="metric-cell">
+            <strong data-count="100000" data-prefix="+">+100 mil</strong>
+            <span>Questões comentadas</span>
+            <small>Filtros por grande área e bancas de R1/ENAMED</small>
+          </div>
+          <div class="metric-cell">
+            <strong data-count="12000" data-prefix="+">+12 mil</strong>
+            <span>Flashcards inteligentes</span>
+            <small>Repetição espaçada com algoritmo FSRS</small>
+          </div>
+          <div class="metric-cell">
+            <strong data-count="600" data-prefix="+">+600</strong>
+            <span>Casos no simulador</span>
+            <small>Sala vermelha e cenários clínicos reais</small>
+          </div>
           <div class="metric-cell">
             <strong data-count="275">275</strong>
             <span>Apostilas próprias</span>
@@ -139,12 +186,7 @@
           <div class="metric-cell">
             <strong data-count="2600" data-prefix="+">+2.600</strong>
             <span>Estruturas em 3D</span>
-            <small>Coração interativo e atlas corporal</small>
-          </div>
-          <div class="metric-cell">
-            <strong data-count="7">7</strong>
-            <span>Ferramentas integradas</span>
-            <small>Do cronograma ao simulador de plantão</small>
+            <small>Atlas corporal e coração interativo</small>
           </div>
         </div>
       </div>
@@ -189,51 +231,66 @@
         </div>
 
         <div class="problem-timeline" data-reveal>
-          <article class="problem-stage">
-            <div>
-              <div class="problem-stage__num">
-                <span>01 · Semana normal</span>
-                <span>Fragmentação</span>
+          <article class="problem-stage problem-stage--01">
+            <div class="problem-stage__top">
+              <div class="problem-stage__badge">
+                <span class="problem-stage__tag">Ato 01</span>
+                <span class="problem-stage__status">Semana normal</span>
               </div>
+              <span class="problem-stage__icon-badge" aria-hidden="true">🗂️</span>
+            </div>
+            <div class="problem-stage__body">
+              <span class="problem-stage__sublabel">Fragmentação extrema</span>
               <h3>Você divide seu raciocínio entre PDFs, planilhas e apps soltos</h3>
               <p>
                 Você lê um resumo em uma pasta, abre outro site para fazer questões, joga conceitos avulsos no Anki e tenta anotar o que fez numa planilha. Nenhum sistema sabe o que você acabou de estudar no outro.
               </p>
             </div>
             <div class="problem-stage__consequence">
-              Consequência: perda diária de tempo só trocando de ferramenta.
+              <div class="consequence-label">Impacto no aprendizado:</div>
+              <div class="consequence-desc">Perda diária de 45 a 60 minutos apenas trocando de ferramenta e formatando anotações.</div>
             </div>
           </article>
 
-          <article class="problem-stage">
-            <div>
-              <div class="problem-stage__num">
-                <span>02 · Primeiro imprevisto</span>
-                <span>Acúmulo</span>
+          <article class="problem-stage problem-stage--02">
+            <div class="problem-stage__top">
+              <div class="problem-stage__badge">
+                <span class="problem-stage__tag">Ato 02</span>
+                <span class="problem-stage__status">Primeiro imprevisto</span>
               </div>
+              <span class="problem-stage__icon-badge" aria-hidden="true">⏱️</span>
+            </div>
+            <div class="problem-stage__body">
+              <span class="problem-stage__sublabel">Efeito bola de neve</span>
               <h3>Um plantão pesado de 24h desmonta o planejamento da semana</h3>
               <p>
                 Planilhas estáticas não absorvem a rotina médica. Quando duas ou três matérias atrasam após um plantão cansativo, a lista acumula, bate a sensação de atraso e você não sabe o que priorizar nos 40 minutos livres que sobraram.
               </p>
             </div>
             <div class="problem-stage__consequence">
-              Consequência: você estuda no improviso ou abandona o cronograma.
+              <div class="consequence-label">Impacto no aprendizado:</div>
+              <div class="consequence-desc">Estudo no improviso, ansiedade por acúmulo e abandono progressivo do cronograma.</div>
             </div>
           </article>
 
-          <article class="problem-stage">
-            <div>
-              <div class="problem-stage__num">
-                <span>03 · Dia do simulado</span>
-                <span>Esquecimento</span>
+          <article class="problem-stage problem-stage--03">
+            <div class="problem-stage__top">
+              <div class="problem-stage__badge">
+                <span class="problem-stage__tag">Ato 03</span>
+                <span class="problem-stage__status">Dia do simulado</span>
               </div>
+              <span class="problem-stage__icon-badge" aria-hidden="true">🎯</span>
+            </div>
+            <div class="problem-stage__body">
+              <span class="problem-stage__sublabel">Repetição do erro</span>
               <h3>Você reconhece o assunto na prova, mas cai na mesma dúvida</h3>
               <p>
                 Como a questão que você errou há três semanas ficou perdida num histórico qualquer e não virou revisão programada, você lembra que já estudou aquele tema, mas volta a hesitar entre duas condutas parecidas.
               </p>
             </div>
             <div class="problem-stage__consequence">
-              Consequência: estagnação na faixa dos 65–70% de acerto.
+              <div class="consequence-label">Impacto no aprendizado:</div>
+              <div class="consequence-desc">Estagnação crônica na faixa dos 65–70% de acerto nas provas de residência.</div>
             </div>
           </article>
         </div>
@@ -249,69 +306,129 @@
         <div class="chaos-box" data-chaos-box data-reveal>
           <div class="chaos-box__bar">
             <div>
+              <div class="chaos-box__tag">Comparativo Interativo</div>
               <h3>Veja na prática o que muda quando você unifica o estudo</h3>
               <p>Alterne abaixo entre a rotina fragmentada comum e o fluxo conectado da Traube.</p>
             </div>
             <div class="chaos-switch" role="group" aria-label="Alternar entre estudo fragmentado e fluxo integrado">
-              <button class="chaos-btn" type="button" data-chaos-mode="mess" aria-pressed="false">Rotina espalhada (5 ferramentas)</button>
-              <button class="chaos-btn is-active" type="button" data-chaos-mode="order" aria-pressed="true">Fluxo único na Traube</button>
+              <button class="chaos-btn" type="button" data-chaos-mode="mess" aria-pressed="false">
+                <span class="btn-indicator btn-indicator--red"></span> Rotina espalhada (5 ferramentas)
+              </button>
+              <button class="chaos-btn is-active" type="button" data-chaos-mode="order" aria-pressed="true">
+                <span class="btn-indicator btn-indicator--cyan"></span> Fluxo único na Traube
+              </button>
             </div>
+          </div>
+
+          <div class="chaos-status-bar">
+            <span class="chaos-status chaos-status--mess"><i class="status-dot"></i> Caos operacional · Falta de sincronização entre leitura, questões e revisões</span>
+            <span class="chaos-status chaos-status--order is-active"><i class="status-dot"></i> Sistema conectado · Cada minuto investido gera retenção real e auditável</span>
           </div>
 
           <div class="chaos-stage ordered" data-chaos>
             <div class="chaos-view chaos-view--mess">
               <div class="chaos-node">
-                <small>Aba 01 · Planilha</small>
-                <strong>Excel desatualizado</strong>
-                <span>14 aulas atrasadas após o plantão sem reajuste automático.</span>
+                <div class="chaos-node__head">
+                  <span class="chaos-node__num">01</span>
+                  <span class="chaos-node__badge">Planilha / Excel</span>
+                </div>
+                <strong>Cronograma estático</strong>
+                <p>14 aulas atrasadas após um plantão sem nenhum reajuste automático.</p>
+                <div class="chaos-node__bott">
+                  <span>Sensação de atraso</span>
+                </div>
               </div>
               <div class="chaos-node">
-                <small>Aba 02 · Drive</small>
-                <strong>PDFs soltos</strong>
-                <span>Leitura passiva que não gera questões nem revisão.</span>
+                <div class="chaos-node__head">
+                  <span class="chaos-node__num">02</span>
+                  <span class="chaos-node__badge">Google Drive / PDFs</span>
+                </div>
+                <strong>Apostilas soltas</strong>
+                <p>Leitura passiva e demorada que não gera questões, erros nem revisão.</p>
+                <div class="chaos-node__bott">
+                  <span>Retenção baixa</span>
+                </div>
               </div>
               <div class="chaos-node">
-                <small>Aba 03 · Banco externo</small>
-                <strong>Questões isoladas</strong>
-                <span>Você erra uma conduta e ela morre no histórico.</span>
+                <div class="chaos-node__head">
+                  <span class="chaos-node__num">03</span>
+                  <span class="chaos-node__badge">Banco isolado</span>
+                </div>
+                <strong>Questões avulsas</strong>
+                <p>Você erra uma conduta crítica de emergência e ela morre no histórico.</p>
+                <div class="chaos-node__bott">
+                  <span>Erro não aproveitado</span>
+                </div>
               </div>
               <div class="chaos-node">
-                <small>Aba 04 · Anki avulso</small>
-                <strong>300 cards acumulados</strong>
-                <span>Decks desconectados das matérias que você mais erra.</span>
+                <div class="chaos-node__head">
+                  <span class="chaos-node__num">04</span>
+                  <span class="chaos-node__badge">Anki desconectado</span>
+                </div>
+                <strong>Cards acumulados</strong>
+                <p>300 revisões pendentes sem priorização das matérias que você mais erra.</p>
+                <div class="chaos-node__bott">
+                  <span>Sobrecarga cognitiva</span>
+                </div>
               </div>
               <div class="chaos-node">
-                <small>Aba 05 · Documento</small>
-                <strong>Caderno esquecido</strong>
-                <span>Anotações de erros que você nunca mais abre antes da prova.</span>
+                <div class="chaos-node__head">
+                  <span class="chaos-node__num">05</span>
+                  <span class="chaos-node__badge">Caderno físico / Docs</span>
+                </div>
+                <strong>Anotações mortas</strong>
+                <p>Resumos e pulos do gato que você anotou mas nunca mais abre antes da prova.</p>
+                <div class="chaos-node__bott">
+                  <span>Perda de memória</span>
+                </div>
               </div>
             </div>
 
             <div class="chaos-view chaos-view--order">
               <div class="order-node">
-                <small>1 · Entrada</small>
-                <strong>Sessão Guiada (15–120 min)</strong>
-                <span>Você diz quanto tempo tem hoje; a fila já vem pronta.</span>
+                <div class="order-node__head">
+                  <span class="order-node__step">Etapa 01</span>
+                  <span class="order-node__badge">15 a 120 min</span>
+                </div>
+                <strong>Sessão Guiada</strong>
+                <p>Você diz quanto tempo tem livre hoje; a fila diária personalizada já vem pronta.</p>
+                <div class="order-node__pill">Zero atrito de início</div>
               </div>
               <div class="order-node">
-                <small>2 · Base</small>
+                <div class="order-node__head">
+                  <span class="order-node__step">Etapa 02</span>
+                  <span class="order-node__badge">6 grandes áreas</span>
+                </div>
                 <strong>275 Apostilas + Leco</strong>
-                <span>Estudo direto ao ponto com o tutor tirando dúvidas ao lado.</span>
+                <p>Teoria direta ao ponto com tabelas comparativas e tutor de IA ao lado.</p>
+                <div class="order-node__pill">Dúvida sanada na hora</div>
               </div>
               <div class="order-node">
-                <small>3 · Prática</small>
-                <strong>Questões &amp; Sala Vermelha</strong>
-                <span>Treino imediato do tema estudado em questões e casos clínicos.</span>
+                <div class="order-node__head">
+                  <span class="order-node__step">Etapa 03</span>
+                  <span class="order-node__badge">+100k questões</span>
+                </div>
+                <strong>Prática &amp; Sala Vermelha</strong>
+                <p>Fixação imediata com questões comentadas e simulador de plantão com monitor.</p>
+                <div class="order-node__pill">Raciocínio clínico ativo</div>
               </div>
               <div class="order-node">
-                <small>4 · Blindagem</small>
-                <strong>Pulo do Gato &amp; Flashcards</strong>
-                <span>Cada erro vira revisão espaçada automática antes de você esquecer.</span>
+                <div class="order-node__head">
+                  <span class="order-node__step">Etapa 04</span>
+                  <span class="order-node__badge">FSRS inteligente</span>
+                </div>
+                <strong>Pulo do Gato &amp; Cards</strong>
+                <p>O que você erra vira revisão espaçada automática antes de cair no esquecimento.</p>
+                <div class="order-node__pill">Blindagem contra repetição</div>
               </div>
               <div class="order-node">
-                <small>5 · Direção</small>
-                <strong>Estatísticas por Área</strong>
-                <span>Suas métricas mostram exatamente onde focar na semana seguinte.</span>
+                <div class="order-node__head">
+                  <span class="order-node__step">Etapa 05</span>
+                  <span class="order-node__badge">Diagnóstico real</span>
+                </div>
+                <strong>Métricas por Subárea</strong>
+                <p>Gráficos claros de acerto e consistência que apontam exatamente onde focar.</p>
+                <div class="order-node__pill">Rumo certo até o R1</div>
               </div>
             </div>
           </div>
@@ -468,23 +585,23 @@
           <article class="chap chap--rev" data-reveal>
             <div class="chap__media">
               <figure class="shot" data-tilt="3">
-                <img src="/assets/img/traube/dif-anatomia-painel.jpg?v=20261108-dark3" alt="Sala de Anatomia da Traube exibindo o modelo do coração humano e painel lateral com explicação da Aorta e fluxo sanguíneo" width="1440" height="900" loading="lazy">
+                <img src="/assets/img/traube/dif-anatomia-painel.jpg?v=20261110-atlas" alt="Sala de Anatomia 3D da Traube exibindo o atlas corporal masculino completo com visualização dos sistemas esquelético, muscular e viscerais em perspectiva 3D" width="1440" height="900" loading="eager">
                 <figcaption class="shot__caption">
-                  <span>/aprender/anatomia/coracao · Atlas Anatômico Interativo</span>
-                  <span>Human Reference Atlas &amp; BodyParts3D</span>
+                  <span>/aprender/anatomia/atlas/?corpo=masculino · Sala de Anatomia 3D</span>
+                  <span>Atlas Corporal Masculino Completo · 18 Sistemas</span>
                 </figcaption>
               </figure>
             </div>
             <div class="chap__copy">
               <span class="chap__num">Diferencial 02 / 07 · Visão espacial e cirúrgica</span>
-              <h3>Sala de Anatomia 3D com coração interativo e atlas corporal</h3>
+              <h3>Sala de Anatomia 3D com modelo masculino completo e atlas corporal</h3>
               <p>
-                Para entender relações anatômicas em cirurgia, radiologia e cardiologia sem depender de figuras chapadas de livro, a Traube traz modelos tridimensionais diretamente no navegador.
+                Para entender relações anatômicas em cirurgia, radiologia e clínica sem depender de figuras chapadas de livro, a Traube traz o atlas anatômico tridimensional completo diretamente no navegador.
               </p>
               <ul class="chap__points">
-                <li><strong>Coração em detalhe:</strong> Alterne entre vista externa, corte das câmaras ventriculares, destaque de vasos da base e caminho do fluxo sanguíneo.</li>
-                <li><strong>Atlas do corpo inteiro:</strong> Mais de 2.600 estruturas anatômicas divididas em 15 sistemas orgânicos para isolar, girar e identificar.</li>
-                <li><strong>Modo de teste ativo:</strong> Oculte os nomes das estruturas e teste sua identificação anatômica antes das provas práticas.</li>
+                <li><strong>Atlas do corpo inteiro em alta definição:</strong> Modelo masculino e feminino completos com mais de 2.600 estruturas anatômicas divididas em 18 sistemas orgânicos para isolar, girar e dissecar em camadas.</li>
+                <li><strong>Coração e órgãos em detalhe:</strong> Alterne entre vista externa, corte de câmaras ventriculares, vasos da base e dinâmica de fluxo sanguíneo.</li>
+                <li><strong>Modo de teste ativo:</strong> Oculte os nomes das estruturas e teste sua identificação anatômica antes das provas práticas e plantões.</li>
               </ul>
               <a class="chap__link" href="/cadastro/">Explorar a Sala de Anatomia 3D →</a>
             </div>
@@ -494,10 +611,10 @@
           <article class="chap" data-reveal>
             <div class="chap__media">
               <figure class="shot" data-tilt="3">
-                <img src="/assets/img/traube/dif-amigos.jpg?v=20261108-dark3" alt="Página de Amigos e Estudo Ao Vivo da Traube mostrando colegas online, salas de estudo por vídeo e grupos" width="1440" height="900" loading="lazy">
+                <img src="/assets/img/traube/dif-amigos.jpg?v=20261110-amigos" alt="Página de Amigos e Estudo Ao Vivo da Traube exibindo cards alinhados, colegas online e salas de estudo por vídeo" width="1440" height="900" loading="eager">
                 <figcaption class="shot__caption">
-                  <span>/amigos · Salas de Estudo Ao Vivo &amp; Grupos</span>
-                  <span>Áudio, vídeo e presença em tempo real</span>
+                  <span>/amigos · Salas de Estudo Ao Vivo &amp; Colegas</span>
+                  <span>Presença, áudio, vídeo e grupos em tempo real</span>
                 </figcaption>
               </figure>
             </div>
@@ -542,30 +659,34 @@
             </div>
           </article>
 
-          <!-- Diferencial 05: Central Aprender & Leco IA -->
+          <!-- Diferencial 05: Central Tutoria Leco -->
           <article class="chap" data-reveal>
             <div class="chap__media">
               <div class="pair-media" data-tilt="3">
                 <figure class="shot">
-                  <img src="/assets/img/traube/tela-aprender.jpg?v=20261108-dark3" alt="Central Aprender da Traube com o tutor Leco, acesso às apostilas, anotações, treinamento de ECG e sala de anatomia" width="1440" height="900" loading="lazy">
+                  <img src="/assets/img/traube/tela-aprender.jpg?v=20261110-leco" alt="Sala de Tutoria do Professor Leco na Traube com chat médico interativo, avatar 3D e resolução de casos clínicos" width="1440" height="900" loading="eager">
+                  <figcaption class="shot__caption">
+                    <span>/professor-alex/ · Sala de Tutoria Médica do Leco</span>
+                    <span>Tutor Inteligente Especializado em Provas e Clínica</span>
+                  </figcaption>
                 </figure>
                 <figure class="shot">
-                  <img src="/assets/img/traube/tela-aprender-mobile.jpg?v=20261108-dark3" alt="Versão mobile da Central Aprender com a moldura azul visível nos quatro lados" width="860" height="1720" loading="lazy">
+                  <img src="/assets/img/traube/tela-aprender-mobile.jpg?v=20261108-dark3" alt="Versão mobile da Tutoria do Leco com a moldura azul visível nos quatro lados" width="860" height="1720" loading="lazy">
                 </figure>
               </div>
             </div>
             <div class="chap__copy">
               <span class="chap__num">Diferencial 05 / 07 · Tutoria médica sob demanda</span>
-              <h3>Central Aprender e Leco, seu tutor médico integrado</h3>
+              <h3>Sala de tutoria médica do Leco, seu preceptor digital integrado</h3>
               <p>
-                Ficou em dúvida entre dois diagnósticos diferenciais durante a leitura ou quer transformar uma diretriz longa em tabela comparativa? O Leco responde na hora dentro do seu ambiente de estudo.
+                Ficou em dúvida entre dois diagnósticos diferenciais durante a leitura ou quer transformar uma diretriz longa em tabela comparativa? O Leco responde na hora dentro da sua sala de tutoria dedicada.
               </p>
               <ul class="chap__points">
-                <li><strong>Contexto médico direto:</strong> Peça resumos objetivos (como os critérios de Light no derrame pleural), diagnósticos diferenciais ou questões inéditas no estilo da sua banca.</li>
-                <li><strong>Anexo de materiais próprios:</strong> Envie o slide da aula da faculdade ou seu resumo pessoal e peça para o Leco extrair os pontos mais cobrados em prova.</li>
-                <li><strong>Tudo na mesma tela (Desktop e Mobile):</strong> Acesse Apostilas, Minhas Anotações, Aprender ECG e Sala de Anatomia tanto no computador quanto no celular durante o plantão.</li>
+                <li><strong>Preceptor interativo em tempo real:</strong> Tire dúvidas teóricas complexas, peça critérios diagnósticos consolidados (como critérios de Light, Duke ou Jones) e treine condutas de emergência.</li>
+                <li><strong>Análise de materiais e questões:</strong> Peça para o Leco explicar os distratores das questões mais difíceis da USP, ENARE ou UNICAMP e montar mapas mentais imediatos.</li>
+                <li><strong>Multiplataforma contínua:</strong> Acesse a tutoria do Leco tanto no computador durante a sessão de estudos quanto no smartphone no intervalo do plantão.</li>
               </ul>
-              <a class="chap__link" href="/cadastro/">Experimentar a Central Aprender e o Leco →</a>
+              <a class="chap__link" href="/cadastro/">Entrar na sala de tutoria do Leco →</a>
             </div>
           </article>
 
@@ -838,22 +959,25 @@
         </div>
 
         <div class="traube-grid" data-reveal>
-          <figure class="traube-portrait">
-            <img src="/assets/img/traube/ludwig-traube-retrato.webp" alt="Retrato histórico do médico alemão Ludwig Traube (1818–1876)" width="640" height="800" loading="lazy">
-            <figcaption>Ludwig Traube (1818–1876) · Hospital Charité, Berlim</figcaption>
-          </figure>
+          <div class="traube-portrait-seamless">
+            <img src="/assets/img/traube/ludwig-traube-retrato.webp" alt="Retrato histórico de Ludwig Traube (1818–1876)" class="traube-portrait__img" width="520" height="650" loading="eager">
+            <div class="traube-portrait__caption">
+              <strong>Ludwig Traube (1818–1876)</strong>
+              <span>Hospital Charité de Berlim · Pioneiro da medição clínica sistemática</span>
+            </div>
+          </div>
 
           <div class="traube-copy">
             <span class="sigmark sigmark--section sig--draw" role="img" aria-label="Assinatura manuscrita de Ludwig Traube"></span>
             <h2>Por que batizamos a plataforma em homenagem a <em>Ludwig Traube.</em></h2>
             <p>
-              No século XIX, no Hospital Charité de Berlim, <strong>Ludwig Traube (1818–1876)</strong> mudou a medicina interna ao substituir suposições vagas pela medição rigorosa à beira do leito: introduziu os gráficos sistemáticos de temperatura, pulso e frequência respiratória na prática hospitalar e descreveu o célebre <strong>Espaço Semilunar de Traube</strong> na propedêutica abdominal.
+              No século XIX, no Hospital Charité de Berlim, <strong>Ludwig Traube (1818–1876)</strong> mudou os rumos da medicina ao substituir suposições subjetivas pela medição rigorosa à beira do leito: introduziu os gráficos sistemáticos de temperatura, pulso e frequência respiratória na rotina hospitalar e descreveu o célebre <strong>Espaço Semilunar de Traube</strong> na propedêutica abdominal.
             </p>
-            <blockquote>
-              “Na medicina — e na preparação para as provas mais exigentes do país — a intuição sem método falha; o registro diário e a observação sistemática vencem.”
+            <blockquote class="traube-quote-clean">
+              “Na medicina e na preparação para as provas mais exigentes do país, a intuição sem método falha. O registro diário e a observação sistemática vencem.”
             </blockquote>
             <p>
-              Trouxemos esse mesmo princípio para o estudo médico: parar de estudar no escuro, medir a retenção real de cada assunto e transformar cada erro em aprendizado consolidado.
+              Trouxemos exatamente esse princípio para o estudo médico contemporâneo: eliminar o estudo às cegas, medir a retenção real de cada especialidade e transformar cada erro cometido em aprovação consolidada.
             </p>
           </div>
         </div>
