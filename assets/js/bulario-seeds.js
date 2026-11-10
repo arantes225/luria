@@ -8,7 +8,7 @@
     "therapeutic_class": "Vasoativos e Choque",
     "pharmacological_class": "Agonista adrenérgico alfa-1 e beta-1 (Vasopressor de 1ª escolha)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Vasoativos e Choque · Vasopressor alfa-1/beta-1",
       "indication": "Vasopressor de primeira escolha no choque séptico, choque cardiogênico com hipotensão grave e hipotensão aguda ameaçadora à vida.",
       "diseases": [
@@ -74,7 +74,7 @@
     "therapeutic_class": "Vasoativos e Choque",
     "pharmacological_class": "Agonista adrenérgico não seletivo (alfa-1, beta-1 e beta-2)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Vasoativos e Choque · Emergência / PCR / Anafilaxia",
       "indication": "Parada cardiorrespiratória (ACLS/PALS), droga de 1ª linha na Anafilaxia e Choque Anafilático, bradicardia instável refratária e choque séptico/cardiogênico refratário.",
       "diseases": [
@@ -137,7 +137,7 @@
     "therapeutic_class": "Vasoativos e Choque",
     "pharmacological_class": "Inotrópico agonista beta-1 adrenérgico predominante",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Vasoativos e Choque · Inotrópico",
       "indication": "Choque cardiogênico, insuficiência cardíaca aguda descompensada com baixo débito (Perfil C - frio e úmido) e disfunção miocárdica da sepse com hipoperfusão persistente.",
       "diseases": [
@@ -198,7 +198,7 @@
     "therapeutic_class": "Vasoativos e Choque",
     "pharmacological_class": "Agonista seletivo dos receptores V1 vasculares (Vasopressor não-adrenérgico)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Vasoativos e Choque · Vasopressor V1",
       "indication": "Vasopressor de 2ª linha poupador de catecolaminas no choque séptico refratário (associado à Noradrenalina quando esta atinge 0,25–0,5 mcg/kg/min) e choque vasoplégico.",
       "diseases": [
@@ -254,7 +254,7 @@
     "therapeutic_class": "Vasoativos e Choque",
     "pharmacological_class": "Vasodilatador arterial e venoso direto (doador de óxido nítrico)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Vasoativos e Choque · Vasodilatador Parenteral Potente",
       "indication": "Emergências hipertensivas (encefalopatia hipertensiva, hipertensão maligna, edema agudo de pulmão hipertensivo) e dissecção aguda de aorta (sempre APÓS betabloqueio).",
       "diseases": [
@@ -315,7 +315,7 @@
     "therapeutic_class": "Vasoativos e Choque",
     "pharmacological_class": "Vasodilatador coronariano e venodilatador (nitrato orgânico)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Vasoativos e Choque · Vasodilatador Coronariano e Venoso",
       "indication": "Síndrome Coronariana Aguda (angina instável / IAM com dor persistente, hipertensão ou congestão) e Edema Agudo de Pulmão Cardiogênico.",
       "diseases": [
@@ -374,7 +374,7 @@
     "therapeutic_class": "Cardiologia e Arritmias",
     "pharmacological_class": "Antiarrítmico Classe III de Vaughan-Williams (bloqueador multicanal K+, Na+, Ca2+ e beta)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Cardiologia e Arritmias · Antiarrítmico Classe III",
       "indication": "FV/TV sem pulso refratária ao choque (PCR), Taquicardia Ventricular monomórfica estável e Fibrilação Atrial aguda (controle de FC em IC ou cardioversão farmacológica).",
       "diseases": [
@@ -436,7 +436,7 @@
     "therapeutic_class": "Cardiologia e Arritmias",
     "pharmacological_class": "Nucleosídeo endógeno bloqueador transitório da condução pelo nó AV",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Cardiologia e Arritmias · Antiarrítmico de Ação Ultracurta",
       "indication": "Droga de 1ª escolha para reversão aguda da Taquicardia Supraventricular Paroxística (TSVP por reentrada nodal ou atrioventricular) regular de QRS estreito estável.",
       "diseases": [
@@ -492,7 +492,7 @@
     "therapeutic_class": "SRI, Sedação e Analgesia",
     "pharmacological_class": "Anestésico dissociativo antagonista do receptor NMDA",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "SRI, Sedação e Analgesia · Indutor Hemodinamicamente Estável e Broncodilatador",
       "indication": "Indutor anestésico de escolha na Intubação em Sequência Rápida (SRI) em pacientes com choque séptico, instabilidade hemodinâmica ou crise asmática grave; sedoanalgesia para procedimentos dolorosos e analgesia poupadora de opioides.",
       "diseases": [
@@ -548,7 +548,7 @@
     "therapeutic_class": "SRI, Sedação e Analgesia",
     "pharmacological_class": "Hipnótico imidazólico agonista GABA-A de ação ultracurta",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "SRI, Sedação e Analgesia · Indutor Neutro Hemodinamicamente",
       "indication": "Indução anestésica na Intubação em Sequência Rápida (SRI) e sedação rápida para Cardioversão Elétrica Sincronizada, destacando-se pela estabilidade cardiovascular.",
       "diseases": [
@@ -601,7 +601,7 @@
     "therapeutic_class": "SRI, Sedação e Analgesia",
     "pharmacological_class": "Bloqueador neuromuscular não-despolarizante (aminosteroide)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "SRI, Sedação e Analgesia · Bloqueador Neuromuscular Não-Despolarizante",
       "indication": "Paralisia muscular na Intubação em Sequência Rápida (SRI) — especialmente quando a Succinilcolina é contraindicada — e manutenção de bloqueio neuromuscular em ventilação mecânica (SDRA grave).",
       "diseases": [
@@ -654,7 +654,7 @@
     "therapeutic_class": "SRI, Sedação e Analgesia",
     "pharmacological_class": "Bloqueador neuromuscular despolarizante de ação ultracurta",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "SRI, Sedação e Analgesia · Bloqueador Neuromuscular Despolarizante",
       "indication": "Paralisia muscular de início ultrarrápido (45 segundos) e curta duração (6 a 10 minutos) para Intubação em Sequência Rápida (SRI).",
       "diseases": [
@@ -714,7 +714,7 @@
     "therapeutic_class": "Eletrólitos e Emergências",
     "pharmacological_class": "Eletrólito, anticonvulsivante obstétrico, broncodilatador e antiarrítmico",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Eletrólitos e Emergências · Eclâmpsia / Torsades / Asma Grave",
       "indication": "Prevenção e tratamento de convulsões na Pré-Eclâmpsia Grave e Eclâmpsia; antiarrítmico de 1ª escolha na Torsades de Pointes (TV polimórfica com QT longo); broncodilatador adjuvante na crise asmática grave refratária; reposição na hipomagnesemia.",
       "diseases": [
@@ -773,7 +773,7 @@
     "therapeutic_class": "Eletrólitos e Emergências",
     "pharmacological_class": "Estabilizador da membrana miocárdica e repositor de cálcio",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Eletrólitos e Emergências · Cardioprotetor na Hipercalemia e Antídoto do Magnésio",
       "indication": "Primeira medida imediata na Hipercalemia com alterações eletrocardiográficas (estabilização da membrana miocárdica); antídoto da intoxicação por Sulfato de Magnésio e bloqueadores de canal de cálcio; hipocalcemia sintomática grave (tetania/convulsão) e transfusão maciça.",
       "diseases": [
@@ -830,7 +830,7 @@
     "therapeutic_class": "Antitrombóticos e Trombolíticos",
     "pharmacological_class": "Fibrinolítico ativador do plasminogênio tecidual recombinante",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antitrombóticos e Trombolíticos · Trombolítico Fibrino-Específico",
       "indication": "Trombólise endovenosa no AVC Isquêmico Agudo (janela de até 4,5 horas), Tromboembolismo Pulmonar (TEP) de Alto Risco (maciço com instabilidade hemodinâmica) e IAM com Supra de ST.",
       "diseases": [
@@ -889,7 +889,7 @@
     "therapeutic_class": "Antídotos e Toxicologia",
     "pharmacological_class": "Antagonista competitivo puro dos receptores opioides (mu, kappa e delta)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antídotos e Toxicologia · Antídoto de Opioides",
       "indication": "Reversão da depressão respiratória e do sistema nervoso central induzida por superdosagem/intoxicação aguda por opioides (Morfina, Fentanil, Metadona, Tramadol, Oxicodona, Heroína).",
       "diseases": [
@@ -938,7 +938,7 @@
     "therapeutic_class": "Antídotos e Toxicologia",
     "pharmacological_class": "Doador de grupamentos sulfidrila (precursor de glutationa hepática) e mucolítico",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antídotos e Toxicologia · Antídoto do Paracetamol (Acetaminofeno)",
       "indication": "Antídoto específico para prevenção e tratamento da hepatotoxicidade aguda por superdosagem de Paracetamol (Acetaminofeno) — eficácia próxima a 100% se iniciada nas primeiras 8 horas da ingestão!",
       "diseases": [
@@ -988,7 +988,7 @@
     "therapeutic_class": "Antídotos e Toxicologia",
     "pharmacological_class": "Antagonista competitivo específico do sítio benzodiazepínico no receptor GABA-A",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antídotos e Toxicologia · Antídoto de Benzodiazepínicos",
       "indication": "Reversão de sedação excessiva iatrogênica por benzodiazepínicos (Midazolam, Diazepam) após procedimentos diagnósticos/terapêuticos.",
       "diseases": [
@@ -1041,7 +1041,7 @@
     "therapeutic_class": "SRI, Sedação e Analgesia",
     "pharmacological_class": "Anestésico geral hipnótico agonista GABA-A em emulsão lipídica",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "SRI, Sedação e Analgesia · Hipnótico de Ação Ultracurta e Anticonvulsivante",
       "indication": "Indução anestésica em pacientes hemodinamicamente estáveis; sedação contínua em pacientes sob ventilação mecânica em UTI (despertar rápido); tratamento de 3ª linha no Estado de Mal Epiléptico refratário.",
       "diseases": [
@@ -1094,7 +1094,7 @@
     "therapeutic_class": "SRI, Sedação e Analgesia",
     "pharmacological_class": "Benzodiazepínico de ação curta agonista alostérico GABA-A",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "SRI, Sedação e Analgesia · Benzodiazepínico Parenteral e Anticonvulsivante",
       "indication": "Primeira linha por via Intramuscular (10 mg IM) no Estado de Mal Epiléptico sem acesso venoso; infusão contínua no Estado de Mal Epiléptico refratário; ansiólise/sedação para procedimentos e sedação profunda em ventilação mecânica.",
       "diseases": [
@@ -1151,7 +1151,7 @@
     "therapeutic_class": "SRI, Sedação e Analgesia",
     "pharmacological_class": "Analgesia opioide sintética potente agonista mu (100x mais potente que a morfina)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "SRI, Sedação e Analgesia · Analgésico Opioide de Ação Rápida",
       "indication": "Analgesia de 1ª linha em pacientes sob ventilação mecânica em UTI (abordagem Analgosedação / PADIS), pré-tratamento simpaticolítico na SRI, dor aguda intensa em instabilidade hemodinâmica (não libera histamina!) e sedoanalgesia para procedimentos.",
       "diseases": [
@@ -1207,7 +1207,7 @@
     "therapeutic_class": "Antitrombóticos e Trombolíticos",
     "pharmacological_class": "Heparina de Baixo Peso Molecular (HBPM — inibidora preferencial do Fator Xa)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antitrombóticos e Trombolíticos · Anticoagulante Parenteral (HBPM)",
       "indication": "Profilaxia de Tromboembolismo Venoso (TEV) em pacientes clínicos e cirúrgicos; anticoagulação plena no tratamento de TVP, TEP e Síndromes Coronarianas Agudas (IAMCSST e SCASSST); anticoagulante de escolha na gestação.",
       "diseases": [
@@ -1265,7 +1265,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Cefalosporina de 3ª geração bactericida (beta-lactâmico)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Cefalosporina de 3ª Geração",
       "indication": "Pneumonia adquirida na comunidade (PAC) internada, Pielonefrite aguda / Sepse de foco urinário, Meningite bacteriana aguda (em dose dobrada), Infecções intra-abdominais/biliares (associada a Metronidazol), Profilaxia de PBE na HDA do cirrótico e Gonorreia/Sífilis.",
       "diseases": [
@@ -1320,7 +1320,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Penicilina antipseudomonas de amplo espectro + inibidor de beta-lactamase",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Beta-lactâmico Antipseudomonas e Anaeróbios",
       "indication": "Sepse e Choque Séptico de foco abdominal, pulmonar nosocomial (PAV/PAH), urinário complicado, pé diabético grave, fasciíte necrosante e Neutropenia Febril de alto risco.",
       "diseases": [
@@ -1377,7 +1377,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Carbapenêmico de amplo espectro (Beta-lactâmico antipseudomonas e ESBL)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Carbapenêmico",
       "indication": "Infecções graves/sepse por bacilos Gram-negativos produtores de ESBL ou AmpC, Pseudomonas aeruginosa resistente, meningite bacteriana nosocomial, neutropenia febril de alto risco e infecções intra-abdominais graves.",
       "diseases": [
@@ -1433,7 +1433,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Glicopeptídeo tricíclico bactericida (Inibidor da parede celular de Gram-positivos)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Glicopeptídeo Anti-MRSA",
       "indication": "Infecções graves por Staphylococcus aureus resistente à meticilina/oxacilina (MRSA), Staphylococcus coagulase-negativo, Enterococcus resistente à ampicilina, meningite pneumocócica empiricamente e colite grave por Clostridioides difficile (via oral).",
       "diseases": [
@@ -1491,7 +1491,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Aminopenicilina + Inibidor de beta-lactamase",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Penicilina + Inibidor de Beta-lactamase",
       "indication": "Pneumonia adquirida na comunidade (com comorbidades), exacerbação de DPOC, rinossinusite bacteriana aguda, otite média aguda, mordeduras animais/humanas, infecção odontogênica grave, pé diabético leve/moderado e ITU.",
       "diseases": [
@@ -1546,7 +1546,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Macrolídeo azalídeo bacteriostático (Subunidade ribossômica 50S)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Macrolídeo (Cobertura de Atípicos e ISTs)",
       "indication": "Pneumonia adquirida na comunidade (cobertura de germes atípicos: Mycoplasma, Chlamydia, Legionella), uretrite/cervicite por Chlamydia trachomatis, cancro mole, coqueluche, diarreia do viajante/disenteria bacteriana (Campylobacter/Shigella) e exacerbação de DPOC.",
       "diseases": [
@@ -1600,7 +1600,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Fluoroquinolona de 2ª geração bactericida (Inibidor da DNA-girase e Topoisomerase IV)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Fluoroquinolona Anti-Gram-Negativos e Pseudomonas",
       "indication": "Pielonefrite aguda não complicada, prostatite bacteriana aguda/crônica, infecções intra-abdominais (associado ao Metronidazol), diarreia infecciosa invasiva e infecções por Pseudomonas aeruginosa sensível (única opção oral antipseudomonas!).",
       "diseases": [
@@ -1661,7 +1661,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Nitroimidazólico bactericida (Anaerobicida e Antiprotozoário)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Anaerobicida e Antiprotozoário",
       "indication": "Infecções por bactérias anaeróbias estritas (Bacteroides fragilis — intra-abdominais, pélvicas, abscesso cerebral/hepático, pé diabético), colite por Clostridioides difficile (alternativa), vaginose bacteriana, tricomoníase, giardíase e amebíase.",
       "diseases": [
@@ -1721,7 +1721,7 @@
     "therapeutic_class": "Cardiologia e Diuréticos",
     "pharmacological_class": "Diurético de alça de alta potência (Inibidor do cotransportador Na+-K+-2Cl- no ramo ascendente espesso da alça de Henle)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Cardiologia e Diuréticos · Diurético de Alça",
       "indication": "Edema agudo de pulmão cardiogênico, insuficiência cardíaca aguda e crônica congestiva (Perfis B e C), síndrome edematosa da cirrose/síndrome nefrótica, hipervolemia na LRA/DRC, hipercalemia aguda e crise hipercalcêmica.",
       "diseases": [
@@ -1784,7 +1784,7 @@
     "therapeutic_class": "Cardiologia e Antiarrítmicos",
     "pharmacological_class": "Betabloqueador cardiosseletivo Beta-1 (Classe II de Vaughan-Williams)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Cardiologia e Antiarrítmicos · Betabloqueador Beta-1 Seletivo",
       "indication": "Controle rápido de frequência cardíaca na Fibrilação Atrial/Flutter de alta resposta e TSV, Dissecção Aguda de Aorta (1º passo obrigatório!), Síndrome Coronariana Aguda (sem sinais de congestão/choque), Insuficiência Cardíaca com FEVE reduzida (Succinato) e Tempestade Tireotóxica.",
       "diseases": [
@@ -1844,7 +1844,7 @@
     "therapeutic_class": "Cardiologia e Antiarrítmicos",
     "pharmacological_class": "Glicosídeo cardíaco digitálico venoso (Inibidor da bomba Na+/K+-ATPase e vagomimético no nó AV)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Cardiologia e Antiarrítmicos · Digitálico Venoso",
       "indication": "Controle agudo da frequência ventricular na Fibrilação Atrial ou Flutter Atrial de alta resposta em pacientes com Insuficiência Cardíaca descompensada (FEVE reduzida / congestão pulmonar) ou hipotensão limítrofe onde betabloqueadores e bloqueadores de canal de cálcio estão contraindicados.",
       "diseases": [
@@ -1900,7 +1900,7 @@
     "therapeutic_class": "Antídotos e Reversores",
     "pharmacological_class": "Antifibrinolítico sintético (Inibidor competitivo da ativação do plasminogênio em plasmina)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antídotos e Reversores · Antifibrinolítico / Hemostático",
       "indication": "Choque hemorrágico no politrauma (CRASH-2), TCE com sangramento intracraniano leve/moderado nas primeiras 3h (CRASH-3), Hemorragia Pós-Parto (WOMAN trial), sangramento uterino anormal agudo, epistaxe e hemoptise.",
       "diseases": [
@@ -1956,7 +1956,7 @@
     "therapeutic_class": "Neurologia e Psiquiatria",
     "pharmacological_class": "Anticonvulsivante bloqueador de canais de sódio voltagem-dependentes (Antiarrítmico Classe IB)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Neurologia e Psiquiatria · Anticonvulsivante de 2ª Linha no EME",
       "indication": "Estado de Mal Epiléptico (fármaco de 2ª linha após benzodiazepínico), crises epilépticas focais e tônico-clônicas generalizadas, profilaxia de crises precoces pós-TCE grave (primeiros 7 dias) e arritmias ventriculares por intoxicação digitálica.",
       "diseases": [
@@ -2015,7 +2015,7 @@
     "therapeutic_class": "Neurologia e Psiquiatria",
     "pharmacological_class": "Benzodiazepínico de longa duração e início de ação ultrarrápido (Agonista alostérico GABA-A)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Neurologia e Psiquiatria · Benzodiazepínico (1ª Linha na Crise Convulsiva e Abstinência Alcoólica)",
       "indication": "Primeira linha na crise epiléptica aguda e Estado de Mal Epiléptico (fase de 0 a 5 min), Síndrome de Abstinência Alcoólica e Delirium Tremens (padrão-ouro!), intoxicação simpaticomimética aguda (cocaína/crack/anfetaminas), tétano e espasmo muscular agudo.",
       "diseases": [
@@ -2074,7 +2074,7 @@
     "therapeutic_class": "Neurologia e Psiquiatria",
     "pharmacological_class": "Antipsicótico típico de alta potência (Butirofenona antagonista potente dos receptores D2 de dopamina)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Neurologia e Psiquiatria · Antipsicótico Típico (Agitação e Delirium)",
       "indication": "Agitação psicomotora aguda e surto psicótico na emergência, Delirium hiperativo em enfermaria/UTI, soluços incoercíveis e náuseas/vômitos refratários em cuidados paliativos.",
       "diseases": [
@@ -2135,7 +2135,7 @@
     "therapeutic_class": "Analgésicos e Antitérmicos",
     "pharmacological_class": "Analgesico opioide forte puro (Agonista dos receptores mu-opioides)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Analgésicos e Antitérmicos · Opioide Forte",
       "indication": "Dor aguda intensa (politrauma, pós-operatório, queimados, cólica nefrítica refratária a AINEs, dor isquêmica da SCA refratária a nitratos), dor oncológica moderada a intensa e dispneia refratária/fome de ar em cuidados paliativos.",
       "diseases": [
@@ -2195,7 +2195,7 @@
     "therapeutic_class": "Analgésicos e Antitérmicos",
     "pharmacological_class": "Analgésico não opioide, antipirético e espasmolítico derivado pirazolônico",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Analgésicos e Antitérmicos · Analgésico e Antitérmico de 1ª Linha",
       "indication": "Dor aguda leve a moderada (cefaleia, pós-operatório, cólica nefrítica e biliar — potente ação espasmolítica na musculatura lisa!) e febre refratária.",
       "diseases": [
@@ -2252,7 +2252,7 @@
     "therapeutic_class": "Gastroenterologia e Antieméticos",
     "pharmacological_class": "Antiemético antagonista seletivo dos receptores serotoninérgicos 5-HT3 (central e periférico)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Gastroenterologia e Antieméticos · Antiemético 5-HT3",
       "indication": "Prevenção e tratamento de náuseas e vômitos agudos (gastroenterite aguda, pós-operatório, quimioterapia/radioterapia, hiperêmese gravídica refratária, cólica nefrítica e enxaqueca).",
       "diseases": [
@@ -2305,7 +2305,7 @@
     "therapeutic_class": "Gastroenterologia e Antieméticos",
     "pharmacological_class": "Inibidor da Bomba de Prótons — IBP (Bloqueador irreversível da H+/K+-ATPase da célula parietal gástrica)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Gastroenterologia e Antieméticos · Inibidor da Bomba de Prótons (IBP)",
       "indication": "Hemorragia Digestiva Alta (HDA) por úlcera péptica gastroduodenal, doença ulcerosa péptica, DRGE e esofagite erosiva, erradicação de H. pylori, profilaxia de gastropatia por AINEs/DAPT e profilaxia de úlcera de estresse em UTI.",
       "diseases": [
@@ -2361,7 +2361,7 @@
     "therapeutic_class": "Endocrinologia e Metabolismo",
     "pharmacological_class": "Insulina humana de ação rápida (Hexamérica — única insulina comum que pode ser administrada por via Endovenosa!)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Endocrinologia e Metabolismo · Insulina Rápida (CAD / EHH / Hipercalemia)",
       "indication": "Cetoacidose Diabética (CAD), Estado Hiperglicêmico Hiperosmolar (EHH), Solução Polarizante na Hipercalemia Aguda (junto com glicose), controle glicêmico contínuo em UTI e correção prandial/hiperglicemia hospitalar.",
       "diseases": [
@@ -2418,7 +2418,7 @@
     "therapeutic_class": "Corticoides e Anti-inflamatórios",
     "pharmacological_class": "Glicocorticoide sistêmico de ação curta com atividade mineralocorticoide equivalente ao cortisol endógeno",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Corticoides e Anti-inflamatórios · Corticoide Venoso (Choque Séptico e Crise Adrenal)",
       "indication": "Choque Séptico refratário a fluidos e doses moderadas/altas de vasopressores (Noradrenalina >= 0,25 mcg/kg/min), Crise Adrenal Aguda (Insuficiência Adrenal Aguda — droga de escolha!), crise de asma/DPOC grave (quando via oral é inviável) e Tempestade Tireotóxica.",
       "diseases": [
@@ -2471,7 +2471,7 @@
     "therapeutic_class": "Corticoides e Anti-inflamatórios",
     "pharmacological_class": "Glicocorticoide fluorado de longa duração e altíssima potência (25–30x mais potente que a hidrocortisona e ZERO atividade mineralocorticoide!)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Corticoides e Anti-inflamatórios · Corticoide de Alta Potência (SNC / Meningite / Croup)",
       "indication": "Meningite Bacteriana Aguda (reduz surdez e mortalidade no pneumococo), Edema Cerebral Vasogênico (tumores cerebrais, metástases e abscesso cerebral) e Compressão Medular Neoplásica, Laringotraqueíte Viral Aguda (Crupe), Maturação Pulmonar Fetal (24 a 34 semanas) e Pneumonia por COVID-19 hipoxêmica.",
       "diseases": [
@@ -2527,7 +2527,7 @@
     "therapeutic_class": "Pneumologia e Broncodilatadores",
     "pharmacological_class": "Broncodilatador Beta-2 agonista adrenérgico seletivo de curta duração (SABA)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Pneumologia e Broncodilatadores · Broncodilatador SABA de Resgate",
       "indication": "Primeira linha no alívio imediato do broncoespasmo agudo na Crise de Asma, Exacerbação Aguda de DPOC, Broncoespasmo na Anafilaxia e terapia adjuvante de shift intracelular de potássio na Hipercalemia Aguda.",
       "diseases": [
@@ -2581,7 +2581,7 @@
     "therapeutic_class": "Pneumologia e Broncodilatadores",
     "pharmacological_class": "Broncodilatador anticolinérgico (antimuscarínico M3) de curta duração (SAMA)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Pneumologia e Broncodilatadores · Anticolinérgico SAMA (Asma Grave e DPOC)",
       "indication": "Terapia combinada obrigatória na 1ª hora da Crise de Asma Moderada a Grave (junto com Salbutamol — reduz significativamente a taxa de internação hospitalar!) e na Exacerbação Aguda de DPOC.",
       "diseases": [
@@ -2632,7 +2632,7 @@
     "therapeutic_class": "Anticoagulantes e Trombolíticos",
     "pharmacological_class": "Antiagregante plaquetário tienopiridínico (Inibidor irreversível do receptor P2Y12 de ADP)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Anticoagulantes e Trombolíticos · Antiagregante Plaquetário P2Y12",
       "indication": "Dupla Antiagregação Plaquetária (DAPT com AAS) na Síndrome Coronariana Aguda (IAMCSST, IAMSSST e Angina Instável), Pós-Implante de Stent Coronariano/Carotídeo, AVC Isquêmico Menor (NIHSS <= 3) ou AIT de Alto Risco (ABCD2 >= 4 — Estudos CHANCE/POINT por 21 dias) e Doença Arterial Periférica.",
       "diseases": [
@@ -2690,7 +2690,7 @@
     "therapeutic_class": "Anticoagulantes e Trombolíticos",
     "pharmacological_class": "Anticoagulante Oral Direto (DOAC) — Inibidor direto e seletivo do Fator Xa",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Anticoagulantes e Trombolíticos · Anticoagulante Oral Direto (DOAC Anti-Xa)",
       "indication": "Prevenção de AVC e embolia sistêmica na Fibrilação Atrial não-valvar, tratamento e prevenção de recorrência de Trombose Venosa Profunda (TVP) e Tromboembolismo Pulmonar (TEP) — permite tratamento oral desde o Dia 1 sem necessidade de enoxaparina prévia! — e profilaxia de TEV em artroplastia de quadril/joelho.",
       "diseases": [
@@ -2752,7 +2752,7 @@
     "therapeutic_class": "Anticoagulantes e Trombolíticos",
     "pharmacological_class": "Anticoagulante Oral Direto (DOAC) — Inibidor direto, seletivo e reversível do Fator Xa",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Anticoagulantes e Trombolíticos · Anticoagulante Oral Direto (DOAC Anti-Xa)",
       "indication": "Prevenção de AVC e embolia sistêmica na Fibrilação Atrial não-valvar (menor risco de sangramento gastrointestinal e intracraniano dentre os anticoagulantes — estudo ARISTOTLE!), tratamento de TVP e TEP agudos desde o Dia 1 (estudo AMPLIFY) e tromboprofilaxia em artroplastia.",
       "diseases": [
@@ -2809,7 +2809,7 @@
     "therapeutic_class": "Anticoagulantes e Trombolíticos",
     "pharmacological_class": "Antiagregante plaquetário (Inibidor irreversível da COX-1 plaquetária e síntese de Tromboxano A2)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Anticoagulantes e Trombolíticos · Antiagregante Plaquetário (COX-1)",
       "indication": "Primeira medida farmacológica imediata em toda Síndrome Coronariana Aguda (IAMCSST, IAMSSST e Angina Instável — reduz mortalidade em 23% no estudo ISIS-2!), prevenção secundária de DAC/AVC isquêmico/DAOP, Pericardite Aguda (alta dose), Doença de Kawasaki e profilaxia de Pré-Eclâmpsia em gestantes de alto risco.",
       "diseases": [
@@ -2868,7 +2868,7 @@
     "therapeutic_class": "Vasoativos e Choque",
     "pharmacological_class": "Vasodilatador arterial direto (Relaxante da musculatura lisa arteriolar)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Vasoativos e Choque · Anti-hipertensivo na Emergência Obstétrica (Pré-Eclâmpsia Grave)",
       "indication": "Primeira linha no controle agudo da crise hipertensiva na Gestação (Pré-Eclâmpsia Grave, Eclâmpsia e Síndrome HELLP com PAS >= 160 mmHg ou PAD >= 110 mmHg) e terapia vasodilatadora na Insuficiência Cardíaca com FEVE reduzida (em associação com Dinitrato de Isossorbida quando IECA/BRA/INRA são contraindicados pela função renal/potássio).",
       "diseases": [
@@ -2920,7 +2920,7 @@
     "therapeutic_class": "Vasoativos e Choque",
     "pharmacological_class": "Bloqueador dos canais de cálcio di-hidropiridínico (Vasodilatador arterial periférico e tocolítico uterino)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Vasoativos e Choque · Bloqueador de Canal de Cálcio (Crise Hipertensiva na Gestação e Tocólise)",
       "indication": "Primeira linha por via oral na Crise Hipertensiva da Gestação (Pré-Eclâmpsia Grave com PAS >= 160 ou PAD >= 110 mmHg — tão eficaz quanto a Hidralazina IV!), Tocólise de 1ª escolha no Trabalho de Parto Prematuro (24 a 34 semanas) e hipertensão arterial crônica (apresentação retard/OROS).",
       "diseases": [
@@ -2973,7 +2973,7 @@
     "therapeutic_class": "Neurologia e Psiquiatria",
     "pharmacological_class": "Anticonvulsivante de amplo espectro ligante da proteína de vesícula sináptica SV2A (Sem interação com citocromo P450!)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Neurologia e Psiquiatria · Anticonvulsivante de Amplo Espectro (2ª Linha no EME)",
       "indication": "Estado de Mal Epiléptico refratário ao benzodiazepínico (tão eficaz quanto a Fenitoína no estudo ESETT, porém sem risco de arritmia/hipotensão!), epilepsia focal e generalizada (inclusive mioclônica), crises convulsivas em pacientes oncológicos, hepatopatas, idosos, cardiopatas e gestantes.",
       "diseases": [
@@ -3025,7 +3025,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Fluoroquinolona respiratória de 3ª geração bactericida (Isômero L ativo do ofloxacino)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Quinolona Respiratória e Urinária",
       "indication": "Pneumonia Adquirida na Comunidade (PAC — em pacientes com comorbidades ou alergia grave a beta-lactâmicos, cobrindo Pneumococo + Atípicos em monoterapia!), Pielonefrite Aguda, Prostatite Bacteriana e Rinossinusite Bacteriana Aguda refratária.",
       "diseases": [
@@ -3081,7 +3081,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Penicilina semissintética antiestafilocócica resistente às penicilinases (Droga de escolha para MSSA grave)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Penicilina Antiestafilocócica (Padrão-Ouro para MSSA)",
       "indication": "Infecções graves e moderadas por Staphylococcus aureus sensível à meticilina/oxacilina (MSSA): bacteremia estafilocócica, endocardite infecciosa de valva nativa/protética, osteomielite aguda, artrite séptica, piomiosite, abscesso epidural e celulite/erisipela hospitalar.",
       "diseases": [
@@ -3135,7 +3135,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Cefalosporina de 4ª geração bactericida (Amplo espectro Gram-positivo MSSA/Streptococcus e Gram-negativo incluindo Pseudomonas e AmpC)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Cefalosporina de 4ª Geração Antipseudomonas",
       "indication": "Monoterapia empírica de 1ª linha na Neutropenia Febril de alto risco, Pneumonia Hospitalar e Associada à Ventilação Mecânica (PAV), infecções graves por Pseudomonas aeruginosa e bacilos Gram-negativos produtores de beta-lactamase cromossômica AmpC (Enterobacter, Citrobacter, Serratia) e meningite pós-neurocirúrgica.",
       "diseases": [
@@ -3187,7 +3187,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Lincosamida bacteriostática inibidora da síntese proteica (Subunidade 50S — potente efeito antitoxina bacteriana!)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Lincosamida (Gram-Positivos, Anaeróbios Acima do Diafragma e Antitoxina)",
       "indication": "Associação obrigatória na Fasciíte Necrosante e Síndrome do Choque Tóxico Estreptocócico/Estafilocócico (inibe a produção de exotoxinas e fator de necrose!), pneumonia aspirativa / abscesso pulmonar, infecções graves de pele/partes moles, infecções odontogênicas/cervicais (Angina de Ludwig), osteomielite, Doença Inflamatória Pélvica (c/ Gentamicina) e Neurotoxoplasmose (alternativa à Sulfadiazina).",
       "diseases": [
@@ -3240,7 +3240,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Antisséptico/Bactericida urinário nitrofurano (Inibe acetil-CoA bacteriana e síntese de DNA/RNA/parede celular exclusivamente na urina)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Antibiótico de 1ª Linha para Cistite Aguda",
       "indication": "Primeira escolha absoluta no tratamento empírico da Cistite Aguda Não Complicada (ITU baixa) em mulheres e gestantes (exceto a termo/G6PD), bacteriúria assintomática na gestante e profilaxia de ITU de repetição.",
       "diseases": [
@@ -3296,7 +3296,7 @@
     "therapeutic_class": "Analgésicos e Antitérmicos",
     "pharmacological_class": "Analgésico e antipirético inibidor central da síntese de prostaglandinas",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Analgésicos e Antitérmicos · 1ª Escolha em Gestantes e Dengue",
       "indication": "Dor leve a moderada (cefaleia, mialgia, dor de dente, osteoartrite) e febre. Analgésico e antitérmico de primeira escolha na suspeita de Dengue/Arboviroses e na gestação/lactação.",
       "diseases": [
@@ -3377,7 +3377,7 @@
     "therapeutic_class": "Anti-inflamatórios Não Esteroidais (AINEs)",
     "pharmacological_class": "AINE inibidor não seletivo da COX-1 e COX-2 derivado do ácido propiônico",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "AINEs e Analgésicos · Antipirético e Anti-inflamatório",
       "indication": "Dor aguda inflamatória (odontalgia, dismenorreia primária, artrite, dor pós-traumática, lombalgia) e febre refratária.",
       "diseases": [
@@ -3459,7 +3459,7 @@
     "therapeutic_class": "Anti-inflamatórios Não Esteroidais (AINEs)",
     "pharmacological_class": "AINE inibidor não seletivo de COX-1/COX-2 e inibidor da migração leucocitária",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "AINEs e Analgésicos · Emergência e Analgesia Parenteral",
       "indication": "Dor aguda intensa osteomuscular, cólica nefrítica aguda, crise de gota, lombalgia aguda e dor pós-operatória.",
       "diseases": [
@@ -3534,7 +3534,7 @@
     "therapeutic_class": "Analgésicos Opioides",
     "pharmacological_class": "Opioide fraco agonista de receptores mu e inibidor da recaptação de serotonina e noradrenalina",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Opioides · Degrau 2 da Escada Analgésica da OMS",
       "indication": "Dor moderada a intensa não controlada com analgésicos comuns e AINEs (cólica nefrítica, trauma, pós-operatório, dor oncológica).",
       "diseases": [
@@ -3611,7 +3611,7 @@
     "therapeutic_class": "Antieméticos e Pró-cinéticos",
     "pharmacological_class": "Antagonista dopaminérgico D2 periférico e central com ação colinérgica pró-cinética",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antieméticos · Pró-cinético Gastrointestinal",
       "indication": "Náuseas e vômitos de diversas etiologias (pós-operatório, infeccioso, enxaqueca, induzido por opioides) e estase gástrica / gastroparesia.",
       "diseases": [
@@ -3686,7 +3686,7 @@
     "therapeutic_class": "Antiespasmódicos e Anticolinérgicos",
     "pharmacological_class": "Antiespasmódico anticolinérgico derivado quaternário de amônio",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antiespasmódicos · Cólica Abdominal e Nefrítica",
       "indication": "Espasmos agudos dos tratos gastrintestinal, biliar e geniturinário (cólica intestinal, cólica biliar, cólica nefrítica e dismenorreia espástica).",
       "diseases": [
@@ -3759,7 +3759,7 @@
     "therapeutic_class": "Anti-hipertensivos",
     "pharmacological_class": "Inibidor da Enzima Conversora de Angiotensina (IECA)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Anti-hipertensivos e Cardiovasculares · IECA de Curta Ação",
       "indication": "Hipertensão arterial sistêmica, insuficiência cardíaca crônica com fração de ejeção reduzida, pós-infarto do miocárdio e urgência hipertensiva / pseudocrise hipertensiva.",
       "diseases": [
@@ -3821,7 +3821,7 @@
     "therapeutic_class": "Anti-hipertensivos",
     "pharmacological_class": "Bloqueador dos Receptores de Angiotensina II (BRA - subtipo AT1)",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Anti-hipertensivos · BRA de 1ª Escolha na HAS e Nefroproteção",
       "indication": "Hipertensão arterial sistêmica, insuficiência cardíaca crônica com fração de ejeção reduzida, nefropatia diabética com proteinúria e alternativa a IECAs em pacientes com tosse seca.",
       "diseases": [
@@ -3880,7 +3880,7 @@
     "therapeutic_class": "Anti-hipertensivos e Antianginosos",
     "pharmacological_class": "Bloqueador dos canais de cálcio di-hidropiridínico de longa ação",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Anti-hipertensivos · Vasodilatador Arterial Direto",
       "indication": "Hipertensão arterial sistêmica (excelente em monoterapia ou em combinação com IECA/BRA), angina de peito crônica estável e angina vasoespástica (Prinzmetal).",
       "diseases": [
@@ -3941,7 +3941,7 @@
     "therapeutic_class": "Antidiabéticos Orais",
     "pharmacological_class": "Biguanida sensibilizadora de insulina e inibidora da gliconeogênese hepática",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antidiabéticos Orais · Droga de 1ª Linha no Diabetes Mellitus Tipo 2",
       "indication": "Diabetes Mellitus tipo 2 em adultos e crianças >= 10 anos (droga de primeira escolha mundial e nas diretrizes SBD/ADA), pré-diabetes e Síndrome dos Ovários Policísticos (SOP).",
       "diseases": [
@@ -4000,7 +4000,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Betalactâmico aminopenicilínico bactericida inibidor da síntese de peptideoglicano da parede bacteriana",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Penicilina de 1ª Linha em Vias Aéreas",
       "indication": "Infecções do trato respiratório superior e inferior (faringoamigdalite estreptocócica, otite média aguda, rinossinusite bacteriana, pneumonia adquirida na comunidade em crianças e adultos sem comorbidades), infecção odontológica e profilaxia de endocardite infecciosa.",
       "diseases": [
@@ -4077,7 +4077,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Cefalosporina de 1ª geração bactericida ativa contra Gram-positivos e alguns Gram-negativos comunitários",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Cefalosporina de 1ª Geração Oral",
       "indication": "Infecções bacterianas de pele e partes moles (celulite, erisipela, furunculose, impetigo), infecções do trato urinário não complicadas em gestantes, faringoamigdalite e mastite puerperal.",
       "diseases": [
@@ -4152,7 +4152,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Cefalosporina de 1ª geração injetável com potente ação antiestafilocócica (MSSA) e antiestreptocócica",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Padrão Ouro em Profilaxia Cirúrgica",
       "indication": "Profilaxia antimicrobiana cirúrgica hospitalar (padrão ouro mundial em cirurgias limpas e limpas-contaminadas), celulite e erisipela graves internadas, osteomielite e bacteremia por MSSA.",
       "diseases": [
@@ -4208,7 +4208,7 @@
     "therapeutic_class": "Antimicrobianos",
     "pharmacological_class": "Associação sinérgica de sulfonamida com diaminopirimidina bloqueadora sequencial da síntese de ácido fólico bacteriano",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Antimicrobianos · Amplo Espectro e Profilaxia Imunossuprimidos",
       "indication": "Infecção do trato urinário (ITU baixa e prostatite aguda), infecções de pele por MRSA comunitário (CA-MRSA), pneumonia por Pneumocystis jirovecii (PCP/PJP — tratamento e profilaxia em HIV/transplantados), nocardiose e diarreia infecciosa bacteriana.",
       "diseases": [
@@ -4271,7 +4271,7 @@
     "therapeutic_class": "Corticosteroides Sistêmicos",
     "pharmacological_class": "Glicocorticoide sistêmico sintético anti-inflamatório e imunossupressor de ação intermediária",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Corticosteroides · Potente Ação Anti-inflamatória e Imunossupressora",
       "indication": "Crise de asma aguda, exacerbação aguda de DPOC, anafilaxia (prevenção de reação bifásica), artrite reumatoide, lúpus eritematoso sistêmico, paralisia facial de Bell, gota aguda e doenças autoimunes.",
       "diseases": [
@@ -4351,7 +4351,7 @@
     "therapeutic_class": "Anticolinérgicos e Emergência",
     "pharmacological_class": "Antagonista competitivo muscarínico pós-ganglionar parassimpaticolítico",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Emergência · Bradicardia Sintomática e Antídoto Colinérgico",
       "indication": "Bradicardia sinusal sintomática ou bloqueio AV de primeiro e segundo grau Mobitz I com instabilidade hemodinâmica (ACLS), antídoto de primeira linha para intoxicação por organofosforados e carbamatos (síndrome colinérgica) e reversão de bloqueio neuromuscular.",
       "diseases": [
@@ -4408,7 +4408,7 @@
     "therapeutic_class": "Eletrólitos e Reposição Parenteral",
     "pharmacological_class": "Eletrólito concentrado de alta vigilância para reposição parenteral de potássio",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Eletrólitos de Alta Vigilância · Reposição de Potássio IV",
       "indication": "Hipocalemia moderada a grave sintomática (K+ < 3,0 mEq/L, arritmias ventriculares, ECG com onda U ou intoxicação digitálica concomitante) e impossibilidade ou falha da reposição por via oral.",
       "diseases": [
@@ -4465,7 +4465,7 @@
     "therapeutic_class": "Soluções Eletrolíticas e Nutricionais",
     "pharmacological_class": "Carboidrato simples hiperosmolar de ação parenteral rápida",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Emergência Metabólica · Reversão Imediata de Hipoglicemia Grave",
       "indication": "Hipoglicemia grave sintomática com alteração do nível de consciência, coma hipoglicêmico, convulsões por hipoglicemia e componente de solução polarizante (glico-insulina) no tratamento da hipercalemia.",
       "diseases": [
@@ -4523,7 +4523,7 @@
     "therapeutic_class": "Eletrólitos e Reposição Parenteral",
     "pharmacological_class": "Agente alcalinizante sistêmico e urinário",
     "data": {
-      "status": "posology_verified",
+      "status": "review_needed",
       "therapeutic_class": "Emergência · Alcalinizante Sistêmico e Cardioprotetor",
       "indication": "Acidose metabólica grave com acidemia crítica (pH < 7,10 ou HCO3 < 6 a 8 mEq/L), hipercalemia grave refratária com acidose associada, intoxicação aguda por antidepressivos tricíclicos (alargamento de QRS > 100 ms) ou bloqueadores de canal de sódio, e alcalinização urinária na rabdomiólise.",
       "diseases": [
