@@ -1,19 +1,19 @@
 /* Desafio Diário jogável na área principal do Dashboard. */
 html body[data-page="dashboard"] #dashboard-alternative .dl-grid.dl-layout-1{
-  grid-template-rows:repeat(2,var(--dashboard-card-height)) minmax(520px,auto)!important;
+  grid-template-rows:repeat(2,var(--dashboard-card-height)) auto!important;
 }
 html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-cat.dl-cat-playable{
   display:flex!important;
   flex-direction:column!important;
-  gap:14px!important;
+  gap:0!important;
   grid-column:2!important;
   grid-row:3!important;
   width:100%!important;
   height:auto!important;
-  min-height:520px!important;
+  min-height:0!important;
   max-height:none!important;
   overflow:visible!important;
-  padding:20px!important;
+  padding:14px!important;
   box-sizing:border-box!important;
 }
 body[data-page="dashboard"] #dashboard-alternative .dl-daily-minihead{
@@ -74,7 +74,7 @@ body[data-page="dashboard"] #dashboard-alternative iframe.dl-daily-frame{
   flex:0 0 auto;
   width:100%;
   min-width:0;
-  height:420px;
+  height:260px;
   min-height:260px;
   border:0;
   border-radius:12px;
@@ -82,7 +82,7 @@ body[data-page="dashboard"] #dashboard-alternative iframe.dl-daily-frame{
 }
 @media(max-width:700px){
   html body[data-page="dashboard"] #dashboard-alternative .dl-grid.dl-layout-1{
-    grid-template-rows:repeat(5,var(--dashboard-card-height)) minmax(520px,auto)!important;
+    grid-template-rows:repeat(5,var(--dashboard-card-height)) auto!important;
   }
   html body[data-page="dashboard"] #dashboard-alternative .dl-layout-1 .dl-cat.dl-cat-playable{
     grid-column:1!important;
