@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# O controle de paginas privadas e feito por meta robots e X-Robots-Tag.
+Sitemap: https://traubemedicina.com.br/sitemap.xml
