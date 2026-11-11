@@ -8,6 +8,20 @@
 
   const $ = (id) => document.getElementById(id);
 
+  // ⚡ Bolt: Utility to delay execution of expensive synchronous functions.
+  // This prevents main thread blocking when users are typing rapidly.
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func.apply(this, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
   function escapeHtml(value) {
     return String(value ?? "")
       .replaceAll("&", "&amp;")
@@ -280,7 +294,10 @@
 
   window.loadTraubeExamCatalog = loadCatalog;
 
-  $("catalog-search")?.addEventListener("input", renderCatalog);
+  // ⚡ Bolt: Debounce search input to reduce synchronous DOM updates and prevent blocking.
+  // Expected impact: Eliminates UI stutter and frame drops while typing in the catalog search bar.
+  const debouncedRenderCatalog = debounce(renderCatalog, 150);
+  $("catalog-search")?.addEventListener("input", debouncedRenderCatalog);
   $("catalog-uf")?.addEventListener("change", renderCatalog);
 
   document.querySelector('[data-editais-source="catalog"]')
