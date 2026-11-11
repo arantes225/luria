@@ -170,6 +170,13 @@
   }
 
   const rpcHandlers = {
+    // O app chama luria_bootstrap (nome mantido no banco após o rebrand); traube_bootstrap fica por compatibilidade.
+    luria_bootstrap: () => ({
+      entitlements: entitlementPayload,
+      profile: state.profile,
+      is_admin: isAdminFlag,
+      theme: 'light'
+    }),
     traube_bootstrap: () => ({
       entitlements: entitlementPayload,
       profile: state.profile,

@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-azul-claro.png?v=favicon2">
   <link rel="apple-touch-icon" href="/assets/img/logos/logo-icone-azul-claro.png?v=pwa4">
   <link rel="preload" href="/assets/img/traube/tela-dashboard-escuro.jpg?v=20261108-dark3" as="image" fetchpriority="high">
-  <link rel="stylesheet" href="/assets/css/modo-estudo-landing.css?v=20261110-prelista2">
+  <link rel="stylesheet" href="/assets/css/modo-estudo-landing.css?v=20261110-carrossel1">
 </head>
 <body>
   <div id="scroll-progress" aria-hidden="true"></div>
@@ -63,15 +63,15 @@
                   <label class="prelista__field"><span>Seu nome</span><input type="text" id="pl-nome" name="nome" required minlength="2" maxlength="120" autocomplete="name" placeholder="Como podemos te chamar"></label>
                   <label class="prelista__field"><span>Seu e-mail</span><input type="email" id="pl-email" name="email" required maxlength="254" autocomplete="email" inputmode="email" placeholder="voce@email.com"></label>
                 </div>
-                <label class="prelista__field"><span>Em que momento você está? <small>(opcional)</small></span>
-                  <select id="pl-fase" name="fase">
-                    <option value="">Prefiro não dizer</option>
-                    <option value="ciclo_basico">Ciclo básico</option>
-                    <option value="ciclo_clinico">Ciclo clínico</option>
-                    <option value="internato">Internato</option>
-                    <option value="formado">Já formado(a), indo para a residência</option>
-                  </select>
-                </label>
+                <fieldset class="prelista__fieldset"><legend>Em que momento você está? <small>(opcional)</small></legend>
+                  <div class="prelista__chips">
+                    <label class="prelista__chip"><input type="radio" name="fase" value="ciclo_basico"><span>Ciclo básico</span></label>
+                    <label class="prelista__chip"><input type="radio" name="fase" value="ciclo_clinico"><span>Ciclo clínico</span></label>
+                    <label class="prelista__chip"><input type="radio" name="fase" value="internato"><span>Internato</span></label>
+                    <label class="prelista__chip"><input type="radio" name="fase" value="formado"><span>Já formado(a)</span></label>
+                    <label class="prelista__chip"><input type="radio" name="fase" value="" checked><span>Prefiro não dizer</span></label>
+                  </div>
+                </fieldset>
                 <label class="prelista__trap" aria-hidden="true">Site<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
                 <label class="prelista__consent"><input type="checkbox" id="pl-consent" name="consentimento" required><span>Tenho 18 anos ou mais e quero receber por e-mail o aviso de abertura da TRAUBE. Meus dados são usados só para isso, um código da minha rede é guardado para evitar inscrições repetidas e posso pedir para sair quando quiser. Li a <a href="/privacidade/" target="_blank" rel="noopener">Política de Privacidade</a>.</span></label>
                 <button type="submit" class="btn btn--primary btn--lg prelista__submit">Entrar na pré-lista</button>
@@ -531,216 +531,137 @@
       </div>
     </section>
 
-    <!-- BLOCO 4: APROFUNDANDO A SOLUÇÃO — OS 7 DIFERENCIAIS EXCLUSIVOS -->
+    <!-- BLOCO 4: POR DENTRO DA PLATAFORMA — carrossel de telas reais + os 7 diferenciais -->
     <section class="sec" id="diferenciais">
       <div class="wrap">
         <div class="flow-step-marker" data-reveal>
-          <span>Parte 03 · Por Dentro da Plataforma</span>
-          Os 7 diferenciais que vão além do estudo teórico
+          <span>Parte 03 · Por dentro da plataforma</span>
+          O que você encontra lá dentro
         </div>
-
         <div class="sec-intro" data-reveal>
-          <h2>Medicina não se resolve só lendo texto. Por isso construímos <em>sete ferramentas que você não encontra em bancos comuns.</em></h2>
-          <p>
-            Além do ciclo diário de apostilas, questões e revisão, você treina tomada de decisão em sala vermelha, visão anatômica tridimensional e interpretação de exames reais dentro do mesmo ambiente:
-          </p>
+          <h2>Medicina não se resolve só lendo texto. <em>Veja as telas reais, uma a uma.</em></h2>
+          <p>Capturas do app com uma conta de demonstração. Deixe rolar ou toque em um tema para ir direto a ele.</p>
         </div>
 
-        <div class="chap-list">
-          <!-- Diferencial 01: Simulador de Emergência -->
-          <article class="chap" data-reveal>
-            <div class="chap__media">
-              <figure class="shot">
-                <img src="/assets/img/traube/dif-simulador.jpg?v=20261108-dark3" alt="Simulador de Emergência da Traube com paciente na sala vermelha, monitor cardíaco marcando 178 bpm, PA 72/44 mmHg e prontuário em tempo real" width="1440" height="900" loading="lazy">
-                <figcaption class="shot__caption">
-                  <span>/plantao/sala-emergencia · Simulador de Sala Vermelha</span>
-                  <span>Monitor multiparamétrico em tempo real</span>
-                </figcaption>
-              </figure>
+        <div class="cr" data-carousel role="region" aria-roledescription="carrossel" aria-label="Telas da plataforma TRAUBE" data-reveal>
+          <div class="cr-chips" role="group" aria-label="Escolher tela"><button type="button" class="cr-chip is-active" data-chip="dashboard" aria-label="Ver Dashboard">Dashboard</button><button type="button" class="cr-chip" data-chip="cronograma" aria-label="Ver Cronograma">Cronograma</button><button type="button" class="cr-chip" data-chip="apostilas" aria-label="Ver Apostilas">Apostilas</button><button type="button" class="cr-chip" data-chip="leco" aria-label="Ver Leco">Leco</button><button type="button" class="cr-chip" data-chip="questoes" aria-label="Ver Questões">Questões</button><button type="button" class="cr-chip" data-chip="flashcards" aria-label="Ver Flashcards">Flashcards</button><button type="button" class="cr-chip" data-chip="caderno" aria-label="Ver Caderno de erros">Caderno de erros</button><button type="button" class="cr-chip" data-chip="estatisticas" aria-label="Ver Estatísticas">Estatísticas</button><button type="button" class="cr-chip" data-chip="simulador" aria-label="Ver Simulador de emergência">Simulador de emergência</button><button type="button" class="cr-chip" data-chip="anatomia-tudo" aria-label="Ver Sala de anatomia 3D">Sala de anatomia 3D</button><button type="button" class="cr-chip" data-chip="jogos" aria-label="Ver Jogos">Jogos</button><button type="button" class="cr-chip" data-chip="studyrats" aria-label="Ver Study Rats">Study Rats</button><button type="button" class="cr-chip" data-chip="salas" aria-label="Ver Salas ao vivo">Salas ao vivo</button></div>
+          <div class="cr-stage">
+            <button type="button" class="cr-nav cr-nav--prev" data-cr-prev aria-label="Tela anterior"><span aria-hidden="true">←</span></button>
+            <div class="cr-track" tabindex="0">
+          <figure class="cr-slide is-active" data-slide="dashboard" role="group" aria-roledescription="slide" aria-label="1 de 13: Dashboard">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/dashboard.jpg?v=20261110" alt="Dashboard da TRAUBE com atividades de hoje, sessão guiada Estudar agora, flashcards pendentes, retenção e progresso por área" width="1600" height="1000" fetchpriority="high" decoding="async"></div>
+            <figcaption><span class="cr-tag">Dashboard</span><strong>Estudar agora</strong><span>Escolha de 15 minutos a 2 horas e o Leco organiza a sessão do dia.</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="cronograma" role="group" aria-roledescription="slide" aria-label="2 de 13: Cronograma">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/cronograma.jpg?v=20261110" alt="Cronograma da TRAUBE em visão mensal com aulas, revisões e simulados por área" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Cronograma</span><strong>Seu plano, no seu ritmo</strong><span>Visão por mês, semana ou lista, com filtros por área, tema e tipo de atividade.</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="apostilas" role="group" aria-roledescription="slide" aria-label="3 de 13: Apostilas">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/apostilas.jpg?v=20261110" alt="Biblioteca de apostilas da TRAUBE dividida nas seis grandes áreas médicas" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Apostilas</span><strong>275 apostilas em 6 grandes áreas</strong><span>Clínica, Cirurgia, Pediatria, Ginecologia e Obstetrícia, Preventiva e Psiquiatria.</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="leco" role="group" aria-roledescription="slide" aria-label="4 de 13: Leco">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/leco.jpg?v=20261110" alt="Página Aprender da TRAUBE com o tutor Leco, apostilas, anotações, ECG e sala de anatomia" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Leco</span><strong>O tutor de IA ao seu lado</strong><span>Pergunte o que travou e anexe o seu material. É um apoio de estudo, não substitui fontes oficiais.</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="questoes" role="group" aria-roledescription="slide" aria-label="5 de 13: Questões">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/questoes.jpg?v=20261110" alt="Questões e Simulados da TRAUBE com listas em andamento e métricas da semana" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Questões</span><strong>50 questões do dia e listas de até 100</strong><span>Treine, meça o desempenho e acompanhe as métricas da semana.</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="flashcards" role="group" aria-roledescription="slide" aria-label="6 de 13: Flashcards">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/flashcards.jpg?v=20261110" alt="Flashcards da TRAUBE com revisões do dia e métricas da semana" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Flashcards</span><strong>Revisão no ritmo certo</strong><span>Repetição espaçada, importação de decks do Anki e métricas de retenção.</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="caderno" role="group" aria-roledescription="slide" aria-label="7 de 13: Caderno de erros">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/caderno.jpg?v=20261110" alt="Caderno de Erros da TRAUBE com um Pulo do Gato do dia e cadernos por área" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Caderno de erros</span><strong>Errou? Vira revisão</strong><span>O erro vira Pulo do Gato e volta no momento certo para você revisar.</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="estatisticas" role="group" aria-roledescription="slide" aria-label="8 de 13: Estatísticas">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/estatisticas.jpg?v=20261110" alt="Estatísticas da TRAUBE com tempo estudado, consistência e retenção" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Estatísticas</span><strong>Sua evolução, sem planilha</strong><span>Tempo estudado, consistência, aproveitamento em questões e retenção dos flashcards.</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="simulador" role="group" aria-roledescription="slide" aria-label="9 de 13: Simulador de emergência">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/simulador.jpg?v=20261110" alt="Simulador de Emergência da TRAUBE com paciente no leito e monitor multiparamétrico ligado" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Simulador de emergência</span><strong>Treine o plantão antes do plantão</strong><span>Paciente no leito, prontuário em tempo real e monitor com FC, SpO₂, PA e ECG ao vivo.</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="anatomia-tudo" role="group" aria-roledescription="slide" aria-label="10 de 13: Sala de anatomia 3D">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/anatomia-tudo.jpg?v=20261110" alt="Sala de Anatomia 3D da TRAUBE mostrando o corpo masculino completo no modo Tudo, com 2.668 peças visíveis" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Sala de anatomia 3D</span><strong>O corpo inteiro em camadas</strong><span>Atlas com mais de 2.600 estruturas: esqueleto, músculos, vasos, órgãos e nervos no modo Tudo.</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="jogos" role="group" aria-roledescription="slide" aria-label="11 de 13: Jogos">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/jogos.jpg?v=20261110" alt="Tela de Jogos da TRAUBE com os quatro jogos disponíveis" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Jogos</span><strong>Treino sem cara de aula</strong><span>Study Rats, Plantão Relâmpago, Sequência Salvadora e Escapando do Plantão.</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="studyrats" role="group" aria-roledescription="slide" aria-label="12 de 13: Study Rats">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/studyrats.jpg?v=20261110" alt="Hall do Study Rats da TRAUBE com as opções jogar com amigos ou com alguém aleatório" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Study Rats</span><strong>Corrida em tabuleiro médico</strong><span>Convide um amigo ou entre na fila para jogar uma corrida de cartas clínicas (em beta).</span></figcaption>
+          </figure>
+          <figure class="cr-slide" data-slide="salas" role="group" aria-roledescription="slide" aria-label="13 de 13: Salas ao vivo">
+            <div class="cr-frame"><img src="/assets/img/traube/carrossel/salas.jpg?v=20261110" alt="Tela de Salas de estudo ao vivo da TRAUBE com entrada por código e filtros por modo" width="1600" height="1000" loading="lazy" decoding="async"></div>
+            <figcaption><span class="cr-tag">Salas ao vivo</span><strong>Estude junto, em tempo real</strong><span>Entre com um código, crie uma sala e escolha o modo: estudo livre, foco, questões em grupo ou revisão.</span></figcaption>
+          </figure>
             </div>
-            <div class="chap__copy">
-              <span class="chap__num">Diferencial 01 / 07 · Prática clínica sob pressão</span>
-              <h3>Simulador de Emergência com paciente e monitor ao vivo</h3>
-              <p>
-                Saber a dose da amiodarona numa questão tranquila é uma coisa; decidir a conduta diante de uma taquicardia instável com PA 72/44 mmHg é outra. No simulador da Traube, você assume o comando do box de emergência.
-              </p>
-              <ul class="chap__points">
-                <li><strong>Monitor multiparamétrico reativo:</strong> Frequência cardíaca, traçado de ECG, oximetria (SpO₂), frequência respiratória e pressão arterial mudam conforme suas intervenções.</li>
-                <li><strong>Fluxo completo de atendimento:</strong> Faça anamnese dirigida, exame físico, procedimentos iniciais, peça exames laboratoriais e prescreva drogas vasoativas.</li>
-                <li><strong>Prontuário cronológico:</strong> Cada minuto conta; ao final do caso, você recebe a análise detalhada dos acertos e das condutas críticas esquecidas.</li>
-              </ul>
-              <a class="chap__link" href="#prelista" data-prelista-open>Treinar casos de sala vermelha →</a>
-            </div>
-          </article>
+            <button type="button" class="cr-nav cr-nav--next" data-cr-next aria-label="Próxima tela"><span aria-hidden="true">→</span></button>
+          </div>
+          <div class="cr-foot">
+            <span class="cr-count" data-cr-count aria-live="polite">01 / 13</span>
+            <div class="cr-bar" aria-hidden="true"><i data-cr-bar></i></div>
+            <button type="button" class="cr-play" data-cr-play aria-pressed="false">Pausar</button>
+          </div>
+        </div>
 
-          <!-- Diferencial 02: Sala de Anatomia 3D -->
-          <article class="chap chap--rev" data-reveal>
-            <div class="chap__media">
-              <figure class="shot">
-                <img src="/assets/img/traube/dif-anatomia-painel.jpg?v=20261110-atlas" alt="Sala de Anatomia 3D da Traube exibindo o atlas corporal masculino completo com visualização dos sistemas esquelético, muscular e viscerais em perspectiva 3D" width="1440" height="900" loading="eager">
-                <figcaption class="shot__caption">
-                  <span>/aprender/anatomia/atlas/?corpo=masculino · Sala de Anatomia 3D</span>
-                  <span>Atlas Corporal Masculino Completo · 18 Sistemas</span>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="chap__copy">
-              <span class="chap__num">Diferencial 02 / 07 · Visão espacial e cirúrgica</span>
-              <h3>Sala de Anatomia 3D com modelo masculino completo e atlas corporal</h3>
-              <p>
-                Para entender relações anatômicas em cirurgia, radiologia e clínica sem depender de figuras chapadas de livro, a Traube traz o atlas anatômico tridimensional completo diretamente no navegador.
-              </p>
-              <ul class="chap__points">
-                <li><strong>Atlas do corpo inteiro em alta definição:</strong> Modelo masculino e feminino completos com mais de 2.600 estruturas anatômicas divididas em 18 sistemas orgânicos para isolar, girar e dissecar em camadas.</li>
-                <li><strong>Coração e órgãos em detalhe:</strong> Alterne entre vista externa, corte de câmaras ventriculares, vasos da base e dinâmica de fluxo sanguíneo.</li>
-                <li><strong>Modo de teste ativo:</strong> Oculte os nomes das estruturas e teste sua identificação anatômica antes das provas práticas e plantões.</li>
-              </ul>
-              <a class="chap__link" href="#prelista" data-prelista-open>Explorar a Sala de Anatomia 3D →</a>
-            </div>
+        <div class="dif-head" data-reveal>
+          <span class="kicker">Os sete diferenciais</span>
+          <h3>O que você não encontra num banco de questões comum</h3>
+        </div>
+        <div class="dif-grid" data-reveal>
+          <article class="dif-card">
+            <span class="dif-card__n">01</span>
+            <h3>Simulador de emergência</h3>
+            <p>Casos realistas com paciente, prontuário em tempo real e monitor ao vivo.</p>
+            <button type="button" class="dif-card__go" data-slide-go="simulador">Ver na tela <span aria-hidden="true">→</span></button>
           </article>
-
-          <!-- Diferencial 03: Amigos & Estudo Ao Vivo -->
-          <article class="chap" data-reveal>
-            <div class="chap__media">
-              <figure class="shot">
-                <img src="/assets/img/traube/dif-amigos.jpg?v=20261110-amigos" alt="Página de Amigos e Estudo Ao Vivo da Traube com colegas e salas de estudo" width="1440" height="900" loading="eager">
-                <figcaption class="shot__caption">
-                  <span>/amigos · Salas de Estudo Ao Vivo &amp; Colegas</span>
-                  <span>Salas ao vivo, voz e grupos</span>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="chap__copy">
-              <span class="chap__num">Diferencial 03 / 07 · Constância em grupo</span>
-              <h3>Salas de estudo ao vivo e rede de colegas</h3>
-              <p>
-                A preparação para a residência costuma ser solitária e cansativa. Na Traube, você estuda junto com sua dupla de internato ou grupo de faculdade sem precisar sair da plataforma.
-              </p>
-              <ul class="chap__points">
-                <li><strong>Salas de Estudo Ao Vivo:</strong> abra uma sala, chame a turma e estudem juntos com cronômetro compartilhado, checklist coletivo, questões em grupo e conversa por voz.</li>
-                <li><strong>Status de estudo em tempo real:</strong> Veja quem está estudando agora, qual matéria está revisando e mantenha a constância mútua ao longo do ano.</li>
-                <li><strong>Compartilhamento nativo:</strong> Envie decks de flashcards, listas de questões e anotações diretamente pelo código Traube de cada colega.</li>
-              </ul>
-              <a class="chap__link" href="#prelista" data-prelista-open>Conectar com colegas de turma →</a>
-            </div>
+          <article class="dif-card">
+            <span class="dif-card__n">02</span>
+            <h3>Sala de anatomia 3D</h3>
+            <p>Atlas do corpo humano em camadas, com mais de 2.600 estruturas.</p>
+            <button type="button" class="dif-card__go" data-slide-go="anatomia-tudo">Ver na tela <span aria-hidden="true">→</span></button>
           </article>
-
-          <!-- Diferencial 04: Cronograma Inteligente -->
-          <article class="chap chap--rev" data-reveal>
-            <div class="chap__media">
-              <figure class="shot">
-                <img src="/assets/img/traube/tela-cronograma.jpg?v=20261108-dark3" alt="Tela de Cronograma da Traube com calendário mensal preenchido, métricas de aulas concluídas e integração com Google Calendar" width="1440" height="900" loading="lazy">
-                <figcaption class="shot__caption">
-                  <span>/cronograma · Planejamento Semanal, Mensal e Diário</span>
-                  <span>Sincronizado com Google Calendar</span>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="chap__copy">
-              <span class="chap__num">Diferencial 04 / 07 · Planejamento adaptativo</span>
-              <h3>Cronograma inteligente que absorve a rotina do seu internato</h3>
-              <p>
-                Em vez de uma planilha rígida que quebra no primeiro imprevisto, o Cronograma da Traube une suas aulas teóricas, revisões espaçadas, simulados e plantões em uma visão limpa.
-              </p>
-              <ul class="chap__points">
-                <li><strong>Sincronização com Google Calendar:</strong> Seus plantões, ambulatórios e compromissos externos aparecem lado a lado com as metas de estudo.</li>
-                <li><strong>Visão clara de pendências:</strong> Saiba exatamente quantas aulas estão agendadas, quantas já foram concluídas e seu ritmo semanal de horas líquidas.</li>
-                <li><strong>Integração com a Sessão Guiada:</strong> O que está previsto para hoje no calendário alimenta automaticamente o botão <em>Estudar agora</em> do seu Dashboard.</li>
-              </ul>
-              <a class="chap__link" href="#prelista" data-prelista-open>Montar meu cronograma na Traube →</a>
-            </div>
+          <article class="dif-card">
+            <span class="dif-card__n">03</span>
+            <h3>Estudo ao vivo</h3>
+            <p>Salas com cronômetro, checklist coletivo, questões em grupo e voz.</p>
+            <button type="button" class="dif-card__go" data-slide-go="salas">Ver na tela <span aria-hidden="true">→</span></button>
           </article>
-
-          <!-- Diferencial 05: Central Tutoria Leco -->
-          <article class="chap" data-reveal>
-            <div class="chap__media">
-              <div class="pair-media">
-                <figure class="shot">
-                  <img src="/assets/img/traube/tela-aprender.jpg?v=20261110-leco" alt="Sala de Tutoria do Professor Leco na Traube com chat médico interativo, avatar 3D e resolução de casos clínicos" width="1440" height="900" loading="eager">
-                  <figcaption class="shot__caption">
-                    <span>/professor-alex/ · Sala de Tutoria Médica do Leco</span>
-                    <span>Tutor Inteligente Especializado em Provas e Clínica</span>
-                  </figcaption>
-                </figure>
-                <figure class="shot">
-                  <img src="/assets/img/traube/tela-aprender-mobile.jpg?v=20261108-dark3" alt="Versão mobile da Tutoria do Leco com a moldura azul visível nos quatro lados" width="860" height="1720" loading="lazy">
-                </figure>
-              </div>
-            </div>
-            <div class="chap__copy">
-              <span class="chap__num">Diferencial 05 / 07 · Tutoria médica sob demanda</span>
-              <h3>Sala de tutoria médica do Leco, seu preceptor digital integrado</h3>
-              <p>
-                Ficou em dúvida entre dois diagnósticos diferenciais durante a leitura ou quer transformar uma diretriz longa em tabela comparativa? O Leco responde na hora dentro da sua sala de tutoria dedicada.
-              </p>
-              <ul class="chap__points">
-                <li><strong>Preceptor interativo em tempo real:</strong> Tire dúvidas teóricas complexas, peça critérios diagnósticos consolidados (como critérios de Light, Duke ou Jones) e treine condutas de emergência.</li>
-                <li><strong>Análise de materiais e questões:</strong> Peça para o Leco explicar os distratores das questões mais difíceis da USP, ENARE ou UNICAMP e montar mapas mentais imediatos.</li>
-                <li><strong>Multiplataforma contínua:</strong> Acesse a tutoria do Leco tanto no computador durante a sessão de estudos quanto no smartphone no intervalo do plantão.</li>
-              </ul>
-              <a class="chap__link" href="#prelista" data-prelista-open>Entrar na sala de tutoria do Leco →</a>
-            </div>
+          <article class="dif-card">
+            <span class="dif-card__n">04</span>
+            <h3>Cronograma personalizado</h3>
+            <p>Mês, semana ou lista, com filtros e a Sessão Guiada de 15 min a 2 h.</p>
+            <button type="button" class="dif-card__go" data-slide-go="cronograma">Ver na tela <span aria-hidden="true">→</span></button>
           </article>
-
-          <!-- Diferencial 06: Jogos Clínicos -->
-          <article class="chap chap--rev" data-reveal>
-            <div class="chap__media">
-              <figure class="shot">
-                <img src="/assets/img/traube/dif-jogos.jpg?v=20261108-dark3" alt="Tela de Jogos da Traube com Study Rats, Plantão Relâmpago, Sequência Salvadora e Escapando do Plantão" width="1440" height="900" loading="lazy">
-                <figcaption class="shot__caption">
-                  <span>/jogos · Treino Rápido de Raciocínio</span>
-                  <span>4 modalidades clínicas</span>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="chap__copy">
-              <span class="chap__num">Diferencial 06 / 07 · Revisão ativa em poucos minutos</span>
-              <h3>Jogos Clínicos para manter o ritmo mesmo nos dias mais cansativos</h3>
-              <p>
-                Quando você sai de um plantão exaustivo sem energia para ler um capítulo longo, os Jogos Clínicos mantêm sua mente afiada e preservam sua ofensiva diária em partidas de 3 a 5 minutos.
-              </p>
-              <ul class="chap__points">
-                <li><strong>Plantão Relâmpago:</strong> raciocínio e conduta em poucos segundos, com sequência de acertos contra o relógio.</li>
-                <li><strong>Sequência Salvadora:</strong> coloque as etapas de protocolos de emergência e terapia intensiva na ordem certa.</li>
-                <li><strong>Escapando do Plantão e Study Rats:</strong> minicasos em salas temáticas e uma corrida em tabuleiro médico para jogar com colegas (em beta).</li>
-              </ul>
-              <a class="chap__link" href="#prelista" data-prelista-open>Conhecer os Jogos Clínicos →</a>
-            </div>
+          <article class="dif-card">
+            <span class="dif-card__n">05</span>
+            <h3>Leco, o tutor de IA</h3>
+            <p>Tire dúvidas e anexe o seu material. Apoio de estudo, não substitui fontes oficiais.</p>
+            <button type="button" class="dif-card__go" data-slide-go="leco">Ver na tela <span aria-hidden="true">→</span></button>
           </article>
-
-          <!-- Diferencial 07: Treinamento de ECG -->
-          <article class="chap" data-reveal>
-            <div class="chap__media">
-              <div class="ecg">
-                <div class="ecg__top">
-                  <span>Base Clínica PTB-XL · 42.990 exames reais (12 derivações · 25 mm/s)</span>
-                  <strong>DII · Ritmo Sinusal · FC 74 bpm</strong>
-                </div>
-                <svg viewBox="0 0 800 170" role="img" aria-label="Traçado eletrocardiográfico contínuo em derivação DII">
-                  <path class="trace" d="M 0,95 L 55,95 Q 68,78 80,95 L 102,95 L 110,108 L 122,24 L 134,132 L 144,95 L 172,95 Q 194,65 216,95 L 275,95 Q 288,78 300,95 L 322,95 L 330,108 L 342,24 L 354,132 L 364,95 L 392,95 Q 414,65 436,95 L 495,95 Q 508,78 520,95 L 542,95 L 550,108 L 562,24 L 574,132 L 584,95 L 612,95 Q 634,65 656,95 L 715,95 Q 728,78 740,95 L 762,95 L 770,108 L 782,24 L 794,132 L 800,95"/>
-                </svg>
-                <div class="ecg__steps">
-                  <div class="ecg__step"><b>1 · Ritmo</b>Sinusal regular</div>
-                  <div class="ecg__step"><b>2 · FC</b>74 bpm</div>
-                  <div class="ecg__step"><b>3 · Eixo</b>Normal (+45°)</div>
-                  <div class="ecg__step"><b>4 · PR / QRS</b>160 / 88 ms</div>
-                  <div class="ecg__step"><b>5 · ST / T</b>Sem supra</div>
-                </div>
-              </div>
-            </div>
-            <div class="chap__copy">
-              <span class="chap__num">Diferencial 07 / 07 · Olho clínico em cardiologia</span>
-              <h3>Treinamento sistemático de ECG com 42.990 traçados reais</h3>
-              <p>
-                Ninguém aprende a laudar eletrocardiograma decorando três desenhos esquemáticos de apostila. Na Traube, você treina em cima de exames reais de pacientes da base científica PTB-XL.
-              </p>
-              <ul class="chap__points">
-                <li><strong>Leitura guiada em 5 passos:</strong> Treine sempre a mesma sequência segura (frequência, ritmo, eixo elétrico, intervalos PR/QRS/QT e alterações isquêmicas de ST-T).</li>
-                <li><strong>Do básico às emergências:</strong> De bloqueios de ramo e sobrecargas cavitárias a infarto agudo com supra, hipercalemia e taquiarritmias graves.</li>
-                <li><strong>Feedback imediato no traçado:</strong> Compare sua hipótese com o laudo cardiológico validado de cada exame.</li>
-              </ul>
-              <a class="chap__link" href="#prelista" data-prelista-open>Treinar interpretação de ECG →</a>
-            </div>
+          <article class="dif-card">
+            <span class="dif-card__n">06</span>
+            <h3>Jogos</h3>
+            <p>Quatro jogos para treinar raciocínio clínico em poucos minutos.</p>
+            <button type="button" class="dif-card__go" data-slide-go="jogos">Ver na tela <span aria-hidden="true">→</span></button>
+          </article>
+          <article class="dif-card">
+            <span class="dif-card__n">07</span>
+            <h3>Estudar ECG</h3>
+            <p>Traçados reais da base PTB-XL e leitura estruturada, achado por achado.</p>
+            <a class="dif-card__go" href="#prelista" data-prelista-open>Quero acessar <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="dif-card dif-card--cta">
+            <span class="dif-card__n">E tem mais</span>
+            <h3>Tudo isso na mesma conta</h3>
+            <p>Estamos abrindo aos poucos. Entre na pré-lista e seja avisado(a) primeiro.</p>
+            <a class="btn btn--primary" href="#prelista" data-prelista-open>Entrar na pré-lista</a>
           </article>
         </div>
       </div>
@@ -1078,15 +999,15 @@
                   <label class="prelista__field"><span>Seu nome</span><input type="text" id="pld-nome" name="nome" required minlength="2" maxlength="120" autocomplete="name" placeholder="Como podemos te chamar"></label>
                   <label class="prelista__field"><span>Seu e-mail</span><input type="email" id="pld-email" name="email" required maxlength="254" autocomplete="email" inputmode="email" placeholder="voce@email.com"></label>
                 </div>
-                <label class="prelista__field"><span>Em que momento você está? <small>(opcional)</small></span>
-                  <select id="pld-fase" name="fase">
-                    <option value="">Prefiro não dizer</option>
-                    <option value="ciclo_basico">Ciclo básico</option>
-                    <option value="ciclo_clinico">Ciclo clínico</option>
-                    <option value="internato">Internato</option>
-                    <option value="formado">Já formado(a), indo para a residência</option>
-                  </select>
-                </label>
+                <fieldset class="prelista__fieldset"><legend>Em que momento você está? <small>(opcional)</small></legend>
+                  <div class="prelista__chips">
+                    <label class="prelista__chip"><input type="radio" name="fase" value="ciclo_basico"><span>Ciclo básico</span></label>
+                    <label class="prelista__chip"><input type="radio" name="fase" value="ciclo_clinico"><span>Ciclo clínico</span></label>
+                    <label class="prelista__chip"><input type="radio" name="fase" value="internato"><span>Internato</span></label>
+                    <label class="prelista__chip"><input type="radio" name="fase" value="formado"><span>Já formado(a)</span></label>
+                    <label class="prelista__chip"><input type="radio" name="fase" value="" checked><span>Prefiro não dizer</span></label>
+                  </div>
+                </fieldset>
                 <label class="prelista__trap" aria-hidden="true">Site<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
                 <label class="prelista__consent"><input type="checkbox" id="pld-consent" name="consentimento" required><span>Tenho 18 anos ou mais e quero receber por e-mail o aviso de abertura da TRAUBE. Meus dados são usados só para isso, um código da minha rede é guardado para evitar inscrições repetidas e posso pedir para sair quando quiser. Li a <a href="/privacidade/" target="_blank" rel="noopener">Política de Privacidade</a>.</span></label>
                 <button type="submit" class="btn btn--primary btn--lg prelista__submit">Entrar na pré-lista</button>
@@ -1105,5 +1026,6 @@
   <script src="/assets/js/supabase.js?v=auth4"></script>
   <script src="/assets/js/modo-estudo-landing.js?v=20261110-prelista1"></script>
   <script src="/assets/js/prelista.js?v=2"></script>
+  <script src="/assets/js/landing-carrossel.js?v=1"></script>
 </body>
 </html>
