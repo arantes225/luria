@@ -47,7 +47,17 @@ test('landing covers the seven differentiators', () => {
   const dom = new JSDOM(html);
   const text = dom.window.document.body.textContent;
   for (const w of ['Simulador', 'anatomia', 'ao vivo', 'Cronograma', 'Leco', 'Jogos', 'ECG']) assert.ok(new RegExp(w, 'i').test(text), w);
-  assert.equal(dom.window.document.querySelectorAll('.chap').length, 7);
+  const doc = dom.window.document;
+  assert.equal(doc.querySelectorAll('.dif-card:not(.dif-card--cta)').length, 7);
+  const slides = [...doc.querySelectorAll('.cr-slide')];
+  assert.ok(slides.length >= 10, 'carrossel com as telas');
+  for (const img of doc.querySelectorAll('.cr-slide img')) {
+    const file = img.getAttribute('src').split('?')[0].slice(1);
+    assert.ok(fs.existsSync(file), file);
+    assert.ok(img.getAttribute('alt').length > 20, 'alt descritivo');
+  }
+  // cada card de diferencial aponta para um slide que existe
+  for (const go of doc.querySelectorAll('[data-slide-go]')) assert.ok(slides.some(s => s.dataset.slide === go.dataset.slideGo), go.dataset.slideGo);
   dom.window.close();
 });
 
