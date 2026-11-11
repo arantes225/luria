@@ -21,7 +21,7 @@ function meta(name,content,property=false){
 }
 function replaceOrAddMeta(html,name,value,property=false){
   const attr=property?'property':'name';
-  const expr=new RegExp('<meta\\s+'+attr+'=["\\']'+name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'["\\'][^>]*>','i');
+  const expr=new RegExp("<meta\\s+"+attr+"=[\"']"+name+"[\"'][^>]*>","i");
   if(expr.test(html))return html.replace(expr,meta(name,value,property).trim());
   return html.replace(/<\/head>/i,meta(name,value,property)+'</head>');
 }
