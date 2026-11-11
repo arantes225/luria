@@ -82,3 +82,18 @@ body[data-daily-embed="dashboard"] .daily-answer-row input{min-width:0}
   body[data-daily-embed="dashboard"] .daily-result{grid-template-columns:32px minmax(0,1fr)!important}
   body[data-daily-embed="dashboard"] .daily-result-icon{width:32px!important;height:32px!important}
 }
+
+/* Dashboard: só as pistas, o campo de resposta e o feedback da partida. */
+body[data-daily-embed="dashboard"] .daily-card-titlebar,
+body[data-daily-embed="dashboard"] .daily-answer-title{
+  display:none!important;
+}
+body[data-daily-embed="dashboard"] .daily-card,
+body[data-daily-embed="dashboard"] .daily-answer-card{
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+body[data-daily-embed="dashboard"] .daily-main-col{gap:10px!important}
