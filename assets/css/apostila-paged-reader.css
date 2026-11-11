@@ -236,3 +236,176 @@ body.traube-dual-active .traube-reader-footer { display: none !important; }
     scroll-behavior: auto;
   }
 }
+
+/* TRAUBE 2026-11 — Leitor único, responsivo e com aparência personalizável.
+   O conteúdo da apostila permanece intacto; somente sua apresentação muda. */
+body[data-page="aprender"] .traube-reader-shell {
+  --traube-reader-font-size: 18px;
+  --traube-reader-line-height: 1.6;
+  min-width: 0;
+  box-sizing: border-box;
+}
+body[data-page="aprender"] .traube-reader-toolbar {
+  position: relative;
+  z-index: 4;
+  padding: 11px 14px;
+  gap: 10px;
+}
+body[data-page="aprender"] .traube-reader-controls { flex: 1 1 auto; justify-content: flex-end; }
+body[data-page="aprender"] .traube-reader-appearance { position: relative; flex: 0 0 auto; }
+body[data-page="aprender"] .traube-reader-aa {
+  min-width: 44px;
+  padding-inline: 11px;
+  font-size: 17px;
+  font-family: Georgia, serif;
+  letter-spacing: -.04em;
+}
+body[data-page="aprender"] .traube-reader-aa[aria-expanded="true"] {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 11%, var(--surface));
+}
+body[data-page="aprender"] .traube-reader-appearance-panel {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 9px);
+  right: 0;
+  width: min(330px, calc(100vw - 35px));
+  display: grid;
+  gap: 10px;
+  padding: 17px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  box-shadow: 0 16px 40px rgba(18, 40, 73, .18);
+  background: var(--surface, #fff);
+  color: var(--text, #1a202c);
+  box-sizing: border-box;
+}
+body[data-page="aprender"] .traube-reader-appearance-panel[hidden],
+body[data-page="aprender"] .traube-reader-footer {
+  display: none !important;
+}
+body[data-page="aprender"] .traube-reader-appearance-panel strong { color: var(--accent); font-size: 14px; }
+body[data-page="aprender"] .traube-reader-appearance-panel label,
+body[data-page="aprender"] .traube-reader-setting-label { font-size: 12px; font-weight: 650; }
+body[data-page="aprender"] .traube-reader-size-control { display: grid; grid-template-columns: auto minmax(0,1fr) auto; gap: 7px; align-items: center; }
+body[data-page="aprender"] .traube-reader-size-control span { font-size: 10px; white-space: nowrap; color: var(--muted); }
+body[data-page="aprender"] .traube-reader-size-control input { width: 100%; min-width: 0; accent-color: var(--accent); }
+body[data-page="aprender"] .traube-reader-appearance-panel output { color: var(--muted); font-size: 11px; text-align: center; font-variant-numeric: tabular-nums; }
+body[data-page="aprender"] .traube-reader-line-options { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5px; }
+body[data-page="aprender"] .traube-reader-line-options button,
+body[data-page="aprender"] .traube-reader-reset {
+  cursor: pointer; min-height: 35px; padding: 6px 7px; font: inherit;
+  font-size: 11px; border: 1px solid var(--border); border-radius: 8px;
+  color: var(--text); background: var(--surface);
+}
+body[data-page="aprender"] .traube-reader-line-options button[aria-pressed="true"] {
+  border-color: var(--accent); color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 9%, var(--surface));
+  font-weight: 700;
+}
+body[data-page="aprender"] .traube-reader-reset { width: 100%; color: var(--accent); }
+body[data-page="aprender"] .traube-reader-appearance-panel button:focus-visible,
+body[data-page="aprender"] .traube-reader-aa:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* As preferências funcionam tanto na leitura contínua quanto no modo livro. */
+body[data-page="aprender"] .traube-reader-shell .book-main .book-section :is(p,li,blockquote,dd,dt),
+body[data-page="aprender"].traube-reader-paged .traube-reader-shell .book-main .book-section :is(p,li,blockquote,dd,dt) {
+  font-size: var(--traube-reader-font-size) !important;
+  line-height: var(--traube-reader-line-height) !important;
+  letter-spacing: normal !important;
+}
+body[data-page="aprender"] .traube-reader-shell .book-main .book-section :is(h2,h3,h4),
+body[data-page="aprender"].traube-reader-paged .traube-reader-shell .book-main .book-section :is(h2,h3,h4) {
+  line-height: 1.3 !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+body[data-page="aprender"] .traube-reader-shell .book-main .book-section h2 { font-size: clamp(19px, calc(var(--traube-reader-font-size) * 1.42), 35px) !important; }
+body[data-page="aprender"] .traube-reader-shell .book-main .book-section h3 { font-size: clamp(16px, calc(var(--traube-reader-font-size) * 1.16), 29px) !important; }
+body[data-page="aprender"] .traube-reader-shell .book-main .book-section h4 { font-size: clamp(14px, calc(var(--traube-reader-font-size) * 1.04), 26px) !important; }
+body[data-page="aprender"] .traube-reader-shell .book-main .book-section p {
+  max-width: min(100%, 85ch);
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Bloqueia tabelas estreitadas a ponto de exibir letras na vertical.
+   A tabela preserva colunas, HTML e associação de cabeçalhos. */
+body[data-page="aprender"] .traube-reader-shell .traube-reader-table-scroll {
+  display: block !important;
+  width: 100%;
+  max-width: 100% !important;
+  min-width: 0;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  margin: 12px 0 18px;
+  border-radius: 9px;
+  break-inside: avoid-column;
+  scrollbar-width: thin;
+}
+body[data-page="aprender"] .traube-reader-shell .traube-reader-table-scroll:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px;
+}
+body[data-page="aprender"] .traube-reader-shell .traube-reader-table-scroll table {
+  table-layout: auto !important;
+  width: max(100%, var(--traube-table-width, 480px)) !important;
+  min-width: var(--traube-table-width, 480px) !important;
+  max-width: none !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  border-collapse: collapse;
+}
+body[data-page="aprender"] .traube-reader-shell .traube-reader-table-scroll :is(th,td) {
+  min-width: 9ch;
+  font-size: clamp(11px, calc(var(--traube-reader-font-size) * .82), 21px) !important;
+  line-height: var(--traube-reader-line-height) !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+  -webkit-hyphens: none !important;
+  white-space: normal !important;
+  vertical-align: top;
+}
+body[data-page="aprender"] .traube-reader-shell .traube-reader-table-scroll :is(th,td):first-child { min-width: 11ch; }
+body[data-page="aprender"] .traube-reader-shell .traube-reader-table-scroll :is(td,th) :is(p,li) {
+  font-size: inherit !important;
+  line-height: inherit !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+body[data-page="aprender"].traube-reader-paged .traube-reader-shell .traube-reader-table-scroll {
+  max-height: calc(var(--traube-reader-height, 720px) - 110px);
+  break-inside: avoid-column !important;
+}
+/* No iPad a apostila utiliza a largura do tablet; o sumário vai para cima. */
+@media (max-width:1180px) {
+  body[data-page="aprender"] .book-page { grid-template-columns: minmax(0,1fr) !important; width: 100%; max-width: 100%; }
+  body[data-page="aprender"] .book-page > .traube-reader-shell {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+  }
+  body[data-page="aprender"] .book-page > :is(.book-outline,.book-aside) {
+    grid-column: 1 !important; grid-row: auto !important; position: static !important;
+    width: 100%; max-width: 100%; box-sizing: border-box;
+  }
+  body[data-page="aprender"] .book-page > .book-outline { max-height: 145px !important; overflow-y: auto !important; }
+}
+@media (max-width:640px) {
+  body[data-page="aprender"] .traube-reader-toolbar { padding: 9px 10px; }
+  body[data-page="aprender"] .traube-reader-heading small { display: none; }
+  body[data-page="aprender"] .traube-reader-controls { flex-basis: 100%; justify-content: flex-start; gap: 8px; }
+  body[data-page="aprender"] .traube-reader-navigation { flex-basis: 100%; justify-content: space-between; gap: 5px; }
+  body[data-page="aprender"] .traube-reader-navigation .traube-reader-btn { padding: 7px 9px; font-size: 11px; }
+  body[data-page="aprender"] .traube-reader-page-label { min-width: 77px; font-size: 11px; }
+  body[data-page="aprender"] .traube-reader-jump { width: min(22vw, 95px); }
+  body[data-page="aprender"].traube-reader-paged .traube-reader-shell { padding: 14px 10px !important; }
+  body[data-page="aprender"] .traube-reader-shell .book-main .book-section { padding-inline: 14px !important; }
+}
+@media print {
+  body[data-page="aprender"] .traube-reader-appearance { display: none !important; }
+  body[data-page="aprender"] .traube-reader-shell .traube-reader-table-scroll { max-height: none !important; overflow: visible !important; break-inside: auto !important; }
+  body[data-page="aprender"] .traube-reader-shell .traube-reader-table-scroll table { width: 100% !important; min-width: 0 !important; }
+}
