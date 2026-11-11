@@ -409,3 +409,63 @@ body[data-page="aprender"].traube-reader-paged .traube-reader-shell .traube-read
   body[data-page="aprender"] .traube-reader-shell .traube-reader-table-scroll { max-height: none !important; overflow: visible !important; break-inside: auto !important; }
   body[data-page="aprender"] .traube-reader-shell .traube-reader-table-scroll table { width: 100% !important; min-width: 0 !important; }
 }
+
+/* Compatibilidade com o layout de ferramentas criado por apostila-tools.js.
+   O leitor substitui .book-main como filho do grid: deve ocupar sua coluna,
+   nunca a coluna estreita reservada aos botões. */
+body[data-page="aprender"].apostila-reading-layout-v2 .book-page {
+  grid-template-columns: minmax(0,1fr) 140px !important;
+}
+body[data-page="aprender"].apostila-reading-layout-v2 .book-page > .traube-reader-shell {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+}
+body[data-page="aprender"].apostila-reading-layout-v2 .book-page > .book-outline {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+}
+@media (max-width:1180px) {
+  body[data-page="aprender"].apostila-reading-layout-v2 .book-page {
+    display: grid !important;
+    grid-template-columns: minmax(0,1fr) !important;
+  }
+  body[data-page="aprender"].apostila-reading-layout-v2 .book-page > .book-outline {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    position: static !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  body[data-page="aprender"].apostila-reading-layout-v2 .book-page > .traube-reader-shell {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    order: 2;
+  }
+  body[data-page="aprender"].apostila-reading-layout-v2 .book-page .book-tools {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    gap: 7px !important;
+    align-items: center !important;
+  }
+  body[data-page="aprender"].apostila-reading-layout-v2 .book-page .book-tool-btn {
+    width: auto !important;
+    min-width: 95px !important;
+    min-height: 36px !important;
+    padding: 8px 12px !important;
+    font-size: 11px !important;
+  }
+  body[data-page="aprender"].apostila-reading-layout-v2 .book-highlight-palette,
+  body[data-page="aprender"].apostila-reading-layout-v2 .book-postit-palette {
+    flex-basis: 100%;
+  }
+}
+@media (max-width:640px) {
+  body[data-page="aprender"].apostila-reading-layout-v2 .book-page .book-tools {
+    display: grid !important;
+    grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  }
+  body[data-page="aprender"].apostila-reading-layout-v2 .book-page .book-tool-btn {
+    width: 100% !important; min-width: 0 !important;
+  }
+}
