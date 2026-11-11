@@ -4,7 +4,7 @@ const path=require('node:path');
 const {publicFiles}=require('./public-files.cjs');
 
 const ORIGIN='https://traubemedicina.com.br';
-const evergreen=['/','/privacidade/','/aprender/','/apostilas/','/aprender/anatomia/'];
+const evergreen=['/','/sobre/','/privacidade/','/aprender/','/apostilas/','/aprender/anatomia/'];
 const bookPattern=/^apostilas\/[a-z0-9-]+\/index\.html$/;
 
 function buildSitemap(root, files=publicFiles(root)){
