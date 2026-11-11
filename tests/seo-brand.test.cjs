@@ -53,7 +53,7 @@ test('bot receives meaningful initial HTML even before JavaScript loads',()=>{
  assert.match(output,/<h1>Asma<\/h1>/);
  assert.match(output,/Conteúdo desta apostila/);
  assert.match(output,/Fundamentos e fisiopatologia/);
- assert.match(output,/<a href="\/apostilas\/">Ver biblioteca de apostilas TRAUBE<\/a>/);
+ assert.match(output,/<a href="apostilas\/">Ver biblioteca de apostilas TRAUBE<\/a>/);
  assert.equal((output.match(/<link rel="canonical"/g)||[]).length,1);
  assert.doesNotMatch(output,/id="apostila-root"[^>]*hidden/);
  const script=read('assets/js/apostila-renderer.js');
