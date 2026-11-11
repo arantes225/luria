@@ -16,7 +16,10 @@ function makeReader(url = "https://traube.test/apostilas/asma/") {
     '<section class="book-hero"><h1>Asma</h1><nav class="book-toc-nav">' +
     '<a href="#cap1" class="book-toc-link">Capítulo 1</a></nav></section>' +
     '<section class="book-section" id="cap1"><h2>Capítulo 1</h2><p>Texto 1</p>' +
-    '<ul><li>Item importante</li></ul></section>' +
+    '<ul><li>Item importante</li></ul>' +
+    '<table id="example-table"><tbody><tr><th>Situação</th><th>Descrição</th><th>Observação</th></tr>' +
+    '<tr><td>Transversa</td><td>O eixo fetal está aproximadamente perpendicular ao materno.</td>' +
+    '<td>Apresentação córmica.</td></tr></tbody></table></section>' +
     '<section class="book-section" id="cap2"><h2>Capítulo 2</h2><p>Texto 2</p></section>' +
     '</article></section></body></html>', {url, runScripts:"outside-only"});
   const {window} = dom;
@@ -117,4 +120,55 @@ test("CSS cria páginas, distribui seções longas e protege quadros, figuras e 
   assert.match(css, /traube-dual-active/);
   assert.match(css, /text-align: justify !important/);
   assert.ok(!css.includes(".books-hall-section"));
+});
+
+test("Aa altera fonte e entrelinhas, salva a preferência e restaura o padrão", () => {
+  const dom = makeReader();
+  try {
+    const {document:d, Event, localStorage} = dom.window;
+    const button = d.querySelector("[data-reader-appearance-toggle]");
+    const panel = d.querySelector(".traube-reader-appearance-panel");
+    const shell = d.querySelector(".traube-reader-shell");
+    assert.ok(panel.hidden);
+    button.click();
+    assert.equal(panel.hidden, false);
+    assert.equal(button.getAttribute("aria-expanded"), "true");
+    const range = d.querySelector("[data-reader-font-size]");
+    range.value = "22";
+    range.dispatchEvent(new Event("input", {bubbles:true}));
+    d.querySelector('[data-reader-line="1.85"]').click();
+    assert.equal(shell.style.getPropertyValue("--traube-reader-font-size"), "22px");
+    assert.equal(shell.style.getPropertyValue("--traube-reader-line-height"), "1.85");
+    assert.equal(localStorage.getItem("traube-apostila-font-size"), "22");
+    assert.equal(localStorage.getItem("traube-apostila-line-height"), "1.85");
+    assert.equal(d.querySelector('[data-reader-line="1.85"]').getAttribute("aria-pressed"), "true");
+    d.querySelector("[data-reader-reset]").click();
+    assert.equal(range.value, "18");
+    assert.equal(localStorage.getItem("traube-apostila-font-size"), "18");
+    assert.equal(localStorage.getItem("traube-apostila-line-height"), "1.6");
+  } finally {dom.window.close();}
+});
+
+test("Tabelas preservam texto e células, com rolagem própria sem quebrar palavras", () => {
+  const dom = makeReader();
+  try {
+    const d = dom.window.document, table = d.getElementById("example-table");
+    const region = table.parentElement;
+    assert.ok(region.classList.contains("traube-reader-table-scroll"));
+    assert.equal(region.getAttribute("role"), "region");
+    assert.equal(table.rows.length, 2);
+    assert.equal(table.rows[1].cells[0].textContent, "Transversa");
+    assert.equal(table.style.getPropertyValue("--traube-table-width"), "465px");
+    assert.equal(d.querySelectorAll("#example-table").length, 1);
+    assert.match(css, /overflow-x: auto !important/);
+    assert.match(css, /word-break: normal !important/);
+    assert.match(css, /break-inside: avoid-column !important/);
+  } finally {dom.window.close();}
+});
+
+test("O CSS respeita o grid de ferramentas da apostila e ocupa a largura do iPad", () => {
+  assert.match(css, /apostila-reading-layout-v2 .book-page > .traube-reader-shell/);
+  assert.match(css, /@media \(max-width:1180px\)/);
+  assert.match(css, /traube-reader-appearance-panel\[hidden\]/);
+  assert.match(css, /--traube-reader-font-size/);
 });
