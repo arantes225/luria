@@ -989,4 +989,4 @@ body[data-page="aprender"] .book-main .book-section .reference-list li {
 
 ;(() => { const script = document.createElement('script'); script.src = '/assets/js/study-side-by-side.js?v=20261028'; document.body.appendChild(script); })();
 
-;(() => { const script = document.createElement('script'); script.src = '/assets/js/apostila-paged-reader.js?v=20261028-reader1'; document.body.appendChild(script); })();
+;(() => { const script = document.createElement('script'); script.src = '/assets/js/apostila-paged-reader.js?v=20261111-reader2'; document.body.appendChild(script); })();

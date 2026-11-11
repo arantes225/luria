@@ -1,4 +1,4 @@
-const CACHE_VERSION = "traube-pwa-20261108-brand-icons2";
+const CACHE_VERSION = "traube-pwa-20261111-reader2";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -43,8 +43,8 @@ const APP_SHELL = [
   "/estatisticas/",
   "/amigos/",
   "/apostilas/",
-  "/assets/css/apostila-paged-reader.css?v=20261028-reader1",
-  "/assets/js/apostila-paged-reader.js?v=20261028-reader1",
+  "/assets/css/apostila-paged-reader.css?v=20261111-reader2",
+  "/assets/js/apostila-paged-reader.js?v=20261111-reader2",
   "/assets/css/apostilas-hall.css?v=20261028-area-flow1",
   "/assets/js/apostilas-app.js?v=20261028-area-flow1",
   "/trabalho/",
