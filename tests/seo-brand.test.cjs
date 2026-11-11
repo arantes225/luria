@@ -13,6 +13,7 @@ test('TR AUBE is consistently identified as the education brand',()=>{
  assert.match(home,/<title>TRAUBE \| Plataforma de Estudos/);
  assert.match(home,/<h1>TRAUBE\./);
  assert.match(home,/<a href="\/sobre\/">Sobre a TRAUBE<\/a>/);
+ for(const href of ['/apostilas/','/aprender/anatomia/','/aprender/'])assert.ok(home.includes('href="'+href+'"'),href);
  const raw=home.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
  assert.ok(raw);
  const obj=JSON.parse(raw[1]);
