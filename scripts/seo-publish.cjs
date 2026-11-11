@@ -49,7 +49,7 @@ function bookFallback(book,title,description){
     +'</section>'
     +(introduction?'<section class="book-section"><h2>Introdução</h2><p>'+escapeAttribute(introduction)+'</p></section>':'')
     +(chapterNames?'<section class="book-section"><h2>Conteúdo desta apostila</h2><ul>'+chapterNames+'</ul></section>':'')
-    +'<p><a href="/apostilas/">Ver biblioteca de apostilas TRAUBE</a></p>'
+    +'<p><a href="apostilas/">Ver biblioteca de apostilas TRAUBE</a></p>'
     +'</article></div></main>';
 }
 function publishSeo(html,filename,root){
