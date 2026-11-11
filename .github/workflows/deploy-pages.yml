@@ -38,6 +38,8 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Check JavaScript syntax
         run: node scripts/check-syntax.cjs
+      - name: Verify branded SEO and public sitemap
+        run: node --test tests/seo.test.cjs tests/seo-brand.test.cjs
       - name: Validate expanded clinical game content and mechanics
         run: node --test tests/games.test.cjs tests/games-content-volume2.test.cjs
       - name: Validate private recipes and protocol copy behavior
