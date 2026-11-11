@@ -46,6 +46,20 @@ test('book HTML gets unique metadata without changing book renderer',()=>{
  assert.equal(schema['@type'],'LearningResource');
  assert.equal(schema.name,'Asma');
 });
+test('bot receives meaningful initial HTML even before JavaScript loads',()=>{
+ const source=read('apostilas/asma/index.html');
+ const output=publishSeo(source,'apostilas/asma/index.html',root);
+ assert.match(output,/<div id="apostila-root"><main class="main">/);
+ assert.match(output,/<h1>Asma<\/h1>/);
+ assert.match(output,/Conteúdo desta apostila/);
+ assert.match(output,/Fundamentos e fisiopatologia/);
+ assert.match(output,/<a href="apostilas\/">Ver biblioteca de apostilas TRAUBE<\/a>/);
+ assert.equal((output.match(/<link rel="canonical"/g)||[]).length,1);
+ assert.doesNotMatch(output,/id="apostila-root"[^>]*hidden/);
+ const script=read('assets/js/apostila-renderer.js');
+ assert.match(script,/document\.title=\(d\.t\|\|d\.title\)\+" \| Apostila de Medicina · TRAUBE"/);
+ assert.match(script,/root\.insertAdjacentHTML\("afterbegin",notice\)/);
+});
 test('private app areas are noindex even on static hosts without _headers support',()=>{
  for(const p of ['admin/index.html','trabalho/ecg/index.html','dashboard/index.html','login/index.html']){
    const out=publishSeo('<!doctype html><head><title>A</title></head><body></body>',p,root);

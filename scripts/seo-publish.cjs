@@ -30,6 +30,28 @@ function addNoindex(html){
     return replaceOrAddMeta(html,'robots','noindex, nofollow, noarchive');
   return html.replace(/<\/head>/i,meta('robots','noindex, nofollow, noarchive')+'</head>');
 }
+// Visible HTML fallback for humans without JavaScript and for crawlers before rendering.
+// Once the reader loads, its existing code replaces #apostila-root with the full book.
+function bookFallback(book,title,description){
+  const outline=Array.isArray(book.o)?book.o.slice(0,12):[];
+  const chapterNames=outline
+    .filter(x=>Array.isArray(x)&&typeof x[1]==='string')
+    .map(x=>'<li>'+escapeAttribute(shorten(x[1],115))+'</li>').join('');
+  const sections=Array.isArray(book.q)?book.q:[];
+  const firstParagraph=sections
+    .flatMap(x=>Array.isArray(x)&&Array.isArray(x[2])?x[2]:[])
+    .find(x=>Array.isArray(x)&&x[0]==='p'&&typeof x[1]==='string'&&x[1].trim().length>90);
+  const introduction=firstParagraph?shorten(firstParagraph[1],420):'';
+  return '<main class="main"><div class="page"><article class="book-page">'
+    +'<section class="book-hero" aria-label="Apresentação da apostila">'
+    +'<span class="book-badge">Apostila TRAUBE</span>'
+    +'<h1>'+escapeAttribute(title)+'</h1><p>'+escapeAttribute(description)+'</p>'
+    +'</section>'
+    +(introduction?'<section class="book-section"><h2>Introdução</h2><p>'+escapeAttribute(introduction)+'</p></section>':'')
+    +(chapterNames?'<section class="book-section"><h2>Conteúdo desta apostila</h2><ul>'+chapterNames+'</ul></section>':'')
+    +'<p><a href="apostilas/">Ver biblioteca de apostilas TRAUBE</a></p>'
+    +'</article></div></main>';
+}
 function publishSeo(html,filename,root){
   const normalized=filename.replace(/\\/g,'/');
   if(!/<\/head>/i.test(html))return html;
@@ -43,6 +65,11 @@ function publishSeo(html,filename,root){
   const title=shorten(book.t,90);
   const description=shorten(book.p||book.d||('Apostila de medicina sobre '+title+' na plataforma TRAUBE.'),158);
   const url=BRAND_ORIGIN+'/'+path.posix.dirname(normalized)+'/';
+  // This content is real and visible until the dynamic reader replaces it.
+  // It must not be hidden or written only for a specific crawler user-agent.
+  const fallback=bookFallback(book,title,description);
+  html=html.replace(/(<div\s+id=["']apostila-root["']\s*>)(\s*)(<\/div>)/i,
+    (_match,open,_space,close)=>open+fallback+close);
   html=html.replace(/<title>[\s\S]*?<\/title>/i,'<title>'+escapeAttribute(title)+' | Apostila de Medicina · TRAUBE</title>');
   html=replaceOrAddMeta(html,'description',description);
   html=replaceOrAddMeta(html,'robots','index, follow, max-image-preview:large');
