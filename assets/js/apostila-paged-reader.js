@@ -14,7 +14,7 @@
     const stylesheet = existingSheet || document.createElement("link");
     if (!existingSheet) {
       stylesheet.rel = "stylesheet";
-      stylesheet.href = "/assets/css/apostila-paged-reader.css?v=20261028-reader1";
+      stylesheet.href = "/assets/css/apostila-paged-reader.css?v=20261111-reader2";
     }
     stylesheet.addEventListener("load", init, {once:true});
     stylesheet.addEventListener("error", init, {once:true});
@@ -51,6 +51,39 @@
     main.parentNode.insertBefore(shell, main);
     shell.append(bar, main, footer);
     const toggle = bar.querySelector("[data-reader-toggle]");
+
+    // Preferências globais de leitura, compartilhadas entre todas as apostilas.
+    toggle.insertAdjacentHTML("afterend", `
+      <div class="traube-reader-appearance" data-reader-appearance>
+        <button type="button" class="traube-reader-btn traube-reader-aa" data-reader-appearance-toggle
+          aria-controls="traube-reader-appearance-panel" aria-expanded="false"
+          aria-label="Ajustar tamanho do texto e espaçamento">Aa</button>
+        <div class="traube-reader-appearance-panel" id="traube-reader-appearance-panel"
+          role="group" aria-label="Aparência da leitura" hidden>
+          <strong>Aparência da leitura</strong>
+          <label for="traube-reader-font-size">Quantidade de texto na tela</label>
+          <div class="traube-reader-size-control">
+            <span>Mais texto</span>
+            <input id="traube-reader-font-size" data-reader-font-size type="range"
+              min="13" max="25" step="1" value="18" aria-label="Tamanho da fonte">
+            <span>Texto maior</span>
+          </div>
+          <output for="traube-reader-font-size" data-reader-font-output>18 px</output>
+          <span class="traube-reader-setting-label">Espaçamento entre linhas</span>
+          <div class="traube-reader-line-options" role="group" aria-label="Espaçamento entre linhas">
+            <button type="button" data-reader-line="1.35">Compacto</button>
+            <button type="button" data-reader-line="1.6">Normal</button>
+            <button type="button" data-reader-line="1.85">Amplo</button>
+          </div>
+          <button type="button" class="traube-reader-reset" data-reader-reset>Restaurar padrão</button>
+        </div>
+      </div>`);
+    const appearance = bar.querySelector("[data-reader-appearance]");
+    const appearanceToggle = bar.querySelector("[data-reader-appearance-toggle]");
+    const appearancePanel = bar.querySelector(".traube-reader-appearance-panel");
+    const sizeSlider = bar.querySelector("[data-reader-font-size]");
+    const fontOutput = bar.querySelector("[data-reader-font-output]");
+    const lineButtons = bar.querySelectorAll("[data-reader-line]");
     const nav = bar.querySelector("[data-reader-nav]");
     const slider = bar.querySelector(".traube-reader-jump");
     main.setAttribute("tabindex", "0");
@@ -65,6 +98,92 @@
     let raf = 0;
     let scrollTimer = 0;
     let hasNavigated = false;
+    const fontKey = "traube-apostila-font-size";
+    const lineKey = "traube-apostila-line-height";
+    const lineOptions = ["1.35", "1.6", "1.85"];
+    const clampFont = value => Math.min(25, Math.max(13, Math.round(Number(value) || 18)));
+    let fontSize = 18;
+    let lineHeight = "1.6";
+    try {
+      fontSize = clampFont(localStorage.getItem(fontKey));
+      const savedLine = localStorage.getItem(lineKey);
+      if (lineOptions.includes(savedLine)) lineHeight = savedLine;
+    } catch {}
+
+    function closeAppearance() {
+      appearancePanel.hidden = true;
+      appearanceToggle.setAttribute("aria-expanded", "false");
+    }
+
+    function applyAppearance(persist = true) {
+      shell.style.setProperty("--traube-reader-font-size", fontSize + "px");
+      shell.style.setProperty("--traube-reader-line-height", lineHeight);
+      sizeSlider.value = String(fontSize);
+      fontOutput.textContent = fontSize + " px";
+      lineButtons.forEach(button => {
+        button.setAttribute("aria-pressed", String(button.dataset.readerLine === lineHeight));
+      });
+      if (persist) {
+        try {
+          localStorage.setItem(fontKey, String(fontSize));
+          localStorage.setItem(lineKey, lineHeight);
+        } catch {}
+      }
+      requestMeasure();
+    }
+
+    appearanceToggle.addEventListener("click", () => {
+      const opening = appearancePanel.hidden;
+      appearancePanel.hidden = !opening;
+      appearanceToggle.setAttribute("aria-expanded", String(opening));
+      if (opening) sizeSlider.focus();
+    });
+    sizeSlider.addEventListener("input", () => {
+      fontSize = clampFont(sizeSlider.value);
+      applyAppearance();
+    });
+    lineButtons.forEach(button => button.addEventListener("click", () => {
+      lineHeight = button.dataset.readerLine;
+      applyAppearance();
+    }));
+    bar.querySelector("[data-reader-reset]").addEventListener("click", () => {
+      fontSize = 18;
+      lineHeight = "1.6";
+      applyAppearance();
+    });
+    document.addEventListener("pointerdown", event => {
+      if (!appearance.contains(event.target)) closeAppearance();
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && !appearancePanel.hidden) {
+        closeAppearance();
+        appearanceToggle.focus();
+      }
+    });
+
+    // Uma tabela é um único bloco rolável: nunca fragmentá-la em colunas,
+    // nunca esmagar a primeira coluna e nunca alterar seus dados/células.
+    function protectTables() {
+      main.querySelectorAll(".book-section table, .mindmap-section table").forEach(table => {
+        if (!table.isConnected || table.dataset.readerTableReady === "1") return;
+        const cols = Math.max(2, ...Array.from(table.rows).slice(0, 8)
+          .map(row => Array.from(row.cells).reduce((sum, cell) => sum + (cell.colSpan || 1), 0)));
+        table.style.setProperty("--traube-table-width", Math.min(1600, Math.max(420, cols * 155)) + "px");
+        const existing = table.closest(".traube-reader-table-scroll,.traube-table-scroll,.book-table-scroll,.table-responsive");
+        if (existing && main.contains(existing)) {
+          existing.classList.add("traube-reader-table-scroll");
+        } else {
+          const scroll = document.createElement("div");
+          scroll.className = "traube-reader-table-scroll";
+          scroll.setAttribute("role", "region");
+          scroll.setAttribute("aria-label", "Tabela da apostila: deslize para ver todas as colunas");
+          scroll.setAttribute("tabindex", "0");
+          table.parentNode.insertBefore(scroll, table);
+          scroll.appendChild(table);
+        }
+        table.dataset.readerTableReady = "1";
+      });
+    }
 
     try {
       mode = localStorage.getItem("traube-apostila-reading-mode") === "continuous" ? "continuous" : "paged";
@@ -95,7 +214,7 @@
       step = column + gap;
       main.style.setProperty("--traube-column-width", column + "px");
       main.style.setProperty("--traube-column-gap", gap + "px");
-      const pageHeight = Math.max(430, Math.min(580, window.innerHeight - (window.innerWidth <= 640 ? 190 : 250)));
+      const pageHeight = Math.max(480, Math.min(860, window.innerHeight - (window.innerWidth <= 640 ? 225 : 230)));
       main.style.setProperty("--traube-reader-height", pageHeight + "px");
     }
 
@@ -105,8 +224,9 @@
       // Two frames allow browsers to complete multicolumn fragmentation after changing width.
       requestAnimationFrame(() => requestAnimationFrame(() => {
         if (!isPaged()) return;
+        const progress = total > 1 ? current / (total - 1) : 0;
         total = Math.max(1, Math.min(1500, 1 + Math.round(Math.max(0, main.scrollWidth - main.clientWidth) / Math.max(1, step))));
-        current = Math.max(0, Math.min(current, total - 1));
+        current = Math.max(0, Math.min(total - 1, Math.round(progress * (total - 1))));
         main.scrollLeft = current * step;
         if (location.hash && !hasNavigated) goHash(location.hash, false);
         updateControls();
@@ -233,7 +353,17 @@
       if (document?.body) observer.observe(document.body, {attributes:true, attributeFilter:["class"]});
     }
 
+    protectTables();
+    if (typeof MutationObserver !== "undefined") {
+      const tableObserver = new MutationObserver(records => {
+        if (!records.some(record => record.addedNodes.length)) return;
+        protectTables();
+        requestMeasure();
+      });
+      tableObserver.observe(main, {childList:true,subtree:true});
+    }
     setMode(mode, false);
+    applyAppearance(false);
     if (document.fonts?.ready) document.fonts.ready.then(requestMeasure).catch(() => {});
     window.addEventListener("load", requestMeasure, {once:true});
     if (location.hash) requestAnimationFrame(() => requestAnimationFrame(() => {
