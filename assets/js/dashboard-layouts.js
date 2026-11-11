@@ -206,17 +206,10 @@
   }
 
   function cat(data, compact = false) {
+    // No Dashboard, somente as pistas e a resposta: sem cabeçalhos duplicados.
     return `<section class="dl-card dl-cat dl-cat-playable ${compact ? "dl-cat-compact" : ""}" aria-label="Desafio Diário">
-      <div class="dl-daily-minihead">
-        <div class="dl-daily-miniheading">
-          <span class="dl-heading-icon" aria-hidden="true">${icon("target")}</span>
-          <div><small>CASO CLÍNICO DO DIA</small><h3>Desafio Diário</h3></div>
-        </div>
-        <a href="/desafio-diario/" class="dl-daily-open-full">Ver página completa</a>
-      </div>
-      <p class="dl-daily-minidesc">Analise as pistas, digite seu diagnóstico e acompanhe o resultado sem sair do Dashboard.</p>
       <iframe class="dl-daily-frame" data-daily-frame
-        title="Jogar o Desafio Diário diretamente no Dashboard"
+        title="Pistas e resposta do Desafio Diário"
         src="/desafio-diario/?embed=dashboard"
         loading="lazy"></iframe>
     </section>`;
