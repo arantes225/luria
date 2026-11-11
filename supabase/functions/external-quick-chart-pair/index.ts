@@ -1,10 +1,8 @@
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import {createClient} from "npm:@supabase/supabase-js@2.57.4";
+import {withSiteCors} from "../_shared/cors.ts";
 
 const HEADERS={
-  "Access-Control-Allow-Origin":"*",
-  "Access-Control-Allow-Headers":"authorization, x-client-info, apikey, content-type",
-  "Access-Control-Allow-Methods":"POST, OPTIONS",
   "Content-Type":"application/json; charset=utf-8",
   "Cache-Control":"no-store, private"
 };
@@ -39,8 +37,7 @@ const userAgentLabel=(req:Request)=>{
 const ip=(req:Request)=>req.headers.get("cf-connecting-ip")||req.headers.get("x-real-ip")||req.headers.get("x-forwarded-for")?.split(",")[0]?.trim()||"unknown";
 const uuid=(s:string)=>/^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(s);
 
-Deno.serve(async(req:Request)=>{
-  if(req.method==="OPTIONS")return new Response("ok",{headers:HEADERS});
+Deno.serve(withSiteCors(async(req:Request)=>{
   if(req.method!=="POST")return json({error:"Método inválido."},405);
   try{
     if(Number(req.headers.get("content-length")||0)>20000)return json({error:"Pedido muito grande."},413);
@@ -228,4 +225,4 @@ Deno.serve(async(req:Request)=>{
     console.error("quick-chart-pair:",e instanceof Error?e.message:"internal");
     return json({error:"Não foi possível completar a operação."},500);
   }
-});
+}));

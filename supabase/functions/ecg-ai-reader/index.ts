@@ -1,19 +1,16 @@
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createClient } from "jsr:@supabase/supabase-js@2.110.6";
+import { withCors } from "../_shared/cors.ts";
 
-const cors = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, apikey, x-client-info, content-type",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
+const baseHeaders = {
   "Content-Type": "application/json; charset=utf-8",
   "Cache-Control": "no-store",
 };
 
 const reply = (body: unknown, status = 200) =>
-  new Response(JSON.stringify(body), { status, headers: cors });
+  new Response(JSON.stringify(body), { status, headers: baseHeaders });
 
-Deno.serve(async (req: Request) => {
-  if (req.method === "OPTIONS") return new Response("ok", { headers: cors });
+Deno.serve(withCors(async (req: Request) => {
   if (req.method !== "POST") return reply({ ok: false, error: "METHOD_NOT_ALLOWED" }, 405);
 
   const auth = req.headers.get("authorization") || "";
@@ -69,4 +66,4 @@ Descreva apenas achados visíveis ou inferíveis com cautela. Se não for possí
   if (!text) return reply({ ok: false, error: "EMPTY_AI_RESPONSE" }, 502);
   try { return reply({ ok: true, result: JSON.parse(text), model }); }
   catch { return reply({ ok: false, error: "INVALID_AI_RESPONSE" }, 502); }
-});
+}));

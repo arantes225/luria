@@ -7,17 +7,15 @@ import {
   GetObjectCommand,
 } from "npm:@aws-sdk/client-s3@3.859.0";
 import { getSignedUrl } from "npm:@aws-sdk/s3-request-presigner@3.859.0";
+import { withSiteCors } from "../_shared/cors.ts";
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
+const baseHeaders = {
   "Content-Type": "application/json; charset=utf-8",
   "Cache-Control": "no-store, private",
 };
 
 function reply(body: unknown, status = 200) {
-  return new Response(JSON.stringify(body), { status, headers: corsHeaders });
+  return new Response(JSON.stringify(body), { status, headers: baseHeaders });
 }
 
 function cleanKey(value: unknown) {
@@ -72,8 +70,7 @@ function r2Client() {
   });
 }
 
-Deno.serve(async (req: Request) => {
-  if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
+Deno.serve(withSiteCors(async (req: Request) => {
   if (req.method !== "POST") return reply({ ok: false, error: "METHOD_NOT_ALLOWED" }, 405);
 
   const user = await requireUser(req);
@@ -146,7 +143,7 @@ Deno.serve(async (req: Request) => {
 
     return reply({ ok: false, error: "INVALID_OPERATION" }, 400);
   } catch (error) {
-    const message = error instanceof Error ? error.message : "R2_REQUEST_FAILED";
-    return reply({ ok: false, error: "R2_REQUEST_FAILED", detail: message }, 502);
+    console.error("ecg-r2-catalog:", error instanceof Error ? error.message : "R2_REQUEST_FAILED");
+    return reply({ ok: false, error: "R2_REQUEST_FAILED" }, 502);
   }
-});
+}));

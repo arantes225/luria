@@ -449,3 +449,56 @@ test('DNS-address binding is intentionally NOT asserted by URL filtering', async
   assert.equal(await f.urlReachable('https://arbitrary-public-domain.org/'), true);
   assert.equal(calls, 1);
 });
+
+test('no Edge Function or Cloudflare Worker allows wildcard Access-Control-Allow-Origin: *', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const root = path.resolve(__dirname, '..');
+  const scan = (dir) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        if (entry.name !== 'node_modules') scan(full);
+      } else if (/\.(ts|js|mjs)$/.test(entry.name)) {
+        const text = fs.readFileSync(full, 'utf8');
+        assert.equal(
+          /['"]Access-Control-Allow-Origin['"]\s*:\s*['"]\*['"]/i.test(text),
+          false,
+          `${path.relative(root, full)} must not allow wildcard Access-Control-Allow-Origin: *`
+        );
+      }
+    }
+  };
+  scan(path.join(root, 'supabase', 'functions'));
+  scan(path.join(root, 'cloudflare'));
+});
+
+for (const name of ['ecg-ai-reader', 'external-quick-chart']) {
+  test(`${name}: strict withCors blocks malicious origins`, async () => {
+    const { handler } = fixture({ env }).function(name);
+    for (const origin of ['https://attacker.org', 'https://evil.traubemedicina.com.br', 'null']) {
+      const response = await handler(preflight(origin));
+      assert.equal(response.status, 403);
+      assert.equal(response.headers.get('Access-Control-Allow-Origin'), null);
+      assert.deepEqual(await response.json(), { ok: false, error: 'ORIGIN_NOT_ALLOWED' });
+    }
+    const okPreflight = await handler(preflight(official));
+    assert.equal(okPreflight.status, 200);
+    assert.equal(okPreflight.headers.get('Access-Control-Allow-Origin'), official);
+  });
+}
+
+test('external-quick-chart-pair: withSiteCors enforces site origins and rejects attacker origins', async () => {
+  const { handler } = fixture({ env }).function('external-quick-chart-pair');
+  for (const origin of ['https://attacker.org', 'https://evil.traubemedicina.com.br', 'null', 'http://localhost:3000']) {
+    const response = await handler(req('POST', origin));
+    assert.equal(response.status, 403);
+    assert.equal(response.headers.get('Access-Control-Allow-Origin'), null);
+    assert.deepEqual(await response.json(), { ok: false, error: 'ORIGIN_NOT_ALLOWED' });
+  }
+  for (const allowed of [official, 'https://traubemedicina.com.br', 'http://localhost:8080']) {
+    const ok = await handler(preflight(allowed));
+    assert.equal(ok.status, 200);
+    assert.equal(ok.headers.get('Access-Control-Allow-Origin'), allowed);
+  }
+});

@@ -1,12 +1,11 @@
-
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createClient } from "jsr:@supabase/supabase-js@2";
+import { withCors } from "../_shared/cors.ts";
 import { downloadImage } from "../_shared/image-download.ts";
 import {
   ImageMagick,
   initializeImageMagick,
   MagickFormat,
-  Percentage,
 } from "npm:@imagemagick/magick-wasm@0.0.30";
 
 const wasmBytes = await Deno.readFile(
@@ -14,15 +13,13 @@ const wasmBytes = await Deno.readFile(
 );
 await initializeImageMagick(wasmBytes);
 
-const cors = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
+const baseHeaders = {
+  "Content-Type": "application/json",
+  "Cache-Control": "no-store",
 };
 
-Deno.serve(async (req: Request) => {
-  if (req.method === "OPTIONS") return new Response("ok", { headers: cors });
-  if (req.method !== "POST") return new Response("Method not allowed", { status: 405, headers: cors });
+Deno.serve(withCors(async (req: Request) => {
+  if (req.method !== "POST") return new Response("Method not allowed", { status: 405, headers: baseHeaders });
 
   try {
     const auth = req.headers.get("Authorization") || "";
@@ -135,12 +132,12 @@ Deno.serve(async (req: Request) => {
       size_bytes: output.byteLength,
       width: outWidth,
       quality: outQuality
-    }), { headers: { ...cors, "Content-Type": "application/json" } });
+    }), { headers: baseHeaders });
   } catch (error) {
     console.error(error);
     return new Response(JSON.stringify({ error: error?.message || String(error) }), {
       status: 400,
-      headers: { ...cors, "Content-Type": "application/json" },
+      headers: baseHeaders,
     });
   }
-});
+}));
