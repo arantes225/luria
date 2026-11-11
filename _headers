@@ -11,3 +11,28 @@
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Areas administrativas e sessoes pessoais nao devem aparecer em resultados de busca.
+/admin/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/dashboard/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/login/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/cadastro/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/configuracoes/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/estatisticas/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/amigos/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/conta/*
+  X-Robots-Tag: noindex, nofollow, noarchive
