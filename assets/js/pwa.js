@@ -31,7 +31,7 @@
   if (new URL(document.baseURI).pathname !== "/") return;
 
 
-  const release = "20261108-brand-icons2";
+  const release = "20261111-reader2";
 
   
 
