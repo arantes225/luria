@@ -182,14 +182,14 @@ Deno.serve(withCors(async req => {
       } catch (error) {
         const message = error instanceof Error ? error.message : String(error);
         console.error("Falha ao compactar imagem", bucket, item.path, message);
-        failures.push({ bucket, path: item.path, error: message });
+        failures.push({ bucket, path: item.path, error: "Falha ao compactar imagem" });
       }
     }
     return new Response(JSON.stringify({ ok: failures.length === 0, processed: updated.length, skipped: skipped.length, updated, failures }),
       { headers: baseHeaders });
   } catch (error) {
-    console.error(error);
-    return new Response(JSON.stringify({ error: error instanceof Error ? error.message : String(error) }), {
+    console.error("admin-enforce-image-cap:", error instanceof Error ? error.message : String(error));
+    return new Response(JSON.stringify({ error: "Falha ao processar imagens" }), {
       status: 400, headers: baseHeaders
     });
   }

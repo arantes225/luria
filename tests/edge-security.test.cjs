@@ -120,7 +120,7 @@ for (const [i, name] of names.entries()) {
       const { handler } = fixture({ env: values, createClient() { throw new Error('simulated SDK failure'); } }).function(name);
       const response = await handler(req('POST', official, { Authorization: 'Bearer admin-test' }, bodies[i]));
       assert.equal(response.status, expectedStatus);
-      assert.equal((await response.json()).error, expectedError);
+      const payload = await response.json(); assert.equal(payload.error, expectedError); if (expectedError === 'UNHANDLED') assert.equal(payload.message, undefined);
       assert.equal(response.headers.get('Access-Control-Allow-Origin'), official);
       assert.match(response.headers.get('Vary'), /Origin/);
     }
@@ -501,4 +501,11 @@ test('external-quick-chart-pair: withSiteCors enforces site origins and rejects 
     assert.equal(ok.status, 200);
     assert.equal(ok.headers.get('Access-Control-Allow-Origin'), allowed);
   }
+});
+
+
+test('admin-enforce-image-cap: error responses do not leak raw exception messages', () => {
+  const fs = require('node:fs'); const path = require('node:path'); const source = fs.readFileSync(path.join(__dirname, '..', 'supabase', 'functions', 'admin-enforce-image-cap', 'index.ts'), 'utf8');
+  assert.doesNotMatch(source, /JSON\.stringify\(\{\s*error:\s*error instanceof Error/);
+  assert.doesNotMatch(source, /failures\.push\(\{[^}]*error:\s*message\s*\}\)/);
 });

@@ -1158,7 +1158,7 @@ Deno.serve(withCors(async (req) => {
     return json({
       ok:false,
       error:"UNHANDLED",
-      message:error instanceof Error ? error.message : String(error),
+      // Sanitized: do not leak internal error details to clients
     },500);
   }
 }));
