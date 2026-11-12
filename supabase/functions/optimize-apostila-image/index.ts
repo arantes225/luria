@@ -134,8 +134,22 @@ Deno.serve(withCors(async (req: Request) => {
       quality: outQuality
     }), { headers: baseHeaders });
   } catch (error) {
-    console.error(error);
-    return new Response(JSON.stringify({ error: error?.message || String(error) }), {
+    console.error('Erro interno ao otimizar imagem:', error);
+    const knownErrors = new Set([
+      'Sessão ausente',
+      'Chave pública indisponível',
+      'Acesso administrativo necessário',
+      'ID inválido',
+      'Imagem candidata não encontrada',
+      'Imagem sem URL',
+      'Erro ao baixar imagem',
+      'Falha ao carregar imagem',
+    ]);
+    const rawMsg = typeof error?.message === 'string' ? error.message : '';
+    const safeError = knownErrors.has(rawMsg)
+      ? rawMsg
+      : 'Falha ao processar e otimizar imagem';
+    return new Response(JSON.stringify({ error: safeError }), {
       status: 400,
       headers: baseHeaders,
     });
